@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:yaml/yaml.dart';
 
+enum QuizQuestionType { multipleChoice, open }
+
 class QuizScreen extends StatefulWidget {
   const QuizScreen({
     super.key,
@@ -21,6 +23,8 @@ class _QuizScreenState extends State<QuizScreen> {
   int _score = 0;
   QuizAnswer? _selectedAnswer;
   bool _showSummary = false;
+  bool? _openAnswerCorrect;
+  final TextEditingController _openAnswerController = TextEditingController();
 
   @override
   void initState() {
@@ -28,11 +32,30 @@ class _QuizScreenState extends State<QuizScreen> {
     _questions = List<QuizQuestion>.from(widget.questions)..shuffle();
   }
 
+  @override
+  void dispose() {
+    _openAnswerController.dispose();
+    super.dispose();
+  }
+
   void _selectAnswer(QuizAnswer answer) {
     if (_selectedAnswer != null || _showSummary) return;
     setState(() {
       _selectedAnswer = answer;
       if (answer.isCorrect) {
+        _score++;
+      }
+    });
+  }
+
+  void _submitOpenAnswer(QuizQuestion question) {
+    if (_openAnswerCorrect != null || _showSummary) return;
+    final response = _openAnswerController.text.trim();
+    if (response.isEmpty) return;
+    final isCorrect = question.matchesOpenResponse(response);
+    setState(() {
+      _openAnswerCorrect = isCorrect;
+      if (isCorrect) {
         _score++;
       }
     });
@@ -47,6 +70,8 @@ class _QuizScreenState extends State<QuizScreen> {
       setState(() {
         _currentQuestionIndex++;
         _selectedAnswer = null;
+        _openAnswerCorrect = null;
+        _openAnswerController.clear();
       });
     }
   }
@@ -75,22 +100,47 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Widget _buildQuestionView(BuildContext context) {
     final question = _questions[_currentQuestionIndex];
+    final commonHeader = <Widget>[
+      Text(
+        'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
+        style: Theme.of(context)
+            .textTheme
+            .labelLarge
+            ?.copyWith(color: Colors.grey[600]),
+      ),
+      const SizedBox(height: 12),
+      Text(
+        question.text,
+        style: Theme.of(context).textTheme.headlineSmall,
+      ),
+      const SizedBox(height: 24),
+    ];
+
+    if (question.isOpen) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ...commonHeader,
+          _buildOpenQuestion(context, question),
+        ],
+      );
+    }
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
-          style: Theme.of(context)
-              .textTheme
-              .labelLarge
-              ?.copyWith(color: Colors.grey[600]),
-        ),
-        const SizedBox(height: 12),
-        Text(
-          question.text,
-          style: Theme.of(context).textTheme.headlineSmall,
-        ),
-        const SizedBox(height: 24),
+        ...commonHeader,
+        _buildMultipleChoiceQuestion(context, question),
+      ],
+    );
+  }
+
+  Widget _buildMultipleChoiceQuestion(
+    BuildContext context,
+    QuizQuestion question,
+  ) {
+    return Column(
+      children: [
         ...question.answers.map(
           (answer) => _AnswerOption(
             answer: answer,
@@ -119,6 +169,53 @@ class _QuizScreenState extends State<QuizScreen> {
                     : 'Next question',
               ),
             ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _buildOpenQuestion(BuildContext context, QuizQuestion question) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        TextField(
+          controller: _openAnswerController,
+          enabled: _openAnswerCorrect == null,
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            labelText: 'Your answer',
+          ),
+          onSubmitted: (_) => _submitOpenAnswer(question),
+        ),
+        const SizedBox(height: 16),
+        SizedBox(
+          width: double.infinity,
+          child: ElevatedButton(
+            onPressed: _openAnswerCorrect == null
+                ? () => _submitOpenAnswer(question)
+                : _goToNextStep,
+            child: Text(
+              _openAnswerCorrect == null
+                  ? 'Check answer'
+                  : _currentQuestionIndex == _questions.length - 1
+                      ? 'See score'
+                      : 'Next question',
+            ),
+          ),
+        ),
+        if (_openAnswerCorrect != null) ...[
+          const SizedBox(height: 16),
+          Text(
+            _openAnswerCorrect! ? 'Correct!' : 'Not quite right.',
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  color: _openAnswerCorrect! ? Colors.green : Colors.red,
+                ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Accepted answers: ${question.acceptedAnswers.join(', ')}',
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
       ],
@@ -200,11 +297,18 @@ class _AnswerOption extends StatelessWidget {
 class QuizQuestion {
   QuizQuestion({
     required this.text,
-    required List<QuizAnswer> answers,
-  }) : answers = List.unmodifiable(answers);
+    required this.type,
+    List<QuizAnswer> answers = const [],
+    List<String> acceptedAnswers = const [],
+  })  : answers = List.unmodifiable(answers),
+        acceptedAnswers = List.unmodifiable(acceptedAnswers);
 
   final String text;
+  final QuizQuestionType type;
   final List<QuizAnswer> answers;
+  final List<String> acceptedAnswers;
+
+  bool get isOpen => type == QuizQuestionType.open;
 
   QuizAnswer get correctAnswer {
     return answers.firstWhere(
@@ -219,7 +323,17 @@ class QuizQuestion {
     );
   }
 
+  bool matchesOpenResponse(String response) {
+    if (!isOpen) return false;
+    final normalizedAttempt = _normalizeAnswer(response);
+    return acceptedAnswers.any(
+      (answer) => _normalizeAnswer(answer) == normalizedAttempt,
+    );
+  }
+
   factory QuizQuestion.fromMap(Map<String, dynamic> map) {
+    final questionText = (map['text'] ?? '').toString().trim();
+    final type = _parseType(map['type']);
     final answersRaw = map['answers'];
     final collectedAnswers = <String>[];
     int? flaggedIndex;
@@ -253,6 +367,14 @@ class QuizQuestion {
       }
     }
 
+    if (type == QuizQuestionType.open) {
+      return QuizQuestion(
+        text: questionText.isEmpty ? 'Untitled question' : questionText,
+        type: QuizQuestionType.open,
+        acceptedAnswers: collectedAnswers,
+      );
+    }
+
     final correctIndex = _resolveCorrectIndex(
       flaggedIndex: flaggedIndex,
       provided: map['correct_index'],
@@ -268,11 +390,27 @@ class QuizQuestion {
       ),
     );
 
-    final questionText = (map['text'] ?? '').toString().trim();
     return QuizQuestion(
       text: questionText.isEmpty ? 'Untitled question' : questionText,
+      type: QuizQuestionType.multipleChoice,
       answers: answers,
     );
+  }
+
+  static QuizQuestionType _parseType(Object? raw) {
+    final value = raw?.toString().toLowerCase().trim();
+    if (value == 'open' || value == 'text' || value == 'input') {
+      return QuizQuestionType.open;
+    }
+    return QuizQuestionType.multipleChoice;
+  }
+
+  static String _normalizeAnswer(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll(RegExp(r'[^a-z0-9]+'), ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
   }
 
   static int _resolveCorrectIndex({
@@ -323,14 +461,7 @@ class QuizQuestion {
     if (index == null) {
       return null;
     }
-    if (index < 0) {
-      return null;
-    }
-    if (index >= answersCount) {
-      final adjusted = index - 1;
-      if (adjusted >= 0 && adjusted < answersCount) {
-        return adjusted;
-      }
+    if (index < 0 || index >= answersCount) {
       return null;
     }
     return index;

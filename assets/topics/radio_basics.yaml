@@ -33,3 +33,17 @@ questions:
       - Brevity keeps frequencies available for others.
       - Regulations only allow 5-second transmissions.
     correct_index: 1
+  - type: open
+    text: Which word from the NATO phonetic alphabet represents the letter "A"?
+    answers:
+      - Alpha
+      - Alfa
+  - type: open
+    text: What single word should you say three times to declare an emergency call?
+    answers:
+      - Mayday
+  - type: open
+    text: What brief phrase do you transmit to cancel your last message?
+    answers:
+      - Disregard
+      - Disregard last message
