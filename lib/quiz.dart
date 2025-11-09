@@ -25,27 +25,36 @@ class _QuizScreenState extends State<QuizScreen> {
   bool _showSummary = false;
   bool? _openAnswerCorrect;
   final TextEditingController _openAnswerController = TextEditingController();
+  final FocusNode _openAnswerFocus = FocusNode();
 
   @override
   void initState() {
     super.initState();
     _questions = List<QuizQuestion>.from(widget.questions)..shuffle();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _ensureFocusForCurrentQuestion();
+    });
   }
 
   @override
   void dispose() {
     _openAnswerController.dispose();
+    _openAnswerFocus.dispose();
     super.dispose();
   }
 
   void _selectAnswer(QuizAnswer answer) {
     if (_selectedAnswer != null || _showSummary) return;
+    final questionIndex = _currentQuestionIndex;
     setState(() {
       _selectedAnswer = answer;
       if (answer.isCorrect) {
         _score++;
       }
     });
+    if (answer.isCorrect) {
+      _scheduleAdvanceAfterCorrect(questionIndex);
+    }
   }
 
   void _submitOpenAnswer(QuizQuestion question) {
@@ -53,12 +62,17 @@ class _QuizScreenState extends State<QuizScreen> {
     final response = _openAnswerController.text.trim();
     if (response.isEmpty) return;
     final isCorrect = question.matchesOpenResponse(response);
+    final questionIndex = _currentQuestionIndex;
     setState(() {
       _openAnswerCorrect = isCorrect;
       if (isCorrect) {
         _score++;
       }
     });
+    if (isCorrect) {
+      _openAnswerFocus.unfocus();
+      _scheduleAdvanceAfterCorrect(questionIndex);
+    }
   }
 
   void _goToNextStep() {
@@ -74,6 +88,29 @@ class _QuizScreenState extends State<QuizScreen> {
         _openAnswerController.clear();
       });
     }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _ensureFocusForCurrentQuestion();
+    });
+  }
+
+  void _ensureFocusForCurrentQuestion() {
+    if (!mounted || _showSummary || _currentQuestionIndex >= _questions.length) {
+      return;
+    }
+    final question = _questions[_currentQuestionIndex];
+    if (question.isOpen && _openAnswerCorrect == null) {
+      _openAnswerFocus.requestFocus();
+    } else {
+      _openAnswerFocus.unfocus();
+    }
+  }
+
+  void _scheduleAdvanceAfterCorrect(int questionIndex) {
+    Future.delayed(const Duration(milliseconds: 500), () {
+      if (!mounted || _showSummary) return;
+      if (_currentQuestionIndex != questionIndex) return;
+      _goToNextStep();
+    });
   }
 
   @override
@@ -150,7 +187,7 @@ class _QuizScreenState extends State<QuizScreen> {
           ),
         ),
         const SizedBox(height: 16),
-        if (_selectedAnswer != null) ...[
+        if (_selectedAnswer != null && !_selectedAnswer!.isCorrect) ...[
           Text(
             'Correct answer: ${question.correctAnswer.label}. ${question.correctAnswer.text}',
             style: Theme.of(context)
@@ -181,6 +218,7 @@ class _QuizScreenState extends State<QuizScreen> {
       children: [
         TextField(
           controller: _openAnswerController,
+          focusNode: _openAnswerFocus,
           enabled: _openAnswerCorrect == null,
           decoration: const InputDecoration(
             border: OutlineInputBorder(),
@@ -194,23 +232,24 @@ class _QuizScreenState extends State<QuizScreen> {
           child: ElevatedButton(
             onPressed: _openAnswerCorrect == null
                 ? () => _submitOpenAnswer(question)
-                : _goToNextStep,
+                : (_openAnswerCorrect! ? null : _goToNextStep),
             child: Text(
               _openAnswerCorrect == null
                   ? 'Check answer'
-                  : _currentQuestionIndex == _questions.length - 1
-                      ? 'See score'
-                      : 'Next question',
+                  : (_openAnswerCorrect!
+                      ? 'Correct!'
+                      : _currentQuestionIndex == _questions.length - 1
+                          ? 'See score'
+                          : 'Next question'),
             ),
           ),
         ),
-        if (_openAnswerCorrect != null) ...[
+        if (_openAnswerCorrect == false) ...[
           const SizedBox(height: 16),
           Text(
-            _openAnswerCorrect! ? 'Correct!' : 'Not quite right.',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  color: _openAnswerCorrect! ? Colors.green : Colors.red,
-                ),
+            'Not quite right.',
+            style:
+                Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.red),
           ),
           const SizedBox(height: 8),
           Text(
