@@ -38,6 +38,28 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String topicProgress(int mastered, int total) {
+    return 'Opanowano $mastered z $total';
+  }
+
+  @override
+  String get topicResetProgress => 'Wyzeruj postęp';
+
+  @override
+  String get topicResetDialogTitle => 'Wyzerować postęp?';
+
+  @override
+  String topicResetDialogBody(Object topic) {
+    return 'To usunie opanowane pytania dla tematu $topic.';
+  }
+
+  @override
+  String get topicResetDialogConfirm => 'Wyzeruj';
+
+  @override
+  String get topicResetDialogCancel => 'Anuluj';
+
+  @override
   String get modeSheetTestTitle => 'Test';
 
   @override

@@ -6,6 +6,7 @@ import 'package:yaml/yaml.dart';
 
 import 'l10n/app_localizations.dart';
 import 'quiz.dart';
+import 'services/learning_progress.dart';
 
 class TopicListScreen extends StatefulWidget {
   const TopicListScreen({super.key});
@@ -16,16 +17,38 @@ class TopicListScreen extends StatefulWidget {
 
 class _TopicListScreenState extends State<TopicListScreen> {
   late final Future<List<Topic>> _topicsFuture;
+  LearningProgressService? _progressService;
 
   @override
   void initState() {
     super.initState();
     _topicsFuture = TopicRepository.loadTopics();
+    _initProgressService();
   }
 
-  Future<void> _handleTopicTap(BuildContext context, Topic topic) async {
-    final l10n = AppLocalizations.of(context)!;
+  Future<void> _initProgressService() async {
+    final service = await LearningProgressService.load();
+    if (!mounted) return;
+    setState(() {
+      _progressService = service;
+    });
+  }
+
+  Future<LearningProgressService?> _ensureProgressService() async {
+    if (_progressService != null) {
+      return _progressService;
+    }
+    final service = await LearningProgressService.load();
+    if (!mounted) return null;
+    setState(() {
+      _progressService = service;
+    });
+    return service;
+  }
+
+  Future<void> _handleTopicTap(Topic topic) async {
     if (!topic.hasQuestions) {
+      final l10n = AppLocalizations.of(context)!;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(l10n.topicNoQuestions),
@@ -33,6 +56,9 @@ class _TopicListScreenState extends State<TopicListScreen> {
       );
       return;
     }
+    final progressService = await _ensureProgressService();
+    if (!mounted || progressService == null) return;
+    final l10n = AppLocalizations.of(context)!;
     final mode = await showModalBottomSheet<QuizMode>(
       context: context,
       showDragHandle: true,
@@ -60,16 +86,48 @@ class _TopicListScreenState extends State<TopicListScreen> {
       },
     );
     if (mode == null) return;
-    if (!context.mounted) return;
-    Navigator.of(context).push(
+    if (!mounted) return;
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuizScreen(
+          topicSlug: topic.slug,
           topicTitle: topic.title,
           questions: topic.questions,
           mode: mode,
+          progressService: progressService,
         ),
       ),
     );
+    if (!mounted) return;
+    setState(() {});
+  }
+
+  Future<void> _confirmReset(Topic topic) async {
+    final service = await _ensureProgressService();
+    if (!mounted || service == null) return;
+    final l10n = AppLocalizations.of(context)!;
+    final shouldReset = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(l10n.topicResetDialogTitle),
+        content: Text(l10n.topicResetDialogBody(topic.title)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(l10n.topicResetDialogCancel),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: Text(l10n.topicResetDialogConfirm),
+          ),
+        ],
+      ),
+    );
+    if (shouldReset == true) {
+      await service.reset(topic.slug);
+      if (!mounted) return;
+      setState(() {});
+    }
   }
 
   @override
@@ -109,9 +167,23 @@ class _TopicListScreenState extends State<TopicListScreen> {
             separatorBuilder: (_, __) => const SizedBox(height: 12),
             itemBuilder: (context, index) {
               final topic = topics[index];
+              final totalQuestions = topic.questions.length;
+              final masteredCount =
+                  _progressService?.getMastered(topic.slug).length ?? 0;
+              final progressLabel = !topic.hasQuestions
+                  ? l10n.topicNoQuestions
+                  : _progressService == null
+                      ? l10n.topicQuestionCount(totalQuestions)
+                      : l10n.topicProgress(masteredCount, totalQuestions);
               return TopicCard(
                 topic: topic,
-                onTap: () => _handleTopicTap(context, topic),
+                progressLabel: progressLabel,
+                canResetProgress:
+                    _progressService != null && masteredCount > 0,
+                onResetProgress: _progressService == null
+                    ? null
+                    : () => _confirmReset(topic),
+                onTap: () => _handleTopicTap(topic),
               );
             },
           );
@@ -132,17 +204,24 @@ class _EmptyTopicsMessage extends StatelessWidget {
 }
 
 class TopicCard extends StatelessWidget {
-  const TopicCard({super.key, required this.topic, this.onTap});
+  const TopicCard({
+    super.key,
+    required this.topic,
+    required this.progressLabel,
+    this.canResetProgress = false,
+    this.onResetProgress,
+    this.onTap,
+  });
 
   final Topic topic;
+  final String progressLabel;
+  final bool canResetProgress;
+  final VoidCallback? onResetProgress;
   final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final subtitle = topic.hasQuestions
-        ? l10n.topicQuestionCount(topic.questions.length)
-        : l10n.topicNoQuestions;
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: InkWell(
@@ -187,7 +266,7 @@ class TopicCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      subtitle,
+                      progressLabel,
                       style: Theme.of(context)
                           .textTheme
                           .labelMedium
@@ -196,7 +275,18 @@ class TopicCard extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.arrow_forward_ios_rounded, size: 16),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  if (canResetProgress)
+                    IconButton(
+                      icon: const Icon(Icons.refresh),
+                      tooltip: l10n.topicResetProgress,
+                      onPressed: onResetProgress,
+                    ),
+                  const Icon(Icons.arrow_forward_ios_rounded, size: 16),
+                ],
+              ),
             ],
           ),
         ),
@@ -249,16 +339,24 @@ class Topic {
   static List<QuizQuestion> _parseQuestions(Object? raw) {
     if (raw is Iterable) {
       final questions = <QuizQuestion>[];
+      var index = 0;
       for (final item in raw) {
         if (item is Map) {
           questions.add(
-            QuizQuestion.fromMap(Map<String, dynamic>.from(item)),
+            QuizQuestion.fromMap(
+              Map<String, dynamic>.from(item),
+              id: index,
+            ),
           );
         } else if (item is YamlMap) {
           questions.add(
-            QuizQuestion.fromMap(Map<String, dynamic>.from(item)),
+            QuizQuestion.fromMap(
+              Map<String, dynamic>.from(item),
+              id: index,
+            ),
           );
         }
+        index++;
       }
       return questions;
     }

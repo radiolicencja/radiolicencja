@@ -37,6 +37,28 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String topicProgress(int mastered, int total) {
+    return '$mastered / $total learned';
+  }
+
+  @override
+  String get topicResetProgress => 'Reset progress';
+
+  @override
+  String get topicResetDialogTitle => 'Reset learning progress?';
+
+  @override
+  String topicResetDialogBody(Object topic) {
+    return 'This removes learned questions for $topic.';
+  }
+
+  @override
+  String get topicResetDialogConfirm => 'Reset';
+
+  @override
+  String get topicResetDialogCancel => 'Cancel';
+
+  @override
   String get modeSheetTestTitle => 'Take test';
 
   @override

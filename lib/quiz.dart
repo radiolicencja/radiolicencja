@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:yaml/yaml.dart';
 
 import 'l10n/app_localizations.dart';
+import 'services/learning_progress.dart';
 
 enum QuizQuestionType { multipleChoice, open }
 enum QuizMode { test, learning }
@@ -12,14 +14,18 @@ enum QuizMode { test, learning }
 class QuizScreen extends StatefulWidget {
   const QuizScreen({
     super.key,
+    required this.topicSlug,
     required this.topicTitle,
     required this.questions,
     required this.mode,
+    this.progressService,
   });
 
+  final String topicSlug;
   final String topicTitle;
   final List<QuizQuestion> questions;
   final QuizMode mode;
+  final LearningProgressService? progressService;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -28,6 +34,7 @@ class QuizScreen extends StatefulWidget {
 class _QuizScreenState extends State<QuizScreen> {
   late final List<QuizQuestion> _questions;
   late final int _totalQuestions;
+  final Set<int> _masteredQuestionIds = <int>{};
   int _currentQuestionIndex = 0;
   int _score = 0;
   QuizAnswer? _selectedAnswer;
@@ -40,8 +47,21 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   void initState() {
     super.initState();
-    _questions = List<QuizQuestion>.from(widget.questions)..shuffle();
-    _totalQuestions = _questions.length;
+    final initialQuestions = List<QuizQuestion>.from(widget.questions);
+    final storedMastered =
+        widget.progressService?.getMastered(widget.topicSlug) ?? <int>{};
+    _masteredQuestionIds.addAll(storedMastered);
+    if (widget.mode == QuizMode.learning) {
+      initialQuestions
+          .removeWhere((question) => storedMastered.contains(question.id));
+      _totalQuestions = widget.questions.length;
+      if (initialQuestions.isEmpty) {
+        _showSummary = true;
+      }
+    } else {
+      _totalQuestions = initialQuestions.length;
+    }
+    _questions = initialQuestions..shuffle();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _ensureFocusForCurrentQuestion();
     });
@@ -57,6 +77,7 @@ class _QuizScreenState extends State<QuizScreen> {
   void _selectAnswer(QuizAnswer answer) {
     if (_selectedAnswer != null || _showSummary) return;
     final questionIndex = _currentQuestionIndex;
+    final question = _questions[questionIndex];
     setState(() {
       _selectedAnswer = answer;
       if (answer.isCorrect) {
@@ -64,6 +85,7 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     });
     if (answer.isCorrect) {
+      _recordMastered(question);
       _scheduleAdvanceAfterCorrect(questionIndex);
     }
   }
@@ -81,6 +103,7 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     });
     if (isCorrect) {
+      _recordMastered(question);
       _openAnswerFocus.unfocus();
       _scheduleAdvanceAfterCorrect(questionIndex);
     }
@@ -166,9 +189,19 @@ class _QuizScreenState extends State<QuizScreen> {
     });
   }
 
+  void _recordMastered(QuizQuestion question) {
+    if (widget.mode != QuizMode.learning) return;
+    if (_masteredQuestionIds.contains(question.id)) return;
+    _masteredQuestionIds.add(question.id);
+    final service = widget.progressService;
+    if (service != null) {
+      unawaited(service.markMastered(widget.topicSlug, question.id));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    if (_questions.isEmpty) {
+    if (_questions.isEmpty && !_showSummary) {
       return Scaffold(
         appBar: AppBar(title: Text(widget.topicTitle)),
         body: const Center(
@@ -188,7 +221,8 @@ class _QuizScreenState extends State<QuizScreen> {
     );
   }
 
-  int get _masteredCount => _totalQuestions - _questions.length;
+  int get _masteredCount =>
+      _masteredQuestionIds.length.clamp(0, _totalQuestions);
 
   Widget _buildQuestionView(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -469,6 +503,7 @@ class _QuestionMarkdown extends StatelessWidget {
 
 class QuizQuestion {
   QuizQuestion({
+    required this.id,
     required this.text,
     required this.type,
     List<QuizAnswer> answers = const [],
@@ -476,6 +511,7 @@ class QuizQuestion {
   })  : answers = List.unmodifiable(answers),
         acceptedAnswers = List.unmodifiable(acceptedAnswers);
 
+  final int id;
   final String text;
   final QuizQuestionType type;
   final List<QuizAnswer> answers;
@@ -504,7 +540,10 @@ class QuizQuestion {
     );
   }
 
-  factory QuizQuestion.fromMap(Map<String, dynamic> map) {
+  factory QuizQuestion.fromMap(
+    Map<String, dynamic> map, {
+    required int id,
+  }) {
     final questionText = (map['text'] ?? '').toString().trim();
     final type = _parseType(map['type']);
     final answersRaw = map['answers'];
@@ -542,6 +581,7 @@ class QuizQuestion {
 
     if (type == QuizQuestionType.open) {
       return QuizQuestion(
+        id: id,
         text: questionText.isEmpty ? 'Untitled question' : questionText,
         type: QuizQuestionType.open,
         acceptedAnswers: collectedAnswers,
@@ -564,6 +604,7 @@ class QuizQuestion {
     );
 
     return QuizQuestion(
+      id: id,
       text: questionText.isEmpty ? 'Untitled question' : questionText,
       type: QuizQuestionType.multipleChoice,
       answers: answers,

@@ -131,6 +131,42 @@ abstract class AppLocalizations {
   /// **'{count, plural, one {{count} question} other {{count} questions}}'**
   String topicQuestionCount(int count);
 
+  /// No description provided for @topicProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'{mastered} / {total} learned'**
+  String topicProgress(int mastered, int total);
+
+  /// No description provided for @topicResetProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset progress'**
+  String get topicResetProgress;
+
+  /// No description provided for @topicResetDialogTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset learning progress?'**
+  String get topicResetDialogTitle;
+
+  /// No description provided for @topicResetDialogBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This removes learned questions for {topic}.'**
+  String topicResetDialogBody(Object topic);
+
+  /// No description provided for @topicResetDialogConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get topicResetDialogConfirm;
+
+  /// No description provided for @topicResetDialogCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get topicResetDialogCancel;
+
   /// No description provided for @modeSheetTestTitle.
   ///
   /// In en, this message translates to:

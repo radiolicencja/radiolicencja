@@ -6,6 +6,27 @@
   "topicListEmpty": "Dodaj pliki tematów do assets/topics, aby rozpocząć.",
   "topicNoQuestions": "Ten temat nie ma jeszcze pytań. Dodaj je, aby zacząć.",
   "topicQuestionCount": "{count, plural, one {{count} pytanie} few {{count} pytania} other {{count} pytań}}",
+  "topicProgress": "Opanowano {mastered} z {total}",
+  "@topicProgress": {
+    "placeholders": {
+      "mastered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "topicResetProgress": "Wyzeruj postęp",
+  "topicResetDialogTitle": "Wyzerować postęp?",
+  "topicResetDialogBody": "To usunie opanowane pytania dla tematu {topic}.",
+  "@topicResetDialogBody": {
+    "placeholders": {
+      "topic": {}
+    }
+  },
+  "topicResetDialogConfirm": "Wyzeruj",
+  "topicResetDialogCancel": "Anuluj",
   "modeSheetTestTitle": "Test",
   "modeSheetTestSubtitle": "Standardowy quiz, pytania tylko raz.",
   "modeSheetLearningTitle": "Tryb nauki",
