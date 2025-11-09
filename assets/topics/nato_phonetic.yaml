@@ -1,0 +1,113 @@
+title: NATO Phonetic Alphabet
+description: Practice every ICAO/NATO phonetic code word from A through Z.
+slug: nato-phonetic
+image: assets/images/topic_radio.png
+questions:
+  - type: open
+    text: How do you spell the letter "A" over the radio using the NATO alphabet?
+    answers:
+      - Alpha
+      - Alfa
+  - type: open
+    text: What's the official code word for the letter "B"?
+    answers:
+      - Bravo
+  - type: open
+    text: When calling out "C", which NATO word should you use?
+    answers:
+      - Charlie
+  - type: open
+    text: Give the NATO phonetic word that stands for the letter "D".
+    answers:
+      - Delta
+  - type: open
+    text: You're transmitting the letter "E" — what word do you say?
+    answers:
+      - Echo
+  - type: open
+    text: Name the NATO phonetic call sign for the letter "F".
+    answers:
+      - Foxtrot
+  - type: open
+    text: What code word broadcasts the letter "G"?
+    answers:
+      - Golf
+  - type: open
+    text: Radioing an "H"? Type the matching NATO word.
+    answers:
+      - Hotel
+  - type: open
+    text: For the letter "I", which phonetic cue is correct?
+    answers:
+      - India
+  - type: open
+    text: What would you say for the letter "J" on a NATO channel?
+    answers:
+      - Juliett
+      - Juliet
+  - type: open
+    text: Identify the NATO word linked to the letter "K".
+    answers:
+      - Kilo
+  - type: open
+    text: Spell the letter "L" using the standard phonetic alphabet.
+    answers:
+      - Lima
+  - type: open
+    text: What's the proper NATO pronunciation for the letter "M"?
+    answers:
+      - Mike
+  - type: open
+    text: Share the NATO word for the letter "N".
+    answers:
+      - November
+  - type: open
+    text: When referencing the letter "O", which code word applies?
+    answers:
+      - Oscar
+  - type: open
+    text: Provide the NATO phonetic equivalent of the letter "P".
+    answers:
+      - Papa
+  - type: open
+    text: The letter "Q" maps to which NATO alphabet word?
+    answers:
+      - Quebec
+  - type: open
+    text: State the call sign for the letter "R".
+    answers:
+      - Romeo
+  - type: open
+    text: How do operators pronounce the letter "S" per NATO standards?
+    answers:
+      - Sierra
+  - type: open
+    text: Enter the NATO alphabet word matched to "T".
+    answers:
+      - Tango
+  - type: open
+    text: What is the correct word for "U" when spelling by radio?
+    answers:
+      - Uniform
+  - type: open
+    text: Which NATO cue stands for the letter "V"?
+    answers:
+      - Victor
+  - type: open
+    text: Calling out a "W" — what word should leave your mic?
+    answers:
+      - Whiskey
+      - Whisky
+  - type: open
+    text: What's the NATO phonetic for the letter "X"?
+    answers:
+      - X-ray
+      - Xray
+  - type: open
+    text: Note the phonetic word that indicates the letter "Y".
+    answers:
+      - Yankee
+  - type: open
+    text: Finally, which word confirms the letter "Z"?
+    answers:
+      - Zulu

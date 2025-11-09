@@ -1,0 +1,99 @@
+{
+  "@@locale": "en",
+  "appTitle": "Radio Licencja",
+  "topicListTitle": "Learning Topics",
+  "topicLoadError": "Unable to load topics.\n{error}",
+  "@topicLoadError": {
+    "description": "Error shown when topics fail to load",
+    "placeholders": {
+      "error": {
+        "description": "Error message returned while loading topics"
+      }
+    }
+  },
+  "topicListEmpty": "Add topic files to assets/topics to get started.",
+  "topicNoQuestions": "This topic has no questions yet. Add some to begin.",
+  "topicQuestionCount": "{count, plural, one {{count} question} other {{count} questions}}",
+  "@topicQuestionCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "description": "Number of questions in a topic"
+      }
+    }
+  },
+  "modeSheetTestTitle": "Take test",
+  "modeSheetTestSubtitle": "Standard quiz, questions asked once.",
+  "modeSheetLearningTitle": "Learning mode",
+  "modeSheetLearningSubtitle": "Retry incorrect questions until you master all.",
+  "quizNoQuestionsAvailable": "No questions available for this topic yet.",
+  "quizQuestionProgress": "Question {current} of {total}",
+  "@quizQuestionProgress": {
+    "placeholders": {
+      "current": {
+        "description": "Current question index"
+      },
+      "total": {
+        "description": "Total number of questions"
+      }
+    }
+  },
+  "quizLearningProgress": "Mastered {mastered} of {total}",
+  "@quizLearningProgress": {
+    "placeholders": {
+      "mastered": {
+        "description": "Number of learning questions already mastered"
+      },
+      "total": {
+        "description": "Total questions in learning mode"
+      }
+    }
+  },
+  "quizCorrectAnswerLabel": "Correct answer: {label}. {answer}",
+  "@quizCorrectAnswerLabel": {
+    "placeholders": {
+      "label": {
+        "description": "Answer label such as A"
+      },
+      "answer": {
+        "description": "Answer text"
+      }
+    }
+  },
+  "quizButtonSeeScore": "See score",
+  "quizButtonNextQuestion": "Next question",
+  "quizButtonCheckAnswer": "Check answer",
+  "quizButtonCorrect": "Correct!",
+  "quizAcceptedAnswersLabel": "Accepted answers: {answers}",
+  "@quizAcceptedAnswersLabel": {
+    "placeholders": {
+      "answers": {
+        "description": "Comma separated answers"
+      }
+    }
+  },
+  "quizWrongAnswerLabel": "Not quite right.",
+  "quizYourAnswerLabel": "Your answer",
+  "quizLearningCompleteTitle": "Learning session complete!",
+  "quizTestCompleteTitle": "Quiz complete!",
+  "quizLearningCompleteBody": "You mastered all {total} questions.",
+  "@quizLearningCompleteBody": {
+    "placeholders": {
+      "total": {
+        "description": "Total number of questions mastered"
+      }
+    }
+  },
+  "quizTestCompleteBody": "You answered {score} of {total} correctly.",
+  "@quizTestCompleteBody": {
+    "placeholders": {
+      "score": {
+        "description": "Number of correct answers"
+      },
+      "total": {
+        "description": "Total number of answers"
+      }
+    }
+  },
+  "quizBackToTopicsButton": "Back to topics"
+}

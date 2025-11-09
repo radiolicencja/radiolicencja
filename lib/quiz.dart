@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:yaml/yaml.dart';
 
+import 'l10n/app_localizations.dart';
+
 enum QuizQuestionType { multipleChoice, open }
 enum QuizMode { test, learning }
 
@@ -169,7 +171,7 @@ class _QuizScreenState extends State<QuizScreen> {
       return Scaffold(
         appBar: AppBar(title: Text(widget.topicTitle)),
         body: const Center(
-          child: Text('No questions available for this topic yet.'),
+          child: _NoQuestionsMessage(),
         ),
       );
     }
@@ -185,11 +187,14 @@ class _QuizScreenState extends State<QuizScreen> {
     );
   }
 
+  int get _masteredCount => _totalQuestions - _questions.length;
+
   Widget _buildQuestionView(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final question = _questions[_currentQuestionIndex];
     final progressText = widget.mode == QuizMode.learning
-        ? 'Mastered ${_totalQuestions - _questions.length} of $_totalQuestions'
-        : 'Question ${_currentQuestionIndex + 1} of ${_questions.length}';
+        ? l10n.quizLearningProgress(_masteredCount, _totalQuestions)
+        : l10n.quizQuestionProgress(_currentQuestionIndex + 1, _questions.length);
     final commonHeader = <Widget>[
       Text(
         progressText,
@@ -229,6 +234,10 @@ class _QuizScreenState extends State<QuizScreen> {
     BuildContext context,
     QuizQuestion question,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+    final nextButtonLabel = _currentQuestionIndex == _questions.length - 1
+        ? l10n.quizButtonSeeScore
+        : l10n.quizButtonNextQuestion;
     return Column(
       children: [
         ...question.answers.map(
@@ -242,7 +251,10 @@ class _QuizScreenState extends State<QuizScreen> {
         const SizedBox(height: 16),
         if (_selectedAnswer != null && !_selectedAnswer!.isCorrect) ...[
           Text(
-            'Correct answer: ${question.correctAnswer.label}. ${question.correctAnswer.text}',
+            l10n.quizCorrectAnswerLabel(
+              question.correctAnswer.label,
+              question.correctAnswer.text,
+            ),
             style: Theme.of(context)
                 .textTheme
                 .bodyMedium
@@ -253,11 +265,7 @@ class _QuizScreenState extends State<QuizScreen> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: _goToNextStep,
-              child: Text(
-                _currentQuestionIndex == _questions.length - 1
-                    ? 'See score'
-                    : 'Next question',
-              ),
+              child: Text(nextButtonLabel),
             ),
           ),
         ],
@@ -266,6 +274,10 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Widget _buildOpenQuestion(BuildContext context, QuizQuestion question) {
+    final l10n = AppLocalizations.of(context)!;
+    final nextButtonLabel = _currentQuestionIndex == _questions.length - 1
+        ? l10n.quizButtonSeeScore
+        : l10n.quizButtonNextQuestion;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -273,9 +285,9 @@ class _QuizScreenState extends State<QuizScreen> {
           controller: _openAnswerController,
           focusNode: _openAnswerFocus,
           readOnly: _openAnswerCorrect != null,
-          decoration: const InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: 'Your answer',
+          decoration: InputDecoration(
+            border: const OutlineInputBorder(),
+            labelText: l10n.quizYourAnswerLabel,
           ),
           onSubmitted: (_) {
             if (_openAnswerCorrect == null) {
@@ -288,31 +300,33 @@ class _QuizScreenState extends State<QuizScreen> {
         const SizedBox(height: 16),
         SizedBox(
           width: double.infinity,
-      child: ElevatedButton(
-        onPressed: _openAnswerCorrect == null
-            ? () => _submitOpenAnswer(question)
-            : (_openAnswerCorrect! ? null : _goToNextStep),
+          child: ElevatedButton(
+            onPressed: _openAnswerCorrect == null
+                ? () => _submitOpenAnswer(question)
+                : (_openAnswerCorrect! ? null : _goToNextStep),
             child: Text(
               _openAnswerCorrect == null
-                  ? 'Check answer'
+                  ? l10n.quizButtonCheckAnswer
                   : (_openAnswerCorrect!
-                      ? 'Correct!'
-                      : _currentQuestionIndex == _questions.length - 1
-                          ? 'See score'
-                          : 'Next question'),
+                      ? l10n.quizButtonCorrect
+                      : nextButtonLabel),
             ),
           ),
         ),
         if (_openAnswerCorrect == false) ...[
           const SizedBox(height: 16),
           Text(
-            'Not quite right.',
-            style:
-                Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.red),
+            l10n.quizWrongAnswerLabel,
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(color: Colors.red),
           ),
           const SizedBox(height: 8),
           Text(
-            'Accepted answers: ${question.acceptedAnswers.join(', ')}',
+            l10n.quizAcceptedAnswersLabel(
+              question.acceptedAnswers.join(', '),
+            ),
             style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
@@ -321,12 +335,13 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Widget _buildSummary(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final summaryTitle = widget.mode == QuizMode.learning
-        ? 'Learning session complete!'
-        : 'Quiz complete!';
+        ? l10n.quizLearningCompleteTitle
+        : l10n.quizTestCompleteTitle;
     final summaryBody = widget.mode == QuizMode.learning
-        ? 'You mastered all $_totalQuestions questions.'
-        : 'You answered $_score of $_totalQuestions correctly.';
+        ? l10n.quizLearningCompleteBody(_totalQuestions)
+        : l10n.quizTestCompleteBody(_score, _totalQuestions);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -351,7 +366,7 @@ class _QuizScreenState extends State<QuizScreen> {
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Back to topics'),
+            child: Text(l10n.quizBackToTopicsButton),
           ),
         ),
       ],
@@ -394,6 +409,19 @@ class _AnswerOption extends StatelessWidget {
                 ? const Icon(Icons.close, color: Colors.red)
                 : null,
       ),
+    );
+  }
+}
+
+class _NoQuestionsMessage extends StatelessWidget {
+  const _NoQuestionsMessage();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return Text(
+      l10n.quizNoQuestionsAvailable,
+      textAlign: TextAlign.center,
     );
   }
 }

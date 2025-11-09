@@ -1,0 +1,110 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for English (`en`).
+class AppLocalizationsEn extends AppLocalizations {
+  AppLocalizationsEn([String locale = 'en']) : super(locale);
+
+  @override
+  String get appTitle => 'Radio Licencja';
+
+  @override
+  String get topicListTitle => 'Learning Topics';
+
+  @override
+  String topicLoadError(Object error) {
+    return 'Unable to load topics.\n$error';
+  }
+
+  @override
+  String get topicListEmpty => 'Add topic files to assets/topics to get started.';
+
+  @override
+  String get topicNoQuestions => 'This topic has no questions yet. Add some to begin.';
+
+  @override
+  String topicQuestionCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions',
+      one: '$count question',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get modeSheetTestTitle => 'Take test';
+
+  @override
+  String get modeSheetTestSubtitle => 'Standard quiz, questions asked once.';
+
+  @override
+  String get modeSheetLearningTitle => 'Learning mode';
+
+  @override
+  String get modeSheetLearningSubtitle => 'Retry incorrect questions until you master all.';
+
+  @override
+  String get quizNoQuestionsAvailable => 'No questions available for this topic yet.';
+
+  @override
+  String quizQuestionProgress(Object current, Object total) {
+    return 'Question $current of $total';
+  }
+
+  @override
+  String quizLearningProgress(Object mastered, Object total) {
+    return 'Mastered $mastered of $total';
+  }
+
+  @override
+  String quizCorrectAnswerLabel(Object label, Object answer) {
+    return 'Correct answer: $label. $answer';
+  }
+
+  @override
+  String get quizButtonSeeScore => 'See score';
+
+  @override
+  String get quizButtonNextQuestion => 'Next question';
+
+  @override
+  String get quizButtonCheckAnswer => 'Check answer';
+
+  @override
+  String get quizButtonCorrect => 'Correct!';
+
+  @override
+  String quizAcceptedAnswersLabel(Object answers) {
+    return 'Accepted answers: $answers';
+  }
+
+  @override
+  String get quizWrongAnswerLabel => 'Not quite right.';
+
+  @override
+  String get quizYourAnswerLabel => 'Your answer';
+
+  @override
+  String get quizLearningCompleteTitle => 'Learning session complete!';
+
+  @override
+  String get quizTestCompleteTitle => 'Quiz complete!';
+
+  @override
+  String quizLearningCompleteBody(Object total) {
+    return 'You mastered all $total questions.';
+  }
+
+  @override
+  String quizTestCompleteBody(Object score, Object total) {
+    return 'You answered $score of $total correctly.';
+  }
+
+  @override
+  String get quizBackToTopicsButton => 'Back to topics';
+}

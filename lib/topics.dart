@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yaml/yaml.dart';
 
+import 'l10n/app_localizations.dart';
 import 'quiz.dart';
 
 class TopicListScreen extends StatefulWidget {
@@ -23,10 +24,11 @@ class _TopicListScreenState extends State<TopicListScreen> {
   }
 
   Future<void> _handleTopicTap(BuildContext context, Topic topic) async {
+    final l10n = AppLocalizations.of(context)!;
     if (!topic.hasQuestions) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('This topic has no questions yet. Add some to begin.'),
+        SnackBar(
+          content: Text(l10n.topicNoQuestions),
         ),
       );
       return;
@@ -41,14 +43,14 @@ class _TopicListScreenState extends State<TopicListScreen> {
             children: [
               ListTile(
                 leading: const Icon(Icons.quiz_outlined),
-                title: const Text('Take test'),
-                subtitle: const Text('Standard quiz, questions asked once.'),
+                title: Text(l10n.modeSheetTestTitle),
+                subtitle: Text(l10n.modeSheetTestSubtitle),
                 onTap: () => Navigator.of(sheetContext).pop(QuizMode.test),
               ),
               ListTile(
                 leading: const Icon(Icons.school_outlined),
-                title: const Text('Learning mode'),
-                subtitle: const Text('Retry incorrect questions until you master all.'),
+                title: Text(l10n.modeSheetLearningTitle),
+                subtitle: Text(l10n.modeSheetLearningSubtitle),
                 onTap: () => Navigator.of(sheetContext).pop(QuizMode.learning),
               ),
               const SizedBox(height: 8),
@@ -72,9 +74,10 @@ class _TopicListScreenState extends State<TopicListScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Learning Topics'),
+        title: Text(l10n.topicListTitle),
       ),
       body: FutureBuilder<List<Topic>>(
         future: _topicsFuture,
@@ -87,7 +90,7 @@ class _TopicListScreenState extends State<TopicListScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(24),
                 child: Text(
-                  'Unable to load topics.\n${snapshot.error}',
+                  l10n.topicLoadError('${snapshot.error ?? ''}'),
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
@@ -97,7 +100,7 @@ class _TopicListScreenState extends State<TopicListScreen> {
           final topics = snapshot.data ?? const <Topic>[];
           if (topics.isEmpty) {
             return const Center(
-              child: Text('Add topic files to assets/topics to get started.'),
+              child: _EmptyTopicsMessage(),
             );
           }
           return ListView.separated(
@@ -118,6 +121,16 @@ class _TopicListScreenState extends State<TopicListScreen> {
   }
 }
 
+class _EmptyTopicsMessage extends StatelessWidget {
+  const _EmptyTopicsMessage();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return Text(l10n.topicListEmpty);
+  }
+}
+
 class TopicCard extends StatelessWidget {
   const TopicCard({super.key, required this.topic, this.onTap});
 
@@ -126,6 +139,10 @@ class TopicCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final subtitle = topic.hasQuestions
+        ? l10n.topicQuestionCount(topic.questions.length)
+        : l10n.topicNoQuestions;
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: InkWell(
@@ -170,9 +187,7 @@ class TopicCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      topic.hasQuestions
-                          ? '${topic.questions.length} questions'
-                          : 'No questions yet',
+                      subtitle,
                       style: Theme.of(context)
                           .textTheme
                           .labelMedium
