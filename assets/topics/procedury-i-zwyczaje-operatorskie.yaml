@@ -1,0 +1,455 @@
+title: "PROCEDURY I ZWYCZAJE OPERATORSKIE"
+slug: procedury-i-zwyczaje-operatorskie
+description: "Dobre praktyki pracy operatorskiej."
+image: "assets/images/procedury-i-zwyczaje-operatorskie.png"
+questions:
+  - text: "Co oznacza wg kodu Q symbol QRG?"
+    answers:
+      - "włączam większą moc nadajnika"
+      - "moja częstotliwość jest…"
+      - "siła twoich sygnałów waha się"
+    correct_index: 1
+  - text: "Czy operator może przejść na nadawanie niezwłocznie po wybraniu częstotliwości pracy?"
+    answers:
+      - "może od razu nadawać"
+      - "może nadawać lecz ze zredukowaną mocą"
+      - "najpierw powinien upewnić się iż częstotliwość jest wolna i nie będzie zakłócał pracy innych użytkowników"
+    correct_index: 2
+  - text: "Kiedy wybierzemy częstotliwość nadawczą na naszym urządzeniu, jakie czynności należą do dobrej praktyki operatorskiej?"
+    answers:
+      - "upewnić się czy wybrana częstotliwość oraz użyta moc jest w zakresie uprawnień naszego pozwolenia"
+      - "znajduję się w miejscu zgodnym z przeznaczeniem wg. band planu IARU, oraz sprawdzam czy częstotliwość jest wolna i nie spowoduje interferencji z innymi użytkownikami"
+      - "wszystkie powyżej"
+    correct_index: 2
+  - text: "Jaki jest prawidłowy sposób wywołania stacji na przemienniku, której znak wywoławczy jest nam znany?"
+    answers:
+      - "zawołanie \"break\" a następnie znak tej stacji"
+      - "zawołanie znakiem wołanej stacji a następnie swoim"
+      - "zawołanie swoim znakiem a następnie znakiem stacji wołanej"
+    correct_index: 1
+  - text: "Jaki jest zalecany sposób dołączenia do trwającej już korespondencji?"
+    answers:
+      - "podaniu w przerwie nadawania innych korespondentów swojego znaku"
+      - "powiedzeniu „Breako Breako”"
+      - "powiedzeniu „CQ”, a następnie znak dowolnej stacji"
+    correct_index: 0
+  - text: "Co należy do dobrej praktyki amatorskiej, jeśli propagacja zmienia się podczas trwania łączności i zauważysz zakłócenia ze strony innych stacji na swojej częstotliwości?"
+    answers:
+      - "powiedz stacjom powodującym zakłócenia, aby zmieniły częstotliwość"
+      - "spróbować rozwiązać problem zakłóceń z innymi stacjami w sposób akceptowalny dla obu stron z poszanowaniem norm społecznych"
+      - "zwiększ moc, aby nasz sygnał był silniejszy od zakłócającego"
+    correct_index: 1
+  - text: "Co należy zrobić w pierwszej kolejności, jeśli komunikujesz się z inną stacją amatorską i słyszysz stację w niebezpieczeństwie?"
+    answers:
+      - "kontynuować łączność, ponieważ byłeś pierwszy na częstotliwości"
+      - "potwierdzić że słyszymy stację wołającą o pomoc oraz ustalić jakiej pomocy potrzebuje"
+      - "zmienić częstotliwość na inną"
+    correct_index: 1
+  - text: "Która wstęga boczna jest najczęściej używana w komunikacji głosowej na częstotliwościach 14 MHz lub wyższych?"
+    answers:
+      - "górna wstęga boczna"
+      - "dolna wstęga boczna"
+      - "obie wstęgi boczne"
+    correct_index: 0
+  - text: "Która wstęga boczna jest najczęściej używana w komunikacji głosowej w pasmach 160 m, 80 m oraz 40 m?"
+    answers:
+      - "górna wstęga boczna"
+      - "dolna wstęga boczna"
+      - "obie wstęgi boczne"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QSY?"
+    answers:
+      - "przejdź na częstotliwość, zmień częstotliwość"
+      - "do usłyszenia na innej częstotliwości"
+      - "mam uszkodzoną antenę"
+    correct_index: 0
+  - text: "Co oznacza wg kodu Q symbol QRM?"
+    answers:
+      - "jestem czynny w eterze od miesiąca"
+      - "odbieram twoje sygnały bardzo dobrze zmniejsz moc"
+      - "mam zakłócenia od innych stacji"
+    correct_index: 2
+  - text: "Co oznacza wg kodu Q symbol QRN?"
+    answers:
+      - "jestem czynny w eterze od niedawna"
+      - "mam zakłócenia atmosferyczne"
+      - "pracuję na radiostacji tylko w niedzielę"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QSB?"
+    answers:
+      - "siła twoich sygnałów waha się"
+      - "w okolicy jest burza, wyłączam radiostację"
+      - "używam anteny dookólnej"
+    correct_index: 0
+  - text: "Co oznacza wg kodu Q symbol QRV?"
+    answers:
+      - "o której godzinie rozpoczęliśmy łączność"
+      - "jestem gotów do pracy, jestem czynny w eterze"
+      - "proszę powtórzyć ostatnią relację"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QTH?"
+    answers:
+      - "nie mam ochoty z tobą dalej rozmawiać"
+      - "przekazuję wiadomość od…"
+      - "moje położenie geograficzne jest…"
+    correct_index: 2
+  - text: "Co oznacza wg kodu Q symbol QRP?"
+    answers:
+      - "nadawaj powoli"
+      - "zmniejsz moc, zmniejszam moc"
+      - "powtórz swój znak wywoławczy"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QTC?"
+    answers:
+      - "wyłączam stację"
+      - "na jaką częstotliwość mam się przestroić"
+      - "mam dla ciebie pilną wiadomość"
+    correct_index: 2
+  - text: "Co oznacza wg kodu Q symbol QSO?"
+    answers:
+      - "moje położenie geograficzne jest…"
+      - "łączność, mam łączność"
+      - "siła twoich sygnałów waha się"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QSL?"
+    answers:
+      - "potwierdzam odbiór / przyślę kartę potwierdzającą łączność"
+      - "nadawaj szybciej"
+      - "słucham na częstotliwości"
+    correct_index: 0
+  - text: "Co oznacza skrót slangu radioamatorskiego RX?"
+    answers:
+      - "antena pionowa"
+      - "odbiornik"
+      - "klucz elektroniczny"
+    correct_index: 1
+  - text: "Co oznacza skrót slangu radioamatorskiego Unlis?"
+    answers:
+      - "nielicencjonowany nadawca"
+      - "zakłócenia w odbiorze telewizji"
+      - "zawody w łowach na lisa"
+    correct_index: 0
+  - text: "Co oznacza skrót slangu radioamatorskiego YL?"
+    answers:
+      - "antena z linki miedzianej"
+      - "czas uniwersalny"
+      - "panna - młoda pani"
+    correct_index: 2
+  - text: "Co oznacza skrót slangu radioamatorskiego RPT?"
+    answers:
+      - "proszę powtórzyć, powtórzę, powtarzam"
+      - "proszę"
+      - "przechodzę na inny kanał"
+    correct_index: 0
+  - text: "Kiedy należy podawać raport o słyszalności?"
+    answers:
+      - "na początku łączności i na życzenie korespondenta"
+      - "w odstępach 5-10 minut"
+      - "po każdym przekazaniu mikrofonu"
+    correct_index: 0
+  - text: "Czy od razu, po zdaniu egzaminu na pozwolenie radioamatorskie można samodzielnie obsługiwać stację amatorską?"
+    answers:
+      - "można, ale tylko pod nadzorem radioamatora posiadającego pozwolenie radiowe"
+      - "można, w określonych w pozwoleniu radiowym zakresach częstotliwości"
+      - "nie można, ponieważ do obsługi stacji amatorskiej upoważnia jedynie pozwolenie radiowe"
+    correct_index: 2
+  - text: "Co to jest znak wywoławczy?"
+    answers:
+      - "jest to symbol określający typ (model) stacji amatorskiej"
+      - "jest to hasło pozwalające wywołać konkretnego rozmówcę"
+      - "jest to kombinacja liter i cyfr stanowiąca unikalny w skali światowej identyfikator stacji amatorskiej"
+    correct_index: 2
+  - text: "Czym jest LOG?"
+    answers:
+      - "jest to dziennik stacji amatorskiej zawierający informacje o korespondencji z innymi radiostacjami amatorskimi"
+      - "jest to informacja o procedurach obowiązujących podczas łączności z innymi stacjami"
+      - "jest to informacja o kontroli radiostacji przez inspektorów UKE"
+    correct_index: 0
+  - text: "Czy prowadzenie dziennika łączności jest obowiązkowe?"
+    answers:
+      - "jest to podstawowy obowiązek każdego radioamatora"
+      - "prowadzenie dziennika łączności nie jest obowiązkowe, lecz wskazane"
+      - "prowadzenie dziennika łączności może być nakazane jako zalecenie pokontrolne inspektorów ochrony środowiska"
+    correct_index: 1
+  - text: "Co znaczy określenie czas uniwersalny UTC?"
+    answers:
+      - "czas odpowiadający południkowi zerowemu (GMT), stosowany przez radioamatorów do odnotowania w logu godz. łączności"
+      - "czas w którym nie należy nawiązywać QSO"
+      - "czas w którym można nawiązywać łączności z krajami europejskimi"
+    correct_index: 0
+  - text: "Co to jest międzynarodowy kod Q?"
+    answers:
+      - "zbiór symboli składających się z 3 liter, zaczynających się zawsze na literę Q, którym przypisane są proste zdanie lub słowa"
+      - "symbole składające się z litery Q i 2-3 cyfr określających jakość odbieranego sygnału"
+      - "wykaz zawierający prefiksy znaków wywoławczych wg ITU"
+    correct_index: 0
+  - text: "Do czego służy międzynarodowy kod Q?"
+    answers:
+      - "podania informacji o czasie rozpoczęcia łączności"
+      - "skrócenia czasu nadawania informacji"
+      - "informowania o sile odbieranego sygnału radiowego"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QRL?"
+    answers:
+      - "źle się czuję, odezwę się później"
+      - "jestem zajęty, proszę nie przeszkadzać"
+      - "do zobaczenia latem"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QRT?"
+    answers:
+      - "która jest godzina"
+      - "kończę nadawanie, wyłączam stację"
+      - "nadawaj wolniej"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QRZ?"
+    answers:
+      - "zmień częstotliwość na zapasową"
+      - "kto mnie woła"
+      - "jestem zajęty, proszę nie przeszkadzać"
+    correct_index: 1
+  - text: "Co oznacza wg kodu Q symbol QRX?"
+    answers:
+      - "proszę czekać"
+      - "nadawaj wolniej"
+      - "mam zakłócenia od innych stacji"
+    correct_index: 0
+  - text: "Co oznacza wg kodu Q symbol QRO?"
+    answers:
+      - "nic dla ciebie nie mam"
+      - "zwiększ moc, zwiększam moc"
+      - "przerwij nadawanie, kończę pracę"
+    correct_index: 1
+  - text: "Który z poniższych kodów Q oznacza: Moja częstotliwość jest…?"
+    answers:
+      - "QRJ"
+      - "QRG"
+      - "QRK"
+    correct_index: 1
+  - text: "Który z poniższych kodów Q oznacza: Przejdź na częstotliwość, zmień częstotliwość?"
+    answers:
+      - "QSY"
+      - "QTR"
+      - "QSA"
+    correct_index: 0
+  - text: "Który z poniższych kodów Q oznacza: Mam zakłócenia od innych stacji?"
+    answers:
+      - "QWO"
+      - "QQQ"
+      - "QRM"
+    correct_index: 2
+  - text: "Który z poniższych kodów Q oznacza: Siła twoich sygnałów waha się?"
+    answers:
+      - "QSB"
+      - "QAZ"
+      - "QRY"
+    correct_index: 0
+  - text: "Który z poniższych kodów Q oznacza: Jestem gotów do pracy, jestem czynny w eterze?"
+    answers:
+      - "QWX"
+      - "QRV"
+      - "QRU"
+    correct_index: 1
+  - text: "Który z poniższych kodów Q oznacza: Moje położenie geograficzne jest…?"
+    answers:
+      - "QLP"
+      - "QRG"
+      - "QTH"
+    correct_index: 2
+  - text: "Który z poniższych kodów Q oznacza: Zmniejsz moc, zmniejszam moc?"
+    answers:
+      - "QUB"
+      - "QRA"
+      - "QRP"
+    correct_index: 2
+  - text: "Który z poniższych kodów Q oznacza: Mam dla ciebie telegram, wiadomość?"
+    answers:
+      - "QRT"
+      - "QTC"
+      - "QSV"
+    correct_index: 1
+  - text: "Który z poniższych kodów Q oznacza: Łączność, mam łączność?"
+    answers:
+      - "QSL"
+      - "QSO"
+      - "QRS"
+    correct_index: 1
+  - text: "Który z poniższych kodów Q oznacza: Potwierdzam odbiór, przyślę kartę potwierdzającą łączność?"
+    answers:
+      - "QSL"
+      - "QSA"
+      - "QRT"
+    correct_index: 0
+  - text: "Co oznaczają skróty slangu radioamatorskiego: BAND; CFM?"
+    answers:
+      - "pasmo; potwierdzam"
+      - "zakres; godzina"
+      - "raport; popołudnie"
+    correct_index: 0
+  - text: "Co oznaczają skróty slangu radioamatorskiego: BK; CALL?"
+    answers:
+      - "później; kalibrator"
+      - "przerwa; znak wywoławczy"
+      - "stop; odebrałem wszystko"
+    correct_index: 1
+  - text: "Co oznaczają skróty slangu radioamatorskiego: BEST; DX?"
+    answers:
+      - "daleki; niezły"
+      - "najlepszy; daleka łączność"
+      - "dobry; szybki"
+    correct_index: 1
+  - text: "Co oznaczają skróty slangu radioamatorskiego: BCI; BOX?"
+    answers:
+      - "zakłócenia odbioru radiowego; skrytka pocztowa"
+      - "zakłócenia od sieciowe; radiolatarnia amatorska"
+      - "podaj dokładny czas; zmieniam kanał radiowy"
+    correct_index: 0
+  - text: "Co oznaczają skróty slangu radioamatorskiego: OK; NAME?"
+    answers:
+      - "stary, nie przeszkadzaj; moje nazwisko jest"
+      - "wszystko w porządku; imię"
+      - "przestrajam się; podaj adres"
+    correct_index: 1
+  - text: "Co oznaczają skróty slangu radioamatorskiego: SWR; RX?"
+    answers:
+      - "pasmo w metrach; antena pionowa"
+      - "współczynnik fali stojącej; odbiornik"
+      - "nasłuchowiec; klucz elektroniczny"
+    correct_index: 1
+  - text: "Które z poniższych skrótów slangu radioamatorskiego oznaczają: Panna, młoda pani; czas uniwersalny?"
+    answers:
+      - "YL; UTC"
+      - "XYL; UT"
+      - "LY; TRO"
+    correct_index: 0
+  - text: "Co oznaczają skróty slangu radioamatorskiego: PSE; RPT?"
+    answers:
+      - "proszę; powtórzyć, powtórzę, powtarzam"
+      - "proszę; zmieniam pasmo o 10 kHz"
+      - "przechodzę na inny kanał; raport podam na koniec łączności"
+    correct_index: 0
+  - text: "Co oznaczają skróty slangu radioamatorskiego: 55; UTC?"
+    answers:
+      - "pozdrawiam; czas ukraiński"
+      - "ściskam dłoń; mam pilną wiadomość"
+      - "ściskam dłoń; czas uniwersalny"
+    correct_index: 2
+  - text: "Co oznaczają skróty slangu radioamatorskiego: LOG; DIRECT?"
+    answers:
+      - "długa antena; dyrektor"
+      - "dziennik pracy stacji; bezpośrednio"
+      - "długi; bezpośredni kontakt"
+    correct_index: 1
+  - text: "Co to jest raport R S stosowany podczas łączności fonicznych?"
+    answers:
+      - "informacja o stanie technicznym radiostacji"
+      - "informacja o stanie pogody przekazana w postaci zakodowanej"
+      - "informacja o jakości odbieranego sygnału radiowego - czytelności i sił sygnału wyrażana w postaci cyfr"
+    correct_index: 2
+  - text: "Co to jest raport R S T stosowany podczas łączności telegraficznych?"
+    answers:
+      - "informacja o stanie technicznym radiostacji"
+      - "informacja o jakości odbieranego sygnału radiowego - czytelności, siły i tonu akustycznego sygnału"
+      - "informacja o stanie pogody"
+    correct_index: 1
+  - text: "Co oznaczają w raporcie o słyszalności i jakości sygnałów korespondenta litery R S"
+    answers:
+      - "R - jakość sygnału, S- słyszalność"
+      - "R - stabilność sygnału, S- siła sygnału"
+      - "R - czytelność, S - siła sygnału"
+    correct_index: 2
+  - text: "Co oznaczają w raporcie o słyszalności i jakości sygnałów korespondenta litery R S T?"
+    answers:
+      - "R - czytelność, S - siła sygnału, T - ton sygnału"
+      - "R - jakość sygnału, S - słyszalność, T - częstotliwość"
+      - "R - stabilność sygnału, S - siła sygnału, T - ton sygnału"
+    correct_index: 0
+  - text: "Jaka jest skala czytelności i skala siły sygnału w raporcie R S?"
+    answers:
+      - "skala czytelności 1-5 i skala siły sygnału 1-9"
+      - "skala czytelności 1-9 i skala siły sygnału 1-5"
+      - "skala czytelności 0-5 i skala siły sygnału 0-9"
+    correct_index: 0
+  - text: "Co oznacza w łączności fonicznej raport 59?"
+    answers:
+      - "dobrze czytelny, bardzo silny sygnał"
+      - "czytelny, silny sygnał"
+      - "słaby, czytelny z trudnościami sygnał"
+    correct_index: 0
+  - text: "Co oznacza w łączności fonicznej raport 43?"
+    answers:
+      - "dobrze czytelny, bardzo silny sygnał"
+      - "czytelny, słaby sygnał"
+      - "czytelny z trudnościami, słaby sygnał"
+    correct_index: 1
+  - text: "Co oznacza w łączności telegraficznej raport 599?"
+    answers:
+      - "czytelny, silny sygnał, dobry ton"
+      - "dobrze czytelny, bardzo silny sygnał, bardzo dobry ton"
+      - "czytelny z trudnościami, sygnał słaby, dobry ton"
+    correct_index: 1
+  - text: "Co oznacza w łączności telegraficznej raport 438?"
+    answers:
+      - "dobrze czytelny, bardzo silny sygnał, dobry ton"
+      - "czytelny z trudnościami, słaby sygnał, bardzo dobry ton"
+      - "czytelny, słaby sygnał, dobry ton sygnału"
+    correct_index: 2
+  - text: "Co to jest okręg wywoławczy?"
+    answers:
+      - "obszar, na którym pracuje maksimum 1000 radiostacji amatorskich"
+      - "obszar odpowiadający podziałowi terytorialnemu Polski na województwa"
+      - "zwyczajowo przyjęty obszar w granicach jednego lub dwóch województw"
+    correct_index: 2
+  - text: "Co jest bandplan IARU?"
+    answers:
+      - "umowny podział zakresów częstotliwości na segmenty przeznaczone dla poszczególnych rodzajów emisji lub kanały robocze, zalecany przez IARU"
+      - "podział częstotliwości osobno nadawczych i odbiorczych"
+      - "plan przydziału częstotliwości dla poszczególnych krajów"
+    correct_index: 0
+  - text: "Transmisja prowadzona w sposób sprzeczny z bandplanem IARU jest:"
+    answers:
+      - "Naruszeniem prawa i może powodować utratę pozwolenia i konsekwencje karne"
+      - "Jest całkowicie dopuszczalna, bandplan IARU nie ma współcześnie poważnego znaczenia"
+      - "Jest dopuszczalna ale stanowi naruszenie dobrych obyczajów panujących wśród krótkofalowców"
+    correct_index: 2
+  - text: "Czy na całym świecie obowiązuje ten sam bandplan wydawany przez IARU?"
+    answers:
+      - "tak, krótkofalowcy na całym świecie pracują na tych samych częstotliwościach"
+      - "nie, każdy kraj wydaje swój własny bandplan na podstawie zaleceń IARU"
+      - "IARU zaleca odrębny bandplan dla każdego z trzech regionów z uwzględnieniem dla danego regionu zakresu częstotliwości"
+    correct_index: 2
+  - text: "Bandplan IARU jest:"
+    answers:
+      - "zaleceniem IARU"
+      - "przepisem powszechnie obowiązującym"
+      - "wydawaną przez IARU dyrektywą wprowadzaną do porządku krajowego w Krajowej Tablicy Przeznaczeń Częstotliwości"
+    correct_index: 0
+  - text: "Słyszysz międzynarodową łączność związaną z katastrofą, koordynację działań ratowniczych lub podobne łączności. Co zrobisz?"
+    answers:
+      - "Zaraportujesz niedozwolone użycie pasm amatorskich do koordynatora monitoringu IARU,"
+      - "Zrobisz zwykłą łączność oczekując raportu i typowych informacji,"
+      - "Nie przeszkadzasz, słuchasz dalej. Jeśli jest to uzasadnione - możesz dołączyć do pomocy przy organizacji łączności"
+    correct_index: 2
+  - text: "Znak stacji amatorskiej jest niepowtarzalny w skali"
+    answers:
+      - "świata"
+      - "regionu IARU"
+      - "kraju"
+    correct_index: 0
+  - text: "Pewien początkujący krótkofalowiec zakupił tani radiotelefon. Dość szybko spostrzegł, że wskaźnik siły sygnału działa w nim zupełnie nieprawidłowo, a koledzy proszą o Raport R/S. Co powinien zrobić w tej sytuacji?"
+    answers:
+      - "bezwzględnie naprawić radiotelefon lub dokupić przystawkę mierzącą siłę sygnału"
+      - "Może podawać raporty \"na ucho\" i poinformować o tym korespondenta"
+      - "nie ma żadnego powodu żeby podawać korespondentowi siłę jego sygnału jeśli słyszymy go poprawnie."
+    correct_index: 1
+  - text: "Stacja z Włoch woła \"CQ DX, CQ DX beaming Pacific Ocean\". Co powinien w tej sytuacji zrobić polski operator?"
+    answers:
+      - "natychmiast wołać!"
+      - "napisać wiadomość przy pomocy DX klastra z prośbą do stacji włoskiej o obrócenie anten"
+      - "poszukać innych chętnych do łączności gdyż ta stacja nie oczekuje teraz łączności z Europy"
+    correct_index: 2
+  - text: "Czy używanie znaków wywoławczych podczas łączności jest obowiązkowe?"
+    answers:
+      - "Nie, ale jest to ogólnie przyjęty dobry zwyczaj, pozytywnie świadczący o operatorze, pozwalający potwierdzić przeprowadzoną łączność"
+      - "Tak, transmisja sygnałów bez identyfikacji jest zabroniona"
+      - "Nie, można nie podawać znaków wywoławczych w krótkich łącznościach, beż żadnych konsekwencji"
+    correct_index: 1

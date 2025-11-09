@@ -1,113 +1,113 @@
-title: NATO Phonetic Alphabet
-description: Practice every ICAO/NATO phonetic code word from A through Z.
+title: Alfabet fonetyczny NATO
+description: Przećwicz każde słowo kodowe ICAO/NATO od litery A do Z.
 slug: nato-phonetic
 image: assets/images/topic_radio.png
 questions:
   - type: open
-    text: How do you spell the letter "A" over the radio using the NATO alphabet?
+    text: Jakim słowem nadajesz literę "A" w alfabecie NATO?
     answers:
       - Alpha
       - Alfa
   - type: open
-    text: What's the official code word for the letter "B"?
+    text: Jak brzmi oficjalne słowo kodowe dla litery "B"?
     answers:
       - Bravo
   - type: open
-    text: When calling out "C", which NATO word should you use?
+    text: Jakiego słowa używasz, wymawiając literę "C" według standardu NATO?
     answers:
       - Charlie
   - type: open
-    text: Give the NATO phonetic word that stands for the letter "D".
+    text: Podaj słowo fonetyczne NATO odpowiadające literze "D".
     answers:
       - Delta
   - type: open
-    text: You're transmitting the letter "E" — what word do you say?
+    text: Jakiego słowa używasz podczas nadawania litery "E"?
     answers:
       - Echo
   - type: open
-    text: Name the NATO phonetic call sign for the letter "F".
+    text: Jakie hasło fonetyczne reprezentuje literę "F"?
     answers:
       - Foxtrot
   - type: open
-    text: What code word broadcasts the letter "G"?
+    text: Jakim słowem zgłaszasz literę "G" w łączności wojskowej?
     answers:
       - Golf
   - type: open
-    text: Radioing an "H"? Type the matching NATO word.
+    text: Jakiej nazwy używasz przy literze "H" w alfabecie ICAO/NATO?
     answers:
       - Hotel
   - type: open
-    text: For the letter "I", which phonetic cue is correct?
+    text: Jak brzmi właściwe słowo fonetyczne dla litery "I"?
     answers:
       - India
   - type: open
-    text: What would you say for the letter "J" on a NATO channel?
+    text: Jakiego słowa użyjesz dla litery "J" na kanale NATO?
     answers:
       - Juliett
       - Juliet
   - type: open
-    text: Identify the NATO word linked to the letter "K".
+    text: Jak identyfikujesz literę "K" w alfabecie fonetycznym?
     answers:
       - Kilo
   - type: open
-    text: Spell the letter "L" using the standard phonetic alphabet.
+    text: Jak wymawiasz literę "L" według standardu fonetycznego?
     answers:
       - Lima
   - type: open
-    text: What's the proper NATO pronunciation for the letter "M"?
+    text: Jakie słowo odpowiada literze "M" w alfabecie NATO?
     answers:
       - Mike
   - type: open
-    text: Share the NATO word for the letter "N".
+    text: Jak brzmi kod NATO dla litery "N"?
     answers:
       - November
   - type: open
-    text: When referencing the letter "O", which code word applies?
+    text: Jakie słowo stosujesz przy literze "O"?
     answers:
       - Oscar
   - type: open
-    text: Provide the NATO phonetic equivalent of the letter "P".
+    text: Jak brzmi fonetyczny odpowiednik litery "P"?
     answers:
       - Papa
   - type: open
-    text: The letter "Q" maps to which NATO alphabet word?
+    text: Podaj słowo kodowe powiązane z literą "Q".
     answers:
       - Quebec
   - type: open
-    text: State the call sign for the letter "R".
+    text: Jakiego wywołania użyjesz dla litery "R"?
     answers:
       - Romeo
   - type: open
-    text: How do operators pronounce the letter "S" per NATO standards?
+    text: Jak operatorzy wymawiają literę "S" zgodnie z alfabetem NATO?
     answers:
       - Sierra
   - type: open
-    text: Enter the NATO alphabet word matched to "T".
+    text: Jakie słowo w alfabecie NATO odpowiada literze "T"?
     answers:
       - Tango
   - type: open
-    text: What is the correct word for "U" when spelling by radio?
+    text: Jak poprawnie nazwać literę "U" w łączności radiowej?
     answers:
       - Uniform
   - type: open
-    text: Which NATO cue stands for the letter "V"?
+    text: Jakie słowo sygnalizuje literę "V"?
     answers:
       - Victor
   - type: open
-    text: Calling out a "W" — what word should leave your mic?
+    text: Jakiego słowa używasz, wywołując literę "W"?
     answers:
       - Whiskey
       - Whisky
   - type: open
-    text: What's the NATO phonetic for the letter "X"?
+    text: Jak brzmi fonetyczne słowo dla litery "X"?
     answers:
       - X-ray
       - Xray
   - type: open
-    text: Note the phonetic word that indicates the letter "Y".
+    text: Jakie słowo oznacza literę "Y" w alfabecie NATO?
     answers:
       - Yankee
   - type: open
-    text: Finally, which word confirms the letter "Z"?
+    text: Jakim słowem potwierdzasz literę "Z"?
     answers:
       - Zulu
