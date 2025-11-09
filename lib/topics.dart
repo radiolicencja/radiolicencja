@@ -22,7 +22,7 @@ class _TopicListScreenState extends State<TopicListScreen> {
     _topicsFuture = TopicRepository.loadTopics();
   }
 
-  void _handleTopicTap(BuildContext context, Topic topic) {
+  Future<void> _handleTopicTap(BuildContext context, Topic topic) async {
     if (!topic.hasQuestions) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -31,11 +31,40 @@ class _TopicListScreenState extends State<TopicListScreen> {
       );
       return;
     }
+    final mode = await showModalBottomSheet<QuizMode>(
+      context: context,
+      showDragHandle: true,
+      builder: (sheetContext) {
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                leading: const Icon(Icons.quiz_outlined),
+                title: const Text('Take test'),
+                subtitle: const Text('Standard quiz, questions asked once.'),
+                onTap: () => Navigator.of(sheetContext).pop(QuizMode.test),
+              ),
+              ListTile(
+                leading: const Icon(Icons.school_outlined),
+                title: const Text('Learning mode'),
+                subtitle: const Text('Retry incorrect questions until you master all.'),
+                onTap: () => Navigator.of(sheetContext).pop(QuizMode.learning),
+              ),
+              const SizedBox(height: 8),
+            ],
+          ),
+        );
+      },
+    );
+    if (mode == null) return;
+    if (!context.mounted) return;
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuizScreen(
           topicTitle: topic.title,
           questions: topic.questions,
+          mode: mode,
         ),
       ),
     );

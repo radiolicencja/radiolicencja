@@ -1,17 +1,22 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:yaml/yaml.dart';
 
 enum QuizQuestionType { multipleChoice, open }
+enum QuizMode { test, learning }
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({
     super.key,
     required this.topicTitle,
     required this.questions,
+    required this.mode,
   });
 
   final String topicTitle;
   final List<QuizQuestion> questions;
+  final QuizMode mode;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -19,6 +24,7 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen> {
   late final List<QuizQuestion> _questions;
+  late final int _totalQuestions;
   int _currentQuestionIndex = 0;
   int _score = 0;
   QuizAnswer? _selectedAnswer;
@@ -26,11 +32,13 @@ class _QuizScreenState extends State<QuizScreen> {
   bool? _openAnswerCorrect;
   final TextEditingController _openAnswerController = TextEditingController();
   final FocusNode _openAnswerFocus = FocusNode();
+  final Random _random = Random();
 
   @override
   void initState() {
     super.initState();
     _questions = List<QuizQuestion>.from(widget.questions)..shuffle();
+    _totalQuestions = _questions.length;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _ensureFocusForCurrentQuestion();
     });
@@ -76,6 +84,16 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   void _goToNextStep() {
+    if (widget.mode == QuizMode.learning) {
+      final wasCorrect = _currentQuestionWasAnsweredCorrectly;
+      setState(() {
+        _advanceLearningQueue(wasCorrect);
+      });
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _ensureFocusForCurrentQuestion();
+      });
+      return;
+    }
     if (_currentQuestionIndex >= _questions.length - 1) {
       setState(() {
         _showSummary = true;
@@ -103,6 +121,38 @@ class _QuizScreenState extends State<QuizScreen> {
     } else {
       _openAnswerFocus.unfocus();
     }
+  }
+
+  bool get _currentQuestionWasAnsweredCorrectly {
+    return (_selectedAnswer?.isCorrect ?? false) || (_openAnswerCorrect == true);
+  }
+
+  void _advanceLearningQueue(bool answeredCorrect) {
+    if (_questions.isEmpty) {
+      return;
+    }
+    final question = _questions.removeAt(_currentQuestionIndex);
+    if (!answeredCorrect) {
+      final insertIndex =
+          _questions.isEmpty ? 0 : _random.nextInt(_questions.length + 1);
+      _questions.insert(insertIndex, question);
+      if (insertIndex <= _currentQuestionIndex) {
+        _currentQuestionIndex++;
+      }
+    }
+    if (_questions.isEmpty) {
+      _selectedAnswer = null;
+      _openAnswerCorrect = null;
+      _openAnswerController.clear();
+      _showSummary = true;
+      return;
+    }
+    if (_currentQuestionIndex >= _questions.length) {
+      _currentQuestionIndex = 0;
+    }
+    _selectedAnswer = null;
+    _openAnswerCorrect = null;
+    _openAnswerController.clear();
   }
 
   void _scheduleAdvanceAfterCorrect(int questionIndex) {
@@ -137,9 +187,12 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Widget _buildQuestionView(BuildContext context) {
     final question = _questions[_currentQuestionIndex];
+    final progressText = widget.mode == QuizMode.learning
+        ? 'Mastered ${_totalQuestions - _questions.length} of $_totalQuestions'
+        : 'Question ${_currentQuestionIndex + 1} of ${_questions.length}';
     final commonHeader = <Widget>[
       Text(
-        'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
+        progressText,
         style: Theme.of(context)
             .textTheme
             .labelLarge
@@ -219,20 +272,26 @@ class _QuizScreenState extends State<QuizScreen> {
         TextField(
           controller: _openAnswerController,
           focusNode: _openAnswerFocus,
-          enabled: _openAnswerCorrect == null,
+          readOnly: _openAnswerCorrect != null,
           decoration: const InputDecoration(
             border: OutlineInputBorder(),
             labelText: 'Your answer',
           ),
-          onSubmitted: (_) => _submitOpenAnswer(question),
+          onSubmitted: (_) {
+            if (_openAnswerCorrect == null) {
+              _submitOpenAnswer(question);
+            } else {
+              _goToNextStep();
+            }
+          },
         ),
         const SizedBox(height: 16),
         SizedBox(
           width: double.infinity,
-          child: ElevatedButton(
-            onPressed: _openAnswerCorrect == null
-                ? () => _submitOpenAnswer(question)
-                : (_openAnswerCorrect! ? null : _goToNextStep),
+      child: ElevatedButton(
+        onPressed: _openAnswerCorrect == null
+            ? () => _submitOpenAnswer(question)
+            : (_openAnswerCorrect! ? null : _goToNextStep),
             child: Text(
               _openAnswerCorrect == null
                   ? 'Check answer'
@@ -262,6 +321,12 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Widget _buildSummary(BuildContext context) {
+    final summaryTitle = widget.mode == QuizMode.learning
+        ? 'Learning session complete!'
+        : 'Quiz complete!';
+    final summaryBody = widget.mode == QuizMode.learning
+        ? 'You mastered all $_totalQuestions questions.'
+        : 'You answered $_score of $_totalQuestions correctly.';
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -273,12 +338,12 @@ class _QuizScreenState extends State<QuizScreen> {
         ),
         const SizedBox(height: 16),
         Text(
-          'Quiz complete!',
+          summaryTitle,
           style: Theme.of(context).textTheme.headlineSmall,
         ),
         const SizedBox(height: 8),
         Text(
-          'You answered $_score of ${_questions.length} correctly.',
+          summaryBody,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         const SizedBox(height: 24),
