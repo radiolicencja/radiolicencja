@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:yaml/yaml.dart';
 
 import 'l10n/app_localizations.dart';
@@ -204,10 +205,7 @@ class _QuizScreenState extends State<QuizScreen> {
             ?.copyWith(color: Colors.grey[600]),
       ),
       const SizedBox(height: 12),
-      Text(
-        question.text,
-        style: Theme.of(context).textTheme.headlineSmall,
-      ),
+      _QuestionMarkdown(text: question.text),
       const SizedBox(height: 24),
     ];
 
@@ -422,6 +420,49 @@ class _NoQuestionsMessage extends StatelessWidget {
     return Text(
       l10n.quizNoQuestionsAvailable,
       textAlign: TextAlign.center,
+    );
+  }
+}
+
+class _QuestionMarkdown extends StatelessWidget {
+  const _QuestionMarkdown({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final baseStyle = theme.textTheme.headlineSmall;
+    final bodyStyle = theme.textTheme.bodyLarge;
+    return MarkdownBody(
+      data: text,
+      sizedImageBuilder: (config) {
+        final uri = config.uri;
+        final width = config.width;
+        final height = config.height;
+        if (uri.scheme.isEmpty || uri.scheme == 'asset') {
+          final path = uri.scheme == 'asset' ? uri.path : uri.toString();
+          return ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.asset(
+              path,
+              width: width,
+              height: height,
+              fit: BoxFit.contain,
+            ),
+          );
+        }
+        return Image.network(
+          uri.toString(),
+          width: width,
+          height: height,
+          fit: BoxFit.contain,
+        );
+      },
+      styleSheet: MarkdownStyleSheet.fromTheme(theme).copyWith(
+        p: baseStyle,
+        listBullet: bodyStyle,
+      ),
     );
   }
 }

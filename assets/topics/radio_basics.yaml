@@ -1,49 +1,24 @@
 title: Radio Basics
 slug: radio-basics
-description: Learn the fundamental terminology, etiquette, and safety rules every new operator should know.
-image: assets/images/topic_radio.png
+description: Quick overview of key zachowań operatorskich na wspólnych kanałach.
 questions:
-  - text: What is the primary purpose of a phonetic alphabet on the radio?
+  - text: |
+      Zanim naciśniesz PTT, najpierw nasłuchuj kanału.
+      Co pokazuje ilustracja?
+
+      ![Nasłuch zanim mówisz](assets/question_images/radio_listen.png)
     answers:
-      - To spell words clearly and avoid confusion.
-      - To encrypt sensitive information.
-      - To indicate transmission priority.
-    correct_index: 0
-  - text: Which phrase is used to acknowledge that you received and understood a transmission?
-    answers:
-      - Wilco
-      - Roger
-      - Copy That
+      - Operator od razu naciska przycisk i mówi.
+      - Operator sprawdza, czy kanał jest wolny, zanim zacznie nadawanie.
+      - Operator zwiększa moc, by zagłuszyć pozostałych.
     correct_index: 1
-  - text: "Before transmitting on a shared frequency you should first:"
-    answers:
-      - Key the microphone immediately to reserve the channel.
-      - Listen to ensure the channel is clear.
-      - Increase power output to override others.
-    correct_index: 1
-  - text: What does the term "PTT" stand for?
+  - text: Które rozwinięcie skrótu PTT jest prawidłowe?
     answers:
       - Push-To-Talk
       - Priority Transmission Tone
       - Primary Tuning Trigger
     correct_index: 0
-  - text: Why is it important to keep radio messages brief?
-    answers:
-      - Short messages improve battery life.
-      - Brevity keeps frequencies available for others.
-      - Regulations only allow 5-second transmissions.
-    correct_index: 1
   - type: open
-    text: Which word from the NATO phonetic alphabet represents the letter "A"?
-    answers:
-      - Alpha
-      - Alfa
-  - type: open
-    text: What single word should you say three times to declare an emergency call?
+    text: Jakiego słowa używasz (powtarzając je trzykrotnie), aby zgłosić alarmowy komunikat?
     answers:
       - Mayday
-  - type: open
-    text: What brief phrase do you transmit to cancel your last message?
-    answers:
-      - Disregard
-      - Disregard last message

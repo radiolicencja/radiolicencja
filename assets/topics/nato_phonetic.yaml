@@ -1,7 +1,7 @@
 title: Alfabet fonetyczny NATO
 description: Przećwicz każde słowo kodowe ICAO/NATO od litery A do Z.
 slug: nato-phonetic
-image: assets/images/topic_radio.png
+image: assets/images/nato_icao.png
 questions:
   - type: open
     text: Jakim słowem nadajesz literę "A" w alfabecie NATO?

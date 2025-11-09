@@ -1,6 +1,7 @@
 title: Alfabet literowania (PL)
 description: Utrwal polski alfabet literowy używany w łączności radiowej i telefonicznej.
 slug: polski-alfabet-literowy
+image: assets/images/literowanie_pl.png
 questions:
   - type: open
     text: Jakim słowem literujesz literę "A" w polskim alfabecie literowym?
