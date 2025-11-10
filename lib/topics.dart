@@ -208,39 +208,60 @@ class _TopicListScreenState extends State<TopicListScreen> {
               child: _EmptyTopicsMessage(),
             );
           }
+          final items = topics.map((topic) {
+            final totalQuestions = topic.questions.length;
+            final masteredCount =
+                _progressService?.getMastered(topic.slug).length ?? 0;
+            bool hasStats = false;
+            double? confidenceValue;
+            String? confidenceLabel;
+            if (_progressService != null) {
+              final topicStats = _progressService!.getQuestionStats(topic.slug);
+              hasStats = topicStats.isNotEmpty;
+              final calculatedConfidence =
+                  _calculateTopicConfidence(topic, topicStats);
+              if (calculatedConfidence != null) {
+                confidenceValue = calculatedConfidence;
+                final percent =
+                    (calculatedConfidence * 100).clamp(0, 100).round();
+                confidenceLabel = l10n.topicConfidence(percent);
+              }
+            }
+            final progressLabel = !topic.hasQuestions
+                ? l10n.topicNoQuestions
+                : _progressService == null
+                    ? l10n.topicQuestionCount(totalQuestions)
+                    : l10n.topicProgress(masteredCount, totalQuestions);
+            return _TopicListItem(
+              topic: topic,
+              progressLabel: progressLabel,
+              confidenceLabel: confidenceLabel,
+              confidenceValue: confidenceValue,
+              canResetProgress: _progressService != null &&
+                  (masteredCount > 0 || hasStats),
+            );
+          }).toList();
+          if (_progressService != null) {
+            items.sort((a, b) {
+              final aConfidence = a.confidenceValue ?? -1;
+              final bConfidence = b.confidenceValue ?? -1;
+              final cmp = bConfidence.compareTo(aConfidence);
+              if (cmp != 0) return cmp;
+              return a.topic.title.compareTo(b.topic.title);
+            });
+          }
           return ListView.separated(
             padding: const EdgeInsets.all(16),
-            itemCount: topics.length,
+            itemCount: items.length,
             separatorBuilder: (_, __) => const SizedBox(height: 12),
             itemBuilder: (context, index) {
-              final topic = topics[index];
-              final totalQuestions = topic.questions.length;
-              final masteredCount =
-                  _progressService?.getMastered(topic.slug).length ?? 0;
-              Map<int, QuestionStats>? topicStats;
-              String? confidenceLabel;
-              if (_progressService != null) {
-                topicStats = _progressService!.getQuestionStats(topic.slug);
-                final confidenceValue =
-                    _calculateTopicConfidence(topic, topicStats);
-                if (confidenceValue != null) {
-                  final percent =
-                      (confidenceValue * 100).clamp(0, 100).round();
-                  confidenceLabel = l10n.topicConfidence(percent);
-                }
-              }
-              final hasStats = topicStats?.isNotEmpty ?? false;
-              final progressLabel = !topic.hasQuestions
-                  ? l10n.topicNoQuestions
-                  : _progressService == null
-                      ? l10n.topicQuestionCount(totalQuestions)
-                      : l10n.topicProgress(masteredCount, totalQuestions);
+              final item = items[index];
+              final topic = item.topic;
               return TopicCard(
                 topic: topic,
-                progressLabel: progressLabel,
-                confidenceLabel: confidenceLabel,
-                canResetProgress:
-                    _progressService != null && (masteredCount > 0 || hasStats),
+                progressLabel: item.progressLabel,
+                confidenceLabel: item.confidenceLabel,
+                canResetProgress: item.canResetProgress,
                 onResetProgress: _progressService == null
                     ? null
                     : () => _confirmReset(topic),
@@ -265,6 +286,22 @@ class _EmptyTopicsMessage extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     return Text(l10n.topicListEmpty);
   }
+}
+
+class _TopicListItem {
+  const _TopicListItem({
+    required this.topic,
+    required this.progressLabel,
+    required this.canResetProgress,
+    this.confidenceLabel,
+    this.confidenceValue,
+  });
+
+  final Topic topic;
+  final String progressLabel;
+  final bool canResetProgress;
+  final String? confidenceLabel;
+  final double? confidenceValue;
 }
 
 class TopicCard extends StatelessWidget {
