@@ -20,6 +20,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.1
 
 flutter:
   uses-material-design: true
@@ -28,3 +29,15 @@ flutter:
     - assets/images/
     - assets/question_images/
   generate: true
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash_vertical.png
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: cover
+  image_web: assets/images/splash_horizontal.png
+  fullscreen: true
+  android_12:
+    image: assets/images/splash_vertical.png
+    icon_background_color: "#FFFFFF"
