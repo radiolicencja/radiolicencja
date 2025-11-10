@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:intl/intl.dart';
 import 'package:yaml/yaml.dart';
 
@@ -156,6 +157,26 @@ class _TopicListScreenState extends State<TopicListScreen> {
     );
   }
 
+  double? _calculateTopicConfidence(
+    Topic topic,
+    Map<int, QuestionStats> stats,
+  ) {
+    if (topic.questions.isEmpty) return null;
+    final picker = LearningQuestionPicker<QuizQuestion>(
+      stats: stats,
+      idResolver: (question) => question.id,
+      random: Random(0),
+    );
+    var total = 0.0;
+    for (final question in topic.questions) {
+      total += picker.confidenceScore(question.id);
+    }
+    if (total.isNaN || total.isInfinite) {
+      return null;
+    }
+    return total / topic.questions.length;
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -196,7 +217,19 @@ class _TopicListScreenState extends State<TopicListScreen> {
               final totalQuestions = topic.questions.length;
               final masteredCount =
                   _progressService?.getMastered(topic.slug).length ?? 0;
-              final hasStats = _progressService?.hasStats(topic.slug) ?? false;
+              Map<int, QuestionStats>? topicStats;
+              String? confidenceLabel;
+              if (_progressService != null) {
+                topicStats = _progressService!.getQuestionStats(topic.slug);
+                final confidenceValue =
+                    _calculateTopicConfidence(topic, topicStats);
+                if (confidenceValue != null) {
+                  final percent =
+                      (confidenceValue * 100).clamp(0, 100).round();
+                  confidenceLabel = l10n.topicConfidence(percent);
+                }
+              }
+              final hasStats = topicStats?.isNotEmpty ?? false;
               final progressLabel = !topic.hasQuestions
                   ? l10n.topicNoQuestions
                   : _progressService == null
@@ -205,6 +238,7 @@ class _TopicListScreenState extends State<TopicListScreen> {
               return TopicCard(
                 topic: topic,
                 progressLabel: progressLabel,
+                confidenceLabel: confidenceLabel,
                 canResetProgress:
                     _progressService != null && (masteredCount > 0 || hasStats),
                 onResetProgress: _progressService == null
@@ -238,6 +272,7 @@ class TopicCard extends StatelessWidget {
     super.key,
     required this.topic,
     required this.progressLabel,
+    this.confidenceLabel,
     this.canResetProgress = false,
     this.onResetProgress,
     this.canShowStats = false,
@@ -247,6 +282,7 @@ class TopicCard extends StatelessWidget {
 
   final Topic topic;
   final String progressLabel;
+  final String? confidenceLabel;
   final bool canResetProgress;
   final VoidCallback? onResetProgress;
   final bool canShowStats;
@@ -306,6 +342,16 @@ class TopicCard extends StatelessWidget {
                           .labelMedium
                           ?.copyWith(color: Colors.grey[600]),
                     ),
+                    if (confidenceLabel != null) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        confidenceLabel!,
+                        style: Theme.of(context)
+                            .textTheme
+                            .labelMedium
+                            ?.copyWith(color: Colors.grey[600]),
+                      ),
+                    ],
                   ],
                 ),
               ),
@@ -415,12 +461,7 @@ class TopicStatsSheet extends StatelessWidget {
                   final correctAnswerText = _correctAnswerText(l10n, question);
                   return ListTile(
                     contentPadding: EdgeInsets.zero,
-                    title: Text(
-                      question.text,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: theme.textTheme.titleMedium,
-                    ),
+                    title: _StatsQuestionMarkdown(text: question.text),
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -472,6 +513,54 @@ class TopicStatsSheet extends StatelessWidget {
       return l10n.topicStatsNoCorrectAnswer;
     }
     return formatted;
+  }
+}
+
+class _StatsQuestionMarkdown extends StatelessWidget {
+  const _StatsQuestionMarkdown({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final titleStyle = theme.textTheme.titleMedium;
+    final bodyStyle = theme.textTheme.bodyMedium;
+    return MarkdownBody(
+      data: text,
+      shrinkWrap: true,
+      listItemCrossAxisAlignment: MarkdownListItemCrossAxisAlignment.start,
+      styleSheet: MarkdownStyleSheet.fromTheme(theme).copyWith(
+        p: titleStyle,
+        listBullet: bodyStyle,
+        h1: titleStyle,
+        h2: titleStyle,
+        h3: titleStyle,
+      ),
+      sizedImageBuilder: (config) {
+        final uri = config.uri;
+        final width = config.width;
+        final height = config.height;
+        if (uri.scheme.isEmpty || uri.scheme == 'asset') {
+          final path = uri.scheme == 'asset' ? uri.path : uri.toString();
+          return ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.asset(
+              path,
+              width: width,
+              height: height,
+              fit: BoxFit.contain,
+            ),
+          );
+        }
+        return Image.network(
+          uri.toString(),
+          width: width,
+          height: height,
+          fit: BoxFit.contain,
+        );
+      },
+    );
   }
 }
 

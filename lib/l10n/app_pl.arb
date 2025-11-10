@@ -17,6 +17,14 @@
       }
     }
   },
+  "topicConfidence": "Pewność {percent}%",
+  "@topicConfidence": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
   "topicResetProgress": "Wyzeruj postęp",
   "topicResetDialogTitle": "Wyzerować postęp?",
   "topicResetDialogBody": "To usunie opanowane pytania dla tematu {topic}.",

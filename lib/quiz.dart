@@ -294,25 +294,31 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
       const SizedBox(height: 12),
       _QuestionMarkdown(text: question.text),
-      const SizedBox(height: 24),
     ];
+    final questionBody = question.isOpen
+        ? _buildOpenQuestion(context, question)
+        : _buildMultipleChoiceQuestion(context, question);
 
-    if (question.isOpen) {
-      return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          ...commonHeader,
-          _buildOpenQuestion(context, question),
-        ],
-      );
-    }
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ...commonHeader,
-        _buildMultipleChoiceQuestion(context, question),
-      ],
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return SingleChildScrollView(
+          primary: false,
+          physics: const ClampingScrollPhysics(),
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          padding: const EdgeInsets.only(bottom: 24),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: constraints.maxHeight),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ...commonHeader,
+                const SizedBox(height: 24),
+                questionBody,
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 

@@ -137,6 +137,12 @@ abstract class AppLocalizations {
   /// **'{mastered} / {total} learned'**
   String topicProgress(int mastered, int total);
 
+  /// No description provided for @topicConfidence.
+  ///
+  /// In en, this message translates to:
+  /// **'Confidence {percent}%'**
+  String topicConfidence(int percent);
+
   /// No description provided for @topicResetProgress.
   ///
   /// In en, this message translates to:
@@ -296,7 +302,7 @@ abstract class AppLocalizations {
   /// No description provided for @quizButtonIDontKnow.
   ///
   /// In en, this message translates to:
-  /// **'I don't know'**
+  /// **'I don\'t know'**
   String get quizButtonIDontKnow;
 
   /// No description provided for @quizAcceptedAnswersLabel.

@@ -43,6 +43,11 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String topicConfidence(int percent) {
+    return 'Pewność $percent%';
+  }
+
+  @override
   String get topicResetProgress => 'Wyzeruj postęp';
 
   @override

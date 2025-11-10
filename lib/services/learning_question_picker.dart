@@ -40,6 +40,8 @@ class LearningQuestionPicker<T> {
   static const double _neverSeenBoost = 96;
   static const double _recentPenaltyWindowHours = 0.25; // ~15 minutes
   static const double _recentPenaltyStrength = 15;
+  static const double _confidenceMidpoint = 20;
+  static const double _confidenceScale = 25;
 
   void sort(List<T> items) {
     _sortReference = DateTime.now();
@@ -48,6 +50,28 @@ class LearningQuestionPicker<T> {
 
   double priorityScore(int questionId) {
     return _priorityForQuestion(questionId);
+  }
+
+  /// Normalized inverse of [priorityScore] that approximates "mastery confidence"
+  /// for display purposes.
+  ///
+  /// * High priority (many mistakes or never seen) -> confidence tends to 0.
+  /// * Low/negative priority (lots of correct answers, recently drilled) -> confidence tends to 1.
+  double confidenceScore(int questionId) {
+    final score = _priorityForQuestion(questionId);
+    final weakness =
+        1 / (1 + exp(-(score - _confidenceMidpoint) / _confidenceScale));
+    final confidence = 1 - weakness;
+    if (!confidence.isFinite) {
+      return 0.5;
+    }
+    if (confidence <= 0) {
+      return 0;
+    }
+    if (confidence >= 1) {
+      return 1;
+    }
+    return confidence;
   }
 
   int _compare(T a, T b) {

@@ -33,8 +33,8 @@ flutter:
 flutter_native_splash:
   color: "#FFFFFF"
   image: assets/images/splash_vertical.png
-  android_gravity: center
-  ios_content_mode: center
+  android_gravity: fill
+  ios_content_mode: scaleAspectFill
   web_image_mode: cover
   image_web: assets/images/splash_horizontal.png
   fullscreen: true

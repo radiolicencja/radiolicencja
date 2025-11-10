@@ -42,6 +42,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String topicConfidence(int percent) {
+    return 'Confidence $percent%';
+  }
+
+  @override
   String get topicResetProgress => 'Reset progress';
 
   @override
@@ -136,7 +141,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quizButtonCorrect => 'Correct!';
 
   @override
-  String get quizButtonIDontKnow => "I don't know";
+  String get quizButtonIDontKnow => 'I don\'t know';
 
   @override
   String quizAcceptedAnswersLabel(Object answers) {

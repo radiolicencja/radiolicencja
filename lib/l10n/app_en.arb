@@ -35,6 +35,15 @@
       }
     }
   },
+  "topicConfidence": "Confidence {percent}%",
+  "@topicConfidence": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "description": "Percentage confidence for a topic"
+      }
+    }
+  },
   "topicResetProgress": "Reset progress",
   "topicResetDialogTitle": "Reset learning progress?",
   "topicResetDialogBody": "This removes learned questions for {topic}.",
