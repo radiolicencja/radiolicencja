@@ -1,0 +1,250 @@
+title: Radiotechnika - Pomiar, przyrządy, praktyka serwisowa
+slug: radiotechnika-pomiar-przyrzady
+description: Pomiary, instrumenty i praktyczne zagadnienia serwisowe.
+image: assets/images/radiotechnika.png
+questions:
+- text: '18\. Działanie funkcji "Noise Blanker" polega na:'
+  answers:
+  - zwiększeniu pasma odbiornika
+  - zmniejszeniu wzmocnienia odbiornika podczas okresowych impulsów zakłóceń
+  - przekierowaniu zakłóceń do kondensatora filtrującego
+  correct_index: 1
+- text: '32\. W jaki sposób w emisjach cyfrowych można zapewnić korekcję błędów spowodowanych
+    zakłóceniami i zanikami w łączności radiowej:'
+  answers:
+  - przez wprowadzenie sumy kontrolnej CRC i ponowne wysyłanie tej samej informacji
+  - robi to operator wprowadzając odpowiednią komendę do modemu
+  - nie wprowadza się korekcji, zaniki są naturalną cechą łączności cyfrowej
+  correct_index: 0
+- text: '33\. Moc PEP jest:'
+  answers:
+  - mocą średnią
+  - mocą w szczytach modulacji
+  - mocą maksymalną tranzystora, po przekroczeniu której ulega uszkodzeniu
+  correct_index: 1
+- text: '34\. Sygnał silniejszy o 3 dB to:'
+  answers:
+  - sygnał o trzykrotnie większej mocy
+  - sygnał o dziesięciokrotnie większej mocy
+  - sygnał o dwukrotnie większej mocy
+  correct_index: 2
+- text: '35\. Na skali S-metru jedna jednostka odpowiada wzrostowi odbieranego sygnału
+    o 6 dB. Aby sygnał odbierany przez naszego korespondenta wzrósł z S7 do S9, moc
+    nadajnika należy zwiększyć:'
+  answers:
+  - ośmiokrotnie
+  - czterokrotnie
+  - szesnastokrotnie
+  correct_index: 2
+- text: '37\. Na wejście analizatora widma można bezpiecznie podać sygnał o mocy 20
+    dBm. Jakiego tłumika należy użyć, by nie uszkodzić przyrządu badając sygnał wyjściowy
+    nadajnika o mocy 100 W:'
+  answers:
+  - co najmniej 10 dB
+  - co najmniej 30 dB
+  - co najmniej 20 dB
+  correct_index: 1
+- text: 41\. Jaką moc PEP dostarcza nadajnik, jeśli napięcie międzyszczytowe (peak
+    to peak) zmierzone oscyloskopem na sztucznym obciążeniu 50 Ω wynosi 200 V?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: 60\. Ile mocy zostaje wypromieniowane przez antenę, jeśli miernik mocy podłączony
+    pomiędzy nadajnik a antenę wskazuje 100 W mocy padającej i 30 W mocy odbitej?
+  answers:
+  - 130 W
+  - 70 W
+  - 30 W
+  correct_index: 1
+- text: 61\. Jaka jest przewaga wektorowego analizatora antenowego (VNA) nad miernikiem
+    SWR (reflektometrem)?
+  answers:
+  - miernik SWR wymaga określonej częstotliwości do działania
+  - analizator nie potrzebuje dodatkowego zasilania zasilając się z sygnału w.cz z
+    nadajnika
+  - analizator jest w stanie wykazać składową indukcyjną lub pojemnościową badanej
+    anteny oraz określić miejsce rezonansu
+  correct_index: 2
+- text: 62\. Który parametr ma największy wpływ na dokładność miernika częstotliwości?
+  answers:
+  - dokładność tłumika wejściowego
+  - dokładność generatora wzorcowego
+  - dokładność kalibracji dzielnika częstotliwości
+  correct_index: 1
+- text: 63\. Co jest dobrą praktyką przy pomiarach obwodów wielkiej częstotliwości
+    za pomocą oscyloskopu?
+  answers:
+  - utrzymanie jak najkrótszego połączenia uziemienia sondy
+  - nieużywanie sprzężenia stałoprądowego do pomiarów sygnałów przemiennych
+  - ustawianie oscyloskopu na możliwie najkrótszą podstawę czasu
+  correct_index: 0
+- text: 80\. Która z podanych mocy PEP odpowiada napięciu maksymalnemu Umax = 100
+    V, zmierzonemu oscyloskopem na wyjściu nadajnika, na obciążeniu 50Ω ?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: '81\. Do cewki powietrznej 100 µH wkładamy rdzeń ferrytowy o względnej przenikalności
+    µ= 10. Ile wyniesie indukcyjność cewki?
+
+    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.jpg)'
+  answers:
+  - wzrośnie do 1000 µH
+  - nie zmieni się
+  - zmaleje do 10 µH
+  correct_index: 0
+- text: 125\. Jak zwalczyć zakłócenia rozprowadzane siecią energetyczną?
+  answers:
+  - przez stosowanie grubych przewodów
+  - przez stosowanie filtrów sieciowych, ekranowanie urządzeń i odpowiednią konstrukcję
+    urządzeń
+  - przez zastosowanie zabezpieczenia różnicowoprądowego
+  correct_index: 1
+- text: 126\. Jeżeli nadajnik amatorski powoduje zakłócenia, to jakie elementy sprawdzamy
+    w pierwszej kolejności?
+  answers:
+  - prawidłowe działanie mikrofonu
+  - blokadę szumów odbiornika
+  - liniowość stopnia mocy (PA), filtr wyjściowy, uziemienie radiostacji
+  correct_index: 2
+- text: 145\. Napięcie na wejściu odbiornika o oporności 50 om wynosi 10 µV. Napięcie
+    to wzrosło do 100 µV. O ile wzrosło napięcie wyrażone w dB?
+  answers:
+  - o 10 dB
+  - o 20 dB
+  - o 40 dB
+  correct_index: 1
+- text: 146\. Zasilacz nadajnika dostarcza do stopnia końcowego nadajnika napięcie
+    20 V i prąd 5 A. Jaka jest sprawność energetyczna stopnia końcowego w %, jeżeli
+    na wyjściu zmierzyliśmy moc PEP = 40 W?
+  answers:
+  - 50 %
+  - 40 %
+  - 60 %
+  correct_index: 1
+- text: 162\. Wzmacniacz posiada wzmocnienie napięciowe 10 razy. Wyraź to wzmocnienie
+    w decybelach (dB)
+  answers:
+  - 10 dB
+  - 20 dB
+  - 40 dB
+  correct_index: 1
+- text: 215\. Kabel koncentryczny o długości 100m, przy częstotliwości 144MHz wprowadza
+    tłumienie 12dB. Długość kabla pomiędzy nadajnikiem 100 W a anteną wynosi 50 m.
+    Jaka część tej mocy zostanie doprowadzona do anteny?
+  answers:
+  - 25%
+  - 50%
+  - 75%
+  correct_index: 1
+- text: 239\. Zasilacz dostarcza do stopnia końcowego nadajnika napięcie 500 V i prąd
+    200 mA. Jaka jest sprawność energetyczna stopnia końcowego, jeżeli na wyjściu
+    zmierzyliśmy moc PEP = 40 W?
+  answers:
+  - 50%
+  - 40%
+  - 60%
+  correct_index: 1
+- text: 240\. Która z podanych mocy PEP odpowiada napięciu maksymalnemu Umax = 100
+    V, zmierzonemu oscyloskopem na wyjściu nadajnika, na obciążeniu 50 omów (zakładamy
+    sygnał sinusoidalny)?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 1
+- text: '241\. W przetwornikach analogowo-cyfrowych, aby poprawnie odczytać sygnał
+    wejściowy, częstotliwość próbkowania musi być:'
+  answers:
+  - większa lub równa dwukrotności najwyższej częstotliwości przetwarzanego sygnału
+  - większa lub równa najwyższej częstotliwości przetwarzanego sygnału
+  - większa lub równa połowie najwyższej częstotliwości przetwarzanego sygnału
+  correct_index: 0
+- text: '277\. Jeśli SWR w punkcie zasilania jest równy 1:1 to oznacza, że:'
+  answers:
+  - osiągnięto bardzo dobre dopasowanie linii zasilającej do nadajnika
+  - antena jest zawsze najlepiej dopasowana
+  - antena może pracować na kilku pasmach
+  correct_index: 0
+- text: 290\. Współczynnik tył/przód (F/B ratio) pewnej anteny kierunkowej wynosi
+    19 dB a jej zysk 10,5 dBd. Czy w sytuacji awarii rotora antenowego lepiej będzie
+    nadawać "tyłem anteny" korzystając z jej listka tylnego czy też przełączyć się
+    na dipol półfalowy w tej samej polaryzacji?
+  answers:
+  - przełączyć się na dipol
+  - pozostać przy antenie kierunkowej
+  - to bez znaczenia dla nadawania
+  correct_index: 2
+- text: 296\. Pomiar SWR przy nadajniku wskazał wartość 1:1,5, ale mamy podejrzenie,
+    że dopasowanie anteny jest niewłaściwe. Co może być przyczyną?
+  answers:
+  - poziom zakłóceń lokalnych
+  - tłumienie linii zasilającej
+  - podejrzenie jest błędne, dopasowanie jest poprawne
+  correct_index: 1
+- text: '299\. Włączenie tłumika w odbiorniku spowoduje:'
+  answers:
+  - poprawę odporności odbiornika na silne sygnały
+  - poprawę stosunku sygnału do szumu na wejściu odbiornika
+  - przestrojenie odbiornika
+  correct_index: 0
+- text: 323\. Jak nazywa się przyrząd do pomiaru siły elektromotorycznej?
+  answers:
+  - omomierz
+  - woltomierz
+  - amperomierz
+  correct_index: 1
+- text: '324\. Bocznik do pomiaru prądu powinien mieć:'
+  answers:
+  - maksymalną rezystancję
+  - minimalną rezystancję
+  - rezystancję dopasowaną do mierzonego prądu i parametrów ustroju pomiarowego
+  correct_index: 2
+- text: '325\. Do pomiaru napięcia, które przekracza zakres miernika, można użyć:'
+  answers:
+  - szeregowo włączonego rezystora
+  - dzielnika napięcia
+  - wszystkie odpowiedzi są poprawne
+  correct_index: 2
+- text: '326\. Multimetr na zakresie napięcia prądu przemiennego został dołączony
+    do układu elektronicznego. Co może być przyczyną niewłaściwych odczytów (zbyt
+    niskich lub zbyt wysokich):'
+  answers:
+  - uziemienie woltomierza,
+  - woltomierz jest przystosowany do częstotliwości 50Hz, a w obwodzie jest sygn ał
+    w.cz .
+  - końcówki pomiarowe są niezgodne z normą HSE GS38
+  correct_index: 1
+- text: '327\. Kondensator elektrolityczny 10µF został naładowany do napięcia 10V
+    i odłączony od zasilacza. Dołączony do jego końcówek woltomierz wskazuje systematyczny
+    spadek napięcia. Co może być przyczyną tego spadku:'
+  answers:
+  - oporność wewnętrzna woltomierza
+  - strata prądu na końcówkach zasilających
+  - promieniowanie radioaktywne otoczenia
+  correct_index: 0
+- text: '332\. Jakie zjawisko jest odpowiedzialne za zakłócenia słyszalne w radioodbiorniku
+    jako dziwne dźwięki nałożone na sygnał stacji radiofonicznej FM:'
+  answers:
+  - intermodulacja w obwodach wejściowych odbiornika FM
+  - rozstrajanie generatora zadającego w syntezerze w odbiorniku FM
+  - detekcja sygnału SSB stacji amatorskiej we wzmacniaczu częstotliwości akustycznej
+    odbiornika
+  correct_index: 2
+- text: '335\. W zbudowanym wzmacniaczu m.cz. słychać dokuczliwe zakłócenia od pobliskich
+    telefonów komórkowych. Co można zrobić, by te zakłócenia zmniejszyć:'
+  answers:
+  - nic nie można zrobić, zakłócenia już takie są
+  - zaekranować stopień wejściowy tego wzmacniacza
+  - zwiększyć napięcie zasilania, by stosunek sygnał/zakłócenia był korzystniejszy
+  correct_index: 1
+- text: 338\. Czy brak filtru przeciwzakłóceniowego na obwodzie zasilania sieciowego
+    może być przyczyną zakłóceń w pracy urządzenia?
+  answers:
+  - tak, ale tylko przy dużej mocy
+  - zawsze, bez względu na moc
+  - to nie ma znaczenia, rolę filtru pełni transformator zasilacza
+  correct_index: 1

@@ -1,0 +1,662 @@
+title: Radiotechnika - Fale radiowe, anteny, linie zasilające, propagacja
+slug: radiotechnika-fale-anteny-linie-propagacja
+description: Anteny, linie transmisyjne, SWR, propagacja HF/VHF/UHF, EME i zjawiska.
+image: assets/images/radiotechnika.png
+questions:
+- text: '2\. Obwód elektryczny składa się z kilku rezystorów o różnych wartościach
+    i źródła zasilania. Połączenie, w którym przez wszystkie elementy płynie ten sam
+    prąd nazywamy połączeniem:'
+  answers:
+  - rezonansowym
+  - szeregowym
+  - równoległym
+  correct_index: 1
+- text: 14\. Do zasilacza o napięciu 12 V chcemy podłączyć diodę świecącą o napięciu
+    przewodzenia 3 V i nominalnym prądzie 20 mA. Jaki rezystor należy włączyć w szereg,
+    by ograniczyć prąd?
+  answers:
+  - 600 Ω
+  - 150 Ω
+  - 450 Ω
+  correct_index: 2
+- text: '15\. Która z cech łączy szeregowy obwód rezonansowy LC z typową anteną (dipol
+    półfalowy):'
+  answers:
+  - w rezonansie stanowią tylko rezystancję
+  - w rezonansie stanowią reaktancję pojemnościową
+  - w rezonansie stanowią reaktancję indukcyjną
+  correct_index: 0
+- text: 36\. System antenowy dostarcza sygnał na poziomie -20dBm, jest on podłączony
+    do przedwzmacniacza o wzmocnieniu 10dB kablem o tłumieniu 3dB. Jakiej mocy sygnał
+    uzyskamy na wyjściu przedwzmacniacza?
+  answers:
+  - -13 dBm
+  - -33 dBm
+  - -27 dBm
+  correct_index: 0
+- text: '39\. Niedopasowanie anteny do linii transmisyjnej powoduje powstanie fali
+    stojącej i w konsekwencji:'
+  answers:
+  - odbicia sygnału od miejsca niedopasowania i straty w linii transmisyjnej
+  - może spowodować spalenie anteny
+  - drgania fidera
+  correct_index: 0
+- text: '48\. Element aktywny we wzmacniaczu przewodzi przez cały okres wzmacnianego
+    sygnału. Wzmacniacz ten pracuje w klasie:'
+  answers:
+  - A
+  - B
+  - C
+  correct_index: 0
+- text: 52\. Pewien ręczny radiotelefon VHF/UHF pozbawiony jest filtrów pasmowych
+    w torze wejściowym. Podczas aktywacji jednego ze szczytów w ramach programu SOTA
+    okazało się, że nie można odebrać sygnałów korespondentów, pomimo wykorzystania
+    dobrej anteny dookólnej. Czym może być spowodowane to zjawisko?
+  answers:
+  - rozpraszaniem sygnału na śladach jonizacyjnych meteorów (meteor scatter)
+  - zmniejszeniem czułości odbiornika przez mocny sygnał nadajnika rozgłośni radiowej
+    na sąsiedniej górze
+  - silnymi podmuchami wiatru
+  correct_index: 1
+- text: 54\. Czy antena typu delta, o długości promiennika ~41 m będzie poprawnie
+    działała w paśmie 20 m?
+  answers:
+  - nie, to jest antena jednopasmowa
+  - tak, antena typu delta stroi się na kolejnych harmonicznych
+  - tak, ale tylko jako odbiorcza
+  correct_index: 1
+- text: 55\. Co stanie się kiedy nasz korespondent w paśmie 70 cm używa anteny o odmiennej
+    polaryzacji niż nasza?
+  answers:
+  - wstęgi boczne modulacji mogą zostać odwrócone
+  - sygnały mogą być znacznie słabsze
+  - słyszymy efekt echa na sygnale
+  correct_index: 1
+- text: 56\. Co oznacza pojęcie „stosunek przód-tył” w odniesieniu do anteny Yagi-Uda?
+  answers:
+  - stosunek liczby direktorów do reflektorów
+  - stosunek mocy wypromieniowanej w kierunku głównego listka promieniowania do kierunku
+    przeciwnego
+  - stosunek mocy wypromieniowanej w przód anteny do dipola półfalowego
+  correct_index: 1
+- text: '57\. Współczynnik skrócenia kabla koncentrycznego to:'
+  answers:
+  - stosunek prędkości rozchodzenia się fali w kablu do prędkości rozchodzenia w próżn
+    i
+  - stosunek długości kabla do jego średnicy
+  - parametr charakteryzujący odporność kabla na promieniowanie UV
+  correct_index: 0
+- text: 58\. Jakie znaczenie ma liczba plam słonecznych w odniesieniu do propagacji
+    KF?
+  answers:
+  - wyższa liczba plam słonecznych generalnie wskazuje na większe prawdopodobieństwo
+    dobrej propagacji na wyższych częstotliwościach
+  - niższa liczba plam słonecznych ogólnie wskazuje na większe prawdopodobieństwo
+    wystąpienia sporadycznej propagacji przez warstwę E.
+  - zerowa liczba plam słonecznych oznacza, że propagacja radiowa nie jest możliwa
+    w żadnym paśmie
+  correct_index: 0
+- text: 59\. Co oznacza skrót MUF?
+  answers:
+  - minimalna użyteczna częstotliwość dla komunikacji między dwoma punktami
+  - maksymalna użyteczna częstotliwość do komunikacji między dwoma punktami
+  - minimalna użyteczna częstotliwość na następne 24 godziny
+  correct_index: 1
+- text: 60\. Ile mocy zostaje wypromieniowane przez antenę, jeśli miernik mocy podłączony
+    pomiędzy nadajnik a antenę wskazuje 100 W mocy padającej i 30 W mocy odbitej?
+  answers:
+  - 130 W
+  - 70 W
+  - 30 W
+  correct_index: 1
+- text: 61\. Jaka jest przewaga wektorowego analizatora antenowego (VNA) nad miernikiem
+    SWR (reflektometrem)?
+  answers:
+  - miernik SWR wymaga określonej częstotliwości do działania
+  - analizator nie potrzebuje dodatkowego zasilania zasilając się z sygnału w.cz z
+    nadajnika
+  - analizator jest w stanie wykazać składową indukcyjną lub pojemnościową badanej
+    anteny oraz określić miejsce rezonansu
+  correct_index: 2
+- text: '64\. Proces, który zachodzi w nieliniowym elemencie lub układzie elektronicznym,
+    kiedy składowe widma sygnału oddziałują na siebie tworząc fałszywe sygnały to:'
+  answers:
+  - demodulacja
+  - powielanie
+  - intermodulacja
+  correct_index: 2
+- text: 73\. Czy prędkość fali elektromagnetycznej zależy od ośrodka, w którym się
+    rozchodzi?
+  answers:
+  - tak
+  - nie zależy
+  - zależy jedynie od temperatury ośrodka
+  correct_index: 0
+- text: 89\. Ile oporników bezindukcyjnych o wartości 200 Ω należy połączyć równolegle
+    by uzyskać sztuczne obciążenie antenowe 50 Ω?
+  answers:
+  - 5 szt.
+  - 2 szt.
+  - 4 szt.
+  correct_index: 2
+- text: '102\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 2 to:
+
+    ![RADIOTECHNIKA question 102](assets/question_images/radiotechnika-q102.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - I mieszacz
+  - wzmacniacz II p.cz.
+  correct_index: 1
+- text: 108\. Jaka jest horyzontalna charakterystyka promieniowania dipola półfalowego
+    zawieszonego poziomo?
+  answers:
+  - dookólna
+  - ósemkowa
+  - kierunkowa w linii zawieszenia
+  correct_index: 1
+- text: 109\. Jaka jest horyzontalna charakterystyka promieniowania pionowej anteny
+    ćwierćfalowej?
+  answers:
+  - dookólna
+  - kierunkowa
+  - w kształcie koniczyny
+  correct_index: 0
+- text: '110\. Na rysunku przedstawiona jest antena typu Yagi-Uda. Element 1 to:
+
+    ![RADIOTECHNIKA question 110](assets/question_images/radiotechnika-q110.png)'
+  answers:
+  - reflektor
+  - wibrator
+  - I direktor
+  correct_index: 0
+- text: '111\. Na rysunku przedstawiona jest antena typu Yagi-Uda. Element 2 to:
+
+    ![RADIOTECHNIKA question 111](assets/question_images/radiotechnika-q111.png)'
+  answers:
+  - wibrator
+  - II direktor
+  - reflektor
+  correct_index: 0
+- text: '112\. Na rysunku przedstawiona jest antena typu Yagi-Uda. Element 3 to:
+
+    ![RADIOTECHNIKA question 112](assets/question_images/radiotechnika-q112.png)'
+  answers:
+  - wibrator
+  - I direktor
+  - II direktor
+  correct_index: 1
+- text: '113\. Na rysunku przedstawiona jest antena typu Yagi-Uda. Element 4 to:
+
+    ![RADIOTECHNIKA question 113](assets/question_images/radiotechnika-q113.jpg)'
+  answers:
+  - I direktor
+  - II direktor
+  - wibrator
+  correct_index: 1
+- text: 114\. W jakim przypadku powstaje w linii przesyłowej w.cz. fala stojąca?
+  answers:
+  - kiedy kabel nie jest ułożony prosto
+  - kiedy obok kabla koncentrycznego przechodzi inny kabel
+  - kiedy impedancja obciążenia nie jest zgodna z impedancją falową kabla
+  correct_index: 2
+- text: '117\. Niesymetryczny kabel koncentryczny 50 Ω do symetrycznej anteny o oporności
+    falowej 50 Ω najlepiej połdączyć za pomocą:'
+  answers:
+  - ununa 9:1
+  - baluna 1:1 (symetryzatora)
+  - baluna 1:2
+  correct_index: 1
+- text: 118\. Czy stan jonosfery ma wpływ na rozchodzenie się fal krótkich?
+  answers:
+  - słaby
+  - tylko okresowo, w dzień
+  - ma bardzo duży wpływ
+  correct_index: 2
+- text: '119\. Około 11-letnie cykle zmian propagacji związane są z:'
+  answers:
+  - cyklem słonecznym
+  - cyklem przebiegunowania Ziemi
+  - fluktuacjami średniego poziomu morza
+  correct_index: 0
+- text: 120\. Co to jest zasięg horyzontalny na UKF?
+  answers:
+  - zasięg wyznaczony linią horyzontu radiowego
+  - zasięg obliczony z mocy promieniowanej e.i.r.p.
+  - zasięg teoretyczny nadajnika
+  correct_index: 0
+- text: '122\. Skrót EME oznacza łączności:'
+  answers:
+  - z wykorzystaniem odbicia sygnału od Księżyca
+  - wykorzystaniem do łączności siły elektromotorycznej SEM
+  - za pomocą elektromagnetycznej emisji EME na UKF
+  correct_index: 0
+- text: 124\. Jakim przyrządem mierzymy dopasowanie anteny do nadajnika?
+  answers:
+  - miernikiem zniekształceń nieliniowych
+  - sprawdzeniem czy kabel się nie grzeje
+  - za pomocą reflektometru
+  correct_index: 2
+- text: 126\. Jeżeli nadajnik amatorski powoduje zakłócenia, to jakie elementy sprawdzamy
+    w pierwszej kolejności?
+  answers:
+  - prawidłowe działanie mikrofonu
+  - blokadę szumów odbiornika
+  - liniowość stopnia mocy (PA), filtr wyjściowy, uziemienie radiostacji
+  correct_index: 2
+- text: 164\. W tranzystorowym wzmacniaczu mocy który element jest niezbędny aby nie
+    generować zakłóceń harmonicznych?
+  answers:
+  - filtr dolnoprzepustowy
+  - przełącznik nadawanie-odbiór
+  - układ dopasowania bazy tranzystora
+  correct_index: 0
+- text: '192\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 1 to:
+
+    ![RADIOTECHNIKA question 192](assets/question_images/radiotechnika-q192.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '193\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 3 to:
+
+    ![RADIOTECHNIKA question 193](assets/question_images/radiotechnika-q193.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz I pośredniej cz. 10,7 MHz
+  - I heterodyna
+  correct_index: 1
+- text: '194\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 4 to:
+
+    ![RADIOTECHNIKA question 194](assets/question_images/radiotechnika-q194.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II mieszacz
+  correct_index: 2
+- text: '195\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 5 to:
+
+    ![RADIOTECHNIKA question 195](assets/question_images/radiotechnika-q195.png)'
+  answers:
+  - II heterodyna stała
+  - wzmacniacz II p.cz. 455 kHz
+  - detektor FM
+  correct_index: 1
+- text: '196\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 6 to:
+
+    ![RADIOTECHNIKA question 196](assets/question_images/radiotechnika-q196.png)'
+  answers:
+  - detektor FM
+  - wzmacniacz akustyczny
+  - II heterodyna stała
+  correct_index: 0
+- text: '197\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 7 to:
+
+    ![RADIOTECHNIKA question 197](assets/question_images/radiotechnika-q197.png)'
+  answers:
+  - wzmacniacz II p. cz. 455kHz
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 1
+- text: '198\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 8 to:
+
+    ![RADIOTECHNIKA question 198](assets/question_images/radiotechnika-q198.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - detektor FM
+  correct_index: 1
+- text: '199\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 9 to:
+
+    ![RADIOTECHNIKA question 199](assets/question_images/radiotechnika-q199.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II heterodyna stała
+  correct_index: 2
+- text: '200\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 10 to:
+
+    ![RADIOTECHNIKA question 200](assets/question_images/radiotechnika-q200.png)'
+  answers:
+  - I heterodyna kwarcowa
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: 211\. Jak zmienia się impedancja dipola półfalowego, gdy obniżamy wysokość
+    jego zawieszenia?
+  answers:
+  - rośnie.
+  - maleje.
+  - nie ulega zmianie.
+  correct_index: 1
+- text: 212\. Zysk anteny kierunkowej wyrażony jest w dBi. Względem jakiego źródła
+    jest określony?
+  answers:
+  - dipola pomiarowego
+  - źródła izotropowego
+  - innej anteny kierunkowej
+  correct_index: 1
+- text: 213\. Jaka jest różnica pomiędzy efektywną mocą promieniowaną e.r.p. a efektywną
+    mocą promieniowaną izotropowo e.i.r.p?
+  answers:
+  - e.i.r.p. jest większe o 2,15 dB od e.r.p.
+  - e.i.r.p. jest mniejsze o 2,15 dB od e.r.p.
+  - nie ma różnicy
+  correct_index: 0
+- text: 214\. Antena kierunkowa daje napięcie 4 razy większe, niż dipol półfalowy
+    zawieszony w tym samym miejscu. Jaki zysk ma antena kierunkowa?
+  answers:
+  - 6 dBd
+  - 4 dBd
+  - 12 dBd
+  correct_index: 2
+- text: 215\. Kabel koncentryczny o długości 100m, przy częstotliwości 144MHz wprowadza
+    tłumienie 12dB. Długość kabla pomiędzy nadajnikiem 100 W a anteną wynosi 50 m.
+    Jaka część tej mocy zostanie doprowadzona do anteny?
+  answers:
+  - 25%
+  - 50%
+  - 75%
+  correct_index: 1
+- text: '217\. Propagacja jonosferyczna latem, w dzień, pasma radioamatorskiego 20
+    m, najczęściej odbywa się przez odbicie od warstwy:'
+  answers:
+  - D
+  - E
+  - F
+  correct_index: 1
+- text: 218\. O czym mówi podawana w prognozach propagacji częstotliwość MUF?
+  answers:
+  - o zakłóceniach odbioru
+  - o maksymalnej częstotliwości do łączności na danej trasie
+  - o zaniku łączności w danym kierunku
+  correct_index: 1
+- text: '232\. Jeżeli składowa elektryczna fali jest prostopadła do ziemi, to fala
+    ma polaryzację:'
+  answers:
+  - poziomą
+  - pionową
+  - nie da się tego stwierdzić bez znajomości ułożenia składowej magnetycznej
+  correct_index: 1
+- text: '263\. Skrzynka antenowa w układzie T, gdzie szeregowo włączone są kondensatory,
+    a równolegle cewka, jest:'
+  answers:
+  - filtrem dolnoprzepustowym
+  - filtrem górnoprzepustowym
+  - filtrem pasmowym
+  correct_index: 1
+- text: '276\. Antena Yagi-Uda składa się co najmniej z:'
+  answers:
+  - wibratora, reflektora i direktora
+  - wibratora i directora
+  - pięciu prętów aluminiowych
+  correct_index: 0
+- text: '277\. Jeśli SWR w punkcie zasilania jest równy 1:1 to oznacza, że:'
+  answers:
+  - osiągnięto bardzo dobre dopasowanie linii zasilającej do nadajnika
+  - antena jest zawsze najlepiej dopasowana
+  - antena może pracować na kilku pasmach
+  correct_index: 0
+- text: '278\. Gdy antena jest w rezonansie, to:'
+  answers:
+  - moduł impedancji jest równy 50 Ω
+  - reaktancja jest równa 0 Ω
+  - reaktancja jest nieskończenie duża
+  correct_index: 1
+- text: 279\. Dipol półfalowy na pasmo 80 m prezentuje na paśmie 40 m
+  answers:
+  - niską impedancję
+  - bardzo wysoką impedancję
+  - zwarcie
+  correct_index: 1
+- text: '280\. Dipol półfalowy na pasmo 40m można użyć na paśmie:'
+  answers:
+  - 7 i 21 MHz
+  - 3,5 i 5 MHz
+  - 7 i 28 MHz
+  correct_index: 0
+- text: 281\. W antenie Yagi-Uda rolę wibratora pełni
+  answers:
+  - odcinek o długości 1/4 fali
+  - dipol półfalowy
+  - rezonator całofalowy
+  correct_index: 1
+- text: 282\. Antena Yagi-Uda z wibratorem skierowanym równolegle do ziemi będzie
+    miała polaryzację
+  answers:
+  - poziomą
+  - pionową
+  - lewoskrętną na półkuli południowej i prawoskrętną na północnej
+  correct_index: 0
+- text: 283\. Amatorskie radiolatarnie w paśmie 144 MHz pracują w polaryzacji poziomej.
+    Czy można sygnał takiej radiolatarni odbierać anteną o polaryzacji pionowej?
+  answers:
+  - tak, nie ma przeciwwskazań
+  - tak choć sygnał będzie znacznie słabszy niż przy zgodnej polaryzacji
+  - nie, może to spowodować uszkodzenie odbiornika lub anteny.
+  correct_index: 1
+- text: 284\. Zysk anteny wyrażony jest w dBi. Względem jakiego źródła jest określony?
+  answers:
+  - Dipola półfalowego
+  - Anteny izotropowej
+  - Anteny pionowej ćwierćfalowej
+  correct_index: 1
+- text: 285\. Antena kierunkowa w kierunku wiązki głównej wytwarza pole EM o natężeniu
+    4 razy większym, niż dipol półfalowy zawieszony w tym samym miejscu. Jaki zysk
+    ma antena?
+  answers:
+  - 6 dBd
+  - 4 dBd
+  - 12 dBd
+  correct_index: 0
+- text: '286\. Na paśmie 5 MHz w Polsce można nadawać maksymalną mocą 15 W EIRP, a
+    zatem do dipola na to pasmo można doprowadzić moc około:'
+  answers:
+  - 5 W
+  - 15 W
+  - 100 W, gdyż dipol ma ujemny zysk EIRP
+  correct_index: 0
+- text: '287\. Moc EIRP to moc równoważna wyznaczana względem:'
+  answers:
+  - dipola półfalowego
+  - źródła izotropowego
+  - anteny rezerwowej
+  correct_index: 1
+- text: 288\. Jaka jest różnica pomiędzy efektywną mocą promieniowaną ERP, a EIRP?
+  answers:
+  - EIRP jest większe o 2,15 dB od ERP
+  - EIRP jest mniejsze o 2,15 dB od ERP
+  - Nie ma różnicy
+  correct_index: 0
+- text: 289\. Mamy antenę kierunkową A o zysku 3 dBi i antenę kierunkową B o zysku
+    6 dBi. Do każdej z nich podano sygnał o mocy 100 W. Ile całkowitej mocy wypromieniowała
+    każda antena?
+  answers:
+  - A - 100 W, B - 100 W
+  - A - 200 W, B - 400 W
+  - A - 100 W, B - 200 W
+  correct_index: 0
+- text: 290\. Współczynnik tył/przód (F/B ratio) pewnej anteny kierunkowej wynosi
+    19 dB a jej zysk 10,5 dBd. Czy w sytuacji awarii rotora antenowego lepiej będzie
+    nadawać "tyłem anteny" korzystając z jej listka tylnego czy też przełączyć się
+    na dipol półfalowy w tej samej polaryzacji?
+  answers:
+  - przełączyć się na dipol
+  - pozostać przy antenie kierunkowej
+  - to bez znaczenia dla nadawania
+  correct_index: 2
+- text: '291\. Poziomo powieszony dipol półfalowy promieniuje:'
+  answers:
+  - dookólnie
+  - najmocniej w płaszczyźnie prostopadłej do osi zawieszenia dipola
+  - najwięcej wzdłuż osi zawieszenia dipola
+  correct_index: 1
+- text: 292\. Zamierzasz zrobić łączność z kolegą znajdującym się we Włoszech przy
+    pomocy dipola półfalowego na paśmie 20 m. W jakim kierunku najlepiej powiesić
+    tę antenę?
+  answers:
+  - na osi północ-południe
+  - na osi wschód-zachód
+  - nie użyję dipola, gdyż łączność będzie trudno nawiązać bez anteny kierunkowej
+    Yagi- Uda
+  correct_index: 1
+- text: 294\. Kabel koncentryczny po przytrzaśnięciu oknem uległ spłaszczeniu. Jak
+    można go naprawić?
+  answers:
+  - należy zabezpieczyć uszkodzony fragment taśmą izolacyjną
+  - należy zastosować ekran miedziany na uszkodzonym fragmencie w celu zapobiegania
+    wycieko wi w.cz
+  - ten fragment kabla nie nadaje się do użytku, można wyciąć uszkodzony fragment
+    oraz wykorzystać pozostałe odcinki przewodu
+  correct_index: 2
+- text: '295\. Nadajnik połączono kablem koncentrycznym ze sztucznym obciążeniem.
+    Prąd płynący w ekranie kabla koncentrycznego ma wartość:'
+  answers:
+  - zerową
+  - niemożliwą do oszacowania
+  - taką samą, jak prąd płynący w środkowej żyle
+  correct_index: 2
+- text: 296\. Pomiar SWR przy nadajniku wskazał wartość 1:1,5, ale mamy podejrzenie,
+    że dopasowanie anteny jest niewłaściwe. Co może być przyczyną?
+  answers:
+  - poziom zakłóceń lokalnych
+  - tłumienie linii zasilającej
+  - podejrzenie jest błędne, dopasowanie jest poprawne
+  correct_index: 1
+- text: '297\. Nadajnik został dołączony do anteny fiderem o całkowitym tłumieniu
+    5dB. Co wówczas zaobserwujemy:'
+  answers:
+  - stratę 50% mocy nadajnika, brak wpływu na odbiór
+  - stratę 5% mocy nadajnika, zmianę SWR
+  - stratę około 70% mocy nadajnika
+  correct_index: 2
+- text: '302\. Dlaczego podczas dnia trudno zrobić daleką łączność na paśmie 80 m:'
+  answers:
+  - z racji na brak propagacji w warstwie E
+  - z racji na silne tłumienie w warstwie D
+  - z racji na to, że anteny nie działają podczas dnia
+  correct_index: 1
+- text: '306\. Częstotliwość MUF (Maximum Usable Frequency) określa się:'
+  answers:
+  - dla danej trasy łączności
+  - dla danego nadajnika
+  - dla każdego krótkofalowca
+  correct_index: 0
+- text: 308\. Pewien krótkofalowiec zawsze kiedy wyjeżdżał na działkę pod Radomiem
+    zawieszał w tym samym miejscu dipol półfalowy na wysokości 15 m nad poziomem gruntu.
+    Niestety pewnego razu ze względu na uszkodzenie drabiny udało mu się powiesić
+    go tylko na wysokości 3m. Zauważył że słyszy znacznie lepiej stacje polskie ale
+    niestety przestał słyszeć stacje francuskie. Czym spowodowane było to zjawisko?
+  answers:
+  - Spowodowane jest to zmianą kątów promieniowania anteny
+  - Spowodowane jest to zmianą ogniskowej anteny
+  - Wysokość zawieszenia nie miała wpływu na zaobserwowane zjawisko
+  correct_index: 0
+- text: '310\. Propagacja troposferyczna w paśmie UKF polega na:'
+  answers:
+  - wielokrotnym odbiciu fal pomiędzy troposferą i jonosferą
+  - wielokrotnym odbiciu fal pomiędzy ziemią i troposferą
+  - prowadzeniu fal przez dukty powstałe z warstw ciepłego i zimnego powietrza
+  correct_index: 2
+- text: '312\. Pewnego dnia krótkofalowiec w paśmie 50 MHz usłyszał stacje z południa
+    Europy. Mogło się to zdarzyć:'
+  answers:
+  - zimą z racji na lokalne zanieczyszczenie powietrza
+  - głównie latem, dzięki propagacji w warstwie sporadycznej E
+  - latem z uwagi na mniejszą wilgotność powietrza
+  correct_index: 1
+- text: 313\. Pewnego dnia po wysokiej aktywności słonecznej pewien krótkofalowiec
+    usłyszał w paśmie 144 MHz kilka mocno zniekształconych sygnałów dalekich stacji.
+    z trudem odebrał wywołanie “CQ aurora” z czym miał do czynienia?
+  answers:
+  - rosyjskie zawody z okazji wybuchu rewolucji październikowej
+  - łącznościami z wykorzystaniem zorzy polarnej
+  - łącznościami w odbicu od księżyca
+  correct_index: 1
+- text: '315\. Skrót EME oznacza łączności z wykorzystaniem:'
+  answers:
+  - odbicia sygnału od Księżyca
+  - odbicia sygnału od samolotu
+  - odbicia sygnału od troposfery
+  correct_index: 0
+- text: '316\. Łączności EME można zrealizować:'
+  answers:
+  - na falach krótkich w paśmie 80 m
+  - na falach ultrakrótkich przy pomocy anten kierunkowych
+  - nie można, jest to zabronione
+  correct_index: 1
+- text: '320\. Antena na pasmo 2m została dołączona popularnym kablem koncentrycznym
+    RG-58 o długości 100m. Dlaczego krótkofalowiec nie uważa takiej instalacji za
+    optymalną:'
+  answers:
+  - Z racji na duże straty mocy w linii zasilającej
+  - Kabel RG-58 ma niewłaściwą impedancję
+  - Z racji na to, że kabel ten był używany w instalacjach CB Radio
+  correct_index: 0
+- text: '321\. Stacja o mocy 100 W na paśmie 20 m jest odbierana z siłą sygnału S9.
+    W przerwach emisji słychać także jej korespondenta o sile sygnału S4. Co się stanie
+    jeśli stacja ta zmniejszy moc nadawania do 10 W:'
+  answers:
+  - nie usłyszymy jej w ogóle, 10 W to za mało na taką łączność
+  - poprawi się jej modulacja
+  - będziemy ją nadal słyszeć, być może z nieco większym szumem
+  correct_index: 2
+- text: 329\. Co pokazuje reflektometr dołączony między wyjście nadajnika a kabel
+    antenowy?
+  answers:
+  - dopasowanie linii zasilającej
+  - rezonans anteny
+  - dostrojenie nadajnika
+  correct_index: 0
+- text: '331\. Ręczny radiotelefon niskiej jakości został dołączony do zewnętrznej
+    anteny i słyszalność stacji uległa znacznemu pogorszeniu. Jakie zjawisko może
+    być tego przyczyną:'
+  answers:
+  - brak odpowiedniego przedwzmacniacz a w.cz .
+  - blokowanie odbiornika przez bardzo silne sygnały, także spoza pasm amatorskich
+  - uszkodzenie odbiornika spowodowane sygnałem pobliskiego przemiennika w paśmie
+    2 m
+  correct_index: 1
+- text: '333\. Jeśli wzmacniacz mocy nie posiada pomiędzy ostatnim stopniem wzmocnienia
+    a wyjściem antenowym filtru dolnoprzepustowego to:'
+  answers:
+  - może zniekształcać sygnał wyjściowy na częstotliwości roboczej
+  - może wprowadzać zakłócenia spowodowane przez nieodfiltrowane harmoniczne
+  - ma optymalną konstrukcję
+  correct_index: 1
+- text: '334\. Odbiornik został uszkodzony przez silny sygnał z anteny, pochodzący
+    z pracującego w bezpośredniej bliskości nadajnika dużej mocy. Przyczyną uszkodzenia
+    mogło być:'
+  answers:
+  - wyindukowanie silnego sygnału w.cz. w antenie odbiorczej
+  - złe dostrojenie nadajnika
+  - przeniesienie sygnału w.cz. po kablu zasilającym przez złe zasilanie odbiornika
+  correct_index: 0
+- text: 336\. Krótkofalowiec zbudował skrzynkę antenową, ale przy pracy z tą skrzynką
+    obserwuje słabe świecenie nie zasilanej świetlówki, które nie występuje po odłączeniu
+    skrzynki. Co może wykonać, by to zjawisko wyeliminować?
+  answers:
+  - wprowadzić ekranowanie skrzynki, na przykład w postaci szczelnej, metalowej obudowy
+  - poprawić dopasowanie stopnia końcowego
+  - wymienić zasilacz sieciowy
+  correct_index: 0

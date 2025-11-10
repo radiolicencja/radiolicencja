@@ -1,0 +1,958 @@
+title: Radiotechnika - Modulacja, emisje, pasma, nadajniki/odbiorniki
+slug: radiotechnika-modulacja-emisje-pasma
+description: Pytania o emisje, modulacje, pasma, tor nadajnik/odbiornik, syntezy i
+  generatory.
+image: assets/images/radiotechnika.png
+questions:
+- text: 19\. Modulacja CW nazywana jest modulacją wąskopasmową, czy zatem jest możliwe
+    dowolne zawężanie filtra wejściowego odbiornika celem odcięcia bocznych sygnałów
+    niepożądanych?
+  answers:
+  - można zawężać dowolnie
+  - nie można, poniżej pewnej wartości szerokości filtra sygnał staje się nieczytelny
+  - można zawężać ale tylko o parzyste liczby herców
+  correct_index: 1
+- text: '24\. Modulacja PSK polega na:'
+  answers:
+  - dyskretnej zmianie fazy sygnału
+  - modulacji mocy wyjściowej
+  - nadawaniu obu wstęg bocznych na raz
+  correct_index: 0
+- text: '27\. Jeśli dla sygnału AM amplituda sygnału modulującego równa jest amplitudzie
+    fali nośnej, to mówimy, że:'
+  answers:
+  - współczynnik głębokości modulacji wynosi 100%
+  - sygnał jest przesterowany
+  - jest to modulacja z wytłumioną falą nośną
+  correct_index: 0
+- text: '28\. Szerokość kanału sygnału PSK31 wynosi:'
+  answers:
+  - około 1 kHz
+  - około 60 Hz
+  - około 31,25 Hz
+  correct_index: 1
+- text: '32\. W jaki sposób w emisjach cyfrowych można zapewnić korekcję błędów spowodowanych
+    zakłóceniami i zanikami w łączności radiowej:'
+  answers:
+  - przez wprowadzenie sumy kontrolnej CRC i ponowne wysyłanie tej samej informacji
+  - robi to operator wprowadzając odpowiednią komendę do modemu
+  - nie wprowadza się korekcji, zaniki są naturalną cechą łączności cyfrowej
+  correct_index: 0
+- text: '33\. Moc PEP jest:'
+  answers:
+  - mocą średnią
+  - mocą w szczytach modulacji
+  - mocą maksymalną tranzystora, po przekroczeniu której ulega uszkodzeniu
+  correct_index: 1
+- text: '35\. Na skali S-metru jedna jednostka odpowiada wzrostowi odbieranego sygnału
+    o 6 dB. Aby sygnał odbierany przez naszego korespondenta wzrósł z S7 do S9, moc
+    nadajnika należy zwiększyć:'
+  answers:
+  - ośmiokrotnie
+  - czterokrotnie
+  - szesnastokrotnie
+  correct_index: 2
+- text: '37\. Na wejście analizatora widma można bezpiecznie podać sygnał o mocy 20
+    dBm. Jakiego tłumika należy użyć, by nie uszkodzić przyrządu badając sygnał wyjściowy
+    nadajnika o mocy 100 W:'
+  answers:
+  - co najmniej 10 dB
+  - co najmniej 30 dB
+  - co najmniej 20 dB
+  correct_index: 1
+- text: '40\. Nadajnik o mocy wyjściowej 100 W pobiera z zasilacza 280 W. Jego sprawność
+    wynosi około:'
+  answers:
+  - 36%
+  - 64%
+  - 280%
+  correct_index: 0
+- text: 41\. Jaką moc PEP dostarcza nadajnik, jeśli napięcie międzyszczytowe (peak
+    to peak) zmierzone oscyloskopem na sztucznym obciążeniu 50 Ω wynosi 200 V?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: 42\. Jaka powinna być częstotliwość próbkowania sygnału o maksymalnej częstotliwości
+    składowej 50 kHz, aby poprawnie można było ten sygnał odtworzyć?
+  answers:
+  - minimum 50 kHz
+  - minimum 100 kHz
+  - minimum 500 kHz
+  correct_index: 1
+- text: '43\. Rozdzielczość bitowa przetwornika ADC wpływa na:'
+  answers:
+  - zakres dynamiki
+  - szybkość próbkowania
+  - pasmo przenoszenia
+  correct_index: 0
+- text: 49\. W jakim celu używana jest automatyczna kontrola poziomu (ALC) we wzmacniaczu
+    mocy RF?
+  answers:
+  - aby zrównoważyć charakterystykę częstotliwościową nadajnika
+  - aby zredukować promieniowanie harmonicznych
+  - aby zmniejszyć zniekształcenia spowodowane nadmiernym wysterowaniem
+  correct_index: 2
+- text: '51\. Który termin opisuje zdolność odbiornika do wyodrębnienia spośród różnych
+    sygnałów doprowadzonych do wejścia odbiornika tylko sygnału o takiej częstotliwości,
+    na którą jest nastrojony:'
+  answers:
+  - współczynnik dyskryminacji
+  - czułość
+  - selektywność
+  correct_index: 2
+- text: '53\. W odbiorniku superheterodynowym szumy fazowe oscylatora lokalnego mają
+    wpływ na:'
+  answers:
+  - pogorszenie stosunku sygnału do szumu
+  - pływanie odbieranego sygnału telegraficznego
+  - zmniejszenie sygnału audio
+  correct_index: 0
+- text: 60\. Ile mocy zostaje wypromieniowane przez antenę, jeśli miernik mocy podłączony
+    pomiędzy nadajnik a antenę wskazuje 100 W mocy padającej i 30 W mocy odbitej?
+  answers:
+  - 130 W
+  - 70 W
+  - 30 W
+  correct_index: 1
+- text: '76\. Modulacja telegraficzna CW polega na:'
+  answers:
+  - przerywaniu fali nośnej
+  - zmianie jej częstotliwości
+  - zmianie jej fazy
+  correct_index: 0
+- text: '77\. Emisja CW jest emisją:'
+  answers:
+  - wąskopasmową
+  - szerokopasmową
+  - z modulacją fazy
+  correct_index: 0
+- text: '78\. Powszechnie używana szerokość kanału FM w paśmie 2 m to:'
+  answers:
+  - 12,5 kHz
+  - 50 kHz
+  - 200 kHz
+  correct_index: 0
+- text: '79\. Powszechnie używana szerokość kanału przy emisji SSB to:'
+  answers:
+  - 9 kHz
+  - 2,7 kHz
+  - 1,5 kHz
+  correct_index: 1
+- text: 80\. Która z podanych mocy PEP odpowiada napięciu maksymalnemu Umax = 100
+    V, zmierzonemu oscyloskopem na wyjściu nadajnika, na obciążeniu 50Ω ?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: '93\. Wzmacniacz jest przesterowany kiedy:'
+  answers:
+  - ma za duże napięcie zasilania
+  - ma za duże napięcie wejściowe
+  - pracuje w klasie C
+  correct_index: 1
+- text: 94\. W jakiej klasie powinien pracować wzmacniacz w.cz. do wzmacniania sygnału
+    SSB?
+  answers:
+  - w klasie C
+  - w klasie AB
+  - impulsowo
+  correct_index: 1
+- text: '95\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych,
+    ale nieopisanych bloków. Blok 1 to:
+
+    ![RADIOTECHNIKA question 95](assets/question_images/radiotechnika-q095.png)'
+  answers:
+  - generator stabilizowany
+  - komparator
+  - dzielnik wzorca
+  correct_index: 0
+- text: '96\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych,
+    ale nieopisanych bloków. Blok 4 to:
+
+    ![RADIOTECHNIKA question 96](assets/question_images/radiotechnika-q096.png)'
+  answers:
+  - dzielnik wzorca
+  - generator wzorca
+  - komparator
+  correct_index: 1
+- text: '97\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 1 to:
+
+    ![RADIOTECHNIKA question 97](assets/question_images/radiotechnika-q097.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - detektor AM
+  correct_index: 0
+- text: '98\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 5 to:
+
+    ![RADIOTECHNIKA question 98](assets/question_images/radiotechnika-q098.png)'
+  answers:
+  - heterodyna
+  - wzmacniacz akustyczny
+  - detektor AM
+  correct_index: 1
+- text: '99\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 1 to:
+
+    ![RADIOTECHNIKA question 99](assets/question_images/radiotechnika-q099.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz akustyczny
+  - detektor AM CW SSB
+  correct_index: 0
+- text: '100\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 9 to:
+
+    ![RADIOTECHNIKA question 100](assets/question_images/radiotechnika-q100.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - wzmacniacz pośredniej cz.
+  - heterodyna
+  correct_index: 0
+- text: '101\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 1 to:
+
+    ![RADIOTECHNIKA question 101](assets/question_images/radiotechnika-q101.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 0
+- text: '102\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 2 to:
+
+    ![RADIOTECHNIKA question 102](assets/question_images/radiotechnika-q102.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - I mieszacz
+  - wzmacniacz II p.cz.
+  correct_index: 1
+- text: '103\. Jaka powinna być stabilność heterodyny w odbiorniku komunikacyjnym?
+    Częstotliwość heterodyny na najwyższym zakresie po włączeniu odbiornika powinna
+    zmieniać się nie więcej jak:'
+  answers:
+  - o 200 Hz
+  - o 500 Hz
+  - o 1000 Hz
+  correct_index: 0
+- text: '104\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 4 to:
+
+    ![RADIOTECHNIKA question 104](assets/question_images/radiotechnika-q104.png)'
+  answers:
+  - filtr wyjściowy
+  - wzmacniacz mocy (PA)
+  - separator
+  correct_index: 0
+- text: '105\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na kilka pasm amatorskich z powielaniem częstotliwości. Blok 1 to:
+
+    ![RADIOTECHNIKA question 105](assets/question_images/radiotechnika-q105.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  - separator
+  correct_index: 1
+- text: '106\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 1 to:
+
+    ![RADIOTECHNIKA question 106](assets/question_images/radiotechnika-q106.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO) 5 - 5,5 MHz
+  - wzbudnica SSB 9 MHz
+  correct_index: 2
+- text: '107\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 2 to:
+
+    ![RADIOTECHNIKA question 107](assets/question_images/radiotechnika-q107.png)'
+  answers:
+  - wzmacniacz sterujący
+  - mieszacz
+  - filtr wyjściowy
+  correct_index: 1
+- text: 123\. Jak w warunkach amatorskich zmierzyć moc wyjściową nadajnika?
+  answers:
+  - poprzez pomiar napięcia za pomocą sondy w.cz. na oporze sztucznej anteny 50 om
+    i obliczenie
+  - poprzez pomiar prądu i napięcia stałego doprowadzonego do stopnia mocy (PA)
+  - poprzez uzyskanie raportu od korespondenta
+  correct_index: 0
+- text: 124\. Jakim przyrządem mierzymy dopasowanie anteny do nadajnika?
+  answers:
+  - miernikiem zniekształceń nieliniowych
+  - sprawdzeniem czy kabel się nie grzeje
+  - za pomocą reflektometru
+  correct_index: 2
+- text: 125\. Jak zwalczyć zakłócenia rozprowadzane siecią energetyczną?
+  answers:
+  - przez stosowanie grubych przewodów
+  - przez stosowanie filtrów sieciowych, ekranowanie urządzeń i odpowiednią konstrukcję
+    urządzeń
+  - przez zastosowanie zabezpieczenia różnicowoprądowego
+  correct_index: 1
+- text: 126\. Jeżeli nadajnik amatorski powoduje zakłócenia, to jakie elementy sprawdzamy
+    w pierwszej kolejności?
+  answers:
+  - prawidłowe działanie mikrofonu
+  - blokadę szumów odbiornika
+  - liniowość stopnia mocy (PA), filtr wyjściowy, uziemienie radiostacji
+  correct_index: 2
+- text: '127\. Jeżeli nadajnik promieniuje energię w.cz. poprzez sieć zasilającą to
+    stosujemy:'
+  answers:
+  - filtr w.cz. na wyjściu antenowym nadajnika
+  - dławnicę kablową
+  - uziemiamy obudowę i włączamy filtr sieciowy w zasilanie
+  correct_index: 2
+- text: 140\. Częstotliwość pracy nadajnika amatorskiego wynosi 3,5714 MHz. Jaka jest
+    przybliżona długość fali tego nadajnika?
+  answers:
+  - 80 m
+  - 40 m
+  - 20 m
+  correct_index: 0
+- text: '142\. Przy modulacji amplitudy AM szerokość kanału radiowego zależy od:'
+  answers:
+  - najniższych częstotliwości modulujących
+  - amplitudy modulującego sygnału
+  - najwyższych częstotliwości modulujących
+  correct_index: 2
+- text: '143\. Modulacja FSK oznacza:'
+  answers:
+  - modulację amplitudy
+  - modulację fazy
+  - modulację z przesuwem częstotliwości
+  correct_index: 2
+- text: 144\. Moc wyjściową nadajnika FM podano w dBm i wynosi ona 33 dBm. Ile to
+    jest w watach? (dla ułatwienia podajemy, że 30 dBm odpowiada 1 W)
+  answers:
+  - 2 W
+  - 130 W
+  - 20 W
+  correct_index: 0
+- text: 145\. Napięcie na wejściu odbiornika o oporności 50 om wynosi 10 µV. Napięcie
+    to wzrosło do 100 µV. O ile wzrosło napięcie wyrażone w dB?
+  answers:
+  - o 10 dB
+  - o 20 dB
+  - o 40 dB
+  correct_index: 1
+- text: 146\. Zasilacz nadajnika dostarcza do stopnia końcowego nadajnika napięcie
+    20 V i prąd 5 A. Jaka jest sprawność energetyczna stopnia końcowego w %, jeżeli
+    na wyjściu zmierzyliśmy moc PEP = 40 W?
+  answers:
+  - 50 %
+  - 40 %
+  - 60 %
+  correct_index: 1
+- text: '165\. Na rysunku przedstawiono schemat detektora diodowego. Jaką rolę spełnia
+    w nim kondensator C1?
+
+    ![RADIOTECHNIKA question 165](assets/question_images/radiotechnika-q165.png)'
+  answers:
+  - jest kondensatorem filtrującym prądy w.cz.
+  - poprawia odtwarzanie wysokich tonów
+  - chroni słuchawki przed uszkodzeniem
+  correct_index: 0
+- text: 166\. Dlaczego do detekcji sygnałów telegrafii CW używamy detektora mnożącego
+    i pomocniczego generatora BFO?
+  answers:
+  - bo sygnał CW jest przerywany
+  - musimy wytworzyć słyszalne dudnienia z niemodulowanym sygnałem CW
+  - bo sygnał CW jest słaby
+  correct_index: 1
+- text: '167\. Aby czytelnie odebrać sygnał SSB, to przy odbiorze dolnej wstęgi (LSB)
+    sygnał odtwarzający falę nośną powinien być:'
+  answers:
+  - poniżej wstęgi LSB
+  - powyżej wstęgi LSB
+  - w środku LSB
+  correct_index: 1
+- text: 168\. Czy dyskryminator sygnału FM powinien reagować na modulację amplitudy
+    sygnału FM?
+  answers:
+  - nie
+  - tak
+  - nie ma to znaczenia
+  correct_index: 0
+- text: '169\. Warunkiem wzbudzenia się generatora z obwodem rezonansowym jest:'
+  answers:
+  - zastosowanie obwodu rezonansu szeregowego
+  - spełnienie warunku amplitudy i fazy
+  - zastosowanie ujemnego sprzężenia zwrotnego
+  correct_index: 1
+- text: '170\. Generator TCXO wysoką stabilność zawdzięcza:'
+  answers:
+  - zastosowaniu specjalnych układów korygujących częstotliwość
+  - docięciu kryształu kwarcu z dokładnością do femtometrów
+  - stabilizacji temperatury oscylatora
+  correct_index: 0
+- text: '272\. Bezpośrednia synteza cyfrowa (DDS) generuje przebieg przez:'
+  answers:
+  - użycie przetwornika cyfrowo-analogowego
+  - cyfrowe przestrajanie obwodu rezonansowego
+  - cyfrowe sterowanie układem NE555
+  correct_index: 0
+- text: '172\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 2 to:
+
+    ![RADIOTECHNIKA question 172](assets/question_images/radiotechnika-q172.png)'
+  answers:
+  - komparator fazy
+  - dzielnik częstotliwości
+  - generator wzorca
+  correct_index: 1
+- text: '173\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 3 to:
+
+    ![RADIOTECHNIKA question 173](assets/question_images/radiotechnika-q173.png)'
+  answers:
+  - dzielnik nastawny
+  - komparator fazy
+  - wzmacniacz błędu
+  correct_index: 1
+- text: '174\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 5 to:
+
+    ![RADIOTECHNIKA question 174](assets/question_images/radiotechnika-q174.png)'
+  answers:
+  - dzielnik częstotliwośći wzorca
+  - generator stabilizowany
+  - komparator fazy
+  correct_index: 0
+- text: '175\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 6 to:
+
+    ![RADIOTECHNIKA question 175](assets/question_images/radiotechnika-q175.png)'
+  answers:
+  - komparator fazy
+  - dzielnik nastawny
+  - wzmacniacz błędu
+  correct_index: 2
+- text: '176\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 2 to:
+
+    ![RADIOTECHNIKA question 176](assets/question_images/radiotechnika-q176.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - mieszacz
+  - detektor AM
+  correct_index: 1
+- text: '177\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 3 to:
+
+    ![RADIOTECHNIKA question 177](assets/question_images/radiotechnika-q177.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz pośredniej częstotliwości
+  - heterodyna
+  correct_index: 1
+- text: '178\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 4 to:
+
+    ![RADIOTECHNIKA question 178](assets/question_images/radiotechnika-q178.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  - detektor AM
+  correct_index: 2
+- text: '179\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 6 to:
+
+    ![RADIOTECHNIKA question 179](assets/question_images/radiotechnika-q179.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 2
+- text: '180\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 2 to:
+
+    ![RADIOTECHNIKA question 180](assets/question_images/radiotechnika-q180.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - I mieszacz
+  - filtr przełączany II p.cz.
+  correct_index: 1
+- text: '181\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 3 to:
+
+    ![RADIOTECHNIKA question 181](assets/question_images/radiotechnika-q181.png)'
+  answers:
+  - BFO
+  - wzmacniacz I pośredniej cz .
+  - heterodyna
+  correct_index: 1
+- text: '182\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 4 to:
+
+    ![RADIOTECHNIKA question 182](assets/question_images/radiotechnika-q182.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - BFO
+  - II mieszacz
+  correct_index: 2
+- text: '183\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 5 to:
+
+    ![RADIOTECHNIKA question 183](assets/question_images/radiotechnika-q183.png)'
+  answers:
+  - II heterodyna stała
+  - wzmacniacz akustyczny
+  - detektor AM CW SSB
+  correct_index: 0
+- text: '184\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 6 to:
+
+    ![RADIOTECHNIKA question 184](assets/question_images/radiotechnika-q184.png)'
+  answers:
+  - filtr przełączany II p.cz.
+  - wzmacniacz akustyczny
+  - II heterodyna stała
+  correct_index: 0
+- text: '185\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 7 to:
+
+    ![RADIOTECHNIKA question 185](assets/question_images/radiotechnika-q185.png)'
+  answers:
+  - BFO
+  - wzmacniacz II pośredniej cz.
+  - detektor AM , CW, SSB
+  correct_index: 1
+- text: '186\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 8 to:
+
+    ![RADIOTECHNIKA question 186](assets/question_images/radiotechnika-q186.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - wzmacniacz w.cz.
+  - detektor AM, CW, SSB
+  correct_index: 2
+- text: '187\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 10 to:
+
+    ![RADIOTECHNIKA question 187](assets/question_images/radiotechnika-q187.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - BFO
+  - detektor AM, CW, SSB
+  correct_index: 1
+- text: '188\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 11 to:
+
+    ![RADIOTECHNIKA question 188](assets/question_images/radiotechnika-q188.png)'
+  answers:
+  - I heterodyna strojona
+  - wzmacniacz akustyczny
+  - detektor AM
+  correct_index: 0
+- text: '189\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 2 to:
+
+    ![RADIOTECHNIKA question 189](assets/question_images/radiotechnika-q189.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  - mieszacz zrównoważony
+  correct_index: 2
+- text: '190\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 3 to:
+
+    ![RADIOTECHNIKA question 190](assets/question_images/radiotechnika-q190.png)'
+  answers:
+  - heterodyna
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  correct_index: 1
+- text: '191\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 4 to:
+
+    ![RADIOTECHNIKA question 191](assets/question_images/radiotechnika-q191.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 2
+- text: '192\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 1 to:
+
+    ![RADIOTECHNIKA question 192](assets/question_images/radiotechnika-q192.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '193\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 3 to:
+
+    ![RADIOTECHNIKA question 193](assets/question_images/radiotechnika-q193.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz I pośredniej cz. 10,7 MHz
+  - I heterodyna
+  correct_index: 1
+- text: '194\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 4 to:
+
+    ![RADIOTECHNIKA question 194](assets/question_images/radiotechnika-q194.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II mieszacz
+  correct_index: 2
+- text: '195\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 5 to:
+
+    ![RADIOTECHNIKA question 195](assets/question_images/radiotechnika-q195.png)'
+  answers:
+  - II heterodyna stała
+  - wzmacniacz II p.cz. 455 kHz
+  - detektor FM
+  correct_index: 1
+- text: '196\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 6 to:
+
+    ![RADIOTECHNIKA question 196](assets/question_images/radiotechnika-q196.png)'
+  answers:
+  - detektor FM
+  - wzmacniacz akustyczny
+  - II heterodyna stała
+  correct_index: 0
+- text: '197\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 7 to:
+
+    ![RADIOTECHNIKA question 197](assets/question_images/radiotechnika-q197.png)'
+  answers:
+  - wzmacniacz II p. cz. 455kHz
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 1
+- text: '198\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 8 to:
+
+    ![RADIOTECHNIKA question 198](assets/question_images/radiotechnika-q198.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - detektor FM
+  correct_index: 1
+- text: '199\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 9 to:
+
+    ![RADIOTECHNIKA question 199](assets/question_images/radiotechnika-q199.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II heterodyna stała
+  correct_index: 2
+- text: '200\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 10 to:
+
+    ![RADIOTECHNIKA question 200](assets/question_images/radiotechnika-q200.png)'
+  answers:
+  - I heterodyna kwarcowa
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '201\. Przez selektywność odbiornika rozumiemy jego:'
+  answers:
+  - zdolność do wyodrębnienia pożądanego sygnału
+  - dolny próg poziomu sygnału, który może odebrać
+  - szum własny odbiornika
+  correct_index: 0
+- text: '202\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 1 to:
+
+    ![RADIOTECHNIKA question 202](assets/question_images/radiotechnika-q202.png)'
+  answers:
+  - separator
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  correct_index: 2
+- text: '203\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 2 to:
+
+    ![RADIOTECHNIKA question 203](assets/question_images/radiotechnika-q203.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  - separator
+  correct_index: 2
+- text: '204\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 3 to:
+
+    ![RADIOTECHNIKA question 204](assets/question_images/radiotechnika-q204.png)'
+  answers:
+  - oscylator (VFO)
+  - wzmacniacz mocy (PA)
+  - filtr wyjściowy
+  correct_index: 1
+- text: '205\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na kilka pasm amatorskich z powielaniem częstotliwości. Blok 2 to:
+
+    ![RADIOTECHNIKA question 205](assets/question_images/radiotechnika-q205.png)'
+  answers:
+  - wzmacniacz sterujący
+  - separator
+  - I powielacz x2
+  correct_index: 1
+- text: '206\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 3 to:
+
+    ![RADIOTECHNIKA question 206](assets/question_images/radiotechnika-q206.png)'
+  answers:
+  - filtr pasmowy 3,5 - 14 MHz
+  - wzmacniacz mocy (PA)
+  - VFO 5 - 5.,5 MHz
+  correct_index: 0
+- text: '207\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 4 to:
+
+    ![RADIOTECHNIKA question 207](assets/question_images/radiotechnika-q207.png)'
+  answers:
+  - wzmacniacz sterujący
+  - filtr wyjściowy
+  - wzbudnica SSB 9 MHz
+  correct_index: 0
+- text: '208\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 5 to:
+
+    ![RADIOTECHNIKA question 208](assets/question_images/radiotechnika-q208.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - mieszacz
+  - oscylator (VFO) 5 - 5,5 MHz
+  correct_index: 0
+- text: '209\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 6 to:
+
+    ![RADIOTECHNIKA question 209](assets/question_images/radiotechnika-q209.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - filtr wyjściowy
+  - mieszacz
+  correct_index: 1
+- text: '210\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 7 to:
+
+    ![RADIOTECHNIKA question 210](assets/question_images/radiotechnika-q210.png)'
+  answers:
+  - oscylator (VFO) 5-5,5 MHz
+  - filtr wyjściowy
+  - filtr pasmowy 3,5 - 14 MHz
+  correct_index: 0
+- text: 215\. Kabel koncentryczny o długości 100m, przy częstotliwości 144MHz wprowadza
+    tłumienie 12dB. Długość kabla pomiędzy nadajnikiem 100 W a anteną wynosi 50 m.
+    Jaka część tej mocy zostanie doprowadzona do anteny?
+  answers:
+  - 25%
+  - 50%
+  - 75%
+  correct_index: 1
+- text: 223\. Dlaczego modulacja amplitudy AM (A3E) jest obecnie rzadziej używana
+    od SSB (J3E)?
+  answers:
+  - gdyż ma znacznie mniejszą sprawność energetyczną i szerokość emitowanego sygnału
+    jest dwukrotnie większa niż SSB
+  - gdyż obecne transceivery są zbyt skomplikowane, by z niej sprawnie korzystać
+  - dlatego, że AM jest używana w profesjonalnej radiofonii
+  correct_index: 0
+- text: '227\. Generator BFO jest niezbędny do odbioru:'
+  answers:
+  - sygnałów modulacji częstotliwości (F3E)
+  - sygnałów modulacji amplitudy z pełną falą nośną (A3E)
+  - sygnałów telegraficznych (A1) i modulacji amplitudy ze zredukowaną falą nośną
+  correct_index: 2
+- text: '228\. Który z czynników wpływa na stabilność generatora z obwodem LC:'
+  answers:
+  - temperatura
+  - zmiana wymiarów mechanicznych
+  - oba wyżej wymienione
+  correct_index: 2
+- text: '236\. W emisji RTTY używane jest:'
+  answers:
+  - kluczowanie amplitudy
+  - kluczowanie fazy
+  - kluczowanie częstotliwości
+  correct_index: 2
+- text: '237\. Zwiększając liczbę możliwych przesunięć fazy w modulacji PSK, bez zwiększania
+    baudrate, szerokość pasma sygnału:'
+  answers:
+  - zwiększa się
+  - zmniejsza się
+  - nie zmienia się
+  correct_index: 2
+- text: 238\. Moc wyjściową nadajnika FM podano w dBW i wynosi ona 13 dBW. Ile to
+    jest w watach?
+  answers:
+  - 5 W
+  - 130 W
+  - 20 W
+  correct_index: 2
+- text: 239\. Zasilacz dostarcza do stopnia końcowego nadajnika napięcie 500 V i prąd
+    200 mA. Jaka jest sprawność energetyczna stopnia końcowego, jeżeli na wyjściu
+    zmierzyliśmy moc PEP = 40 W?
+  answers:
+  - 50%
+  - 40%
+  - 60%
+  correct_index: 1
+- text: 240\. Która z podanych mocy PEP odpowiada napięciu maksymalnemu Umax = 100
+    V, zmierzonemu oscyloskopem na wyjściu nadajnika, na obciążeniu 50 omów (zakładamy
+    sygnał sinusoidalny)?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 1
+- text: '241\. W przetwornikach analogowo-cyfrowych, aby poprawnie odczytać sygnał
+    wejściowy, częstotliwość próbkowania musi być:'
+  answers:
+  - większa lub równa dwukrotności najwyższej częstotliwości przetwarzanego sygnału
+  - większa lub równa najwyższej częstotliwości przetwarzanego sygnału
+  - większa lub równa połowie najwyższej częstotliwości przetwarzanego sygnału
+  correct_index: 0
+- text: '242\. Filtr antyaliasingowy w odbiorniku SDR może być zrealizowany jako:'
+  answers:
+  - filtr sprzętowy
+  - filtr programowy
+  - filtr sprzętowy lub programowy
+  correct_index: 0
+- text: '267\. Demodulator FM może być zbudowany z użyciem:'
+  answers:
+  - pojedynczej diody i kondensatora
+  - mieszacza podwójnie zrównoważonego
+  - pętli synchronizacji fazy
+  correct_index: 2
+- text: '272\. Bezpośrednia synteza cyfrowa (DDS) generuje przebieg przez:'
+  answers:
+  - użycie przetwornika cyfrowo-analogowego
+  - cyfrowe przestrajanie obwodu rezonansowego
+  - cyfrowe sterowanie układem NE555
+  correct_index: 0
+- text: '273\. Odbiornik homodynowy od superheteredynowego odróżnia:'
+  answers:
+  - brak częstotliwości pośredniej (jest równa 0)
+  - brak generatora
+  - brak demodulatora
+  correct_index: 0
+- text: '274\. Dewiacja sygnału FM opisuje:'
+  answers:
+  - maksymalne odchylenie od częstotliwości nośnej
+  - szerokość pasma sygnału
+  - maksymalne różnice amplitudy sygnału
+  correct_index: 0
+- text: '286\. Na paśmie 5 MHz w Polsce można nadawać maksymalną mocą 15 W EIRP, a
+    zatem do dipola na to pasmo można doprowadzić moc około:'
+  answers:
+  - 5 W
+  - 15 W
+  - 100 W, gdyż dipol ma ujemny zysk EIRP
+  correct_index: 0
+- text: '287\. Moc EIRP to moc równoważna wyznaczana względem:'
+  answers:
+  - dipola półfalowego
+  - źródła izotropowego
+  - anteny rezerwowej
+  correct_index: 1
+- text: 288\. Jaka jest różnica pomiędzy efektywną mocą promieniowaną ERP, a EIRP?
+  answers:
+  - EIRP jest większe o 2,15 dB od ERP
+  - EIRP jest mniejsze o 2,15 dB od ERP
+  - Nie ma różnicy
+  correct_index: 0
+- text: 293\. Linię symetryczną zawieszono w otwartej przestrzeni, podłączono do symetrycznego
+    nadajnika i zakończono sztucznym obciążeniem. Czy wówczas linia promieniuje?
+  answers:
+  - tak
+  - nie
+  - tak, jeśli jej długość przekracza 1/4 długości fali (jest linią długą)
+  correct_index: 1
+- text: '295\. Nadajnik połączono kablem koncentrycznym ze sztucznym obciążeniem.
+    Prąd płynący w ekranie kabla koncentrycznego ma wartość:'
+  answers:
+  - zerową
+  - niemożliwą do oszacowania
+  - taką samą, jak prąd płynący w środkowej żyle
+  correct_index: 2
+- text: 296\. Pomiar SWR przy nadajniku wskazał wartość 1:1,5, ale mamy podejrzenie,
+    że dopasowanie anteny jest niewłaściwe. Co może być przyczyną?
+  answers:
+  - poziom zakłóceń lokalnych
+  - tłumienie linii zasilającej
+  - podejrzenie jest błędne, dopasowanie jest poprawne
+  correct_index: 1
+- text: '297\. Nadajnik został dołączony do anteny fiderem o całkowitym tłumieniu
+    5dB. Co wówczas zaobserwujemy:'
+  answers:
+  - stratę 50% mocy nadajnika, brak wpływu na odbiór
+  - stratę 5% mocy nadajnika, zmianę SWR
+  - stratę około 70% mocy nadajnika
+  correct_index: 2
+- text: '299\. Włączenie tłumika w odbiorniku spowoduje:'
+  answers:
+  - poprawę odporności odbiornika na silne sygnały
+  - poprawę stosunku sygnału do szumu na wejściu odbiornika
+  - przestrojenie odbiornika
+  correct_index: 0
+- text: '318\. Szumy własne odbiornika mają:'
+  answers:
+  - znaczenie na paśmie 80 m, by odebrać sygnał słabej stacji
+  - znaczenie na falach ultrakrótkich i mikrofalach, gdyż szum atmosferyczny jest
+    tam bardzo słaby
+  - praktycznie żadne znaczenie, to jest tylko parametr handlowy
+  correct_index: 1
+- text: '319\. Co można zrobić, by nawiązać łączność w trudnych warunkach, gdy sygnał
+    SSB jest bardzo słabo słyszalny wśród szumów:'
+  answers:
+  - użyć emisji FM
+  - przejść na telegrafię lub emisje cyfrowe do słabych sygnałów
+  - jeśli na SSB sygnał jest ledwo słyszalny, to nic nie można zrobić
+  correct_index: 1
+- text: '321\. Stacja o mocy 100 W na paśmie 20 m jest odbierana z siłą sygnału S9.
+    W przerwach emisji słychać także jej korespondenta o sile sygnału S4. Co się stanie
+    jeśli stacja ta zmniejszy moc nadawania do 10 W:'
+  answers:
+  - nie usłyszymy jej w ogóle, 10 W to za mało na taką łączność
+  - poprawi się jej modulacja
+  - będziemy ją nadal słyszeć, być może z nieco większym szumem
+  correct_index: 2
+- text: 329\. Co pokazuje reflektometr dołączony między wyjście nadajnika a kabel
+    antenowy?
+  answers:
+  - dopasowanie linii zasilającej
+  - rezonans anteny
+  - dostrojenie nadajnika
+  correct_index: 0
+- text: '332\. Jakie zjawisko jest odpowiedzialne za zakłócenia słyszalne w radioodbiorniku
+    jako dziwne dźwięki nałożone na sygnał stacji radiofonicznej FM:'
+  answers:
+  - intermodulacja w obwodach wejściowych odbiornika FM
+  - rozstrajanie generatora zadającego w syntezerze w odbiorniku FM
+  - detekcja sygnału SSB stacji amatorskiej we wzmacniaczu częstotliwości akustycznej
+    odbiornika
+  correct_index: 2
+- text: '334\. Odbiornik został uszkodzony przez silny sygnał z anteny, pochodzący
+    z pracującego w bezpośredniej bliskości nadajnika dużej mocy. Przyczyną uszkodzenia
+    mogło być:'
+  answers:
+  - wyindukowanie silnego sygnału w.cz. w antenie odbiorczej
+  - złe dostrojenie nadajnika
+  - przeniesienie sygnału w.cz. po kablu zasilającym przez złe zasilanie odbiornika
+  correct_index: 0

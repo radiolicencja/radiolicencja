@@ -1,0 +1,712 @@
+title: Radiotechnika - Elementy RLC, filtry, rezonans, transformatory
+slug: radiotechnika-rlc-filtry-rezonans
+description: Pytania o R, L, C, filtry, rezonans, impedancję, transformatory i obwody.
+image: assets/images/radiotechnika.png
+questions:
+- text: '2\. Obwód elektryczny składa się z kilku rezystorów o różnych wartościach
+    i źródła zasilania. Połączenie, w którym przez wszystkie elementy płynie ten sam
+    prąd nazywamy połączeniem:'
+  answers:
+  - rezonansowym
+  - szeregowym
+  - równoległym
+  correct_index: 1
+- text: 3\. Przez kondensator o impedancji 10 Ω płynie prąd przemienny o częstotliwości
+    50Hz i wartości 2A. Jaki będzie spadek napięcia na kondensatorze?
+  answers:
+  - 10 V
+  - 50 V
+  - 20 V
+  correct_index: 2
+- text: '4\. Przez trzy równoległe rezystory 1 Ω, 2 Ω i 4 Ω płyną prądy odpowiednio
+    4 A, 2 A i 1A. Całkowite natężenie prądu płynącego w obwodzie to:'
+  answers:
+  - 4 A
+  - 1 A
+  - 7 A
+  correct_index: 2
+- text: 13\. W obwodzie prądu stałego przez rezystor 1 kΩ płynie prąd 2 mA. Jaki jest
+    spadek napięcia na rezystorze?
+  answers:
+  - 200 V
+  - 2000 V
+  - 2 V
+  correct_index: 2
+- text: 14\. Do zasilacza o napięciu 12 V chcemy podłączyć diodę świecącą o napięciu
+    przewodzenia 3 V i nominalnym prądzie 20 mA. Jaki rezystor należy włączyć w szereg,
+    by ograniczyć prąd?
+  answers:
+  - 600 Ω
+  - 150 Ω
+  - 450 Ω
+  correct_index: 2
+- text: '15\. Która z cech łączy szeregowy obwód rezonansowy LC z typową anteną (dipol
+    półfalowy):'
+  answers:
+  - w rezonansie stanowią tylko rezystancję
+  - w rezonansie stanowią reaktancję pojemnościową
+  - w rezonansie stanowią reaktancję indukcyjną
+  correct_index: 0
+- text: 16\. Wartość skuteczna napięcia sieciowego wynosi 230 V, ile wynosi jego amplituda?
+  answers:
+  - 230 V
+  - 325 V
+  - 220 V
+  correct_index: 1
+- text: 17\. Jaka jest zależność fazowa między przepływającym prądem a napięciem w
+    szeregowym obwodzie rezonansowym w rezonansie?
+  answers:
+  - napięcie wyprzedza prąd o 90 stopni
+  - prąd wyprzedza napięcie o 90 stopni
+  - napięcie i prąd są zgodne w fazie
+  correct_index: 2
+- text: 19\. Modulacja CW nazywana jest modulacją wąskopasmową, czy zatem jest możliwe
+    dowolne zawężanie filtra wejściowego odbiornika celem odcięcia bocznych sygnałów
+    niepożądanych?
+  answers:
+  - można zawężać dowolnie
+  - nie można, poniżej pewnej wartości szerokości filtra sygnał staje się nieczytelny
+  - można zawężać ale tylko o parzyste liczby herców
+  correct_index: 1
+- text: 22\. Rezystor ma wartość 200 Ω. Płynie przez niego prąd 300 mA. Jaka moc wydziela
+    się na rezystorze?
+  answers:
+  - 18 W
+  - 1800 W
+  - 1,8 W
+  correct_index: 0
+- text: 23\. Które z poniższych stwierdzeń opisuje modulację amplitudy (A3E)?
+  answers:
+  - posiada obie wstęgi boczne
+  - nie posiada wstęg bocznych
+  - jest odporna na przemodulowanie
+  correct_index: 0
+- text: 26\. Która z wymienionych modulacji ma najwęższe pasmo?
+  answers:
+  - SSB
+  - PSK31
+  - CW
+  correct_index: 2
+- text: '27\. Jeśli dla sygnału AM amplituda sygnału modulującego równa jest amplitudzie
+    fali nośnej, to mówimy, że:'
+  answers:
+  - współczynnik głębokości modulacji wynosi 100%
+  - sygnał jest przesterowany
+  - jest to modulacja z wytłumioną falą nośną
+  correct_index: 0
+- text: 29\. Jakie napięcie występuje na rezystorze o wartości 50 Ω przy dostarczeniu
+    do niego mocy 200 W?
+  answers:
+  - 100 V
+  - 10000 V
+  - 4 V
+  correct_index: 0
+- text: 41\. Jaką moc PEP dostarcza nadajnik, jeśli napięcie międzyszczytowe (peak
+    to peak) zmierzone oscyloskopem na sztucznym obciążeniu 50 Ω wynosi 200 V?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: 44\. Transformator sieciowy na napięcie 230V, o sprawności 100 %, dostarcza
+    po stronie wtórnej napięcia 23V przy maksymalnym prądzie 10A. Jakiego prądu można
+    się spodziewać po stronie pierwotnej transformatora?
+  answers:
+  - 2 A
+  - co najmniej 1 A
+  - 10 A
+  correct_index: 1
+- text: '46\. Szeregowy obwód rezonansowy LC połączony w szereg z obciążeniem stanowi:'
+  answers:
+  - filtr pasmowoprzepustowy
+  - filtr pasmowozaporowy
+  - filtr IIR
+  correct_index: 0
+- text: 47\. Jakie zalety sprawiają, że filtry kwarcowe stosowane są w torze p. cz.?
+  answers:
+  - duża stromość zboczy charakterystyki częstotliwościowej pozwala na uzyskanie dobrej
+    selektywności
+  - zafalowania charakterystyki częstotliwościowej w paśmie przenoszenia pozwalają
+    na łatwą realizację funkcji automatycznej regulacji wzmocnienia
+  - łatwość budowy filtru o przestrajanej częstotliwości środkowej pozwala stworzyć
+    filtr podążający za częstotliwością VFO
+  correct_index: 0
+- text: 52\. Pewien ręczny radiotelefon VHF/UHF pozbawiony jest filtrów pasmowych
+    w torze wejściowym. Podczas aktywacji jednego ze szczytów w ramach programu SOTA
+    okazało się, że nie można odebrać sygnałów korespondentów, pomimo wykorzystania
+    dobrej anteny dookólnej. Czym może być spowodowane to zjawisko?
+  answers:
+  - rozpraszaniem sygnału na śladach jonizacyjnych meteorów (meteor scatter)
+  - zmniejszeniem czułości odbiornika przez mocny sygnał nadajnika rozgłośni radiowej
+    na sąsiedniej górze
+  - silnymi podmuchami wiatru
+  correct_index: 1
+- text: 65\. Co jest jednostką impedancji?
+  answers:
+  - farad
+  - om
+  - herc
+  correct_index: 1
+- text: '81\. Do cewki powietrznej 100 µH wkładamy rdzeń ferrytowy o względnej przenikalności
+    µ= 10. Ile wyniesie indukcyjność cewki?
+
+    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.jpg)'
+  answers:
+  - wzrośnie do 1000 µH
+  - nie zmieni się
+  - zmaleje do 10 µH
+  correct_index: 0
+- text: 82\. Są dwie cewki powietrzne. Przy tej samej średnicy i liczbie zwojów, L1
+    jest nawinięta drutem dwa razy grubszym niż L2. Która z nich ma większą dobroć
+    Q?
+  answers:
+  - cewka L1
+  - cewka L2
+  - obie mają taką samą dobroć, bo mają tą samą średnicę
+  correct_index: 0
+- text: 83\. Przekładnia transformatora wynosi 20 do 1. Strona pierwotna włączona
+    jest na napięcie sieci 240 V. Jakie napięcie będzie po stronie wtórnej?
+  answers:
+  - 24 V
+  - 12 V
+  - 20 V
+  correct_index: 1
+- text: '101\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 1 to:
+
+    ![RADIOTECHNIKA question 101](assets/question_images/radiotechnika-q101.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 0
+- text: '102\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 2 to:
+
+    ![RADIOTECHNIKA question 102](assets/question_images/radiotechnika-q102.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - I mieszacz
+  - wzmacniacz II p.cz.
+  correct_index: 1
+- text: '104\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 4 to:
+
+    ![RADIOTECHNIKA question 104](assets/question_images/radiotechnika-q104.png)'
+  answers:
+  - filtr wyjściowy
+  - wzmacniacz mocy (PA)
+  - separator
+  correct_index: 0
+- text: 116\. Reflektometr wskazuje, że amplituda fali padającej jest równa amplitudzie
+    fali odbitej. Współczynnik fali stojącej równy jest nieskończoności. Co może być
+    przyczyną takiego stanu?
+  answers:
+  - zwarcie lub przerwa w kablu
+  - niewielka zmiana oporności falowej anteny
+  - zamoczenie izolacji w kablu
+  correct_index: 0
+- text: 132\. Dobierz optymalnie moc nominalną (znamionową) rezystora 100 Ω w przypadku
+    w którym płynący przez niego prąd wywołuje na nim spadek napięcia 3V.
+  answers:
+  - grupa 1 W
+  - grupa 0,125 W
+  - grupa 0,5 W
+  correct_index: 1
+- text: 134\. Wartość amplitudy napięcia sinusoidalnego wynosi 200 V. Jaka jest wartość
+    skuteczna napięcia?
+  answers:
+  - 200 V
+  - 400 V
+  - 141,4 V
+  correct_index: 2
+- text: 135\. Napięcie międzyszczytowe sinusoidalnego prądu zmiennego wynosi 678 V.
+    Ile wynosi wartość skuteczna tego napięcia?
+  answers:
+  - 340 V
+  - 240 V
+  - 680 V
+  correct_index: 1
+- text: 138\. Dlaczego rdzenie transformatorów wykonywane są z blaszek?
+  answers:
+  - ze względu na lepsze chłodzenie
+  - ze względu na łatwiejsze wykonanie
+  - ze względu na mniejsze straty wynikające z prądów wirowych
+  correct_index: 2
+- text: '142\. Przy modulacji amplitudy AM szerokość kanału radiowego zależy od:'
+  answers:
+  - najniższych częstotliwości modulujących
+  - amplitudy modulującego sygnału
+  - najwyższych częstotliwości modulujących
+  correct_index: 2
+- text: 149\. Kondensator mikowy ma pojemność 6800 pF, i napięcie pracy 500V. Czy
+    można go zastosować w miejsce kondensatora 6,8 nF o napięciu pracy 250 V?
+  answers:
+  - tak, można
+  - nie można
+  - można, ale potrzebne są dwa takie kondensatory
+  correct_index: 0
+- text: 150\. W obwodzie prądu zmiennego przy tej samej częstotliwości zmieniono kondensator
+    2200 pF na 22 nF. Ile razy zmniejszyła się reaktancja Xc?
+  answers:
+  - 2 razy
+  - 100 razy
+  - 10 razy
+  correct_index: 2
+- text: 153\. Mamy dwa kondensatory o pojemności jeden 4,7 nF a drugi 300 pF. Jak
+    należy je połączyć by uzyskać pojemność 5000 pF?
+  answers:
+  - szeregowo
+  - równolegle
+  - nie da się z nich złożyć 5000 pF
+  correct_index: 1
+- text: 154\. W układzie były trzy kondensatory po 30 µF połączone szeregowo . Każdy
+    z nich ma napięcie pracy 100V. Czy możemy je zastąpić jednym kondensatorem 10
+    µF, jeśli tak, to jakie musi mieć napięcie pracy?
+  answers:
+  - nie możemy
+  - możemy stosując kondensator na napięcie 100 V
+  - możemy, stosując kondensator na napięcie 300 V
+  correct_index: 2
+- text: 155\. Dwie indukcyjności nie sprzężone mają 30 µH i 60 µH. Ile wynosi indukcyjność
+    zastępcza przy połączeniu szeregowym tych indukcyjności?
+  answers:
+  - 90 µH
+  - 20 µH
+  - 45 µH
+  correct_index: 0
+- text: '157\. Obwód rezonansowy równoległy LC w punkcie rezonansu przedstawia impedancję:'
+  answers:
+  - rzeczywistą omową
+  - reaktancję pojemnościową
+  - reaktancję indukcyjną
+  correct_index: 0
+- text: 158\. Mamy obwód rezonansowy o częstotliwości 3,5 MHz. W jego skład wchodzi
+    pojemność C = 400 pF. Jaką pojemność należy dołączyć zamiast C, by przestroić
+    obwód na 7 MHz?
+  answers:
+  - 200 pF
+  - 100 pF
+  - 57 pF
+  correct_index: 1
+- text: 159\. Obwód rezonansowy na częstotliwość 14 MHz ma dobroć Q=100. Jaka jest
+    szerokość pasma tego obwodu rezonansowego?
+  answers:
+  - 280 kHz
+  - 14 kHz
+  - 140 kHz
+  correct_index: 2
+- text: 161\. Napięcie na wyjściu zasilacza nieobciążonego z filtrem pojemnościowym,
+    wynosi 25 V. Jakie jest napięcie Usk transformatora zasilającego diody?
+  answers:
+  - 25 V
+  - 17,7 V
+  - 20 V
+  correct_index: 1
+- text: '163\. Wzmacniacz wysokiej częstotliwości obciążony obwodem rezonansowym jest:'
+  answers:
+  - wzmacniaczem selektywnym
+  - wzmacniaczem szerokopasmowym
+  - wzmacniaczem akustycznym
+  correct_index: 0
+- text: '165\. Na rysunku przedstawiono schemat detektora diodowego. Jaką rolę spełnia
+    w nim kondensator C1?
+
+    ![RADIOTECHNIKA question 165](assets/question_images/radiotechnika-q165.png)'
+  answers:
+  - jest kondensatorem filtrującym prądy w.cz.
+  - poprawia odtwarzanie wysokich tonów
+  - chroni słuchawki przed uszkodzeniem
+  correct_index: 0
+- text: 168\. Czy dyskryminator sygnału FM powinien reagować na modulację amplitudy
+    sygnału FM?
+  answers:
+  - nie
+  - tak
+  - nie ma to znaczenia
+  correct_index: 0
+- text: '169\. Warunkiem wzbudzenia się generatora z obwodem rezonansowym jest:'
+  answers:
+  - zastosowanie obwodu rezonansu szeregowego
+  - spełnienie warunku amplitudy i fazy
+  - zastosowanie ujemnego sprzężenia zwrotnego
+  correct_index: 1
+- text: '189\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 2 to:
+
+    ![RADIOTECHNIKA question 189](assets/question_images/radiotechnika-q189.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  - mieszacz zrównoważony
+  correct_index: 2
+- text: '190\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 3 to:
+
+    ![RADIOTECHNIKA question 190](assets/question_images/radiotechnika-q190.png)'
+  answers:
+  - heterodyna
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  correct_index: 1
+- text: '191\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 4 to:
+
+    ![RADIOTECHNIKA question 191](assets/question_images/radiotechnika-q191.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 2
+- text: '192\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 1 to:
+
+    ![RADIOTECHNIKA question 192](assets/question_images/radiotechnika-q192.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '193\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 3 to:
+
+    ![RADIOTECHNIKA question 193](assets/question_images/radiotechnika-q193.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz I pośredniej cz. 10,7 MHz
+  - I heterodyna
+  correct_index: 1
+- text: '194\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 4 to:
+
+    ![RADIOTECHNIKA question 194](assets/question_images/radiotechnika-q194.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II mieszacz
+  correct_index: 2
+- text: '195\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 5 to:
+
+    ![RADIOTECHNIKA question 195](assets/question_images/radiotechnika-q195.png)'
+  answers:
+  - II heterodyna stała
+  - wzmacniacz II p.cz. 455 kHz
+  - detektor FM
+  correct_index: 1
+- text: '196\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 6 to:
+
+    ![RADIOTECHNIKA question 196](assets/question_images/radiotechnika-q196.png)'
+  answers:
+  - detektor FM
+  - wzmacniacz akustyczny
+  - II heterodyna stała
+  correct_index: 0
+- text: '197\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 7 to:
+
+    ![RADIOTECHNIKA question 197](assets/question_images/radiotechnika-q197.png)'
+  answers:
+  - wzmacniacz II p. cz. 455kHz
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 1
+- text: '198\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 8 to:
+
+    ![RADIOTECHNIKA question 198](assets/question_images/radiotechnika-q198.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - detektor FM
+  correct_index: 1
+- text: '199\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 9 to:
+
+    ![RADIOTECHNIKA question 199](assets/question_images/radiotechnika-q199.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II heterodyna stała
+  correct_index: 2
+- text: '200\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 10 to:
+
+    ![RADIOTECHNIKA question 200](assets/question_images/radiotechnika-q200.png)'
+  answers:
+  - I heterodyna kwarcowa
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '202\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 1 to:
+
+    ![RADIOTECHNIKA question 202](assets/question_images/radiotechnika-q202.png)'
+  answers:
+  - separator
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  correct_index: 2
+- text: '203\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 2 to:
+
+    ![RADIOTECHNIKA question 203](assets/question_images/radiotechnika-q203.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  - separator
+  correct_index: 2
+- text: '204\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 3 to:
+
+    ![RADIOTECHNIKA question 204](assets/question_images/radiotechnika-q204.png)'
+  answers:
+  - oscylator (VFO)
+  - wzmacniacz mocy (PA)
+  - filtr wyjściowy
+  correct_index: 1
+- text: 211\. Jak zmienia się impedancja dipola półfalowego, gdy obniżamy wysokość
+    jego zawieszenia?
+  answers:
+  - rośnie.
+  - maleje.
+  - nie ulega zmianie.
+  correct_index: 1
+- text: 221\. Akumulator ma pojemność 20Ah i pozwala na pracę pełną mocą radiostacji,
+    która pobiera średnio około 5A. Czy taki akumulator wystarczy na trzygodzinną
+    pracę tej radiostacji?
+  answers:
+  - wystarczy, z pewnym zapasem
+  - nie wystarczy, akumulator ma zbyt małą pojemność
+  - akumulator ulegnie uszkodzeniu
+  correct_index: 0
+- text: '222\. Jakie typowo przyjmuje się pasmo częstotliwości przy transmisjach głosowych
+    na pasmach amatorskich:'
+  answers:
+  - od 300 Hz do 3 kHz
+  - od 20 Hz do 20 kHz
+  - od 400 Hz do 900 Hz
+  correct_index: 0
+- text: 223\. Dlaczego modulacja amplitudy AM (A3E) jest obecnie rzadziej używana
+    od SSB (J3E)?
+  answers:
+  - gdyż ma znacznie mniejszą sprawność energetyczną i szerokość emitowanego sygnału
+    jest dwukrotnie większa niż SSB
+  - gdyż obecne transceivery są zbyt skomplikowane, by z niej sprawnie korzystać
+  - dlatego, że AM jest używana w profesjonalnej radiofonii
+  correct_index: 0
+- text: 230\. Początkujący krótkofalowiec sfrustrował się brakiem stacji w paśmie
+    24 MHz. Opiekun radiostacji klubowej zalecił mu przejście na "niższe" pasmo. Które
+    pasmo powinien wybrać?
+  answers:
+  - 10 m
+  - 12 m
+  - 20 m
+  correct_index: 2
+- text: 233\. Napięcie międzyszczytowe sinusoidalnego napięcia zmiennego wynosi 678
+    V. Ile wynosi wartość skuteczna tego napięcia?
+  answers:
+  - 339 V
+  - 240 V
+  - 481 V
+  correct_index: 1
+- text: '235\. Sygnał prostokątny o idealnie ostrych zboczach zajmuje pasmo o szerokości:'
+  answers:
+  - dziesięciokrotności częstotliwości sygnału wejściowego.
+  - zerowej.
+  - nieskończonej
+  correct_index: 2
+- text: '242\. Filtr antyaliasingowy w odbiorniku SDR może być zrealizowany jako:'
+  answers:
+  - filtr sprzętowy
+  - filtr programowy
+  - filtr sprzętowy lub programowy
+  correct_index: 0
+- text: 243\. Rezystor o wartości 10 Ω dołączono do napięcia 3 V. Jakiej mocy rezystor
+    należy dobrać, żeby nie uległ on uszkodzeniu?
+  answers:
+  - 1 W
+  - 0,125 W
+  - 0,5 W
+  correct_index: 0
+- text: '244\. W kondensatorze energia jest magazynowana w:'
+  answers:
+  - polu elektrycznym
+  - polu magnetycznym
+  - nie jest magazynowana
+  correct_index: 0
+- text: 245\. W obwodzie prądu przemiennego, przy tej samej częstotliwości, zmieniono
+    kondensator 2200 pF na 22 nF. Ile razy zmniejszyła się reaktancja kondensatora?
+  answers:
+  - 0,1 raza
+  - 100 razy
+  - 10 razy
+  correct_index: 2
+- text: '246\. W kondensatorze przy napięciu przemiennym:'
+  answers:
+  - prąd wyprzedza napięcie w fazie o 90 stopni
+  - prąd jest w fazie z napięciem
+  - napięcie wyprzedza prąd w fazie o 90 stopni
+  correct_index: 0
+- text: '247\. Do budowy cewek często wykorzystujemy rdzenie toroidalne, ponieważ:'
+  answers:
+  - wprowadzają mniejsze straty w polu magnetycznym niż powietrze
+  - można przez cewkę przesłać znacznie większy prąd
+  - większość pola magnetycznego zamyka się w rdzeniu i cewka mniej wpływa na inne
+    elementy
+  correct_index: 2
+- text: 252\. Na wyjściu transformatora sieciowego napięcie skuteczne jest równe 300
+    V. Czy w prostowniku jednopołówkowym można użyć diody wytrzymującej napięcie wsteczne
+    400 V?
+  answers:
+  - tak
+  - nie
+  - tak, ale tylko przy małych obciążeniach
+  correct_index: 1
+- text: 257\. Jaka jest funkcja kondensatora C1 w układzie przedstawionym na rysunku?
+  answers:
+  - zwiększenie wzmocnienia dla prądów zmiennych
+  - filtrowanie prądu spoczynkowego
+  - nie ma żadnej funkcji
+  correct_index: 0
+- text: 258\. Mamy dwa kondensatory o pojemności 4,7 nF oraz 300 pF. Jak należy je
+    połączyć, by uzyskać pojemność 5000 pF?
+  answers:
+  - szeregowo
+  - równolegle
+  - nie da się uzyskać pojemności 5000 pF
+  correct_index: 1
+- text: 259\. W układzie były trzy kondensatory, każdy po 30 μF, połączone szeregowo.
+    Każdy z nich ma napięcie pracy 100V. Czy możemy je zastąpić jednym kondensatorem
+    10 μF? Jeśli tak, to o jakim napięciu pracy?
+  answers:
+  - nie możemy
+  - możemy, stosując kondensator na napięcie 100 V
+  - możemy, stosując kondensator na napięcie 300 V
+  correct_index: 2
+- text: 260\. Dwie niezależne cewki mają indukcyjności 30 μH i 60 μH. Ile wynosi indukcyjność
+    zastępcza przy połączeniu szeregowym tych cewek?
+  answers:
+  - 90 μH
+  - 45 μH
+  - 20 μH
+  correct_index: 0
+- text: '261\. Obwód rezonansowy szeregowy LC, w punkcie rezonansu, przedstawia:
+
+    ![RADIOTECHNIKA question 261](assets/question_images/radiotechnika-q261.png)'
+  answers:
+  - tylko rezystancję
+  - reaktancję pojemnościową
+  - reaktancję indukcyjną
+  correct_index: 0
+- text: '262\. Jeżeli dobroć obwodu rezonansowego Q = 100, to pasmo przy częstotliwości
+    obwodu 14 MHz ma szerokość:'
+  answers:
+  - 280 kHz
+  - 14 kHz
+  - 140 kHz
+  correct_index: 2
+- text: '263\. Skrzynka antenowa w układzie T, gdzie szeregowo włączone są kondensatory,
+    a równolegle cewka, jest:'
+  answers:
+  - filtrem dolnoprzepustowym
+  - filtrem górnoprzepustowym
+  - filtrem pasmowym
+  correct_index: 1
+- text: '264\. Zwiększenie rzędu filtru powoduje:'
+  answers:
+  - zwiększenie stromości zbocza
+  - pogorszenie właściwości filtracyjnych
+  - zmianę częstotliwości rezonansowej
+  correct_index: 0
+- text: 265\. Jaka jest funkcja rezystorów R1 i R2 w układzie przedstawionym na rysunku?
+  answers:
+  - Zabezpieczenie tranzystora przed uszkodzeniem
+  - Zwiększenie impedancji wejściowej
+  - Ustalenie punktu pracy tranzystora
+  correct_index: 2
+- text: 268\. Jaki jest cel włączenia szeregowo rezystora i kondensatora pomiędzy
+    wejście i wyjście wzmacniacza mocy z tranzystorem w układzie wspólnego źródła?
+  answers:
+  - zwiększenie wzmocnienia wzmacniacza.
+  - utworzenie obwodu rezonansowego, który działa jako filtr pasmowy.
+  - zwiększenie stabilności wzmacniacza.
+  correct_index: 2
+- text: '270\. Jako dzielnik częstotliwości w pętli synchronizacji fazy można użyć:'
+  answers:
+  - licznik
+  - wzmacniacz operacyjny
+  - dzielnik rezystorowy
+  correct_index: 0
+- text: '278\. Gdy antena jest w rezonansie, to:'
+  answers:
+  - moduł impedancji jest równy 50 Ω
+  - reaktancja jest równa 0 Ω
+  - reaktancja jest nieskończenie duża
+  correct_index: 1
+- text: 279\. Dipol półfalowy na pasmo 80 m prezentuje na paśmie 40 m
+  answers:
+  - niską impedancję
+  - bardzo wysoką impedancję
+  - zwarcie
+  correct_index: 1
+- text: '280\. Dipol półfalowy na pasmo 40m można użyć na paśmie:'
+  answers:
+  - 7 i 21 MHz
+  - 3,5 i 5 MHz
+  - 7 i 28 MHz
+  correct_index: 0
+- text: '286\. Na paśmie 5 MHz w Polsce można nadawać maksymalną mocą 15 W EIRP, a
+    zatem do dipola na to pasmo można doprowadzić moc około:'
+  answers:
+  - 5 W
+  - 15 W
+  - 100 W, gdyż dipol ma ujemny zysk EIRP
+  correct_index: 0
+- text: '320\. Antena na pasmo 2m została dołączona popularnym kablem koncentrycznym
+    RG-58 o długości 100m. Dlaczego krótkofalowiec nie uważa takiej instalacji za
+    optymalną:'
+  answers:
+  - Z racji na duże straty mocy w linii zasilającej
+  - Kabel RG-58 ma niewłaściwą impedancję
+  - Z racji na to, że kabel ten był używany w instalacjach CB Radio
+  correct_index: 0
+- text: '327\. Kondensator elektrolityczny 10µF został naładowany do napięcia 10V
+    i odłączony od zasilacza. Dołączony do jego końcówek woltomierz wskazuje systematyczny
+    spadek napięcia. Co może być przyczyną tego spadku:'
+  answers:
+  - oporność wewnętrzna woltomierza
+  - strata prądu na końcówkach zasilających
+  - promieniowanie radioaktywne otoczenia
+  correct_index: 0
+- text: '328\. Częstotliwość rezonansową obwodu LC możemy zmierzyć za pomocą:'
+  answers:
+  - generatora kwarcowego oraz amperomierza
+  - przyrządu GDO lub analizatora wektorowego
+  - nadajnika dużej mocy, strojąc do przepalenia bezpiecznika
+  correct_index: 1
+- text: '333\. Jeśli wzmacniacz mocy nie posiada pomiędzy ostatnim stopniem wzmocnienia
+    a wyjściem antenowym filtru dolnoprzepustowego to:'
+  answers:
+  - może zniekształcać sygnał wyjściowy na częstotliwości roboczej
+  - może wprowadzać zakłócenia spowodowane przez nieodfiltrowane harmoniczne
+  - ma optymalną konstrukcję
+  correct_index: 1
+- text: 338\. Czy brak filtru przeciwzakłóceniowego na obwodzie zasilania sieciowego
+    może być przyczyną zakłóceń w pracy urządzenia?
+  answers:
+  - tak, ale tylko przy dużej mocy
+  - zawsze, bez względu na moc
+  - to nie ma znaczenia, rolę filtru pełni transformator zasilacza
+  correct_index: 1

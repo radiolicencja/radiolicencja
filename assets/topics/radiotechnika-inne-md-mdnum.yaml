@@ -1,0 +1,291 @@
+title: Radiotechnika - Inne
+slug: radiotechnika-inne
+description: Pozostałe pytania, które nie pasują jednoznacznie do powyższych kategorii.
+image: assets/images/radiotechnika.png
+questions:
+- text: '6\. Łącząc równolegle źródła napięcia powinno się:'
+  answers:
+  - łączyć źródła o tej samej wydajności prądowej
+  - łączyć źródła tylko tego samego typu
+  - zadbać by ich napięcia były jednakowe
+  correct_index: 2
+- text: 7\. Jak nazywa się zdolność do gromadzenia energii w polu elektrycznym?
+  answers:
+  - opór
+  - pojemność
+  - kapacytancja
+  correct_index: 1
+- text: '8\. Współczynnikiem skrócenia przewodu nazywamy:'
+  answers:
+  - stosunek prędkości rozchodzenia się fali elektromagnetycznej w przewodzie do prędkości
+    światła w próżni
+  - stosunek prędkości rozchodzenia się fali elektromagnetycznej w przewodzie do prędkości
+    dźwięku w powietrzu
+  - parametr wtyczki, określający o ile zostanie skrócony kabel po jej montażu
+  correct_index: 0
+- text: 9\. Jak nazywa się prąd, który zmienia swój kierunek w regularnych odstępach
+    czasu?
+  answers:
+  - prąd stały
+  - prąd przemienny
+  - prąd siatki
+  correct_index: 1
+- text: 25\. Jakie są trzy metody uzyskiwania modulacji jednowstęgowej?
+  answers:
+  - detekcja obwiedni, przez zmianę częstotliwości fali nośnej, metoda sumacyjna
+  - metoda filtrowa, metoda fazowa, metoda Weavera
+  - metoda Marconiego, metoda Popowa, metoda kohererowa
+  correct_index: 1
+- text: '31\. Liczba 31 w nazwie modulacji BPSK31 oznacza:'
+  answers:
+  - szerokość kanału - 31 Hz
+  - szybkość przesyłania informacji - 31 Bd
+  - głębokość modulacji - 31%
+  correct_index: 1
+- text: '50\. Efektem mieszania dwóch sygnałów o częstotliwościach: 5 MHz i 2 MHz
+    jest:'
+  answers:
+  - sygnał o częstotliwości 3 MHz
+  - sygnał o częstotliwości 7 MHz
+  - dwa sygnały o częstotliwości 3 MHz i 7 MHz
+  correct_index: 2
+- text: 68\. Który przewód o tej samej długości i przekroju będzie miał najmniejszą
+    oporność?
+  answers:
+  - wykonany z aluminium
+  - wykonany z żelaza
+  - wykonany z miedzi
+  correct_index: 2
+- text: '72\. Ferromagnetyki to materiały, których przenikalność magnetyczna jest:'
+  answers:
+  - większa niż przenikalność magnetyczna powietrza
+  - mniejsza niż przenikalność magnetyczna powietrza
+  - równa przenikalności magnetycznej powietrza
+  correct_index: 0
+- text: 74\. Długość fali rozchodzącej się w powietrzu wynosi 1500 metrów. Jaka jest
+    częstotliwość tej fali?
+  answers:
+  - 2 MHz
+  - 200 kHz
+  - 233 kHz
+  correct_index: 1
+- text: 75\. Jaki zakres częstotliwości dźwięków wystarcza dla zrozumiałego nadawania
+    mowy?
+  answers:
+  - od 300 Hz do 3 kHz
+  - od 100 Hz do 5 kHz
+  - od 20 Hz do 15 kHz
+  correct_index: 0
+- text: '87\. Lampa elektronowa pentoda posiada:'
+  answers:
+  - pięć elektrod
+  - cztery elektrody
+  - trzy elektrody
+  correct_index: 0
+- text: 115\. Jak nazywa się przyrząd do mierzenia współczynnika fali stojącej?
+  answers:
+  - rezystomierz
+  - reflektometr
+  - refraktometr
+  correct_index: 1
+- text: '121\. Dalekie rozchodzenie się fal UKF podczas inwersji temperaturowej zawdzięczamy:'
+  answers:
+  - wielokrotnemu odbijaniu się fal od ciepłej ziemi
+  - odbijaniu się fal radiowych od podstawy chmur wysokich
+  - prowadzeniu fal przez dukty powstałe z warstw ciepłego i zimnego powietrza
+  correct_index: 2
+- text: 128\. Jaka instytucja zajmuje się lokalizowaniem zakłóceń radiowych i radioelektrycznych
+    oraz badaniem sprzętu radionadawczego?
+  answers:
+  - Urząd Komunikacji Elektronicznej
+  - Ministerstwo Ochrony Środowiska
+  - sztaby antykryzysowe
+  correct_index: 0
+- text: 133\. Jaka jest częstotliwość prądu zmiennego, którego okres wynosi 0,02 s?
+  answers:
+  - 100 Hz
+  - 50 Hz
+  - 60 Hz
+  correct_index: 1
+- text: 136\. Siła elektromotoryczna ogniwa wynosi 1,5 V. Oporność wewnętrzna ogniwa
+    wynosi 0,1Ω. Z ogniwa pobieramy prąd 1 A. Jakie będzie napięcie na zaciskach ogniwa?
+  answers:
+  - 1,5 V
+  - 1 V
+  - 1,4 V
+  correct_index: 2
+- text: '139\. Fala elektromagnetyczna ma dwie składowe. Zaznacz która kombinacja
+    jest poprawna:'
+  answers:
+  - składowa elektryczna i składowa prędkości
+  - składowa elektryczna i składowa magnetyczna
+  - składowa magnetyczna i składowa prędkości
+  correct_index: 1
+- text: 141\. Czy czysty sygnał sinusoidalny 1000 Hz zawiera harmoniczne 2000 Hz i
+    3000 Hz?
+  answers:
+  - zawiera tylko 2000 Hz
+  - zawiera obie harmoniczne
+  - nie zawiera w ogóle harmonicznych
+  correct_index: 2
+- text: 216\. Jakie długości fal zaliczamy do zakresu fal krótkich?
+  answers:
+  - od 100 m do 10 m
+  - od 80 m do 10 m
+  - od 160 m do 10 m
+  correct_index: 1
+- text: 219\. Co to jest strefa martwa na falach krótkich?
+  answers:
+  - strefa bez odbioru leżąca pomiędzy końcem fali przyziemnej a powrotem fali odbitej
+    od jonosfery
+  - strefa bez odbioru z powodu dużych zakłóceń w mieście
+  - strefa w której brak odbioru z powodu interferencji fal przychodzących z różnych
+    kierunków
+  correct_index: 0
+- text: 220\. Jakim przyrządem możemy sprawdzić kształt napięcia zmiennego w.cz. i
+    wykryć zniekształcenia sygnału?
+  answers:
+  - oscyloskopem
+  - miernikiem napięcia
+  - słuchając odbiornikiem
+  correct_index: 0
+- text: '224\. Najważniejsza z cech rezonatora kwarcowego to:'
+  answers:
+  - stabilność częstotliwości
+  - odporność na wysokie napięcie
+  - odporność na wibracje
+  correct_index: 0
+- text: '226\. Wzmacniacz w klasie C nie może być używany do:'
+  answers:
+  - fali nośnej, sygnałów modulacji częstotliwości
+  - sygnałów jednowstęgowych (J3E)
+  - może być używany wszędzie, gdyż ma wyższą sprawność
+  correct_index: 1
+- text: '229\. Na wyświetlaczu radiostacji z prezentacją widma można obserwować:'
+  answers:
+  - częstotliwość i amplitudę sygnału
+  - amplitudę i fazę sygnału
+  - częstotliwość i opóźnienie
+  correct_index: 0
+- text: '231\. Prędkość rozchodzenia się fali elektromagnetycznej w ośrodku innym
+    niż próżnia jest:'
+  answers:
+  - mniejsza niż w próżni
+  - większa niż w próżni
+  - mniejsza lub większa niż w próżni, zależnie od rodzaju ośrodka
+  correct_index: 0
+- text: 234\. Częstotliwość prądu przemiennego wynosi 50 Hz, jaki jest okres drgań?
+  answers:
+  - 20 ms
+  - 50 ms
+  - 500 ms
+  correct_index: 0
+- text: '248\. Stwierdzono, że wpływające do układu napięcie wyprzedza w fazie prąd.
+    Układ ten ma charakter:'
+  answers:
+  - rezystancyjny
+  - pojemnościowy
+  - indukcyjny
+  correct_index: 2
+- text: '269\. Szum fazowy jest wynikiem:'
+  answers:
+  - kluczowania fazy (PSK)
+  - krótkich i niewielkich odchyleń częstotliwości generatora
+  - mieszania się sygnałów o różnych fazach
+  correct_index: 1
+- text: 271\. W transceiverach SDR do przetwornika A/C doprowadza się sygnały kwadraturowe
+    (oznaczone jako I oraz Q). Jaki jest tego cel?
+  answers:
+  - Możliwość zaprogramowania demodulatora dla każdej emisji
+  - Minimalizacja zniekształceń sygnału
+  - Możliwość demodulacji sygnałów z dwóch różnych źródeł
+  correct_index: 0
+- text: '275\. Zbyt szybkie narastanie i opadanie sygnału telegraficznego powoduje:'
+  answers:
+  - zakłócenia określane jako "kliki"
+  - zwiększenie mocy wyjściowej nadajnika,
+  - zmniejszenie pasma używanego w tej emisji.
+  correct_index: 0
+- text: 298\. Użycie baluna wskazane jest kiedy
+  answers:
+  - zasilamy antenę typu longwire kablem koncentrycznym
+  - zasilamy dipol półfalowy kablem koncentrycznym
+  - chcemy przetestować tłumienność linii symetrycznej
+  correct_index: 1
+- text: 300\. Dlaczego możliwe są dalekie łączności UKF między szczytami górskimi?
+  answers:
+  - mniejsza gęstość atmosfery powoduje zmniejszenie tłumienia trasy
+  - anteny nadawcza i odbiorcza dzieli wolna przestrzeń
+  - brak pyłu zawieszonego zmniejsza dyfrakcję fali radiowej
+  correct_index: 1
+- text: '301\. Stabilne i ciągłe warunki łączności zapewnia w pasmach UKF:'
+  answers:
+  - łączność w zasięgu horyzontalnym
+  - łączność troposferyczna
+  - łączność przez odbicie od zorzy polarnej
+  correct_index: 0
+- text: '303\. Częstotliwość krytyczna w radiokomunikacji amatorskiej to:'
+  answers:
+  - początek i koniec każdego pasma amatorskiego
+  - częstotliwość zarezerwowana do łączności niebezpieczeństwa
+  - częstotliwość powyżej której fala nie podlega ugięciu w jonosferze w kierunku
+    ziemi
+  correct_index: 2
+- text: '304\. Najlepsze długookresowe warunki propagacyjne występują:'
+  answers:
+  - zupełnie nieregularnie
+  - co około 11 lat przy minimalnej aktywności słonecznej
+  - co około 11 lat przy maksymalnej aktywności słonecznej
+  correct_index: 2
+- text: 305\. Wysoka aktywność słoneczna powoduje
+  answers:
+  - polepszenie propagacji w pasmach KF
+  - pogorszenie propagacji w pasmach KF
+  - nie ma wpływu na propagację fal radiowych
+  correct_index: 0
+- text: '307\. Aby nawiązać łączność na dalekie odległości na falach krótkich należy
+    użyć:'
+  answers:
+  - anten o wysokim kącie promieniowania
+  - anten o niskim kącie promieniowania
+  - nadajnika o dużej mocy, antena i pasmo mogą być dowolne.
+  correct_index: 1
+- text: '309\. Charakterystyczne okresowe zaniki sygnału na falach krótkich spowodowane
+    są:'
+  answers:
+  - niewłaściwą pracą anteny
+  - wielodrogową propagacją i zmianą tłumienia na trasie
+  - utratą mocy nadajnika
+  correct_index: 1
+- text: '311\. Aby uzyskać możliwie najlepszy zasięg na falach ultrakrótkich należy:'
+  answers:
+  - użyć anteny promieniowania pionowego
+  - zainstalować antenę nisko, by mieć jak najmniejsze zakłócenia
+  - zainstalować antenę wysoko, by mieć jak najdalszy horyzont radiowy
+  correct_index: 2
+- text: '314\. Na których pasmach amatorskich można próbować łączności poprzez odbicie
+    od zjonizowanych śladów meteorów:'
+  answers:
+  - na pasmach fal ultrakrótkich, np. 70 cm lub 2 m
+  - na niskich pasmach fal krótkich, np. 80 m i 40 m
+  - takie łączności są niemożliwe, meteory są zbyt małe, by odbijać fale radiowe
+  correct_index: 0
+- text: '317\. Silne trzaski obserwowane często na falach krótkich są spowodowane:'
+  answers:
+  - przez odległe burze
+  - przez pracę innych nadajników
+  - przez niestabilność temperaturową generatora
+  correct_index: 0
+- text: '322\. Podczas prowadzenia łączności kierujemy się zasadą:'
+  answers:
+  - minimalnej mocy nadajnika, niezbędnej dla danej łączności
+  - pracy z maksymalną mocą nadajnika
+  - doboru mocy nadajnika do ograniczeń licencyjnych w kraju, z którym nawiązujemy
+    łączność
+  correct_index: 0
+- text: '337\. Dynamika jest:'
+  answers:
+  - różnicą pomiędzy najsłabszym a najmocniejszym sygnałem
+  - miarą szybkości zmian amplitudy
+  - miarą szybkości nadawania znaków telegraficznych
+  correct_index: 0

@@ -1,0 +1,265 @@
+title: Kody Q – podstawy
+slug: kody-q-podstawy
+description: Test wiedzy z podstawowych kodów Q używanych w łączności.
+image: assets/images/q-codes.png
+test_question_limit: 25
+questions:
+  - text: Co oznacza kod QRL?
+    answers:
+      - Źle się czuję, odezwę się później
+      - Jestem zajęty, proszę nie przeszkadzać
+      - Do zobaczenia latem
+    correct_index: 1
+
+  - text: Co oznacza kod QRT?
+    answers:
+      - Która jest godzina?
+      - Kończę nadawanie, wyłączam stację
+      - Nadawaj wolniej
+    correct_index: 1
+
+  - text: Co oznacza kod QRZ?
+    answers:
+      - Zmień częstotliwość na zapasową
+      - Kto mnie woła?
+      - Jestem zajęty, proszę nie przeszkadzać
+    correct_index: 1
+
+  - text: Co oznacza kod QRX?
+    answers:
+      - Proszę czekać, wywołam cię ponownie
+      - Nadawaj wolniej
+      - Mam zakłócenia od innych stacji
+    correct_index: 0
+
+  - text: Co oznacza kod QRO?
+    answers:
+      - Nic dla ciebie nie mam
+      - Zwiększ moc, zwiększam moc
+      - Przerwij nadawanie, kończę pracę
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Moja częstotliwość jest…”?
+    answers:
+      - QRJ
+      - QRG
+      - QRK
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Przejdź na częstotliwość, zmień częstotliwość”?
+    answers:
+      - QSY
+      - QTR
+      - QSA
+    correct_index: 0
+
+  - text: Który kod Q oznacza „Mam zakłócenia od innych stacji”?
+    answers:
+      - QWO
+      - QQQ
+      - QRM
+    correct_index: 2
+
+  - text: Który kod Q oznacza „Siła twoich sygnałów waha się”?
+    answers:
+      - QSB
+      - QAZ
+      - QRY
+    correct_index: 0
+
+  - text: Który kod Q oznacza „Jestem gotów do pracy, jestem czynny w eterze”?
+    answers:
+      - QWX
+      - QRV
+      - QRU
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Moje położenie geograficzne jest…”?
+    answers:
+      - QLP
+      - QRG
+      - QTH
+    correct_index: 2
+
+  - text: Który kod Q oznacza „Zmniejsz moc, zmniejszam moc”?
+    answers:
+      - QUB
+      - QRA
+      - QRP
+    correct_index: 2
+
+  - text: Który kod Q oznacza „Mam dla ciebie telegram, wiadomość”?
+    answers:
+      - QRT
+      - QTC
+      - QSV
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Łączność, mam łączność”?
+    answers:
+      - QSL
+      - QSO
+      - QRS
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Potwierdzam odbiór, przyślę kartę potwierdzającą łączność”?
+    answers:
+      - QSL
+      - QSA
+      - QRT
+    correct_index: 0
+
+  - text: Który kod Q dotyczy czytelności sygnału?
+    answers:
+      - QRK
+      - QSA
+      - QRP
+    correct_index: 0
+
+  - text: Który kod Q dotyczy siły sygnału?
+    answers:
+      - QRV
+      - QSA
+      - QSX
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Która jest godzina?” / „Podaj czas”?
+    answers:
+      - QTR
+      - QRY
+      - QRG
+    correct_index: 0
+
+  - text: Który kod Q oznacza „Jakie mam miejsce w kolejce?”?
+    answers:
+      - QRL
+      - QRY
+      - QRX
+    correct_index: 1
+
+  - text: Który kod Q oznacza „Nazwa twojej stacji jest…”?
+    answers:
+      - QRA
+      - QRZ
+      - QTH
+    correct_index: 0
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Jestem zajęty, proszę nie przeszkadzać”.
+    answers:
+      - QRL
+      - qrl
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Kończę nadawanie, wyłączam stację”.
+    answers:
+      - QRT
+      - qrt
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Kto mnie woła?”.
+    answers:
+      - QRZ
+      - qrz
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Proszę czekać, wywołam cię ponownie”.
+    answers:
+      - QRX
+      - qrx
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Zwiększ moc, zwiększam moc”.
+    answers:
+      - QRO
+      - qro
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Moja częstotliwość jest…”.
+    answers:
+      - QRG
+      - qrg
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Przejdź na częstotliwość, zmień częstotliwość”.
+    answers:
+      - QSY
+      - qsy
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Mam zakłócenia od innych stacji”.
+    answers:
+      - QRM
+      - qrm
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Siła twoich sygnałów waha się”.
+    answers:
+      - QSB
+      - qsb
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Jestem gotów do pracy, jestem czynny w eterze”.
+    answers:
+      - QRV
+      - qrv
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Moje położenie geograficzne jest…”.
+    answers:
+      - QTH
+      - qth
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Zmniejsz moc, zmniejszam moc”.
+    answers:
+      - QRP
+      - qrp
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Mam dla ciebie telegram, wiadomość”.
+    answers:
+      - QTC
+      - qtc
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Łączność, mam łączność”.
+    answers:
+      - QSO
+      - qso
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Potwierdzam odbiór, przyślę kartę potwierdzającą łączność”.
+    answers:
+      - QSL
+      - qsl
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Czytelność twojego sygnału jest…”.
+    answers:
+      - QRK
+      - qrk
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Siła twojego sygnału jest…”.
+    answers:
+      - QSA
+      - qsa
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Która jest godzina?” / „Podaj czas”.
+    answers:
+      - QTR
+      - qtr
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Jakie mam miejsce w kolejce?”.
+    answers:
+      - QRY
+      - qry
+
+  - type: open
+    text: Podaj kod Q oznaczający: „Nazwa twojej stacji jest…”.
+    answers:
+      - QRA
+      - qra
