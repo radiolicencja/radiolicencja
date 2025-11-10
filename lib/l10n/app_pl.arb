@@ -39,6 +39,7 @@
   "quizButtonNextQuestion": "Następne pytanie",
   "quizButtonCheckAnswer": "Sprawdź odpowiedź",
   "quizButtonCorrect": "Poprawnie!",
+  "quizButtonIDontKnow": "Nie wiem",
   "quizAcceptedAnswersLabel": "Akceptowane odpowiedzi: {answers}",
   "quizWrongAnswerLabel": "To nie to.",
   "quizYourAnswerLabel": "Twoja odpowiedź",

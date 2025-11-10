@@ -89,6 +89,7 @@
   "quizButtonNextQuestion": "Next question",
   "quizButtonCheckAnswer": "Check answer",
   "quizButtonCorrect": "Correct!",
+  "quizButtonIDontKnow": "I don't know",
   "quizAcceptedAnswersLabel": "Accepted answers: {answers}",
   "@quizAcceptedAnswersLabel": {
     "placeholders": {

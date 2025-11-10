@@ -1,0 +1,514 @@
+title: Radiotechnika - Schematy blokowe, budowa odbiorników i nadajników
+slug: radiotechnika-schematy-blokowe-numbered
+description: Pytania dotyczące schematów blokowych oraz budowy odbiorników i nadajników.
+image: assets/images/radiotechnika.png
+questions:
+- text: '53\. W odbiorniku superheterodynowym szumy fazowe oscylatora lokalnego mają
+    wpływ na:'
+  answers:
+  - pogorszenie stosunku sygnału do szumu
+  - pływanie odbieranego sygnału telegraficznego
+  - zmniejszenie sygnału audio
+  correct_index: 0
+- text: '90\. Na rysunku przedstawiono schemat prostownika. Jak nazywa się ten rodzaj
+    prostownika?
+
+    ![RADIOTECHNIKA question 90](assets/question_images/radiotechnika-q090.png)'
+  answers:
+  - prostownik dwupołówkowy
+  - prostownik jednopołówkowy
+  - prostownik mostkowy dwupołówkowy
+  correct_index: 1
+- text: '91\. Na rysunku przedstawiono schemat prostownika. Jak nazywa się ten rodzaj
+    prostownika?
+
+    ![RADIOTECHNIKA question 91](assets/question_images/radiotechnika-q091.jpg)'
+  answers:
+  - prostownik dwupołówkowy
+  - prostownik jednopołówkowy
+  - prostownik mostkowy dwupołówkowy
+  correct_index: 0
+- text: '95\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych,
+    ale nieopisanych bloków. Blok 1 to:
+
+    ![RADIOTECHNIKA question 95](assets/question_images/radiotechnika-q095.png)'
+  answers:
+  - generator stabilizowany
+  - komparator
+  - dzielnik wzorca
+  correct_index: 0
+- text: '96\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych,
+    ale nieopisanych bloków. Blok 4 to:
+
+    ![RADIOTECHNIKA question 96](assets/question_images/radiotechnika-q096.png)'
+  answers:
+  - dzielnik wzorca
+  - generator wzorca
+  - komparator
+  correct_index: 1
+- text: '97\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 1 to:
+
+    ![RADIOTECHNIKA question 97](assets/question_images/radiotechnika-q097.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - detektor AM
+  correct_index: 0
+- text: '98\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 5 to:
+
+    ![RADIOTECHNIKA question 98](assets/question_images/radiotechnika-q098.png)'
+  answers:
+  - heterodyna
+  - wzmacniacz akustyczny
+  - detektor AM
+  correct_index: 1
+- text: '99\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 1 to:
+
+    ![RADIOTECHNIKA question 99](assets/question_images/radiotechnika-q099.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz akustyczny
+  - detektor AM CW SSB
+  correct_index: 0
+- text: '100\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 9 to:
+
+    ![RADIOTECHNIKA question 100](assets/question_images/radiotechnika-q100.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - wzmacniacz pośredniej cz.
+  - heterodyna
+  correct_index: 0
+- text: '101\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 1 to:
+
+    ![RADIOTECHNIKA question 101](assets/question_images/radiotechnika-q101.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 0
+- text: '102\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 2 to:
+
+    ![RADIOTECHNIKA question 102](assets/question_images/radiotechnika-q102.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - I mieszacz
+  - wzmacniacz II p.cz.
+  correct_index: 1
+- text: '104\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 4 to:
+
+    ![RADIOTECHNIKA question 104](assets/question_images/radiotechnika-q104.png)'
+  answers:
+  - filtr wyjściowy
+  - wzmacniacz mocy (PA)
+  - separator
+  correct_index: 0
+- text: '105\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na kilka pasm amatorskich z powielaniem częstotliwości. Blok 1 to:
+
+    ![RADIOTECHNIKA question 105](assets/question_images/radiotechnika-q105.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  - separator
+  correct_index: 1
+- text: '106\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 1 to:
+
+    ![RADIOTECHNIKA question 106](assets/question_images/radiotechnika-q106.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO) 5 - 5,5 MHz
+  - wzbudnica SSB 9 MHz
+  correct_index: 2
+- text: '107\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 2 to:
+
+    ![RADIOTECHNIKA question 107](assets/question_images/radiotechnika-q107.png)'
+  answers:
+  - wzmacniacz sterujący
+  - mieszacz
+  - filtr wyjściowy
+  correct_index: 1
+- text: '160\. Na rysunku przedstawiono schemat prostownika. Jak nazywa się ten rodzaj
+    prostownika?
+
+    ![RADIOTECHNIKA question 160](assets/question_images/radiotechnika-q160.png)'
+  answers:
+  - prostownik dwupołówkowy
+  - prostownik jednopołówkowy
+  - prostownik mostkowy dwupołówkowy
+  correct_index: 2
+- text: '165\. Na rysunku przedstawiono schemat detektora diodowego. Jaką rolę spełnia
+    w nim kondensator C1?
+
+    ![RADIOTECHNIKA question 165](assets/question_images/radiotechnika-q165.png)'
+  answers:
+  - jest kondensatorem filtrującym prądy w.cz.
+  - poprawia odtwarzanie wysokich tonów
+  - chroni słuchawki przed uszkodzeniem
+  correct_index: 0
+- text: '172\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 2 to:
+
+    ![RADIOTECHNIKA question 172](assets/question_images/radiotechnika-q172.png)'
+  answers:
+  - komparator fazy
+  - dzielnik częstotliwości
+  - generator wzorca
+  correct_index: 1
+- text: '173\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 3 to:
+
+    ![RADIOTECHNIKA question 173](assets/question_images/radiotechnika-q173.png)'
+  answers:
+  - dzielnik nastawny
+  - komparator fazy
+  - wzmacniacz błędu
+  correct_index: 1
+- text: '174\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 5 to:
+
+    ![RADIOTECHNIKA question 174](assets/question_images/radiotechnika-q174.png)'
+  answers:
+  - dzielnik częstotliwośći wzorca
+  - generator stabilizowany
+  - komparator fazy
+  correct_index: 0
+- text: '175\. Na rysunku przedstawiono schemat stabilizacji PLL w formie ponumerowanych
+    ale nie opisanych bloków. Blok 6 to:
+
+    ![RADIOTECHNIKA question 175](assets/question_images/radiotechnika-q175.png)'
+  answers:
+  - komparator fazy
+  - dzielnik nastawny
+  - wzmacniacz błędu
+  correct_index: 2
+- text: '176\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 2 to:
+
+    ![RADIOTECHNIKA question 176](assets/question_images/radiotechnika-q176.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - mieszacz
+  - detektor AM
+  correct_index: 1
+- text: '177\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 3 to:
+
+    ![RADIOTECHNIKA question 177](assets/question_images/radiotechnika-q177.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz pośredniej częstotliwości
+  - heterodyna
+  correct_index: 1
+- text: '178\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 4 to:
+
+    ![RADIOTECHNIKA question 178](assets/question_images/radiotechnika-q178.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  - detektor AM
+  correct_index: 2
+- text: '179\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM z pojedynczą przemianą. Blok 6 to:
+
+    ![RADIOTECHNIKA question 179](assets/question_images/radiotechnika-q179.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 2
+- text: '180\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 2 to:
+
+    ![RADIOTECHNIKA question 180](assets/question_images/radiotechnika-q180.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - I mieszacz
+  - filtr przełączany II p.cz.
+  correct_index: 1
+- text: '181\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 3 to:
+
+    ![RADIOTECHNIKA question 181](assets/question_images/radiotechnika-q181.png)'
+  answers:
+  - BFO
+  - wzmacniacz I pośredniej cz .
+  - heterodyna
+  correct_index: 1
+- text: '182\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 4 to:
+
+    ![RADIOTECHNIKA question 182](assets/question_images/radiotechnika-q182.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - BFO
+  - II mieszacz
+  correct_index: 2
+- text: '183\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 5 to:
+
+    ![RADIOTECHNIKA question 183](assets/question_images/radiotechnika-q183.png)'
+  answers:
+  - II heterodyna stała
+  - wzmacniacz akustyczny
+  - detektor AM CW SSB
+  correct_index: 0
+- text: '184\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 6 to:
+
+    ![RADIOTECHNIKA question 184](assets/question_images/radiotechnika-q184.png)'
+  answers:
+  - filtr przełączany II p.cz.
+  - wzmacniacz akustyczny
+  - II heterodyna stała
+  correct_index: 0
+- text: '185\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 7 to:
+
+    ![RADIOTECHNIKA question 185](assets/question_images/radiotechnika-q185.png)'
+  answers:
+  - BFO
+  - wzmacniacz II pośredniej cz.
+  - detektor AM , CW, SSB
+  correct_index: 1
+- text: '186\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 8 to:
+
+    ![RADIOTECHNIKA question 186](assets/question_images/radiotechnika-q186.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - wzmacniacz w.cz.
+  - detektor AM, CW, SSB
+  correct_index: 2
+- text: '187\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 10 to:
+
+    ![RADIOTECHNIKA question 187](assets/question_images/radiotechnika-q187.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - BFO
+  - detektor AM, CW, SSB
+  correct_index: 1
+- text: '188\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    AM, CW, SSB z podwójną przemianą częstotliwości. Blok 11 to:
+
+    ![RADIOTECHNIKA question 188](assets/question_images/radiotechnika-q188.png)'
+  answers:
+  - I heterodyna strojona
+  - wzmacniacz akustyczny
+  - detektor AM
+  correct_index: 0
+- text: '189\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 2 to:
+
+    ![RADIOTECHNIKA question 189](assets/question_images/radiotechnika-q189.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  - mieszacz zrównoważony
+  correct_index: 2
+- text: '190\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 3 to:
+
+    ![RADIOTECHNIKA question 190](assets/question_images/radiotechnika-q190.png)'
+  answers:
+  - heterodyna
+  - wzmacniacz akustyczny
+  - filtr wejściowy
+  correct_index: 1
+- text: '191\. Na rysunku przedstawiono schemat blokowy odbiornika homodynowego CW
+    i SSB, na jedno pasmo amatorskie. Blok 4 to:
+
+    ![RADIOTECHNIKA question 191](assets/question_images/radiotechnika-q191.png)'
+  answers:
+  - filtr wejściowy
+  - wzmacniacz akustyczny
+  - heterodyna
+  correct_index: 2
+- text: '192\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 1 to:
+
+    ![RADIOTECHNIKA question 192](assets/question_images/radiotechnika-q192.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '193\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 3 to:
+
+    ![RADIOTECHNIKA question 193](assets/question_images/radiotechnika-q193.png)'
+  answers:
+  - wzmacniacz w.cz.
+  - wzmacniacz I pośredniej cz. 10,7 MHz
+  - I heterodyna
+  correct_index: 1
+- text: '194\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 4 to:
+
+    ![RADIOTECHNIKA question 194](assets/question_images/radiotechnika-q194.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II mieszacz
+  correct_index: 2
+- text: '195\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 5 to:
+
+    ![RADIOTECHNIKA question 195](assets/question_images/radiotechnika-q195.png)'
+  answers:
+  - II heterodyna stała
+  - wzmacniacz II p.cz. 455 kHz
+  - detektor FM
+  correct_index: 1
+- text: '196\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 6 to:
+
+    ![RADIOTECHNIKA question 196](assets/question_images/radiotechnika-q196.png)'
+  answers:
+  - detektor FM
+  - wzmacniacz akustyczny
+  - II heterodyna stała
+  correct_index: 0
+- text: '197\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 7 to:
+
+    ![RADIOTECHNIKA question 197](assets/question_images/radiotechnika-q197.png)'
+  answers:
+  - wzmacniacz II p. cz. 455kHz
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 1
+- text: '198\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 8 to:
+
+    ![RADIOTECHNIKA question 198](assets/question_images/radiotechnika-q198.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - detektor FM
+  correct_index: 1
+- text: '199\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 9 to:
+
+    ![RADIOTECHNIKA question 199](assets/question_images/radiotechnika-q199.png)'
+  answers:
+  - wzmacniacz akustyczny
+  - blokada szumów
+  - II heterodyna stała
+  correct_index: 2
+- text: '200\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego
+    FM na pasmo 144 MHz z podwójną przemianą częstotliwości, pracującego w kanałach
+    fonicznych, stabilizowany kwarcami. Blok 10 to:
+
+    ![RADIOTECHNIKA question 200](assets/question_images/radiotechnika-q200.png)'
+  answers:
+  - I heterodyna kwarcowa
+  - wzmacniacz akustyczny
+  - detektor FM
+  correct_index: 0
+- text: '202\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 1 to:
+
+    ![RADIOTECHNIKA question 202](assets/question_images/radiotechnika-q202.png)'
+  answers:
+  - separator
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  correct_index: 2
+- text: '203\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 2 to:
+
+    ![RADIOTECHNIKA question 203](assets/question_images/radiotechnika-q203.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - oscylator (VFO)
+  - separator
+  correct_index: 2
+- text: '204\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na jedno pasmo amatorskie. Blok 3 to:
+
+    ![RADIOTECHNIKA question 204](assets/question_images/radiotechnika-q204.png)'
+  answers:
+  - oscylator (VFO)
+  - wzmacniacz mocy (PA)
+  - filtr wyjściowy
+  correct_index: 1
+- text: '205\. Na rysunku przedstawiono schemat blokowy nadajnika telegraficznego
+    na kilka pasm amatorskich z powielaniem częstotliwości. Blok 2 to:
+
+    ![RADIOTECHNIKA question 205](assets/question_images/radiotechnika-q205.png)'
+  answers:
+  - wzmacniacz sterujący
+  - separator
+  - I powielacz x2
+  correct_index: 1
+- text: '206\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 3 to:
+
+    ![RADIOTECHNIKA question 206](assets/question_images/radiotechnika-q206.png)'
+  answers:
+  - filtr pasmowy 3,5 - 14 MHz
+  - wzmacniacz mocy (PA)
+  - VFO 5 - 5.,5 MHz
+  correct_index: 0
+- text: '207\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 4 to:
+
+    ![RADIOTECHNIKA question 207](assets/question_images/radiotechnika-q207.png)'
+  answers:
+  - wzmacniacz sterujący
+  - filtr wyjściowy
+  - wzbudnica SSB 9 MHz
+  correct_index: 0
+- text: '208\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 5 to:
+
+    ![RADIOTECHNIKA question 208](assets/question_images/radiotechnika-q208.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - mieszacz
+  - oscylator (VFO) 5 - 5,5 MHz
+  correct_index: 0
+- text: '209\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 6 to:
+
+    ![RADIOTECHNIKA question 209](assets/question_images/radiotechnika-q209.png)'
+  answers:
+  - wzmacniacz mocy (PA)
+  - filtr wyjściowy
+  - mieszacz
+  correct_index: 1
+- text: '210\. Na rysunku przedstawiono schemat blokowy nadajnika SSB na dwa pasma
+    amatorskie z wzbudnicą 9 MHz. Blok 7 to:
+
+    ![RADIOTECHNIKA question 210](assets/question_images/radiotechnika-q210.png)'
+  answers:
+  - oscylator (VFO) 5-5,5 MHz
+  - filtr wyjściowy
+  - filtr pasmowy 3,5 - 14 MHz
+  correct_index: 0
+- text: '273\. Odbiornik homodynowy od superheteredynowego odróżnia:'
+  answers:
+  - brak częstotliwości pośredniej (jest równa 0)
+  - brak generatora
+  - brak demodulatora
+  correct_index: 0

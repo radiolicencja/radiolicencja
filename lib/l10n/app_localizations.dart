@@ -239,6 +239,12 @@ abstract class AppLocalizations {
   /// **'Correct!'**
   String get quizButtonCorrect;
 
+  /// No description provided for @quizButtonIDontKnow.
+  ///
+  /// In en, this message translates to:
+  /// **'I don't know'**
+  String get quizButtonIDontKnow;
+
   /// No description provided for @quizAcceptedAnswersLabel.
   ///
   /// In en, this message translates to:

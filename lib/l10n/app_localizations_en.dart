@@ -101,6 +101,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quizButtonCorrect => 'Correct!';
 
   @override
+  String get quizButtonIDontKnow => "I don't know";
+
+  @override
   String quizAcceptedAnswersLabel(Object answers) {
     return 'Accepted answers: $answers';
   }

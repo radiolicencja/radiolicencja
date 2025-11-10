@@ -38,6 +38,11 @@ class _QuizScreenState extends State<QuizScreen> {
   int _currentQuestionIndex = 0;
   int _score = 0;
   QuizAnswer? _selectedAnswer;
+  final QuizAnswer _iDontKnowAnswer = QuizAnswer(
+    label: '--',
+    text: "I don't know",
+    isCorrect: false,
+  );
   bool _showSummary = false;
   bool? _openAnswerCorrect;
   final TextEditingController _openAnswerController = TextEditingController();
@@ -106,6 +111,20 @@ class _QuizScreenState extends State<QuizScreen> {
       _recordMastered(question);
       _openAnswerFocus.unfocus();
       _scheduleAdvanceAfterCorrect(questionIndex);
+    }
+  }
+
+  void _handleIDontKnow(QuizQuestion question) {
+    if (widget.mode != QuizMode.learning || _showSummary) return;
+    if (question.isOpen) {
+      if (_openAnswerCorrect != null) return;
+      setState(() {
+        _openAnswerCorrect = false;
+      });
+      _openAnswerFocus.unfocus();
+    } else {
+      if (_selectedAnswer != null) return;
+      _selectAnswer(_iDontKnowAnswer);
     }
   }
 
@@ -280,6 +299,16 @@ class _QuizScreenState extends State<QuizScreen> {
             onTap: () => _selectAnswer(answer),
           ),
         ),
+        if (_shouldShowIDontKnowButton(question)) ...[
+          const SizedBox(height: 8),
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton(
+              onPressed: () => _handleIDontKnow(question),
+              child: Text(l10n.quizButtonIDontKnow),
+            ),
+          ),
+        ],
         const SizedBox(height: 16),
         if (_selectedAnswer != null && !_selectedAnswer!.isCorrect) ...[
           Text(
@@ -345,6 +374,16 @@ class _QuizScreenState extends State<QuizScreen> {
             ),
           ),
         ),
+        if (_shouldShowIDontKnowButton(question)) ...[
+          const SizedBox(height: 8),
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton(
+              onPressed: () => _handleIDontKnow(question),
+              child: Text(l10n.quizButtonIDontKnow),
+            ),
+          ),
+        ],
         if (_openAnswerCorrect == false) ...[
           const SizedBox(height: 16),
           Text(
@@ -364,6 +403,14 @@ class _QuizScreenState extends State<QuizScreen> {
         ],
       ],
     );
+  }
+
+  bool _shouldShowIDontKnowButton(QuizQuestion question) {
+    if (widget.mode != QuizMode.learning) return false;
+    if (question.isOpen) {
+      return _openAnswerCorrect == null;
+    }
+    return _selectedAnswer == null;
   }
 
   Widget _buildSummary(BuildContext context) {

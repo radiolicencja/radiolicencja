@@ -1,0 +1,964 @@
+title: Radiotechnika - Elementy RLC, filtry, rezonans, transformatory
+slug: radiotechnika-rlc-filtry-rezonans-numbered
+description: Pytania dotyczące elementów RLC, filtrów, rezonansu i transformatorów.
+image: assets/images/radiotechnika.png
+questions:
+- text: '2\. Obwód elektryczny składa się z kilku rezystorów o różnych wartościach
+    i źródła zasilania. Połączenie, w którym przez wszystkie elementy płynie ten sam
+    prąd nazywamy połączeniem:'
+  answers:
+  - rezonansowym
+  - szeregowym
+  - równoległym
+  correct_index: 1
+- text: 3\. Przez kondensator o impedancji 10 Ω płynie prąd przemienny o częstotliwości
+    50Hz i wartości 2A. Jaki będzie spadek napięcia na kondensatorze?
+  answers:
+  - 10 V
+  - 50 V
+  - 20 V
+  correct_index: 2
+- text: '4\. Przez trzy równoległe rezystory 1 Ω, 2 Ω i 4 Ω płyną prądy odpowiednio
+    4 A, 2 A i 1A. Całkowite natężenie prądu płynącego w obwodzie to:'
+  answers:
+  - 4 A
+  - 1 A
+  - 7 A
+  correct_index: 2
+- text: 5\. O ile spadnie napięcie 12 V akumulatora o rezystancji wewnętrznej 0,1
+    Ω przy poborze 10 A prądu?
+  answers:
+  - 1 V
+  - 10 V
+  - 0,1 V
+  correct_index: 0
+- text: '6\. Łącząc równolegle źródła napięcia powinno się:'
+  answers:
+  - łączyć źródła o tej samej wydajności prądowej
+  - łączyć źródła tylko tego samego typu
+  - zadbać by ich napięcia były jednakowe
+  correct_index: 2
+- text: 7\. Jak nazywa się zdolność do gromadzenia energii w polu elektrycznym?
+  answers:
+  - opór
+  - pojemność
+  - kapacytancja
+  correct_index: 1
+- text: 9\. Jak nazywa się prąd, który zmienia swój kierunek w regularnych odstępach
+    czasu?
+  answers:
+  - prąd stały
+  - prąd przemienny
+  - prąd siatki
+  correct_index: 1
+- text: 11\. Od czego zależna jest rezystancja przewodu?
+  answers:
+  - jego materiału, długości, przekroju i temperatury .
+  - jego materiału, długości, przekroju i użytej izolacji.
+  - jego materiału, długości, przekroju i napięcia pracy.
+  correct_index: 0
+- text: 12\. Który przewód o tej samej długości i przekroju będzie miał największą
+    rezystancję?
+  answers:
+  - wykonany z aluminium
+  - wykonany z żelaza
+  - wykonany z miedzi
+  correct_index: 1
+- text: 13\. W obwodzie prądu stałego przez rezystor 1 kΩ płynie prąd 2 mA. Jaki jest
+    spadek napięcia na rezystorze?
+  answers:
+  - 200 V
+  - 2000 V
+  - 2 V
+  correct_index: 2
+- text: 14\. Do zasilacza o napięciu 12 V chcemy podłączyć diodę świecącą o napięciu
+    przewodzenia 3 V i nominalnym prądzie 20 mA. Jaki rezystor należy włączyć w szereg,
+    by ograniczyć prąd?
+  answers:
+  - 600 Ω
+  - 150 Ω
+  - 450 Ω
+  correct_index: 2
+- text: '15\. Która z cech łączy szeregowy obwód rezonansowy LC z typową anteną (dipol
+    półfalowy):'
+  answers:
+  - w rezonansie stanowią tylko rezystancję
+  - w rezonansie stanowią reaktancję pojemnościową
+  - w rezonansie stanowią reaktancję indukcyjną
+  correct_index: 0
+- text: 16\. Wartość skuteczna napięcia sieciowego wynosi 230 V, ile wynosi jego amplituda?
+  answers:
+  - 230 V
+  - 325 V
+  - 220 V
+  correct_index: 1
+- text: 17\. Jaka jest zależność fazowa między przepływającym prądem a napięciem w
+    szeregowym obwodzie rezonansowym w rezonansie?
+  answers:
+  - napięcie wyprzedza prąd o 90 stopni
+  - prąd wyprzedza napięcie o 90 stopni
+  - napięcie i prąd są zgodne w fazie
+  correct_index: 2
+- text: 19\. Modulacja CW nazywana jest modulacją wąskopasmową, czy zatem jest możliwe
+    dowolne zawężanie filtra wejściowego odbiornika celem odcięcia bocznych sygnałów
+    niepożądanych?
+  answers:
+  - można zawężać dowolnie
+  - nie można, poniżej pewnej wartości szerokości filtra sygnał staje się nieczytelny
+  - można zawężać ale tylko o parzyste liczby herców
+  correct_index: 1
+- text: '20\. W temperaturze pokojowej moc szumów termicznych w kanale o szerokości
+    1 Hz wynosi - 174 dBm. Ile wynosi moc szumów w kanale o szerokości 10 kHz:'
+  answers:
+  - -134 dBm
+  - -214 dBm
+  - -170 dBm
+  correct_index: 0
+- text: 21\. Panel fotowoltaiczny oddaje moc 24W i ładuje akumulator prądem 2A. Zakładając
+    stuprocentową sprawność układu ładowania, jakie jest napięcie na akumulatorze?
+  answers:
+  - napięcie wynosi 24 V
+  - napięcie wynosi 12 V
+  - napięcie wynosi 48 V
+  correct_index: 1
+- text: 22\. Rezystor ma wartość 200 Ω. Płynie przez niego prąd 300 mA. Jaka moc wydziela
+    się na rezystorze?
+  answers:
+  - 18 W
+  - 1800 W
+  - 1,8 W
+  correct_index: 0
+- text: 23\. Które z poniższych stwierdzeń opisuje modulację amplitudy (A3E)?
+  answers:
+  - posiada obie wstęgi boczne
+  - nie posiada wstęg bocznych
+  - jest odporna na przemodulowanie
+  correct_index: 0
+- text: '27\. Jeśli dla sygnału AM amplituda sygnału modulującego równa jest amplitudzie
+    fali nośnej, to mówimy, że:'
+  answers:
+  - współczynnik głębokości modulacji wynosi 100%
+  - sygnał jest przesterowany
+  - jest to modulacja z wytłumioną falą nośną
+  correct_index: 0
+- text: 29\. Jakie napięcie występuje na rezystorze o wartości 50 Ω przy dostarczeniu
+    do niego mocy 200 W?
+  answers:
+  - 100 V
+  - 10000 V
+  - 4 V
+  correct_index: 0
+- text: 30\. Siła elektromotoryczna ogniwa wynosi 1,5 V. Rezystancja wewnętrzna ogniwa
+    wynosi 0,1 Ω. Z ogniwa pobieramy prąd 1 A. Jakie będzie napięcie na zaciskach
+    ogniwa?
+  answers:
+  - 1,5 V
+  - 1 V
+  - 1,4 V
+  correct_index: 2
+- text: '33\. Moc PEP jest:'
+  answers:
+  - mocą średnią
+  - mocą w szczytach modulacji
+  - mocą maksymalną tranzystora, po przekroczeniu której ulega uszkodzeniu
+  correct_index: 1
+- text: '35\. Na skali S-metru jedna jednostka odpowiada wzrostowi odbieranego sygnału
+    o 6 dB. Aby sygnał odbierany przez naszego korespondenta wzrósł z S7 do S9, moc
+    nadajnika należy zwiększyć:'
+  answers:
+  - ośmiokrotnie
+  - czterokrotnie
+  - szesnastokrotnie
+  correct_index: 2
+- text: 36\. System antenowy dostarcza sygnał na poziomie -20dBm, jest on podłączony
+    do przedwzmacniacza o wzmocnieniu 10dB kablem o tłumieniu 3dB. Jakiej mocy sygnał
+    uzyskamy na wyjściu przedwzmacniacza?
+  answers:
+  - -13 dBm
+  - -33 dBm
+  - -27 dBm
+  correct_index: 0
+- text: '37\. Na wejście analizatora widma można bezpiecznie podać sygnał o mocy 20
+    dBm. Jakiego tłumika należy użyć, by nie uszkodzić przyrządu badając sygnał wyjściowy
+    nadajnika o mocy 100 W:'
+  answers:
+  - co najmniej 10 dB
+  - co najmniej 30 dB
+  - co najmniej 20 dB
+  correct_index: 1
+- text: 38\. Jak przebiegają linie pola magnetycznego wytworzonego przez przewodnik
+    z prądem?
+  answers:
+  - są równolegle do osi przewodu
+  - przewodnik z prądem wytwarza tylko pole elektryczne
+  - są równoległe do powierzchni przewodnika i prostopadłe do jego osi
+  correct_index: 2
+- text: '40\. Nadajnik o mocy wyjściowej 100 W pobiera z zasilacza 280 W. Jego sprawność
+    wynosi około:'
+  answers:
+  - 36%
+  - 64%
+  - 280%
+  correct_index: 0
+- text: 41\. Jaką moc PEP dostarcza nadajnik, jeśli napięcie międzyszczytowe (peak
+    to peak) zmierzone oscyloskopem na sztucznym obciążeniu 50 Ω wynosi 200 V?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: 44\. Transformator sieciowy na napięcie 230V, o sprawności 100 %, dostarcza
+    po stronie wtórnej napięcia 23V przy maksymalnym prądzie 10A. Jakiego prądu można
+    się spodziewać po stronie pierwotnej transformatora?
+  answers:
+  - 2 A
+  - co najmniej 1 A
+  - 10 A
+  correct_index: 1
+- text: 45\. W tranzystorach polowych prąd drenu sterowany jest przez
+  answers:
+  - prąd bazy
+  - napięcie pomiędzy bramką, a źródłem
+  - pojemność złączową
+  correct_index: 1
+- text: '46\. Szeregowy obwód rezonansowy LC połączony w szereg z obciążeniem stanowi:'
+  answers:
+  - filtr pasmowoprzepustowy
+  - filtr pasmowozaporowy
+  - filtr IIR
+  correct_index: 0
+- text: 47\. Jakie zalety sprawiają, że filtry kwarcowe stosowane są w torze p. cz.?
+  answers:
+  - duża stromość zboczy charakterystyki częstotliwościowej pozwala na uzyskanie dobrej
+    selektywności
+  - zafalowania charakterystyki częstotliwościowej w paśmie przenoszenia pozwalają
+    na łatwą realizację funkcji automatycznej regulacji wzmocnienia
+  - łatwość budowy filtru o przestrajanej częstotliwości środkowej pozwala stworzyć
+    filtr podążający za częstotliwością VFO
+  correct_index: 0
+- text: 49\. W jakim celu używana jest automatyczna kontrola poziomu (ALC) we wzmacniaczu
+    mocy RF?
+  answers:
+  - aby zrównoważyć charakterystykę częstotliwościową nadajnika
+  - aby zredukować promieniowanie harmonicznych
+  - aby zmniejszyć zniekształcenia spowodowane nadmiernym wysterowaniem
+  correct_index: 2
+- text: 52\. Pewien ręczny radiotelefon VHF/UHF pozbawiony jest filtrów pasmowych
+    w torze wejściowym. Podczas aktywacji jednego ze szczytów w ramach programu SOTA
+    okazało się, że nie można odebrać sygnałów korespondentów, pomimo wykorzystania
+    dobrej anteny dookólnej. Czym może być spowodowane to zjawisko?
+  answers:
+  - rozpraszaniem sygnału na śladach jonizacyjnych meteorów (meteor scatter)
+  - zmniejszeniem czułości odbiornika przez mocny sygnał nadajnika rozgłośni radiowej
+    na sąsiedniej górze
+  - silnymi podmuchami wiatru
+  correct_index: 1
+- text: 60\. Ile mocy zostaje wypromieniowane przez antenę, jeśli miernik mocy podłączony
+    pomiędzy nadajnik a antenę wskazuje 100 W mocy padającej i 30 W mocy odbitej?
+  answers:
+  - 130 W
+  - 70 W
+  - 30 W
+  correct_index: 1
+- text: 63\. Co jest dobrą praktyką przy pomiarach obwodów wielkiej częstotliwości
+    za pomocą oscyloskopu?
+  answers:
+  - utrzymanie jak najkrótszego połączenia uziemienia sondy
+  - nieużywanie sprzężenia stałoprądowego do pomiarów sygnałów przemiennych
+  - ustawianie oscyloskopu na możliwie najkrótszą podstawę czasu
+  correct_index: 0
+- text: 65\. Co jest jednostką impedancji?
+  answers:
+  - farad
+  - om
+  - herc
+  correct_index: 1
+- text: 66\. Czy opór elektryczny przewodu zależy od materiału z którego jest wykonany?
+  answers:
+  - zależy
+  - nie zależy
+  - zależy od izolacji przewodu
+  correct_index: 0
+- text: 68\. Który przewód o tej samej długości i przekroju będzie miał najmniejszą
+    oporność?
+  answers:
+  - wykonany z aluminium
+  - wykonany z żelaza
+  - wykonany z miedzi
+  correct_index: 2
+- text: 70\. Żarówka 12 V pobiera z baterii 0,1 A. Jaką oporność ma żarówka?
+  answers:
+  - oporność 120 Ω
+  - oporność 12 Ω
+  - oporność 1,2 Ω
+  correct_index: 0
+- text: 71\. Żarówka ma moc 24 W i pobiera z akumulatora 2 A. Jakie jest napięcie
+    akumulatora?
+  answers:
+  - napięcie wynosi 24 V
+  - napięcie wynosi 12 V
+  - napięcie wynosi 48 V
+  correct_index: 1
+- text: 80\. Która z podanych mocy PEP odpowiada napięciu maksymalnemu Umax = 100
+    V, zmierzonemu oscyloskopem na wyjściu nadajnika, na obciążeniu 50Ω ?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 0
+- text: '81\. Do cewki powietrznej 100 µH wkładamy rdzeń ferrytowy o względnej przenikalności
+    µ= 10. Ile wyniesie indukcyjność cewki?
+
+    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.jpg)'
+  answers:
+  - wzrośnie do 1000 µH
+  - nie zmieni się
+  - zmaleje do 10 µH
+  correct_index: 0
+- text: 82\. Są dwie cewki powietrzne. Przy tej samej średnicy i liczbie zwojów, L1
+    jest nawinięta drutem dwa razy grubszym niż L2. Która z nich ma większą dobroć
+    Q?
+  answers:
+  - cewka L1
+  - cewka L2
+  - obie mają taką samą dobroć, bo mają tą samą średnicę
+  correct_index: 0
+- text: 83\. Przekładnia transformatora wynosi 20 do 1. Strona pierwotna włączona
+    jest na napięcie sieci 240 V. Jakie napięcie będzie po stronie wtórnej?
+  answers:
+  - 24 V
+  - 12 V
+  - 20 V
+  correct_index: 1
+- text: 88\. Cztery oporniki o wartościach 5 Ω zostały połączone szeregowo. Ile wynosi
+    oporność zastępcza?
+  answers:
+  - 10 Ω
+  - 20 Ω
+  - 40 Ω
+  correct_index: 1
+- text: 89\. Ile oporników bezindukcyjnych o wartości 200 Ω należy połączyć równolegle
+    by uzyskać sztuczne obciążenie antenowe 50 Ω?
+  answers:
+  - 5 szt.
+  - 2 szt.
+  - 4 szt.
+  correct_index: 2
+- text: 116\. Reflektometr wskazuje, że amplituda fali padającej jest równa amplitudzie
+    fali odbitej. Współczynnik fali stojącej równy jest nieskończoności. Co może być
+    przyczyną takiego stanu?
+  answers:
+  - zwarcie lub przerwa w kablu
+  - niewielka zmiana oporności falowej anteny
+  - zamoczenie izolacji w kablu
+  correct_index: 0
+- text: '117\. Niesymetryczny kabel koncentryczny 50 Ω do symetrycznej anteny o oporności
+    falowej 50 Ω najlepiej połdączyć za pomocą:'
+  answers:
+  - ununa 9:1
+  - baluna 1:1 (symetryzatora)
+  - baluna 1:2
+  correct_index: 1
+- text: 123\. Jak w warunkach amatorskich zmierzyć moc wyjściową nadajnika?
+  answers:
+  - poprzez pomiar napięcia za pomocą sondy w.cz. na oporze sztucznej anteny 50 om
+    i obliczenie
+  - poprzez pomiar prądu i napięcia stałego doprowadzonego do stopnia mocy (PA)
+  - poprzez uzyskanie raportu od korespondenta
+  correct_index: 0
+- text: 129\. W obwodzie prądu stałego przez opornik 1000 Ω płynie prąd 2 mA. Jaki
+    jest spadek napięcia na oporze?
+  answers:
+  - spadek wynosi 500 V
+  - spadek wynosi 2000 V
+  - spadek wynosi 2 V
+  correct_index: 2
+- text: 130\. Akumulator ma napięcie 6,5 V. Do akumulatora chcemy podłączyć żarówkę
+    3,5 V 0,3 A. Jaki opornik należy włączyć w szereg by ograniczyć prąd?
+  answers:
+  - opornik 3,5 Ω
+  - opornik 100 Ω
+  - opornik 10 Ω
+  correct_index: 2
+- text: 131\. Jakie napięcie występuje na oporze 50 Ω przy dostarczeniu do niego mocy
+    200 W?
+  answers:
+  - 100 V
+  - 200 V
+  - 50 V
+  correct_index: 0
+- text: 132\. Dobierz optymalnie moc nominalną (znamionową) rezystora 100 Ω w przypadku
+    w którym płynący przez niego prąd wywołuje na nim spadek napięcia 3V.
+  answers:
+  - grupa 1 W
+  - grupa 0,125 W
+  - grupa 0,5 W
+  correct_index: 1
+- text: 133\. Jaka jest częstotliwość prądu zmiennego, którego okres wynosi 0,02 s?
+  answers:
+  - 100 Hz
+  - 50 Hz
+  - 60 Hz
+  correct_index: 1
+- text: 134\. Wartość amplitudy napięcia sinusoidalnego wynosi 200 V. Jaka jest wartość
+    skuteczna napięcia?
+  answers:
+  - 200 V
+  - 400 V
+  - 141,4 V
+  correct_index: 2
+- text: 135\. Napięcie międzyszczytowe sinusoidalnego prądu zmiennego wynosi 678 V.
+    Ile wynosi wartość skuteczna tego napięcia?
+  answers:
+  - 340 V
+  - 240 V
+  - 680 V
+  correct_index: 1
+- text: 136\. Siła elektromotoryczna ogniwa wynosi 1,5 V. Oporność wewnętrzna ogniwa
+    wynosi 0,1Ω. Z ogniwa pobieramy prąd 1 A. Jakie będzie napięcie na zaciskach ogniwa?
+  answers:
+  - 1,5 V
+  - 1 V
+  - 1,4 V
+  correct_index: 2
+- text: '137\. Pole elektryczne może być ekranowane za pomocą:'
+  answers:
+  - ekranów z blach
+  - ekranów z izolatorów
+  - ekranów z włókna szklanego
+  correct_index: 0
+- text: 138\. Dlaczego rdzenie transformatorów wykonywane są z blaszek?
+  answers:
+  - ze względu na lepsze chłodzenie
+  - ze względu na łatwiejsze wykonanie
+  - ze względu na mniejsze straty wynikające z prądów wirowych
+  correct_index: 2
+- text: '142\. Przy modulacji amplitudy AM szerokość kanału radiowego zależy od:'
+  answers:
+  - najniższych częstotliwości modulujących
+  - amplitudy modulującego sygnału
+  - najwyższych częstotliwości modulujących
+  correct_index: 2
+- text: 144\. Moc wyjściową nadajnika FM podano w dBm i wynosi ona 33 dBm. Ile to
+    jest w watach? (dla ułatwienia podajemy, że 30 dBm odpowiada 1 W)
+  answers:
+  - 2 W
+  - 130 W
+  - 20 W
+  correct_index: 0
+- text: 145\. Napięcie na wejściu odbiornika o oporności 50 om wynosi 10 µV. Napięcie
+    to wzrosło do 100 µV. O ile wzrosło napięcie wyrażone w dB?
+  answers:
+  - o 10 dB
+  - o 20 dB
+  - o 40 dB
+  correct_index: 1
+- text: 146\. Zasilacz nadajnika dostarcza do stopnia końcowego nadajnika napięcie
+    20 V i prąd 5 A. Jaka jest sprawność energetyczna stopnia końcowego w %, jeżeli
+    na wyjściu zmierzyliśmy moc PEP = 40 W?
+  answers:
+  - 50 %
+  - 40 %
+  - 60 %
+  correct_index: 1
+- text: 147\. Tolerancja wykonania opornika 1 kΩ wynosi 5 %. W jakich granicach zawiera
+    się jego oporność?
+  answers:
+  - od 0,9 do 1,1 kΩ
+  - od 0,98 do 1,02 kΩ
+  - od 950 do 1050 Ω
+  correct_index: 2
+- text: 148\. Spadek napięcia na oporniku wynosi 100 V, przy prądzie 10 mA. Opornik
+    jakiej mocy zastosujemy w tym miejscu?
+  answers:
+  - 10 W
+  - 1 W
+  - 0,5 W
+  correct_index: 1
+- text: 149\. Kondensator mikowy ma pojemność 6800 pF, i napięcie pracy 500V. Czy
+    można go zastosować w miejsce kondensatora 6,8 nF o napięciu pracy 250 V?
+  answers:
+  - tak, można
+  - nie można
+  - można, ale potrzebne są dwa takie kondensatory
+  correct_index: 0
+- text: 150\. W obwodzie prądu zmiennego przy tej samej częstotliwości zmieniono kondensator
+    2200 pF na 22 nF. Ile razy zmniejszyła się reaktancja Xc?
+  answers:
+  - 2 razy
+  - 100 razy
+  - 10 razy
+  correct_index: 2
+- text: 151\. Tranzystor krzemowy ma wzmocnienie prądowe β = 100. Napięcie zasilania
+    wynosi 5 V. Przez kolektor tego tranzystora płynie prąd 100 mA. Jaki jest prąd
+    bazy tego tranzystora?
+  answers:
+  - 1 mA
+  - 5 mA
+  - 20 mA
+  correct_index: 0
+- text: 153\. Mamy dwa kondensatory o pojemności jeden 4,7 nF a drugi 300 pF. Jak
+    należy je połączyć by uzyskać pojemność 5000 pF?
+  answers:
+  - szeregowo
+  - równolegle
+  - nie da się z nich złożyć 5000 pF
+  correct_index: 1
+- text: 154\. W układzie były trzy kondensatory po 30 µF połączone szeregowo . Każdy
+    z nich ma napięcie pracy 100V. Czy możemy je zastąpić jednym kondensatorem 10
+    µF, jeśli tak, to jakie musi mieć napięcie pracy?
+  answers:
+  - nie możemy
+  - możemy stosując kondensator na napięcie 100 V
+  - możemy, stosując kondensator na napięcie 300 V
+  correct_index: 2
+- text: 155\. Dwie indukcyjności nie sprzężone mają 30 µH i 60 µH. Ile wynosi indukcyjność
+    zastępcza przy połączeniu szeregowym tych indukcyjności?
+  answers:
+  - 90 µH
+  - 20 µH
+  - 45 µH
+  correct_index: 0
+- text: 156\. Dwa oporniki 1 kΩ połączone są w szereg i dołączone do napięcia 200
+    V. Jaki jest spadek napięcia na każdym z tych oporników?
+  answers:
+  - 50 V
+  - 100 V
+  - 200 V
+  correct_index: 1
+- text: '157\. Obwód rezonansowy równoległy LC w punkcie rezonansu przedstawia impedancję:'
+  answers:
+  - rzeczywistą omową
+  - reaktancję pojemnościową
+  - reaktancję indukcyjną
+  correct_index: 0
+- text: 158\. Mamy obwód rezonansowy o częstotliwości 3,5 MHz. W jego skład wchodzi
+    pojemność C = 400 pF. Jaką pojemność należy dołączyć zamiast C, by przestroić
+    obwód na 7 MHz?
+  answers:
+  - 200 pF
+  - 100 pF
+  - 57 pF
+  correct_index: 1
+- text: 159\. Obwód rezonansowy na częstotliwość 14 MHz ma dobroć Q=100. Jaka jest
+    szerokość pasma tego obwodu rezonansowego?
+  answers:
+  - 280 kHz
+  - 14 kHz
+  - 140 kHz
+  correct_index: 2
+- text: 161\. Napięcie na wyjściu zasilacza nieobciążonego z filtrem pojemnościowym,
+    wynosi 25 V. Jakie jest napięcie Usk transformatora zasilającego diody?
+  answers:
+  - 25 V
+  - 17,7 V
+  - 20 V
+  correct_index: 1
+- text: 162\. Wzmacniacz posiada wzmocnienie napięciowe 10 razy. Wyraź to wzmocnienie
+    w decybelach (dB)
+  answers:
+  - 10 dB
+  - 20 dB
+  - 40 dB
+  correct_index: 1
+- text: '163\. Wzmacniacz wysokiej częstotliwości obciążony obwodem rezonansowym jest:'
+  answers:
+  - wzmacniaczem selektywnym
+  - wzmacniaczem szerokopasmowym
+  - wzmacniaczem akustycznym
+  correct_index: 0
+- text: 164\. W tranzystorowym wzmacniaczu mocy który element jest niezbędny aby nie
+    generować zakłóceń harmonicznych?
+  answers:
+  - filtr dolnoprzepustowy
+  - przełącznik nadawanie-odbiór
+  - układ dopasowania bazy tranzystora
+  correct_index: 0
+- text: '165\. Na rysunku przedstawiono schemat detektora diodowego. Jaką rolę spełnia
+    w nim kondensator C1?
+
+    ![RADIOTECHNIKA question 165](assets/question_images/radiotechnika-q165.png)'
+  answers:
+  - jest kondensatorem filtrującym prądy w.cz.
+  - poprawia odtwarzanie wysokich tonów
+  - chroni słuchawki przed uszkodzeniem
+  correct_index: 0
+- text: 166\. Dlaczego do detekcji sygnałów telegrafii CW używamy detektora mnożącego
+    i pomocniczego generatora BFO?
+  answers:
+  - bo sygnał CW jest przerywany
+  - musimy wytworzyć słyszalne dudnienia z niemodulowanym sygnałem CW
+  - bo sygnał CW jest słaby
+  correct_index: 1
+- text: 168\. Czy dyskryminator sygnału FM powinien reagować na modulację amplitudy
+    sygnału FM?
+  answers:
+  - nie
+  - tak
+  - nie ma to znaczenia
+  correct_index: 0
+- text: '169\. Warunkiem wzbudzenia się generatora z obwodem rezonansowym jest:'
+  answers:
+  - zastosowanie obwodu rezonansu szeregowego
+  - spełnienie warunku amplitudy i fazy
+  - zastosowanie ujemnego sprzężenia zwrotnego
+  correct_index: 1
+- text: 211\. Jak zmienia się impedancja dipola półfalowego, gdy obniżamy wysokość
+    jego zawieszenia?
+  answers:
+  - rośnie.
+  - maleje.
+  - nie ulega zmianie.
+  correct_index: 1
+- text: 213\. Jaka jest różnica pomiędzy efektywną mocą promieniowaną e.r.p. a efektywną
+    mocą promieniowaną izotropowo e.i.r.p?
+  answers:
+  - e.i.r.p. jest większe o 2,15 dB od e.r.p.
+  - e.i.r.p. jest mniejsze o 2,15 dB od e.r.p.
+  - nie ma różnicy
+  correct_index: 0
+- text: 214\. Antena kierunkowa daje napięcie 4 razy większe, niż dipol półfalowy
+    zawieszony w tym samym miejscu. Jaki zysk ma antena kierunkowa?
+  answers:
+  - 6 dBd
+  - 4 dBd
+  - 12 dBd
+  correct_index: 2
+- text: 215\. Kabel koncentryczny o długości 100m, przy częstotliwości 144MHz wprowadza
+    tłumienie 12dB. Długość kabla pomiędzy nadajnikiem 100 W a anteną wynosi 50 m.
+    Jaka część tej mocy zostanie doprowadzona do anteny?
+  answers:
+  - 25%
+  - 50%
+  - 75%
+  correct_index: 1
+- text: 221\. Akumulator ma pojemność 20Ah i pozwala na pracę pełną mocą radiostacji,
+    która pobiera średnio około 5A. Czy taki akumulator wystarczy na trzygodzinną
+    pracę tej radiostacji?
+  answers:
+  - wystarczy, z pewnym zapasem
+  - nie wystarczy, akumulator ma zbyt małą pojemność
+  - akumulator ulegnie uszkodzeniu
+  correct_index: 0
+- text: 223\. Dlaczego modulacja amplitudy AM (A3E) jest obecnie rzadziej używana
+    od SSB (J3E)?
+  answers:
+  - gdyż ma znacznie mniejszą sprawność energetyczną i szerokość emitowanego sygnału
+    jest dwukrotnie większa niż SSB
+  - gdyż obecne transceivery są zbyt skomplikowane, by z niej sprawnie korzystać
+  - dlatego, że AM jest używana w profesjonalnej radiofonii
+  correct_index: 0
+- text: '225\. Wzmacniacz, który wzmacnia sygnały w zakresie pasm amatorskich 3,5,
+    7 i 14 MHz z takim samym wzmocnieniem nazywamy:'
+  answers:
+  - wzmacniaczem mocy
+  - wzmacniaczem szerokopasmowym
+  - wzmacniaczem ze strojonymi obwodami pośredniej częstotliwości
+  correct_index: 1
+- text: '228\. Który z czynników wpływa na stabilność generatora z obwodem LC:'
+  answers:
+  - temperatura
+  - zmiana wymiarów mechanicznych
+  - oba wyżej wymienione
+  correct_index: 2
+- text: 233\. Napięcie międzyszczytowe sinusoidalnego napięcia zmiennego wynosi 678
+    V. Ile wynosi wartość skuteczna tego napięcia?
+  answers:
+  - 339 V
+  - 240 V
+  - 481 V
+  correct_index: 1
+- text: 234\. Częstotliwość prądu przemiennego wynosi 50 Hz, jaki jest okres drgań?
+  answers:
+  - 20 ms
+  - 50 ms
+  - 500 ms
+  correct_index: 0
+- text: 238\. Moc wyjściową nadajnika FM podano w dBW i wynosi ona 13 dBW. Ile to
+    jest w watach?
+  answers:
+  - 5 W
+  - 130 W
+  - 20 W
+  correct_index: 2
+- text: 239\. Zasilacz dostarcza do stopnia końcowego nadajnika napięcie 500 V i prąd
+    200 mA. Jaka jest sprawność energetyczna stopnia końcowego, jeżeli na wyjściu
+    zmierzyliśmy moc PEP = 40 W?
+  answers:
+  - 50%
+  - 40%
+  - 60%
+  correct_index: 1
+- text: 240\. Która z podanych mocy PEP odpowiada napięciu maksymalnemu Umax = 100
+    V, zmierzonemu oscyloskopem na wyjściu nadajnika, na obciążeniu 50 omów (zakładamy
+    sygnał sinusoidalny)?
+  answers:
+  - 200 W
+  - 100 W
+  - 50 W
+  correct_index: 1
+- text: '242\. Filtr antyaliasingowy w odbiorniku SDR może być zrealizowany jako:'
+  answers:
+  - filtr sprzętowy
+  - filtr programowy
+  - filtr sprzętowy lub programowy
+  correct_index: 0
+- text: 243\. Rezystor o wartości 10 Ω dołączono do napięcia 3 V. Jakiej mocy rezystor
+    należy dobrać, żeby nie uległ on uszkodzeniu?
+  answers:
+  - 1 W
+  - 0,125 W
+  - 0,5 W
+  correct_index: 0
+- text: '244\. W kondensatorze energia jest magazynowana w:'
+  answers:
+  - polu elektrycznym
+  - polu magnetycznym
+  - nie jest magazynowana
+  correct_index: 0
+- text: 245\. W obwodzie prądu przemiennego, przy tej samej częstotliwości, zmieniono
+    kondensator 2200 pF na 22 nF. Ile razy zmniejszyła się reaktancja kondensatora?
+  answers:
+  - 0,1 raza
+  - 100 razy
+  - 10 razy
+  correct_index: 2
+- text: '246\. W kondensatorze przy napięciu przemiennym:'
+  answers:
+  - prąd wyprzedza napięcie w fazie o 90 stopni
+  - prąd jest w fazie z napięciem
+  - napięcie wyprzedza prąd w fazie o 90 stopni
+  correct_index: 0
+- text: '247\. Do budowy cewek często wykorzystujemy rdzenie toroidalne, ponieważ:'
+  answers:
+  - wprowadzają mniejsze straty w polu magnetycznym niż powietrze
+  - można przez cewkę przesłać znacznie większy prąd
+  - większość pola magnetycznego zamyka się w rdzeniu i cewka mniej wpływa na inne
+    elementy
+  correct_index: 2
+- text: '248\. Stwierdzono, że wpływające do układu napięcie wyprzedza w fazie prąd.
+    Układ ten ma charakter:'
+  answers:
+  - rezystancyjny
+  - pojemnościowy
+  - indukcyjny
+  correct_index: 2
+- text: 252\. Na wyjściu transformatora sieciowego napięcie skuteczne jest równe 300
+    V. Czy w prostowniku jednopołówkowym można użyć diody wytrzymującej napięcie wsteczne
+    400 V?
+  answers:
+  - tak
+  - nie
+  - tak, ale tylko przy małych obciążeniach
+  correct_index: 1
+- text: '253\. Aby tranzystor PNP zaczął przewodzić, należy przyłożyć pomiędzy jego
+    bazę i emiter napięcie:'
+  answers:
+  - dodatnie (wyższy potencjał do bazy)
+  - ujemne (niższy potencjał do bazy)
+  - zerowe (taki sam potencjał na bazie i emiterze)
+  correct_index: 1
+- text: '256\. W idealnym tranzystorze MOSFET prąd wpływający do bramki jest:'
+  answers:
+  - mniejszy o tyle razy od prądu drenu, o ile wynosi wzmocnienie tranzystora
+  - równy w przybliżeniu 1 mA
+  - zerowy
+  correct_index: 2
+- text: 257\. Jaka jest funkcja kondensatora C1 w układzie przedstawionym na rysunku?
+  answers:
+  - zwiększenie wzmocnienia dla prądów zmiennych
+  - filtrowanie prądu spoczynkowego
+  - nie ma żadnej funkcji
+  correct_index: 0
+- text: 258\. Mamy dwa kondensatory o pojemności 4,7 nF oraz 300 pF. Jak należy je
+    połączyć, by uzyskać pojemność 5000 pF?
+  answers:
+  - szeregowo
+  - równolegle
+  - nie da się uzyskać pojemności 5000 pF
+  correct_index: 1
+- text: 259\. W układzie były trzy kondensatory, każdy po 30 μF, połączone szeregowo.
+    Każdy z nich ma napięcie pracy 100V. Czy możemy je zastąpić jednym kondensatorem
+    10 μF? Jeśli tak, to o jakim napięciu pracy?
+  answers:
+  - nie możemy
+  - możemy, stosując kondensator na napięcie 100 V
+  - możemy, stosując kondensator na napięcie 300 V
+  correct_index: 2
+- text: 260\. Dwie niezależne cewki mają indukcyjności 30 μH i 60 μH. Ile wynosi indukcyjność
+    zastępcza przy połączeniu szeregowym tych cewek?
+  answers:
+  - 90 μH
+  - 45 μH
+  - 20 μH
+  correct_index: 0
+- text: '261\. Obwód rezonansowy szeregowy LC, w punkcie rezonansu, przedstawia:
+
+    ![RADIOTECHNIKA question 261](assets/question_images/radiotechnika-q261.png)'
+  answers:
+  - tylko rezystancję
+  - reaktancję pojemnościową
+  - reaktancję indukcyjną
+  correct_index: 0
+- text: '262\. Jeżeli dobroć obwodu rezonansowego Q = 100, to pasmo przy częstotliwości
+    obwodu 14 MHz ma szerokość:'
+  answers:
+  - 280 kHz
+  - 14 kHz
+  - 140 kHz
+  correct_index: 2
+- text: '263\. Skrzynka antenowa w układzie T, gdzie szeregowo włączone są kondensatory,
+    a równolegle cewka, jest:'
+  answers:
+  - filtrem dolnoprzepustowym
+  - filtrem górnoprzepustowym
+  - filtrem pasmowym
+  correct_index: 1
+- text: '264\. Zwiększenie rzędu filtru powoduje:'
+  answers:
+  - zwiększenie stromości zbocza
+  - pogorszenie właściwości filtracyjnych
+  - zmianę częstotliwości rezonansowej
+  correct_index: 0
+- text: 265\. Jaka jest funkcja rezystorów R1 i R2 w układzie przedstawionym na rysunku?
+  answers:
+  - Zabezpieczenie tranzystora przed uszkodzeniem
+  - Zwiększenie impedancji wejściowej
+  - Ustalenie punktu pracy tranzystora
+  correct_index: 2
+- text: 268\. Jaki jest cel włączenia szeregowo rezystora i kondensatora pomiędzy
+    wejście i wyjście wzmacniacza mocy z tranzystorem w układzie wspólnego źródła?
+  answers:
+  - zwiększenie wzmocnienia wzmacniacza.
+  - utworzenie obwodu rezonansowego, który działa jako filtr pasmowy.
+  - zwiększenie stabilności wzmacniacza.
+  correct_index: 2
+- text: '278\. Gdy antena jest w rezonansie, to:'
+  answers:
+  - moduł impedancji jest równy 50 Ω
+  - reaktancja jest równa 0 Ω
+  - reaktancja jest nieskończenie duża
+  correct_index: 1
+- text: 282\. Antena Yagi-Uda z wibratorem skierowanym równolegle do ziemi będzie
+    miała polaryzację
+  answers:
+  - poziomą
+  - pionową
+  - lewoskrętną na półkuli południowej i prawoskrętną na północnej
+  correct_index: 0
+- text: '286\. Na paśmie 5 MHz w Polsce można nadawać maksymalną mocą 15 W EIRP, a
+    zatem do dipola na to pasmo można doprowadzić moc około:'
+  answers:
+  - 5 W
+  - 15 W
+  - 100 W, gdyż dipol ma ujemny zysk EIRP
+  correct_index: 0
+- text: '287\. Moc EIRP to moc równoważna wyznaczana względem:'
+  answers:
+  - dipola półfalowego
+  - źródła izotropowego
+  - anteny rezerwowej
+  correct_index: 1
+- text: 288\. Jaka jest różnica pomiędzy efektywną mocą promieniowaną ERP, a EIRP?
+  answers:
+  - EIRP jest większe o 2,15 dB od ERP
+  - EIRP jest mniejsze o 2,15 dB od ERP
+  - Nie ma różnicy
+  correct_index: 0
+- text: 289\. Mamy antenę kierunkową A o zysku 3 dBi i antenę kierunkową B o zysku
+    6 dBi. Do każdej z nich podano sygnał o mocy 100 W. Ile całkowitej mocy wypromieniowała
+    każda antena?
+  answers:
+  - A - 100 W, B - 100 W
+  - A - 200 W, B - 400 W
+  - A - 100 W, B - 200 W
+  correct_index: 0
+- text: 292\. Zamierzasz zrobić łączność z kolegą znajdującym się we Włoszech przy
+    pomocy dipola półfalowego na paśmie 20 m. W jakim kierunku najlepiej powiesić
+    tę antenę?
+  answers:
+  - na osi północ-południe
+  - na osi wschód-zachód
+  - nie użyję dipola, gdyż łączność będzie trudno nawiązać bez anteny kierunkowej
+    Yagi- Uda
+  correct_index: 1
+- text: '295\. Nadajnik połączono kablem koncentrycznym ze sztucznym obciążeniem.
+    Prąd płynący w ekranie kabla koncentrycznego ma wartość:'
+  answers:
+  - zerową
+  - niemożliwą do oszacowania
+  - taką samą, jak prąd płynący w środkowej żyle
+  correct_index: 2
+- text: 313\. Pewnego dnia po wysokiej aktywności słonecznej pewien krótkofalowiec
+    usłyszał w paśmie 144 MHz kilka mocno zniekształconych sygnałów dalekich stacji.
+    z trudem odebrał wywołanie “CQ aurora” z czym miał do czynienia?
+  answers:
+  - rosyjskie zawody z okazji wybuchu rewolucji październikowej
+  - łącznościami z wykorzystaniem zorzy polarnej
+  - łącznościami w odbicu od księżyca
+  correct_index: 1
+- text: '321\. Stacja o mocy 100 W na paśmie 20 m jest odbierana z siłą sygnału S9.
+    W przerwach emisji słychać także jej korespondenta o sile sygnału S4. Co się stanie
+    jeśli stacja ta zmniejszy moc nadawania do 10 W:'
+  answers:
+  - nie usłyszymy jej w ogóle, 10 W to za mało na taką łączność
+  - poprawi się jej modulacja
+  - będziemy ją nadal słyszeć, być może z nieco większym szumem
+  correct_index: 2
+- text: '324\. Bocznik do pomiaru prądu powinien mieć:'
+  answers:
+  - maksymalną rezystancję
+  - minimalną rezystancję
+  - rezystancję dopasowaną do mierzonego prądu i parametrów ustroju pomiarowego
+  correct_index: 2
+- text: '326\. Multimetr na zakresie napięcia prądu przemiennego został dołączony
+    do układu elektronicznego. Co może być przyczyną niewłaściwych odczytów (zbyt
+    niskich lub zbyt wysokich):'
+  answers:
+  - uziemienie woltomierza,
+  - woltomierz jest przystosowany do częstotliwości 50Hz, a w obwodzie jest sygn ał
+    w.cz .
+  - końcówki pomiarowe są niezgodne z normą HSE GS38
+  correct_index: 1
+- text: '327\. Kondensator elektrolityczny 10µF został naładowany do napięcia 10V
+    i odłączony od zasilacza. Dołączony do jego końcówek woltomierz wskazuje systematyczny
+    spadek napięcia. Co może być przyczyną tego spadku:'
+  answers:
+  - oporność wewnętrzna woltomierza
+  - strata prądu na końcówkach zasilających
+  - promieniowanie radioaktywne otoczenia
+  correct_index: 0
+- text: '328\. Częstotliwość rezonansową obwodu LC możemy zmierzyć za pomocą:'
+  answers:
+  - generatora kwarcowego oraz amperomierza
+  - przyrządu GDO lub analizatora wektorowego
+  - nadajnika dużej mocy, strojąc do przepalenia bezpiecznika
+  correct_index: 1
+- text: '330\. Co można zmierzyć za pomocą analizatora widma:'
+  answers:
+  - Obecność i siłę sygnałów harmonicznych i niepożądanych w sygnale nadajnika
+  - Czułość odbiornika na poszczególnych wycinkach widma radiowego
+  - Dopasowanie anteny
+  correct_index: 0
+- text: '333\. Jeśli wzmacniacz mocy nie posiada pomiędzy ostatnim stopniem wzmocnienia
+    a wyjściem antenowym filtru dolnoprzepustowego to:'
+  answers:
+  - może zniekształcać sygnał wyjściowy na częstotliwości roboczej
+  - może wprowadzać zakłócenia spowodowane przez nieodfiltrowane harmoniczne
+  - ma optymalną konstrukcję
+  correct_index: 1
+- text: '334\. Odbiornik został uszkodzony przez silny sygnał z anteny, pochodzący
+    z pracującego w bezpośredniej bliskości nadajnika dużej mocy. Przyczyną uszkodzenia
+    mogło być:'
+  answers:
+  - wyindukowanie silnego sygnału w.cz. w antenie odbiorczej
+  - złe dostrojenie nadajnika
+  - przeniesienie sygnału w.cz. po kablu zasilającym przez złe zasilanie odbiornika
+  correct_index: 0
+- text: 338\. Czy brak filtru przeciwzakłóceniowego na obwodzie zasilania sieciowego
+    może być przyczyną zakłóceń w pracy urządzenia?
+  answers:
+  - tak, ale tylko przy dużej mocy
+  - zawsze, bez względu na moc
+  - to nie ma znaczenia, rolę filtru pełni transformator zasilacza
+  correct_index: 1
