@@ -1210,7 +1210,7 @@ questions:
     \ odpowiedź to **B. I direktor**.  \n\n$$\n\\boxed{B}\n$$"
 - text: '113\. Na rysunku przedstawiona jest antena typu Yagi-Uda. Element 4 to:
 
-    ![RADIOTECHNIKA question 113](assets/question_images/radiotechnika-q113.png)'
+    ![RADIOTECHNIKA question 113](assets/question_images/radiotechnika-q113.jpg)'
   answers:
   - I direktor
   - II direktor
@@ -1818,6 +1818,35 @@ questions:
   - wzmacniacz akustyczny
   - detektor FM
   correct_index: 0
+  explanations:
+  - "**Poprawna odpowiedź: A. wzmacniacz w.cz.**  \nW odbiorniku superheterodynowym **pierwszy blok (1)**\
+    \ to zawsze **wzmacniacz w.cz. (wzmacniacz o częstotliwości radiowej)**, który wzmocnia sygnał z anteny\
+    \ przed pierwszą przemianą częstotliwości. W schemacie blokowym:  \n- Blok 1 przyjmuje sygnał z anteny\
+    \ (strzałka wejściowa),  \n- **Wzmacniacz w.cz.** poprawia stosunek sygnał/szum i zapewnia wystarczającą\
+    \ moc do dalszych etapów przetwarzania.  \n- Odpowiedź B (wzmacniacz akustyczny) i C (detektor FM)\
+    \ występują **w późniejszych etapach** (po detekcji i przetworzeniu sygnału), więc nie mogą być blokiem\
+    \ 1.  \n\n**Uwaga:** W superheterodynie podwójnej blok 1 to **zawsze wzmacniacz w.cz.** (1. etap).\
+    \  \n✅ **Poprawne!**"
+  - "Blok 1 w odbiorniku superheterodynowym to **pierwsza etapa wzmacniania sygnału w.cz.** (A), a nie\
+    \ wzmacniacz akustyczny (B). Wzmacniacz akustyczny działa **po detektorze** (po odzyskaniu sygnału\
+    \ audio), natomiast blok 1 jest bezpośrednio po antenie. W schemacie:\n\n- **1.** → Wzmacniacz w.cz.\
+    \ (pierwsze wzmacnienie sygnału radiowego),  \n- **B. Wzmacniacz akustyczny** → po detektorze (w bloku\
+    \ 7 lub dalszym),  \n- **C. Detektor FM** → po wzmacniaczu IF (w blokach 5–6).  \n\nBłąd: pomyłka\
+    \ z kolejnością bloków (wzmacniacz akustyczny dotyczy sygnału *po* demodulacji, nie *przed*).  \n\n\
+    **Poprawna odpowiedź: A. wzmacniacz w.cz.**"
+  - "Błąd polega na niepoprawnym rozpoznaniu kolejności bloków w odbiorniku superheterodynowym.  \n- **Blok\
+    \ 1** to **pierwszy etap odbiornika** – wejście sygnału z anteny, co odpowiada **wzmacniaczowi w.cz.\
+    \ (A)**.  \n- **Detektor FM (C)** znajduje się **po etapie cz.środkowej (IF)**, czyli w późniejszych\
+    \ blokach (np. 7 lub 5), a nie na początku.  \n- W superheterodynie **kolejność**:  \n  $ \\text{wzmacniacz\
+    \ w.cz.} \\rightarrow \\text{mieszacz} \\rightarrow \\text{wzmacniacz IF} \\rightarrow \\text{detektor}\
+    \ $.  \n  Stąd **1. to wzmacniacz w.cz. (A)**, a nie detektor.  \n\n**Klucz**: Błędną odpowiedź C\
+    \ wywołano niezrozumieniem sekwencji przetwarzania sygnału w odbiorniku."
+  - "**Odpowiedź:**  \nA. wzmacniacz w.cz.  \n\n**Wyjaśnienie:**  \nW odbiorniku superheterodynowym pierwszym\
+    \ blokiem po antenie (zaznaczonym jako 1) jest **wzmacniacz w.cz. (wysokiej częstotliwości)**. Jego\
+    \ zadaniem jest wzmocnienie słabej sygnału radiowego przed pierwszą przemianą częstotliwości. Blok\
+    \ 2 to mieszacz (z zewnętrznej generacją sygnału z bloku 10 – oscylatora lokalnego), a detektor FM\
+    \ (C) oraz wzmacniacz akustyczny (B) pojawiają się na końcu łańcucha. Poprawna kolejność bloków w\
+    \ superheterodynie potwierdza, że **1. to wzmacniacz w.cz.**.  \n\n$\\boxed{A}$"
 - text: '193\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 3 to:
@@ -1828,6 +1857,36 @@ questions:
   - wzmacniacz I pośredniej cz. 10,7 MHz
   - I heterodyna
   correct_index: 1
+  explanations:
+  - "Blad polega na pomyłce w identyfikacji bloków. W odbiorniku superheterodynowym z podwójną przemianą\
+    \ częstotliwości:\n\n- **Blok 1** to **wzmacniacz w.cz.** (RF) – odpowiedź A dotyczy *nie* bloku 3,\
+    \ lecz bloku 1.  \n- **Blok 2** to mieszacz (z heterodyną 10), a jego wyjście to **1. pośrednia częstotliwość\
+    \ (10,7 MHz)**.  \n- **Blok 3** to **wzmacniacz I pośredniej częstotliwości (10,7 MHz)** – poprawna\
+    \ odpowiedź **B**.  \n\nUżytkownik błędnie przypisał \"wzmacniacz w.cz.\" do bloku 3, pomijając kolejność\
+    \ bloków: po mieszaczu (2) następuje wzmacniacz pośredniej częstotliwości (3), nie RF.  \n\n**Klucz:**\
+    \ W odbiorniku superheterodynowym:  \n1. RF → 2. Mieszacz → 3. Wzmacniacz IF1 (10,7 MHz)."
+  - "**Poprawna odpowiedź: B. wzmacniacz I pośredniej cz. 10,7 MHz**  \nW odbiorniku superheterodynowym\
+    \ FM na pasmo 144 MHz z podwójną przemianą częstotliwości, **pierwsza pośrednia częstotliwość (IF1)**\
+    \ wynosi **10,7 MHz** (standard dla FM). Blok 3 znajduje się *po* pierwszym mieszaczem (2), który\
+    \ generuje IF1. Jego zadaniem jest **wzmacnienie sygnału 10,7 MHz** przed drugą przemianą częstotliwości\
+    \ (blok 4).  \n- **A.** Błędne (wzmacniacz w.cz. to blok 2).  \n- **C.** Błędne (I heterodyna to zasilanie\
+    \ mieszacza 2, blok 10).  \n**Klucz:** 10,7 MHz to typowa I pośrednia częstotliwość w odbiornikach\
+    \ FM, a blok 3 jest bezpośrednio po pierwszym mieszaczu."
+  - "Błąd polega na mylnym przypisaniu bloku 3 do *heterodyny* (C), podczas gdy w odbiorniku superheterodynowym:\n\
+    \n- **Blok 3** to **wzmacniacz I pośredniej częstotliwości (IF)** (B), który w odbiorniku FM z podwójną\
+    \ przemianą częstotliwości **wzmacnia sygnał na 10,7 MHz** (standardowa I IF dla FM).  \n- **Heterodyna\
+    \ I (10)** to **lokalny oscylator** (LO) dla pierwszego mieszacza (2), a nie wzmacniacz.  \n\nPoprawna\
+    \ struktura:  \n1. Wzmacniacz RF → 2. Mieszacz → **3. Wzmacniacz I IF (10,7 MHz)** → 4. Drugi mieszacz\
+    \ → ...  \n\nZatem blok 3 jest **wzmacniaczem I IF**, a nie heterodyną.  \n\n$$\n\\boxed{B}\n$$"
+  - "W odbiorniku superheterodynowym z podwójną przemianą częstotliwości dla pasma 144 MHz (FM), blok\
+    \ **3** odpowiada **wzmacniaczowi I pośredniej częstotliwości (10,7 MHz)**. \n\n**Wyjaśnienie**: \
+    \ \n1. **Pierwsza przemiana częstotliwości**: Sygnał wejściowy (144 MHz) jest mieszany z pierwszą\
+    \ heterodyną (1. blok) do uzyskania **10,7 MHz** (standardowa I cz. pośrednia dla FM).  \n2. **Blok\
+    \ 3** – po przemianie sygnał 10,7 MHz jest wzmacniany w **wzmacniaczu I cz. pośredniej**, co odpowiada\
+    \ opcji **B**.  \n3. Następnie sygnał przechodzi do drugiej przemiany (4. blok), gdzie 10,7 MHz zostaje\
+    \ zmienione na niższą cz. pośrednią (np. 455 kHz).  \n\nInne opcje są niepoprawne:  \n- **A** (wzmacniacz\
+    \ w.cz.) to zazwyczaj blok 1.  \n- **C** (I heterodyna) to źródło sygnału dla pierwszego mieszacza\
+    \ (zazwyczaj blok 10 lub 8).  \n\n**Poprawna odpowiedź: B**."
 - text: '194\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 4 to:
@@ -1838,6 +1897,36 @@ questions:
   - blokada szumów
   - II mieszacz
   correct_index: 2
+  explanations:
+  - "**Błąd w wyborze odpowiedzi A**  \nBlok 4 to **II mieszacz**, a nie wzmacniacz akustyczny. W odbiorniku\
+    \ superheterodynowym z podwójną przemianą częstotliwości:  \n- **I mieszacz** (blok 2) łączy sygnał\
+    \ wejściowy z **1. oscylatorem lokalnym** (10), tworząc **1. częstotliwość pośrednią (IF1)**.  \n\
+    - **II mieszacz** (blok 4) łączy IF1 z **2. oscylatorem lokalnym** (9), tworząc **2. częstotliwość\
+    \ pośrednią (IF2)**.  \nWzmacniacz akustyczny (A) jest częścią **kolejnego etapu po demodulatorze**\
+    \ (np. blok 7 lub wyjście), nie w etapie przemiany częstotliwości.  \n\n**Poprawna odpowiedź: C. II\
+    \ mieszacz**  \n$$\n\\boxed{C}\n$$"
+  - "**Błąd:** Użytkownik pomylił **\"blokadę szumów\" (B)** z **\"II mieszaczem\" (C)**. W odbiorniku\
+    \ superheterodynowym z podwójną przemianą częstotliwości:  \n- **Blok 4** to **II mieszacz**, który\
+    \ przetwarza pierwszą częstotliwość pośrednią (IF1) na drugą (IF2) z użyciem drugiego oscylatora lokalnego.\
+    \  \n- **\"Bloklad szumów\"** to element **po detektorze** (w paśmie dźwiękowym), a nie w etapie przemiany\
+    \ częstotliwości.  \n\n**Dlaczego C jest poprawne?**  \nSchemat superheterodynu:  \n1. Wzmacniacz\
+    \ RF → 2. I mieszacz → 3. IF1 (wzmacniacz) → **4. II mieszacz** → 5. IF2 (wzmacniacz) → 6. Detektor\
+    \ → 7. Wzmacniacz akustyczny.  \n\nBlok 4 jest **II mieszaczem**, a nie blokadą szumów (Błędne założenie:\
+    \ blokada szumów działa w paśmie dźwiękowym, nie na częstotliwości pośredniej).  \n\n**Wzór:**  \n\
+    $$\n\\text{II mieszacz (4)} \\neq \\text{blokada szumów (B)}\n$$"
+  - "**Prawidłowa odpowiedź: C. II mieszacz**  \nW odbiorniku superheterodynowym z **podwójną przemianą\
+    \ częstotliwości**:  \n- Blok 1–2 to **1. mieszacz** (pierwsza przemiana),  \n- Blok 4 to **2. mieszacz**\
+    \ (druga przemiana), który łączy sygnał z 1. IF (z bloku 3) z drugim oscylatorem (blok 9), tworząc\
+    \ niższą, stabilną częstotliwość IF.  \n- A i B są niezgodne z układem (wzmacniacz akustyczny występuje\
+    \ przed głośnikiem, a blokada szumów dotyczy późniejszych etapów).  \n\n**Podstawa**: W superheterodynie\
+    \ podwójnej *II mieszacz* jest kluczowym elementem drugiej konwersji, zatem **C jest poprawne**. \U0001F3AF"
+  - "W odbiorniku superheterodynowym z podwójną przemianą częstotliwości:\n- **1.** Wzmacniacz RF (wzmacnia\
+    \ sygnał wejściowy),\n- **2.** I mieszacz (przemienia sygnał RF na 1. IF),\n- **3.** Filtr 1. IF (selekcja\
+    \ częstotliwości),\n- **4.** **II mieszacz** (przemienia 1. IF na 2. IF),\n- **5.** Filtr 2. IF (dalsza\
+    \ selekcja),\n- **6.** Demodulator (odczyt sygnału),\n- **7.** Wzmacniacz akustyczny (wzmacnia sygnał\
+    \ dźwiękowy).\n\nBloki **8.** i **9.** to oscylatory (dla 2. i 1. mieszacza), a **10.** to 1. oscylator.\
+    \  \n**Poprawna odpowiedź: C. II mieszacz** (przemienia sygnał z 1. IF na 2. IF).  \n\n$$\n\\boxed{C}\n\
+    $$"
 - text: '195\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 5 to:
@@ -1848,6 +1937,34 @@ questions:
   - wzmacniacz II p.cz. 455 kHz
   - detektor FM
   correct_index: 1
+  explanations:
+  - "**Błąd w odpowiedzi A:**  \nBlok 5 to **wzmacniacz II p.cz. 455 kHz**, a nie \"II heterodyna stała\"\
+    \ (odpowiedź A).  \n- *Heterodyna* (lokalny oscylator) **jest źródłem sygnału do mieszania** (w diagramie\
+    \ blok 9, który zasila blok 4).  \n- Blok 5 znajduje się **po drugim mezniarzu** (blok 4) i **wzmacnia\
+    \ sygnał IF** (455 kHz), a nie generuje częstotliwości.  \n- **Poprawna odpowiedź:** B (wzmacniacz\
+    \ II p.cz. 455 kHz).  \n\n**Klucz:**  \n- *Heterodyna* → **lokalny oscylator** (nie wzmacniacz). \
+    \ \n- *Wzmacniacz p.cz.* → **wzmacnia sygnał po mezniarzu**.  \n\n$$\n\\boxed{\\text{B}}\n$$"
+  - "**Pogratulacje!** Odpowiedź **B. wzmacniacz II p.cz. 455 kHz** jest poprawna.  \nW odbiorniku superheterodynowym\
+    \ z podwójną przemianą częstotliwości:  \n- **Blok 5** to **wzmacniacz drugiej częstotliwości intermediarnej\
+    \ (II p.cz.)** na 455 kHz.  \n- Po drugiej przemianie (w bloku 4, z wykorzystaniem II heterodyny w\
+    \ bloku 9), sygnał o częstotliwości 455 kHz trafia do **wzmacniacza II p.cz.** (blok 5), który wzmocni\
+    \ go przed detekcją (blok 6).  \n- Odpowiedź **A** to II heterodyna (blok 9), a **C** to detektor\
+    \ FM (blok 6).  \n\n**Klucz**: W schemacie blokowym, po drugiej mieszance (blok 4) i stabilizacji\
+    \ kwarcami, blok 5 odpowiada za wzmocnienie sygnału na stałej częstotliwości 455 kHz. ✅"
+  - "Błąd polega na mylnym przypisaniu bloku 5 do **detektora FM** (odpowiedź C), podczas gdy w odbiorniku\
+    \ superheterodynowym z podwójną przemianą częstotliwości:\n\n- **Blok 5 to wzmacniacz II p.cz. (455\
+    \ kHz)** (odpowiedź B), ponieważ:  \n  - Pierwsza przemiana (blok 2) z **144 MHz** → **I p.cz.** (np.\
+    \ 10,7 MHz).  \n  - Druga przemiana (blok 4) z **I p.cz.** → **II p.cz. (455 kHz)** (wzmacniacz II\
+    \ p.cz. znajduje się *po* drugiej przemianie, czyli w bloku 5).  \n  - **Detektor FM** (C) pojawia\
+    \ się *po* wzmacniaczu II p.cz. (zwykle w bloku 6 lub 7), gdzie sygnał z II p.cz. jest odbierany.\
+    \  \n\nDlatego blok 5 to **wzmacniacz II p.cz. 455 kHz** (B), a nie detektor.  \n\n$$\n\\boxed{B}\n\
+    $$"
+  - "W odbiorniku superheterodynowym z podwójną przemianą częstotliwości:\n- **I przemiana**: sygnał 144\
+    \ MHz + I heterodyna → I p.cz. (np. 45,5 MHz).\n- **II przemiana**: I p.cz. + II heterodyna → **II\
+    \ p.cz. (455 kHz)**.\n- Blok 5 to **wzmacniacz II p.cz. 455 kHz** (B), który wzmacnia sygnał po II\
+    \ przemianie przed detekcją (blok 7).  \n- Odpowiedź C jest błędna, bo detektor (FM) znajduje się\
+    \ *po* wzmacniaczu II p.cz. (blok 7), a A dotyczy *heterodyny*, nie wzmacniacza.  \n\n**Poprawna odpowiedź:\
+    \ B. wzmacniacz II p.cz. 455 kHz**."
 - text: '196\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 6 to:
@@ -1858,6 +1975,40 @@ questions:
   - wzmacniacz akustyczny
   - II heterodyna stała
   correct_index: 0
+  explanations:
+  - "Prawidłowa odpowiedź to **A. detektor FM**.  \nW odbiorniku superheterodynowym z podwójną przemianą\
+    \ częstotliwości:  \n- Blok 6 znajduje się **po drugim układzie IF** (blok 5) i **przed wzmacniaczem\
+    \ akustycznym** (blok 7).  \n- W odbiornikach FM detektor (odkodownik sygnału) jest zlokalizowany\
+    \ **po etapie przetwarzania częstotliwości do stałej IF**, a przed wyprowadzeniem sygnału dźwiękowego.\
+    \  \n- Dodatkowo, pętla sterowania (blok 8) zazwyczaj dotyczy AGC lub stabilizacji, co potwierdza,\
+    \ że blok 6 to etap demodulacji (detekcji).  \n\nDlatego blok 6 to **detektor FM**. \U0001F3A7  \n\
+    *Pogratuluję!* \U0001F60A"
+  - "Błąd polega na pomyłce w kolejności bloków w odbiorniku superheterodynowym.  \n- **Blok 6** to **detektor\
+    \ FM (A)**, ponieważ w schemacie po wstępnym wzmocnieniu sygnału IF (blok 5) następuje jego demodulacja\
+    \ w detektorze.  \n- **Wzmacniacz akustyczny (B)** znajduje się dopiero po detektorze (zazwyczaj w\
+    \ bloku 7), zatem jego przypisanie do bloku 6 jest niepoprawne.  \n\nKluczowe: *detektor* odbiera\
+    \ sygnał IF i wyodrębnia informację dźwiękową, natomiast *wzmacniacz akustyczny* wzmacnia już odbudowany\
+    \ sygnał audio przed przesłaniem do głośnika.  \n\n**Poprawna kolejność**:  \n1. Antena → 2. Wzmacniacz\
+    \ RF → 3. 1. Mieszacz → 4. 1. Heterodyna → 5. Wzmacniacz IF → **6. Detektor FM** → 7. Wzmacniacz akustyczny\
+    \ → Głośnik."
+  - "**Błąd w odpowiedzi:**  \nUżytkownik pomylił **II heterodynę** z **detektorem FM**. W odbiorniku\
+    \ superheterodynowym:  \n- **II heterodyna (stabilizowana kwarcem)** to **lokalny oscylator** dla\
+    \ drugiej przemiany częstotliwości (zaznaczony jako **9.** w schemacie), który podaje sygnał do **4.\
+    \ bloku** (miksera).  \n- **6. blok** to **detektor FM**, gdzie zdejmowany jest sygnał audio z modulacji\
+    \ częstotliwościowej (po wzmacnieniu w **5. bloku**).  \n\n**Dlaczego C jest błędne?**  \nII heterodyna\
+    \ **nie** znajduje się w bloku 6, lecz w **9. bloku** (zasilający mikser 4.). Blok 6 pełni rolę **detektora**,\
+    \ który przekształca sygnał IF w sygnał audio.  \n\n**Poprawna kolejność:**  \n1. (wejście) → 2. (wzmacniacz\
+    \ RF) → 3. (mikser 1) → 4. (mikser 2) → 5. (wzmacniacz IF) → **6. (detektor FM)** → 7. (wzmacniacz\
+    \ audio) → głośnik.  \n\n**Wnioski:**  \n- Heterodyna (lokalny oscylator) zawsze **współpracuje z\
+    \ mikserem** (bloki 3/4), nie jest detektorem.  \n- Detektor **następuje po wzmacniaczu IF** (5. blok)\
+    \ i wydaje sygnał audio.  \n\n**Poprawna odpowiedź: A. detektor FM.**"
+  - "**Odpowiedź:**  \nBlok 6 to **detektor FM** (odpowiedź A).  \nW odbiorniku superheterodynowym po\
+    \ wzmacniaczu IF (5) sygnał przechodzi do detektora FM (6), który wydobywa sygnał dźwiękowy. Następnie\
+    \ sygnał trafia do wzmacniacza akustycznego (7), a blok 8 to układ stabilizacji (np. AGC). Bloki 9\
+    \ i 10 to heterodyny (9 – II heterodyna, 10 – I heterodyna). Poprawna kolejność: **detektor (6) →\
+    \ wzmacniacz akustyczny (7) → głośnik**.  \n\n**Dlaczego nie C?**  \nII heterodyna to blok **9** (stała,\
+    \ zegarowa), nie 6.  \n**Dlaczego nie B?**  \nWzmacniacz akustyczny (B) to blok **7**, z którego sygnał\
+    \ idzie do głośnika.  \n\n$$\n\\boxed{A}\n$$"
 - text: '197\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 7 to:
@@ -1868,6 +2019,34 @@ questions:
   - wzmacniacz akustyczny
   - detektor FM
   correct_index: 1
+  explanations:
+  - "**Błąd w odpowiedzi A:**  \nW odbiorniku superheterodynowym **wzmacniacz II p. cz. 455 kHz** (block\
+    \ 6) **nie jest blokiem 7**. Blok 7 to **wzmacniacz akustyczny (B)**, ponieważ bezpośrednio poprzedza\
+    \ głośnik.  \n- **Block 6**: Wzmacniacz drugiej częstotliwości średniej (455 kHz) – po nim znajduje\
+    \ się **detektor FM** (zwykle blok 7 nie jest detektorem, bo po nim jest wzmacniacz akustyczny). \
+    \ \n- **Block 7**: Wzmacniacz akustyczny (B) – ostateczny etap przed głośnikiem.  \n\n**Dlaczego A\
+    \ jest niepoprawne?**  \nWzmacniacz II p. cz. 455 kHz (A) **należy do etapu IF** (pomiędzy detektorem\
+    \ a głośnikiem), a nie bezpośrednio przed głośnikiem. Detektor (C) znajduje się **przed** wzmacniaczem\
+    \ akustycznym, więc blok 7 nie może być detektorem.  \n\n**Schemat:**  \n`... → 6. (wzmacniacz II\
+    \ p. cz.) → 7. (wzmacniacz akustyczny) → głośnik`.  \n\n**Poprawna odpowiedź:** **B. wzmacniacz akustyczny**."
+  - "Pogratuluję! Odpowiedź **B. wzmacniacz akustyczny** jest poprawna.  \nW odbiorniku superheterodynowym\
+    \ po **detektorze FM** (blok 6) sygnał dźwiękowy jest podawany do **wzmacniacza akustycznego** (blok\
+    \ 7), który zwiększa jego poziom do wartości umożliwiającej pracę głośnika.  \nWzmacniacz II p. cz.\
+    \ 455 kHz (A) znajduje się w wcześniejszym etapie (prawdopodobnie blok 5 lub 6), a detektor FM (C)\
+    \ poprzedza wzmacniacz akustyczny.  \nZgodnie z schematem blok 7 jest ostatnim etapem przed głośnikiem.\
+    \ \U0001F3A7"
+  - "Blad polega na pomyleniu kolejnosci blokow. W odbiorniku superheterodynowym:\n\n1. **Detektor FM\
+    \ (C)** rozpoznaje sygnal audio (wyswietla go w formie analogowej),  \n2. **Wzmacniacz akustyczny\
+    \ (B)** *nastepuje po detektorze* i wzmacnia sygnal przed wyslanie go do glosnika.  \n\nZ rysunku\
+    \ wynika, że blok 7 bezpośrednio poprzedza glosnik – zatem to **wzmacniacz akustyczny (B)**.  \nDetektor\
+    \ FM (C) znajduje się **wczesniej** (np. blok 6), ponieważ sygnal po detekcji musi zostać dodatkowo\
+    \ wzmacniony.  \n\n$$\n\\boxed{B}\n$$"
+  - "W odbiorniku superheterodynowym FM z podwójną przemianą częstotliwości, blok 7 znajduje się bezpośrednio\
+    \ przed głośnikiem. Oznacza to, że jest to **wzmacniacz akustyczny** (odpowiedź B), który wzmocnia\
+    \ sygnał dźwiękowy po detektorze (blok 6).  \n\n- **A.** Wzmacniacz II p. cz. 455 kHz dotyczy zwykle\
+    \ bloku 5 (częstotliwość 455 kHz to typowa IF w odbiornikach AM, a nie FM).  \n- **C.** Detektor FM\
+    \ (blok 6) konwertuje sygnał IF na dźwięk, a nie jest przed głośnikiem.  \n\n**Poprawna odpowiedź:**\
+    \ B. wzmacniacz akustyczny."
 - text: '198\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 8 to:
@@ -1878,6 +2057,46 @@ questions:
   - blokada szumów
   - detektor FM
   correct_index: 1
+  explanations:
+  - "Użytkownik pomylił blok 8 z **wzmacniaczem akustycznym** (A), który towarzyszy **blokowi 7** (przed\
+    \ głośnikiem). W odbiorniku FM z **blokadą szumów** (B) sygnał z bloku 6 (IF) przesyłany jest do bloku\
+    \ 7 (detektora), a **blok 8** (kierujący obiema strzałkami) steruje **blokadą szumów** — wyłączając\
+    \ wyjście audio przy słabej sygnalizacji. **Detektor FM** (C) to blok 7. Błąd: niezrozumienie, że\
+    \ blok 8 to **kierowanie sygnałem do blokad (squelch)**, a nie wzmacniacz akustyczny.\n\n**Poprawna\
+    \ odpowiedź:**  \nB. blokada szumów"
+  - "**Pogratuluję!**  \nOdpowiedź **B. blokada szumów** jest poprawna.  \n\nW odbiorniku FM z podwójną\
+    \ przemianą częstotliwości:  \n- **Blok 6** to *detektor FM* (odczytuje sygnał modulowany),  \n- **Blok\
+    \ 7** to *wzmacniacz akustyczny* (wzmacnia sygnał dźwiękowy).  \n- **Blok 8** (związany z *wzmacniaczem\
+    \ akustycznym* i *détktorem*) realizuje **blokadę szumów** – mierzy poziom sygnału i wstrzymuje wyjście\
+    \ dźwięku, gdy sygnał jest słaby (zapobiega szumom tła).  \n\nDlatego **B** jest poprawne. \U0001F3A7\
+    ✅"
+  - 'Błąd polega na pomyleniu **detektora FM** (blok 7) z **blokadą szumów** (blok 8). W odbiorniku superheterodynowym:
+
+
+    - **Detektor FM** (odpowiedź C) **to blok 7**, gdzie dochodzi do wyodrębnienia sygnału audio z modulacji
+    częstotliwościowej.
+
+    - **Blokada szumów** (poprawna odpowiedź B) **to blok 8**, który *przetwarza sygnał po stopniu IF*
+    (blok 6) i *przed detektorem* (blok 7), blokując szumy impulsowe (np. z gromu).
+
+
+    Schemat wykazuje, że blok 8 łączy się z wejściem detektora (7), więc jego funkcja to redukcja szumów
+    **przed demodulacją**, a nie sama demodulacja (detekcja).
+
+
+    $$
+
+    \boxed{B}
+
+    $$'
+  - "W odbiorniku superheterodynowym FM z podwójną przemianą częstotliwości, blok 8 odpowiada **blokadzie\
+    \ szumów** (squelch). Ta część systemu **zamyka sygnał dźwiękowy** w przypadku braku sygnału wejściowego\
+    \ (np. w kanałach nieaktywnych), co eliminuje szumy tła.  \n\n- **A. wzmacniacz akustyczny** – znajduje\
+    \ się przed głośnikiem (zazwyczaj blok 7 lub 8 w niektórych schematach, ale nie jest to blokada szumów).\
+    \  \n- **B. blokada szumów** – **poprawna odpowiedź**; blok 8 kontroluje sygnał na poziomie IF lub\
+    \ po detektorze, by zapobiegać szumom w stanie nieaktywnym.  \n- **C. detektor FM** – zazwyczaj pojawia\
+    \ się w etapie po drugim IF (zwykle blok 7 lub 6, ale nie jest to blokada szumów).  \n\n**Odpowiedź:**\
+    \ B. blokada szumów."
 - text: '199\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 9 to:
@@ -1888,6 +2107,42 @@ questions:
   - blokada szumów
   - II heterodyna stała
   correct_index: 2
+  explanations:
+  - "**Błąd w wyborze odpowiedzi A:**  \nBlok 9 nie jest *wzmacniaczem akustycznym* (A), ponieważ wzmacniacz\
+    \ akustyczny pojawia się **po demodulacji** (w bloku 7 lub dalszych etapach), a nie w etapie przemiany\
+    \ częstotliwości.  \n\n**Dlaczego C jest poprawne?**  \nW odbiorniku superheterodynowym z **podwójną\
+    \ przemianą częstotliwości**:  \n- **I heterodyna** (10) generuje częstotliwość do pierwszej mieszanki\
+    \ (1 → 2).  \n- **II heterodyna stała** (9) służy do drugiej przemiany (4 → 5), zazwyczaj o **stałej\
+    \ częstotliwości** (stabilizowanej kwarcami).  \n\nBlok 9 zasilający **mieszaniek (4)** odpowiada\
+    \ za **II heterodynę**.  \n\n**Kluczowa różnica:**  \n- *Wzmacniacz akustyczny* (A) dotyczy **sygnału\
+    \ dźwiękowego** (po demodulacji), a **heterodyna** (C) dotyczy **przemiany częstotliwości w zakresie\
+    \ RF/IF**.  \n\n**Uwaga:**  \nW schemacie blok 8 to **korekta wsteczna** (np. dla stabilizacji), a\
+    \ blok 9 to **II heterodyna** (C)."
+  - "Błąd polega na mylnym przypisaniu bloku 9 do **\"blokady szumów\" (B)**. W odbiorniku superheterodynowym:\
+    \  \n- **Blok 9** to **II heterodyna stała (C)** – drugi, kwarcowo stabilizowany generator częstotliwości\
+    \ (LO), który przemienia sygnał na niższą cz. środkową.  \n- **\"Blo kada szumów\" (B)** to element\
+    \ **w sekcji audio** (po detektorze), a nie w ścieżce przemiany częstotliwości (blok 9 jest przed\
+    \ 4., gdzie są etapy IF).  \n\nW diagramie:  \n- **Blok 10** → I heterodyna (pierwszy LO),  \n- **Blok\
+    \ 9** → II heterodyna (drugi LO dla drugiej przemiany),  \n- **Blok 8** → zwykle filtry lub regulacja\
+    \ poziomu.  \n\nPoprawna odpowiedź: **C. II heterodyna stała** (z uwagi na stabilizację kwarcami i\
+    \ funkcję w drugim etapie przemiany).  \n\n**Podstawa**: \"Blokada szumów\" to element **nietraktujący\
+    \ sygnału RF/IF**, a blok 9 jest częścią **procesu przemiany częstotliwości** (wymaga stabilnej cz.\
+    \ LO)."
+  - "**Poprawna odpowiedź: C. II heterodyna stała**  \n\nW odbiorniku superheterodynowym z **podwójną\
+    \ przemianą częstotliwości**:  \n- **Block 9** jest źródłem drugiego, **stabilizowanego kwarcami sygnału\
+    \ heterodynowego** (II heterodyna), który służy do przemiany częstotliwości w **drugim mieszaczu (block\
+    \ 4)**.  \n- W konstrukcji z podwójną przemianą, **II heterodyna** ma **stałą częstotliwość**, co\
+    \ zapewnia wysoką stabilność i selektywność.  \n\nDlatego:  \n- **A** (wzmacniacz akustyczny) dotyczy\
+    \ etapów końcowych (block 7).  \n- **B** (blokada szumów) zazwyczaj umieszczana jest w etapie RF lub\
+    \ IF (np. block 2).  \n- **C** jest poprawne, bo **II heterodyna** to kluczowy element drugiego mieszania.\
+    \  \n\n*Pogratuluję! \U0001F3AF*"
+  - "Blok 9 w schemacie odbiornika superheterodynowego z podwójną przemianą częstotliwości odpowiada **II\
+    \ heterodynie stałej** (C). W odbiorniku z podwójną przemianą:  \n- Pierwsza heterodyna (1. lokator)\
+    \ ustawia się do zakresu 144 MHz (dla pierwszej przemiany),  \n- **Druga heterodyna (9.) jest stała**\
+    \ (stabilizowana kwarcem), by uzyskać zadaną, stałą częstotliwość drugiego sygnału pośredniego (IF2).\
+    \  \n\nInne opcje są błędne:  \n- A (wzmacniacz akustyczny) znajduje się przed głośnikiem (7.),  \n\
+    - B (blokada szumów) zazwyczaj jest w etapie wejściowym lub przed detektorem, a nie w drugiej przemianie.\
+    \  \n\n**Odpowiedź: C. II heterodyna stała**"
 - text: '200\. Na rysunku przedstawiono schemat blokowy odbiornika superheterodynowego FM na pasmo 144
     MHz z podwójną przemianą częstotliwości, pracującego w kanałach fonicznych, stabilizowany kwarcami.
     Blok 10 to:

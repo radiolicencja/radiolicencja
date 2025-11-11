@@ -32,7 +32,8 @@ class QuizScreen extends StatefulWidget {
   State<QuizScreen> createState() => _QuizScreenState();
 }
 
-class _QuizScreenState extends State<QuizScreen> {
+class _QuizScreenState extends State<QuizScreen>
+    with SingleTickerProviderStateMixin {
   static const Duration _learningAutoAdvanceDuration = Duration(seconds: 5);
   late final List<QuizQuestion> _questions;
   late final int _totalQuestions;
@@ -52,8 +53,9 @@ class _QuizScreenState extends State<QuizScreen> {
   final TextEditingController _openAnswerController = TextEditingController();
   final FocusNode _openAnswerFocus = FocusNode();
   final Random _random = Random();
-  Timer? _autoAdvanceTimer;
   bool _autoAdvancePaused = false;
+  late final AnimationController _autoAdvanceController;
+  int? _autoAdvanceQuestionIndex;
   bool _usedIDontKnow = false;
   int? _lastMatchedOpenAnswerIndex;
 
@@ -76,16 +78,31 @@ class _QuizScreenState extends State<QuizScreen> {
       );
       initialQuestions
           .removeWhere((question) => storedMastered.contains(question.id));
-      _totalQuestions = widget.questions.length;
-      if (initialQuestions.isEmpty) {
-        _showSummary = true;
+      if (initialQuestions.isEmpty && widget.questions.isNotEmpty) {
+        initialQuestions.addAll(widget.questions);
       }
+      _totalQuestions = widget.questions.length;
       _learningPicker?.sort(initialQuestions);
     } else {
       initialQuestions.shuffle(_random);
       _totalQuestions = initialQuestions.length;
     }
     _questions = initialQuestions;
+    _autoAdvanceController = AnimationController(
+      vsync: this,
+      duration: _learningAutoAdvanceDuration,
+    )
+      ..addListener(() {
+        if (!mounted) return;
+        if (_autoAdvanceController.isAnimating) {
+          setState(() {});
+        }
+      })
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          _handleAutoAdvanceComplete();
+        }
+      });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _ensureFocusForCurrentQuestion();
     });
@@ -93,7 +110,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   void dispose() {
-    _cancelAutoAdvanceTimer();
+    _cancelAutoAdvanceCountdown();
+    _autoAdvanceController.dispose();
     _openAnswerController.dispose();
     _openAnswerFocus.dispose();
     super.dispose();
@@ -104,18 +122,70 @@ class _QuizScreenState extends State<QuizScreen> {
     setState(() {
       _autoAdvancePaused = true;
     });
-    _cancelAutoAdvanceTimer();
+    _autoAdvanceController.stop();
   }
 
   bool get _isAutoAdvancePauseAvailable {
     return widget.mode == QuizMode.learning &&
         !_autoAdvancePaused &&
-        (_autoAdvanceTimer?.isActive ?? false);
+        _autoAdvanceController.isAnimating;
   }
 
-  void _cancelAutoAdvanceTimer() {
-    _autoAdvanceTimer?.cancel();
-    _autoAdvanceTimer = null;
+  void _cancelAutoAdvanceCountdown() {
+    _autoAdvanceQuestionIndex = null;
+    if (_autoAdvanceController.isAnimating ||
+        _autoAdvanceController.value != 0) {
+      _autoAdvanceController.stop();
+      _autoAdvanceController.value = 0;
+    }
+    _autoAdvancePaused = false;
+  }
+
+  void _startAutoAdvanceCountdown(int questionIndex) {
+    if (widget.mode != QuizMode.learning) return;
+    _autoAdvanceQuestionIndex = questionIndex;
+    setState(() {
+      _autoAdvancePaused = false;
+    });
+    _autoAdvanceController
+      ..stop()
+      ..reset()
+      ..forward();
+  }
+
+  void _handleAutoAdvanceComplete() {
+    if (!mounted ||
+        _autoAdvancePaused ||
+        _showSummary ||
+        _autoAdvanceQuestionIndex != _currentQuestionIndex) {
+      return;
+    }
+    _autoAdvanceQuestionIndex = null;
+    _goToNextStep();
+  }
+
+  bool get _isAutoAdvanceRunning {
+    return widget.mode == QuizMode.learning &&
+        !_autoAdvancePaused &&
+        _autoAdvanceQuestionIndex == _currentQuestionIndex &&
+        _autoAdvanceController.isAnimating;
+  }
+
+  double? get _autoAdvanceProgress {
+    if (!_isAutoAdvanceRunning) return null;
+    return _autoAdvanceController.value.clamp(0.0, 1.0);
+  }
+
+  int get _autoAdvanceRemainingSeconds {
+    final remainingMs =
+        (1 - _autoAdvanceController.value) * _learningAutoAdvanceDuration.inMilliseconds;
+    var seconds = (remainingMs / 1000).ceil();
+    if (seconds < 0) {
+      seconds = 0;
+    } else if (seconds > _learningAutoAdvanceDuration.inSeconds) {
+      seconds = _learningAutoAdvanceDuration.inSeconds;
+    }
+    return seconds;
   }
 
   void _selectAnswer(QuizAnswer answer) {
@@ -179,7 +249,7 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   void _goToNextStep() {
-    _cancelAutoAdvanceTimer();
+    _cancelAutoAdvanceCountdown();
     if (widget.mode == QuizMode.learning) {
       final wasCorrect = _currentQuestionWasAnsweredCorrectly;
       setState(() {
@@ -234,7 +304,7 @@ class _QuizScreenState extends State<QuizScreen> {
     if (_questions.isEmpty) {
       return;
     }
-    _cancelAutoAdvanceTimer();
+    _cancelAutoAdvanceCountdown();
     _autoAdvancePaused = false;
     final question = _questions.removeAt(_currentQuestionIndex);
     if (!answeredCorrect) {
@@ -265,20 +335,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void _scheduleAdvanceAfterCorrect(int questionIndex) {
     if (widget.mode == QuizMode.learning) {
-      _cancelAutoAdvanceTimer();
-      if (mounted) {
-        setState(() {
-          _autoAdvancePaused = false;
-        });
-      } else {
-        _autoAdvancePaused = false;
-      }
-      _autoAdvanceTimer = Timer(_learningAutoAdvanceDuration, () {
-        if (!mounted || _showSummary || _autoAdvancePaused) return;
-        if (_currentQuestionIndex != questionIndex) return;
-        _autoAdvanceTimer = null;
-        _goToNextStep();
-      });
+      _startAutoAdvanceCountdown(questionIndex);
       return;
     }
     Future.delayed(const Duration(milliseconds: 500), () {
@@ -403,6 +460,11 @@ class _QuizScreenState extends State<QuizScreen> {
     final nextLabel =
         isLast ? l10n.quizButtonSeeScore : l10n.quizButtonNextQuestion;
 
+    final double? autoProgressValue = _autoAdvanceProgress;
+    final bool showAutoProgress = autoProgressValue != null;
+    final String? helperText =
+        showAutoProgress ? l10n.quizAutoAdvanceHint(_autoAdvanceRemainingSeconds) : null;
+
     if (question.isOpen) {
       if (_openAnswerCorrect == null) {
         return null;
@@ -414,6 +476,8 @@ class _QuizScreenState extends State<QuizScreen> {
       return _FloatingBottomButton(
         label: nextLabel,
         onPressed: _goToNextStep,
+        autoProgress: autoProgressValue,
+        helperText: helperText,
       );
     }
 
@@ -428,6 +492,8 @@ class _QuizScreenState extends State<QuizScreen> {
     return _FloatingBottomButton(
       label: nextLabel,
       onPressed: _goToNextStep,
+      autoProgress: autoProgressValue,
+      helperText: helperText,
     );
   }
 
@@ -446,9 +512,6 @@ class _QuizScreenState extends State<QuizScreen> {
       if (explanationText != null) {
         explanationSection = _ExplanationCard(
           text: explanationText,
-          showAutoAdvanceHint:
-              _shouldShowAutoAdvanceHint(_selectedAnswer?.isCorrect ?? false),
-          autoAdvanceSeconds: _learningAutoAdvanceDuration.inSeconds,
         );
       }
     }
@@ -503,9 +566,6 @@ class _QuizScreenState extends State<QuizScreen> {
       if (explanationText != null) {
         explanationSection = _ExplanationCard(
           text: explanationText,
-          showAutoAdvanceHint:
-              _shouldShowAutoAdvanceHint(_openAnswerCorrect == true),
-          autoAdvanceSeconds: _learningAutoAdvanceDuration.inSeconds,
         );
       }
     }
@@ -578,13 +638,6 @@ class _QuizScreenState extends State<QuizScreen> {
       return _openAnswerCorrect == null;
     }
     return _selectedAnswer == null;
-  }
-
-  bool _shouldShowAutoAdvanceHint(bool answeredCorrect) {
-    if (!answeredCorrect) return false;
-    if (widget.mode != QuizMode.learning) return false;
-    if (_autoAdvancePaused) return false;
-    return _autoAdvanceTimer?.isActive ?? false;
   }
 
   String? _resolveExplanation({
@@ -732,18 +785,13 @@ class _AnswerOption extends StatelessWidget {
 class _ExplanationCard extends StatelessWidget {
   const _ExplanationCard({
     required this.text,
-    required this.showAutoAdvanceHint,
-    required this.autoAdvanceSeconds,
   });
 
   final String text;
-  final bool showAutoAdvanceHint;
-  final int autoAdvanceSeconds;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final l10n = AppLocalizations.of(context)!;
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(16),
@@ -760,15 +808,6 @@ class _ExplanationCard extends StatelessWidget {
             baseStyle: theme.textTheme.bodyLarge,
             bodyStyle: theme.textTheme.bodyMedium,
           ),
-          if (showAutoAdvanceHint) ...[
-            const SizedBox(height: 12),
-            Text(
-              l10n.quizAutoAdvanceHint(autoAdvanceSeconds),
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: Colors.grey[700],
-              ),
-            ),
-          ],
         ],
       ),
     );
@@ -881,28 +920,61 @@ class _FloatingBottomButton extends StatelessWidget {
   const _FloatingBottomButton({
     required this.label,
     required this.onPressed,
+    this.autoProgress,
+    this.helperText,
   });
 
   final String label;
   final VoidCallback onPressed;
+  final double? autoProgress;
+  final String? helperText;
 
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final buttonWidth = width > 32 ? width - 32 : width;
+    final showProgress = autoProgress != null;
     return SafeArea(
       top: false,
       left: false,
       right: false,
-      child: SizedBox(
-        width: buttonWidth,
-        child: ElevatedButton(
-          onPressed: onPressed,
-          style: ElevatedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(vertical: 16),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (showProgress) ...[
+            SizedBox(
+              width: buttonWidth,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(999),
+                child: LinearProgressIndicator(
+                  value: autoProgress!.clamp(0.0, 1.0),
+                  minHeight: 4,
+                ),
+              ),
+            ),
+            if (helperText != null) ...[
+              const SizedBox(height: 6),
+              Text(
+                helperText!,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodySmall
+                    ?.copyWith(color: Colors.grey[600]),
+              ),
+            ],
+            const SizedBox(height: 8),
+          ],
+          SizedBox(
+            width: buttonWidth,
+            child: ElevatedButton(
+              onPressed: onPressed,
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+              ),
+              child: Text(label),
+            ),
           ),
-          child: Text(label),
-        ),
+        ],
       ),
     );
   }
