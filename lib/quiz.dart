@@ -331,6 +331,9 @@ class _QuizScreenState extends State<QuizScreen> {
       appBar: AppBar(
         title: Text(widget.topicTitle),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton:
+          _showSummary ? null : _buildBottomAction(context),
       body: Listener(
         onPointerDown: (_) => _handleUserInteraction(),
         child: Padding(
@@ -373,7 +376,7 @@ class _QuizScreenState extends State<QuizScreen> {
           primary: false,
           physics: const ClampingScrollPhysics(),
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-          padding: const EdgeInsets.only(bottom: 24),
+          padding: const EdgeInsets.only(bottom: 120),
           child: ConstrainedBox(
             constraints: BoxConstraints(minHeight: constraints.maxHeight),
             child: Column(
@@ -390,15 +393,50 @@ class _QuizScreenState extends State<QuizScreen> {
     );
   }
 
+  Widget? _buildBottomAction(BuildContext context) {
+    if (_showSummary || _questions.isEmpty) {
+      return null;
+    }
+    final l10n = AppLocalizations.of(context)!;
+    final question = _questions[_currentQuestionIndex];
+    final isLast = _currentQuestionIndex == _questions.length - 1;
+    final nextLabel =
+        isLast ? l10n.quizButtonSeeScore : l10n.quizButtonNextQuestion;
+
+    if (question.isOpen) {
+      if (_openAnswerCorrect == null) {
+        return null;
+      }
+      final answeredCorrect = _openAnswerCorrect!;
+      if (answeredCorrect && widget.mode != QuizMode.learning) {
+        return null;
+      }
+      return _FloatingBottomButton(
+        label: nextLabel,
+        onPressed: _goToNextStep,
+      );
+    }
+
+    if (_selectedAnswer == null) {
+      return null;
+    }
+    final shouldShowButton =
+        widget.mode == QuizMode.learning || !_selectedAnswer!.isCorrect;
+    if (!shouldShowButton) {
+      return null;
+    }
+    return _FloatingBottomButton(
+      label: nextLabel,
+      onPressed: _goToNextStep,
+    );
+  }
+
   Widget _buildMultipleChoiceQuestion(
     BuildContext context,
     QuizQuestion question,
   ) {
     final l10n = AppLocalizations.of(context)!;
     final isLearningMode = widget.mode == QuizMode.learning;
-    final nextButtonLabel = _currentQuestionIndex == _questions.length - 1
-        ? l10n.quizButtonSeeScore
-        : l10n.quizButtonNextQuestion;
     Widget? explanationSection;
     if (isLearningMode && _selectedAnswer != null) {
       final explanationText = _resolveExplanation(
@@ -449,17 +487,6 @@ class _QuizScreenState extends State<QuizScreen> {
                 ?.copyWith(color: Colors.green[700]),
           ),
         ],
-        if (_selectedAnswer != null &&
-            (isLearningMode || !_selectedAnswer!.isCorrect)) ...[
-          const SizedBox(height: 16),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: _goToNextStep,
-              child: Text(nextButtonLabel),
-            ),
-          ),
-        ],
       ],
     );
   }
@@ -467,9 +494,6 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget _buildOpenQuestion(BuildContext context, QuizQuestion question) {
     final l10n = AppLocalizations.of(context)!;
     final isLearningMode = widget.mode == QuizMode.learning;
-    final nextButtonLabel = _currentQuestionIndex == _questions.length - 1
-        ? l10n.quizButtonSeeScore
-        : l10n.quizButtonNextQuestion;
     Widget? explanationSection;
     if (isLearningMode && _openAnswerCorrect != null) {
       final explanationText = _resolveExplanation(
@@ -505,25 +529,14 @@ class _QuizScreenState extends State<QuizScreen> {
           },
         ),
         const SizedBox(height: 16),
-        SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            onPressed: _openAnswerCorrect == null
-                ? () => _submitOpenAnswer(question)
-                : (_openAnswerCorrect! && !isLearningMode)
-                    ? null
-                    : _goToNextStep,
-            child: Text(
-              _openAnswerCorrect == null
-                  ? l10n.quizButtonCheckAnswer
-                  : (_openAnswerCorrect!
-                      ? (isLearningMode
-                          ? nextButtonLabel
-                          : l10n.quizButtonCorrect)
-                      : nextButtonLabel),
+        if (_openAnswerCorrect == null)
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () => _submitOpenAnswer(question),
+              child: Text(l10n.quizButtonCheckAnswer),
             ),
           ),
-        ),
         if (_shouldShowIDontKnowButton(question)) ...[
           const SizedBox(height: 8),
           Align(
@@ -815,11 +828,28 @@ class _QuestionMarkdown extends StatelessWidget {
       }
       buffer.write(char);
     }
-    return buffer.toString();
+    final sanitized = buffer.toString();
+    return _sanitizeOrderedListTriggers(sanitized);
   }
 
   bool _shouldUnescape(String next) {
     return next == '.';
+  }
+
+  String _sanitizeOrderedListTriggers(String input) {
+    if (input.isEmpty) return input;
+    final lines = input.split('\n');
+    for (var i = 0; i < lines.length; i++) {
+      lines[i] = _escapeOrderedListLine(lines[i]);
+    }
+    return lines.join('\n');
+  }
+
+  String _escapeOrderedListLine(String line) {
+    final match = RegExp(r'^(\s*)(\d+)\.(\s+)').firstMatch(line);
+    if (match == null) return line;
+    final insertIndex = match.group(1)!.length + match.group(2)!.length;
+    return '${line.substring(0, insertIndex)}\u200B${line.substring(insertIndex)}';
   }
 
   Widget _buildMarkdownImage(String rawUrl) {
@@ -843,6 +873,37 @@ class _QuestionMarkdown extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(12),
       child: image,
+    );
+  }
+}
+
+class _FloatingBottomButton extends StatelessWidget {
+  const _FloatingBottomButton({
+    required this.label,
+    required this.onPressed,
+  });
+
+  final String label;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final buttonWidth = width > 32 ? width - 32 : width;
+    return SafeArea(
+      top: false,
+      left: false,
+      right: false,
+      child: SizedBox(
+        width: buttonWidth,
+        child: ElevatedButton(
+          onPressed: onPressed,
+          style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(vertical: 16),
+          ),
+          child: Text(label),
+        ),
+      ),
     );
   }
 }

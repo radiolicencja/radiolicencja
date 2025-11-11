@@ -571,7 +571,24 @@ class _StatsQuestionMarkdown extends StatelessWidget {
       }
       buffer.write(char);
     }
-    return buffer.toString();
+    final sanitized = buffer.toString();
+    return _sanitizeOrderedListTriggers(sanitized);
+  }
+
+  String _sanitizeOrderedListTriggers(String input) {
+    if (input.isEmpty) return input;
+    final lines = input.split('\n');
+    for (var i = 0; i < lines.length; i++) {
+      lines[i] = _escapeOrderedListLine(lines[i]);
+    }
+    return lines.join('\n');
+  }
+
+  String _escapeOrderedListLine(String line) {
+    final match = RegExp(r'^(\s*)(\d+)\.(\s+)').firstMatch(line);
+    if (match == null) return line;
+    final insertIndex = match.group(1)!.length + match.group(2)!.length;
+    return '${line.substring(0, insertIndex)}\u200B${line.substring(insertIndex)}';
   }
 
   Widget _buildMarkdownImage(String rawUrl) {
