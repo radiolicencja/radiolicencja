@@ -193,6 +193,8 @@ class _QuizScreenState extends State<QuizScreen>
     final questionIndex = _currentQuestionIndex;
     final question = _questions[questionIndex];
     final answeredIDontKnow = identical(answer, _iDontKnowAnswer);
+    // Multiple-choice answers are resolved entirely through the QuizAnswer.isCorrect flag.
+    // The question data already marks the right option, so we just trust that metadata here.
     setState(() {
       _selectedAnswer = answer;
       _usedIDontKnow = answeredIDontKnow;
@@ -213,6 +215,8 @@ class _QuizScreenState extends State<QuizScreen>
     final response = _openAnswerController.text.trim();
     if (response.isEmpty) return;
     final matchIndex = question.acceptedAnswerIndexFor(response);
+    // For open questions we normalise the user input and compare it against every accepted answer,
+    // treating the first successful match as the canonical "correct" response for scoring/explanations.
     final isCorrect = matchIndex != null;
     final questionIndex = _currentQuestionIndex;
     setState(() {
@@ -967,6 +971,7 @@ class _FloatingBottomButton extends StatelessWidget {
           SizedBox(
             width: buttonWidth,
             child: ElevatedButton(
+              key: const Key('quizNextButton'),
               onPressed: onPressed,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
@@ -1112,11 +1117,31 @@ class QuizQuestion {
     return QuizQuestionType.multipleChoice;
   }
 
+  static const Map<String, String> _diacriticFold = <String, String>{
+    'ą': 'a',
+    'ć': 'c',
+    'ę': 'e',
+    'ł': 'l',
+    'ń': 'n',
+    'ó': 'o',
+    'ś': 's',
+    'ź': 'z',
+    'ż': 'z',
+  };
+  static final RegExp _nonAlphanumeric = RegExp(r'[^a-z0-9]+');
+  static final RegExp _multiWhitespace = RegExp(r'\s+');
+
   static String _normalizeAnswer(String value) {
-    return value
-        .toLowerCase()
-        .replaceAll(RegExp(r'[^a-z0-9]+'), ' ')
-        .replaceAll(RegExp(r'\s+'), ' ')
+    final lower = value.toLowerCase();
+    final buffer = StringBuffer();
+    for (final codePoint in lower.runes) {
+      final char = String.fromCharCode(codePoint);
+      buffer.write(_diacriticFold[char] ?? char);
+    }
+    return buffer
+        .toString()
+        .replaceAll(_nonAlphanumeric, ' ')
+        .replaceAll(_multiWhitespace, ' ')
         .trim();
   }
 

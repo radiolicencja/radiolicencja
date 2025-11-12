@@ -1210,7 +1210,7 @@ questions:
     \ odpowiedź to **B. I direktor**.  \n\n$$\n\\boxed{B}\n$$"
 - text: '113\. Na rysunku przedstawiona jest antena typu Yagi-Uda. Element 4 to:
 
-    ![RADIOTECHNIKA question 113](assets/question_images/radiotechnika-q113.jpg)'
+    ![RADIOTECHNIKA question 113](assets/question_images/radiotechnika-q113.png)'
   answers:
   - I direktor
   - II direktor
@@ -2358,7 +2358,7 @@ questions:
   - 25%
   - 50%
   - 75%
-  correct_index: 1
+  correct_index: 0
   explanations:
   - "### Dlaczego odpowiedź **A (25 %)** jest poprawna, a nie **B (50 %)**\n\n| Krok | Obliczenie | Wartość\
     \ | Co oznacza |\n|------|------------|---------|------------|\n| 1 | Całkowite tłumienie kabla 100 m\
@@ -3473,7 +3473,7 @@ questions:
   - przełączyć się na dipol
   - pozostać przy antenie kierunkowej
   - to bez znaczenia dla nadawania
-  correct_index: 2
+  correct_index: 0
   explanations:
   - "### Dlaczego odpowiedź **A** („przełączyć się na dipol”) jest błędna\n\n| Parametr | Antenna kierunkowa\
     \ (przedni**l**) | Antenna kierunkowa (tylny) | Dipol półfalowy |\n|----------|------------------------------------|----------------------------|------------------|\n\
