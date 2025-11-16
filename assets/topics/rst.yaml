@@ -1,0 +1,1286 @@
+title: Kody raportów RST – trening
+slug: kody-raportow-rst-quiz
+description: Quiz do nauki nadawania i rozumienia raportów RST w łącznościach krótkofalarskich.
+context: 'R1 - nieczytelny
+
+  R2 - ledwie czytelny
+
+  R3 - czytelny z dużymi trudnościami
+
+  R4 - czytelny z niewielkimi trudnościami
+
+  R5 - dobrze czytelny
+
+
+  S1 - bardzo słaby
+
+  S2 - bardzo słaby, ale czytelny
+
+  S3 - słaby
+
+  S4 - dostatecznie dobry
+
+  S5 - dość dobry
+
+  S6 - dobry
+
+  S7 - umiarkowanie silny
+
+  S8 - silny
+
+  S9 - bardzo silny
+
+
+  T1 - bardzo chrapliwy ton prądu zmiennego
+
+  T2 - chrapliwy ton prądu zmiennego, bez śladów muzykalności
+
+  T3 - chrapliwy, niski ton prądu zmiennego, lekko muzykalny
+
+  T4 - nieco chrapliwy ton prądu zmiennego
+
+  T5 - ton dźwięczny, modulowany składową zmienną
+
+  T6 - ton modulowany, lekko świszczący
+
+  T7 - ton prawie czysty, lekko świszczący
+
+  T8 - ton czysty
+
+  T9 - bardzo czysty, dźwięczny ton
+
+  '
+questions:
+- text: Co oznacza skrót RST w raportach krótkofalarskich?
+  answers:
+  - czytelność, siła sygnału, ton
+  - zasięg, siła sygnału, czas
+  - radio, sygnał, transmisja
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „czytelność, siła sygnału, ton”** jest prawidłowa,\
+    \ ponieważ skrót **RST** w raportach krótkofalarskich oznacza:\n\n- **R** – **Readability** (czytelność)\
+    \ – stopień, w jakim odbierany jest tekst (R1‑R5).  \n- **S** – **Signal strength** (siła sygnału)\
+    \ – moc odbieranego sygnału (S1‑S9).  \n- **T** – **Tone** (ton) – charakterystyka tonu dźwiękowego\
+    \ (T1‑T9).\n\nRazem tworzą one standardowy opis jakości odbioru transmisji."
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **R** w raporcie RST nie oznacza „zasięg”.  \n  -\
+    \ W standardzie **R** oznacza **czytelność (Readability)**, czyli jak łatwo odczytać znak lub literę\
+    \ w sygnale.  \n  - Skala czytelności jest opisana jako **R1–R5** (od nieczytelnego do dobrze czytelnego).\n\
+    \n- **S** nie jest „czasem”.  \n  - **S** to **siła sygnału (Signal strength)**, określana w skali\
+    \ **S1–S9** (od bardzo słabego do bardzo silnego).  \n  - Nie ma w niej żadnego odniesienia do czasu\
+    \ trwania odbioru.\n\n- **T** nie jest „zasięgiem”.  \n  - **T** oznacza **ton (Tone)** modulacji\
+    \ sygnału, klasyfikowany w skali **T1–T9** (od bardzo chrapliwego tonu do bardzo czystego, dźwięcznego\
+    \ tonu).  \n  - Nie opisuje on odległości, czyli zasięgu.\n\nZatem odpowiedź **B** („zasięg, siła\
+    \ sygnału, czas”) łączy ze sobą pojęcia, które nie należą do systemu RST.  \n\n**Poprawna odpowiedź\
+    \ A** prawidłowo wymienia trzy elementy raportu:\n- **R** – czytelność,\n- **S** – siła sygnału,\n\
+    - **T** – ton.  \n\nKażdy z tych parametrów jest oceniany osobno według podanych skali (R1‑R5, S1‑S9,\
+    \ T1‑T9)."
+  - "**Dlaczego odpowiedź C jest niepoprawna?**\n\n- **RST** to ustalony skrót używany w raportach QSO\
+    \ (raportach krótkofalarskich).  \n- Składa się on z trzech elementów, które opisują **czytelność\
+    \ (R)**, **siłę sygnału (S)** i **ton (T)** odbieranego sygnału.  \n- W praktyce przyjmuje się następujące\
+    \ skale:\n\n  - **R** – od **R1** (nieczytelny) do **R5** (dobrze czytelny)  \n  - **S** – od **S1**\
+    \ (bardzo słaby) do **S9** (bardzo silny)  \n  - **T** – od **T1** (bardzo chrapliwy ton prądu zmiennego)\
+    \ do **T9** (bardzo czysty, dźwięczny ton)\n\n- Przykład raportu: **“R4 S5 T3”** oznacza „czytelny\
+    \ z niewielkimi trudnościami, dostatecznie dobry sygnał, chrapliwy, niski ton, lekko muzykalny”.\n\
+    \n**Czym jest odpowiedź C?**  \n„radio, sygnał, transmisja” nie odnosi się do żadnej z powyższych\
+    \ skal i nie jest używana w standardowym zapisie RST. Dlatego nie opisuje ona tego, co naprawdę mierzy\
+    \ się w raporcie.\n\n**Podsumowanie**  \nPoprawna odpowiedź to **A – czytelność, siła sygnału, ton**,\
+    \ ponieważ dokładnie odzwierciedla trzy parametry definiowane przez skrót **RST** w raportach krótkofalarskich."
+  - "**RST – skrót używany w raportach krótkofalarskich**  \n\n- **R – czytelność (Readability)** – opisuje,\
+    \ jak dobrze został zrozumiany przekaz.  \n  Skala:  \n\n  - *R1* – nieczytelny  \n  - *R2* – ledwie\
+    \ czytelny  \n  - *R3* – czytelny z dużymi trudnościami  \n  - *R4* – czytelny z niewielkimi trudnościami\
+    \  \n  - *R5* – dobrze czytelny  \n\n- **S – siła sygnału (Signal strength)** – określa moc odbieranego\
+    \ sygnału.  \n  Skala:  \n\n  *S1* – bardzo słaby, *S2* – bardzo słaby, ale czytelny, …, *S9* – bardzo\
+    \ silny.  \n\n- **T – ton (Tone)** – charakteryzuje barwę dźwięku nadawanego.  \n  Skala:  \n\n  *T1*\
+    \ – bardzo chrapliwy ton prądu zmiennego, …, *T9* – bardzo czysty, dźwięczny ton.  \n\nDlatego prawidłowa\
+    \ odpowiedź to:\n\n**A. czytelność, siła sygnału, ton**  \n\nPozostałe warianty (zasięg, radio, transmisja)\
+    \ nie opisują elementów raportu RST."
+- text: Które elementy raportu podaje się zazwyczaj w łącznościach fonicznych (SSB/FM)?
+  answers:
+  - R i S (np. 59)
+  - tylko R (np. 5)
+  - R, S i T (np. 579)
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „R i S (np. 59)”** jest prawidłowa, ponieważ w łącznościach\
+    \ fonicznych (SSB / FM) w raporcie podaje się:\n\n* **R** – ocenę czytelności (np. 5 = czytelny z\
+    \ niewielkimi trudnościami)  \n* **S** – ocenę siły sygnału (np. 9 = bardzo silny)\n\nTe dwie składowe\
+    \ są niezbędne do oceny jakości łączności. Element **T** (ton) jest używany w raportach dotyczących\
+    \ łączności radiowych o stałej częstotliwości (np. AM), a nie w typowych raportach fonicznych, dlatego\
+    \ opcja C jest niepoprawna, a opcja B pomija istotny parametr siły sygnału.  \n\nJeszcze raz gratuluję\
+    \ poprawnego wyboru! \U0001F680"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\nW raportach łącznościowych (SSB/FM) podaje się **dwie**\
+    \ podstawowe grupy informacji:\n\n* **R – czytelność** (od R1 do R5) – opisuje, jak dobrze odbiorca\
+    \ rozumie przekazywany sygnał.\n* **S – siła sygnału** (od S1 do S9) – opisuje moc odbieranego sygnału.\n\
+    \nTe dwie grupy występują razem i są zapisywane w formie dwucyfrowej, np. **59** (dobrze czytelny + dość\
+    \ dobry sygnał).\n\n**T** (ton dźwięku, T1‑T9) nie jest częścią standardowego raportu łącznościowego;\
+    \ jest używane jedynie w specjalnych sytuacjach (np. przy ocenie jakości tonu w transmisjach radiowych,\
+    \ ale nie w typowych raportach SSB/FM).\n\nDlatego:\n\n* **A. R i S (np. 59)** – prawidłowa odpowiedź.\
+    \  \n* **B. tylko R (np. 5)** – niepełna, pomija wymaganą informację o sile sygnału.  \n* **C. R,\
+    \ S i T (np. 579)** – zawiera zbędny element **T**.\n\n**Podsumowanie:** raport łącznościowy wymaga\
+    \ zarówno oceny czytelności (**R**), jak i siły sygnału (**S**). Samo podanie **R** jest niekompletne,\
+    \ więc odpowiedź B jest błędna."
+  - "**Dlaczego odpowiedź C jest błędna**\n\nW raporcie dotyczącym **łączności fonicznych** (SSB, FM)\
+    \ podaje się jedynie dwa elementy:\n\n* **R** – czytelność (np. 5 = nieczytelny, 9 = dobrze czytelny)\
+    \  \n* **S** – siła sygnału (np. 9 = bardzo silny)\n\nZapis **„59”** oznacza więc *dobrze czytelny*\
+    \ sygnał o *bardzo silnej* mocy.  \n\n**T** opisuje tonację (np. T₈ – ton czysty) i jest używana w\
+    \ raportach technicznych dotyczących charakterystyki dźwięku, a nie w standardowym raporcie **R‑S**\
+    \ dla łączności fonicznych. Dlatego element **T** nie wchodzi w skład raportu i odpowiedź „R, S i T\
+    \ (np. 579)” jest niepoprawna.\n\n---\n\n### Poprawna odpowiedź\n**A. R i S (np. 59)** – jedynie czytelność\
+    \ i siła sygnału są podawane w raportach fonicznych."
+  - "**Odpowiedź:** A – **R i S (np. 59)**  \n\n**Dlaczego?**\n\n- **R** – **report (raport)**, czyli\
+    \ **siła sygnału** wyrażana w skali od 1 do 9 (np. 5).  \n- **S** – **strength (siła odbioru)**, czyli\
+    \ **czystość dźwięku** (czytelność) podawana w skali od 1 do 9 (np. 9).  \n\nW łącznościach fonicznych,\
+    \ takich jak **SSB** (Single‑Sideband) i **FM**, standardowo podaje się **tylko te dwa elementy**\
+    \ – siłę sygnału i jakość odbioru.  \n\nElement **T** (ton, np. 8) jest wymieniany przy raportach\
+    \ w trybie **CW** (kod Morse’a) oraz przy niektórych łącznościach cyfrowych, ale nie w SSB/FM.  \n\
+    \nStąd prawidłowa odpowiedź to **A**."
+- text: Dla jakiej emisji najczęściej podaje się pełny, trójcyfrowy raport RST (R/S/T)?
+  answers:
+  - telegrafia CW i inne emisje telegraficzne
+  - łączności FM przez przemienniki
+  - łączności SSB w paśmie 2 m
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **A – telegrafia CW i inne emisje telegraficzne**.\
+    \  \n\nDlaczego jest to poprawna odpowiedź?\n\n- Raport **RST** (Readability / Signal Strength / Tone)\
+    \ służy do oceny jakości odbioru **sygnałów telegraficznych** (CW, FSK, RTTY, PSK31 itp.).  \n- W\
+    \ praktyce operatorzy podają **trójcyfrowy** raport, np. **\\( \\text{R4S5T9} \\)**, gdzie:\n  - **R**\
+    \ – czytelność (R1–R5),\n  - **S** – siła sygnału (S1–S9),\n  - **T** – ton (T1–T9).  \n- Dla łączności\
+    \ FM oraz SSB w paśmie 2 m zazwyczaj używa się **jednoczęściowych raportów** (np. „5‑9” lub „59”),\
+    \ a nie pełnego kodu RST.\n\nZatem pełny, trójcyfrowy raport RST jest **najczęściej stosowany właśnie\
+    \ w emisjach telegraficznych**. ✔️"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\nW raporcie **RST** podaje się trzy elementy:\n\n* **R**\
+    \ – czytelność (R1‑R5)  \n* **S** – siła sygnału (S1‑S9)  \n* **T** – ton (T1‑T9)\n\nTaki **pełny,\
+    \ trójcyfrowy** raport (np. **R‑4 S‑5 T‑9**) jest używany **wyłącznie przy emisjach telegraficznych**\
+    \ – CW oraz innych trybach, w których odbiorca musi ocenić nie tylko moc i czystość sygnału, ale także,\
+    \ jak dobrze „słyszy” (czyta) znak Morse’a.  \n\n**Emisje FM** (np. łączności FM przez przemienniki)\
+    \ nie wymagają oceny tonu, ponieważ FM ma stały ton nośny i nie ma „śpiewu” charakterystycznego dla\
+    \ CW. W praktyce w FM podaje się jedynie **ocenę siły sygnału** (np. **5 – 9**) albo, w niektórych\
+    \ przypadkach, prosty raport **R‑S**. Dlatego pełny raport **RST** nie jest standardem w FM.\n\n---\n\
+    \n### Podsumowanie\n- **A. telegrafia CW i inne emisje telegraficzne** – poprawna odpowiedź; tu stosuje\
+    \ się pełny raport **R‑S‑T**.  \n- **B. łączności FM przez przemienniki** – niepoprawna, bo w FM nie\
+    \ podaje się tonu (T) i nie używa się trójcyfrowego raportu.  \n- **C. łączności SSB w paśmie 2 m**\
+    \ – również nie jest typowym zastosowaniem pełnego raportu RST (zazwyczaj używa się jedynie R‑S).\
+    \  \n\nZapamiętaj: **RST = telegrafia (CW)**."
+  - "**Dlaczego poprawna odpowiedź to A, a nie C**\n\n---  \n\n### Co oznacza raport **RST**?  \n\n* **R**\
+    \ – **Readability** (czytelność) – skala **R1‑R5**  \n* **S** – **Signal strength** (siła sygnału)\
+    \ – skala **S1‑S9**  \n* **T** – **Tone** (ton) – skala **T1‑T9**  \n\nPełny, **trójcyfrowy** raport\
+    \ (np. **5‑9‑9**) zawiera **wszystkie trzy elementy**.\n\n### Kiedy używa się pełnego raportu RST?\
+    \  \n\n- **Emisje telegraficzne** (CW, FSK, RTTY, PSK31 itp.)  \n- W tych trybach **ton** jest istotnym\
+    \ parametrem – operatorzy muszą ocenić, jak „czysty” i „muzykalny” jest sygnał.  \n- Dlatego podaje\
+    \ się **R S T**.\n\n### Dlaczego **nie** dla SSB w paśmie 2 m?  \n\n- **SSB** (Single‑Side‑Band) to\
+    \ emisja **głosowa**.  \n- Dla mowy **ton** nie ma znaczenia – nie oceniamy go w skali T.  \n- Stosuje\
+    \ się jedynie **raport RS** (np. **59**), a nie pełny **RST**.  \n- Dodatkowo w paśmie 2 m najczęściej\
+    \ używa się **FM**, a nie SSB; w FM raportuje się jedynie **siłę sygnału (S)**.\n\n### Podsumowanie\
+    \  \n\nPełny raport **RST** jest przeznaczony **dla emisji telegraficznych**, gdzie istotny jest **ton**.\
+    \  \nW **SSB** (ani w paśmie 2 m) podaje się jedynie **RS** lub sam **S**, więc odpowiedź **C** jest\
+    \ niepoprawna.  \n\n**Poprawna odpowiedź: A – telegrafia CW i inne emisje telegraficzne.**"
+  - "**Pytanie:**  \n*Dla jakiej emisji najczęściej podaje się pełny, trójcyfrowy raport RST (R/S/T)?*\n\
+    \n**Odpowiedź:** **A. telegrafia CW i inne emisje telegraficzne**\n\n**Dlaczego?**\n\n- **Raport RST**\
+    \ opisuje jakość odbioru sygnału:\n  - **R** – siła sygnału (Readability)  \n  - **S** – czystość\
+    \ (Signal)  \n  - **T** – ton (Tone)  \n\n- Ten format został opracowany w czasach **telegrafii radiowej\
+    \ (CW)**, gdzie operatorzy musieli szybko ocenić, jak wyraźny i stabilny jest odbierany znak Morse’a\
+    \ oraz jaki jest jego ton (np. przy użyciu klucza elektronicznego).  \n\n- Dla **emisji telegraficznych**\
+    \ (CW, FSK, radiotelegrafia) raport RST jest najczęściej używany, ponieważ:\n  1. **Sygnał** jest\
+    \ jednowątkowy (czysty ton), więc ocena tonu ma praktyczne znaczenie.  \n  2. **Czystość** i **czytelność**\
+    \ są kluczowe dla poprawnego odczytania znaków Morse’a.  \n\n- Inne rodzaje łączności, takie jak **FM\
+    \ przez przemienniki** (B) czy **SSB w paśmie 2 m** (C), używają zazwyczaj innych systemów raportowania\
+    \ (np. **RS**, **R** + **SNR**, **R** + **BER**) lub po prostu podają jedynie siłę sygnału, ponieważ\
+    \ ton i czystość nie są tak istotne.\n\n**Podsumowanie:**  \nPełny raport RST (R/S/T) jest charakterystyczny\
+    \ dla **telegrafii CW i podobnych emisji telegraficznych**, co czyni odpowiedź **A** prawidłową."
+- text: Co oznacza raport 59 w łączności fonicznej?
+  answers:
+  - dobrze czytelny, bardzo silny sygnał
+  - ledwie czytelny, bardzo słaby sygnał
+  - czytelny z dużymi trudnościami, słaby sygnał
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nZaznaczyłeś odpowiedź **A** – *dobrze czytelny, bardzo silny sygnał*.  \n\n\
+    W raporcie **59** w łączności fonicznej oznacza właśnie:\n\n- **R5** – **dobrze czytelny** przekaz,\n\
+    - **S9** – **bardzo silny** sygnał.\n\nPołączenie tych dwóch elementów tworzy raport **59**, więc\
+    \ odpowiedź A jest prawidłowa. ✅"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\nRaport 59 w łączności fonicznej składa się z dwóch\
+    \ cyfr:\n\n| cyfra | co oznacza | skala |\n|-------|------------|-------|\n| **5** | czytelność (R)\
+    \ | **R5 – dobrze czytelny** |\n| **9** | siła sygnału (S) | **S9 – bardzo silny** |\n\nZatem **59\
+    \ = R5 S9** – komunikat jest **dobrze czytelny i bardzo silny**.  \n\n---\n\n### Błędy w odpowiedzi\
+    \ B  \n\n- **„ledwie czytelny”** odpowiada skali **R2**, a nie R5.  \n- **„bardzo słaby sygnał”**\
+    \ to skala **S1**, a nie S9.  \n\nDlatego B opisuje raport **21 (R2 S1)**, a nie **59**.\n\n---\n\n\
+    ### Poprawna odpowiedź\n\n**A. dobrze czytelny, bardzo silny sygnał** – dokładnie opisuje R5 S9, czyli\
+    \ raport 59.  \n\nZapamiętaj: pierwsza cyfra → czytelność (R‑), druga cyfra → siła sygnału (S‑). Im\
+    \ wyższe liczby, tym lepsza jakość łączenia."
+  - "**Dlaczego odpowiedź C jest błędna?**\n\nRaport 59 w łączności fonicznej składa się z dwóch cyfr:\n\
+    \n* **pierwsza cyfra** – stopień czytelności (R)\n* **druga cyfra** – siła sygnału (S)\n\n| cyfra\
+    \ | oznaczenie R | oznaczenie S |\n|-------|--------------|--------------|\n| **5** | R5 – **dobrze\
+    \ czytelny** | S9 – **bardzo silny** |\n\nDlatego raport **59** = **R5 S9** → *dobrze czytelny, bardzo\
+    \ silny sygnał* (odpowiedź A).\n\n---\n\n### Co opisuje odpowiedź C?\n\n- **„czytelny z dużymi trudnościami”**\
+    \ odpowiada **R3** (czytelny z dużymi trudnościami).  \n- **„słaby sygnał”** odpowiada **S3–S4** (słaby\
+    \ lub dostatecznie dobry).\n\nZapis **R3 S3** (lub podobny) nie ma postaci **59**, więc nie może opisywać\
+    \ tego raportu.\n\n---\n\n**Podsumowanie**\n\n- Raport **59** = **R5 S9** → **dobrze czytelny, bardzo\
+    \ silny** (A).  \n- Odpowiedź C opisuje **R3 S3**, czyli **czytelny z dużymi trudnościami, słaby sygnał**,\
+    \ co nie zgadza się z kodem **59**.  \n\nStąd odpowiedź C jest niepoprawna."
+  - '**Raport 59** w łączności fonicznej oznacza:
+
+
+    - **5** – czytelność **R5** („dobrze czytelny”)
+
+    - **9** – siła sygnału **S9** („bardzo silny”)
+
+
+    Dlatego pełne znaczenie tego raportu to **„dobrze czytelny, bardzo silny sygnał”**, co odpowiada odpowiedzi
+    **A**.'
+- text: Jak opisuje się czytelność R1?
+  answers:
+  - nieczytelny
+  - ledwie czytelny
+  - dobrze czytelny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nZaznaczyłeś odpowiedź **A – „nieczytelny”**. To jest prawidłowa odpowiedź, ponieważ\
+    \ w zestawieniu opisów czytelności **R1** oznacza właśnie *nieczytelny* tekst lub znak. Inne pozycje\
+    \ (R2‑R5) opisują stopniowo wyższą czytelność, więc jedynie **A** odpowiada definicji R1. \n\nDobrze\
+    \ ci idzie – tak trzymaj!"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\nW tabeli opisującej czytelność symbol **R** oznacza\
+    \ stopień czytelności tekstu:\n\n| Symbol | Opis |\n|--------|------|\n| **R1** | **nieczytelny**\
+    \ |\n| R2     | ledwie czytelny |\n| R3     | czytelny z dużymi trudnościami |\n| …      | … |\n\n\
+    Zgodnie z definicją, **R1** oznacza *brak możliwości odczytania* – tekst jest **nieczytelny**.  \n\
+    \nOdpowiedź **B** („ledwie czytelny”) opisuje poziom **R2**, a nie **R1**. Dlatego jest błędna.\n\n\
+    **Poprawna odpowiedź:** **A. nieczytelny**."
+  - "**Dlaczego odpowiedź C jest nieprawidłowa?**\n\nSkala **R** opisuje stopień czytelności tekstu:\n\
+    \n| Poziom | Opis |\n|-------|------|\n| **R1** | *nieczytelny* |\n| R2    | ledwie czytelny |\n|\
+    \ R3    | czytelny z dużymi trudnościami |\n| R4    | czytelny z niewielkimi trudnościami |\n| R5\
+    \    | dobrze czytelny |\n\nZgodnie z definicją, **R1** oznacza *najniższy* poziom czytelności – **„nieczytelny”**.\
+    \  \n\nOdpowiedź **C – „dobrze czytelny”** odnosi się do **R5**, a nie do **R1**, dlatego jest błędna.\
+    \  \n\nPrawidłowa odpowiedź: **A. nieczytelny**."
+  - "**Pytanie:** Jak opisuje się czytelność **R1**?  \n\n**Poprawna odpowiedź:** **A. nieczytelny**\n\
+    \n**Uzasadnienie**\n\nW podanym zestawie klasyfikacji czytelności:\n\n- **R1** – *nieczytelny*  \n\
+    - R2 – ledwie czytelny  \n- R3 – czytelny z dużymi trudnościami  \n- R4 – czytelny z niewielkimi trudnościami\
+    \  \n- R5 – dobrze czytelny  \n\nZgodnie z tą skalą, jedynym opisem przypisanym do poziomu **R1**\
+    \ jest *nieczytelny*. Dlatego spośród podanych opcji jedynie **A** jest prawidłowa."
+- text: Jak opisuje się czytelność R2?
+  answers:
+  - ledwie czytelny
+  - nieczytelny
+  - czytelny z niewielkimi trudnościami
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **A – “ledwie czytelny”** jest prawidłowa, ponieważ definicja **R2**\
+    \ w skali czytelności brzmi właśnie *„ledwie czytelny”*. Pozostałe opcje opisują inne poziomy: **B**\
+    \ – nieczytelny (R1), a **C** – czytelny z niewielkimi trudnościami (R4). Dlatego zaznaczenie A jest\
+    \ poprawne."
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\n- **Skala R** opisuje stopień czytelności tekstu (lub\
+    \ innego sygnału):\n  - **R1 – nieczytelny**\n  - **R2 – ledwie czytelny**\n  - **R3 – czytelny z\
+    \ dużymi trudnościami**\n  - **R4 – czytelny z niewielkimi trudnościami**\n  - **R5 – dobrze czytelny**\n\
+    \n- W pytaniu pytano o **R2**.  \n  Z definicji **R2** oznacza *„ledwie czytelny”* – czyli tekst jest\
+    \ już rozpoznawalny, choć wymaga wysiłku.\n\n- Odpowiedź **B – „nieczytelny”** odpowiada **R1**, a\
+    \ nie **R2**.  \n  Dlatego została uznana za błąd.\n\n**Poprawna odpowiedź:** **A – ledwie czytelny**.\
+    \  \n\nZapamiętaj, że w tej skali „nieczytelny” występuje tylko przy **R1**, a przy **R2** mówimy\
+    \ „ledwie czytelny”."
+  - "**Dlaczego odpowiedź C jest błędna?**\n\n- W zestawie definicji podano:  \n\n  - **R1** – *nieczytelny*\
+    \  \n  - **R2** – *ledwie czytelny*  \n  - **R3** – *czytelny z dużymi trudnościami*  \n  - **R4**\
+    \ – *czytelny z niewielkimi trudnościami*  \n  - **R5** – *dobrze czytelny*\n\n- Odpowiedź **C** („czytelny\
+    \ z niewielkimi trudnościami”) opisuje właśnie **R4**, a nie **R2**.\n\n- Dlatego prawidłową odpowiedzią\
+    \ jest **A** – *ledwie czytelny*, co dokładnie odpowiada definicji **R2**."
+  - "**Odpowiedź:** **A. ledwie czytelny**\n\n**Wyjaśnienie**  \nW podanym zestawie definicji:\n\n- **R1**\
+    \ – nieczytelny  \n- **R2** – **ledwie czytelny**  \n- R3‑R5 – kolejne stopnie czytelności (z rosnącą\
+    \ łatwością odczytu)\n\nDlatego opis **R2** to *„ledwie czytelny”*, co odpowiada opcji **A**."
+- text: Jak opisuje się czytelność R3?
+  answers:
+  - czytelny z dużymi trudnościami
+  - nieczytelny
+  - dobrze czytelny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „czytelny z dużymi trudnościami”** jest prawidłowa,\
+    \ ponieważ w skali opisującej czytelność:\n\n- **R1** – nieczytelny  \n- **R2** – ledwie czytelny\
+    \  \n- **R3** – **czytelny z dużymi trudnościami**  \n- **R4** – czytelny z niewielkimi trudnościami\
+    \  \n- **R5** – dobrze czytelny  \n\nZatem dla oznaczenia **R3** właściwym opisem jest właśnie „czytelny\
+    \ z dużymi trudnościami”.  \n\nDobrze zidentyfikowałeś prawidłową odpowiedź! \U0001F680"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\nW podanym zestawie oznaczeń:\n\n- **R1** – *nieczytelny*\
+    \  \n- **R2** – *ledwie czytelny*  \n- **R3** – *czytelny z dużymi trudnościami*  \n- **R4** – *czytelny\
+    \ z niewielkimi trudnościami*  \n- **R5** – *dobrze czytelny*\n\nZauważ, że **R3** nie oznacza „nieczytelny”,\
+    \ a dokładnie opisuje stopień **czytelności** z wyraźnym utrudnieniem: *czytelny z dużymi trudnościami*.\
+    \  \n\nW związku z tym:\n\n- **Odpowiedź A** – *czytelny z dużymi trudnościami* – **zgadza się** z\
+    \ definicją R3.  \n- **Odpowiedź B** – *nieczytelny* – **jest sprzeczna** z opisem R3, ponieważ „nieczytelny”\
+    \ odpowiada jedynie oznaczeniu **R1**.  \n- **Odpowiedź C** – *dobrze czytelny* – opisuje **R5**,\
+    \ a nie R3.\n\n**Podsumowanie**  \nWybierając odpowiedź B popełniłeś błąd, ponieważ myliłeś kategorię\
+    \ **R3** z **R1**. Prawidłowa odpowiedź to **A**."
+  - "**Dlaczego odpowiedź C jest nieprawidłowa?**\n\n- **R3** to oznaczenie używane w systemie oceny czytelności.\
+    \  \n- Definicje są następujące:  \n\n  - **R1** – nieczytelny  \n  - **R2** – ledwie czytelny  \n\
+    \  - **R3** – **czytelny z dużymi trudnościami**  \n  - **R4** – czytelny z niewielkimi trudnościami\
+    \  \n  - **R5** – dobrze czytelny  \n\n- Zatem **R3** nie oznacza „dobrze czytelny”, a właśnie **„czytelny\
+    \ z dużymi trudnościami”**.  \n\nWybierając odpowiedź **C** („dobrze czytelny”) pomyliłeś poziom R3\
+    \ z R5. Poprawna odpowiedź to **A**."
+  - "**Odpowiedź:** **A – czytelny z dużymi trudnościami**\n\n**Uzasadnienie**  \nWedług podanego schematu:\n\
+    \n- **R1** – nieczytelny  \n- **R2** – ledwie czytelny  \n- **R3** – **czytelny z dużymi trudnościami**\
+    \  \n- **R4** – czytelny z niewielkimi trudnościami  \n- **R5** – dobrze czytelny  \n\nDlatego opis\
+    \ **R3** odpowiada opcji **A**. Opcje **B** („nieczytelny”) i **C** („dobrze czytelny”) opisują inne\
+    \ poziomy (R1 i R5)."
+- text: Jak opisuje się czytelność R4?
+  answers:
+  - czytelny z niewielkimi trudnościami
+  - ledwie czytelny
+  - nieczytelny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nZaznaczyłeś odpowiedź **A – „czytelny z niewielkimi trudnościami”**.\
+    \  \n\nZgodnie z podanym kluczem opisów, kod **R4** odpowiada właśnie takiej charakterystyce czytelności\
+    \ – tekst jest czytelny, ale wymaga nieco większej uwagi niż w przypadku pełnej czytelności. Dlatego\
+    \ odpowiedź A jest prawidłowa."
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **R4** w skali czytelności oznacza **„czytelny z\
+    \ niewielkimi trudnościami”**.  \n- Opcja **B – „ledwie czytelny”** opisuje **R2**, czyli sytuację,\
+    \ w której tekst jest dopiero marginalnie zrozumiały.  \n- Dlatego prawidłową odpowiedzią jest **A**\
+    \ – *czytelny z niewielkimi trudnościami*.\n\n**Podsumowanie**: R4 nie oznacza „ledwego” czy „prawie\
+    \ nieczytelnego” tekstu, a jedynie wskazuje, że tekst jest zrozumiały, choć wymaga niewielkiego wysiłku\
+    \ przy odczycie. Stąd wybór odpowiedzi B prowadzi do błędnej klasyfikacji."
+  - "**Dlaczego odpowiedź C jest błędna?**  \n\n- **R4** w skali czytelności oznacza *„czytelny z niewielkimi\
+    \ trudnościami”*.  \n- Odpowiedź **C** („nieczytelny”) opisuje zupełnie inny poziom – **R1**, czyli\
+    \ najgorszy możliwy stopień czytelności.  \n\n**Poprawna odpowiedź: A** – *czytelny z niewielkimi\
+    \ trudnościami* – dokładnie odzwierciedla definicję **R4** w podanej klasyfikacji.  \n\n*W skrócie*:\
+    \ R4 ≠ nieczytelny, tylko lekko utrudniony do odczytania."
+  - "**Pytanie:** *Jak opisuje się czytelność R4?*  \n\n**Odpowiedź:** **A. czytelny z niewielkimi trudnościami**\n\
+    \n**Uzasadnienie**\n\n- **R4** w skali opisującej czytelność oznacza, że tekst jest **czytelny**,\
+    \ ale wymaga **niewielkiego wysiłku** ze strony czytelnika (np. lekko zamazane litery, nieco słabe\
+    \ oświetlenie).  \n- **B. ledwie czytelny** odpowiada skali **R2**, a **C. nieczytelny** – skali **R1**.\
+    \  \n\nStąd jedyną prawidłową odpowiedzią jest **A**."
+- text: Jak opisuje się czytelność R5?
+  answers:
+  - dobrze czytelny
+  - czytelny z dużymi trudnościami
+  - ledwie czytelny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nZaznaczyłeś odpowiedź **A – „dobrze czytelny”**.  \n\nZgodnie z definicjami\
+    \ podanymi w tabeli, oznaczenie **R5** opisuje właśnie **dobrze czytelny** tekst, czyli taki, który\
+    \ jest wyraźny i łatwy do odczytania. Dlatego Twoja odpowiedź jest prawidłowa. \U0001F389"
+  - "**Dlaczego odpowiedź B jest nieprawidłowa?**\n\n| Poziom | Opis w skali R |\n|-------|----------------|\n\
+    | **R1** | nieczytelny |\n| **R2** | ledwie czytelny |\n| **R3** | **czytelny z dużymi trudnościami**\
+    \ |\n| **R4** | czytelny z niewielkimi trudnościami |\n| **R5** | **dobrze czytelny** |\n\nZadane\
+    \ pytanie brzmiało: *„Jak opisuje się czytelność R5?”*  \nZ definicji **R5** oznacza **„dobrze czytelny”**.\
+    \  \n\nOdpowiedź **B** („czytelny z dużymi trudnościami”) opisuje **R3**, a nie **R5**. Dlatego jest\
+    \ błędna.\n\n**Poprawna odpowiedź** to **A** – *dobrze czytelny*.\n\n---\n\n### Krótkie podsumowanie\n\
+    \n- **R5** = *dobrze czytelny* (najwyższy stopień czytelności w tej skali).  \n- **B** opisuje **R3**,\
+    \ czyli zupełnie inny poziom.  \n- Wybierając odpowiedź, trzeba dopasować opis dokładnie do oznaczenia\
+    \ **R5**."
+  - "**Dlaczego odpowiedź C jest niepoprawna?**\n\nW podanym zestawieniu **R‑** oznacza stopień **czytelności**:\n\
+    \n| Symbol | Opis |\n|--------|------|\n| **R1** | nieczytelny |\n| **R2** | **ledwie czytelny** |\n\
+    | **R3** | czytelny z dużymi trudnościami |\n| **R4** | czytelny z niewielkimi trudnościami |\n| **R5**\
+    \ | **dobrze czytelny** |\n\nZatem:\n\n- **R2** → *ledwie czytelny*  \n- **R5** → *dobrze czytelny*\n\
+    \nPytanie brzmiało: **„Jak opisuje się czytelność R5?”**  \nPoprawna odpowiedź to **A – dobrze czytelny**.\
+    \  \n\nWybranie odpowiedzi **C** (ledwie czytelny) odnosi się do **R2**, a nie do **R5**, dlatego\
+    \ została uznana za błąd.  \n\n*W skrócie: R5 ≠ „ledwie czytelny”, tylko „dobrze czytelny”.*"
+  - "**Odpowiedź:** **A. dobrze czytelny**\n\n**Wyjaśnienie**  \nW skali opisującej czytelność znaków:\n\
+    \n- **R1** – nieczytelny  \n- **R2** – ledwie czytelny  \n- **R3** – czytelny z dużymi trudnościami\
+    \  \n- **R4** – czytelny z niewielkimi trudnościami  \n- ****R5** – **dobrze czytelny**  \n\nDlatego\
+    \ jedyną prawidłową odpowiedzią jest **A**."
+- type: open
+  text: 'Jaka wartość R odpowiada opisowi: "nieczytelny"?'
+  answers:
+  - '1'
+  - R1
+  explanations:
+  - "**Gratulacje!**  \nPoprawna wartość to **R1** (lub po prostu **1**)."
+  - '**R1**  *(lub po prostu **1**)*'
+  - '**R1**  *(lub po prostu **1**)*'
+- type: open
+  text: 'Jaka wartość R odpowiada opisowi: "ledwie czytelny"?'
+  answers:
+  - '2'
+  - R2
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nPoprawna wartość to **$R_2$** (lub po prostu **2**)."
+  - '**R2** (lub po prostu **2**)'
+  - '**R2**  (lub po prostu **2**) – odpowiada opisowi „ledwie czytelny”.'
+- type: open
+  text: 'Jaka wartość R odpowiada opisowi: "czytelny z dużymi trudnościami"?'
+  answers:
+  - '3'
+  - R3
+  explanations:
+  - "**Brawo!**  \nPoprawna odpowiedź to **R3** (lub po prostu **3**)."
+  - '**R3**  (lub po prostu **3**)'
+  - '**Odpowiedź:** `R3`  (lub po prostu `3`).'
+- type: open
+  text: 'Jaka wartość R odpowiada opisowi: "czytelny z niewielkimi trudnościami"?'
+  answers:
+  - '4'
+  - R4
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna wartość to **R4** (lub po prostu **4**). \U0001F389"
+  - '**R4**  (lub po prostu **4**)'
+  - '**R4**  (lub po prostu **4**) odpowiada opisowi *„czytelny z niewielkimi trudnościami”*.'
+- type: open
+  text: 'Jaka wartość R odpowiada opisowi: "dobrze czytelny"?'
+  answers:
+  - '5'
+  - R5
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna wartość to **R5** (lub po prostu **5**). \U0001F389"
+  - '**Poprawna odpowiedź:** `R5` (lub po prostu `5`).'
+  - '**R5** (lub po prostu **5**) odpowiada opisowi „dobrze czytelny”.'
+- text: Jak opisuje się siłę sygnału S1?
+  answers:
+  - bardzo słaby
+  - słaby
+  - bardzo silny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **A – „bardzo słaby”** jest prawidłowa, ponieważ w skali opisującej\
+    \ siłę sygnału **S1** oznacza właśnie **bardzo słaby** poziom sygnału. Inne pozycje skali (S2, S3,\
+    \ …) opisują stopniowo wyższe poziomy – od „bardzo słabego, ale czytelnego” po „bardzo silny”. Dlatego\
+    \ wybór odpowiedzi A jest poprawny."
+  - "**Dlaczego odpowiedź B („słaby”) jest niepoprawna?**\n\nSkala **S** opisuje siłę sygnału w dziewięciu\
+    \ stopniach, od najniższego (**S1**) do najwyższego (**S9**).  \n\n- **S1** – *bardzo słaby* (najniższy\
+    \ poziom).  \n- **S2** – *bardzo słaby, ale czytelny*.  \n- **S3** – *słaby*.  \n- …  \n- **S9** –\
+    \ *bardzo silny*.\n\nZgodnie z definicją, jedyną etykietą przypisaną do **S1** jest **„bardzo słaby”**.\
+    \  \nOdpowiedź **B** („słaby”) odnosi się do **S3**, a nie do **S1**, dlatego jest błędna.\n\n**Podsumowanie**\n\
+    \n- **Prawidłowa odpowiedź:** A – *bardzo słaby*.  \n- **Błędna odpowiedź:** B – *słaby* (dotyczy\
+    \ innego poziomu, S3)."
+  - "**Dlaczego odpowiedź C jest niepoprawna?**\n\nW skali **S** (siła sygnału) wartości oznaczane są\
+    \ kolejno od **S1** do **S9** i opisują stopień słabości lub siły sygnału:\n\n- **S1** – *bardzo słaby*\
+    \  \n- **S2** – *bardzo słaby, ale czytelny*  \n- **S3** – *słaby*  \n- …  \n- **S9** – *bardzo silny*\n\
+    \nZatem **S1** znajduje się na samym początku skali i oznacza **najniższą możliwą jakość** – „bardzo\
+    \ słaby”.  \n\nOdpowiedź **C. „bardzo silny”** odnosi się do przeciwnego końca skali (S9), a nie do\
+    \ S1, dlatego jest błędna.  \n\nPoprawna odpowiedź: **A. bardzo słaby**."
+  - "**Odpowiedź:** **A. bardzo słaby**\n\n**Uzasadnienie**\n\nW zestawieniu definicji podanych w kontekście:\n\
+    \n- **S1** – *bardzo słaby*  \n\nDlatego siłę sygnału oznaczonego jako **S1** opisuje się jako **„bardzo\
+    \ słaby”**."
+- text: Jak opisuje się siłę sygnału S2?
+  answers:
+  - bardzo słaby, ale czytelny
+  - bardzo słaby
+  - dobry
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „bardzo słaby, ale czytelny”** jest prawidłowa, ponieważ\
+    \ definicja **S2** w tabeli siły sygnału brzmi dokładnie tak: *„bardzo słaby, ale czytelny”*.  \n\n\
+    Pozostałe opcje opisują inne poziomy:\n\n- **B** – „bardzo słaby” (brak czytelności)  \n- **C** –\
+    \ „dobry” (znacznie wyższy poziom)\n\nDlatego wybrana odpowiedź idealnie odpowiada opisowi **S2**.\
+    \ Powodzenia w dalszej nauce!"
+  - "**Dlaczego odpowiedź B jest błędna?**\n\n- **Definicja S2** (z podanego klucza):  \n  *„bardzo słaby,\
+    \ ale czytelny”* – sygnał jest silny na tyle, że mimo bardzo niskiej mocy jest jeszcze **rozpoznawalny\
+    \ i zrozumiały**.\n\n- **Odpowiedź B** – *„bardzo słaby”* – pomija istotną część definicji, czyli\
+    \ **czytelność**. Taki opis odnosi się do **S1**, które jest *„bardzo słaby”* i **nieczytelne**.\n\
+    \n- **Poprawna odpowiedź** to **A** – *„bardzo słaby, ale czytelny”*, ponieważ jedynie ona oddaje\
+    \ pełną definicję S2.\n\nKrótko: **S2 ≠ tylko “bardzo słaby”; musi być także “czytelny”.** Dlatego\
+    \ wybór B jest niepoprawny."
+  - "**Dlaczego odpowiedź C jest niepoprawna?**  \n\n- W zestawie oznaczeń **S‑** opisujących siłę sygnału:\n\
+    \  - **S1** – *bardzo słaby* (nieczytelny),\n  - **S2** – *bardzo słaby, ale czytelny*,\n  - **S3**\
+    \ – *słaby*,\n  - …  \n\n- Oznaczenie **S2** zawiera dwa elementy: *„bardzo słaby”* **i** *„czytelny”*.\
+    \  \n- Odpowiedź **C** („dobry”) odnosi się do zupełnie innego poziomu (odpowiada **S6**), więc nie\
+    \ opisuje wcale cech sygnału **S2**.  \n\n**Poprawna odpowiedź** – **A. bardzo słaby, ale czytelny**\
+    \ – odzwierciedla pełną definicję **S2**.  \n\n*W skrócie: S2 ≠ dobry, a jedynie bardzo słaby, ale\
+    \ już możliwy do odczytania.*"
+  - '**Odpowiedź:** A – **bardzo słaby, ale czytelny**
+
+
+    **Uzasadnienie**
+
+
+    W podanym zestawie definicji siły sygnału:
+
+
+    - **S1** – „bardzo słaby” (całkowicie nieczytelny),
+
+    - **S2** – „bardzo słaby, ale czytelny”,
+
+    - **S3** – „słaby”,
+
+    - … itd.
+
+
+    Dlatego opis **S2** oznacza, że sygnał jest **bardzo słaby**, lecz **wciąż możliwy do odczytania**
+    (czytelny). Opcja **A** jest więc jedyną prawidłową.'
+- text: Jak opisuje się siłę sygnału S3?
+  answers:
+  - słaby
+  - dostatecznie dobry
+  - umiarkowanie silny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **A – “słaby”** jest prawidłowa, ponieważ w tabeli opisującej siłę\
+    \ sygnału **S3** właśnie oznacza **„słaby”**. Inne pozycje (S4, S5, …) opisują kolejno „dostatecznie\
+    \ dobry”, „dobry” itd., więc jedynie opcja A zgadza się z definicją S3."
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\n- Skala **S** opisuje **siłę sygnału** i ma 9 stopni:\n\
+    \n  - $S_1$ – bardzo słaby  \n  - $S_2$ – bardzo słaby, ale czytelny  \n  - **$S_3$ – słaby**  \n\
+    \  - $S_4$ – dostatecznie dobry  \n  - $S_5$ – dość dobry  \n  - $S_6$ – dobry  \n  - $S_7$ – umiarkowanie\
+    \ silny  \n  - $S_8$ – silny  \n  - $S_9$ – bardzo silny  \n\n- W pytaniu pytano: **„Jak opisuje się\
+    \ siłę sygnału S3?”**  \n  Z definicji wynika, że $S_3$ to **„słaby”** (odpowiedź **A**).\n\n- Odpowiedź\
+    \ **B – „dostatecznie dobry”** odpowiada poziomowi **$S_4$**, a nie $S_3$.  \n\n**Podsumowanie** \
+    \ \n$S_3$ = *słaby* → poprawna odpowiedź **A**.  \nWybór **B** pomylił poziom $S_3$ z $S_4$."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\nW systemie oznaczeń siły sygnału **S** przyjęto następującą\
+    \ kolejność:\n\n| Symbol | Opis siły |\n|--------|-----------|\n| **S1** | bardzo słaby |\n| **S2**\
+    \ | bardzo słaby, ale czytelny |\n| **S3** | **słaby** |\n| **S4** | dostatecznie dobry |\n| **S5**\
+    \ | dość dobry |\n| **S6** | dobry |\n| **S7** | umiarkowanie silny |\n| **S8** | silny |\n| **S9**\
+    \ | bardzo silny |\n\nZ tabeli widać, że **S3** odpowiada opisowi **„słaby”**.  \n\n- **C. „umiarkowanie\
+    \ silny”** jest przypisane do **S7**, a nie do S3.  \n- Dlatego wybór odpowiedzi C nie pasuje do definicji\
+    \ S3.\n\n**Poprawna odpowiedź** – **A. słaby** – dokładnie odzwierciedla oznaczenie **S3**.  \n\n\
+    *Wskazówka na egzaminie*: przy wyborze odpowiedzi zawsze sprawdzaj, do którego numeru (S1‑S9) odnosi\
+    \ się dany opis, a nie odwrotnie. Jeśli nie jesteś pewny, przypomnij sobie kolejność rosnącej siły\
+    \ (S1 → S9)."
+  - "**Odpowiedź:** **A. słaby**\n\n**Wyjaśnienie**\n\nW skali siły sygnału **S** przyjęto następujące\
+    \ oznaczenia:\n\n- **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n- **S3** – **słaby**\
+    \  \n- **S4** – dostatecznie dobry  \n- **S5** – dość dobry  \n- … itd.\n\nZatem pozycja **S3** znajduje\
+    \ się dokładnie w przedziale opisanym jako „słaby”. Dlatego poprawną odpowiedzią jest **A**."
+- text: Jak opisuje się siłę sygnału S4?
+  answers:
+  - dostatecznie dobry
+  - bardzo słaby, ale czytelny
+  - bardzo silny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „dostatecznie dobry”** jest prawidłowa, ponieważ\
+    \ w skali opisującej siłę sygnału **S4** właśnie oznacza **„dostatecznie dobry”**. Inne pozycje (S1‑S3\
+    \ i S5‑S9) opisują odpowiednio słabsze lub silniejsze sygnały. Dlatego wybrana odpowiedź jest zgodna\
+    \ z definicją."
+  - "**Dlaczego odpowiedź B jest niepoprawna?**  \n\n- W skali **S** opisujemy **siłę sygnału** (od bardzo\
+    \ słabego do bardzo silnego).  \n- **S4** znajduje się w środku skali:  \n\n| Poziom | Opis |\n|-------|------|\n\
+    | S1 – S3 | bardzo słabe (niewystarczające, słabe, słaby) |\n| **S4** | **dostatecznie dobry** |\n\
+    | S5 – S9 | rosnąca jakość od „dość dobry” do „bardzo silny” |\n\n- Odpowiedź **B** („bardzo słaby,\
+    \ ale czytelny”) odpowiada **S2**, a nie S4.  \n\n**Poprawna odpowiedź:** **A – dostatecznie dobry**.\
+    \  \n\nZatem przy oznaczeniu **S4** sygnał jest już **użyteczny i czytelny**, choć nie jest jeszcze\
+    \ „dobry” czy „silny”. \a"
+  - "**Dlaczego odpowiedź C („bardzo silny”) jest niepoprawna?**\n\nSkala **S** opisuje **siłę sygnału**\
+    \ i jest podzielona na 9 stopni:\n\n- **S1 – bardzo słaby**  \n- **S2 – bardzo słaby, ale czytelny**\
+    \  \n- **S3 – słaby**  \n- **S4 – **dostatecznie dobry**  \n- **S5 – dość dobry**  \n- **S6 – dobry**\
+    \  \n- **S7 – umiarkowanie silny**  \n- **S8 – silny**  \n- **S9 – bardzo silny**\n\nZgodnie z definicją,\
+    \ **S4** oznacza **„dostatecznie dobry”** – sygnał jest już przyzwoity i umożliwia prawidłową komunikację,\
+    \ ale nie jest jeszcze mocny.  \n\n**Odpowiedź C („bardzo silny”)** odpowiadałaby poziomowi **S9**,\
+    \ a nie S4, więc nie pasuje do opisu tego stopnia.\n\n**Poprawna odpowiedź** to **A – dostatecznie\
+    \ dobry**."
+  - "**Odpowiedź:** **A. dostatecznie dobry**\n\n**Dlaczego?**  \n\nSkala siły sygnału (S) została podana\
+    \ w kolejności rosnącej:\n\n- **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n-\
+    \ **S3** – słaby  \n- **S4** – **dostatecznie dobry**  \n- **S5** – dość dobry  \n- **S6** – dobry\
+    \  \n- **S7** – umiarkowanie silny  \n- **S8** – silny  \n- **S9** – bardzo silny  \n\nZatem opis\
+    \ **„dostatecznie dobry”** przypisany jest właśnie poziomowi **S4**. Wszystkie pozostałe opcje (B\
+    \ i C) należą do innych punktów skali (S2 i S8‑S9)."
+- text: Jak opisuje się siłę sygnału S5?
+  answers:
+  - dość dobry
+  - słaby
+  - umiarkowanie silny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „dość dobry”** jest prawidłowa, ponieważ w skali\
+    \ opisującej siłę sygnału:\n\n- **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n\
+    - **S3** – słaby  \n- **S4** – dostatecznie dobry  \n- **S5** – **dość dobry**  \n- **S6** – dobry\
+    \  \n- …  \n\nZatem poziom **S5** odpowiada opisowi **„dość dobry”**."
+  - '**Dlaczego odpowiedź B („słaby”) jest niepoprawna?**
+
+
+    Skala **S** opisuje **siłę sygnału** i jest zdefiniowana następująco:
+
+
+    | Poziom | Opis |
+
+    |-------|------|
+
+    | **S1** | bardzo słaby |
+
+    | **S2** | bardzo słaby, ale czytelny |
+
+    | **S3** | **słaby** |
+
+    | **S4** | dostatecznie dobry |
+
+    | **S5** | **dość dobry** |
+
+    | **S6** | dobry |
+
+    | **S7** | umiarkowanie silny |
+
+    | **S8** | silny |
+
+    | **S9** | bardzo silny |
+
+
+    Z tabeli wynika, że:
+
+
+    - **S5** = „dość dobry”.
+
+    - Określenie **„słaby”** przypisane jest jedynie **S3**.
+
+
+    Dlatego wybór **B** („słaby”) nie pasuje do poziomu **S5** – to błąd koncepcyjny, wynikający z pomylenia
+    numeracji poziomów.
+
+
+    **Poprawna odpowiedź:** **A. dość dobry**.'
+  - "**Dlaczego odpowiedź C jest nieprawidłowa**\n\nSkala **S** opisuje siłę sygnału radiowego:\n\n| Poziom\
+    \ | Opis (z tabeli) |\n|-------|-----------------|\n| **S1** | bardzo słaby |\n| **S2** | bardzo słaby,\
+    \ ale czytelny |\n| **S3** | słaby |\n| **S4** | dostatecznie dobry |\n| **S5** | **dość dobry** |\n\
+    | **S6** | dobry |\n| **S7** | umiarkowanie silny |\n| **S8** | silny |\n| **S9** | bardzo silny |\n\
+    \nZ powyższego wynika, że:\n\n- **S5** oznacza **„dość dobry”** (poziom pośredni pomiędzy „dostatecznie\
+    \ dobrym” a „dobrym”).\n- Określenie **„umiarkowanie silny”** przypisane jest **S7**, a nie S5.\n\n\
+    **Poprawna odpowiedź:** **A. dość dobry**.  \n\nTwoja odpowiedź C („umiarkowanie silny”) odnosi się\
+    \ do wyższego poziomu (S7), dlatego została uznana za błędną."
+  - "**Odpowiedź:** **A. dość dobry**\n\n**Wyjaśnienie**  \nW skali siły sygnału podanej w zadaniu:\n\n\
+    - **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n- **S3** – słaby  \n- **S4** –\
+    \ dostatecznie dobry  \n- **S5** – **dość dobry**  \n- **S6** – dobry  \n- **S7** – umiarkowanie silny\
+    \  \n- **S8** – silny  \n- **S9** – bardzo silny  \n\nPozycja **S5** znajduje się dokładnie pomiędzy\
+    \ „dostatecznie dobrym” (S4) a „dobrym” (S6), więc opisuje sygnał **„dość dobry”**. Stąd prawidłową\
+    \ odpowiedzią jest **A**."
+- text: Jak opisuje się siłę sygnału S6?
+  answers:
+  - dobry
+  - bardzo słaby
+  - bardzo silny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „dobry”** jest prawidłowa, ponieważ w skali siły\
+    \ sygnału:\n\n\\[\nS1 \\text{ – bardzo słaby},\\; S2 \\text{ – bardzo słaby, ale czytelny},\\; \\\
+    dots,\\; S6 \\text{ – dobry},\\; \\dots,\\; S9 \\text{ – bardzo silny}\n\\]\n\nwartość **S6** odpowiada\
+    \ opisowi **„dobry”**. Dlatego wybrana odpowiedź jest poprawna."
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\nW skali siły sygnału podanej w zadaniu mamy następujące\
+    \ oznaczenia:\n\n- **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n- **S3** – słaby\
+    \  \n- **S4** – dostatecznie dobry  \n- **S5** – dość dobry  \n- **S6** – **dobry**  \n- **S7** –\
+    \ umiarkowanie silny  \n- **S8** – silny  \n- **S9** – bardzo silny  \n\nZgodnie z tą listą, symbol\
+    \ **S6** jest przypisany do opisu **„dobry”**.  \n\nOdpowiedź **B – „bardzo słaby”** odpowiadałaby\
+    \ symbolom **S1** lub **S2**, a nie **S6**, dlatego jest nieprawidłowa.  \n\nPoprawna odpowiedź to\
+    \ **A – „dobry”**."
+  - "**Dlaczego odpowiedź C („bardzo silny”) jest nieprawidłowa**\n\nW skali opisującej **siłę sygnału**\
+    \ mamy następujące stopnie:\n\n- **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n\
+    - **S3** – słaby  \n- **S4** – dostatecznie dobry  \n- **S5** – dość dobry  \n- **S6** – **dobry**\
+    \  \n- **S7** – umiarkowanie silny  \n- **S8** – silny  \n- **S9** – bardzo silny  \n\nZauważ, że\
+    \ **„bardzo silny”** pojawia się dopiero przy **S9**, a nie przy **S6**.  \nDlatego dla **S6** prawidłowy\
+    \ opis to **„dobry”** (odpowiedź **A**).\n\n**Wskazówka na przyszłość**  \nPrzy każdym numerze od\
+    \ **S1** do **S9** sprawdzaj, w którym miejscu w skali znajduje się dany opis. Im wyższy numer, tym\
+    \ silniejszy sygnał; przy **S6** pozycja „dobry” jest już w połowie skali. \n\n---  \n*Krótko mówiąc:\
+    \ S6 = dobry, a nie bardzo silny.*"
+  - "**Odpowiedź:** A – **dobry**  \n\n**Wyjaśnienie:**  \n\nW skali opisującej siłę sygnału przyjęto\
+    \ następujące oznaczenia:\n\n- S1 – bardzo słaby  \n- S2 – bardzo słaby, ale czytelny  \n- S3 – słaby\
+    \  \n- S4 – dostatecznie dobry  \n- **S5 – dość dobry**  \n- **S6 – dobry**  \n- S7 – umiarkowanie\
+    \ silny  \n- S8 – silny  \n- S9 – bardzo silny  \n\nDlatego sygnał oznaczony jako **S6** opisujemy\
+    \ jako **dobry**."
+- text: Jak opisuje się siłę sygnału S7?
+  answers:
+  - umiarkowanie silny
+  - dość dobry
+  - bardzo słaby, ale czytelny
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nZgodnie z podanym schematem klasyfikacji siły sygnału:\n\n- **S7\
+    \ – umiarkowanie silny**\n\nOdpowiedź **A. „umiarkowanie silny”** dokładnie odzwierciedla opis przypisany\
+    \ poziomowi **S7**, dlatego jest prawidłowa.  \n\nDobrze Ci poszło – tak dalej!"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\n| Symbol | Opis siły sygnału |\n|--------|-------------------|\n\
+    | **S7** | **umiarkowanie silny** |\n| **S6** | **dobry** |\n| **S5** | **dość dobry** |\n\nZgodnie\
+    \ z definicją podaną w materiale egzaminacyjnym, poziomy siły sygnału rosną kolejno od **S1** (najsłabszy)\
+    \ do **S9** (najsilniejszy).  \n\n- **S5 – „dość dobry”** znajduje się w połowie skali, czyli jest\
+    \ słabszy niż **S6**.  \n- **S6 – „dobry”** to kolejny stopień wyżej.  \n- **S7 – „umiarkowanie silny”**\
+    \ leży jeszcze wyżej, tuż przed **S8** („silny”).\n\nW związku z tym sygnał oznaczony **S7** nie może\
+    \ być opisany jako „dość dobry” (to opis **S5**). Poprawna etykieta to **„umiarkowanie silny”**.\n\
+    \n**Wskazówka na przyszłość**  \nZapamiętaj kolejność:\n\n\\[\n\\text{S1} < \\text{S2} < \\dots <\
+    \ \\text{S5 (dość dobry)} < \\text{S6 (dobry)} < \\text{S7 (umiarkowanie silny)} < \\dots < \\text{S9}\n\
+    \\]\n\nGdy natrafisz na pytanie o numer sygnału, przywołaj tę sekwencję – pomoże uniknąć pomyłek."
+  - "**Dlaczego odpowiedź C jest niepoprawna?**\n\nSkala siły sygnału (S) została podana w treści pytania:\n\
+    \n| Symbol | Opis |\n|---|---|\n| **S1** | bardzo słaby |\n| **S2** | bardzo słaby, ale czytelny |\n\
+    | **S3** | słaby |\n| **S4** | dostatecznie dobry |\n| **S5** | dość dobry |\n| **S6** | dobry |\n\
+    | **S7** | **umiarkowanie silny** |\n| **S8** | silny |\n| **S9** | bardzo silny |\n\nZgodnie z tą\
+    \ tabelą:\n\n- **S7** oznacza **„umiarkowanie silny”**.  \n- **„bardzo słaby, ale czytelny”** to opis\
+    \ **S2**, a nie S7.\n\nDlatego wybranie odpowiedzi **C** („bardzo słaby, ale czytelny”) nie pasuje\
+    \ do oznaczenia **S7**. Poprawna odpowiedź to **A – „umiarkowanie silny”**."
+  - "**Siła sygnału S7**  \n\nW skali opisującej jakość sygnału (S1‑S9) **S7** oznacza **„umiarkowanie\
+    \ silny”**.  \n\n- **S1‑S3** – bardzo słabe / słabe sygnały.  \n- **S4‑S6** – od „dostatecznie dobrego”\
+    \ do „dobrego”.  \n- **S7‑S9** – sygnały o rosnącej sile:  \n  - **S7** – umiarkowanie silny, wyraźny\
+    \ i stabilny, ale nie maksymalny.  \n  - **S8** – silny, zbliżony do maksymalnego.  \n  - **S9** –\
+    \ bardzo silny, maksymalny (najlepszy możliwy).  \n\nDlatego prawidłowa odpowiedź to **A. umiarkowanie\
+    \ silny**."
+- text: Jak opisuje się siłę sygnału S8?
+  answers:
+  - silny
+  - dostatecznie dobry
+  - bardzo słaby
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „silny”** jest prawidłowa, ponieważ w skali opisującej\
+    \ siłę sygnału:\n\n- **S8** odpowiada określeniu **„silny”**,\n- natomiast **S7** to „umiarkowanie\
+    \ silny”, a **S9** to „bardzo silny”.\n\nZatem wybór „silny” dokładnie odzwierciedla poziom S8. Powodzenia\
+    \ w dalszej nauce!"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\n- Skala **S** opisuje **siłę sygnału**:\n  - S1 – bardzo\
+    \ słaby  \n  - …  \n  - **S8 – silny**  \n  - S9 – bardzo silny  \n\n- Odpowiedź **B – „dostatecznie\
+    \ dobry”** nie jest terminem z tej skali – odnosi się do jakości (np. oceny obrazu), a nie do siły\
+    \ sygnału.\n\n- Dlatego prawidłową odpowiedzią jest **A – „silny”**, które dokładnie odpowiada opisowi\
+    \ **S8**.\n\n*Błąd polegał na pomyleniu skali siły sygnału (S) z oceną jakości (R).**"
+  - "**Dlaczego odpowiedź C („bardzo słaby”) jest niepoprawna?**\n\nW skali **S** opisującej siłę sygnału\
+    \ mamy następujące stopnie:\n\n- **S1** – bardzo słaby  \n- **S2** – bardzo słaby, ale czytelny  \n\
+    - **S3** – słaby  \n- **S4** – dostatecznie dobry  \n- **S5** – dość dobry  \n- **S6** – dobry  \n\
+    - **S7** – umiarkowanie silny  \n- **S8** – **silny**  \n- **S9** – **bardzo silny**\n\nZatem **S8**\
+    \ znajduje się bardzo blisko końca skali, w którym sygnał jest już **silny** (a nie „bardzo słaby”).\
+    \  \n\nOdpowiedź **A – silny** jest jedyną prawidłową, natomiast **C – bardzo słaby** opisuje pozycję\
+    \ **S1**, co jest sprzeczne z definicją **S8**.  \n\n---  \n*Pamiętaj: im wyższy numer w skali S,\
+    \ tym większa siła sygnału.*"
+  - '**Odpowiedź:** **A. silny**
+
+
+    **Uzasadnienie**
+
+
+    W skali opisującej siłę sygnału:
+
+
+    - **S1‑S3** – bardzo słabe / słabe,
+
+    - **S4‑S6** – dostatecznie dobry / dobry,
+
+    - **S7‑S9** – umiarkowanie silny → **silny** → **bardzo silny**.
+
+
+    Pozycja **S8** znajduje się w przedziale **S7‑S9**, czyli oznacza **„silny”** (przy S9 byłby „bardzo
+    silny”). Dlatego poprawną odpowiedzią jest **A**.'
+- text: Jak opisuje się siłę sygnału S9?
+  answers:
+  - bardzo silny
+  - dobry
+  - słaby
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **A – „bardzo silny”** jest prawidłowa, ponieważ w klasyfikacji siły\
+    \ sygnału radiowego S9 oznacza maksymalny poziom mocy odbieranego sygnału. W skali S‑od 1 (słaby)\
+    \ do 9 (bardzo silny) wartość S9 znajduje się na szczycie, co odpowiada określeniu **„bardzo silny”**.\
+    \  \n\nDobrze Ci poszło! \U0001F389"
+  - "**Dlaczego odpowiedź B jest błędna?**  \n\nW systemie opisującym siłę sygnału stosujemy następujące\
+    \ stopnie:\n\n- **S1 – bardzo słaby**  \n- **S2 – bardzo słaby, ale czytelny**  \n- **S3 – słaby**\
+    \  \n- **S4 – dostatecznie dobry**  \n- **S5 – dość dobry**  \n- **S6 – dobry**  \n- **S7 – umiarkowanie\
+    \ silny**  \n- **S8 – silny**  \n- **S9 – bardzo silny**\n\nZauważ, że **„dobry”** to właśnie **S6**.\
+    \  \n„Bardzo silny” to najwyższy poziom, czyli **S9**.  \n\nDlatego prawidłowa odpowiedź to **A –\
+    \ bardzo silny**.  \n\n*Błąd polegał na pomyleniu poziomu „dobry” (S6) z najwyższym poziomem „bardzo\
+    \ silny” (S9).*"
+  - "**Dlaczego odpowiedź C jest niepoprawna?**\n\nSkala siły sygnału w amatorskiej łączności radiowej\
+    \ jest oznaczona od **S1** (najsłabszy) do **S9** (najsilniejszy).  \n\n- **S1‑S5** – kolejno rosnąca\
+    \ siła, od *bardzo słabego* do *dobrego*.  \n- **S6‑S9** – sygnał jest już wyraźny, przy czym **S9**\
+    \ oznacza **najwyższą możliwą siłę** – *bardzo silny* (czasem podaje się dodatkowo wskaźnik „dB over\
+    \ S9”).\n\nW pytaniu podano trzy możliwości:\n\n| Opcja | Opis |\n|------|------|\n| A | bardzo silny\
+    \ |\n| B | dobry |\n| C | słaby |\n\nPonieważ **S9** znajduje się na szczycie skali, prawidłowy opis\
+    \ to **„bardzo silny”** (opcja A).  \n\n**Odpowiedź C („słaby”) odnosi się do poziomów na początku\
+    \ skali (S1‑S3) i nie może opisywać S9.**  \n\n> **Wniosek:** wybierz **A** – *bardzo silny*."
+  - "**Odpowiedź:** **A. bardzo silny**\n\n**Wyjaśnienie**  \nW systemie opisującym moc sygnału radiowego\
+    \ (np. w łączności krótkofalarskiej) używa się skali **S1–S9**, gdzie:\n\n- **S1** – bardzo słaby,\n\
+    - …\n- **S9** – **bardzo silny**.\n\nZatem sygnał oznaczony jako **S9** oznacza maksymalną, bardzo\
+    \ silną siłę odbieranego sygnału."
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "bardzo słaby"?'
+  answers:
+  - '1'
+  - S1
+  explanations:
+  - "**Gratulacje!**  \n\nWartość **S** odpowiadająca opisowi „bardzo słaby” to:\n\n\\[\n\\boxed{1 \\\
+    text{ lub } S1}\n\\]   (wielkość liter nie ma znaczenia)"
+  - '**S1** (lub po prostu **1**) – to oznaczenie „bardzo słaby”.'
+  - '**Odpowiedź:** `S1` (lub po prostu `1`).'
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "bardzo słaby, ale czytelny"?'
+  answers:
+  - '2'
+  - S2
+  explanations:
+  - "**Gratulacje!**  \nPoprawna wartość to **2** (lub **S2**). \U0001F389"
+  - '**Odpowiedź:** `S2`  (= 2)'
+  - '**Odpowiedź:** `S2` (lub po prostu `2`).'
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "słaby"?'
+  answers:
+  - '3'
+  - S3
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nWartość **S** odpowiadająca opisowi *„słaby”* to **3** (lub **S3**, niezależnie\
+    \ od wielkości liter)."
+  - '**Odpowiedź:** `S3` (lub po prostu `3`).'
+  - "**Odpowiedź:** `S3` (lub po prostu `3`).  \n\nOpis **„słaby”** w skali S odpowiada wartości **S3**."
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "dostatecznie dobry"?'
+  answers:
+  - '4'
+  - S4
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna wartość to **4** (oznaczenie **S4**)."
+  - '**Poprawna odpowiedź:** `4` lub `S4` (wielkość liter nie ma znaczenia).'
+  - "**Odpowiedź:** `S4` (lub po prostu `4`).  \n\nOpis **„dostatecznie dobry”** w skali **S** odpowiada\
+    \ wartości **S4**."
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "dość dobry"?'
+  answers:
+  - '5'
+  - S5
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nPoprawna wartość to **S5** (lub po prostu **5**)."
+  - '**S5** (lub po prostu **5**) – to wartość oznaczająca „dość dobry”.'
+  - '**Odpowiedź:** `S5` (lub po prostu `5`).'
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "dobry"?'
+  answers:
+  - '6'
+  - S6
+  explanations:
+  - "**Gratulacje!**  \nPoprawna odpowiedź to **\\(S6\\)** (lub po prostu **6**)."
+  - '**Poprawna odpowiedź:** `6` lub `S6` (wielkość liter nie ma znaczenia).'
+  - '**Odpowiedź:** `S6` (lub po prostu `6`).'
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "umiarkowanie silny"?'
+  answers:
+  - '7'
+  - S7
+  explanations:
+  - "**Gratulacje!**  \nPoprawna wartość to **$S7$** (lub po prostu **7**)."
+  - '**Poprawna odpowiedź:** `S7` (lub po prostu `7`).'
+  - '**Odpowiedź:** `S7` (lub po prostu `7`).'
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "silny"?'
+  answers:
+  - '8'
+  - S8
+  explanations:
+  - "**Gratulacje!**  \nPoprawna odpowiedź to **S8** (lub po prostu **8**). \U0001F389"
+  - '**Poprawna odpowiedź:** `S8` (lub po prostu `8`).'
+  - "**Odpowiedź:** `S8`  (czyli wartość **8**)  \n\n„Silny” → oznaczenie **S8** w podanym zestawie opisów."
+- type: open
+  text: 'Jaka wartość S odpowiada opisowi: "bardzo silny"?'
+  answers:
+  - '9'
+  - S9
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nPoprawna wartość to **$S9$**."
+  - '**Poprawna odpowiedź:** `S9` (lub po prostu `9`).'
+  - '**Odpowiedź:** `S9` (wartość liczbową można zapisać jako **9**).'
+- text: Jak opisuje się ton T1?
+  answers:
+  - bardzo chrapliwy ton prądu zmiennego
+  - ton czysty
+  - bardzo czysty, dźwięczny ton
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nZaznaczyłeś odpowiedź **A** – *„bardzo chrapliwy ton prądu zmiennego”*.  \n\n\
+    To jest prawidłowa odpowiedź, ponieważ w podanym zestawie opisów ton **T1** został zdefiniowany właśnie\
+    \ jako **bardzo chrapliwy ton prądu zmiennego**. Inne pozycje (B i C) opisują zupełnie inne brzmienia\
+    \ (ton czysty, bardzo czysty i dźwięczny), które nie odpowiadają definicji T1.  \n\nDobrze rozpoznane!\
+    \ \U0001F389"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\n- **Definicja T1** (z podanych opisów):  \n  *„bardzo\
+    \ chrapliwy ton prądu zmiennego”*  \n  Oznacza silnie zniekształcony, szorstki dźwięk, w którym dominują\
+    \ liczne harmoniczne i szumy.  \n\n- **„Ton czysty”** (odpowiedź B) odpowiada opisowi **T8**:  \n\
+    \  *„ton czysty”* – dźwięk niemal sinusoidalny, bez wyraźnych zniekształceń.  \n\n- **Różnica**: \
+    \ \n  - **Chrapliwy** → duża zawartość harmonicznych, dźwięk „chrapliwy”, nieprzyjemny.  \n  - **Czysty**\
+    \ → jedynie podstawowa częstotliwość, brak szumów i zniekształceń.  \n\nZatem odpowiedź **B** opisuje\
+    \ inny rodzaj tonu (T8), a nie T1.  \n\n**Poprawna odpowiedź**: **A – bardzo chrapliwy ton prądu zmiennego**."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\n| Symbol | Definicja w materiale pomocniczym |\n|--------|-----------------------------------|\n\
+    | **T1** | *bardzo chrapliwy ton prądu zmiennego* |\n| **T9** | *bardzo czysty, dźwięczny ton* |\n\
+    \nZauważ, że:\n\n- **„Bardzo chrapliwy”** oznacza silne zniekształcenia, szumy i drżenie charakterystyczne\
+    \ dla prądu zmiennego o niskiej jakości.  \n- **„Bardzo czysty, dźwięczny”** opisuje natomiast ton\
+    \ praktycznie pozbawiony szumów, przypominający stałą, harmoniczną falę (to definicja **T9**, a nie\
+    \ **T1**).\n\nW pytaniu **„Jak opisuje się ton T1?”** prawidłowa odpowiedź musi odzwierciedlać właśnie\
+    \ tę pierwszą definicję – **„bardzo chrapliwy ton prądu zmiennego”** (odpowiedź **A**).  \n\nOdpowiedź\
+    \ **C** opisuje zupełnie inny typ tonu (T9), dlatego jest błędna.  \n\n---\n\n### Co zrobić następnym\
+    \ razem?\n\n1. **Sprawdź numer oznaczenia** (T1‑T9) w tabeli definicji przed wyborem.  \n2. **Porównaj\
+    \ kluczowe przymiotniki**:  \n   - *chrapliwy* → T1‑T4 (zniekształcenia)  \n   - *czysty* → T7‑T9\
+    \ (brak zniekształceń)  \n3. Upewnij się, że wybrana odpowiedź nie jest pomieszana z inną definicją\
+    \ (np. T9 zamiast T1).\n\nTrzymaj się tych wskazówek, a unikasz podobnych pomyłek w kolejnych pytaniach.\
+    \ Powodzenia!"
+  - "**Odpowiedź:** A – **bardzo chrapliwy ton prądu zmiennego**\n\n**Dlaczego?**  \n\nW podanym zestawie\
+    \ opisów tonów (T1‑T9) każdy numer określa charakterystykę dźwięku:\n\n- **T1** – *bardzo chrapliwy\
+    \ ton prądu zmiennego*  \n- T2 – chrapliwy, bez muzykalności  \n- T3 – chrapliwy, niski, lekko muzykalny\
+    \  \n- …  \n- T9 – bardzo czysty, dźwięczny ton\n\nZatem jedynym opisem pasującym do **T1** jest „bardzo\
+    \ chrapliwy ton prądu zmiennego”, co dokładnie odpowiada odpowiedzi **A**.  \n\nPozostałe odpowiedzi\
+    \ opisują zupełnie inne grupy tonów (czysty lub bardzo czysty), które znajdują się dalej w skali (T8,\
+    \ T9). Dlatego są niepoprawne w kontekście pytania."
+- text: Jak opisuje się ton T2?
+  answers:
+  - chrapliwy ton prądu zmiennego, bez śladów muzykalności
+  - chrapliwy, niski ton prądu zmiennego, lekko muzykalny
+  - ton czysty
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **A** – *„chrapliwy ton prądu zmiennego, bez śladów muzykalności”*\
+    \ – jest prawidłowa, ponieważ dokładnie tak definiowany jest ton **T2** w podanym zestawieniu. Inne\
+    \ opcje opisują inne tony (T3 i T8/T9). Dlatego zaznaczenie A jest poprawne."
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **Definicja T2** (z podanego opisu) brzmi:  \n  *„chrapliwy\
+    \ ton prądu zmiennego, **bez śladów muzykalności**”*.\n\n- **Odpowiedź B** opisuje:  \n  *„chrapliwy,\
+    \ **niski** ton prądu zmiennego, **lekko muzykalny**”*.\n\n  - *„niski”* – w definicji T2 nie ma żadnej\
+    \ wzmianki o wysokości tonu.  \n  - *„lekko muzykalny”* – to cecha **T3**, a nie T2.\n\n- **Poprawna\
+    \ odpowiedź A** dokładnie odzwierciedla opis T2 – jedynie *chrapliwy* i **bez muzykalności**.\n\n\
+    **Wniosek**: wybrałeś opis, który zawiera dodatkowe cechy (niska wysokość i muzykalność), które nie\
+    \ należą do T2. Dlatego prawidłowa odpowiedź to **A**."
+  - "**Dlaczego odpowiedź C jest błędna?**\n\nTon **T2** został zdefiniowany w Twoim zestawie jako:\n\n\
+    > **T2 – chrapliwy ton prądu zmiennego, bez śladów muzykalności**\n\nNatomiast odpowiedź **C** brzmi\
+    \ *„ton czysty”*. „Ton czysty” odpowiada definicji **T8** (lub **T9**, jeśli podkreślamy bardzo czysty\
+    \ dźwięk). Nie ma więc żadnego związku z opisem T2.\n\n**Poprawna odpowiedź – A**\n\n- **A.** *chrapliwy\
+    \ ton prądu zmiennego, bez śladów muzykalności*  \n  Zgadza się dokładnie z definicją T2.\n\n**Podsumowanie**\n\
+    \n| Odpowiedź | Zgodność z definicją T2 |\n|-----------|------------------------|\n| **A**     | ✅\
+    \  (pełna zgodność)   |\n| **B**     | ❌  opisuje T3         |\n| **C**     | ❌  opisuje T8/T9   \
+    \   |\n\nDlatego wybór **C** był niepoprawny – pomyliłeś *czysty* ton (T8/T9) z *chrapliwym* tonem\
+    \ T2. Przy kolejnych pytaniach zwracaj uwagę, czy opis dotyczy **brzmienia** (chrapliwy, szorstki)\
+    \ czy **czystości** (czysty, modulowany)."
+  - "**Ton T2**  \n\nZgodnie z podanym słownikiem:\n\n- **T2 – chrapliwy ton prądu zmiennego, bez śladów\
+    \ muzykalności**  \n\nDlatego prawidłową odpowiedzią jest **A**.  \n\n*Dlaczego pozostałe odpowiedzi\
+    \ są niepoprawne?*  \n\n- **B** opisuje ton **T3** („chrapliwy, niski ton prądu zmiennego, lekko muzykalny”).\
+    \  \n- **C** opisuje ton **T8** („ton czysty”).  \n\nStąd jedyną definicją pasującą do T2 jest odpowiedź\
+    \ **A**."
+- text: Jak opisuje się ton T3?
+  answers:
+  - chrapliwy, niski ton prądu zmiennego, lekko muzykalny
+  - nieco chrapliwy ton prądu zmiennego
+  - bardzo czysty, dźwięczny ton
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nZaznaczyłeś odpowiedź **A** – *„chrapliwy, niski ton prądu zmiennego, lekko\
+    \ muzykalny”*.  \n\nZ podanych definicji ton **T3** jest właśnie opisany jako **chrapliwy, niski ton\
+    \ prądu zmiennego, lekko muzykalny**. Żadne z pozostałych sformułowań (B i C) nie oddają tej charakterystyki,\
+    \ dlatego odpowiedź A jest jedyną prawidłową.  \n\nDobra robota – tak dalej!"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **Definicje tonów (z treści pytania)**  \n\n  - **T3**\
+    \ – *chrapliwy, niski ton prądu zmiennego, lekko muzykalny*  \n  - **T4** – *nieco chrapliwy ton prądu\
+    \ zmiennego*  \n\n- **Co oznacza odpowiedź B?**  \n  - „nieco chrapliwy ton prądu zmiennego” to dokładny\
+    \ opis **T4**, a nie **T3**.  \n\n- **Główne różnice między T3 a T4**  \n\n  | Cecha             \
+    \   | T3                                      | T4                     |\n  |----------------------|----------------------------------------|-----------------------|\n\
+    \  | **Intensywność chrapania** | wyraźnie chrapliwy                     | jedynie „nieco” chrapliwy\
+    \ |\n  | **Poziom tonalny**   | niski                                   | brak informacji o wysokości\
+    \ |\n  | **Muzykalność**       | lekko muzykalny                         | nie wymieniona        \
+    \  |\n\n- **Dlaczego A jest prawidłowe?**  \n  - Zawiera wszystkie trzy elementy charakterystyczne\
+    \ dla T3: *chrapliwość*, *niski ton* i *lekko muzykalny*.\n\n**Podsumowanie**  \nOdpowiedź B opisuje\
+    \ ton **T4**, a nie **T3**. Dlatego poprawną odpowiedzią jest **A**."
+  - "**Dlaczego odpowiedź C jest nieprawidłowa**\n\n- **C** opisuje ton **„bardzo czysty, dźwięczny”**.\
+    \  \n- Taki opis odpowiada definicji **T9** (bardzo czysty, dźwięczny ton), a nie **T3**.  \n- W zestawie\
+    \ oznaczeń T‑tone nie ma żadnego „bardzo czystego” charakteru w T3 – jest on **chrapliwy** i **niski**.\n\
+    \n**Poprawny opis T3**\n\n- **T3** – *„chrapliwy, niski ton prądu zmiennego, lekko muzykalny”*.  \n\
+    - Zawiera trzy kluczowe cechy:\n  1. **Chrapliwość** – dźwięk jest szorstki, niegładki.  \n  2. **Niski\
+    \ poziom** – częstotliwość jest niższa niż w T4‑T9.  \n  3. **Lekka muzykalność** – mimo chrapliwości\
+    \ słyszalny jest pewien harmoniczny „śpiew”.\n\n**Podsumowanie**\n\n- **A** dokładnie oddaje wszystkie\
+    \ trzy elementy definicji T3.  \n- **C** opisuje zupełnie inny ton (T9) i dlatego jest błędna.  \n\
+    \nZapamiętaj: przy wyborze odpowiedzi skupiaj się na *wszystkich* wymienionych cechach danego tonu.\
+    \ Jeśli brakuje którejkolwiek z nich, odpowiedź jest niepoprawna."
+  - "**Pytanie:** Jak opisuje się ton **T3**?  \n\n**Poprawna odpowiedź:** **A.** *chrapliwy, niski ton\
+    \ prądu zmiennego, lekko muzykalny*\n\n**Uzasadnienie**\n\n- W definicjach podanych w treści zadania\
+    \ ton **T3** jest opisany jako **„chrapliwy, niski ton prądu zmiennego, lekko muzykalny”**.  \n- Odpowiedź\
+    \ **A** dokładnie odzwierciedla ten opis.  \n- Odpowiedź **B** („nieco chrapliwy ton prądu zmiennego”)\
+    \ pomija cechy **niskiego** brzmienia i **muzykalności**.  \n- Odpowiedź **C** („bardzo czysty, dźwięczny\
+    \ ton”) opisuje zupełnie inny ton (T8/T9) i nie pasuje do definicji T3.\n\nDlatego jedyną prawidłową\
+    \ opcją jest **A**."
+- text: Jak opisuje się ton T4?
+  answers:
+  - nieco chrapliwy ton prądu zmiennego
+  - bardzo chrapliwy ton prądu zmiennego
+  - ton prawie czysty, lekko świszczący
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **A** – *„nieco chrapliwy ton prądu zmiennego”* – jest prawidłowa,\
+    \ ponieważ definicja **T4** w tabeli opisuje właśnie taki charakterystykę dźwięku: ton o lekkim chrapnięciu,\
+    \ ale nie tak intensywnym jak w przypadku **T1** czy **T2**.  \n\nPozostałe opcje opisują inne poziomy\
+    \ chrapliwości (**B**) lub zupełnie inny charakter brzmienia (**C**).  \n\nŚwietnie sobie poradziłeś/aś!\
+    \ \U0001F680"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\n| Opcja | Definicja w tabeli | Co opisuje |\n|------|--------------------|-----------|\n\
+    | **T4** | *„nieco chrapliwy ton prądu zmiennego”* | Lekko chrapliwy, ale nieprzytłaczający dźwięk.\
+    \ |\n| **B** | „bardzo chrapliwy ton prądu zmiennego” | Znacznie silniejszy, bardziej zniekształcony\
+    \ chrapliwy dźwięk (to opis **T1**). |\n| **C** | „ton prawie czysty, lekko świszczący” | To opis\
+    \ **T7**, czyli prawie czysty ton. |\n\n### Główna różnica\n- **„nieco”** oznacza *małe* natężenie\
+    \ chrapliwości, co odpowiada **T4**.  \n- **„bardzo”** wskazuje na *silne* chrapnięcie, które nie\
+    \ jest charakterystyczne dla **T4**, lecz dla **T1**.\n\n### Krótkie podsumowanie\n- **T4** → **nieco\
+    \ chrapliwy** (lekki, delikatny chrap).  \n- **B** → **bardzo chrapliwy** (silny, intensywny chrap).\
+    \  \n\nDlatego prawidłowa odpowiedź to **A**."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\nTon **T4** w Twoim zestawie definicji jest opisany jako:\n\
+    \n> **„nieco chrapliwy ton prądu zmiennego”**  \n\nTo oznacza, że charakterystyka dźwięku ma pewną\
+    \ szorstkość („chrapliwość”) i jest wynikiem zmiennego napięcia – nie jest czysty ani nie posiada\
+    \ wyraźnych elementów świszczących.\n\n---\n\n### Co opisuje odpowiedź C?\n\n**C. „ton prawie czysty,\
+    \ lekko świszczący”**  \n\n- *prawie czysty* – wskazuje na bardzo małą szorstkość, bliską czystemu\
+    \ tonu, co jest typowe dla **T7–T9**.  \n- *lekko świszczący* – odnosi się do delikatnego, wysokiego\
+    \ komponentu, charakterystycznego dla tonów **T6–T8**.\n\nŻaden z tych elementów nie występuje w definicji\
+    \ **T4**, dlatego odpowiedź C nie pasuje.\n\n---\n\n### Poprawna odpowiedź – A\n\n**A. „nieco chrapliwy\
+    \ ton prądu zmiennego”**  \n\n- *nieco chrapliwy* – opisuje umiarkowaną szorstkość, czyli delikatne\
+    \ zniekształcenie charakterystyczne dla **T4**.  \n- *prąd zmienny* – wskazuje, że ton jest generowany\
+    \ przez zmienny sygnał elektryczny, co jest wspólne dla wszystkich opisów w tym zestawie.\n\n---\n\
+    \n### Krótkie podsumowanie\n\n| Ton | Główne cechy |\n|-----|--------------|\n| **T4** | **Nieco chrapliwy**,\
+    \ zmienny, brak czystości i świstu |\n| **T6‑T9** | Coraz większa czystość, pojawiają się elementy\
+    \ świszczące |\n\nZatem jedyną odpowiedzią, która dokładnie odzwierciedla opis **T4**, jest **A**.\
+    \  \n\nPamiętaj: przy wyborze odpowiedzi skupiaj się na **stopniu chrapliwości** oraz **obecności\
+    \ (lub braku) świszczących komponentów**."
+  - "**Pytanie**: *Jak opisuje się ton T4?*  \n\n**Poprawna odpowiedź**: **A. nieco chrapliwy ton prądu\
+    \ zmiennego**\n\n### Dlaczego A jest prawidłowa\n- W zestawie definicji tonów T1‑T9 **T4** jest określany\
+    \ jako **„nieco chrapliwy ton prądu zmiennego”**.  \n- Sformułowanie „nieco” wskazuje na umiarkowany\
+    \ stopień chrapliwości – mniej intensywny niż w opisach T1‑T3, ale wciąż wyraźnie chrapliwy.\n\n###\
+    \ Dlaczego B i C są nieprawidłowe\n- **B. bardzo chrapliwy ton prądu zmiennego** – opis ten odpowiada\
+    \ **T1** (bardzo chrapliwy) lub **T2** (chrapliwy, bez muzykalności). Nie pasuje do T4, którego chrapliwość\
+    \ jest łagodniejsza.\n- **C. ton prawie czysty, lekko świszczący** – to definicja **T7**, a nie T4.\
+    \ T7 charakteryzuje się niemal czystym dźwiękiem z delikatnym świszczącym zabarwieniem.\n\n### Szybkie\
+    \ podsumowanie\n| Ton | Charakterystyka |\n|-----|-----------------|\n| **T4** | *nieco chrapliwy*\
+    \ (umiarkowany) |\n| **T1/T2** | *bardzo* chrapliwy |\n| **T7** | *prawie czysty, lekko świszczący*\
+    \ |\n\nZatem jedyną odpowiedzią zgodną z definicją jest **A**. Powodzenia na egzaminie!"
+- text: Jak opisuje się ton T5?
+  answers:
+  - ton dźwięczny, modulowany składową zmienną
+  - ton czysty
+  - ton modulowany, lekko świszczący
+  correct_index: 0
+  explanations:
+  - "## Gratulacje!\n\nWybrałeś odpowiedź **A**: *„ton dźwięczny, modulowany składową zmienną”*.\n\n**Dlaczego\
+    \ to jest poprawne?**  \nW tabeli opisów tonów T5 jest zdefiniowany właśnie jako **ton dźwięczny**,\
+    \ którego charakterystyka jest **modulowana składową zmienną** (np. wahania amplitudy lub częstotliwości).\
+    \ Żadne z pozostałych określeń (czysty ton – B, ton lekko świszczący – C) nie oddają tej właśnie cechy\
+    \ modulacji.\n\nTwoja odpowiedź jest więc zgodna z przyjętą klasyfikacją. Świetna robota! \U0001F680"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **T5** w tabeli oznacza *„ton dźwięczny, modulowany\
+    \ składową zmienną”*.\n- Odpowiedź **B** („ton czysty”) opisuje **T8** (lub **T9**), a nie **T5**.\n\
+    - Dlatego wybór **B** nie odpowiada definicji podanej w pytaniu.\n\n**Poprawna odpowiedź – A**\n\n\
+    - **A** dokładnie przytacza opis przypisany do **T5**:  \n  \\[\n  \\text{T5} = \\text{ton dźwięczny,\
+    \ modulowany składową zmienną}\n  \\]\n- Oznacza to, że sygnał ma wyraźny ton (dźwięczny) i jednocześnie\
+    \ jego amplituda lub częstotliwość jest **modulowana** (zmieniana) przez dodatkową składową.\n\n**Krótka\
+    \ charakterystyka**  \n- **Ton czysty** (T8, T9) – stała częstotliwość, brak modulacji.  \n- **Ton\
+    \ modulowany** (T5, T6, T7) – częstotliwość lub amplituda zmienia się w czasie, co nadaje mu charakter\
+    \ „wibracji” lub „falowania”.  \n\nZatem wybór **A** jest jedynym prawidłowym dopasowaniem do definicji\
+    \ **T5**."
+  - "**Dlaczego odpowiedź C jest niepoprawna?**  \n\n- **T5** w klasyfikacji dźwięków opisuje **„ton dźwięczny,\
+    \ modulowany składową zmienną”**.  \n- Oznacza to, że podstawowy dźwięk (harmoniczny) jest **wyraźnie\
+    \ słyszalny**, a jednocześnie jego **amplituda lub częstotliwość jest zmieniana** w czasie (modulacja).\
+    \  \n- Nie ma w tym opisie **„świszczącego”** charakteru – to cecha tonów **T6–T8**, w których wprowadzony\
+    \ jest wyraźny komponent szeleszczący lub piszczący.\n\n**C. „ton modulowany, lekko świszczący”**\
+    \ opisuje więc **ton T6**, a nie T5.  \n\n---\n\n### Jak odróżnić T5 od podobnych tonów\n\n| Ton |\
+    \ Główna cecha | Czy występuje „świszczący” komponent? |\n|-----|--------------|--------------------------------------|\n\
+    | **T4** | nieco chrapliwy | nie |\n| **T5** | dźwięczny, modulowany (np. tremolo, vibrato) | **nie**\
+    \ |\n| **T6** | modulowany, lekko świszczący | tak |\n| **T7** | prawie czysty, lekko świszczący |\
+    \ lekki szum |\n| **T8** | ton czysty | brak szumu |\n\n---\n\n### Krótkie podsumowanie\n\n- **T5\
+    \ = ton dźwięczny + modulacja** (bez szumu).  \n- **C** opisuje **T6**, czyli ton z dodatkowym, delikatnym\
+    \ szumem („świszczący”).  \n\nZwracaj uwagę na obecność lub brak szumu w definicjach – to najprostszy\
+    \ sposób na odróżnienie kolejnych tonów w skali T."
+  - "**Ton T5**  \n\nTon T5 jest definiowany jako **„ton dźwięczny, modulowany składową zmienną”**. Oznacza\
+    \ to, że:\n\n- **Dźwięczny** – posiada wyraźny charakter harmoniczny, jest słyszalny jako stały ton\
+    \ podstawowy.  \n- **Modulowany składową zmienną** – jego częstotliwość (lub amplituda) jest poddawana\
+    \ pewnym zmianom w czasie, co nadaje mu lekko zmienny charakter, ale nie wprowadza wyraźnego „świszczenia”.\n\
+    \nDlatego prawidłową odpowiedzią jest:\n\n**A. ton dźwięczny, modulowany składową zmienną**  \n\n\
+    Pozostałe opcje opisują inne typy tonów:\n\n- **B. ton czysty** – brak modulacji, stała częstotliwość\
+    \ (np. T8, T9).  \n- **C. ton modulowany, lekko świszczący** – wskazuje na wyraźne świszczące elementy,\
+    \ charakterystyczne dla tonów T6‑T7, a nie T5."
+- text: Jak opisuje się ton T6?
+  answers:
+  - ton modulowany, lekko świszczący
+  - ton prawie czysty, lekko świszczący
+  - bardzo czysty, dźwięczny ton
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!**  \n\nZgodnie z podanym opisem, **ton T6** to *„ton modulowany, lekko świszczący”*.\
+    \ Dlatego prawidłową odpowiedzią jest:\n\n**A. ton modulowany, lekko świszczący**\n\nPozostałe opcje\
+    \ opisują inne tony:\n\n- **B** – „ton prawie czysty, lekko świszczący” (to opis T7),  \n- **C** –\
+    \ „bardzo czysty, dźwięczny ton” (to opis T9).\n\nTwoja odpowiedź dokładnie odpowiada definicji T6,\
+    \ więc jest poprawna. \U0001F389"
+  - "**Dlaczego odpowiedź B jest błędna?**\n\n- **T6** w skali opisów tonów jest zdefiniowany jako **„ton\
+    \ modulowany, lekko świszczący”**.  \n- Odpowiedź **B** („ton prawie czysty, lekko świszczący”) pomija\
+    \ istotny element *modulacji* – zmiany amplitudy lub częstotliwości w czasie, który odróżnia T6 od\
+    \ czystych tonów (T7‑T9).  \n\n**Poprawna definicja (odpowiedź A)**  \n\n- **A. ton modulowany, lekko\
+    \ świszczący** – opisuje dźwięk, w którym widoczna jest niewielka modulacja (np. wibrato) oraz delikatny,\
+    \ nieprzytłaczający świszczący komponent.\n\n**Krótka zasada zapamiętania**\n\n| Zakres tonów | Główny\
+    \ charakter |\n|--------------|------------------|\n| **T5‑T6**    | **Modulowany** (zawiera zmiany\
+    \ w czasie) |\n| **T7‑T9**    | **Czysty** (brak modulacji) |\n\nPonieważ T6 należy do grupy **modulowanych**\
+    \ tonów, odpowiedź B, opisująca ton jako „prawie czysty”, jest niezgodna z przyjętą klasyfikacją.\
+    \  \n\n---  \n\n**Wniosek:** Wybierz **A** – *ton modulowany, lekko świszczący*."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\n- **T6** w zestawieniu opisów dźwięków oznacza **„ton\
+    \ modulowany, lekko świszczący”**.  \n- Słowo **„modulowany”** wskazuje, że częstotliwość lub amplituda\
+    \ fali jest zmieniana w czasie (np. wibracje, wahania).  \n- **„Lekko świszczący”** opisuje obecność\
+    \ wysokich, szczelinowych komponentów w dźwięku.  \n\n**C. „bardzo czysty, dźwięczny ton”** opisuje\
+    \ dźwięk **T8** (czysty) lub **T9** (bardzo czysty, dźwięczny). Nie zawiera żadnej informacji o modulacji\
+    \ ani o świszczącym charakterze, więc nie pasuje do definicji T6.\n\n---\n\n### Poprawna odpowiedź\
+    \ – A\n\n- **A. „ton modulowany, lekko świszczący”** dokładnie odzwierciedla dwa kluczowe elementy\
+    \ definicji T6:\n  1. **Modulacja** – zmiana parametrów fali (częstotliwości/amplitudy).  \n  2. **Lekki\
+    \ świszczący charakter** – obecność delikatnych, wysokich harmonicznych.\n\nZatem jedyną prawidłową\
+    \ odpowiedzią jest **A**.  \n\n---\n\n#### Szybkie przypomnienie (dla dalszych pytań)\n\n| Symbol\
+    \ | Opis |\n|--------|------|\n| T5 | ton dźwięczny, modulowany składową zmienną |\n| **T6** | **ton\
+    \ modulowany, lekko świszczący** |\n| T7 | ton prawie czysty, lekko świszczący |\n| T8 | ton czysty\
+    \ |\n| T9 | bardzo czysty, dźwięczny ton |\n\nZapamiętując, że **T6** zawsze łączy **modulację** z\
+    \ **świszczącym** zabarwieniem, łatwo odróżnisz go od czystych (T8, T9) i prawie czystych (T7) tonów."
+  - "**Poprawna odpowiedź:** **A. ton modulowany, lekko świszczący**\n\n**Uzasadnienie**\n\n- Według podanych\
+    \ definicji:\n  - **T5** – ton dźwięczny, modulowany składową zmienną  \n  - **T6** – **ton modulowany,\
+    \ lekko świszczący**  \n  - **T7** – ton prawie czysty, lekko świszczący  \n\n- T6 różni się od T5\
+    \ tym, że oprócz modulacji ma już słyszalny, choć delikatny, element świstu.  \n- Od T7 odróżnia go\
+    \ fakt, że nie jest „prawie czysty” – wciąż wyraźnie widać modulację.\n\nDlatego opis **„ton modulowany,\
+    \ lekko świszczący”** (odpowiedź A) jest prawidłowy dla T6."
+- text: Jak opisuje się ton T7?
+  answers:
+  - ton prawie czysty, lekko świszczący
+  - ton czysty
+  - chrapliwy ton prądu zmiennego, bez śladów muzykalności
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nZgodnie z podanym opisem:\n\n- **T7** – *ton prawie czysty, lekko\
+    \ świszczący*  \n\nDlatego odpowiedź **A** („ton prawie czysty, lekko świszczący”) jest prawidłowa.\
+    \ Inne opcje opisują inne tony (T5/T8) i nie pasują do definicji T7."
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **Definicja T7** (z podanego słownika):  \n  *„ton\
+    \ prawie czysty, lekko świszczący”*.\n\n- **Odpowiedź B** brzmi po prostu **„ton czysty”**.  \n  Brakuje\
+    \ w niej dwóch istotnych elementów:\n  1. **„prawie”** – wskazuje, że czystość nie jest absolutna;\n\
+    \  2. **„lekko świszczący”** – opisuje dodatkowy, charakterystyczny szmer.\n\n- **Wynik:** odpowiedź\
+    \ B pomija oba składniki definicji, więc nie oddaje pełnego opisu tonu T7.\n\n**Poprawna odpowiedź\
+    \ – A**  \nZawiera dokładnie to, co definiuje T7: *„ton prawie czysty, lekko świszczący”*.  \n\nDlatego\
+    \ zaznaczenie B („ton czysty”) jest błędem – jest to opis tonu **T8**, a nie **T7**."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\n- **Definicja T7** w Twoim materiale brzmi:  \n  *„ton\
+    \ prawie czysty, lekko świszczący”*  \n\n- **Odpowiedź C** opisuje **T2**:  \n  *„chrapliwy ton prądu\
+    \ zmiennego, bez śladów muzykalności”*  \n\n  T2 i T7 różnią się pod względem **czystości** oraz **obecności\
+    \ świszczącego elementu**.  \n\n- **Częste pułapki**  \n  1. **Szybkie przeglądanie** listy tonów\
+    \ – można pomylić numerację.  \n  2. **Skupienie na słowie „chrapliwy”** – pojawia się w T2, T3 i\
+    \ T4, ale nie w T7.  \n\n- **Jak uniknąć pomyłki**  \n  - Zwróć uwagę na dwa kluczowe przymioty: \
+    \ \n    - **„prawie czysty”** – oznacza, że ton jest bliski czystości, ale nie idealny.  \n    - **„lekko\
+    \ świszczący”** – wskazuje na delikatny szum w wyższych harmonicznych.  \n  - Porównaj je z opisem\
+    \ T2, który podkreśla **„chrapliwość”** i **brak muzykalności**.  \n\n**Podsumowanie**  \nOdpowiedź\
+    \ **A** jest prawidłowa, ponieważ dokładnie oddaje charakterystykę T7. Odpowiedź **C** opisuje zupełnie\
+    \ inny ton (T2), stąd błąd. Zapamiętaj, że w T7 nie ma „chrapliwości”, a jedynie lekki świst przy\
+    \ prawie czystym dźwięku."
+  - "**Prawidłowa odpowiedź:** **A. ton prawie czysty, lekko świszczący**\n\n**Uzasadnienie**\n\n- **T7**\
+    \ w podanym zestawieniu opisuje dźwięk, który jest **niemal czysty**, ale posiada **delikatny, lekko\
+    \ świszczący charakter**.  \n- Inne opcje nie pasują:\n  - **B** („ton czysty”) opisuje **T8** – całkowicie\
+    \ czysty, bez świszczących elementów.  \n  - **C** („chrapliwy ton prądu zmiennego, bez śladów muzykalności”)\
+    \ opisuje **T2** – zupełnie inny, chrapliwy ton.\n\nDlatego jedyną odpowiedzią spełniającą definicję\
+    \ **T7** jest **A**."
+- text: Jak opisuje się ton T8?
+  answers:
+  - ton czysty
+  - bardzo chrapliwy ton prądu zmiennego
+  - ton dźwięczny, modulowany składową zmienną
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nZgodnie z podanym schematem opisów tonów, **T8** oznacza **„ton czysty”**.\
+    \ Dlatego odpowiedź **A. ton czysty** jest prawidłowa.  \n\nInne kody opisują różne cechy brzmienia\
+    \ (np. chrapliwość, modulację), które nie odpowiadają definicji T8.  \n\nDobrze rozpoznane!"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**\n\n- **T8** w przyjętym systemie opisowym oznacza **„ton\
+    \ czysty”**.  \n- **„Bardzo chrapliwy ton prądu zmiennego”** opisuje **T1**, czyli skrajnie zniekształcony,\
+    \ szorstki sygnał – zupełnie inny charakter niż czysty ton.  \n\n**Jak rozpoznać ton T8**\n\n- Brak\
+    \ wyraźnych zniekształceń (brak „chrapliwości”, szumów, świszczących składowych).  \n- Fala sinusoidalna\
+    \ jest jednorodna i regularna – w widmie widzimy jedną wyraźną linię częstotliwości.  \n- W praktyce\
+    \ słyszymy stabilny, harmonicznie czysty dźwięk, bez „chrapliwych” elementów.\n\n**Podsumowanie**\
+    \  \nOdpowiedź **A – „ton czysty”** jest jedyną prawidłową. Odpowiedź **B** opisuje zupełnie inny\
+    \ typ tonu (T1), dlatego została oznaczona jako błąd."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\nW podanym zestawie definicji tonów T‑* opisuje ich charakterystykę:\n\
+    \n| Symbol | Opis |\n|--------|------|\n| **T5** | ton dźwięczny, **modulowany składową zmienną**\
+    \ |\n| **T8** | **ton czysty** |\n| … | … |\n\nZauważ, że opis *„ton dźwięczny, modulowany składową\
+    \ zmienną”* przypisany jest do **T5**, a nie do **T8**.  \n\n**T8** jest definiowany jako **„ton czysty”**\
+    \ – brak w nim modulacji ani dodatkowych cech dźwiękowych. Dlatego prawidłowa odpowiedź na pytanie\
+    \ *„Jak opisuje się ton T8?”* to:\n\n**A. ton czysty**\n\n---\n\n### Krótkie podsumowanie\n\n- **C**\
+    \ opisuje **T5**, nie **T8**.  \n- **T8** = **ton czysty** → odpowiedź **A**.  \n\nStąd wybór odpowiedzi\
+    \ C był błędem. Powodzenia w dalszej nauce!"
+  - '**Odpowiedź:** **A. ton czysty**
+
+
+    **Wyjaśnienie**
+
+
+    W podanej klasyfikacji tonów prądu zmiennego:
+
+
+    - **T8** jest zdefiniowany jako *„ton czysty”*.
+
+
+    Pozostałe opisy (T1‑T7, T9) dotyczą różnych stopni chrapliwości, modulacji czy świszczących właściwości,
+    które nie pasują do definicji **T8**. Dlatego jedyną prawidłową odpowiedzią jest **A**.'
+- text: Jak opisuje się ton T9?
+  answers:
+  - bardzo czysty, dźwięczny ton
+  - ton czysty
+  - nieco chrapliwy ton prądu zmiennego
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nZaznaczyłeś odpowiedź **A** – „bardzo czysty, dźwięczny ton”.  \n\
+    \nZgodnie z podanym opisem, ton **T9** jest definiowany właśnie jako **bardzo czysty, dźwięczny ton**.\
+    \ Dlatego odpowiedź A jest jedyną prawidłową spośród podanych możliwości.  \n\n---  \n*Prawidłowa\
+    \ odpowiedź: A*"
+  - "**Dlaczego odpowiedź B jest niepoprawna?**  \n\n- **Definicja T9** (z podanego słownika): *„bardzo\
+    \ czysty, dźwięczny ton”*.  \n- Odpowiedź **B** brzmi jedynie *„ton czysty”*. Brakuje w niej drugiego\
+    \ wymogu definicji – **„dźwięcznego”**.  \n\nZatem **B** opisuje jedynie część charakterystyki T9\
+    \ (czystość), ale nie spełnia pełnego warunku „bardzo czysty **i** dźwięczny”.\n\n**Poprawna odpowiedź\
+    \ – A**  \n- **A**: *„bardzo czysty, dźwięczny ton”* – dokładnie odzwierciedla pełną definicję T9,\
+    \ zawierając oba niezbędne elementy: **„bardzo czysty”** oraz **„dźwięczny”**.\n\n**Podsumowanie**\
+    \  \n- **T9** = *bardzo czysty, dźwięczny ton* → wymaga obu przymiotników.  \n- **B** pomija „dźwięczny”,\
+    \ dlatego jest niewłaściwa.  \n- **A** jest jedyną odpowiedzią spełniającą pełną definicję."
+  - "**Dlaczego odpowiedź C jest błędna**\n\n- **C** opisuje **T4**: „nieco chrapliwy ton prądu zmiennego”.\
+    \  \n- T9 natomiast znajduje się na **szczycie skali** jakości dźwięku – jest to **najczystszy i najbardziej\
+    \ dźwięczny** ton, zupełnie pozbawiony chrapliwości.\n\n**Poprawna definicja T9**\n\n- **A** – „bardzo\
+    \ czysty, dźwięczny ton” – dokładnie oddaje charakterystykę T9.  \n- W hierarchii od **T1** (bardzo\
+    \ chrapliwy) do **T9** (bardzo czysty) każdy kolejny numer oznacza stopniowe **usuwanie zniekształceń**\
+    \ i **wzrost harmonicznej czystości**.  \n\n**Podsumowanie**\n\n| Numer | Charakterystyka |\n|------|-----------------|\n\
+    | T4 | nieco chrapliwy ton prądu zmiennego |\n| **T9** | **bardzo czysty, dźwięczny ton** |\n\nStąd\
+    \ odpowiedź **C** odnosi się do zupełnie innego poziomu jakości dźwięku i nie może być prawidłowa\
+    \ dla pytania o opis T9. Poprawna odpowiedź to **A**."
+  - "**Pytanie:** Jak opisuje się ton **T9**?\n\n**Poprawna odpowiedź:** **A. bardzo czysty, dźwięczny\
+    \ ton**\n\n**Uzasadnienie**\n\nW zestawieniu opisów tonów (T1‑T9) każdy kolejny numer oznacza wyższą\
+    \ jakość dźwięku:\n\n- T1 – bardzo chrapliwy ton prądu zmiennego  \n- …  \n- T8 – ton czysty  \n-\
+    \ **T9 – bardzo czysty, dźwięczny ton**\n\nZatem jedynym opisem, który dokładnie odpowiada definicji\
+    \ **T9**, jest fraza *„bardzo czysty, dźwięczny ton”*.  \n\n- Odpowiedź **B** („ton czysty”) opisuje\
+    \ ton **T8**, a nie **T9**.  \n- Odpowiedź **C** („nieco chrapliwy ton prądu zmiennego”) odnosi się\
+    \ do **T4**.\n\nDlatego prawidłowa jest odpowiedź **A**."
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "bardzo chrapliwy ton prądu zmiennego"?'
+  answers:
+  - '1'
+  - T1
+  explanations:
+  - Gratulacje! Poprawna odpowiedź to **1** (lub **T1**). 🎉
+  - '**Odpowiedź:** `T1` (lub po prostu `1`).'
+  - '**Odpowiedź:** `T1` (lub po prostu `1`).'
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "chrapliwy ton prądu zmiennego, bez śladów muzykalności"?'
+  answers:
+  - '2'
+  - T2
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna wartość to **T2** (lub po prostu **2**). Dobra robota!"
+  - '**Poprawna odpowiedź:** `2` (lub `T2`).'
+  - "**Odpowiedź:** `T2`  \n\n*Dlaczego?*  \nOpis **„chrapliwy ton prądu zmiennego, bez śladów muzykalności”**\
+    \ dokładnie odpowiada definicji **T2** w podanym schemacie.  \n\n---  \n\n*Poprawne formy*: `2`, `T2`\
+    \ (wielkość liter nie ma znaczenia)."
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "chrapliwy, niski ton prądu zmiennego, lekko muzykalny"?'
+  answers:
+  - '3'
+  - T3
+  explanations:
+  - "Gratulacje! \U0001F389  \nPoprawna wartość to **T3** (lub po prostu **3**)."
+  - '**Poprawna odpowiedź:** `3` lub `T3` (wielkość liter nie ma znaczenia).'
+  - "**Odpowiedź:** `T3` (lub po prostu `3`)\n\n**Uzasadnienie:**  \nOpis „chrapliwy, niski ton prądu\
+    \ zmiennego, lekko muzykalny” dokładnie odpowiada definicji **T3** w podanej skali."
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "nieco chrapliwy ton prądu zmiennego"?'
+  answers:
+  - '4'
+  - T4
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna odpowiedź to **T4** (lub po prostu **4**). \U0001F389"
+  - '**Poprawna odpowiedź:** `T4` (można też zapisać po prostu jako `4`).'
+  - '**Odpowiedź:** `T4` (lub po prostu `4`).'
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "ton dźwięczny, modulowany składową zmienną"?'
+  answers:
+  - '5'
+  - T5
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to  \n\n\\[\nT = 5 \\;\\;(\\text{lub } T5)\n\\\
+    ]  \n\nŚwietnie poradziłeś/aś sobie z zadaniem!"
+  - '**Poprawna odpowiedź:** `T5` (również akceptowane jest po prostu `5`).'
+  - "**Odpowiedź:** **T5** (lub po prostu **5**)\n\n**Uzasadnienie**  \nOpis „ton dźwięczny, modulowany\
+    \ składową zmienną” dokładnie odpowiada definicji oznaczenia **T5** w podanym zestawieniu. Dlatego\
+    \ prawidłową wartością jest **T5**."
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "ton modulowany, lekko świszczący"?'
+  answers:
+  - '6'
+  - T6
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna wartość to **T6** (lub po prostu **6**). \U0001F389"
+  - '**Poprawna odpowiedź:** `T6` (lub `6`).'
+  - '**T6** (czyli wartość 6) – ton modulowany, lekko świszczący.'
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "ton prawie czysty, lekko świszczący"?'
+  answers:
+  - '7'
+  - T7
+  explanations:
+  - "Gratulacje! \U0001F389  \nPoprawna odpowiedź to **T7** (lub po prostu **7**)."
+  - '**T7**'
+  - "**Odpowiedź:**  \n\nTon opisany jako *„ton prawie czysty, lekko świszczący”* odpowiada wartości \
+    \ \n\n\\[\n\\boxed{T7}\n\\]  \n\n(oznaczenie **7** lub **T7**, bez względu na wielkość liter)."
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "ton czysty"?'
+  answers:
+  - '8'
+  - T8
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna odpowiedź to **$T8$** (lub po prostu **8**)."
+  - '**Poprawna odpowiedź:** `8`  (lub `T8`; wielkość liter nie ma znaczenia).'
+  - "**Odpowiedź:** `T8` (lub po prostu `8`).  \n\n*Ton czysty* odpowiada oznaczeniu **T8** w podanym\
+    \ zestawieniu."
+- type: open
+  text: 'Jaka wartość T odpowiada opisowi: "bardzo czysty, dźwięczny ton"?'
+  answers:
+  - '9'
+  - T9
+  explanations:
+  - "**Gratulacje!**  \nPoprawna odpowiedź to **T9** (lub po prostu **9**). \U0001F389"
+  - '**Poprawna odpowiedź:** `9` lub `T9`  (wielkość liter nie ma znaczenia).'
+  - '**Odpowiedź:** `T9` (lub po prostu `9`) – opisuje „bardzo czysty, dźwięczny ton”.'
