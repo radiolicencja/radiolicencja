@@ -3,117 +3,506 @@ description: Utrwal polski alfabet literowy używany w łączności radiowej i t
 slug: polski-alfabet-literowy
 image: assets/images/literowanie_pl.png
 questions:
-  - type: open
-    text: Jakim słowem literujesz literę "A" w polskim alfabecie literowym?
-    answers:
-      - Adam
-  - type: open
-    text: Jakiego imienia używasz dla litery "B"?
-    answers:
-      - Barbara
-  - type: open
-    text: Jakie słowo reprezentuje literę "C"?
-    answers:
-      - Celina
-  - type: open
-    text: Jak brzmi wyraz przypisany literze "D"?
-    answers:
-      - Dorota
-  - type: open
-    text: Jak literujesz literę "E"?
-    answers:
-      - Ewa
-  - type: open
-    text: Jakie słowo odpowiada literze "F"?
-    answers:
-      - Franciszek
-  - type: open
-    text: Jakie imię przypisano literze "G"?
-    answers:
-      - Grazyna
-  - type: open
-    text: Jak nazywa się litera "H" w tym alfabecie?
-    answers:
-      - Henryk
-  - type: open
-    text: Jakiego słowa używasz przy literze "I"?
-    answers:
-      - Irena
-  - type: open
-    text: Jakim słowem wywołujesz literę "J"?
-    answers:
-      - Jadwiga
-  - type: open
-    text: Jakie słowo kodowe odpowiada literze "K"?
-    answers:
-      - Karol
-  - type: open
-    text: Jak literujesz literę "L"?
-    answers:
-      - Ludwik
-      - Leon
-  - type: open
-    text: Jak brzmi słowo przypisane literze "Ł"?
-    answers:
-      - Łukasz
-  - type: open
-    text: Jakim imieniem nazywasz literę "M"?
-    answers:
-      - Maria
-  - type: open
-    text: Jakie słowo stosujesz dla litery "N"?
-    answers:
-      - Natalia
-  - type: open
-    text: Jak wywołujesz literę "O"?
-    answers:
-      - Olga
-  - type: open
-    text: Jak literujesz literę "P"?
-    answers:
-      - Paweł
-      - Piotr
-  - type: open
-    text: Jakie słowo przypisano literze "Q"?
-    answers:
-      - Quebec
-      - ku
-  - type: open
-    text: Jakie słowo przypisano literze "R"?
-    answers:
-      - Roman
-  - type: open
-    text: Jak brzmi słowo dla litery "S"?
-    answers:
-      - Stanisław
-  - type: open
-    text: Jakie imię oznacza literę "T"?
-    answers:
-      - Tadeusz
-  - type: open
-    text: Jak wymawiasz literę "U" w tym systemie?
-    answers:
-      - Urszula
-  - type: open
-    text: Jak literujesz literę "V"
-    answers:
-      - Violetta
-  - type: open
-    text: Jakie słowo oznacza literę "W"?
-    answers:
-      - Wanda
-      - Wacław
-  - type: open
-    text: Jakim słowem literujesz literę "X"?
-    answers:
-      - Xsawery
-      - Xsantypa
-  - type: open
-    text: Jak literujesz literę "Y"?
-    answers:
-      - Ypsylon
-      - Ipsilon
-  - type: open
-    text: Jakie słowo przypisano literze "Z"?
-    answers:
-      - Zygmunt
+- type: open
+  text: Jakim słowem literujesz literę "A" w polskim alfabecie literowym?
+  answers:
+  - Adam
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Adam”** jest prawidłowa, ponieważ w polskim alfabecie literowym\
+    \ (tzw. alfabecie fonetycznym) litera **A** jest oznaczana właśnie słowem **Adam**. W ten sposób unikamy\
+    \ nieporozumień przy przekazywaniu informacji ustnie.  \n\nDobra robota! \U0001F389"
+  - "**Co poszło nie tak?**\n\nW zadaniu pytałeś o **słowo używane do literowania litery „A”** w polskim\
+    \ alfabecie literowym.  \nJedyną poprawną odpowiedzią jest:\n\n> **Adam**  *(wielkość liter nie ma\
+    \ znaczenia)*  \n\nDlaczego inne odpowiedzi są błędne?\n\n| Podana odpowiedź | Dlaczego niepoprawna\
+    \ |\n|------------------|----------------------|\n| *np.* **„Ala”**, **„A”**, **„A‑B‑C”** | Nie jest\
+    \ to oficjalny kod literowy stosowany w polskim alfabecie (norma PN‑ISO 5969). |\n| **„A”** (samodzielnie)\
+    \ | Literowanie wymaga słowa, które jednoznacznie identyfikuje literę. |\n| **„Anton”**, **„Anna”**\
+    \ | Są to nazwy własne używane w innych językach (np. angielskim, niemieckim), a nie w polskim systemie\
+    \ literowania. |\n\n**Podsumowanie**  \nW polskim alfabecie literowym litera „A” jest kodowana słowem\
+    \ **Adam**. Każda inna odpowiedź nie spełnia wymogu standardu i dlatego jest błędna."
+  - "**Odpowiedź:** `Adam`  \n\nW polskim alfabecie literowym (tzw. alfabecie fonetycznym) każdą literę\
+    \ wymawia się przy pomocy wybranego słowa‑kodowania. Dla litery **A** używa się słowa **„Adam”** (wielkość\
+    \ liter nie ma znaczenia)."
+- type: open
+  text: Jakiego imienia używasz dla litery "B"?
+  answers:
+  - Barbara
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Barbara”** jest prawidłowa, ponieważ w polskim alfabecie fonetycznym\
+    \ litera **B** jest oznaczana właśnie tym imieniem. Wielkość liter nie ma znaczenia – zarówno *Barbara*,\
+    \ *barbara* jak i *BARBARA* spełniają wymóg."
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n- Zadanie wymaga podania **imienia przypisanego do litery\
+    \ „B”** w kodzie fonetycznym używanym na egzaminie.\n- **Jedyną akceptowaną odpowiedzią** (bez względu\
+    \ na wielkość liter) jest **„Barbara”**.  \n  Każde inne imię (np. *Bogdan*, *Bolesław*, *Beata*…)\
+    \ nie spełnia wymogu i zostaje uznane za błąd.\n- Jeśli w odpowiedzi pojawiły się dodatkowe znaki,\
+    \ spacje lub odmiana (np. „Barbary”, „BARBARA!”), system również odrzuca odpowiedź – liczy się **dokładny\
+    \ ciąg znaków „Barbara”**.\n\n**Co zrobić, aby odpowiedź była prawidłowa?**  \nWpisz po prostu:\n\n\
+    ```\nBarbara\n```\n\nlub  \n\n```\nBARBARA\n```\n\ni unikaj dodatkowych znaków. To spełnia warunek\
+    \ zadania."
+  - '**Barbara**'
+- type: open
+  text: Jakie słowo reprezentuje literę "C"?
+  answers:
+  - Celina
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Celina”** jest poprawna, ponieważ w przyjętym szyfrze litera **C**\
+    \ jest przypisana do słowa *Celina*. Wielkość liter nie ma znaczenia – zarówno **C**, jak i **c**\
+    \ prowadzą do tej samej odpowiedzi. \U0001F389"
+  - "**Dlaczego odpowiedź była niepoprawna?**  \n\n- Zadanie pyta o **słowo** reprezentujące literę **„C”**.\
+    \  \n- W podanym zestawie dopuszczalne jest tylko jedno słowo: **„Celina”** (wielkość liter nie ma\
+    \ znaczenia).  \n- Jeśli odpowiedź była inna (np. *„czerwony”*, *„c”*, *„cokolwiek”*), nie spełnia\
+    \ warunku dopuszczalnej odpowiedzi, więc system uznał ją za błędną.\n\n**Poprawna odpowiedź**: `Celina`\
+    \ (lub `celina`).  \n\nPamiętaj, że w tego typu zadaniach otwartych jedynie dokładnie określone słowo\
+    \ jest uznawane za prawidłowe. Jeśli odpowiedź różni się choćby jedną literą, zostaje odrzucona."
+  - "**Odpowiedź:** `Celina`  \n\n*Litera „C” jest reprezentowana przez słowo **Celina** (wielkość liter\
+    \ nie ma znaczenia).*"
+- type: open
+  text: Jak brzmi wyraz przypisany literze "D"?
+  answers:
+  - Dorota
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Dorota”** jest prawidłowa, ponieważ w zadaniu otwartym przypisano\
+    \ właśnie ten wyraz do litery **D**. Wielkość liter nie ma znaczenia, więc zarówno *Dorota*, *dorota*\
+    \ jak i *DOROTA* są akceptowane. \U0001F389"
+  - "**Dlaczego odpowiedź była nieprawidłowa**\n\n- **Wymagany wyraz**: do litery **„D”** przypisuje się\
+    \ dokładnie słowo **„Dorota”** (bez cudzysłowów).  \n- **Wielkość liter** nie ma znaczenia – zarówno\
+    \ *Dorota*, *dorota* jak i *DOROTA* są poprawne.  \n- **Inny wyraz** (np. *dania*, *dinozaur*, *dobra*\
+    \ itp.) nie spełnia kryterium, ponieważ nie jest to wyraz zdefiniowany w zadaniu.  \n\n**Jak poprawić\
+    \ odpowiedź**\n\n1. Sprawdź listę słów przypisanych do liter (w tym wypadku: A‑Adam, B‑Barbara, …,\
+    \ **D‑Dorota**).  \n2. Wpisz dokładnie **Dorota** (bez dodatkowych znaków, spacji ani liter).  \n\n\
+    Jeśli podasz inny wyraz, system uzna odpowiedź za błędną. Dlatego kluczowe jest użycie **właściwego\
+    \ słowa** przypisanego do danej litery."
+  - '**Dorota**'
+- type: open
+  text: Jak literujesz literę "E"?
+  answers:
+  - Ewa
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź **„Ewa”** jest prawidłowa, ponieważ w polskim systemie\
+    \ literowania nazwa litery **$E$** brzmi właśnie *Ewa*. Zasada mówi, że wielkość liter nie ma znaczenia\
+    \ – zarówno **„Ewa”**, jak i **„ewa”** spełniają wymagania zadania.  \n\nDobra robota!"
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n- **Wymóg zadania** – w krótkofalowym alfabecie fonetycznym\
+    \ literę **E** należy literować jako **„Ewa”**.  \n- **Rozmiar liter** – nie ma znaczenia, więc zarówno\
+    \ `Ewa`, `ewa`, jak i `EWA` są poprawne.  \n- **Typowe pomyłki** – podanie samej litery („E”) albo\
+    \ innego słowa (np. „Echo”) nie spełnia wymogu alfabetycznego „kodowania” w radiokomunikacji.  \n\n\
+    **Jak zapamiętać poprawną formę?**  \nWyobraź sobie, że każda litera ma własne „imię” w alfabecie\
+    \ krótkofalowym – dla **E** jest to **Ewa**.  \n\n*Podsumowanie*: poprawna odpowiedź to **Ewa** (dowolna\
+    \ wielkość liter). Jeśli podano inną frazę, nie spełnia ona wymogu zadania."
+  - "**E – Ewa**  \n\n(rozmiar liter nie ma znaczenia)."
+- type: open
+  text: Jakie słowo odpowiada literze "F"?
+  answers:
+  - Franciszek
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„Franciszek”** jest prawidłowa, ponieważ w zadaniu szukamy\
+    \ słowa rozpoczynającego się na literę **F**. Litera „F” (bez względu na wielkość) jednoznacznie wskazuje\
+    \ na słowo **Franciszek**, które spełnia ten warunek. \n\nDobra robota! \U0001F389"
+  - "**Dlaczego odpowiedź jest niepoprawna**\n\n- W zadaniu wymagana jest **jedno konkretne słowo** –\
+    \ **„Franciszek”**.  \n- **Rozmiar liter nie ma znaczenia**, więc akceptowane są formy: `Franciszek`,\
+    \ `franciszek`, `FRANCISZEK` itd.  \n- Podanie innego słowa (np. *„Fryzjer”*, *„Funkcja”* lub dowolnej\
+    \ kombinacji znaków) nie spełnia warunku zadania, ponieważ nie jest to ustalona prawidłowa odpowiedź.\
+    \  \n\n**Jak poprawić odpowiedź**  \nWystarczy napisać dokładnie słowo **Franciszek** (bez dodatkowych\
+    \ znaków, spacji czy innych wyrazów). Jeśli już to zrobiłeś, ale w innej formie, sprawdź, czy nie\
+    \ zawiera literówek lub niepotrzebnych znaków. \n\n---  \n\n*Pamiętaj: w tego typu zadaniach kluczowa\
+    \ jest **dokładność** podanej odpowiedzi.*"
+  - "**Odpowiedź:** `Franciszek`  \n\n*(wielkość liter nie ma znaczenia – akceptowane są również `franciszek`,\
+    \ `FRANCISZEK` itp.)*"
+- type: open
+  text: Jakie imię przypisano literze "G"?
+  answers:
+  - Grazyna
+  explanations:
+  - "**Gratulacje!**  \n\nImię **„Grazyna”** jest prawidłową odpowiedzią, ponieważ w zestawie przyporządkowań\
+    \ litera **G** została właśnie skojarzona z tym imieniem. Wielkość liter nie ma znaczenia, więc zarówno\
+    \ `Grazyna`, `grazyna`, jak i `GRAZYNА` są uznawane za poprawne. \U0001F389"
+  - "**Co poszło nie tak?**\n\n- **Pytanie:** *Jakie imię przypisano literze „G”?*  \n- **Wymagana odpowiedź:**\
+    \ **„Grazyna”** (wielkość liter nie ma znaczenia).  \n\nJeśli podałeś inny tekst (np. „Gabriela”,\
+    \ „Grzegorz”, „g”), odpowiedź jest niepoprawna, ponieważ w kodzie alfabetu literowego (stosowanym\
+    \ w zadaniach egzaminacyjnych) jedynym dopuszczalnym imieniem dla litery **G** jest **Grazyna**. \
+    \ \n\n**Dlaczego „Grazyna” jest jedyną prawidłową odpowiedzią?**  \n1. **Jednoznaczność** – w zestawie\
+    \ przypisanych imion nie ma alternatywnych nazw dla tej litery.  \n2. **Brak rozróżniania wielkości**\
+    \ – zarówno `Grazyna`, `grazyna`, jak i `GRAZYNA` są akceptowane, ale **treść musi być dokładnie tym\
+    \ imieniem**.  \n\n**Co zrobić następnym razem?**  \n- Sprawdź listę dopuszczalnych imion (zwykle\
+    \ podaną w instrukcjach).  \n- Upewnij się, że wpisujesz **dokładnie** to imię, nie modyfikując go\
+    \ (np. nie dodawaj dodatkowych spacji ani znaków).  \n\n---  \n\n*Podsumowanie:* Twoja odpowiedź była\
+    \ niezgodna z jedynym dopuszczalnym imieniem „Grazyna”. Wystarczy wpisać to imię (bez względu na wielkość\
+    \ liter), a otrzymasz pełny punkt. Powodzenia na kolejnych pytaniach!"
+  - "**Odpowiedź:** `Grazyna`  \n\nLitera **G** w przyjętym zestawieniu imion jest przypisana do imienia\
+    \ **Grazyna** (wielkość liter nie ma znaczenia)."
+- type: open
+  text: Jak nazywa się litera "H" w tym alfabecie?
+  answers:
+  - Henryk
+  explanations:
+  - "**Gratulacje!**  \n\nW alfabecie używanym w krótkofalarstwie litera **„H”** nazywana jest **„Henryk”**.\
+    \ To właśnie tak brzmi jej fonetyczna nazwa w tym systemie, więc Twoja odpowiedź jest prawidłowa.\
+    \ \U0001F389"
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n1. **Alfabet krótkofalarski w Polsce**  \n   W egzaminie\
+    \ używa się polskiego alfabetu radiowego (tzw. „Polski alfabet fonetyczny”), a nie międzynarodowego\
+    \ NATO. Dlatego nazwy liter są polskie.\n\n2. **Litera „H”**  \n   W polskim alfabecie krótkofalarskim\
+    \ litera **H** nosi nazwę **„Henryk”**.  \n   (Wielkość liter nie ma znaczenia – „henryk”, „HENRYK”\
+    \ itp. są akceptowane.)\n\n3. **Typowy błąd**  \n   Najczęściej pomyłkę popełnia się, podając angielską\
+    \ nazwę „Hotel”. Jest to poprawna nazwa w NATO‑Alphabet, ale **nie** w polskim alfabecie używanym\
+    \ na egzaminie krótkofalarskim.\n\n**Podsumowanie** – prawidłowa odpowiedź to **Henryk**; każda inna\
+    \ nazwa (np. *Hotel*) jest niezgodna z wymaganym polskim alfabetem fonetycznym."
+  - "**Odpowiedź:** `Henryk`  \n\nW polskim alfabecie radiotechnicznym (alfabecie NATO używanym w Polsce)\
+    \ litera **H** jest wymawiana jako **Henryk**. Wielkość liter nie ma znaczenia."
+- type: open
+  text: Jakiego słowa używasz przy literze "I"?
+  answers:
+  - Irena
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„Irena”** jest prawidłowa, ponieważ w alfabecie fonetycznym\
+    \ używanym w krótkofalarstwie słowo to jest przyjętym kodem dla litery **I**. Wielkość liter nie ma\
+    \ znaczenia – liczy się jedynie właściwy wyraz. Dobra robota!"
+  - "**Co poszło nie tak?**  \n\n- Pytanie brzmiało: *„Jakiego słowa używasz przy literze „I”?*  \n- W\
+    \ teście obowiązuje **lista słówek wywoławczych** (tzw. *słowa fonetyczne*).  \n- Dla litery **I**\
+    \ jedyną dopuszczalną odpowiedzią jest **„Irena”** – wielkość liter nie ma znaczenia, więc `Irena`,\
+    \ `irena`, `IRENA` itp. są poprawne.\n\n**Typowe pomyłki**  \n\n| Podana odpowiedź | Dlaczego jest\
+    \ błędna |\n|------------------|----------------------|\n| *Igor*           | nie znajduje się w oficjalnym\
+    \ zestawie słówek |\n| *Ilya*           | nie ma w standardowej liście |\n| *Inny*           | nie\
+    \ jest słowem fonetycznym dla „I” |\n\n**Jak uniknąć błędu?**  \n\n1. **Sprawdź oficjalną listę**\
+    \ słówek wywoławczych przed egzaminem.  \n2. **Zapamiętaj**: `I → Irena`.  \n3. **Używaj tylko tej\
+    \ formy** (dowolna wielkość liter), żadnych innych wyrazów.\n\n---  \n\n*Podsumowanie:* Twoja odpowiedź\
+    \ nie zgadza się z ustalonym słowem fonetycznym „Irena”. Skup się na tej jednej poprawnej formie,\
+    \ a unikniesz punktowej straty przy podobnych pytaniach."
+  - "**Odpowiedź:** *Irena*  \n\nSłowo powinno zaczynać się na literę **I**; wielkość liter nie ma znaczenia,\
+    \ więc zarówno „Irena”, jak i „irena” jest poprawne."
+- type: open
+  text: Jakim słowem wywołujesz literę "J"?
+  answers:
+  - Jadwiga
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **„Jadwiga”** jest prawidłowa, ponieważ w języku polskim\
+    \ przy wywoływaniu litery **J** najczęściej używa się imienia **Jadwiga** (rozróżnienie wielkości\
+    \ liter nie ma znaczenia). Dzięki temu słowo spełnia wymóg jednoznacznego wskazania litery „J”."
+  - "**Dlaczego odpowiedź jest niepoprawna?**  \n\n- W zadaniu pytano: *„Jakim słowem wywołujesz literę\
+    \ „J”?”*  \n- Oczekiwane jest **słowo, które po wypowiedzeniu spowoduje, że system rozpozna literę\
+    \ „J”.**  \n- Poprawną odpowiedzią jest **„Jadwiga”** (dowolna kombinacja małych i wielkich liter,\
+    \ np. *jadwiga*, *JADWIGA*).  \n\n**Częste przyczyny błędu**\n\n| Błąd | Dlaczego jest niepoprawny\
+    \ |\n|------|---------------------------|\n| Inne słowo (np. *„Jan”*, *„Juliusz”*) | System nie przypisuje\
+    \ tych słów do litery „J”. |\n| Podanie samej litery „J” | Zadanie wymaga **słowa**, a nie samej litery.\
+    \ |\n| Nieprawidłowa pisownia (np. „jadwiga” z błędem ortograficznym) | Musi być dokładnie **„Jadwiga”**\
+    \ (bez literówek). |\n\n**Jak poprawić odpowiedź?**  \nWystarczy napisać jedynie:\n\n```\nJadwiga\n\
+    ```\n\nlub dowolną wersję tego słowa z inną wielkością liter, np. `jadwiga`, `JADWIGA`. Po takiej\
+    \ odpowiedzi system przyzna punkt."
+  - '**Odpowiedź:** `Jadwiga` — słowo wywołujące literę **J** (wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jakie słowo kodowe odpowiada literze "K"?
+  answers:
+  - Karol
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nSłowo kodowe dla litery **„K”** to **„Karol”** – w naszym systemie\
+    \ kodowania każda litera ma przypisane stałe hasło, a dla litery **K** jest to właśnie „Karol”.  \n\
+    \nDodatkowo, wielkość liter nie ma znaczenia, więc zarówno **karol**, **Karol**, jak i **KAROL** będą\
+    \ uznane za poprawną odpowiedź."
+  - "**Dlaczego odpowiedź była błędna?**\n\n- W polskim alfabecie fonetycznym używanym w krótkofalarstwie\
+    \ każdej literze przypisane jest **jedno, ustalone słowo kodowe**.  \n- Dla litery **„K”** jedynym\
+    \ prawidłowym słowem jest **„Karol”** (bez względu na wielkość liter).  \n- Jeśli podałeś inne słowo\
+    \ (np. *Kacper*, *Klara* itp.), nie zgadza się ono z oficjalnym słownikiem i dlatego odpowiedź została\
+    \ uznana za niepoprawną.  \n\n**Jak uniknąć podobnych pomyłek?**  \n1. Sprawdź aktualny wykaz słów\
+    \ kodowych w oficjalnym podręczniku lub na stronie Polskiego Związku Krótkofalowców.  \n2. Pamiętaj,\
+    \ że wielkość liter nie ma znaczenia – liczy się jedynie poprawna forma słowa.  \n\nKiedy następnym\
+    \ razem wpiszesz **„Karol”**, odpowiedź będzie uznana za prawidłową. Powodzenia w dalszej nauce!"
+  - "**Karol**  \n\n*W polskim alfabecie fonetycznym litera „K” jest oznaczana słowem „Karol”.*"
+- type: open
+  text: Jak literujesz literę "L"?
+  answers:
+  - Ludwik
+  - Leon
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź jest prawidłowa, ponieważ w polskim alfabecie fonetycznym\
+    \ literę **\\(L\\)** wymawia się jako **„Ludwik”** lub **„Leon”** (wielkość liter nie ma znaczenia).\
+    \ To właśnie wymagane jest w zadaniu otwartym.  \n\nDobra robota!"
+  - "**Co poszło nie tak?**  \n\n- W krótkofalarskim alfabecie (tzw. **polskim alfabecie fonetycznym**)\
+    \ litera **L** jest wymawiana jako **„Ludwik”** lub **„Leon”**.  \n- Odpowiedź, którą podałeś/podałaś,\
+    \ nie zawierała jednej z tych dwóch nazw (np. napisałeś/napisałaś „L”, „l”, „lima” itp.).  \n\n**Dlaczego\
+    \ to ważne?**  \n\n- Egzamin krótkofalarski wymaga znajomości standardowego alfabetu fonetycznego,\
+    \ ponieważ w transmisjach radiowych używa się go do jednoznacznego przekazywania liter.  \n- Podanie\
+    \ innej nazwy może spowodować nieporozumienie i jest uznawane za błąd.\n\n**Jak poprawnie odpowiedzieć?**\
+    \  \n\n- **Ludwik** – najczęściej używana forma.  \n- **Leon** – alternatywna, również dopuszczalna.\
+    \  \n\nPamiętaj, że wielkość liter nie ma znaczenia, więc zarówno `LUDWIK`, `ludwik`, `Leon`, jak\
+    \ i `leon` są poprawne.  \n\n---  \n\n*Krótka rada:* przed egzaminem przećwicz wymowę wszystkich liter\
+    \ alfabetu fonetycznego, aby w stresie nie pomylić się przy udzielaniu odpowiedzi. Powodzenia!"
+  - "**Jak literujesz literę „L”?**\n\n- **Ludwik**  \n- **Leon**  \n\n( Wielkość liter nie ma znaczenia\
+    \ – można napisać np. *ludwik* lub *LEON*.)"
+- type: open
+  text: Jak brzmi słowo przypisane literze "Ł"?
+  answers:
+  - Łukasz
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź „Łukasz” jest prawidłowa, ponieważ w tym zadaniu szukamy\
+    \ wyrazu rozpoczynającego się od litery **Ł**. „Łukasz” spełnia ten warunek – zaczyna się od **Ł**\
+    \ i jest jedynym podanym słowem, które pasuje do wymogu.  \n\n*Poprawna odpowiedź przyjmuje dowolną\
+    \ wielkość liter, więc „Łukasz”, „łukasz” czy „ŁUKASZ” są równoważne.*"
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n1. **Pytanie**: *„Jak brzmi słowo przypisane literze\
+    \ ‚Ł‘?”*  \n   - Oczekiwane jest **dokładne słowo**, które w systemie egzaminacyjnym jest przypisane\
+    \ tej literze.\n\n2. **Poprawna odpowiedź**: `Łukasz` (wielkość liter nie ma znaczenia).  \n   - Nawet\
+    \ jeśli wpiszesz `łukasz`, `Łukasz`, `ŁUKASZ` – zostanie przyjęte.\n\n3. **Typowe przyczyny błędu**:\
+    \  \n   - **Inne słowo** – np. `Łódź`, `Łąka`, `Łańcuch`.  \n   - **Brak litery „Ł”** – np. wpisanie\
+    \ `Lukasz` bez ogonka.  \n   - **Zła forma** – np. `Łukasha`, `Łukasza`.\n\n4. **Jak naprawić odpowiedź**:\
+    \  \n   - Wpisz dokładnie `Łukasz` (dowolna wielkość liter).  \n   - Upewnij się, że używasz polskiego\
+    \ znaku „Ł” (nie „L”).\n\n---\n\n**Podsumowanie**  \nTwoja odpowiedź nie zawierała słowa **Łukasz**\
+    \ lub nie użyła poprawnego znaku „Ł”. Wpisz to słowo (np. `Łukasz`) i otrzymasz prawidłowy wynik."
+  - '**Łukasz** (wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jakim imieniem nazywasz literę "M"?
+  answers:
+  - Maria
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź „Maria” jest prawidłowa, ponieważ w polskim systemie\
+    \ ortograficznym litera **M** jest wymawiana jako **„Maria”** (tak jak wszystkie inne litery mają\
+    \ swoje nazwy w alfabecie). Wielkość liter nie ma znaczenia – zarówno „Maria”, jak i „maria” zostaną\
+    \ uznane za poprawne."
+  - "**Co poszło nie tak?**  \n\n- Pytanie wymagało podania **imienia, którym nazywasz literę „M”**. \
+    \ \n- Jedyną akceptowaną odpowiedzią jest **„Maria”** (dowolna wielkość liter, np. `maria`, `MARIA`).\
+    \  \n- Inna nazwa (np. *Michał, Monika, Micha* itp.) nie spełnia kryterium, więc system uznał ją za\
+    \ błąd.\n\n**Dlaczego tak jest?**  \n\n- W zadaniu przyjęto jedną, ustaloną odpowiedź – „Maria”. \
+    \ \n- Nawet jeśli w rzeczywistości używasz innego imienia, ocena jest automatyczna i nie bierze pod\
+    \ uwagę alternatywnych odpowiedzi.\n\n**Jak poprawić odpowiedź?**  \n\n- Wpisz po prostu `Maria` (lub\
+    \ `maria`, `MARIA`).  \n- Unikaj dodatkowych spacji, znaków interpunkcyjnych czy innych słów.\n\n\
+    Krótko: podaj dokładnie **„Maria”**, ignorując wielkość liter, a odpowiedź zostanie uznana za poprawną."
+  - '**Maria** (wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jakie słowo stosujesz dla litery "N"?
+  answers:
+  - Natalia
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź „Natalia” jest prawidłowa, ponieważ w zadaniu otwartym dla litery\
+    \ **N** przyjęto właśnie to słowo jako poprawny wybór (rozróżnienie wielkości liter nie ma znaczenia).\
+    \ Dobra robota!"
+  - "**Dlaczego odpowiedź była błędna?**\n\n- W zadaniu otwartym pytano o **słowo używane dla litery „N”**\
+    \ w alfabecie „krótkofalarskim”.\n- **Poprawna odpowiedź** to **„Natalia”** (dowolna kombinacja wielkości\
+    \ liter, np. *natalia*, *NATALIA*).\n- Jeśli podałeś inne słowo, liczbę, pojedynczą literę lub nazwę\
+    \ niezgodną z ustalonym słownikiem, nie spełnia to wymogu zadania.\n\n**Co zrobić, aby uzyskać poprawną\
+    \ odpowiedź?**\n\n1. Wpisz dokładnie słowo **Natalia**.  \n2. Nie dodawaj dodatkowych znaków (np.\
+    \ kropek, cyfr).  \n3. Wielkość liter nie ma znaczenia – akceptowane są wszystkie warianty (`Natalia`,\
+    \ `natalia`, `NATALIA`).\n\nPamiętaj, że w teście liczy się **zgodność ze słownikiem** określonym\
+    \ w instrukcji, a nie własna interpretacja. Jeśli zastosujesz się do powyższych wskazówek, odpowiedź\
+    \ zostanie uznana za prawidłową."
+  - '**Natalia**  (wielkość liter nie ma znaczenia)'
+- type: open
+  text: Jak wywołujesz literę "O"?
+  answers:
+  - Olga
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„Olga”** jest prawidłowa, ponieważ w polskim alfabecie fonetycznym\
+    \ litera **O** jest wymawiana jako *Olga*. Zgodnie z przyjętą konwencją wielkość liter nie ma znaczenia\
+    \ – zarówno „Olga”, jak i „olga” spełniają wymóg. \n\nDzięki temu można jednoznacznie i wyraźnie przekazać\
+    \ znak **O** w komunikacji ustnej. \U0001F389"
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n- Zadanie pyta: *„Jak wywołujesz literę ‘O’?”*  \n- W\
+    \ egzaminie przyjęto **kod słowny** jako odpowiedź – **„Olga”**.  \n- Wielkość liter nie ma znaczenia,\
+    \ więc dopuszczalne są np. `olga`, `OlGa` itp.  \n- Odpowiedzi inne niż ten kod (np. po prostu „O”,\
+    \ „Ola”, „0”) nie spełniają wymogu i są uznawane za błąd.\n\n**Jak poprawić odpowiedź**\n\nPo prostu\
+    \ wpisz słowo **Olga** (dowolna kombinacja małych i wielkich liter).  \n\n> Przykład poprawnej odpowiedzi:\
+    \ `Olga` lub `olga`.  \n\nPamiętaj, że w tym egzaminie każda litera alfabetu ma swój ustalony kod\
+    \ słowny, a dla „O” jest to właśnie **Olga**. Powodzenia!"
+  - "**Odpowiedź:** `Olga`  \n\n*Wielkość liter nie ma znaczenia – akceptowane są także formy takie jak\
+    \ **OLGA**, **OlGa** itp.*"
+- type: open
+  text: Jak literujesz literę "P"?
+  answers:
+  - Paweł
+  - Piotr
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź „Paweł” (lub „Piotr”) jest prawidłowa, ponieważ w języku polskim przy\
+    \ literowaniu litery **P** używa się imienia zaczynającego się na tę literę. Wielkość liter nie ma\
+    \ znaczenia – liczy się sam dźwięk i odpowiadająca mu nazwa."
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n1. **Prawidłowy format** – przy literowaniu litery **„P”**\
+    \ akceptowane są wyłącznie dwie formy:  \n   - `Paweł`  \n   - `Piotr`  \n\n2. **Wielkość liter nie\
+    \ ma znaczenia** – zarówno `paweł`, `PAWEŁ`, `Piotr`, jak i `PIOTR` są uznawane za poprawne.\n\n3.\
+    \ **Inne odpowiedzi** (np. „Pe”, „P‑e”, „p” itp.) nie spełniają wymogu podania jednego z dopuszczonych\
+    \ imion, dlatego są klasyfikowane jako błąd.\n\n**Jak poprawić odpowiedź?**  \nWystarczy napisać jedno\
+    \ z dopuszczonych imion, np.:\n\n```\nPaweł\n```\nlub\n```\nPiotr\n```\n\nPamiętaj, że kolejność liter\
+    \ w imieniu nie ma znaczenia – liczy się samo imię."
+  - '**Paweł** (lub **Piotr**) – oba są poprawnymi sposobami literowania litery „P”.'
+- type: open
+  text: Jakie słowo przypisano literze "Q"?
+  answers:
+  - Quebec
+  - ku
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź **„Quebec”** (lub **„ku”**) jest prawidłowa, ponieważ\
+    \ w przyjętym zestawie przypisań litera **Q** jest kojarzona właśnie z tym słowem.  \n\n- **„Quebec”**\
+    \ – tradycyjny kod fonetyczny NATO, używany do jednoznacznego przekazywania litery Q w komunikacji\
+    \ radiowej.  \n- **„ku”** – polska wersja fonetyczna, zachowująca tę samą wymowę początkową, więc\
+    \ również spełnia kryterium przypisania.\n\nDlatego obie formy uznaje się za poprawne.  \n\n---  \n\
+    \n*Powodzenia w dalszej nauce!*"
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n1. **Zadanie wymaga podania konkretnego słowa** – w zestawie\
+    \ znak‑słowo litera „Q” jest przypisana do **„Quebec”** (lub jego fonetycznego odpowiednika **„ku”**).\
+    \  \n2. **Inne warianty nie spełniają kryterium** – np. samo „Q”, „Qu”, „queue” itp. nie są uznawane,\
+    \ ponieważ nie znajdują się w oficjalnym słowniku przypisań.  \n3. **Wielkość liter nie ma znaczenia**\
+    \ – zarówno „Quebec”, jak i „quebec” (czy „KU”, „ku”) będą ocenione jako poprawne.\n\n**Jak naprawić\
+    \ błąd?**  \nWpisz dokładnie jedno z dopuszczalnych słów:\n\n- `Quebec`  *(lub `quebec`)*  \n- `ku`\
+    \      *(lub `KU`)*\n\nPamiętaj, że inne odpowiedzi, nawet jeśli brzmią podobnie, nie zostaną przyjęte."
+  - '**Quebec**  *(alternatywnie: **ku**)*'
+- type: open
+  text: Jakie słowo przypisano literze "R"?
+  answers:
+  - Roman
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nSłowo **„Roman”** jest prawidłową odpowiedzią, ponieważ w zadaniu literze\
+    \ **R** przypisano właśnie to słowo – jest to jedyne dopasowanie spełniające wszystkie warunki szyfru.\
+    \  \n\nDzięki temu rozwiązaniu poprawnie odgadłeś/odgadłaś przyporządkowanie. Brawo!"
+  - "**Dlaczego odpowiedź była nieprawidłowa?**\n\n- W zadaniu trzeba podać **słowo przypisane literze\
+    \ „R”**.  \n- Według klucza odpowiedzi jedyną dopuszczalną odpowiedzią jest **„Roman”** (wielkość\
+    \ liter nie ma znaczenia).  \n- Każde inne słowo, nawet jeśli brzmi podobnie lub ma podobne znaczenie,\
+    \ nie spełnia wymogu zadania, więc odpowiedź zostaje uznana za błędną.  \n\n*Krótko mówiąc – podane\
+    \ słowo nie było „Roman”, dlatego odpowiedź została odrzucona.*"
+  - '**Odpowiedź:** `Roman`  *(wielkość liter nie ma znaczenia)*'
+- type: open
+  text: Jak brzmi słowo dla litery "S"?
+  answers:
+  - Stanisław
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Stanisław”** jest prawidłowa, ponieważ w zadaniu otwartym dla litery\
+    \ **„S”** wymagana jest właśnie nazwa zaczynająca się od tej litery. Formę zapisu można podać dowolnie\
+    \ – wielkość liter nie ma znaczenia. \U0001F389"
+  - "**Co poszło nie tak?**  \n\n- Zadanie wymaga podania **dokładnie tego słowa**, które jest przypisane\
+    \ do litery **„S”** w zestawie egzaminacyjnym.  \n- Poprawna odpowiedź to **„Stanisław”** – wielkość\
+    \ liter nie ma znaczenia, więc akceptowane są `Stanisław`, `stanisław`, `STANISŁAW` itp.  \n- Każde\
+    \ inne słowo (np. *samochód*, *szczur*, *słoń*…) nie spełnia wymogu, ponieważ nie jest tym, które\
+    \ zostało wyznaczone w materiałach egzaminacyjnych.  \n\n**Dlaczego Twoja odpowiedź jest błędna?**\
+    \  \n\n1. **Niezgodność z listą słów** – w oficjalnym kluczu odpowiedzi dla litery „S” znajduje się\
+    \ wyłącznie „Stanisław”.  \n2. **Brak dopuszczalności synonimów** – egzamin nie przyjmuje zamienników,\
+    \ nawet jeśli zaczynają się na tę samą literę.  \n\n**Jak uniknąć podobnych pomyłek?**  \n\n- Przed\
+    \ odpowiedzią sprawdź **oficjalny zestaw słów** (np. w podręczniku lub arkuszu egzaminacyjnym).  \n\
+    - Pamiętaj, że **jedynie podane w zestawie słowo** jest uznawane za prawidłowe, niezależnie od tego,\
+    \ czy jest to rzeczownik, imię czy inna część mowy.  \n\nJeśli masz wątpliwości co do kolejnych liter,\
+    \ odwołaj się do listy źródłowej – to gwarantuje poprawność Twoich odpowiedzi. Powodzenia!"
+  - "**Odpowiedź:** `Stanisław`  \n\n*(Wielkość liter nie ma znaczenia – akceptowane są także formy `stanisław`,\
+    \ `STANISŁAW` itp.)*"
+- type: open
+  text: Jakie imię oznacza literę "T"?
+  answers:
+  - Tadeusz
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„Tadeusz”** jest prawidłowa, ponieważ w zadaniu chodziło o\
+    \ podanie imienia rozpoczynającego się od litery **T**. Imię *Tadeusz* spełnia ten warunek, a wielkość\
+    \ liter nie ma znaczenia. \U0001F44D"
+  - "**Co poszło nie tak?**  \n\n- Pytanie brzmiało: *„Jakie imię oznacza literę „T”?”*  \n- Poprawna\
+    \ odpowiedź to **„Tadeusz”** (wielkość liter nie ma znaczenia).  \n\nJeśli podałeś inne imię, pustą\
+    \ odpowiedź lub napisałeś np. „t”, to nie spełnia wymogu zadania, ponieważ wymagana jest **pełna forma\
+    \ imienia**.  \n\n**Jak poprawić odpowiedź**  \n\n```text\nTadeusz\n```\n\nlub  \n\n```text\ntadeusz\n\
+    ```  \n\nObie wersje są akceptowane, ponieważ system nie rozróżnia wielkości liter.  \n\nPamiętaj,\
+    \ że w tego typu zadaniach otwartych kluczowe jest podanie **dokładnie tego słowa, które jest wskazane\
+    \ w kryteriach**. Powodzenia w dalszej nauce!"
+  - "**Odpowiedź:** `Tadeusz`  \n\nLitera **T** jest przypisywana imieniu **Tadeusz** (wielkość liter\
+    \ nie ma znaczenia)."
+- type: open
+  text: Jak wymawiasz literę "U" w tym systemie?
+  answers:
+  - Urszula
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„Urszula”** jest prawidłowa, ponieważ w przyjętym systemie\
+    \ wymowy litera **U** jest wymawiana właśnie tak – nazwą „Urszula”. Wielkość liter nie ma znaczenia,\
+    \ więc zarówno `Urszula`, `urszula`, jak i `URSZULA` są poprawne."
+  - "**Co poszło nie tak?**  \n\n- **Pytanie:** *Jak wymawiasz literę „U” w tym systemie?*  \n- **Poprawna\
+    \ odpowiedź:** `Urszula` (wielkość liter nie ma znaczenia).  \n\nJeśli podałeś inną frazę (np. „U”,\
+    \ „u”, „U‑like”, „U‑sound”), system jej nie uznał, ponieważ wymagana jest **konkretna nazwa fonetyczna**\
+    \ – słowo **Urszula**.  \n\n### Dlaczego tak jest?\n1. **Jednoznaczność** – w systemie egzaminacyjnym\
+    \ każda litera ma przypisaną stałą nazwę. Dla „U” jest to *Urszula*.\n2. **Ignorowanie wielkości**\
+    \ – `urszula`, `Urszula` i `URSZULA` są traktowane tak samo; ważna jest jedynie kolejność znaków.\n\
+    3. **Inne odpowiedzi** nie spełniają kryterium dopasowania tekstowego, więc zostają odrzucone.\n\n\
+    ### Co zrobić następnym razem?\n- Wpisz dokładnie słowo **Urszula** (bez dodatkowych spacji, znaków\
+    \ ani opisów).\n- Nie martw się o wielkość liter – system ją pomija.\n\nPowodzenia w dalszych przygotowaniach!\
+    \ \U0001F680"
+  - '**Urszula**'
+- type: open
+  text: Jak literujesz literę "V"
+  answers:
+  - Violetta
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź „Violetta” jest prawidłowa, ponieważ w alfabecie fonetycznym\
+    \ literę **V** wymawia się właśnie jako **Violetta** (wielkość liter nie ma znaczenia). Dzięki temu\
+    \ wiadomość jest jednoznaczna i spełnia wymogi egzaminu. \U0001F389"
+  - "**Co poszło nie tak?**\n\n- Pytanie brzmiało: *„Jak literujesz literę „V”?”*  \n- W testach ortograficznych\
+    \ (np. służbowych, wojskowych) przyjęto **kod NATO** – czyli podaje się nazwę słowa zaczynającego\
+    \ się na daną literę.  \n- Dla litery **V** prawidłowa odpowiedź to **„Violetta”** (wielkość liter\
+    \ jest dowolna).  \n\n**Dlaczego Twoja odpowiedź była niepoprawna?**  \n- Zamiast podać kod „Violetta”\
+    \ podałeś inną nazwę (np. „Victor”, „Vasili” itp.).  \n- Tego typu kody nie są akceptowane w tym konkretnym\
+    \ egzaminie – jedynie ustalona lista jest uznawana.\n\n**Jak uniknąć pomyłki w przyszłości?**  \n\n\
+    1. **Zapamiętaj listę kodów NATO** (Alfa, Bravo, Charlie, …, **Violetta**, …, Zulu).  \n2. **Sprawdzaj**\
+    \ w materiałach egzaminacyjnych, które słowo jest przypisane do danej litery.  \n3. **Ćwicz** wymowę\
+    \ i zapis: *„V – Violetta”*.\n\nPamiętaj: **kluczowa jest dokładna forma słowa, a nie jedynie dowolna\
+    \ nazwa zaczynająca się na tę literę**. Powodzenia w dalszej nauce!"
+  - "**Litera „V”** – **Violetta**  \n\n(rozmiar liter nie ma znaczenia)."
+- type: open
+  text: Jakie słowo oznacza literę "W"?
+  answers:
+  - Wanda
+  - Wacław
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nTwoja odpowiedź **„Wanda”** (lub **„Wacław**)** jest prawidłowa, ponieważ\
+    \ jest to słowo, które w języku polskim służy do oznaczenia litery **W** – rozpoczyna się właśnie\
+    \ od tej litery i spełnia wymóg zadania. Wielkość liter nie ma znaczenia, więc obie formy są akceptowane.\
+    \ Dobra robota!"
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n1. **Zadanie wymaga podania słowa, które *oznacza* literę\
+    \ „W”.**  \n   W testach tego typu przyjmuje się jedynie ustalone nazwy liter – w języku polskim są\
+    \ to imiona **Wanda** lub **Wacław** (bez względu na wielkość liter).\n\n2. **Inne słowa, choć zaczynają\
+    \ się na „W”, nie spełniają wymogu.**  \n   Przykłady takie jak *„woda”*, *„wieża”* czy *„wiosna”*\
+    \ opisują przedmioty lub pojęcia, a nie nazwę litery. Dlatego nie są uznawane za poprawne.\n\n3. **Kryterium\
+    \ poprawności jest więc jedynie dopasowanie do jednej z dopuszczalnych nazw.**  \n   Jeśli odpowiedź\
+    \ nie była ani *Wanda*, ani *Wacław* (w dowolnej kombinacji małych/ wielkich liter), zostaje uznana\
+    \ za błąd.\n\n**Jak poprawić odpowiedź?**  \nNapisz po prostu **Wanda** lub **Wacław** (np. `Wanda`,\
+    \ `wacław`). To spełni warunek zadania."
+  - '**Odpowiedź:** `Wanda` lub `Wacław` (wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jakim słowem literujesz literę "X"?
+  answers:
+  - Xsawery
+  - Xsantypa
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź jest poprawna, ponieważ w alfabecie fonetycznym litery **X**\
+    \ wymawia się jako **„X‑sawery”** albo **„X‑santypa”**.  \nZasada nie uwzględnia wielkości liter,\
+    \ więc zarówno `Xsawery`, `xsawery`, `Xsantypa` jak i `xsantypa` spełniają wymóg zadania.  \n\nDobra\
+    \ robota! \U0001F389"
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n1. **Wymagany format** – w pytaniu chodzi o **słowo,\
+    \ które służy do literowania litery „X”** w alfabecie.  \n   Poprawne przykłady to:\n   - `Xsawery`\n\
+    \   - `Xsantypa`  \n\n   (wielkość liter nie ma znaczenia).\n\n2. **Częsty błąd** – podano:\n   -\
+    \ samą literę „X”,\n   - słowo nie zaczynające się od „X”,\n   - lub nazwę, która nie jest przyjętą\
+    \ formą do literowania (np. „Xyloph” itp.).\n\n3. **Dlaczego tak jest** – w polskim systemie literowania\
+    \ przy literze **X** używa się wyrazów rozpoczynających się od tej litery i zawierających **X** jako\
+    \ pierwszą literę, aby uniknąć niejasności.  \n\n**Jak poprawić odpowiedź?**  \nWpisz dowolne słowo\
+    \ zaczynające się od „X”, które spełnia powyższy warunek, np.:\n\n```\nXsawery\n```\n\nlub\n\n```\n\
+    Xsantypa\n```\n\nPamiętaj, że wielkość liter jest dowolna (`xsawery`, `XSANTYPA` itp. są akceptowane)."
+  - "**Odpowiedź:**  \n\nLitera **X** jest literowana jako **„Xsawery”** (lub **„Xsantypa”** – wielkość\
+    \ liter nie ma znaczenia).  \n\n---\n\n*Dlaczego?*  \n\nW polskim alfabecie nie ma ustalonej tradycyjnej\
+    \ nazwy dla litery **X**. W egzaminie „ktrotkofalarskim” przyjmuje się jedną z wymienionych form –\
+    \ **Xsawery** lub **Xsantypa** – jako prawidłową literację. Obie są akceptowane, a różnica w wielkości\
+    \ (np. „xsawery”, „XSANTYPA”) nie wpływa na ocenę."
+- type: open
+  text: Jak literujesz literę "Y"?
+  answers:
+  - Ypsylon
+  - Ipsilon
+  explanations:
+  - "Gratulacje! \U0001F389  \nTwoja odpowiedź **„Ypsylon”** (lub **„Ipsilon”**) jest prawidłowa, ponieważ\
+    \ w języku polskim litera **Y** wymawiana jest jako *ypsylon* – tak właśnie się ją literuje w alfabecie.\
+    \ Dobrej pracy przy dalszych przygotowaniach!"
+  - "**Co poszło nie tak?**\n\nW zadaniu otwartym „Jak literujesz literę „Y”?” wymagana jest **nazwa fonetyczna**\
+    \ tej litery, a nie jej wymowa ani opis graficzny.  \n\nPoprawne odpowiedzi to:\n\n- `Ypsylon`  \n\
+    - `Ipsilon`  \n\n(wielkość liter nie ma znaczenia).\n\n**Dlaczego Twoja odpowiedź jest błędna?** \
+    \ \n‑ Jeśli napisałeś/napisałaś np. *„wy”*, *„igrek”* lub podać opis graficzny, nie jest to nazwa\
+    \ fonetyczna litery, więc nie spełnia kryterium zadania.  \n\n**Jak poprawić odpowiedź?**  \nPo prostu\
+    \ podaj jedną z akceptowanych nazw:\n\n```\nYpsylon\n```\nlub\n```\nIpsilon\n```\n\nPamiętaj, że przy\
+    \ ocenie nie rozróżnia się wielkości liter, więc `ypsylon`, `YPSILON` itp. również będą uznane za\
+    \ poprawne."
+  - "**Litera „Y”** literuje się jako:\n\n- **Ypsylon**  \n- **Ipsilon**  \n\n(rozmiar liter nie ma znaczenia)."
+- type: open
+  text: Jakie słowo przypisano literze "Z"?
+  answers:
+  - Zygmunt
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź „Zygmunt” jest prawidłowa, ponieważ w przydzielonym zestawie\
+    \ litera **Z** została sparowana właśnie z tym słowem. Wielkość liter nie ma znaczenia, więc zarówno\
+    \ „Zygmunt”, jak i „zyg​munt” są akceptowane."
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n1. **Rozróżnienie wielkości liter nie ma znaczenia**\
+    \ – w zadaniu dopuszczalne są zarówno małe, jak i wielkie litery.  \n2. **Jedyną prawidłową odpowiedzią\
+    \ jest słowo „Zygmunt”**.  \n   - Inne wyrazy zaczynające się na „Z” (np. *zebra*, *złoto*, *zimno*)\
+    \ nie są akceptowane, ponieważ nie zostały przypisane do litery w treści zadania.  \n3. **Błąd najczęściej\
+    \ wynika z**:  \n   - podania niewłaściwego słowa,  \n   - pomyłki w pisowni (np. „Zygmun” zamiast\
+    \ „Zygmunt”),  \n   - lub przypadkowego użycia dodatkowych znaków (spacji, znaków interpunkcyjnych).\n\
+    \n**Jak poprawić odpowiedź?**  \nNapisz po prostu:\n\n```\nZygmunt\n```\n\nlub\n\n```\nzygmunt\n```\n\
+    \ni upewnij się, że nie ma literówek ani dodatkowych znaków. To spełnia wymagania zadania."
+  - '**Zygmunt** (wielkość liter nie ma znaczenia).'

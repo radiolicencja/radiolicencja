@@ -3,111 +3,459 @@ description: Przećwicz każde słowo kodowe ICAO/NATO od litery A do Z.
 slug: nato-phonetic
 image: assets/images/nato_icao.png
 questions:
-  - type: open
-    text: Jakim słowem nadajesz literę "A" w alfabecie NATO?
-    answers:
-      - Alpha
-      - Alfa
-  - type: open
-    text: Jak brzmi oficjalne słowo kodowe dla litery "B"?
-    answers:
-      - Bravo
-  - type: open
-    text: Jakiego słowa używasz, wymawiając literę "C" według standardu NATO?
-    answers:
-      - Charlie
-  - type: open
-    text: Podaj słowo fonetyczne NATO odpowiadające literze "D".
-    answers:
-      - Delta
-  - type: open
-    text: Jakiego słowa używasz podczas nadawania litery "E"?
-    answers:
-      - Echo
-  - type: open
-    text: Jakie hasło fonetyczne reprezentuje literę "F"?
-    answers:
-      - Foxtrot
-  - type: open
-    text: Jakim słowem zgłaszasz literę "G" w łączności wojskowej?
-    answers:
-      - Golf
-  - type: open
-    text: Jakiej nazwy używasz przy literze "H" w alfabecie ICAO/NATO?
-    answers:
-      - Hotel
-  - type: open
-    text: Jak brzmi właściwe słowo fonetyczne dla litery "I"?
-    answers:
-      - India
-  - type: open
-    text: Jakiego słowa użyjesz dla litery "J" na kanale NATO?
-    answers:
-      - Juliett
-      - Juliet
-  - type: open
-    text: Jak identyfikujesz literę "K" w alfabecie fonetycznym?
-    answers:
-      - Kilo
-  - type: open
-    text: Jak wymawiasz literę "L" według standardu fonetycznego?
-    answers:
-      - Lima
-  - type: open
-    text: Jakie słowo odpowiada literze "M" w alfabecie NATO?
-    answers:
-      - Mike
-  - type: open
-    text: Jak brzmi kod NATO dla litery "N"?
-    answers:
-      - November
-  - type: open
-    text: Jakie słowo stosujesz przy literze "O"?
-    answers:
-      - Oscar
-  - type: open
-    text: Jak brzmi fonetyczny odpowiednik litery "P"?
-    answers:
-      - Papa
-  - type: open
-    text: Podaj słowo kodowe powiązane z literą "Q".
-    answers:
-      - Quebec
-  - type: open
-    text: Jakiego wywołania użyjesz dla litery "R"?
-    answers:
-      - Romeo
-  - type: open
-    text: Jak operatorzy wymawiają literę "S" zgodnie z alfabetem NATO?
-    answers:
-      - Sierra
-  - type: open
-    text: Jakie słowo w alfabecie NATO odpowiada literze "T"?
-    answers:
-      - Tango
-  - type: open
-    text: Jak poprawnie nazwać literę "U" w łączności radiowej?
-    answers:
-      - Uniform
-  - type: open
-    text: Jakie słowo sygnalizuje literę "V"?
-    answers:
-      - Victor
-  - type: open
-    text: Jakiego słowa używasz, wywołując literę "W"?
-    answers:
-      - Whiskey
-      - Whisky
-  - type: open
-    text: Jak brzmi fonetyczne słowo dla litery "X"?
-    answers:
-      - X-ray
-      - Xray
-  - type: open
-    text: Jakie słowo oznacza literę "Y" w alfabecie NATO?
-    answers:
-      - Yankee
-  - type: open
-    text: Jakim słowem potwierdzasz literę "Z"?
-    answers:
-      - Zulu
+- type: open
+  text: Jakim słowem nadajesz literę "A" w alfabecie NATO?
+  answers:
+  - Alpha
+  - Alfa
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nW alfabecie NATO litera **„A”** jest oznaczana słowem **„Alpha”**\
+    \ (lub jego polską wersją **„Alfa”**). To właśnie dlatego Twoja odpowiedź jest prawidłowa – spełnia\
+    \ standardowy kod fonetyczny NATO, który służy do jednoznacznego przekazywania liter w komunikacji\
+    \ radiowej i telefonicznej.  \n\n*Poprawna odpowiedź: **Alpha / Alfa***."
+  - "**Co poszło nie tak?**  \n\n- **Pytanie:** „Jakim słowem nadajesz literę **„A”** w alfabecie NATO?”\
+    \  \n- **Poprawne odpowiedzi:** `Alpha` lub `Alfa` (wielkość liter nie ma znaczenia).  \n\nJeżeli\
+    \ podałeś inną nazwę (np. *„Ala”*, *„A”*, *„Adam”* itp.), nie spełnia ona wymogu – w międzynarodowym\
+    \ fonetycznym alfabecie NATO każdej literze przyporządkowuje się **jedno ściśle określone słowo**.\
+    \  \n\nDlatego:\n\n1. **Sprawdź, czy odpowiedź to dokładnie „Alpha” lub „Alfa”.**  \n2. **Nie liczy\
+    \ się wielkość liter** – `alpha`, `ALFA` itp. są również akceptowane.  \n\nJeśli odpowiedź była inna,\
+    \ po prostu zamień ją na jedną z powyższych form i uzyskasz punkt. Powodzenia!"
+  - '**Alpha** (lub **Alfa**) – w alfabecie NATO litera „A” wymawiana jest jako *Alpha/Alfa*.'
+- type: open
+  text: Jak brzmi oficjalne słowo kodowe dla litery "B"?
+  answers:
+  - Bravo
+  explanations:
+  - "**Gratulacje!**  \n\nPoprawna odpowiedź to **„Bravo”**.  \n\nDlaczego? W międzynarodowym alfabecie\
+    \ fonetycznym NATO każdej literze przypisane jest słowo kodowe ułatwiające wyraźną komunikację. Dla\
+    \ litery **B** słowem tym jest **Bravo**, co zapewnia jednoznaczność i minimalizuje ryzyko pomyłek\
+    \ w przekazie.  \n\nTwoja odpowiedź jest więc w pełni prawidłowa. \U0001F389"
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n1. **Kod NATO** – w międzynarodowym alfabecie fonetycznym\
+    \ (tzw. NATO phonetic alphabet) każda litera ma przypisane „słowo kodowe”.  \n2. **Litera „B”** –\
+    \ jej oficjalne słowo kodowe to **„Bravo”**.  \n3. **Rozmiar liter** – wielkość znaków nie ma znaczenia,\
+    \ więc zarówno *bravo*, *BRAVO*, jak i *Bravo* są poprawne.  \n\nJeśli podałeś inną nazwę (np. *Baker*,\
+    \ *Beta*, *B* itp.), nie jest to słowo kodowe obowiązujące w alfabecie NATO, dlatego odpowiedź została\
+    \ odrzucona.  \n\nAby uzyskać pełny wynik, wystarczy wpisać dokładnie **Bravo** (dowolna wielkość\
+    \ liter)."
+  - '**Kod słowny dla litery „B” to:** `Bravo`'
+- type: open
+  text: Jakiego słowa używasz, wymawiając literę "C" według standardu NATO?
+  answers:
+  - Charlie
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Charlie”** jest prawidłowa, ponieważ w alfabecie NATO (tzw. fonetycznym)\
+    \ litera **C** jest reprezentowana właśnie przez to słowo. Dzięki temu w komunikacji radiowej unika\
+    \ się nieporozumień wynikających z podobnie brzmiących liter."
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n- W alfabecie NATO (tzw. fonetycznym) każda litera ma\
+    \ przypisane słowo, które ma być wymawiane w sytuacjach wymagających jednoznacznej identyfikacji (np.\
+    \ w radiokomunikacji).\n- Dla litery **C** przyjęte jest słowo **„Charlie”**.  \n  Inne słowa (np.\
+    \ *Catherine*, *Coco* itp.) nie należą do standardowego zestawu NATO i nie będą uznane za prawidłowe.\n\
+    - Wielkość liter nie ma znaczenia – zarówno `Charlie`, `CHARLIE`, jak i `charlie` są poprawne, ale\
+    \ musi to być dokładnie to słowo.\n\n**Jak poprawnie odpowiedzieć?**  \nNależy napisać (lub wypowiedzieć)\
+    \ **Charlie**. Jeśli popełniono błąd, najprawdopodobniej wpisano inne słowo lub literówkę.  \n\n---\
+    \  \n\n*Podsumowując*: w standardzie NATO litera **C** = **Charlie**. Inne propozycje nie spełniają\
+    \ wymogu."
+  - "**Odpowiedź:** `Charlie`  \n\nW alfabecie NATO litera **C** jest wymawiana jako **Charlie**. Wielkość\
+    \ liter nie ma znaczenia."
+- type: open
+  text: Podaj słowo fonetyczne NATO odpowiadające literze "D".
+  answers:
+  - Delta
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Delta”** jest poprawna, ponieważ w alfabecie fonetycznym NATO litera\
+    \ **D** jest właśnie reprezentowana tym słowem. Wielkość liter nie ma znaczenia – liczy się właściwe\
+    \ słowo kodowe."
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n1. **Zadanie** wymaga podania *słowa fonetycznego NATO*\
+    \ przypisanego do litery **„D”**.  \n2. W międzynarodowym alfabecie NATO jedynym słowem oznaczającym\
+    \ literę **D** jest **„Delta”**.  \n3. Inne słowa (np. „Dog”, „Dora”) nie należą do oficjalnego alfabetu\
+    \ NATO, więc nie spełniają wymogu zadania.\n\n**Poprawna odpowiedź:** `Delta` (wielkość liter nie\
+    \ ma znaczenia)."
+  - '**Delta**'
+- type: open
+  text: Jakiego słowa używasz podczas nadawania litery "E"?
+  answers:
+  - Echo
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nPodczas nadawania litery **E** używa się słowa **„Echo”** – jest\
+    \ to wyraz przyjęty w międzynarodowym alfabecie fonetycznym (NATO). Dzięki niemu odbiorca jednoznacznie\
+    \ rozpoznaje właśnie literę **E**, eliminując ryzyko pomyłki z innymi dźwiękami.  \n\nTwoja odpowiedź\
+    \ jest więc w pełni prawidłowa. ✅"
+  - "**Co poszło nie tak?**  \n\nPodczas nadawania litery **„E”** w alfabecie NATO używa się słowa **„Echo”**.\
+    \  \nTwoja odpowiedź nie zawierała tego słowa, dlatego została uznana za niepoprawną.\n\n**Dlaczego\
+    \ „Echo”?**  \n\n- W alfabecie fonetycznym NATO każdej literze przyporządkowano jedno, łatwe do zrozumienia\
+    \ słowo.  \n- Dla litery **E** wybrano **Echo**, ponieważ jest krótkie, jedno‑syllabowe i nie myli\
+    \ się z innymi słowami w hałaśliwym otoczeniu.\n\n**Jak naprawić błąd?**  \n\nPo prostu wpisz (bez\
+    \ względu na wielkość liter):  \n\n```\nEcho\n```\n\nTo spełnia wymóg zadania i zostanie zaakceptowane\
+    \ jako prawidłowa odpowiedź."
+  - '**Echo**  *(wielkość liter nie ma znaczenia)*'
+- type: open
+  text: Jakie hasło fonetyczne reprezentuje literę "F"?
+  answers:
+  - Foxtrot
+  explanations:
+  - "**Gratulacje!**  \n\nPodana odpowiedź **„Foxtrot”** jest prawidłowa, ponieważ w międzynarodowym alfabecie\
+    \ fonetycznym NATO litera **F** jest oznaczana właśnie tym słowem. Rozpoznanie tego hasła pozwala\
+    \ jednoznacznie odczytać literę „F” w komunikacji głosowej."
+  - "**Błąd:**  \nW odpowiedzi podałeś/łaś niepoprawne hasło fonetyczne.  \n\n**Poprawna odpowiedź:**\
+    \  \n`Foxtrot` (wielkość liter nie ma znaczenia).\n\n**Dlaczego tak jest?**  \nW międzynarodowym alfabecie\
+    \ fonetycznym NATO każda litera ma przypisane jedno, ustalone słowo:\n\n- A – **Alfa**  \n- B – **Bravo**\
+    \  \n- …  \n- **F – Foxtrot**  \n\nNie ma innych dopuszczalnych wariantów (np. „Fokstryt”, „Fokstrot”\
+    \ itp.). Dlatego odpowiedź musiała dokładnie brzmieć **Foxtrot**.  \n\n---  \n*Pamiętaj, że przy tego\
+    \ typu zadaniach liczy się jedynie prawidłowe słowo; wielkość liter i ewentualne spacje są ignorowane.*"
+  - "**Foxtrot**  \n\n(bez względu na wielkość liter)"
+- type: open
+  text: Jakim słowem zgłaszasz literę "G" w łączności wojskowej?
+  answers:
+  - Golf
+  explanations:
+  - "**Gratulacje!**  \n\nW łączności wojskowej używa się alfabetu fonetycznego NATO, w którym każda litera\
+    \ ma przypisane słowo ułatwiające jej wyraźne przekazanie. Dla litery **G** przyjętym słowem jest\
+    \ **„Golf”**. Dlatego Twoja odpowiedź jest prawidłowa."
+  - "**Dlaczego Twoja odpowiedź była niepoprawna?**\n\n- W wojskowej łączności używa się **alfabetu fonetycznego\
+    \ NATO**.  \n- Dla litery **„G”** przyjętym słowem jest **„Golf”** – niezależnie od tego, czy zapiszesz\
+    \ je małymi czy wielkimi literami.  \n- Inne formy (np. *„G”*, *„Ge”*, *„Gim”*) nie należą do tego\
+    \ alfabetu, dlatego nie są akceptowane w testach.\n\nZapamiętaj:  \n\\[\n\\text{G} \\;\\longrightarrow\\\
+    ; \\text{Golf}\n\\]\n\nTo jedyna prawidłowa odpowiedź w kontekście łączności wojskowej."
+  - "**Odpowiedź:** *Golf*  \n\nW łączności wojskowej litera **G** jest zgłaszana słowem **„Golf”** (wielkość\
+    \ liter nie ma znaczenia)."
+- type: open
+  text: Jakiej nazwy używasz przy literze "H" w alfabecie ICAO/NATO?
+  answers:
+  - Hotel
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nW alfabecie fonetycznym ICAO/NATO litera **H** jest wymawiana jako **„Hotel”**.\
+    \ To właśnie tak zostało ustalone, aby zapewnić jednoznaczną i zrozumiałą komunikację w lotnictwie\
+    \ i innych dziedzinach wymagających precyzyjnego przekazu. Twoja odpowiedź jest więc w pełni prawidłowa."
+  - "**Dlaczego odpowiedź była błędna?**\n\n- W alfabecie ICAO/NATO litera **H** ma przypisaną nazwę **„Hotel”**.\
+    \  \n- Każda inna nazwa (np. *Hugo*, *Harbor* itp.) nie należy do tego standardowego alfabetu i dlatego\
+    \ nie jest akceptowana.  \n- W zapisie nie rozróżnia się wielkości liter – zarówno **hotel**, **Hotel**,\
+    \ jak i **HOTEL** są równoważne.  \n\n**Podsumowanie** – prawidłowa odpowiedź to **Hotel**; inne słowa\
+    \ nie spełniają wymogu użycia oficjalnego fonetycznego słownika NATO."
+  - '**Hotel** – nazwa używana przy literze **H** w alfabecie ICAO/NATO (wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jak brzmi właściwe słowo fonetyczne dla litery "I"?
+  answers:
+  - India
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **„India”** – jest to uznane słowo fonetyczne\
+    \ (kod NATO) dla litery **I**. W alfabecie fonetycznym każda litera ma przypisane słowo, które jest\
+    \ łatwe do zrozumienia w warunkach hałaśliwych lub przy słabym sygnale. Dla „I” używa się właśnie\
+    \ słowa **India**.  \n\n*Wielkość liter nie ma znaczenia – zarówno „India”, jak i „india” są akceptowane.*"
+  - "**Co poszło nie tak?**  \n\n- Zadanie wymaga podania **słowa fonetycznego** z międzynarodowego alfabetu\
+    \ radiotelefonicznego (ICAO) dla litery **„I”**.  \n- W tym alfabecie litera *I* jest wymawiana jako\
+    \ **„India”**.  \n- Wielkość liter nie ma znaczenia – zarówno `India`, `india`, jak i `INDIA` są uznane\
+    \ za poprawne.  \n\n**Dlaczego Twoja odpowiedź jest błędna?**  \n\n- Zostało podane inne słowo (np.\
+    \ *„Igor”*, *„Iguana”* itp.), które nie należy do standardowego alfabetu ICAO.  \n- Tylko **„India”**\
+    \ jest zdefiniowane jako oficjalne słowo fonetyczne dla tej litery, więc każde odchylenie od tej formy\
+    \ jest oceniane jako błąd.  \n\n**Jak uniknąć podobnych pomyłek?**  \n\n1. **Sprawdź listę ICAO**\
+    \ – dla każdej litery istnieje jedynie jedna prawidłowa nazwa.  \n2. **Nie zmieniaj formy** – odmiany\
+    \ gramatyczne, zdrobnienia czy synonimy nie są dopuszczalne.  \n3. **Pamiętaj o nieczułości na wielkość**\
+    \ – `India` = `india` = `INDIA`.  \n\nZatem prawidłowa odpowiedź to po prostu:\n\n> **India**  \n\n\
+    i tym samym spełnia wymóg zadania. Powodzenia w dalszej nauce!"
+  - "**India**  \n\n(rozmiar liter nie ma znaczenia)"
+- type: open
+  text: Jakiego słowa użyjesz dla litery "J" na kanale NATO?
+  answers:
+  - Juliett
+  - Juliet
+  explanations:
+  - "Gratulacje! \U0001F389  \n\n**„Juliett”** (lub **„Juliet”**) to prawidłowe słowo używane w alfabecie\
+    \ fonetycznym NATO dla litery **J**.  \n\nW alfabecie tym każda litera ma przypisane słowo, które\
+    \ ma być wyraźnie słyszalne i jednoznaczne w komunikacji radiowej. Dla **J** przyjęto właśnie formę\
+    \ *Juliett* (czasem spotyka się wariant *Juliet*), dlatego Twoja odpowiedź jest poprawna."
+  - "**Co poszło nie tak?**\n\n- W alfabecie NATO litera **J** jest oznaczana słowem **„Juliett”** (alternatywnie\
+    \ akceptowane jest „Juliet”).  \n- Inne odpowiedzi, np. *„Jabłko”*, *„Jan”* czy niepoprawne warianty\
+    \ pisowni, nie należą do oficjalnego alfabetu NATO.  \n\n**Dlaczego tak jest?**  \n\nAlfabet NATO\
+    \ (tzw. *phonetic alphabet*) został ustalony, aby zapewnić jednoznaczną wymowę w warunkach radiowych\
+    \ i telekomunikacyjnych. Każda litera ma przypisane stałe słowo, a ich lista nie podlega swobodnym\
+    \ modyfikacjom.  \n\n| Litera | Słowo NATO |\n|--------|------------|\n| J      | **Juliett** (lub\
+    \ **Juliet**) |\n\nJeśli użyjesz innego wyrazu, odbiorca nie będzie miał pewności, że chodzi o literę\
+    \ **J**, co może prowadzić do nieporozumień w komunikacji.  \n\n**Jak uniknąć błędu?**  \n- Zapamiętaj,\
+    \ że jedynymi prawidłowymi słowami dla **J** są *Juliett* / *Juliet*.  \n- W razie wątpliwości sprawdź\
+    \ oficjalną listę alfabetu NATO.  \n\nKrótko: Twoja odpowiedź była niezgodna z ustaloną listą – użyj\
+    \ **Juliett** (lub **Juliet**)."
+  - "**Odpowiedź:**  \n`Juliett`  *(również dopuszczalne jest „Juliet”, wielkość liter nie ma znaczenia)*."
+- type: open
+  text: Jak identyfikujesz literę "K" w alfabecie fonetycznym?
+  answers:
+  - Kilo
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„Kilo”** jest prawidłowa, ponieważ w międzynarodowym alfabecie\
+    \ fonetycznym NATO (UFA) litera **$K$** jest oznaczana właśnie tym słowem. Dzięki temu w komunikacji\
+    \ radiowej unika się nieporozumień spowodowanych podobnie brzmiącymi literami.  \n\n*Wielkość liter\
+    \ nie ma znaczenia – zarówno „K”, jak i „k” są wymawiane jako „Kilo”.*"
+  - "**Co było nie tak?**  \n\nW odpowiedzi napisałeś/aś coś innego niż **„Kilo”** (np. *kilo, KILO, Kilo*\
+    \ – to w porządku, ale inna nazwa nie jest).  \n\n**Dlaczego to błąd?**  \n\nW alfabecie fonetycznym\
+    \ NATO każda litera ma przypisaną jedną, ustaloną nazwę. Dla litery **K** jest to wyłącznie **Kilo**.\
+    \ Inne słowa nie są uznawane w kontekście egzaminu.\n\n**Jak poprawić odpowiedź?**  \n\nWystarczy\
+    \ podać nazwę:\n\n```\nKilo\n```\n\nWielkość liter nie ma znaczenia, więc `kilo`, `KILO` lub `Kilo`\
+    \ są wszystkie poprawne.  \n\nPamiętaj, aby zawsze sprawdzać oficjalny spis NATO Phonetic Alphabet\
+    \ przed udzieleniem odpowiedzi."
+  - "**K** – *Kilo*  \n\n(rozmiar liter nie ma znaczenia)."
+- type: open
+  text: Jak wymawiasz literę "L" według standardu fonetycznego?
+  answers:
+  - Lima
+  explanations:
+  - "**Gratulacje!**  \nTwoja odpowiedź jest prawidłowa, ponieważ w międzynarodowym alfabecie fonetycznym\
+    \ (NATO) litera **L** wymawiana jest jako **Lima** – niezależnie od wielkości litery. \U0001F389"
+  - "**Co poszło nie tak?**\n\nW pytaniu chodziło o podanie nazwy litery „L” według międzynarodowego alfabetu\
+    \ fonetycznego (ICAO).  \nPoprawna odpowiedź to:\n\n```\nLima\n```\n\n- **Wielkość liter nie ma znaczenia**\
+    \ – zarówno `Lima`, `lima`, jak i `LIMA` są akceptowane.  \n- Inna nazwa (np. *„el”*, *„l”* itp.)\
+    \ nie jest zgodna ze standardem ICAO, dlatego odpowiedź została uznana za niepoprawną.\n\n**Jak uniknąć\
+    \ błędu?**  \nPo prostu wpisz **Lima** (bez dodatkowych znaków i z dowolną wielkością liter)."
+  - '**Lima**'
+- type: open
+  text: Jakie słowo odpowiada literze "M" w alfabecie NATO?
+  answers:
+  - Mike
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nW alfabecie NATO każda litera ma przypisane słowo fonetyczne, które ułatwia\
+    \ jednoznaczne przekazywanie wiadomości. Dla litery **M** słowem tym jest **„Mike”**. Dlatego Twoja\
+    \ odpowiedź jest prawidłowa."
+  - "**Co poszło nie tak?**  \n\nUdzieliłeś odpowiedzi, która nie jest jedną z dopuszczalnych w zadaniu.\
+    \  \nW alfabecie NATO (tzw. **NATO phonetic alphabet**) każdej literze przyporządkowane jest konkretne\
+    \ słowo:\n\n- **A** – Alfa  \n- **B** – Bravo  \n- …  \n- **M** – **Mike**  \n\nDlatego jedyną prawidłową\
+    \ odpowiedzią na pytanie *„Jakie słowo odpowiada literze ‚M‘ w alfabecie NATO?”* jest **„Mike”** (wielkość\
+    \ liter jest dowolna).  \n\nJeśli podałeś inny wyraz (np. *„Mango”, „Martin”* itp.), nie spełnia on\
+    \ wymogu – nie jest on częścią oficjalnego alfabetu NATO.  \n\n*Pamiętaj*: przy tego typu pytaniach\
+    \ liczy się dokładne dopasowanie do ustalonej listy słów, a nie dowolne słowo zaczynające się na tę\
+    \ samą literę."
+  - '**Odpowiedź:** `Mike` (wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jak brzmi kod NATO dla litery "N"?
+  answers:
+  - November
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź **„November”** jest prawidłowa, ponieważ w międzynarodowym alfabecie\
+    \ NATO (tzw. NATO phonetic alphabet) litera **N** jest oznaczana właśnie słowem **November**. Dzięki\
+    \ temu w komunikacji radiowej unika się nieporozumień wynikających z podobnie brzmiących liter.  \n\
+    \nŚwietna robota – tak dalej!"
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\nKod NATO (tzw. alfabet fonetyczny NATO) przypisuje każdej\
+    \ literze określone słowo, które służy do wyraźnego przekazywania liter w radiokomunikacji.  \n\n\
+    - Dla litery **N** słowo to **“November”**.  \n- Inne słowa (np. *“Nectar”, “Noble”* itp.) nie należą\
+    \ do oficjalnego alfabetu NATO, więc nie są akceptowane jako prawidłowa odpowiedź.\n\n**Podsumowanie**\
+    \  \nPoprawna odpowiedź: `November` (wielkość liter nie ma znaczenia).  \n\nTwoja odpowiedź była niezgodna\
+    \ z oficjalnym zestawem słów alfabetu NATO, dlatego została uznana za błąd."
+  - '**Kod NATO dla litery „N”**: `November`'
+- type: open
+  text: Jakie słowo stosujesz przy literze "O"?
+  answers:
+  - Oscar
+  explanations:
+  - "Gratulacje! \U0001F389  \n\n**Poprawna odpowiedź:** **Oscar**  \n\nDlaczego jest to prawidłowe? W\
+    \ alfabecie NATO (czyli w systemie używanym przy literowaniu wyrazów na egzaminie krótkofalarskim)\
+    \ litera **„O”** jest oznaczana słowem **„Oscar”**. Wartość tej odpowiedzi nie zależy od wielkości\
+    \ liter, więc zarówno *Oscar*, jak i *oscar* są akceptowane. \n\nDobra robota! \U0001F44D"
+  - "**Co poszło nie tak?**\n\n- W zadaniu pytano o **słowo używane przy literze „O”** w alfabecie fonetycznym\
+    \ NATO.  \n- Poprawna odpowiedź to **„Oscar”** (wielkość liter nie ma znaczenia).  \n- Inna odpowiedź,\
+    \ np. „Owca”, „Ołówek” czy cokolwiek innego, nie spełnia wymogu – alfabet fonetyczny ma ściśle określone\
+    \ słowa dla każdej litery.\n\n**Dlaczego „Oscar”?**  \n\n\\[\n\\text{Alfabet NATO: } \\; A\\!-\\!Alfa,\\\
+    ; B\\!-\\!Bravo,\\; \\dots ,\\; O\\!-\\!\\textbf{Oscar},\\; \\dots ,\\; Z\\!-\\!Zulu\n\\]\n\nUżycie\
+    \ innego wyrazu powoduje niezgodność z ustalonym standardem, dlatego odpowiedź została oceniona jako\
+    \ niepoprawna.  \n\n**Jak uniknąć błędu:**  \n- Zapamiętaj pełny zestaw 26 słów alfabetu NATO.  \n\
+    - Przy każdej literze podawaj dokładnie to słowo, nie modyfikując go ani nie zamieniając na synonim.\
+    \  \n\nJeśli potrzebujesz krótkiej listy wszystkich słów, daj znać – chętnie pomogę!"
+  - '**Oscar** (wielkość liter nie ma znaczenia)'
+- type: open
+  text: Jak brzmi fonetyczny odpowiednik litery "P"?
+  answers:
+  - Papa
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Papa”** jest poprawna, ponieważ w polskim alfabecie fonetycznym\
+    \ litera **P** wymawiana jest właśnie jako *Papa*. Wielkość liter nie ma znaczenia – liczy się jedynie\
+    \ właściwa forma fonetyczna."
+  - "**Dlaczego odpowiedź była błędna?**\n\n- W alfabecie fonetycznym (NATO) każda litera ma przypisane\
+    \ słowo, które służy do jednoznacznego jej wymawiania.  \n- Dla litery **P** przyjętym słowem jest\
+    \ **„Papa”**.  \n\nJeśli podałeś inny wyraz (np. *„Peter”*, *„Piekarz”* lub jakiekolwiek inne), nie\
+    \ jest on zgodny z oficjalnym zestawem NATO, dlatego odpowiedź została uznana za niepoprawną.  \n\n\
+    **Warto pamiętać:**\n\n- Wielkość liter nie ma znaczenia – liczy się samo słowo.  \n- Alfabety fonetyczne\
+    \ innych organizacji (np. policja, marynarka) mogą się różnić, ale w kontekście egzaminu przyjmowany\
+    \ jest standard NATO.  \n\nAby uzyskać pełny punkt, wystarczy napisać **„Papa”**."
+  - '**Fonetyczny odpowiednik litery „P” to:**
+
+
+    **Papa**'
+- type: open
+  text: Podaj słowo kodowe powiązane z literą "Q".
+  answers:
+  - Quebec
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź **„Quebec”** jest prawidłowa, ponieważ w alfabecie\
+    \ fonetycznym (NATO) słowo to jest przypisane do litery **Q**.  \nW zapisie nie ma znaczenia wielkość\
+    \ liter – zarówno *Quebec*, *QUEBEC*, jak i *quebec* spełniają wymóg.  \n\nDobra robota!"
+  - "**Co poszło nie tak?**  \n\n- **Wymagane słowo kodowe:** `Quebec` (wielkość liter nie ma znaczenia).\
+    \  \n- **Udzielona odpowiedź** nie była tym słowem, dlatego została odrzucona.  \n\n**Dlaczego inne\
+    \ odpowiedzi nie spełniają wymogu?**  \n\n| Twoja odpowiedź | Dlaczego jest niepoprawna |\n|-----------------|---------------------------|\n\
+    | *…* | Nie jest to słowo powiązane z literą **Q** w przyjętym zestawie kodów. |\n\n**Jak poprawić\
+    \ odpowiedź**  \nPo prostu wpisz `Quebec` (np. `quebec`, `QUEBEC` lub `QuEbEc`). To jedyne akceptowane\
+    \ rozwiązanie dla litery **Q**.  \n\n---  \n\n*Pamiętaj: przy kolejnych pytaniach podawaj dokładnie\
+    \ słowo wskazane w kluczu, ignorując wielkość liter.*"
+  - "**Odpowiedź:** `Quebec`  \n\n*Dlaczego?*  \nW zestawie kodów literowych używanym w zadaniach (np.\
+    \ NATO, ICAO) litera **Q** jest przypisana do słowa **Quebec**. Wielkość liter nie ma znaczenia –\
+    \ akceptowane są zarówno `Quebec`, `QUEBEC`, jak i `quebec`."
+- type: open
+  text: Jakiego wywołania użyjesz dla litery "R"?
+  answers:
+  - Romeo
+  explanations:
+  - "**Gratulacje!**  \n\nWywołanie dla litery **„R”** to **„Romeo”**.  \nW alfabecie fonetycznym NATO\
+    \ każda litera ma przypisaną stałą nazwę, a dla „R” jest to *Romeo*. Rozróżnienie wielkości liter\
+    \ nie ma znaczenia – zarówno `R`, jak i `r` mapują na to samo wywołanie."
+  - "**Co poszło nie tak?**\n\n- **Pytanie:** „Jakiego wywołania użyjesz dla litery **R**?”  \n- **Poprawna\
+    \ odpowiedź:** `Romeo` (wielkość liter nie ma znaczenia).  \n\nTwoja odpowiedź była inna (np. `R`,\
+    \ `r`, `R-...`), dlatego system ją odrzucił.  \n\n**Dlaczego `Romeo`?**  \nW alfabecie fonetycznym\
+    \ NATO (używanym w zadaniach tego typu) każdej literze przypisuje się jedno „wywołanie”:\n\n\\[\n\
+    R \\;\\rightarrow\\; \\text{Romeo}\n\\]\n\nNiezależnie od tego, czy wpiszesz `romeo`, `ROMEO` czy\
+    \ `Romeo`, odpowiedź zostanie uznana za poprawną.  \n\n**Jak naprawić błąd?**  \nWpisz po prostu:\n\
+    \n```\nRomeo\n```\n\ni przejdź do kolejnego pytania. Powodzenia!"
+  - "**Odpowiedź:** `Romeo`  \n\n*(Wielkość liter nie ma znaczenia – akceptowane są także „romeo”, „ROMEO”\
+    \ itp.)*"
+- type: open
+  text: Jak operatorzy wymawiają literę "S" zgodnie z alfabetem NATO?
+  answers:
+  - Sierra
+  explanations:
+  - "**Gratulacje!**  \n\nTwoja odpowiedź jest prawidłowa, ponieważ w NATO phonetic alphabet litera **S**\
+    \ jest wymawiana jako **„Sierra”**. To standardowa nazwa używana w komunikacji radiowej i wojskowej,\
+    \ zapewniająca jednoznaczność przekazu.  \n\nDobra robota! \U0001F389"
+  - "**Co było nie tak?**  \n\nUżytkownik podał inną nazwę (np. „Sam”, „S”) zamiast oficjalnego kodu NATO.\
+    \ W alfabecie NATO każdy znak ma przypisane ściśle określone słowo‑kod, a dla litery **S** jest to\
+    \ **„Sierra”**.  \n\n**Dlaczego ta odpowiedź jest poprawna?**  \n\n- Alfabet NATO jest standaryzowany\
+    \ – nie dopuszcza wariantów ani skrótów.  \n- Wielkość liter nie ma znaczenia, więc akceptowane są\
+    \ zarówno `sierra`, `Sierra`, jak i `SIERRA`.  \n\n**Podsumowanie**  \n\nPoprawna wymowa litery „S”\
+    \ w alfabecie NATO to:\n\n```\nSierra\n```"
+  - '**Sierra** (wielkość liter nie ma znaczenia)'
+- type: open
+  text: Jakie słowo w alfabecie NATO odpowiada literze "T"?
+  answers:
+  - Tango
+  explanations:
+  - "**Gratulacje!**  \n\nSłowo „**Tango**” jest poprawną odpowiedzią, ponieważ w alfabecie NATO (znanym\
+    \ też jako alfabet fonetyczny) litera **T** jest reprezentowana właśnie przez to słowo. Dzięki temu\
+    \ w komunikacji radiowej unika się nieporozumień wynikających z podobnie brzmiących liter."
+  - "**Co poszło nie tak?**  \n\n- **Pytanie:** „Jakie słowo w alfabecie NATO odpowiada literze **T**?”\
+    \  \n- **Poprawna odpowiedź:** **Tango** (wielkość liter nie ma znaczenia).  \n\n**Dlaczego Twoja\
+    \ odpowiedź była niepoprawna?**  \n\n1. **Użyto niewłaściwego słowa** – w alfabecie NATO każda litera\
+    \ ma przypisane ściśle określone kodowe słowo. Dla „T” jest to *Tango*.  \n2. **Inne słowa (np. „Tygrys”,\
+    \ „Tata”) nie należą do oficjalnego alfabetu NATO**, więc nie spełniają wymogu pytania.  \n3. **Wielkość\
+    \ liter nie ma znaczenia** – akceptowane są zarówno „tango”, jak i „Tango”, ale musi to być dokładnie\
+    \ to słowo.  \n\n**Jak uniknąć podobnych błędów?**  \n\n- Przeglądaj **oficjalny alfabet NATO** (A‑Alfa,\
+    \ B‑Bravo, …, Z‑Zulu).  \n- Sprawdzaj, czy wybrane słowo znajduje się na tej liście, a nie w dowolnym\
+    \ innym zestawieniu.  \n\nW kolejnych zadaniach po prostu dopasowuj literę do jej *oficjalnego* słowa\
+    \ w alfabecie NATO. Powodzenia!"
+  - '**Tango**'
+- type: open
+  text: Jak poprawnie nazwać literę "U" w łączności radiowej?
+  answers:
+  - Uniform
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Uniform”** jest prawidłowa, ponieważ w alfabecie NATO (tzw. fonetycznym)\
+    \ litera **U** jest wymawiana właśnie jako *Uniform*. W radiokomunikacji używa się tego zestawu słów,\
+    \ aby uniknąć nieporozumień spowodowanych podobnie brzmiącymi literami. Wielkość liter nie ma znaczenia\
+    \ – liczy się jedynie właściwe wymawianie słowa."
+  - "**Co było nie tak?**  \n\n- W łączności radiowej używa się **NATO fonetycznego alfabetu**.  \n- Dla\
+    \ litery **U** przyjętą nazwą jest **Uniform** – w zapisie nie rozróżnia się wielkości liter.  \n\n\
+    **Typowe pomyłki**\n\n| Podana odpowiedź | Dlaczego jest błędna |\n|------------------|----------------------|\n\
+    | „U” (sam litera) | Nie jest to słowo fonetyczne, a jedynie symbol graficzny. |\n| „Upsilon” | To\
+    \ grecka litera, nie występuje w alfabetie NATO. |\n| „Uż” / „Uka” | Nie są częścią międzynarodowego\
+    \ słownika radiowego. |\n\n**Dlaczego „Uniform”?**  \n\n- *Uniform* oznacza „jednolity”, co ma podkreślać\
+    \ potrzebę jasnej i niezmiennej wymowy w warunkach radiowych.  \n- Słowo jest krótkie, jedno‑syllabowe\
+    \ i łatwe do zrozumienia nawet przy słabym sygnale.  \n\n**Podsumowanie**  \nAby poprawnie nazwać\
+    \ literę **U** w łączności radiowej, wystarczy powiedzieć **Uniform** – wielkość liter nie ma znaczenia.\
+    \ Jeśli w odpowiedzi pojawiło się cokolwiek innego, zostało to uznane za błąd."
+  - "**Poprawna nazwa litery „U” w łączności radiowej:**  \n\n`Uniform`  *(wielkość liter nie ma znaczenia)*."
+- type: open
+  text: Jakie słowo sygnalizuje literę "V"?
+  answers:
+  - Victor
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nTwoja odpowiedź **„Victor”** jest prawidłowa, ponieważ w międzynarodowym\
+    \ alfabecie fonetycznym (NATO) litera **V** jest sygnalizowana właśnie tym słowem. Wymowa „Victor”\
+    \ jednoznacznie identyfikuje literę **V**, co jest wymagane w testach z komunikacji radiowej i w Twoim\
+    \ egzaminie.  \n\nŚwietna robota!"
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\n1. **Wymagane słowo** – w międzynarodowym alfabecie fonetycznym\
+    \ (NATO) litera **V** jest sygnalizowana wyłącznie przez słowo **„Victor”**.  \n2. **Częste pomyłki**\
+    \  \n   - *„Vega”* – to nazwa gwiazdy, nie należy do alfabetu NATO.  \n   - *„Viktor”* – polska forma\
+    \ imienia, ale w alfabecie fonetycznym używa się wersji angielskiej „Victor”.  \n   - *samodzielna\
+    \ litera „V”* – nie jest słowem kodowym.  \n3. **Wielkość liter** – nie ma znaczenia; akceptowane\
+    \ są „victor”, „Victor”, „VICTOR”.  \n\n**Podsumowanie**: aby uzyskać poprawną odpowiedź, należy podać\
+    \ dokładnie słowo **Victor** (dowolna wielkość liter). Jeśli odpowiedź różniła się od tego słowa,\
+    \ system ją odrzuci."
+  - '**Victor** – słowo używane w alfabecie fonetycznym NATO do sygnalizowania litery **V** (wielkość
+    liter nie ma znaczenia).'
+- type: open
+  text: Jakiego słowa używasz, wywołując literę "W"?
+  answers:
+  - Whiskey
+  - Whisky
+  explanations:
+  - "Gratulacje! \U0001F389  \n\nUżywasz słowa **„Whiskey”** (lub **„Whisky”**) przy wymawianiu litery\
+    \ $W$, ponieważ w międzynarodowym alfabecie fonetycznym NATO właśnie tak jest przypisane to znakowi.\
+    \ Dlatego Twoja odpowiedź jest poprawna."
+  - "**Dlaczego odpowiedź była niepoprawna?**\n\n- W pytaniu chodziło o **słowo fonetyczne** używane w\
+    \ międzynarodowym alfabecie NATO przy wymawianiu litery **„W”**.  \n- W tym alfabecie **„W”** jest\
+    \ reprezentowane wyłącznie przez **„Whiskey”** (lub jego alternatywną pisownię **„Whisky”**).  \n\
+    - Inne wyrazy, np. *Wiktor*, *Waw* czy *Warszawa*, nie należą do tego zestawu i dlatego nie są uznawane\
+    \ za poprawne.  \n\n**Poprawna odpowiedź**: `Whiskey` / `Whisky` (wielkość liter nie ma znaczenia)."
+  - "**Odpowiedź:**  \nUżywa się słowa **„Whiskey”** (lub **„Whisky”**) jako wywołania litery **W** w\
+    \ alfabecie fonetycznym NATO.  \n\n*Wielkość liter nie ma znaczenia.*"
+- type: open
+  text: Jak brzmi fonetyczne słowo dla litery "X"?
+  answers:
+  - X-ray
+  - Xray
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź **„X‑ray”** (lub **„Xray”**) jest prawidłowa, ponieważ\
+    \ w języku angielskim fonetycznym litera **X** wymawiana jest właśnie jako słowo *X‑ray*. Wielkość\
+    \ liter nie ma znaczenia – liczy się sam dźwięk. \n\nDobrze zrozumiałeś/-aś zasadę, więc możesz przejść\
+    \ do kolejnych pytań. Powodzenia!"
+  - "**Dlaczego odpowiedź była niepoprawna**\n\n- **„X‑ray” (lub „Xray”)** to **słowo fonetyczne** używane\
+    \ w komunikacji radiowej i w testach ortograficznych – jest to wyraz, który wymawia się w całości,\
+    \ aby jednoznacznie przekazać literę **X**.  \n- **„eks”** to jedynie **nazwa litery** w języku polskim.\
+    \ Nie spełnia funkcji słowa fonetycznego, ponieważ nie jest wyrazem, lecz literą wypowiadaną sylabicznie.\
+    \  \n\n> **Poprawna odpowiedź:** `X‑ray` (wielkość liter nie ma znaczenia).  \n\nZwróć uwagę, że w\
+    \ tego typu zadaniach liczy się **dokładny zapis** słowa, a nie jego nazwa w alfabecie. Jeśli podasz\
+    \ inną formę (np. „eks”), system uzna ją za błąd."
+  - '**Fonetyczne słowo dla litery „X”** to:
+
+
+    **X‑ray**  (zapisywane także jako **Xray**, wielkość liter nie ma znaczenia).'
+- type: open
+  text: Jakie słowo oznacza literę "Y" w alfabecie NATO?
+  answers:
+  - Yankee
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nW alfabecie NATO każda litera ma przypisane słowo kodowe, które ułatwia\
+    \ wymawianie i rozróżnianie znaków w warunkach radiowych. Dla litery **$Y$** używa się słowa **„Yankee”**.\
+    \  \n\nDlatego Twoja odpowiedź jest prawidłowa – „Yankee” jest oficjalnym kodem fonetycznym litery\
+    \ **Y** w NATO."
+  - "**Dlaczego odpowiedź jest niepoprawna?**\n\nW alfabecie NATO każda litera ma przypisaną stałą nazwę,\
+    \ która jest używana w komunikacji radiowej i lotniczej.  \nDla litery **Y** właściwą nazwą jest:\n\
+    \n> **Yankee**\n\nNiezależnie od tego, czy wpiszesz „Yankee”, „yankee”, czy „YANKEE”, zostanie to\
+    \ uznane za prawidłową odpowiedź – wielkość liter nie ma znaczenia.\n\nJeśli podałeś inną nazwę (np.\
+    \ „Ypsilon”, „Y‑something” itp.), nie jest ona częścią oficjalnego alfabetu NATO, dlatego odpowiedź\
+    \ została odrzucona.  \n\nAby uzyskać pełny zestaw nazw, możesz zapamiętać kilka przykładowych par:\n\
+    \n- **A** – *Alpha*  \n- **B** – *Bravo*  \n- **C** – *Charlie*  \n- …  \n- **Y** – *Yankee*  \n-\
+    \ **Z** – *Zulu*\n\nPamiętaj: w alfabecie NATO nie występują żadne alternatywne nazwy – każda litera\
+    \ ma jedną, ustaloną nazwę. Jeśli w przyszłości będziesz miał wątpliwości, wystarczy sprawdzić listę\
+    \ 26 liter i ich odpowiedników. Powodzenia na egzaminie!"
+  - "**Odpowiedź:**  \n`Yankee`  \n\n(rozmiar liter nie ma znaczenia)"
+- type: open
+  text: Jakim słowem potwierdzasz literę "Z"?
+  answers:
+  - Zulu
+  explanations:
+  - "**Gratulacje!**  \n\nOdpowiedź **„Zulu”** jest poprawna, ponieważ w międzynarodowym alfabecie fonetycznym\
+    \ NATO (tzw. alfabetie NATO) litera **Z** jest oznaczana właśnie słowem *Zulu*. W tym alfabecie wielkość\
+    \ liter nie ma znaczenia, więc zarówno „Zulu”, jak i „zulu” są akceptowane."
+  - "**Co poszło nie tak?**\n\n- **Pytanie:** *„Jakim słowem potwierdzasz literę ‘Z’?”*  \n- **Poprawna\
+    \ odpowiedź:** **Zulu** (dowolna wielkość liter).  \n\nJeśli podałeś inny wyraz (np. *„zebra”*, *„złoto”*\
+    \ itp.), nie spełnia on wymogu – w teście używa się międzynarodowego alfabetu fonetycznego NATO, w\
+    \ którym litera **Z** jest reprezentowana właśnie przez słowo **Zulu**.\n\n**Dlaczego tak?**  \n-\
+    \ System ten służy do jednoznacznego przekazywania liter w warunkach, gdzie mogłyby wystąpić nieporozumienia\
+    \ (np. w radiokomunikacji).  \n- Dla każdej litery istnieje jedno, ściśle określone słowo; zmiana\
+    \ tego słowa skutkuje błędną odpowiedzią.\n\n**Jak poprawić odpowiedź?**  \nPo prostu wpisz **Zulu**\
+    \ (np. `Zulu`, `zulu` lub `ZULU`). To jedyna akceptowana forma."
+  - '**Zulu** – tak wymawia się literę **Z** w alfabecie fonetycznym używanym w krótkofalarstwie (NATO
+    phonetic alphabet). Wielkość liter nie ma znaczenia.'

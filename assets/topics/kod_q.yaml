@@ -2,244 +2,1311 @@ title: Kody Q – podstawy
 slug: kody-q-podstawy
 description: Test wiedzy z podstawowych kodów Q używanych w łączności.
 image: assets/images/q-codes.png
+context: "Moje mnemotechniki:\n  QRG - Read Gauge (Frequency); moja częstotliwość to …\n  QRL - Line Busy\
+  \ (Busy); jestem zajęty, proszę nie przeszkadzać\n  QRM - Radio Mess (Interference - Man-made); mam\
+  \ zakłócenia od innych stacji\n  QRN - Rain Noise (Interference - Natural); mam zakłócenia atmosferyczne\n\
+  \  QRO - Raise Output (Increase Power); zwiększ moc, zwiększam moc\n  QRP - Reduced Power; zmniejsz\
+  \ moc, zmniejszam moc\n  QRT - Radio Terminate (Stop Transmission); kończę nadawanie, wyłączam stację\n\
+  \  QRV - Ready for Voice (Ready); jestem gotów do pracy, jestem czynny w eterze\n  QRX - Queue for RX\
+  \ (Stand By); proszę czekać\n  QSB - Signal Breaking (Signal Fading); siła twoich sygnałów waha się\n\
+  \  QSL - Signed Log (Acknowledge); potwierdzam odbiór, przyślę kartę potwierdzającą łączność\n  QSO\
+  \ - Successful Operation (Contact); łączność, mam łączność\n  QSY - Shift Yourself (Change Frequency);\
+  \ przejdź na częstotliwość, zmień częstotliwość\n  QTC - Transmission Content (Message); mam dla ciebie\
+  \ pilną wiadomość\n  QTH - Home (Location); moje położenie geograficzne jest…\n"
 test_question_limit: 25
 questions:
-  - text: Co oznacza kod QRL?
-    answers:
-      - Źle się czuję, odezwę się później
-      - Jestem zajęty, proszę nie przeszkadzać
-      - Do zobaczenia latem
-    correct_index: 1
-
-  - text: Co oznacza kod QRT?
-    answers:
-      - Która jest godzina?
-      - Kończę nadawanie, wyłączam stację
-      - Nadawaj wolniej
-    correct_index: 1
-
-  - text: Co oznacza kod QRZ?
-    answers:
-      - Zmień częstotliwość na zapasową
-      - Kto mnie woła?
-      - Jestem zajęty, proszę nie przeszkadzać
-    correct_index: 1
-
-  - text: Co oznacza kod QRX?
-    answers:
-      - Proszę czekać, wywołam cię ponownie
-      - Nadawaj wolniej
-      - Mam zakłócenia od innych stacji
-    correct_index: 0
-
-  - text: Co oznacza kod QRO?
-    answers:
-      - Nic dla ciebie nie mam
-      - Zwiększ moc, zwiększam moc
-      - Przerwij nadawanie, kończę pracę
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Moja częstotliwość jest…”?
-    answers:
-      - QRJ
-      - QRG
-      - QRK
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Przejdź na częstotliwość, zmień częstotliwość”?
-    answers:
-      - QSY
-      - QTR
-      - QSA
-    correct_index: 0
-
-  - text: Który kod Q oznacza „Mam zakłócenia od innych stacji”?
-    answers:
-      - QWO
-      - QQQ
-      - QRM
-    correct_index: 2
-
-  - text: Który kod Q oznacza „Siła twoich sygnałów waha się”?
-    answers:
-      - QSB
-      - QAZ
-      - QRY
-    correct_index: 0
-
-  - text: Który kod Q oznacza „Jestem gotów do pracy, jestem czynny w eterze”?
-    answers:
-      - QWX
-      - QRV
-      - QRU
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Moje położenie geograficzne jest…”?
-    answers:
-      - QLP
-      - QRG
-      - QTH
-    correct_index: 2
-
-  - text: Który kod Q oznacza „Zmniejsz moc, zmniejszam moc”?
-    answers:
-      - QUB
-      - QRA
-      - QRP
-    correct_index: 2
-
-  - text: Który kod Q oznacza „Mam dla ciebie telegram, wiadomość”?
-    answers:
-      - QRT
-      - QTC
-      - QSV
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Łączność, mam łączność”?
-    answers:
-      - QSL
-      - QSO
-      - QRS
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Potwierdzam odbiór, przyślę kartę potwierdzającą łączność”?
-    answers:
-      - QSL
-      - QSA
-      - QRT
-    correct_index: 0
-
-  - text: Który kod Q dotyczy czytelności sygnału?
-    answers:
-      - QRK
-      - QSA
-      - QRP
-    correct_index: 0
-
-  - text: Który kod Q dotyczy siły sygnału?
-    answers:
-      - QRV
-      - QSA
-      - QSX
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Która jest godzina?” / „Podaj czas”?
-    answers:
-      - QTR
-      - QRY
-      - QRG
-    correct_index: 0
-
-  - text: Który kod Q oznacza „Jakie mam miejsce w kolejce?”?
-    answers:
-      - QRL
-      - QRY
-      - QRX
-    correct_index: 1
-
-  - text: Który kod Q oznacza „Nazwa twojej stacji jest…”?
-    answers:
-      - QRA
-      - QRZ
-      - QTH
-    correct_index: 0
-
-  - type: open
-    text: Jestem zajęty, proszę nie przeszkadzać
-    answers:
-      - QRL
-
-  - type: open
-    text: Kończę nadawanie, wyłączam stację
-    answers:
-      - QRT
-
-  - type: open
-    text: Kto mnie woła?
-    answers:
-      - QRZ
-
-  - type: open
-    text: Proszę czekać, wywołam cię ponownie
-    answers:
-      - QRX
-
-  - type: open
-    text: Zwiększ moc, zwiększam moc
-    answers:
-      - QRO
-
-  - type: open
-    text: Moja częstotliwość jest…
-    answers:
-      - QRG
-
-  - type: open
-    text: Przejdź na częstotliwość, zmień częstotliwość
-    answers:
-      - QSY
-
-  - type: open
-    text: Mam zakłócenia od innych stacji
-    answers:
-      - QRM
-
-  - type: open
-    text: Siła twoich sygnałów waha się
-    answers:
-      - QSB
-
-  - type: open
-    text: Jestem gotów do pracy, jestem czynny w eterze
-    answers:
-      - QRV
-
-  - type: open
-    text: Moje położenie geograficzne jest…
-    answers:
-      - QTH
-
-  - type: open
-    text: Zmniejsz moc, zmniejszam moc
-    answers:
-      - QRP
-
-  - type: open
-    text: Mam dla ciebie telegram, wiadomość
-    answers:
-      - QTC
-
-  - type: open
-    text: Łączność, mam łączność
-    answers:
-      - QSO
-
-  - type: open
-    text: Potwierdzam odbiór, przyślę kartę potwierdzającą łączność
-    answers:
-      - QSL
-
-  - type: open
-    text: Czytelność twojego sygnału jest…
-    answers:
-      - QRK
-
-  - type: open
-    text: Siła twojego sygnału jest…
-    answers:
-      - QSA
-
-  - type: open
-    text: Która jest godzina? / Podaj czas
-    answers:
-      - QTR
-
-  - type: open
-    text: Jakie mam miejsce w kolejce?
-    answers:
-      - QRY
-
-  - type: open
-    text: Nazwa twojej stacji jest…
-    answers:
-      - QRA
+- text: Co oznacza kod QRL?
+  answers:
+  - Źle się czuję, odezwę się później
+  - Jestem zajęty, proszę nie przeszkadzać
+  - Do zobaczenia latem
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A jest nieprawidłowa**\n\nKod **QRL** należy do grupy krótkich zapytań‑odpowiedzi\
+    \ używanych w radiokomunikacji.  \nTwoja własna mnemotechnika podaje:\n\n> **QRL – Line Busy (Busy);**\
+    \ *jestem zajęty, proszę nie przeszkadzać*  \n\nZatem **QRL** informuje rozmówcę, że stacja jest aktualnie\
+    \ zajęta i nie może przyjąć kolejnego wywołania.\n\n---\n\n### Co oznacza wybrana odpowiedź A?\n\n\
+    > **A. „Źle się czuję, odezwę się później”**\n\n- Nie ma związku ze słowem **“busy”** ani ze stanem\
+    \ linii.\n- Nie występuje w żadnym oficjalnym kodzie Q‑kodów.\n- Dlatego nie może być prawidłową interpretacją\
+    \ **QRL**.\n\n---\n\n### Poprawna odpowiedź\n\n**B. „Jestem zajęty, proszę nie przeszkadzać”** – dokładnie\
+    \ odzwierciedla znaczenie kodu QRL.\n\nZapamiętaj: **QRL = „Line Busy”** → *zajęta linia, nie przeszkadzać*."
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **B. „Jestem zajęty, proszę nie przeszkadzać”**.\n\
+    \nKod **QRL** w łączności radiowej oznacza *„Line Busy”* – informuje, że stacja jest zajęta i nie\
+    \ może przyjąć kolejnej rozmowy. Dlatego właśnie odpowiedź B jest prawidłowa.  \n\nPowodzenia na dalszych\
+    \ etapach egzaminu!"
+  - "**Dlaczego odpowiedź C jest niepoprawna?**  \n\n- **Kod QRL** w międzynarodowym słowniku Q‑codes\
+    \ oznacza **„Line busy / I am busy, please do not disturb”** – po polsku: *„Jestem zajęty, proszę\
+    \ nie przeszkadzać”*.  \n- Odpowiedź **C** („Do zobaczenia latem”) nie ma żadnego związku ze znaczeniem\
+    \ tego kodu; nie opisuje stanu zajętości ani nie jest definiowana w dokumencie ITU‑R M.1172.\n\n**Poprawna\
+    \ odpowiedź – B**  \n\n- **B** dokładnie oddaje treść kodu QRL: *„Jestem zajęty, proszę nie przeszkadzać”*.\
+    \  \n- To jest jedyna z podanych opcji, która odpowiada definicji Q‑code.\n\n**Jak uniknąć podobnych\
+    \ pomyłek?**  \n\n1. **Utrwalaj znaczenia Q‑code w formie krótkich skojarzeń** – tak jak w Twojej\
+    \ mnemotechnice:  \n   ```\n   QRL – “Line Busy” → “Zajęta linia, nie przeszkadzaj”.\n   ```\n2. **Sprawdzaj,\
+    \ czy odpowiedź zawiera kluczowe słowa**: *busy / line busy* → *zajęty*. Jeśli brakuje tych elementów,\
+    \ odpowiedź najprawdopodobniej jest błędna.  \n3. **Porównuj wszystkie opcje** – w pytaniu tylko jedna\
+    \ zawiera wyrażenie „zajęty”. To najprostszy sposób eliminacji.\n\nPodsumowując, kod QRL nie ma nic\
+    \ wspólnego z „latem”. Jego jedyne znaczenie to informowanie drugiej stacji, że jesteś zajęty i nie\
+    \ powinieneś być przerywany. Dzięki Twojej mnemotechnice szybko rozpoznasz tę definicję i unikniesz\
+    \ podobnych błędów w przyszłości."
+  - "**Pytanie:** Co oznacza kod **QRL**?  \n\n**Poprawna odpowiedź:** **B. Jestem zajęty, proszę nie\
+    \ przeszkadzać**\n\n**Wyjaśnienie**\n\nKod **QRL** należy do grupy kodów Q, które służą do szybkiej\
+    \ wymiany informacji w łączności radiowej.  \n\n- **Q** – oznacza, że jest to kod Q.  \n- **R** –\
+    \ odnosi się do „busy” (zajętość).  \n- **L** – wskazuje na „line” (linia).  \n\nRazem **QRL** = *“Line\
+    \ busy”* → *„Jestem zajęty, proszę nie przeszkadzać”*.  \n\nUżywa się go, gdy stacja jest w trakcie\
+    \ rozmowy lub pracuje i nie może przyjąć kolejnego połączenia."
+- text: Co oznacza kod QRT?
+  answers:
+  - Która jest godzina?
+  - Kończę nadawanie, wyłączam stację
+  - Nadawaj wolniej
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A jest niepoprawna?**  \n\n- **Kod QRT** nie ma nic wspólnego z pytaniem „*Która\
+    \ jest godzina?*”.  \n- W zestawie kodów Q‑kodów **„QRT”** oznacza *Radio Terminate* – czyli **zakończenie\
+    \ transmisji**.  \n\n**Poprawna odpowiedź – B**  \n\n| Kod | Pełne rozwinięcie | Znaczenie w praktyce\
+    \ |\n|-----|-------------------|----------------------|\n| **QRT** | *Radio Terminate* | „Kończę nadawanie,\
+    \ wyłączam stację”. |\n\n**Podsumowanie**  \n\n- **A** („Która jest godzina?”) to definicja kodu **QRZ**,\
+    \ a nie QRT.  \n- **B** dokładnie odzwierciedla funkcję QRT – sygnalizuje, że operator przestaje nadawać\
+    \ i wyłącza swój nadajnik.  \n\nZatem jedyną prawidłową odpowiedzią jest **B**."
+  - "## Gratulacje! \U0001F389  \n\nPoprawna odpowiedź to **B – „Kończę nadawanie, wyłączam stację”**.\n\
+    \nKod **QRT** w łączności amatorskiej oznacza **„Radio Terminate”**, czyli *zakończenie transmisji*\
+    \ i wyłączenie nadajnika. Twoja mnemotechnika **QRT – Radio Terminate (Stop Transmission)** dokładnie\
+    \ oddaje to znaczenie, dlatego wybrałeś właściwą odpowiedź.  \n\nDobra robota – tak dalej!"
+  - "**Dlaczego odpowiedź C jest niepoprawna?**  \n\n- **Kod QRT** pochodzi z międzynarodowego zestawu\
+    \ kodów Q używanych w radiotechnice.  \n- Jego oficjalne znaczenie to **„Radio Terminate (Stop Transmission)”**,\
+    \ czyli *„kończę nadawanie, wyłączam stację”*.  \n\n**Co oznacza „Nadawaj wolniej”?**  \n- To opis\
+    \ działania **QRS** („slow down transmission”).  \n- W Twojej liście mnemotechnicznej **QRS** nie\
+    \ występuje, a **QRT** ma zupełnie inny sens.  \n\n**Podsumowanie**  \n\n| Kod | Oficjalne znaczenie\
+    \ | Twoja mnemotechnika |\n|-----|---------------------|---------------------|\n| **QRT** | Stop transmission\
+    \ (terminate) | *Radio Terminate – kończę nadawanie* |\n| **QRS** (nie podany) | Transmit slower |\
+    \ *Nadawaj wolniej* |\n\nStąd odpowiedź **C** („Nadawaj wolniej”) jest błędna, a prawidłowa jest **B**\
+    \ – *„Kończę nadawanie, wyłączam stację”*."
+  - "**Kod QRT** – **Radio Terminate**  \n\nOznacza: **„Kończę nadawanie, wyłączam stację.”**  \n\nW praktyce\
+    \ operator używa QRT, gdy chce zakończyć transmisję i wyłączyć swój nadajnik.  \n\n> **Poprawna odpowiedź:**\
+    \ **B** – *Kończę nadawanie, wyłączam stację*"
+- text: Co oznacza kod QRZ?
+  answers:
+  - Zmień częstotliwość na zapasową
+  - Kto mnie woła?
+  - Jestem zajęty, proszę nie przeszkadzać
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A jest niepoprawna**\n\n- **QRZ** to kod Q‑code, a nie polecenie zmiany częstotliwości.\
+    \  \n- Kod **QSY** (z Twojej listy) oznacza *„Shift Yourself – zmień częstotliwość”*.  \n- Dlatego\
+    \ „Zmień częstotliwość na zapasową” (A) jest mylnym przyporządkowaniem – jest to opis działania QSY,\
+    \ a nie QRZ.\n\n**Co naprawdę oznacza QRZ?**\n\n- **QRZ** = *„Who is calling me?”* (pol. *„Kto mnie\
+    \ woła?”*).  \n- Używa się go, gdy słyszymy nadawcę, ale nie jesteśmy pewni, kto to jest. Wysyłamy\
+    \ **QRZ**, aby rozmówca się przedstawił.\n\n**Jak zapamiętać różnicę?**\n\n| Kod | Mnemonika (z Twojej\
+    \ listy) | Znaczenie |\n|-----|---------------------------|-----------|\n| **QRZ** | *Kto mnie woła?*\
+    \ (pytanie) | Prośba o identyfikację nadawcy |\n| **QSY** | *Shift Yourself* | Polecenie zmiany częstotliwości\
+    \ |\n\n**Podsumowanie**  \nOdpowiedź **B** („Kto mnie woła?”) jest jedyną prawidłową, ponieważ dokładnie\
+    \ oddaje definicję kodu **QRZ**. Odpowiedź **A** myli kod QRZ z kodem QSY, który rzeczywiście dotyczy\
+    \ zmiany częstotliwości."
+  - "**Gratulacje!**  \n\nWybrałeś odpowiedź **B – „Kto mnie woła?”** – jest to prawidłowa definicja kodu\
+    \ **QRZ**.  \n\n- **QRZ** to jeden z międzynarodowych kodów Q używany w radiotechnice.  \n- Oznacza\
+    \ on pytanie **„Who is calling me?”** (pol. *„Kto mnie woła?”*), czyli prośbę o podanie tożsamości\
+    \ nadawcy, gdy odbiorca nie rozpozna sygnału.  \n\nPozostałe opcje opisują inne kody:  \n\n- **A**\
+    \ – *QSY* („Shift yourself”, zmień częstotliwość).  \n- **C** – *QRL* („Line busy”, jestem zajęty).\
+    \  \n\nDlatego wybrana odpowiedź jest jednoznacznie poprawna. Powodzenia na egzaminie!"
+  - "**Dlaczego odpowiedź C jest niepoprawna?**  \n\nKod **QRZ** nie ma nic wspólnego z informacją o zajętości.\
+    \  \nW Twojej liście mnemotechnicznej znajduje się już kod **QRL** – *“Line Busy (Busy); jestem zajęty,\
+    \ proszę nie przeszkadzać”*.  \nMyląc się, najprawdopodobniej pomyliłeś‑się właśnie z tym kodem.\n\
+    \n**Co oznacza QRZ?**  \n\n> **QRZ – “Who is calling me?”** – pytanie o to, kto przywołuje nadawcę.\n\
+    \nInnymi słowy, operator, który słyszy Twój sygnał, ale nie wie, kim jesteś, odpisuje **QRZ?** i czeka\
+    \ na podanie Twojego **QTH** (lokalizacji) lub **call sign**.\n\n**Podsumowanie**  \n\n| Kod | Znaczenie\
+    \ | Twoja mnemotechnika |\n|-----|-----------|----------------------|\n| **QRZ** | Who is calling\
+    \ me? | brak w liście – trzeba dodać |\n| **QRL** | Line Busy – jestem zajęty | już masz: *„jestem\
+    \ zajęty, proszę nie przeszkadzać”* |\n\nZatem prawidłowa odpowiedź to **B – Kto mnie woła?**. Zapamiętaj,\
+    \ że **QRZ** dotyczy identyfikacji nadawcy, a **QRL** informuje o zajętości łącza. Powodzenia na egzaminie!"
+  - "**QRZ** – *„Who is calling me?”*  \n\nUżywa się go, gdy słyszy się wezwanie („**QRZ?**”) i chce się\
+    \ dowiedzieć, kto nas woła. Jest to jedynie prośba o identyfikację nadawcy.  \n\n> **Poprawna odpowiedź:**\
+    \ **B. Kto mnie woła?**"
+- text: Co oznacza kod QRX?
+  answers:
+  - Proszę czekać, wywołam cię ponownie
+  - Nadawaj wolniej
+  - Mam zakłócenia od innych stacji
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś poprawną odpowiedź **A – „Proszę czekać, wywołam cię ponownie”**.\n\
+    \nKod **QRX** w łączności radiowej oznacza **„Queue for RX (Stand By)”**, czyli *„czekaj, zanim zostaniesz\
+    \ odebrany”*. Używa się go, gdy operator prosi drugą stację o chwilowe wstrzymanie nadawania i obiecuje\
+    \ ponowne wywołanie w najbliższym czasie. Dlatego odpowiedź A idealnie oddaje znaczenie tego kodu."
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\nKod **QRX** nie ma nic wspólnego z prędkością nadawania.\
+    \  \n\n| Kod | Twoja mnemotechnika | Znaczenie w praktyce |\n|-----|---------------------|----------------------|\n\
+    | **QRX** | *Queue for RX (Stand By)* | „Proszę czekać, wywołam cię ponownie”. |\n\n- **„Queue for RX”**\
+    \ oznacza, że operator **oczekuje** na swoją kolej do odbioru (RX) i prosi rozmówcę, aby **zatrzymał\
+    \ się** i nie nadawał dalej, dopóki nie zostanie wywołany.  \n- Nie jest to polecenie **„Nadawaj wolniej”**\
+    \ (to byłby kod **QRS** – *Reduce speed*).  \n\nDlatego poprawną odpowiedzią jest **A** – *Proszę\
+    \ czekać, wywołam cię ponownie*.  \n\n**Podsumowanie**: QRX = „Czekaj, zaraz cię wezwę”, a nie „Nadawaj\
+    \ wolniej”. Jeśli zapamiętasz, że „X” w QRX wskazuje na **„stop”/„pause”** (tak jak w „eXit”), łatwiej\
+    \ odróżnisz go od QRS, które rzeczywiście dotyczy prędkości."
+  - "**Dlaczego odpowiedź C jest nieprawidłowa**\n\n- **QRX** to kod **„Queue for RX (Stand‑by)”**, czyli\
+    \ **„proszę czekać, wywołam cię ponownie”**.  \n- W Twojej liście mnemotechnicznej **QRX** jest opisany\
+    \ dokładnie tak samo, więc jest to jedyny prawidłowy sens tego kodu.  \n\n**C („Mam zakłócenia od\
+    \ innych stacji”)** opisuje kod **QRM** („Radio Mess – zakłócenia od innych stacji”).  \nDlatego mieszanie\
+    \ tych dwóch kodów prowadzi do pomyłki.\n\n**Podsumowanie**\n\n| Kod | Poprawne znaczenie | Twoje\
+    \ skojarzenie |\n|-----|--------------------|-------------------|\n| **QRX** | *Proszę czekać, wywołam\
+    \ cię ponownie* | **A** – prawidłowe |\n| **QRM** | *Mam zakłócenia od innych stacji* | **C** – odnosi\
+    \ się do innego kodu |\n\nUpewnij się, że przy kodzie **QRX** myślisz o **„czekaniu”**, a nie o zakłóceniach.\
+    \ Dzięki temu łatwo odróżnisz go od **QRM**."
+  - "**Kod QRX** – *Queue for RX (Stand By)*  \n\nOznacza: **„Proszę czekać, wywołam cię ponownie.”**\
+    \  \n\nUżywany jest, gdy chcesz, aby stacja, z którą rozmawiasz, wstrzymała nadawanie i poczekała,\
+    \ aż Ty ponownie ją wywołasz.  \n\n> **A** – *Proszę czekać, wywołam cię ponownie* – jest prawidłową\
+    \ odpowiedzią."
+- text: Co oznacza kod QRO?
+  answers:
+  - Nic dla ciebie nie mam
+  - Zwiększ moc, zwiększam moc
+  - Przerwij nadawanie, kończę pracę
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A jest niepoprawna?**  \n\n- **QRO** w kodach Q nie oznacza „nic dla ciebie\
+    \ nie mam”.  \n- Twoja własna mnemotechnika jasno mówi:  \n\n> **QRO – *Raise Output* (Increase Power)**\
+    \ → *zwiększ moc, zwiększam moc*  \n\nKod **QRO** jest używany, gdy operator chce podnieść moc nadawania\
+    \ (np. przełączyć się na wyższą moc wyjściową wzmacniacza).  \n\n---\n\n**Poprawna odpowiedź – B**\
+    \  \n\n- **B. Zwiększ moc, zwiększam moc** dokładnie oddaje znaczenie kodu QRO.  \n- Przykład użycia\
+    \ w praktyce:  \n\n  > „**QRO** – proszę zwiększyć moc nadawania do 100 W”.  \n\n---\n\n### Jak uniknąć\
+    \ podobnych pomyłek?\n\n1. **Powtórz mnemotechnikę** – przy każdym kodzie Q przywołuj swój skrót (np.\
+    \ *QRO – Raise Output*).  \n2. **Skojarz znaczenie z działaniem** – QRO zawsze wiąże się z podniesieniem\
+    \ mocy; inne kody (np. **QRT** – *Radio Terminate*) dotyczą zakończenia transmisji.  \n3. **Trenuj\
+    \ krótkie testy** – zapisuj pytanie, wybieraj odpowiedź i natychmiast sprawdzaj, czy odpowiada Twojej\
+    \ mnemotechnice.  \n\n---\n\n**Podsumowanie**: kod **QRO** = *zwiększ moc*; odpowiedź A nie ma żadnego\
+    \ związku z tym znaczeniem, dlatego jest błędna. Wystarczy odwołać się do własnej pamięciowej frazy\
+    \ „Raise Output”, aby zawsze wybrać **B**."
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **B – „Zwiększ moc, zwiększam moc”** i jest to\
+    \ prawidłowe rozwinięcie kodu **QRO**.  \n\nKod Q‑kodu **QRO** (ang. *Raise Output*) jest używany\
+    \ w radiokomunikacji, aby polecić lub zgłosić podniesienie mocy nadajnika. Dlatego tłumaczenie **„zwiększ\
+    \ moc, zwiększam moc”** jest dokładnie tym, co oznacza ten kod.  \n\nTwoja odpowiedź jest więc w 100 %\
+    \ zgodna z obowiązującym słownikiem Q‑kodów. ✔️"
+  - "**Dlaczego odpowiedź C jest błędna?**  \n\n- **Kod QRO** w międzynarodowym słowniku kodów Q oznacza\
+    \ **„Raise Output”** – czyli *zwiększ moc* (prośba do drugiej stacji, aby podniosła moc nadawczą).\
+    \  \n- Twoja odpowiedź **C. „Przerwij nadawanie, kończę pracę”** opisuje kod **QRT** („Radio Terminate”).\
+    \  \n\n**Poprawna odpowiedź – B**  \n\n- **B. „Zwiększ moc, zwiększam moc”** dokładnie oddaje znaczenie\
+    \ QRO.  \n- W Twoich własnych mnemotechnikach zapisujesz to jako:  \n\n\\[\n\\text{QRO} \\;\\rightarrow\\\
+    ; \\text{Raise Output (Increase Power)}\n\\]\n\nczyli *zwiększ moc, zwiększam moc*.\n\n---\n\n###\
+    \ Krótkie podsumowanie\n\n| Kod | Znaczenie w słowniku Q | Twoja mnemotechnika |\n|-----|-----------------------|---------------------|\n\
+    | **QRO** | Raise Output – increase power | **Zwiększ moc, zwiększam moc** |\n| **QRT** | Radio Terminate\
+    \ – stop transmission | Przerwij nadawanie, kończę pracę |\n\nDlatego wybór odpowiedzi **C** był pomyłką\
+    \ – pomyliłeś kod QRO z QRT. Wystarczy zapamiętać, że **„R” w QRO** = **Raise** (podnieś), a **„T”\
+    \ w QRT** = **Terminate** (zakończ)."
+  - "**Kod QRO** – *Raise Output* (zwiększ moc, zwiększam moc).  \n\n- **B** jest prawidłową odpowiedzią.\
+    \  \n- **A** („Nic dla ciebie nie mam”) i **C** („Przerwij nadawanie, kończę pracę”) nie mają związku\
+    \ z kodem QRO – ostatni opisuje kod **QRT**.  \n\nZapamiętaj: **QRO = zwiększ moc nadawania**."
+- text: Który kod Q oznacza „Moja częstotliwość jest…”?
+  answers:
+  - QRJ
+  - QRG
+  - QRK
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A jest błędna?**\n\n- **QRJ** nie jest przypisany do żadnego znaczenia w oficjalnym\
+    \ zestawie kodów Q.  \n- W Twojej liście mnemotechnik nie ma żadnego hasła zaczynającego się od **QRJ**,\
+    \ więc nie ma skojarzenia, które mogłoby sugerować „moja częstotliwość jest…”.\n\n**Poprawna odpowiedź\
+    \ – B. QRG**\n\n- **QRG** = *Read Gauge* (Frequency).  \n- W Twojej tabeli mnemonicznej: **QRG – Read\
+    \ Gauge (Frequency); moja częstotliwość to …**  \n- Stąd pytanie „Który kod Q oznacza „Moja częstotliwość\
+    \ jest…”?” odnosi się właśnie do **QRG**.\n\n**Podsumowanie**\n\n- **QRJ** – nie istnieje w standardzie\
+    \ Q‑codes → nie może być poprawną odpowiedzią.  \n- **QRG** – jednoznacznie oznacza „moja częstotliwość\
+    \ jest …” → jest prawidłowym wyborem."
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **B – QRG**.  \n\nKod **QRG** oznacza **„Read/Report\
+    \ my frequency”** – czyli *„Moja częstotliwość jest …”*. Jest to jedyny kod z podanych, który dotyczy\
+    \ wskazania aktualnej częstotliwości, więc Twoja odpowiedź jest prawidłowa.  \n\nDobrze zapamiętane!\
+    \ \U0001F680"
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\n- **QRK** nie jest kodem Q opisującym częstotliwość.\
+    \  \n  W standardzie Q‑code QRK oznacza **„Signal quality – how readable is my signal?”** („Jak dobra\
+    \ jakość sygnału?”). Nie ma nic wspólnego z podawaniem częstotliwości.\n\n- W Twojej listie mnemotechnik\
+    \ nie ma żadnego skojarzenia z **QRK**, więc nie ma powodu, by myśleć, że odpowiada ono na pytanie\
+    \ *„Moja częstotliwość jest …”*.\n\n**Poprawna odpowiedź – B. QRG**\n\n- **QRG** = **Read Gauge**\
+    \ (Frequency).  \n  Dosłownie: *„Moja częstotliwość to …”* – używa się go, aby podać własną częstotliwość\
+    \ lub zapytać o częstotliwość drugiej stacji.\n\n- W Twojej tabeli mnemotechnicznej masz właśnie:\n\
+    \  ```\n  QRG - Read Gauge (Frequency); moja częstotliwość to …\n  ```\n  więc kod ten jest jedynym,\
+    \ który pasuje do treści pytania.\n\n**Jak zapamiętać różnicę**\n\n| Kod | Znaczenie (ang.) | Znaczenie\
+    \ (pl.) | Skojarzenie |\n|-----|------------------|-----------------|-------------|\n| **QRG** | Read\
+    \ Gauge (Frequency) | „Moja częstotliwość to …” | *Gauge* → miernik częstotliwości |\n| **QRK** |\
+    \ Signal Quality (Readability) | „Jak dobra jakość mojego sygnału?” | *Quality* → jakość, nie częstotliwość\
+    \ |\n\n**Podsumowanie**  \n‑ **QRG** → częstotliwość (czytamy „gauge”).  \n‑ **QRK** → jakość sygnału\
+    \ (czytamy „quality”).  \n\nDlatego przy pytaniu *„Który kod Q oznacza ‘Moja częstotliwość jest…’?”*\
+    \ jedyną prawidłową odpowiedzią jest **B. QRG**."
+  - "**Pytanie**: Który kod Q oznacza „Moja częstotliwość jest…”?  \n\n**Odpowiedź**: **B – QRG**\n\n\
+    **Uzasadnienie**  \n\n- **QRG** – w Twojej listie mnemotechnicznej zapisane jako *Read Gauge (Frequency);\
+    \ moja częstotliwość to …*.  \n- Kod ten jest używany, gdy operator podaje swoją aktualną częstotliwość\
+    \ (np. „QRG 14 200 kHz”).  \n\nPozostałe opcje nie mają związku z częstotliwością:\n\n- **QRJ** –\
+    \ nie jest standardowym kodem Q.  \n- **QRK** – oznacza „Signal quality (signal strength)”.  \n\n\
+    Dlatego jedyną prawidłową odpowiedzią jest **QRG**."
+- text: Który kod Q oznacza „Przejdź na częstotliwość, zmień częstotliwość”?
+  answers:
+  - QSY
+  - QTR
+  - QSA
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś **A – QSY**, co jest prawidłową odpowiedzią.\n\n- **QSY**\
+    \ – *Shift yourself (Change frequency)*  \n  Oznacza: **„Przejdź na inną częstotliwość, zmień częstotliwość”**.\
+    \  \n\nPozostałe kody:\n- **QTR** – nie istnieje w standardowym zestawie kodów Q.\n- **QSA** – oznacza\
+    \ „How much signal is being received?” (Jak silny jest odbierany sygnał?).\n\nTwoja odpowiedź jest\
+    \ więc w pełni zgodna z definicją kodu Q. \U0001F44D"
+  - "**Dlaczego odpowiedź B – **`QTR`** jest niepoprawna**\n\n- **Kod Q** to skrócona forma pytania lub\
+    \ polecenia używana w radiokomunikacji.  \n- **`QTR`** nie należy do standardowego zestawu kodów Q.\
+    \ W oficjalnym spisie (ITU‑R M.1172) nie ma takiego kodu; najbliższe mu oznaczenie to **`QTR` → “What\
+    \ is the local time?”** (pytanie o godzinę), ale w praktyce jest rzadko używane.  \n\n**Poprawny kod**\n\
+    \n- **`QSY`** – *“Shift yourself (change frequency)”*  \n  - **Q** – kod Q  \n  - **S** – „Shift”\
+    \ (przesuń)  \n  - **Y** – „Yourself” (siebie)  \n\nZatem polecenie **„Przejdź na częstotliwość, zmień\
+    \ częstotliwość”** jest wyrażane właśnie kodem **`QSY`**.  \n\n**Jak to zapamiętać?**  \nTwoja mnemotechnika\
+    \ podaje:  \n\n> **QSY – Shift Yourself (Change Frequency)**  \n\nStąd: *„przesuń się”* → *„przejdź\
+    \ na inną częstotliwość”*.  \n\n---\n\n**Podsumowanie**  \n- `QTR` – nie jest kodem Q, a w razie użycia\
+    \ oznacza pytanie o godzinę.  \n- `QSY` – jedyny prawidłowy kod oznaczający zmianę częstotliwości.\
+    \  \n\nWybór odpowiedzi **A** jest więc jedyną poprawną opcją."
+  - "**Dlaczego odpowiedź C („QSA”) jest niepoprawna?**  \n\n- **QSA** nie jest kodem Q przydzielonym\
+    \ w Międzynarodowej Rzeczpospolitej Amatorskiej (ARRL).  \n- Nawet gdyby istniało takie skrócenie,\
+    \ jego znaczenie nie dotyczy zmiany częstotliwości.  \n\n**Poprawny kod Q**\n\n- **QSY** – *“Shift\
+    \ yourself / Change frequency”*  \n  - **Q** – grupa kodów Q (standardowe 3‑literowe skróty używane\
+    \ w radiokomunikacji).  \n  - **S** – wskazuje na „przejście” (ang. *shift*).  \n  - **Y** – oznacza\
+    \ „częstotliwość” (ang. *frequency*).  \n\n  **Znaczenie:** *„Przejdź na podaną częstotliwość”* lub\
+    \ *„Zmień częstotliwość”*.  \n\n**Pozostałe opcje**\n\n- **QTR** – oznacza *“What is the correct time?”*\
+    \ (pytanie o aktualny czas).  \n- **QSA** – nie ma oficjalnego znaczenia w standardowym zestawie kodów\
+    \ Q; w niektórych źródłach pojawia się jedynie jako błąd lub nieformalny skrót.\n\n**Podsumowanie**\
+    \  \nKod **QSY** jest jedynym prawidłowym wyborem, który bezpośrednio opisuje polecenie „przejdź na\
+    \ częstotliwość, zmień częstotliwość”. Odpowiedź **C** jest błędna, ponieważ **QSA** nie istnieje\
+    \ w oficjalnym słowniku kodów Q i nie odnosi się do zmiany częstotliwości."
+  - "**Odpowiedź:** **A. QSY**\n\n**Dlaczego?**  \n\n- **QSY** – dosłownie „Shift yourself”, czyli **przejdź\
+    \ na inną częstotliwość / zmień częstotliwość**.  \n- **QTR** i **QSA** oznaczają zupełnie inne rzeczy\
+    \ (np. QTR – „Transmit time”, QSA – „Signal strength”), więc nie pasują do podanego znaczenia.\n\n\
+    Twoja mnemotechnika „QSY – Shift Yourself (Change Frequency)” idealnie odzwierciedla to znaczenie.\
+    \ ✔️"
+- text: Który kod Q oznacza „Mam zakłócenia od innych stacji”?
+  answers:
+  - QWO
+  - QQQ
+  - QRM
+  correct_index: 2
+  explanations:
+  - "**Dlaczego odpowiedź A („QWO”) jest niepoprawna**\n\n- Kody Q są 3‑znakowymi skrótami, które zaczynają\
+    \ się od litery **Q** i kończą się dwoma literami określającymi znaczenie.\n- Litera **W** w trzeciej\
+    \ pozycji nie występuje w standardowym zestawie kodów Q.  \n  W „QWO” nie ma zdefiniowanego znaczenia\
+    \ w Międzynarodowym Związku Radioamatorów (IARU) ani w ITU‑R.\n\n**Poprawna odpowiedź – C („QRM”)**\n\
+    \n- **QRM** to oficjalny kod Q oznaczający **„Radio Mess (Interference – Man‑made)”**, czyli *„mam\
+    \ zakłócenia od innych stacji”*.\n- Twoja własna mnemotechnika podaje właśnie taką definicję:\n\n\
+    > **QRM – Radio Mess (Interference – Man‑made); mam zakłócenia od innych stacji**\n\nZatem jedynym\
+    \ prawidłowym wyborem jest **C. QRM**.  \n\n*W skrócie: „QWO” nie istnieje w katalogu kodów Q, natomiast\
+    \ „QRM” jest jednoznacznie przypisane do zakłóceń pochodzących od innych nadajników.*"
+  - "**Dlaczego odpowiedź B („QQQ”) jest niepoprawna?**\n\n1. **Kod Q‑QQQ nie istnieje w oficjalnym spisie\
+    \ kodów Q.**  \n   Standardowy zestaw kodów Q (np. ITU‑R M.1172) zawiera ponad 500 pozycji, ale nie\
+    \ ma wpisu „QQQ”. Dlatego nie może on oznaczać żadnego konkretnego komunikatu, w tym „mam zakłócenia\
+    \ od innych stacji”.\n\n2. **Kod Q‑Q… jest zarezerwowany tylko jako prefiks** – wszystkie prawidłowe\
+    \ kody zaczynają się od jednej litery **Q** i mają dwie kolejne litery (np. **QRM**, **QRN**, **QSO**).\
+    \ Trzy litery po „Q” nie spełniają tej struktury.\n\n---\n\n**Poprawna odpowiedź – C: QRM**\n\n- **Definicja:**\
+    \ **QRM – Radio Mess** (zakłócenia pochodzące od innych stacji).  \n- **Mnemonika:** w Twoich notatkach\
+    \ zapisałeś to jako *„Radio Mess (Interference – Man‑made); mam zakłócenia od innych stacji”* – dokładnie\
+    \ to, o co pytano.\n\n---\n\n### Krótkie podsumowanie\n\n| Kod | Znaczenie (z Twojej mnemotechniki)\
+    \ | Dlaczego to poprawna odpowiedź |\n|-----|-------------------------------------|--------------------------------|\n\
+    | **QRM** | Radio Mess – zakłócenia od innych stacji | Jest to jedyny standardowy kod Q opisujący\
+    \ **zakłócenia pochodzące od innych nadajników**. |\n\nZatem prawidłową odpowiedzią jest **C – QRM**.\
+    \ Jeśli napotkasz podobne pytania, sprawdzaj, czy kod istnieje w oficjalnym spisie i czy jego opis\
+    \ pasuje do treści pytania. Powodzenia na egzaminie!"
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **C – QRM**.\n\n**Dlaczego?**  \nKod Q **QRM**\
+    \ oznacza *“Radio Mess (Interference – Man‑made)”*, czyli **„mam zakłócenia od innych stacji”**. \
+    \ \n\nPozostałe kody nie odnoszą się do tego typu zakłóceń:\n- **QWO** – nie jest standardowym kodem\
+    \ Q.  \n- **QQQ** – nie istnieje w oficjalnym zestawie kodów Q.  \n\nTwoja odpowiedź jest więc w pełni\
+    \ prawidłowa. Powodzenia w dalszej nauce do egzaminu!"
+  - "**Odpowiedź:** **C. QRM**\n\n**Dlaczego?**  \n\n- **QRM** – *Radio Mess* – oznacza zakłócenia pochodzące\
+    \ od innych stacji (zakłócenia sztuczne, „man‑made”).  \n- **QWO** i **QQQ** nie są standardowymi\
+    \ kodami Q w łączności radiowej, więc nie mogą oznaczać zakłóceń od innych stacji.\n\nZatem jedynym\
+    \ prawidłowym kodem jest **QRM**."
+- text: Który kod Q oznacza „Siła twoich sygnałów waha się”?
+  answers:
+  - QSB
+  - QAZ
+  - QRY
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **A – QSB** i jest ona prawidłowa.\n\n- **QSB**\
+    \ oznacza *Signal Fading* – czyli **„Siła twoich sygnałów waha się”**.  \n- Inne kody Q podane w pytaniu\
+    \ (QAZ, QRY) nie istnieją w standardowym zestawie kodów Q.\n\nTwoja odpowiedź jest więc w 100 % poprawna.\
+    \ Powodzenia dalej w przygotowaniach do egzaminu!"
+  - "**Dlaczego odpowiedź B („QAZ”) jest błędna?**\n\n1. **Kod Q‑kodów** – istnieje jedynie określony\
+    \ zestaw 3‑literowych skrótów zaczynających się od **Q**. „QAZ” **nie występuje** w oficjalnej liście\
+    \ Q‑kodów (ITU‑R M.1172). Dlatego nie może mieć żadnego znaczenia w kontekście radiokomunikacji.\n\
+    \n2. **Treść pytania** – „Siła twoich sygnałów waha się”.  \n   W Twojej własnej liście mnemotechnicznej\
+    \ znajduje się właśnie opis:\n\n   > **QSB – Signal Breaking (Signal Fading); siła twoich sygnałów\
+    \ waha się**\n\n   To dokładnie odpowiada podanemu opisowi.\n\n3. **Poprawna odpowiedź** – dlatego\
+    \ jedyną prawidłową opcją jest **A. QSB**.\n\n---\n\n### Krótkie podsumowanie\n\n| Wybrana odpowiedź\
+    \ | Czy istnieje w Q‑kodach? | Czy pasuje do opisu? |\n|-------------------|--------------------------|----------------------|\n\
+    | **QAZ** (B)       | ❌ nie ma takiego kodu   | ❌ nie pasuje          |\n| **QSB** (A)       | ✅ oficjalny\
+    \ kod Q‑kod    | ✅ opis „siła sygnału waha się” |\n\n**Wniosek:** Wybierz **A. QSB** – to jedyny kod,\
+    \ który rzeczywiście oznacza „Signal fading” (zmienną siłę sygnału)."
+  - "**Dlaczego odpowiedź C („QRY”) jest niepoprawna**\n\n- **QRY** nie jest kodem Q w międzynarodowym\
+    \ słowniku Q‑codes.  \n- W oficjalnym zestawie kodów Q nie ma żadnego „QRY”. Dlatego nie może on mieć\
+    \ znaczenia *„Siła twoich sygnałów waha się”* ani żadnego innego.\n\n**Poprawna odpowiedź – A: QSB**\n\
+    \n- **QSB** – *Signal‑Strength Fading* (ang.) → po polsku **„Siła twoich sygnałów waha się”**.  \n\
+    - W Twoich mnemotechnikach zapisałeś to właśnie jako **QSB – Signal Breaking (Signal Fading)**, czyli\
+    \ dokładnie to, czego pytanie dotyczy.\n\n**Podsumowanie**\n\n- Brak kodu **QRY** w standardzie →\
+    \ niepoprawny wybór.  \n- **QSB** jest jedynym kodem, którego definicja brzmi „signal fading / siła\
+    \ sygnału waha się”.  \n\nZapamiętaj: **QSB = signal fading**. Dzięki temu łatwo odróżnisz go od nieistniejących\
+    \ kodów."
+  - "**Odpowiedź:** **A. QSB**\n\n**Dlaczego?**  \n\n- **QSB** – *Signal Breaking* (ang.) → w praktyce\
+    \ oznacza **zanik lub wahanie siły sygnału** (fading).  \n- Pozostałe kody: **QAZ** i **QRY** nie\
+    \ istnieją w standardowym zestawie kodów Q, więc nie mogą być prawidłową odpowiedzią.  \n\nZatem kod\
+    \ Q, który opisuje „siłę twoich sygnałów waha się”, to **QSB**."
+- text: Który kod Q oznacza „Jestem gotów do pracy, jestem czynny w eterze”?
+  answers:
+  - QWX
+  - QRV
+  - QRU
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A (QWX) jest niepoprawna?**  \n\n- **Q‑kody** mają 3 litery i są zdefiniowane\
+    \ w międzynarodowym słowniku Q.  \n- **QWX** nie występuje w oficjalnym spisie Q‑kodów, więc nie ma\
+    \ żadnego znaczenia w łączności radiowej.  \n- W Twojej liście mnemotechnicznej nie ma też takiego\
+    \ skrótu – wszystkie prawidłowe kody zaczynają się od **Q** i kończą na jednej z liter **R, S, T,\
+    \ …**.\n\n**Poprawny kod**  \n\n- **QRV** – „Ready for voice (Ready)”, czyli *„Jestem gotów do pracy,\
+    \ jestem czynny w eterze”*.  \n- Mnemonik, którego używasz, dokładnie opisuje to znaczenie: **QRV\
+    \ – Ready for Voice (Ready)**.\n\n**Podsumowanie**  \n\n- **QWX** – nie istnieje w standardzie Q‑kodów\
+    \ → nie może być poprawną odpowiedzią.  \n- **QRV** – jedyny kod wśród podanych, który formalnie oznacza\
+    \ gotowość do pracy w eterze.  \n\nDlatego prawidłowa odpowiedź to **B. QRV**."
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **B – QRV** jest prawidłowa.\n\n- **QRV** to skrót **„Ready\
+    \ for Voice (Ready)”**, czyli „Jestem gotów do pracy, jestem czynny w eterze”.  \n- Pozostałe kody\
+    \ nie pasują:  \n  - **QWX** nie jest standardowym kodem Q.  \n  - **QRU** oznacza „Do you have any\
+    \ messages for me?” („Masz dla mnie jakieś wiadomości?”).\n\nDlatego QRV jest właśnie tym kodem, którego\
+    \ szukasz. Powodzenia na egzaminie!"
+  - "**Dlaczego odpowiedź C (QRU) jest niepoprawna**\n\n| Kod Q | Znaczenie (standard ITU) | Dlaczego\
+    \ nie pasuje do pytania |\n|-------|--------------------------|--------------------------------|\n\
+    | **QRU** | *“What is the name of your station?”* – pytanie o nazwę stacji (lub „What do you want?”\
+    \ w niektórych wersjach). | Nie mówi nic o gotowości do pracy ani o byciu „czynnym w eterze”. To zapytanie,\
+    \ a nie stwierdzenie. |\n| **QRV** | *“I am ready (for reception/for a QSO).”* – „Jestem gotów do\
+    \ pracy, jestem czynny w eterze”. | Dokładnie opisuje stan gotowości, którego szukamy w pytaniu. |\n\
+    \n**Krótka mnemotechnika**  \n- **QRV** → **V** jak **“Ready”** (ang. *ready*).  \n- **QRU** → **U**\
+    \ jak **“U‑name?”** (pytanie o nazwę).\n\nTwoja lista mnemotechniczna zawiera już prawidłowy opis:\n\
+    \n> **QRV – Ready for Voice (Ready); jestem gotów do pracy, jestem czynny w eterze**\n\nStąd jedyną\
+    \ prawidłową odpowiedzią jest **B. QRV**.  \n\nPamiętaj, że wszystkie kody **Q** zaczynające się od\
+    \ **QR‑** są zazwyczaj **stwierdzeniami** (np. QRV – „I am ready”), podczas gdy kody **Q‑U** i **Q‑R**\
+    \ w niektórych przypadkach mogą mieć charakter **pytania**. To rozróżnienie pomaga uniknąć pomyłek."
+  - "**Odpowiedź:** **B. QRV**\n\n**Wyjaśnienie:**  \nKod **QRV** oznacza „Ready for voice (Ready)”, czyli\
+    \ *„Jestem gotów do pracy, jestem czynny w eterze”*.  \n\nPozostałe kody:\n- **QWX** – nie istnieje\
+    \ w standardowym zestawie kodów Q.  \n- **QRU** – oznacza „What is your (or my) last transmission?”\
+    \ (pytanie o ostatnią transmisję)."
+- text: Który kod Q oznacza „Moje położenie geograficzne jest…”?
+  answers:
+  - QLP
+  - QRG
+  - QTH
+  correct_index: 2
+  explanations:
+  - "**Dlaczego odpowiedź A (QLP) jest niepoprawna?**\n\n1. **Kod QLP nie istnieje** – w międzynarodowym\
+    \ słowniku kodów Q nie ma pozycji „QLP”. Dlatego nie może on oznaczać żadnego komunikatu, w tym „Moje\
+    \ położenie geograficzne jest…”.\n\n2. **Poprawny kod** – jedynym kodem Q, który wprost odnosi się\
+    \ do lokalizacji operatora, jest **QTH**.  \n   - **QTH** → *“My location is …”* (pol. *„Moje położenie\
+    \ geograficzne jest …”*).\n\n3. **Porównanie z innymi opcjami**  \n   - **QRG** – pytanie o częstotliwość\
+    \ (Read Gauge).  \n   - **QTH** – informacja o miejscu (Home/Location).  \n\nStąd jedyną prawidłową\
+    \ odpowiedzią jest **C. QTH**. Jeśli pamiętasz swoją mnemotechnikę („QTH – Home (Location)”), łatwo\
+    \ odrzucisz nieistniejące „QLP”."
+  - "**Dlaczego odpowiedź B jest nieprawidłowa**\n\n- **QRG** – w Twojej liście mnemotechnicznej zapisane\
+    \ jako *Read Gauge (Frequency)*.  \n  Oznacza ono: **„Jaka jest Twoja częstotliwość?”** (pytanie o\
+    \ aktualną częstotliwość, nie o położenie).\n\n- **QTH** – klasyczny kod Q, który pyta lub podaje\
+    \ **„Miejsce, w którym się znajdujesz”** (Twoje położenie geograficzne, adres stacji, miasto, współrzędne).\n\
+    \nZatem pytanie *„Który kod Q oznacza ‘Moje położenie geograficzne jest…’?”* wymaga właśnie kodu **QTH**,\
+    \ a nie QRG.\n\n---\n\n### Jak łatwo to zapamiętać?\n\n- **Q** – *Question* (pytanie).  \n- **TH**\
+    \ – **T** = *Town* (miasto), **H** = *Home* (dom).  \n  → *QTH* → *Town/Home* → **gdzie jesteś**.\n\
+    \n- **QRG** → *Read Gauge* → **czytaj częstotliwość**.\n\n---\n\n**Wskazówka na egzamin**:  \nJeśli\
+    \ kod Q dotyczy **lokalizacji**, wybieraj **QTH**.  \nJeśli dotyczy **częstotliwości**, wybieraj **QRG**."
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **C – QTH** i jest ona prawidłowa.\n\n- **QTH**\
+    \ to kod Q oznaczający **„Moje położenie geograficzne jest …”** (ang. *My location is …*).  \n- Inne\
+    \ kody podane w pytaniu mają zupełnie inne znaczenia:  \n  - **QLP** – *Will you keep a copy of my\
+    \ transmission?*  \n  - **QRG** – *What is your frequency?*  \n\nDlatego właśnie **QTH** jest właściwym\
+    \ wyborem. Powodzenia dalej w przygotowaniach do egzaminu krótkofalarskiego! \U0001F680"
+  - "**Prawidłowa odpowiedź:** **C. QTH**\n\n**Dlaczego?**  \n\n- **QTH** – w języku Q‑code oznacza *“My\
+    \ location (geographical position) is …”* (pol. *„moje położenie geograficzne jest …”*).  \n- **QLP**\
+    \ i **QRG** mają inne znaczenia (odpowiednio *“I am listening”* i *“Read the frequency”*), więc nie\
+    \ pasują do pytania.\n\nTwoja mnemotechnika już to podpowiada:\n\n> **QTH – Home (Location); moje\
+    \ położenie geograficzne jest…**  \n\nZatem wybierz **C – QTH**."
+- text: Który kod Q oznacza „Zmniejsz moc, zmniejszam moc”?
+  answers:
+  - QUB
+  - QRA
+  - QRP
+  correct_index: 2
+  explanations:
+  - "**Dlaczego odpowiedź A („QUB”) jest błędna**\n\n- **„QUB” nie istnieje w oficjalnym katalogu kodów\
+    \ Q** używanych w radiokomunikacji.  \n- Nawet jeżeli przyjąć, że litery „U” i „B” miałyby coś znaczyć,\
+    \ to w standardzie nie ma takiej kombinacji, więc nie może ona oznaczać „zmniejsz moc”.\n\n**Poprawna\
+    \ odpowiedź – C. QRP**\n\n- **QRP** jest jednym z najważniejszych kodów Q i oznacza **„Reduced Power”**\
+    \ – *„zmniejsz moc, zmniejszam moc”*.  \n- W twoich własnych mnemotechnikach zapisano to właśnie tak:\
+    \  \n\n  > **QRP – Reduced Power; zmniejsz moc, zmniejszam moc**  \n\n  Dzięki temu kodowi operatorzy\
+    \ informują, że pracują z niższą mocą nadawczą (np. 5 W zamiast 100 W) – często w celu ograniczenia\
+    \ zakłóceń lub spełnienia wymogów konkursu QRP.\n\n**Podsumowanie**\n\n- **QUB** – nieistniejący kod\
+    \ → nie może być prawidłową odpowiedzią.  \n- **QRP** – oficjalny kod Q oznaczający „Reduced Power”,\
+    \ czyli dokładnie to, o co pyta pytanie.  \n\nZapamiętaj: *QRP = “Reduce Power”* (pol. „zmniejsz moc”)."
+  - "**Dlaczego odpowiedź B („QRA”) jest błędna?**  \n\n- **„QRA”** nie istnieje w oficjalnym zestawie\
+    \ kodów Q.  \n- Nawet jeżeli przyjąć, że „QRA” mogłoby oznaczać coś w stylu *„Change Power”*, to definicja\
+    \ nie jest zdefiniowana w normach ITU‑R i nie jest używana w praktyce radiowej.  \n\n**Poprawna odpowiedź\
+    \ – C („QRP”)**  \n\n- **QRP** – *Reduced Power* (pol. **„zmniejsz moc, zmniejszam moc”**).  \n- Ten\
+    \ kod jest powszechnie stosowany w amatorskim radio‑operowaniu, szczególnie w kontekście **low‑power\
+    \ (QRP) operation**, czyli pracy przy ograniczonej mocy nadajnika.  \n\n**Podsumowanie**  \n\n- **QRA**\
+    \ – niepoprawny, nieistniejący kod.  \n- **QRP** – jedyny kod Q, którego definicja brzmi *„Reduced\
+    \ Power”* i który w praktyce oznacza **„zmniejszam moc”**.  \n\nZapamiętaj: **QRP = “Reduced Power”**\
+    \ (obniżona moc). Dzięki temu nie pomylisz go z innymi kodami Q."
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **C – QRP**.\n\n- **QRP** w kodach Q oznacza\
+    \ *„Reduced Power”* – czyli **„zmniejsz moc, zmniejszam moc”**.  \n- Inne podane kody (QUB, QRA) mają\
+    \ zupełnie inne znaczenia i nie odnoszą się do regulacji mocy nadajnika.\n\nTwoja odpowiedź jest więc\
+    \ w pełni prawidłowa. Powodzenia w dalszej nauce!"
+  - "**Odpowiedź:** **C. QRP**\n\n**Wyjaśnienie**  \nKod **QRP** oznacza „Reduced Power” – czyli **zmniejsz\
+    \ moc** (lub „pracuję z obniżoną mocą”).  \n\nPozostałe podane kody nie mają takiego znaczenia:\n\n\
+    - **QUB** – nie jest standardowym kodem Q.  \n- **QRA** – oznacza „Will you acknowledge receipt of\
+    \ my transmission?” (prośba o potwierdzenie odbioru).  \n\nDlatego prawidłową odpowiedzią jest **QRP**."
+- text: Który kod Q oznacza „Mam dla ciebie telegram, wiadomość”?
+  answers:
+  - QRT
+  - QTC
+  - QSV
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A („QRT”) jest niepoprawna?**  \n\n- **QRT** – *Radio Terminate* – oznacza **„kończę\
+    \ nadawanie / wyłączam stację”**.  \n- To polecenie służy do zakończenia łączności, a nie do przekazywania\
+    \ treści wiadomości.  \n\n**Poprawna odpowiedź – B („QTC”)**  \n\n- **QTC** – *Transmission Content*\
+    \ – dosłownie znaczy **„mam dla ciebie telegram, wiadomość”**.  \n- Używa się go, gdy operator chce\
+    \ przekazać treść (np. telegram) drugiej stacji.  \n\n**Podsumowanie**  \n\n| Kod | Znaczenie (mnemonic)\
+    \ | Co naprawdę oznacza? |\n|-----|----------------------|----------------------|\n| **QRT** | Radio\
+    \ Terminate | „Kończę nadawanie” |\n| **QTC** | Transmission Content | „Mam dla ciebie telegram /\
+    \ wiadomość” |\n\nZatem jedynym kodem Q, który odpowiada na pytanie „Mam dla ciebie telegram, wiadomość”,\
+    \ jest **QTC**."
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś **odpowiedź B – QTC** i jest to prawidłowa odpowiedź.\n\n\
+    - **QTC** – *“Transmission Content (Message)”*  \n  Oznacza ono: *„Mam dla ciebie telegram, wiadomość”*\
+    \ i służy do wskazania, że nadawca posiada do przekazania treść (np. telegram) do odbiorcy.\n\nPozostałe\
+    \ kody:  \n\n- **QRT** – *“Radio Terminate (Stop Transmission)”* – kończenie nadawania.  \n- **QSV**\
+    \ – *“Signal Volume (Strength)”* – informacja o sile sygnału.\n\nDlatego właśnie **QTC** jest tym,\
+    \ którego szukaliśmy. Powodzenia w dalszej nauce do egzaminu krótkofalarskiego! \U0001F680"
+  - "**Dlaczego odpowiedź C – „QSV” – jest niepoprawna**\n\n- **„QSV” nie jest zdefiniowanym kodem Q**\
+    \ w międzynarodowym słowniku Q‑codes.  \n  Wśród ponad 70 oficjalnych kodów (np. QRT, QTC, QRV …)\
+    \ nie ma takiego skrótu, więc nie może oznaczać żadnej konkretnej wiadomości.\n\n- **Kod, którego\
+    \ szukamy, to **`QTC`**.**  \n  - **Mnemonika:** *Transmission Content (Message)* – „Mam dla ciebie\
+    \ telegram, wiadomość”.  \n  - **Użycie w praktyce:** nadawca informuje, że ma do przekazania treść\
+    \ telegramu lub krótką wiadomość, którą odbiorca ma odebrać i zanotować.\n\n- **Kod **`QRT`** (odpowiedź\
+    \ A) oznacza „Radio Terminate (Stop Transmission)”, czyli zakończenie nadawania.** Nie ma nic wspólnego\
+    \ z przekazywaniem telegramu.\n\n**Podsumowanie**\n\n- **Poprawna odpowiedź:** **B. QTC** – kod Q\
+    \ oznaczający, że nadawca ma telegram/wiadomość dla odbiorcy.  \n- **C. QSV** jest po prostu nieistniejącym\
+    \ kodem Q, dlatego wybór tej odpowiedzi jest błędem."
+  - "**Odpowiedź:** **B. QTC**\n\n**Wyjaśnienie:**  \n\nKod **QTC** oznacza *„Transmission Content (Message)”*\
+    \ – czyli „Mam dla ciebie telegram, wiadomość”. Pozostałe kody:\n\n- **QRT** – *Radio Terminate* (zakończenie\
+    \ nadawania).  \n- **QSV** – nie jest standardowym kodem Q (nie ma takiego znaczenia w oficjalnym\
+    \ zestawie).\n\nDlatego prawidłową odpowiedzią jest **QTC**."
+- text: Który kod Q oznacza „Łączność, mam łączność”?
+  answers:
+  - QSL
+  - QSO
+  - QRS
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A (QSL) jest nieprawidłowa**\n\n- **QSL** – *Signed Log (Acknowledge)*.  \n\
+    \  Służy do potwierdzenia otrzymania łączności („potwierdzam odbiór”, „wyślę kartę QSL”). Nie opisuje\
+    \ samego faktu, że „masz łączność”.\n\n**Poprawna odpowiedź – B (QSO)**  \n\n- **QSO** – *Successful\
+    \ Operation (Contact)*.  \n  Oznacza, że stacje **nawiązały łączność** („Łączność, mam łączność”).\
+    \ Jest to jedyny kod z podanych, który wprost informuje o trwającej rozmowie.\n\n**Porównanie**  \n\
+    \n| Kod | Znaczenie w Twojej mnemotechnice | Co opisuje? |\n|-----|-----------------------------------|-------------|\n\
+    | **QSL** | Signed Log (Acknowledge) | Potwierdzenie już istniejącej łączności |\n| **QSO** | Successful\
+    \ Operation (Contact) | Stwierdzenie, że łączność jest aktywna |\n| **QRS** | *Nie dotyczy* (zwykle\
+    \ „Send slower”) | Nie ma związku z potwierdzeniem łączności |\n\nZatem jedynym kodem, który dosłownie\
+    \ odpowiada na pytanie „Łączność, mam łączność?”, jest **QSO**."
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **B – QSO**.\n\n**Dlaczego?**  \nKod Q **QSO**\
+    \ oznacza *„Successful Operation (Contact)”*, czyli **„Łączność, mam łączność”**. To standardowe potwierdzenie,\
+    \ że dwie stacje nawiązały udany kontakt radiowy.  \n\nPozostałe kody:\n- **QSL** – potwierdzenie\
+    \ odbioru („Signed Log”).\n- **QRS** – prośba o wolniejsze tempo nadawania („Send slower”).\n\nTwoja\
+    \ odpowiedź jest więc w pełni prawidłowa. Powodzenia na egzaminie! \U0001F680"
+  - "**Dlaczego odpowiedź C („QRS”) jest błędna?**  \n\n| Kod Q | Znaczenie (standardowe) | Twoja mnemotechnika\
+    \ |\n|------|------------------------|----------------------|\n| **QSL** | *“I confirm receipt / send\
+    \ a QSL card”* | *Signed Log (Acknowledge)* |\n| **QSO** | *“Contact / successful communication”*\
+    \ | **„Łączność, mam łączność”** |\n| **QRS** | *“Transmit slower (reduce speed)”* | *Nie‑dotyczy\
+    \ łączności* |\n\n### Co właściwie oznacza **QRS**?\n- **QRS** → *“Send slower / reduce transmission\
+    \ speed”*  \n- Używa się go, gdy chcemy, aby rozmówca zwolnił tempo nadawania (np. w słabym zasięgu).\
+    \  \n- Nie ma nic wspólnego z potwierdzeniem, że połączenie istnieje.\n\n### Dlaczego prawidłowa odpowiedź\
+    \ to **B – QSO**?\n- **QSO** to najczęściej używany kod oznaczający *„Łączność, mam łączność”* (ang.\
+    \ *“I have a contact”*).  \n- W Twojej liście mnemoników: **QSO – Successful Operation (Contact)**\
+    \ – dokładnie to, czego pytanie wymaga.\n\n### Jak uniknąć podobnych pomyłek?\n1. **Skup się na temacie**\
+    \ pytania: jeśli chodzi o **istnienie połączenia**, szukaj kodu związanego z *contact* lub *acknowledgement*\
+    \ (QSL, QSO).  \n2. **Wyklucz kody opisujące czynności** (np. QRS – zmiana prędkości, QRG – częstotliwość).\
+    \  \n3. **Powtórz kluczowe skojarzenia**:  \n   - **QSL** → *potwierdzenie, karta*  \n   - **QSO**\
+    \ → *łączność*  \n   - **QRS** → *zwolnij tempo*  \n\n---\n\n**Podsumowanie**:  \n*QRS* nie oznacza\
+    \ „Łączność, mam łączność”. To kod informujący o potrzebie spowolnienia nadawania. Prawidłowy kod\
+    \ to **QSO**. Jeśli zapamiętasz, że **„S” w QSO pochodzi od „Successful” (udane), a nie od „slow”,\
+    \ łatwiej będzie odróżnić go od **QRS**. Powodzenia na egzaminie!"
+  - "**Odpowiedź:** **B. QSO**\n\n**Wyjaśnienie**  \nKod **QSO** w języku Q oznacza *„Łączność, mam łączność”*\
+    \ – czyli potwierdzenie udanej rozmowy (contact).  \n\n- **QSL** – potwierdzenie odbioru (acknowledge).\
+    \  \n- **QRS** – prosba o wolniejsze nadawanie (slow down).  \n\nDlatego jedynym prawidłowym wyborem\
+    \ jest **QSO**."
+- text: Który kod Q oznacza „Potwierdzam odbiór, przyślę kartę potwierdzającą łączność”?
+  answers:
+  - QSL
+  - QSA
+  - QRT
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **A – QSL**, co jest prawidłowe.\n\n**Dlaczego?**\
+    \  \n\n- **QSL** – dosłownie *“Signed Log”*, czyli **„potwierdzam odbiór, przyślę kartę potwierdzającą\
+    \ łączność”**.  \n- Inne kody: **QSA** oznacza „Strength of signal” (siła sygnału), a **QRT** – „Terminate\
+    \ transmission” (zakończ transmisję).  \n\nTwoja odpowiedź idealnie odpowiada definicji kodu QSL.\
+    \ Dobra robota!"
+  - "**Dlaczego odpowiedź B („QSA”) jest niepoprawna?**\n\n1. **Standardowy kod Q**  \n   - W międzynarodowym\
+    \ zestawie kodów Q istnieje **QSL** – „*Potwierdzam odbiór, przyślę kartę potwierdzającą łączność*”.\
+    \  \n   - Nie ma kodu **QSA** w oficjalnym słowniku Q‑codes; dlatego nie może on oznaczać tego, o\
+    \ co pytano.\n\n2. **Twoja mnemotechnika**  \n   - **QSL – Signed Log (Acknowledge)** – właśnie tak\
+    \ zapisałeś: „potwierdzam odbiór, przyślę kartę”.  \n   - Nie masz żadnego skojarzenia dla **QSA**,\
+    \ więc łatwo jest pomylić literę „L” (z *Log*) z literą „A”.\n\n3. **Zamiana liter**  \n   - **L**\
+    \ i **A** leżą blisko na klawiaturze (w układzie QWERTY „L” jest po prawej od „A”).  \n   - Przy szybkim\
+    \ czytaniu lub pisaniu można nieświadomie zamienić je ze sobą, co prowadzi do wyboru **QSA** zamiast\
+    \ **QSL**.\n\n4. **Jak uniknąć pomyłki**  \n   - **Powtarzaj**: *Q‑S‑L – *“Signed Log”* → **S**ign‑**L**og\
+    \ → **L** jak **Log** (log‑księga).  \n   - **Sprawdzaj**: przed zaznaczeniem odpowiedzi upewnij się,\
+    \ że kod rzeczywiście istnieje w tabeli Q‑codes (np. w Twojej notatce masz tylko **QSL**, **QRG**,\
+    \ **QRL**, …, nie ma **QSA**).\n\n**Podsumowanie**  \nPoprawny kod to **QSL**. **QSA** nie jest uznanym\
+    \ kodem Q, więc nie może odpowiadać definicji „Potwierdzam odbiór, przyślę kartę potwierdzającą łączność”.\
+    \ Traktuj literę **L** jako kluczowe „Log/Letter” w Twojej mnemotechnice, a pomyłka z **A** zostanie\
+    \ wyeliminowana."
+  - "**Dlaczego odpowiedź C („QRT”) jest niepoprawna?**\n\n- **QRT** w Twojej mnemotechnice oznacza **„Radio\
+    \ Terminate (Stop Transmission)”** – czyli *kończę nadawanie, wyłączam stację*.  \n- To polecenie\
+    \ informuje drugą stację, że przestajesz nadawać, a **nie** odnosi się do potwierdzania odbioru.\n\
+    \n**Co oznacza prawidłowa odpowiedź A („QSL”)?**\n\n- **QSL** w Twojej liście to **„Signed Log (Acknowledge)”**\
+    \ – czyli *potwierdzam odbiór, przyślę kartę potwierdzającą łączność*.  \n- Używa się go, gdy chcesz\
+    \ potwierdzić, że odebrałeś wiadomość i zamierzasz wysłać kartę QSL (formalny dowód łączności).\n\n\
+    **Podsumowanie**\n\n- **QRT** → *zakończenie transmisji* („stop transmission”).  \n- **QSL** → *potwierdzenie\
+    \ odbioru i wysłanie karty QSL* („acknowledge”).\n\nDlatego jedyną poprawną odpowiedzią jest **A –\
+    \ QSL**."
+  - "**Odpowiedź:** **A. QSL**\n\n**Wyjaśnienie**  \nKod **QSL** oznacza *„Signed Log (Acknowledge)”*\
+    \ – czyli potwierdzenie odbioru i gotowość do wysłania karty QSL (potwierdzenia łączności).  \n\n\
+    Pozostałe kody:\n- **QSA** – nie istnieje w standardowym zestawie kodów Q.\n- **QRT** – *„Radio Terminate”*\
+    \ – zakończenie nadawania.  \n\nDlatego prawidłową odpowiedzią jest **QSL**."
+- text: Który kod Q dotyczy czytelności sygnału?
+  answers:
+  - QRK
+  - QSA
+  - QRP
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – QRK** jest prawidłowa, ponieważ kod **QRK** oznacza\
+    \ **“Readability of signal”** – czyli *czytelność sygnału*.  \nPozostałe kody:\n\n- **QSA** – siła\
+    \ sygnału (signal strength)  \n- **QRP** – praca przy obniżonej mocy (reduced power)\n\nDlatego właśnie\
+    \ **QRK** jest jedynym kodem Q odnoszącym się do oceny, jak wyraźny i łatwy do odczytania jest odbierany\
+    \ sygnał."
+  - "**Dlaczego odpowiedź B („QSA”) jest niepoprawna**\n\n- **QSA** – w kodach Q oznacza **„Signal Strength\
+    \ – Amplitude”** (siłę sygnału w dB).  \n  Używa się go, gdy chcemy się dowiedzieć, jak mocny jest\
+    \ odbierany sygnał (np. *QSA?* → *QSA 57*).  \n- Czytelność (jakość, wyraźność) nie jest tym samym\
+    \ co moc. Nawet silny sygnał może być nieczytelny, jeśli jest zniekształcony lub ma dużo zakłóceń.\n\
+    \n**Poprawna odpowiedź – A („QRK”)**\n\n- **QRK** – kod Q oznaczający **„Readability”** (czytelność)\
+    \ sygnału.  \n  Odpowiedź przyjmuje skalę od 1 do 5, gdzie:  \n\n\\[\n\\text{QRK}=1 \\; \\text{(bardzo\
+    \ nieczytelny)} \\quad \\dots \\quad \\text{QRK}=5 \\; \\text{(idealnie czytelny)}\n\\]\n\n- Przykład:\
+    \ *QRK?* → *QRK 3* oznacza „sygnał jest umiarkowanie czytelny”.\n\n**Podsumowanie**\n\n- **QSA** → moc\
+    \ sygnału (dB).  \n- **QRK** → czytelność (jakość, zrozumiałość).  \n\nDlatego pytanie o **czytelność**\
+    \ wymaga kodu **QRK**, a nie **QSA**."
+  - "**Dlaczego odpowiedź C – „QRP” jest niepoprawna?**  \n\n- **QRP** oznacza *Reduced Power* – czyli\
+    \ „zmniejszam moc”.  \n- To kod informujący o tym, że nadawca pracuje przy niższym niż zwykle poziomie\
+    \ mocy, a nie o jakości odbioru sygnału.\n\n**Co właściwie pyta pytanie?**  \n\n> „Który kod Q dotyczy\
+    \ **czytelności** sygnału?”\n\nW języku Q‑code **czytelność** (ang. *readability*) jest określana\
+    \ właśnie przez **QRK**.  \n\n- **QRK** – *Readability* (czytelność).  \n  - Przykład: „QRK 5” oznacza,\
+    \ że sygnał jest bardzo czytelny (maksymalna czytelność).  \n  - Skala od 1 (bardzo słaba) do 5 (doskonała).\n\
+    \n**Pozostałe odpowiedzi**  \n\n- **QSA** – *Signal Strength* (siła sygnału). To informuje o **mocy**\
+    \ odbieranego sygnału, a nie o tym, jak dobrze da się go zrozumieć.  \n- **QRP** – jak wyjaśniono,\
+    \ dotyczy mocy nadawania.\n\n**Podsumowanie**  \n\n- **QRK** → czytelność (readability).  \n- **QSA**\
+    \ → siła sygnału (signal strength).  \n- **QRP** → zmniejszona moc nadawania (reduced power).  \n\n\
+    Dlatego prawidłową odpowiedzią jest **A. QRK**."
+  - "**Odpowiedź:** **A. QRK**\n\n**Dlaczego?**  \n\n- **QRK** – kod Q oznaczający *czytelność sygnału*\
+    \ (ang. **Readability**). Używany jest, gdy operator pyta: „Jak oceniasz czytelność mojego sygnału?”\
+    \ lub podaje własną ocenę (np. „QRK 5”).  \n\n- **QSA** dotyczy siły sygnału (Readability → *Signal\
+    \ Strength*), a nie jego czytelności.  \n\n- **QRP** oznacza pracę z obniżoną mocą nadawania (Reduced\
+    \ Power).  \n\nZatem jedynym kodem odnoszącym się do **czytelności** jest **QRK**."
+- text: Który kod Q dotyczy siły sygnału?
+  answers:
+  - QRV
+  - QSA
+  - QSX
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź **A. QRV** jest niepoprawna**\n\n- **QRV** – *Ready for Voice (Ready)*.  \n\
+    \  Ten kod oznacza, że stacja jest gotowa do pracy (np. „Jestem w eterze, możesz mnie wywołać”). Nie\
+    \ ma żadnego związku z pomiarem ani opisem **siły** odbieranego sygnału.\n\n- **QSA** – *Signal Strength*.\
+    \  \n  To właśnie kod, który służy do **zgłoszenia poziomu mocy sygnału** (np. „QSA 5” – sygnał odbierany\
+    \ z siłą 5 w skali od 1 do 9). W praktyce Q‑kody używane są w wymianie informacji o jakości połączenia,\
+    \ a QSA jest jedynym z podanych, który opisuje **siłę sygnału**.\n\n- **QSX** – *Transmit on Another\
+    \ Frequency (Change Frequency for Transmission)*.  \n  Ten kod dotyczy zmiany częstotliwości nadawczej,\
+    \ więc także nie ma związku z siłą sygnału.\n\n---\n\n### Podsumowanie\n\n| Kod | Znaczenie | Dotyczy\
+    \ siły sygnału? |\n|-----|-----------|----------------------|\n| **QRV** | Gotowość do pracy | ❌ |\n\
+    | **QSA** | Zgłoszenie siły sygnału | ✅ |\n| **QSX** | Zmiana częstotliwości nadawczej | ❌ |\n\nDlatego\
+    \ prawidłową odpowiedzią jest **B. QSA**. Jeśli w Twoich własnych mnemotechnikach brakuje kodu QSA,\
+    \ możesz dodać go jako:\n\n> **QSA – Signal **A**mplitude** (siła sygnału).\n\nW ten sposób łatwiej\
+    \ będzie go odróżnić od QRV (gotowość) i QSX (zmiana częstotliwości)."
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **B – QSA**.\n\n**Dlaczego?**  \nKod **QSA**\
+    \ oznacza **„Signal Strength”** – jest używany, aby zapytać o moc odbieranego sygnału lub podać jego\
+    \ wartość (np. w dBm). Żaden z pozostałych kodów (QRV – „Ready”, QSX – „Cross‑band transmit”) nie\
+    \ odnosi się do siły sygnału.  \n\nZatem **QSA** jest jedynym kodem Q, który dotyczy właśnie siły\
+    \ sygnału."
+  - "**Dlaczego odpowiedź C („QSX”) jest błędna?**  \n\n- **QSX** – „*Will you listen to …?*” (prośba\
+    \ o słuchanie innej stacji). Ten kod nie ma nic wspólnego z pomiarem ani opisem **siły sygnału**.\
+    \  \n- W Twojej liście mnemotechnik nie ma QSX, więc nie ma żadnego skojarzenia, które mogłoby wskazywać\
+    \ na „signal strength”.\n\n**Poprawna odpowiedź – B („QSA”)**  \n\n- **QSA** – *Signal Strength* (siła\
+    \ sygnału).  \n- Definicja z Międzynarodowego słownika kodów Q: *“Report signal strength”* – czyli\
+    \ *„zgłaszaj siłę sygnału”*.  \n- W praktyce używa się go, aby podać moc odbieranego sygnału w skali\
+    \ od 1 do 9 (np. **QSA 5** = słaby sygnał, **QSA 9** = bardzo silny).\n\n**Podsumowanie**  \n\n- **QRV**\
+    \ – „Ready” (gotowość).  \n- **QSA** – „Signal Strength” (siła sygnału) – **poprawna odpowiedź**.\
+    \  \n- **QSX** – prośba o nasłuchiwanie, nie dotyczy siły sygnału.  \n\nZatem prawidłowy kod Q opisujący\
+    \ siłę sygnału to **QSA**."
+  - "**Poprawna odpowiedź:** **B. QSA**\n\n**Dlaczego?**  \n\n- **QSA** – *Signal Strength* – jest używany,\
+    \ aby zapytać lub podać **siłę sygnału** (np. „QSA ? – Jaka jest siła twojego sygnału?”).  \n- **QRV**\
+    \ oznacza „gotowy do pracy”, a **QSX** dotyczy „przeszukiwania pasma”.  \n\nZatem jedynie **QSA**\
+    \ odnosi się do pomiaru lub zgłaszania poziomu sygnału."
+- text: Który kod Q oznacza „Która jest godzina?” / „Podaj czas”?
+  answers:
+  - QTR
+  - QRY
+  - QRG
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **A. QTR**.  \n\nKod **QTR** w telegraficznej\
+    \ konwencji Q‑codes oznacza pytanie *„Która jest godzina?”* lub prośbę o podanie czasu. Żadne inne\
+    \ z podanych kodów (QRY – „Czy jesteś zajęty?”; QRG – „Jaka jest częstotliwość?”) nie mają takiego\
+    \ znaczenia.  \n\nDlatego zaznaczenie **QTR** jest prawidłowe. Powodzenia w dalszej nauce!"
+  - "**Dlaczego odpowiedź B („QRY”) jest błędna?**\n\n- **„QRY” nie istnieje w oficjalnym zestawie kodów\
+    \ Q.**  \n  Kody Q są 3‑literowymi skrótami (Q + dwie litery) przyjętymi międzynarodowo przez ITU.\
+    \ Nie wszystkie możliwe kombinacje są zdefiniowane – „QRY” nie jest jednym z nich, więc nie może oznaczać\
+    \ pytania o czas.\n\n- **Poprawny kod to **`QTR`**.**  \n  - **QTR** – *What is the time?* / *Podaj\
+    \ czas?*  \n  - Jest to jedyny zdefiniowany kod Q, który służy do zapytania o aktualną godzinę.\n\n\
+    **Podsumowanie**\n\n| Kod | Znaczenie |\n|-----|-----------|\n| **QTR** | *„What is the time?” – Podaj\
+    \ czas* (poprawna odpowiedź) |\n| **QRY** | Nie istnieje w oficjalnym słowniku kodów Q (dlatego odpowiedź\
+    \ błędna) |\n\nZapamiętaj: przy pytaniu o godzinę zawsze używaj **QTR**. \U0001F680"
+  - "**Dlaczego odpowiedź C jest błędna**\n\n- **QRG** – w Twojej liście mnemotechnicznej oznacza *„Read\
+    \ Gauge (Frequency); moja częstotliwość to …”*.  \n  To kod używany, kiedy ktoś pyta o **częstotliwość**,\
+    \ a nie o czas.  \n- Nie ma w oficjalnym zestawie kodów Q żadnego znaczenia związanego z godziną,\
+    \ które brzmiałoby podobnie do **QRG**.\n\n**Poprawna odpowiedź – QTR**\n\n- **QTR** – kod Q oznaczający\
+    \ *„What is the time?”* (ang. *„What time is it?”*).  \n  W polskim tłumaczeniu pojawia się jako „Która\
+    \ jest godzina?” lub „Podaj czas?”.  \n- Dlatego właśnie **A** (QTR) jest jedyną prawidłową odpowiedzią.\n\
+    \n**Podsumowanie**  \n\n| Kod | Znaczenie |\n|-----|-----------|\n| **QRG** | pytanie o częstotliwość\
+    \ |\n| **QTR** | pytanie o czas (godzinę) |\n| **QRY** | (nie istnieje w standardowym zestawie Q‑codes)\
+    \ |\n\nZatem, aby odpowiedzieć na pytanie *„Która jest godzina?”*, należy użyć **QTR**, a nie **QRG**."
+  - "**Odpowiedź:** **A. QTR**\n\n**Dlaczego?**  \n\n- **QTR** – pytanie o **czas** („What is the time?”\
+    \ / „Podaj czas?”).  \n- **QRY** i **QRG** mają inne znaczenia:  \n  - **QRY** – „Are you busy?” (czy\
+    \ jesteś zajęty).  \n  - **QRG** – „Read the frequency” (odczytaj częstotliwość).\n\nZatem jedynym\
+    \ kodem Q, który pyta o godzinę, jest **QTR**."
+- text: Który kod Q oznacza „Jakie mam miejsce w kolejce?”?
+  answers:
+  - QRL
+  - QRY
+  - QRX
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A („QRL”) jest niepoprawna?**\n\n- **QRL** – *“Are you busy?”* / *“Line busy”*\
+    \ – pyta się, czy druga stacja jest zajęta i czy nie powinna się odzywać. Nie ma nic wspólnego z kolejką.\n\
+    \n- **QRY** – *“What is my position in the queue?”* – dosłownie pyta o miejsce w kolejce (czyli **“Jakie\
+    \ mam miejsce w kolejce?”**). To jedyny kod Q, który odnosi się do kolejności oczekiwania.\n\n- **QRX**\
+    \ – *“Stand by, I will call you later”* – informuje, że trzeba czekać, ale nie pyta o pozycję w kolejce.\n\
+    \nZatem prawidłowa odpowiedź to **B. QRY**.  \n\n**Podsumowanie:** QRL = “Czy jesteś zajęty?”, a nie\
+    \ “Jakie mam miejsce w kolejce?”. Dlatego wybór A jest błędny."
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **B – QRY**.\n\n**Dlaczego?**  \nKod **QRY**\
+    \ znaczy *„What is my position in the queue?”* – czyli „Jakie mam miejsce w kolejce?”. Żadne z pozostałych\
+    \ kodów nie dotyczy pytania o pozycję w kolejce:\n\n- **QRL** – „Czy linia jest zajęta?” (Line Busy)\
+    \  \n- **QRX** – „Proszę czekać, jestem w trybie oczekiwania” (Stand‑by)\n\nDlatego **QRY** jest jedynym\
+    \ kodem odpowiadającym treści pytania. Powodzenia w dalszej nauce! \U0001F680"
+  - "**Dlaczego odpowiedź C (QRX) jest nieprawidłowa?**  \n\n- **QRX** – *“Stand‑by, wait”*  \n  Oznacza:\
+    \ *„Proszę czekać, nie nadawaj teraz”*. Używa się go, gdy ktoś chce, aby drugi operator wstrzymał\
+    \ nadawanie i przygotował się do odebrania. Nie zawiera pytania o pozycję w kolejce.  \n\n- **QRY**\
+    \ – *“What is my position in the queue?”*  \n  To właśnie kod, którego szukasz. Pytasz: *„Jaka jest\
+    \ moja pozycja w kolejce?”* – np. w sytuacji, gdy wielu operatorów czeka na dostęp do tego samego\
+    \ pasma.  \n\n- **QRL** – *“Line busy”*  \n  Informuje, że linia jest zajęta (inny operator już nadawał).\
+    \ To także nie jest pytanie o kolejkę.  \n\n**Jak to zapamiętać?**  \n\n- **QR** + **X** → *e**X**it*\
+    \ → „przerwij, poczekaj”.  \n- **QR** + **Y** → *e**Y*** (ang. *queue* zawiera literę **Y** w środku)\
+    \ → „pytanie o kolejkę”.  \n\nDlatego prawidłową odpowiedzią jest **B. QRY**."
+  - "**Pytanie**: *Który kod Q oznacza „Jakie mam miejsce w kolejce?”*  \n\n**Poprawna odpowiedź**: **B.\
+    \ QRY**\n\n**Uzasadnienie**\n\n- **QRL** – *“Line busy”* – informuje, że linia jest zajęta. Nie dotyczy\
+    \ kolejki.  \n- **QRX** – *“Stand‑by”* – prosi o poczekanie, ale nie określa pozycji w kolejce.  \n\
+    - **QRY** – *“What is my place in the queue?”* – właśnie pyta o numer w kolejce (czyli o kolejny dostępny\
+    \ slot).\n\nDlatego jedynym kodem, który odpowiada opisowi, jest **QRY**."
+- text: Który kod Q oznacza „Nazwa twojej stacji jest…”?
+  answers:
+  - QRA
+  - QRZ
+  - QTH
+  correct_index: 0
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – QRA** jest prawidłowa.  \n\nKod Q **QRA** oznacza:\
+    \ **„Nazwa twojej stacji jest …”** (w praktyce podaje się nazwę lub oznaczenie stacji, najczęściej\
+    \ w formie kwadratu grid‑square).  \n\nPozostałe kody:\n- **QRZ** – pytanie o to, *kto* jest nadawcą,\n\
+    - **QTH** – pytanie o *lokalizację* stacji (miasto, współrzędne).\n\nDlatego właśnie **QRA** jest\
+    \ właściwym wyborem. ✔️"
+  - "**Dlaczego odpowiedź B (QRZ) jest błędna?**\n\n- **QRA** – *“Your station’s call sign is …”* (dosł.\
+    \ „Nazwa twojej stacji jest …”).  \n  To jedyny kod Q, który pyta o **identyfikator (znak wywoławczy)**\
+    \ stacji.\n\n- **QRZ** – *“Who is calling me?”* (czyli *„Kto mnie woła?”*).  \n  Ten kod służy, aby\
+    \ poprosić rozmówcę o podanie **jego własnego znaku wywoławczego**, a nie Twojego.\n\n- **QTH** –\
+    \ *“My location is …”* (czyli *„Mój adres/położenie jest …”*).  \n  Dotyczy jedynie **lokalizacji**\
+    \ (miasto, koordynaty), nie nazwy stacji.\n\nZatem pytanie *„Nazwa twojej stacji jest …”* wymaga właśnie\
+    \ kodu **QRA**, a nie QRZ.  \n\n**Krótka reguła pamięciowa:**  \n- **QRA** → **R** = *Call sign* (wywoławczy).\
+    \  \n- **QRZ** → **Z** = *Who* (kto?).  \n- **QTH** → **H** = *Home* (dom, miejsce).  \n\nStąd w Twojej\
+    \ listie mnemotechnicznej:  \n\n```\nQRA – My station’s call sign (Nazwa)\nQRZ – Who is calling? (Kto\
+    \ woła)\nQTH – Home / Location (Miejsce)\n```\n\nUżywając tej prostej asocjacji łatwiej zapamiętać,\
+    \ że **QRA** odpowiada na pytanie o nazwę (znak) Twojej stacji."
+  - "**Dlaczego odpowiedź C („QTH”) jest błędna**\n\n- **QTH** w kodach Q oznacza **„Miejsce (lokalizacja)\
+    \ twojej stacji”** – czyli **adres, miasto, państwo itp.**  \n  *Mnemonika:* **QTH – “Home (Location)”**.\n\
+    \n- Pytanie brzmi: **„Nazwa twojej stacji jest …”** – czyli chodzi o **identyfikator (nazwę) stacji,\
+    \ a nie o jej położenie**.\n\n- Dlatego **QTH** nie spełnia wymogu „nazwa”, tylko „lokalizacja”.\n\
+    \n**Poprawna odpowiedź – A („QRA”)**\n\n- **QRA** to kod Q oznaczający **„Nazwa (oznaczenie) twojej\
+    \ stacji”**.  \n  *Mnemonika:* **QRA – “Read Station Name”** (w naszym zestawie „Nazwa twojej stacji\
+    \ jest …”).\n\n- **QRA** jest używane, gdy chce się podać **identyfikator stacji** (np. „W4XYZ”, „4U1ABC”).\n\
+    \n**Podsumowanie**\n\n| Kod | Znaczenie | Dlaczego nie pasuje do pytania |\n|-----|-----------|--------------------------------|\n\
+    | **QTH** | Lokalizacja (miejsce) | Dotyczy położenia, nie nazwy |\n| **QRA** | Nazwa/oznaczenie stacji\
+    \ | Bezpośrednio odpowiada na pytanie o nazwę |\n\nZatem prawidłowa odpowiedź to **A – QRA**."
+  - "**Odpowiedź:** **A. QRA**\n\n**Wyjaśnienie**  \nKod Q **QRA** pyta o **nazwę (oznaczenie) stacji**\
+    \ – dosłownie „*Nazwa twojej stacji jest…*”.  \n\nPozostałe kody:\n- **QRZ** – „Kto tu jest?” (prośba\
+    \ o podanie znaku wywoławczego rozmówcy).  \n- **QTH** – „Gdzie znajduje się twoja stacja?” (lokalizacja).\n\
+    \nZatem jedynie **QRA** odpowiada podanemu opisowi."
+- type: open
+  text: Jestem zajęty, proszę nie przeszkadzać
+  answers:
+  - QRL
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nTwoja odpowiedź **„QRL”** jest prawidłowa – wielkość liter nie ma znaczenia.\n\
+    \n**Mnemotechnika:**  \n**QRL –** *Line Busy (Busy)* → *„Jestem zajęty, proszę nie przeszkadzać.”*\
+    \  \n\nZapamiętaj, że przy użyciu kodu **QRL** informujesz innych, że Twoja stacja jest zajęta i nie\
+    \ przyjmuje połączeń. Powodzenia w dalszej nauce!"
+  - "**Q‑code QRL – „Jestem zajęty, proszę nie przeszkadzać”**  \n\n**Mnemotechnika 1**  \n*„**Q** – **R**adio\
+    \ **L**ocked”* – wyobraź sobie, że twój radio ma wirtualny zamek i jest zamknięte na klucz; więc nikt\
+    \ nie może go otworzyć, dopóki nie odblokujesz go sam.\n\n**Mnemotechnika 2**  \n*„**Q**‑**R**adio\
+    \ **L**eave‑me‑alone”* – w języku angielskim „leave‑me‑alone” oznacza „zostaw mnie w spokoju”. Wystarczy\
+    \ połączyć literki Q‑R‑L i wyobrazić sobie, że nadawca mówi „Leave me alone!”.\n\n**Mnemotechnika\
+    \ 3**  \n*„**Q**‑**R**ozmowy **L**icznik‑zatrzymany”* – licznik rozmów wskazuje „0”, czyli żadnych\
+    \ kolejnych wymian; sygnał jest wstrzymany, bo operator jest zajęty.\n\n**Krótka formuła**  \n> **QRL\
+    \ = “Radio Locked” → nie przeszkadzaj**  \n\nUżywaj jednej z powyższych wizualizacji, a kod QRL zapamiętasz\
+    \ w mig. Powodzenia na egzaminie!"
+  - "**Kod Q‑sygnału**: `QRL`  \n**Znaczenie**: *Jestem zajęty, proszę nie przeszkadzać*  \n\n### Propozycja\
+    \ mnemotechniczna\n> **Q**uick **R**esponse **L**eaves – *Szybka odpowiedź oznacza, że **L**eave me\
+    \ alone* (zostaw mnie w spokoju).  \n\n**Jak zapamiętać?**  \n- **Q** – wyobraź sobie **„Question”**\
+    \ (pytanie), które zadajesz, kiedy chcesz się dowiedzieć, czy ktoś jest dostępny.  \n- **R** – **„Ready?”**\
+    \ – w tym momencie nie jesteś *ready*; wiesz, że jesteś **zajęty**.  \n- **L** – **„Leave me”** –\
+    \ jasno mówi „zostaw mnie w spokoju”.  \n\nKombinacja **Q‑R‑L** → *„Question? Ready? Leave!”* → **„Jestem\
+    \ zajęty, nie przeszkadzaj”**.  \n\n---  \n\n**Użycie w praktyce**  \n\n> **QRL** – nadawany, gdy\
+    \ musisz przerwać rozmowę lub nie możesz teraz rozmawiać.  \n\nPowodzenia na egzaminie! \U0001F680"
+- type: open
+  text: Kończę nadawanie, wyłączam stację
+  answers:
+  - QRT
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **QRT** – „Radio Terminate (Stop Transmission)”,\
+    \ czyli *kończę nadawanie, wyłączam stację*.\n\n**Mnemotechnika:**  \n**QRT – Radio Terminate** →\
+    \ *Terminate* = zakończyć, wyłączyć.  \n\nZapamiętaj: kiedy chcesz zakończyć łączność, po prostu wykrzyknij\
+    \ **QRT**. Powodzenia w dalszej nauce!"
+  - "**QRT – „Kończę nadawanie, wyłączam stację”**  \n\n*Pamiętaj, że wielkość liter nie ma znaczenia\
+    \ – **QRT**, **qrt** lub **Qrt** są równoważne.*\n\n### Propozycje mnemotechnik\n\n- **Quit Radio\
+    \ Transmission** – *„Zakończ transmisję radiową”*  \n- **Quickly Rest the Transmitter** – *„Szybko\
+    \ odstaw nadajnik”*  \n- **Quietly Roll‑off the Talk** – *„Cicho wycofaj rozmowę”*  \n- **Q‑R‑T =\
+    \ **_**Q**ueue **R**elease **T**erminate_** – *„Zwolnij kolejkę, zakończ”*  \n- **QRT = **_**Q**uit\
+    \ **R**adio **T**alk_** – *„Zrezygnuj z rozmowy radiowej”*  \n\nWystarczy wybrać tę, która najbardziej\
+    \ „trafi w ucho”, a później powtarzać krótkie zdanie (np. *„Kiedy kończę, QRT!”*) w kontekście ćwiczeń\
+    \ radiowych. Powodzenia na egzaminie!"
+  - "**QRT – Radio Terminate (Stop Transmission)**  \n\n**Mnemotechnika:**  \n> **„**Q**R**u**T** – **R**adio\
+    \ **T**urn‑off**”**  \n\n- **Q** – początek kodu Q  \n- **R** – **R**adio (nawiązanie do „radio”)\
+    \  \n- **T** – **T**urn‑off (wyłącz)  \n\n**Interpretacja:**  \nKiedy chcesz zakończyć nadawanie i\
+    \ wyłączyć stację, po prostu wypowiadasz **QRT**.  \n\n> *„Kończę nadawanie, wyłączam stację – **QRT**!”*\
+    \  \n\n---\n\n### Krótkie przypomnienie\n\n- **Q** – kod Q, używany w łączności radiowej  \n- **R**\
+    \ – *Radio* – odnosi się do twojego sprzętu  \n- **T** – *Terminate / Turn‑off* – zakończenie, wyłączenie\
+    \  \n\nWystarczy zapamiętać, że **QRT** to „Radio **T**urn‑off”."
+- type: open
+  text: Kto mnie woła?
+  answers:
+  - QRZ
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **QRZ** (wielkość liter nie ma znaczenia).\n\n\
+    ### Mnemotechnika do QRZ\n- **Q** – pytanie,  \n- **R** – „who **R**eally?“,  \n- **Z** – „**Z**nacie\
+    \ mnie?“\n\n**QRZ** = „**Kto mnie woła?**” – w radiologii używamy tego kodu, aby zapytać: *„Kto właśnie\
+    \ do mnie nadawał?”*  \n\nPowodzenia w dalszej nauce! \U0001F680"
+  - "**Poprawna odpowiedź:** `QRZ` (wielkość liter nie ma znaczenia)\n\n### Propozycja mnemotechniki dla\
+    \ **QRZ**\n\n**Q** – **Q‑call** (zapytanie, „kto mnie woła?”)  \n**R** – **Radio** (nasz dom w eterze)\
+    \  \n**Z** – **Zawiadomienie** (odpowiedź: *„to ja, słuchaj!”*)\n\n> **„Q‑call Radio Zawiadomienie”**\
+    \ – kiedy słyszysz „Kto mnie woła?”, odpowiedź to **QRZ**.  \n\n*Krótko i zwięźle: zapytanie (Q),\
+    \ radio (R), zawołanie (Z).*"
+  - "**QRZ – “Kto mnie woła?”**  \n\n**Mnemotechnika**  \n\n- **Q** – *Q‑kod* (standardowy skrót radiowy)\
+    \  \n- **R** – *Rzuć* (wyślij)  \n- **Z** – *Znak* (identyfikator, czyli **who is calling**)\n\n**„Rzuć\
+    \ znak”** → *Kto* jest nadawcą? → **QRZ**.\n\n---\n\n### Inne przydatne Q‑kody (szybka przypominajka)\n\
+    \n- **QRG** – *Read Gauge* – podaj częstotliwość  \n- **QRL** – *Line Busy* – zajęty, nie przeszkadzać\
+    \  \n- **QRM** – *Radio Mess* – zakłócenia od innych stacji  \n- **QRN** – *Rain Noise* – zakłócenia\
+    \ atmosferyczne  \n- **QRO** – *Raise Output* – zwiększ moc  \n- **QRP** – *Reduced Power* – zmniejsz\
+    \ moc  \n- **QRT** – *Radio Terminate* – kończ nadawanie  \n- **QRV** – *Ready for Voice* – gotowy\
+    \ do pracy  \n- **QRX** – *Queue for RX* – czekaj  \n- **QSB** – *Signal Breaking* – wahanie sygnału\
+    \  \n- **QSL** – *Signed Log* – potwierdź odbiór  \n- **QSO** – *Successful Operation* – łączność\
+    \  \n- **QSY** – *Shift Yourself* – zmień częstotliwość  \n- **QTC** – *Transmission Content* – masz\
+    \ wiadomość  \n- **QTH** – *Home* – twoje położenie  \n\nUżywaj **QRZ** wtedy, gdy potrzebujesz poznać\
+    \ tożsamość nadawcy. Powodzenia na egzaminie!"
+- type: open
+  text: Proszę czekać, wywołam cię ponownie
+  answers:
+  - QRX
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **QRX** – „Queue for RX (Stand By)”, czyli *proszę\
+    \ czekać*.\n\n**Mnemotechnika:**  \n*QRX – **Q**ueue **R**eceive **X** – w kolejce (queue) do odbioru,\
+    \ więc czekaj.*\n\n---\n\n### Krótkie przypomnienie innych kodów\n\n- **QRG** – Read Gauge (częstotliwość)\
+    \  \n- **QRL** – Line Busy (zajęty)  \n- **QRM** – Radio Mess (zakłócenia ludzkie)  \n- **QRN** –\
+    \ Rain Noise (zakłócenia naturalne)  \n- **QRO** – Raise Output (zwiększ moc)  \n- **QRP** – Reduced Power\
+    \ (zmniejsz moc)  \n- **QRT** – Radio Terminate (zakończ)  \n- **QRV** – Ready for Voice (gotowy)\
+    \  \n- **QSB** – Signal Breaking (zanik sygnału)  \n- **QSL** – Signed Log (potwierdź)  \n- **QSO**\
+    \ – Successful Operation (łączność)  \n- **QSY** – Shift Yourself (zmień częstotliwość)  \n- **QTC**\
+    \ – Transmission Content (wiadomość)  \n- **QTH** – Home (lokalizacja)  \n\nPowodzenia w dalszej nauce!\
+    \ \U0001F680"
+  - "**Poprawna odpowiedź:** `QRX` – *Queue for RX (Stand‑By); proszę czekać*  \n\n---\n\n## Propozycje\
+    \ krótkich mnemotechnik\n\n- **QRG** – *Read Gauge* → **R**ejestruję **G**aże (częstotliwość)\n- **QRL**\
+    \ – *Line Busy* → **R**ęka **L**eży (zajęty)\n- **QRM** – *Radio Mess* → **M**am **R**ozproszone **M**oje\
+    \ (zakłócenia)\n- **QRN** – *Rain Noise* → **N**atura **R**ozmywa **N**adawanie\n- **QRO** – *Raise\
+    \ Output* → **R**ozkręcam **O**gniwo (zwiększam moc)\n- **QRP** – *Reduced Power* → **R**edukuję **P**ower\
+    \ (obniżam moc)\n- **QRT** – *Radio Terminate* → **T**ransmisję **R**zucam (kończę)\n- **QRV** – *Ready\
+    \ for Voice* → **V**ocalny **R**ozgłos (gotowy)\n- **QRX** – *Queue for RX* → **X**‑czeka (stand‑by)\n\
+    - **QSB** – *Signal Breaking* → **S**ygnał **B**łąka się (fading)\n- **QSL** – *Signed Log* → **S**ygnatura\
+    \ **L**oguje (potwierdzenie)\n- **QSO** – *Successful Operation* → **S**ukces **O**dbioru (łączność)\n\
+    - **QSY** – *Shift Yourself* → **S**kocz **Y** (zmień częstotliwość)\n- **QTC** – *Transmission Content*\
+    \ → **T**reść **C**zasowa (pilna wiadomość)\n- **QTH** – *Home* → **T**wój **H**ome (lokalizacja)\n\
+    \nKażda mnemotechnika opiera się na pierwszych literach słów kluczowych i prostym skojarzeniu w języku\
+    \ polskim, co ułatwia szybkie przypomnienie znaczenia kodu podczas egzaminu."
+  - "**Odpowiedź:** `QRX`  \n\n*(wielkość liter nie ma znaczenia)*  \n\n---  \n\n### Proponowana mnemotechnika\
+    \ dla **QRX**\n\n**Q** – **Queue** – „stan w kolejce”  \n**R** – **RX** – „odbiór” (receive)  \n\n\
+    > **„Queue for RX – czekaj na odbiór”**  \n\nKrótka historia, którą możesz sobie wyobrazić:  \n> *„Masz\
+    \ już wiadomość, ale najpierw musisz **stać w kolejce** (Queue) i **czekać** (stand‑by), aż Twoja\
+    \ stacja będzie mogła **odebrać** (RX) kolejny sygnał.”*  \n\n### Inne możliwe warianty zapamiętania\n\
+    \n- **„Q‑R‑X – **Q**ueue, **R**eceive, e**X**it later**”** – najpierw czekasz, potem odbierasz, a\
+    \ dopiero potem przechodzisz dalej.  \n- **„**Q**uick **R**e‑**X**it – nie ruszaj się, czekaj”** –\
+    \ gra słów: „re‑exit” sugeruje, że nie wychodzisz z kolejki.  \n\nUżywaj tej krótkiej frazy przed\
+    \ egzaminem, a przy wywołaniu **QRX** natychmiast przyjdzie Ci na myśl „czekaj”. Powodzenia!"
+- type: open
+  text: Zwiększ moc, zwiększam moc
+  answers:
+  - QRO
+  explanations:
+  - "**Gratulacje!** Poprawna odpowiedź to **`QRO`**.\n\n**Mnemotechnika:**  \n**QRO** – *Raise Output*\
+    \ → podnieś moc nadawania.\n\nDobrze zapamiętane Q‑kody znacznie ułatwią egzamin i praktykę w eterze.\
+    \ Powodzenia!"
+  - "**Poprawna odpowiedź:** `QRO` – **R**aise **O**utput (zwiększ moc).  \n\n### Propozycje mnemotechnik\n\
+    \n- **„Q‑ROżny RAZ‑Wysoki”** – wyobraź sobie rożny (rogi) podnoszący się „raz‑wysoko”, czyli moc.\n\
+    - **„Q‑RO – **R**adio **O**ptymalizuje moc”** – gdy radio chce „optimum”, zwiększa moc.\n- **„Q‑RO\
+    \ – **R**owery **O**twarte”** – otwarte rzędy (większy zasięg) potrzebują większej mocy.\n- **„Q‑RO\
+    \ – **R**ow **O**ut”** – gdy chcesz „rozrosnąć” (grow) sygnał, podkręcasz moc.\n\nWszystkie warianty\
+    \ można zapamiętać jako: **Q‑R‑O → *Raise Output*** → *zwiększ moc*."
+  - "**QRO – „Raise Output” → Zwiększam moc**  \n\n### Propozycja mnemotechniki  \n\n**„** **Q**R**O**\
+    \ – **Q**uick **R**ise **O**utput**”**  \n> *„Szybko podnoszę moc”* – wyobraź sobie, że przycisk **R**\
+    \ (Rise) podnosi **O** (Output) twojej stacji.\n\n### Alternatywna wersja (polska)  \n\n**„** **Q**R**O**\
+    \ – **Q**uick **R**adio **O**bserwacja: **R**ozkręcam **O**utput**”**  \n> *„Rozkręcam moc”* – łatwo\
+    \ skojarzyć, że „rozkręcam” (zwiększam) moc nadajnika.\n\n### Jak zapamiętać w praktyce  \n\n- **Q**\
+    \ – „**Q**‑kod” (standardowy prefiks).  \n- **R** – **R**ise = **R**ozkręcanie, podnoszenie.  \n-\
+    \ **O** – **O**utput = moc wyjściowa.  \n\nKiedy słyszysz **QRO**, wyobraź sobie dźwięk przycisku\
+    \ „↑” i myśl: *„Podnoszę moc!”*  \n\n---  \n\n**Uwaga:** wielkość liter nie ma znaczenia – akceptowane\
+    \ są `QRO`, `qro`, `QrO` itp."
+- type: open
+  text: Moja częstotliwość jest…
+  answers:
+  - QRG
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź: **QRG** – „Read Gauge (Frequency)”.\n\n**Mnemotechnika:**\
+    \  \n*„QRG – Read Gauge, czyli odczytuję swoją częstotliwość.”*  \n\nPowodzenia w dalszej nauce –\
+    \ tak dalej!"
+  - "**Poprawna odpowiedź:** `QRG` – *Read Gauge (Frequency)* (wielkość liter nie ma znaczenia).\n\n---\n\
+    \n### Propozycje nowych mnemotechnik (krótkie i obrazowe)\n\n- **QRG** – **„QuoR​a​d​ic​y G‑r‑y”**\
+    \ → *Kwadrat (częstotliwość) górny* → „Moja częstotliwość jest na górze kwadratu”.  \n- **QRL** –\
+    \ **„Quiet R​e​st L​ounge”** → *Cichy pokój odpoczynku* → „Jestem zajęty, nie wchodź”.  \n- **QRM**\
+    \ – **„Quake R​adio M​ess”** → *Trzęsienie radiowe* → „Zakłócenia od ludzi”.  \n- **QRN** – **„Quiet R​ain N​oise”**\
+    \ → *Cichy deszczowy szum* → „Zakłócenia atmosferyczne”.  \n- **QRO** – **„Quick R​ise O​utput”**\
+    \ → *Szybki wzrost mocy*.  \n- **QRP** – **„Quiet R​educe P​ower”** → *Cicha redukcja mocy*.  \n-\
+    \ **QRT** – **„Quit R​adio T​ransmission”** → *Zakończ transmisję*.  \n- **QRV** – **„Ready V​oice”**\
+    \ → *Gotowy do rozmowy*.  \n- **QRX** – **„Queue R​equest eX‑wait”** → *Czekaj w kolejce*.  \n- **QSB**\
+    \ – **„Quiver S​ignal B​ounce”** → *Sygnal waha się jak drżenie*.  \n- **QSL** – **„Quick S​ign‑L​og”**\
+    \ → *Szybka karta potwierdzająca*.  \n- **QSO** – **„Quick S​tart O​peration”** → *Zacznij łączność*.\
+    \  \n- **QSY** – **„Shift Y​our S​ignal”** → *Przenieś się na inną częstotliwość*.  \n- **QTC** –\
+    \ **„Quick T​ransmit C​ontent”** → *Pilna wiadomość*.  \n- **QTH** – **„Quarry T​he H​ome”** → *Gdzie\
+    \ jest twoja kopalnia (dom)*.\n\n---\n\n**Wskazówka na egzamin:** w pytaniu *„Moja częstotliwość jest…”*\
+    \ zawsze wpisz **QRG** – to jedyne prawidłowe rozwinięcie. Powodzenia!"
+  - "**QRG – „My frequency is …”**  \n\n**Mnemonic:**  \n\n> **Q**uick **R**eport **G**auge → *„Sprawdzam\
+    \ mój wskaźnik częstotliwości”*  \n\n**Krótka historia:**  \nWyobraź sobie, że przed włączeniem radia\
+    \ przyciskasz **gauge** (miernik) i od razu odczytujesz częstotliwość – **QRG** = *Read Gauge*.  \n\
+    \n**Jak utrwalić?**  \n\n- **Q** – **Q**uick (szybko)  \n- **R** – **R**eport (raport)  \n- **G**\
+    \ – **G**auge (miernik)  \n\nZapisz w notatce: **„Q‑R‑G = szybko odczytam mój miernik częstotliwości”**.\
+    \  \n\nPowtarzaj w głowie przed każdym egzaminem:  \n*„Moja częstotliwość jest … QRG!”*  \n\n--- \
+    \ \n\n### Dodatkowe wskazówki pamięciowe  \n\n- **Kolorowy kod:** wyobraź sobie zielony wskaźnik (Gauge)\
+    \ z napisem **QRG**.  \n- **Rymy:** *„QRG – jak GPS, wskaże częstotliwość, nie myśli.”*  \n\nUżywaj\
+    \ tej krótkiej frazy przy każdej sytuacji, gdy musisz podać swoją częstotliwość – w ten sposób QRG\
+    \ zostanie automatycznie przywołane."
+- type: open
+  text: Przejdź na częstotliwość, zmień częstotliwość
+  answers:
+  - QSY
+  explanations:
+  - "**Gratulacje!** \U0001F389 Odpowiedź jest prawidłowa – **QSY** (wielkość liter nie ma znaczenia).\n\
+    \n**Mnemotechnika:**  \n**QSY – Shift Yourself (Change Frequency)** – „przejdź na inną częstotliwość”.\n\
+    \nDobrze zapamiętane! \U0001F680"
+  - "**Poprawna odpowiedź:** `QSY` (wielkość liter nie ma znaczenia)\n\n---\n\n### Propozycja nowej mnemotechniki\n\
+    \n**QSY – “Quick Shift Your‑tune”**  \n> *„Szybko zmień swoją częstotliwość”*  \n\n- **Quick** – podkreśla,\
+    \ że zmiana ma nastąpić natychmiast.  \n- **Shift** – dosłownie „przesunąć”, czyli zmienić częstotliwość.\
+    \  \n- **Your‑tune** – „twoja melodia”, czyli twoja aktualna stacja/frekcja.\n\nUżywając tej mnemotechniki,\
+    \ przy słowie **QSY** od razu przychodzi na myśl: *„muszę szybko przełączyć się na inną melodię”*\
+    \ → **przejść na inną częstotliwość**."
+  - "**QSY – „Shift Yourself (Change Frequency)”**  \n\n**Nowa mnemotechnika**  \n> **Q** **S**zyfr **Y**‑kładany\
+    \ – *„Szybko zmień (y‑kładany) częstotliwość”*  \n\n- **Q** – przypomina **Q**‑kod.  \n- **S** – **Szyfr**\
+    \ – coś, co trzeba **prze‑kodować** na inną częstotliwość.  \n- **Y** – **Y‑kładany** – wyobraź sobie\
+    \ literę „Y” jako rozłożoną antenę, którą trzeba **przesunąć**.  \n\n**Krótkie podsumowanie**  \n\
+    - **QSY** → *„przejdź na inną częstotliwość”*  \n- Mnemonic: **„Szyfr Y‑kładany”** → „Zmieniamy szyfr,\
+    \ czyli częstotliwość, i przestawiamy antenę (Y)”.  \n\n> **Przykład użycia:**  \n> „QSY 14 MHz, wracam\
+    \ za 5 min”.  \n\n---  \n\n*Pamiętaj: wielkość liter nie ma znaczenia – zarówno **QSY**, **qsy**,\
+    \ jak i **QsY** oznaczają to samo.*"
+- type: open
+  text: Mam zakłócenia od innych stacji
+  answers:
+  - QRM
+  explanations:
+  - "**Gratulacje!**  \nPoprawna odpowiedź to **`QRM`** – masz zakłócenia od innych stacji.\n\n**Mnemotechnika:**\
+    \  \n**QRM – Radio Mess** → *„Radio Mess (zakłócenia od innych stacji)”*.\n\nPamiętaj: przy słowie\
+    \ **„mess”** przychodzi myśl o **zakłóceniach** pochodzących od **innych nadawców**.  \n\nDalej tak\
+    \ trzymaj – kolejne pytania będą coraz łatwiejsze! \U0001F680"
+  - "**Poprawna odpowiedź:** `QRM`  *(wielkość liter nie ma znaczenia)*  \n\n---\n\n### Propozycje mnemotechnik\
+    \ dla **QRM**\n\n- **Q**uiet **R**adio **M**ess – „Cichy radio‑bałagan” – wyobraź sobie, że w ciszy\
+    \ słyszysz tylko szumy innych stacji.  \n- **Q**uestion **R**adio **M**isbehaviour – „Zachowanie radia\
+    \ wątpliwe” – kiedy inne stacje „zachowują się nieodpowiednio”, wprowadzają zakłócenia.  \n- **Q**uack\
+    \ **R**adio **M**ayhem – „Szczebiot radia w chaosie” – wyobraź sobie, że wszyscy mówią jednocześnie,\
+    \ tworząc chaos.  \n- **Q**uick **R**adio **M**ess – „Szybki bałagan w radiu” – zakłócenia przychodzą\
+    \ natychmiast, gdy inne stacje wchodzą na twoją częstotliwość.  \n\nUżywaj dowolnej z powyższych fraz,\
+    \ aby szybko przywołać znaczenie kodu QRM w praktyce. Powodzenia na egzaminie!"
+  - "**Poprawna odpowiedź:** `QRM` – zakłócenia od innych stacji (Man‑made interference).\n\n### Propozycja\
+    \ mnemotechniki\n\n> **Q** **R** **M** – **R**adio **M**ieszane (zakłócenia **M**iędzy **R**adiostacjami)\n\
+    \n**Jak to działa?**  \n- **Q** – kod Q, czyli standardowy sygnał w radiotechnice.  \n- **R** – „Radio”\
+    \ – podkreśla, że problem dotyczy własnego odbiornika.  \n- **M** – „Mieszane” (ang. *mixed*) – wskazuje,\
+    \ że sygnał jest pomieszany z innymi nadawcami, czyli **zakłócony**.\n\nWystarczy zapamiętać: *„Mieszane\
+    \ Radio”* → **QRM**.  \n\n---  \n\n> *Krótka wersja:* **„Radio Mieszane” = QRM**.  \n\n---  \n\n**Uwaga:**\
+    \ Wielkość liter nie ma znaczenia – zarówno `QRM`, `qrm`, jak i `QrM` będą poprawne."
+- type: open
+  text: Siła twoich sygnałów waha się
+  answers:
+  - QSB
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **QSB** – „Signal Breaking (Signal Fading)”,\
+    \ czyli *siła twoich sygnałów waha się*.\n\n**Mnemotechnika**  \n> **QSB – Signal Breaking** – wyobraź\
+    \ sobie, że sygnał „łamie się” niczym falująca fala na morzu.\n\nUżywaj jej, a kod Q‑code zapamiętasz\
+    \ w mig!"
+  - "**Poprawna odpowiedź:** `QSB` – **Signal B**reaking (siła Twojego sygnału waha się).  \n\n### Propozycje\
+    \ mnemotechnik\n\n- **Q — *Quiet* (cisza), S — *Signal* (sygnał), B — *Bouncing* (odbija się)**  \n\
+    \  → „Cisza, sygnał się odbija” → wiesz, że siła waha się.\n\n- **Q — *Quiver* (drżenie), S — *Strength*\
+    \ (siła), B — *Bump* (przyciemnienie)**  \n  → „Siła drży, przycina się”.\n\n- **Q — *Question* (pytanie),\
+    \ S — *Signal* (sygnał), B — *Bends* (zgina się)**  \n  → „Pytanie: Czy sygnał się zgina?” → oznacza\
+    \ falowanie.\n\n- **Q — *Quick* (szybko), S — *Signal* (sygnał), B — *Blip* (przebicie)**  \n  → „Szybki\
+    \ sygnał przeskakuje” → zmienne natężenie.\n\nWszystkie te skojarzenia łączą literki **Q‑S‑B** z obrazem\
+    \ „falującej, zmiennej siły sygnału”. Wystarczy wybrać tę, która najbardziej „klika” w Twojej pamięci."
+  - "**Poprawna odpowiedź:** `QSB`  – *Signal Breaking (Signal Fading); siła twoich sygnałów waha się*\
+    \  \n\n---\n\n### Propozycje mnemotechnik\n\n- **Q S B – “Quivering Signal Bounces”**  \n  *Quivering*\
+    \ → drżenie, wahanie; *Signal* → sygnał; *Bounces* → odbija się, zmienia moc.\n\n- **Q S B – “Quietly\
+    \ Swaying Bars”**  \n  *Quietly* → w tle, nieprzerwanie; *Swaying* → kołysanie, wahanie; *Bars* →\
+    \ „słupki” siły sygnału na wyświetlaczu.\n\n- **Q S B – “Quickly Shrinking/Boosting”**  \n  *Quickly*\
+    \ podkreśla szybkie zmiany; *Shrinking/Boosting* – jednocześnie spadek i wzrost mocy, czyli falowanie.\n\
+    \n- **Q S B – “Signal Bends”** (po polsku: **„Sygnał Bije”**)  \n  *Bends* → wygina się, co łatwo\
+    \ przywołuje obraz falującego wskaźnika.\n\n- **Q S B – “Quasi‑Static Bump”**  \n  *Quasi‑Static*\
+    \ → wydaje się stały, ale w rzeczywistości „bump” (przeskok) pojawia się okresowo.\n\n---\n\n####\
+    \ Jak zapamiętać?\n1. **Skrót QSB** → wyobraź sobie **„Q‑Signal‑B”**, gdzie **B** to **Bouncing**\
+    \ (skaczący).  \n2. **Obraz mentalny:** wskaźnik siły sygnału „tańczy” w górę i w dół, jakby na wietrze.\
+    \  \n3. **Powtarzaj:** *„Kiedy mój sygnał się waha, mówię QSB.”*\n\n> *W praktyce radiowej, gdy słyszysz\
+    \ “QSB”, wiesz, że drugiej stacji sygnał migocze – tak jak w powyższych mnemotechnikach.*"
+- type: open
+  text: Jestem gotów do pracy, jestem czynny w eterze
+  answers:
+  - QRV
+  explanations:
+  - "**Gratulacje!** \U0001F389  \n\nPoprawna odpowiedź to **`QRV`** – „Ready for Voice (Ready)”, czyli\
+    \ *„Jestem gotów do pracy, jestem czynny w eterze”*.\n\n**Mnemotechnika**  \n> **Q** – **R**eady **V**oice\
+    \ → **Q**uick **R**eady **V**oice  \n\nKiedy myślisz o tym kodzie, wyobraź sobie: *„Radio jest gotowe,\
+    \ mikrofon w gotowości, nadawaj!”*  \n\nPowodzenia w dalszej nauce! \U0001F680"
+  - "**Poprawna odpowiedź:** `QRV`  *(wielkość liter nie ma znaczenia)*  \n\n---\n\n### Propozycje mnemotechnik\
+    \ dla **QRV**\n\n- **Q** – *Quick* (szybko)  \n  **R** – *Ready* (gotowy)  \n  **V** – *Voice* (głos)\
+    \  \n  **„Quick‑Ready‑Voice”** – jestem gotów do pracy, mówię w eterze.\n\n- **Q** – *Queue* (kolejka)\
+    \  \n  **R** – *Release* (zwolnić)  \n  **V** – *Vox* (łac. głos)  \n  **„Queue‑Release‑Vox”** – zwalniam\
+    \ kolejkę, mogę nadawać.\n\n- **Q** – *Q‑code*  \n  **R** – *Ready* (gotowy)  \n  **V** – *Vigilant*\
+    \ (czujny)  \n  **„Q‑code: Ready‑Vigilant”** – sygnalizuję gotowość i czujność w eterze.\n\nWybierz\
+    \ tę, która najlepiej zapada w pamięć. Powodzenia na egzaminie!"
+  - "**Poprawna odpowiedź**  \n`QRV` – *Ready for Voice (Ready)* – **„Jestem gotów do pracy, jestem czynny\
+    \ w eterze.”**  \n\n---\n\n## Propozycje dodatkowych mnemotechnik  \n\n### 1. Skondensowane zdania\
+    \ (angielsko‑polskie)  \n- **QRG** – *Read Gauge* → **„R**e­ad **G**auge – **R**ozkładam **G**aże**”**\
+    \ (częstotliwość).  \n- **QRL** – *Line Busy* → **„Q**uick **R**e­fuse **L**ine – **L**inia zajęta.**\
+    \  \n- **QRM** – *Radio Mess* → **„Q**uick **R**e­port **M**ess – **M**an‑made zakłócenia.**  \n-\
+    \ **QRN** – *Rain Noise* → **„Q**uick **R**e­port **N**oise – **N**atura w deszczu.**  \n- **QRO**\
+    \ – *Raise Output* → **„Q**uick **R**ise **O**utput – **Z**większam moc.**  \n- **QRP** – *Reduced Power*\
+    \ → **„Q**uick **R**educe **P**ower – **Z**mniejszam moc.**  \n- **QRT** – *Radio Terminate* → **„Q**uick\
+    \ **R**e­quest **T**erminate – **K**oniec nadawania.**  \n- **QRV** – *Ready for Voice* → **„Q**uick\
+    \ **R**eady **V**oice – **J**estem **R**eady **V**oice.**  \n- **QRX** – *Queue for RX* → **„Q**uick\
+    \ **R**e­quest **X**‑wait – **C**zekam.**  \n- **QSB** – *Signal Breaking* → **„Q**uick **S**ignal\
+    \ **B**reak – **S**ygnał **B**łądzi.**  \n- **QSL** – *Signed Log* → **„Q**uick **S**end **L**og –\
+    \ **P**otwierdzam.**  \n- **QSO** – *Successful Operation* → **„Q**uick **S**uccess **O**peration\
+    \ – **Ł**ączność.**  \n- **QSY** – *Shift Yourself* → **„Q**uick **S**hift **Y**our – **Z**mieniam\
+    \ częstotliwość.**  \n- **QTC** – *Transmission Content* → **„Q**uick **T**ransmit **C**ontent – **M**a\
+    \ wiadomość.**  \n- **QTH** – *Home* → **„Q**uick **T**ell **H**ome – **M**oje **T**ereny **H**ome.**\
+    \  \n\n### 2. Akrostych (pierwsze litery)  \n- **Q R V** → **„Q**ui**R**e **V**erbatim – „Mówię od\
+    \ razu, jestem gotów”.  \n- **Q R L** → **„Q**uiet **R**adio **L**eaves – „Radio milczy, bo jest zajęte”.\
+    \  \n- **Q R M** → **„Q**uick **R**adio **M**ess – „Szybki bałagan w eterze”.  \n\n### 3. Skojarzenia\
+    \ wizualne (bez rysunków)  \n- **QRV** – wyobraź sobie **R**ed **V**ehicle (czerwony pojazd) gotowy\
+    \ do wyjazdu – tak samo twoja stacja jest „gotowa”.  \n- **QRM** – **M**an **R**eally **M**esses (człowiek\
+    \ naprawdę robi bałagan) – analogia do zakłóceń ludzkich.  \n- **QRN** – **N**ature **R**ains **N**oise\
+    \ (natura pada szumem) – naturalne zakłócenia.  \n\n### 4. Proste reguły gramatyczne  \n- **Q** +\
+    \ **R** + **X** → „**Q**uery **R**equest **X**” → każdy kod z „R” oznacza **zapytanie/stan** (Busy,\
+    \ Ready, Raise, Reduce…).  \n- **Q** + **S** + * – * → **S** → **S**ignal (S**B**, **S**L, **S**O).\
+    \  \n\n---\n\n> **Tip:** Powtarzaj kod wraz z jego krótką frazą (np. *QRV – Ready Voice*) co kilka\
+    \ minut. Po 5‑7 powtórzeniach połącz je z jednym z podanych akronimów lub skojarzeń – pamięć długoterminowa\
+    \ utrwali się szybciej.  \n\nPowodzenia na egzaminie! \U0001F680"
+- type: open
+  text: Moje położenie geograficzne jest…
+  answers:
+  - QTH
+  explanations:
+  - "**Gratulacje!**  \nPoprawna odpowiedź to **`QTH`** (wielkość liter nie ma znaczenia).\n\n**Mnemotechnika:**\
+    \  \n*QTH – **Q**uod **T**woje **H**ome* → „moje położenie geograficzne jest…”.  \n\nUżywaj jej, aby\
+    \ szybko przywołać kod oznaczający „lokalizację”. Powodzenia w dalszej nauce!"
+  - "**Poprawna odpowiedź**  \n`QTH` – Twoja lokalizacja („My **T**own / **H**ome”).\n\n---\n\n### Propozycja\
+    \ mnemotechniki\n\n**Q**uick **T**ravel **H**int  \n> *„Szybka wskazówka, gdzie podróżuję – mój dom.”*\
+    \  \n\nKiedy słyszysz **QTH**, wyobraź sobie kartkę z adresem, na której duży **T** (Town) i **H**\
+    \ (Home) wskazują Twoje położenie.\n\n---\n\n### Krótkie podsumowanie wszystkich kodów (dla powtórki)\n\
+    \n- **QRG** – *Read Gauge*: „Jaką **f**rekwencję **r**ejestruję?”  \n- **QRL** – *Line Busy*: „Linia\
+    \ **z**ajęta, **r**ozmowa **l**imitowana.”  \n- **QRM** – *Radio Mess*: „Man‑made **m**es​s, **r**adio‑zakłócenia.”\
+    \  \n- **QRN** – *Rain Noise*: „Naturalne **n**oise, **r**ain‑zakłócenia.”  \n- **QRO** – *Raise Output*:\
+    \ „**R**aise **O**utput – podkręć moc.”  \n- **QRP** – *Reduced Power*: „**R**educe **P**ower – oszczędzaj.”\
+    \  \n- **QRT** – *Radio Terminate*: „**T**erminate – kończ nadawanie.”  \n- **QRV** – *Ready for Voice*:\
+    \ „**V**oice ready – jestem w eterze.”  \n- **QRX** – *Queue for RX*: „**X** – czekaj (stand‑by).”\
+    \  \n- **QSB** – *Signal Breaking*: „**S**ignal **B**reak – falowanie.”  \n- **QSL** – *Signed Log*:\
+    \ „**S**ign **L**og – potwierdzenie.”  \n- **QSO** – *Successful Operation*: „**S**uccessful **O**peration\
+    \ – łączność.”  \n- **QSY** – *Shift Yourself*: „**S**hift **Y**our frequency.”  \n- **QTC** – *Transmission\
+    \ Content*: „**T**ransmit **C**ontent – wiadomość.”  \n\nPowodzenia na egzaminie! \U0001F680"
+  - "**Poprawna odpowiedź**  \n`QTH` – moje położenie geograficzne jest …\n\n---\n\n### Propozycja mnemotechniki\
+    \ dla **QTH**\n\n| Kod | Mnemotechnika | Dlaczego działa |\n|-----|----------------|-----------------|\n\
+    | **QTH** | **„**Q**uick **T**ravel **H**ome**”** |  „Home”  (dom) =  miejsce, w którym przebywasz\
+    \ → położenie geograficzne. |\n\n**Jak używać**  \n- Gdy w rozmowie pojawia się pytanie *„QTH?”* (gdzie\
+    \ jesteś?), odpowiadasz: *„Moje **Quick Travel Home** to …”* i podajesz swoją lokalizację.  \n- Słowo\
+    \ **Home** od razu kojarzy się z miejscem zamieszkania, a **Quick Travel** podpowiada, że chodzi o\
+    \ szybkie wskazanie adresu (np. miasto, współrzędne).\n\n---\n\n### Krótkie przypomnienie innych kodów\
+    \ (dla kontekstu)\n\n- **QRG** – *Read Gauge* → podaj częstotliwość.  \n- **QRL** – *Line Busy* →\
+    \ jesteś zajęty.  \n- **QRM** – *Radio Mess* → zakłócenia od innych stacji.  \n- **QRN** – *Rain Noise*\
+    \ → zakłócenia naturalne.  \n- **QRO** – *Raise Output* → zwiększ moc.  \n- **QRP** – *Reduced Power*\
+    \ → zmniejsz moc.  \n- **QRT** – *Radio Terminate* → kończ nadawanie.  \n- **QRV** – *Ready for Voice*\
+    \ → jesteś gotów.  \n- **QRX** – *Queue for RX* → czekaj.  \n- **QSB** – *Signal Breaking* → sygnał\
+    \ gaśnie i wzmaga się.  \n- **QSL** – *Signed Log* → potwierdź odbiór.  \n- **QSO** – *Successful\
+    \ Operation* → łączność.  \n- **QSY** – *Shift Yourself* → zmień częstotliwość.  \n- **QTC** – *Transmission\
+    \ Content* → masz wiadomość.  \n\n---\n\n**Wskazówka na egzaminie**  \nZapamiętaj, że wszystkie kody\
+    \ zaczynające się na **Q** dotyczą radia, a ostatnia litera najczęściej wskazuje na **akcję lub temat**:\
+    \  \n- **H** → *Home* (lokalizacja) → **QTH**.  \n\nPowodzenia! \U0001F680"
+- type: open
+  text: Zmniejsz moc, zmniejszam moc
+  answers:
+  - QRP
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **QRP** – *Reduced Power* (zmniejsz moc, zmniejszam\
+    \ moc).\n\n**Mnemotechnika:**  \n*„QRP – **R**educe **P**ower”* – wyobraź sobie, że przyciszasz przycisk\
+    \ **R**edukcji **P**ower w swojej stacji.\n\nUtrzymuj tę frazę w pamięci, a przy kolejnych pytaniach\
+    \ będzie Ci łatwiej przypomnieć kod Q‑sygnału. Powodzenia w dalszej nauce!"
+  - "**Poprawna odpowiedź:** `QRP`  \n\n---\n\n### Propozycja mnemotechniki\n\n**QRP – “Quietly Reduce\
+    \ Power”**  \n- **Q** – *Quietly* (cicho, z małą mocą)  \n- **R** – *Reduce* (zmniejsz)  \n- **P**\
+    \ – *Power* (moc)\n\n**Dlaczego działa?**  \n- Słowo **Quietly** przywołuje obraz słabego, delikatnego\
+    \ sygnału.  \n- **Reduce** jasno określa, co należy zrobić – *obniżyć*.  \n- **Power** bezpośrednio\
+    \ wskazuje, że chodzi o moc nadajnika.\n\nWystarczy przy sobie krótką fiszkę:  \n\n> *„Kiedy mam **QRP**,\
+    \ to działam **quietly**, **reduce** **power**.”*  \n\n---  \n\n> **Uwaga:** W zapisie nie rozróżniamy\
+    \ wielkości liter – `qrp`, `Qrp`, `QRp` itp. działają tak samo."
+  - "**QRP – Reduced Power**  \n\n*„Zmniejsz moc, zmniejszam moc”* – to właśnie oznacza QRP.  \n\n###\
+    \ Propozycje mnemotechnik\n\n1. **„Quietly Reduce Power”**  \n   *Quietly* (cicho) → **Q** , *Reduce*\
+    \ (zmniejszyć) → **R**, *Power* (moc) → **P**.  \n   Sugeruje, że przyciszamy moc, aby nie zakłócać\
+    \ innych.\n\n2. **„Quieter Radio, Please”**  \n   Prośba do radia o **cichsze** działanie → **Q‑R‑P**.\
+    \  \n\n3. **„Quarter‑Rate Power”**  \n   „Quarter‑Rate” → ćwierć mocy, czyli znaczne obniżenie.  \n\
+    \n4. **„Q‑R​educe‑P​ower”**  \n   Po prostu rozbijamy kod na słowa: **Q**‑**R**‑**P** → *Q‑Reduce‑Power*.\n\
+    \n5. **„Quiet‑Ridge‑Pico”**  \n   *Quiet* (cichy) → niska moc, *Ridge* (grzbiet) → wzniesienie, które\
+    \ wymaga mniej mocy, *Pico* (piko‑) → bardzo mała wartość.  \n\n---\n\n### Krótkie podsumowanie\n\n\
+    - **QRP** = **Reduced Power** (zmniejszona moc).  \n- Mnemotechnika powinna kojarzyć się z **ciszą**,\
+    \ **obniżeniem** lub **małą wartością**.  \n- Wystarczy wybrać jedną, która najlepiej zapada w pamięć\
+    \ – np. **„Quietly Reduce Power”**."
+- type: open
+  text: Mam dla ciebie telegram, wiadomość
+  answers:
+  - QTC
+  explanations:
+  - "**Gratulacje!** \U0001F389 Poprawna odpowiedź to **QTC**.\n\n**Mnemotechnika**  \n*QTC – **T**ransmission\
+    \ **C**ontent → **T**elegram, **C**ontent (wiadomość).*\n\nZapamiętaj: kiedy słyszysz „telegram” lub\
+    \ „pilna wiadomość”, myśl o **QTC**."
+  - "**QTC – Transmission Content (Message)**  \n\n- **„**Q**ue **T**ext **C**oming** – **tekst** w drodze,\
+    \ czyli wiadomość.**  \n- **„**Q**uick **T**ell **C**ode** – szybki przekaz, krótka treść.**  \n-\
+    \ **„**Q**uestion **T**o **C**ontact** – pytanie, które wymaga odpowiedzi – typowa treść telegramu.**\
+    \  \n- **„**Q**uota **T**o **C**hannel** – cytat przesyłany przez kanał radiowy, czyli treść transmisji.**\
+    \  \n\nKażda z powyższych fraz łączy literki **Q‑T‑C** z wyraźnym skojarzeniem do **wiadomości/treści**,\
+    \ co ułatwia zapamiętanie, że **QTC** oznacza *Transmission Content*."
+  - "**Poprawna odpowiedź:** `QTC` – **Transmission Content (Message)**  \n\n### Propozycje mnemotechnik\n\
+    \n- **„Q‑T‑C” → „**Q**‑**T**echniczny **C**zat**”** – kiedy w eterze pojawia się techniczny czat,\
+    \ to jest właśnie wiadomość (treść transmisji).  \n- **„Q‑T‑C” → „**Q**‑**T**ak **C**zytam”** – wyobraź\
+    \ sobie, że odbierasz nadawcę, który mówi: „Tak, czytam twoją wiadomość”.  \n- **„QTC” → **„**Q**uick\
+    \ **T**ransmission **C**ontent”** – *szybka treść transmisji* – łatwe do zapamiętania jako krótkie,\
+    \ konkretne info.  \n- **„Q‑T‑C” → **„**Q**‑**T**o **C**oś”** – w rozmowie radiowej pytasz „Co to\
+    \ jest?” – odpowiedź: „To jest wiadomość”.  \n\nWystarczy skojarzyć **QTC** z krótką frazą „**Q‑T‑C**\
+    \ = **Message**”, a pamięć zrobi resztę. Powodzenia na egzaminie!"
+- type: open
+  text: Łączność, mam łączność
+  answers:
+  - QSO
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **QSO** – *Successful Operation (Contact)*, czyli\
+    \ „Łączność, mam łączność”.\n\n**Mnemotechnika:**  \n> **QSO** – **S**uccessful **O**peration → **S**ukces\
+    \ **O**peracji → **Łączność**.\n\nPamiętaj, że wielkość liter nie ma znaczenia. Powodzenia w dalszej\
+    \ nauce!"
+  - "**Nowa mnemotechnika dla QSO**\n\n> **QSO – “Quick S**tart **O**k”**  \n\n- **Quick** – natychmiastowo\
+    \ reaguję, bo mam już sygnał.  \n- **Start** – rozpoczynam wymianę informacji.  \n- **Ok** – wszystko\
+    \ jest w porządku – łączność zestawiona.\n\n---\n\n### Dlaczego działa?\n\n- **Q**‑kod zaczyna się\
+    \ od „Q”, więc pierwsza litera w „Quick” od razu przywołuje ten znak.  \n- **SO** w „Start Ok” przypomina\
+    \ słowo **„so”** z Twojego zdania *„Łączność, mam łączność”* – po prostu **so** mamy połączenie. \
+    \ \n- Krótkie, dwuwyrazowe hasło łatwo zapamiętać w rytmie nadawczym: *„Quick‑Start‑Ok, QSO!”*\n\n\
+    ---\n\n### Szybka powtórka przed egzaminem\n\n> **„QSO – Quick Start Ok – łączność zestawiona.”**\
+    \  \n\nPowtarzaj tę frazę na głos, wyobrażając sobie przycisk **START** na radiostacji, który po naciśnięciu\
+    \ od razu wyświetla **OK**. Dzięki temu w pamięci połączy się **QSO** z natychmiastowym „OK” – czyli\
+    \ **„mam łączność”**."
+  - "**QSO – Łączność, mam łączność**  \n\n*„QSO” to sygnał potwierdzający udany kontakt radiowy.*\n\n\
+    ### Propozycje mnemotechnik\n\n- **Q** – **„Q”** jak **„Quo”** (łacińskie „co”); **S** – **„Słucham”**,\
+    \ **O** – **„Odbioru”**  \n  → *„Quo słucham odbioru?”* → „Tak, mam łączność!”.\n\n- **Q** – **„Q”**\
+    \ jak **„kiedy”** (wymowa „k‑i‑e‑d‑y”), **SO** – **„Słowo Odbioru”**  \n  → *„Kiedy słowo odbioru?”*\
+    \ → „Jest już w eterze – QSO!”.\n\n- **QSO** – **„Q”** = *„quick”* (szybko), **S** = *„signal”* (sygnał),\
+    \ **O** = *„OK”*  \n  → *„Szybki sygnał – OK”* → potwierdzenie kontaktu.\n\n- **QSO** – **„Q”** →\
+    \ *„czy”* (pytanie), **S** → *„siła”*, **O** → *„odpowiedź”*  \n  → *„Czy siła odpowiedzi jest wystarczająca?”*\
+    \ → „Tak, QSO”.\n\n- **QSO** – **„Q”** jak **„Quack”** (dźwięk kaczki), **SO** jak **„so‑sąsiad”**\
+    \  \n  → *„Kaczka powiedziała so‑sąsiadowi: mam łączność”* → QSO.\n\nKażda z powyższych wersji łączy\
+    \ litery **Q‑S‑O** z łatwymi do zapamiętania skojarzeniami, co pomaga szybko przywołać znaczenie kodu\
+    \ podczas egzaminu. Powodzenia!"
+- type: open
+  text: Potwierdzam odbiór, przyślę kartę potwierdzającą łączność
+  answers:
+  - QSL
+  explanations:
+  - "**Gratulacje!** \U0001F389 Poprawna odpowiedź to **`QSL`** – „potwierdzam odbiór, przyślę kartę potwierdzającą\
+    \ łączność”.\n\n**Mnemotechnika:**  \n*QSL – **Signed Log** – wyobraź sobie, że **podpisujesz** (sign)\
+    \ swój **log** (dziennik) kartą QSL po udanej łączności.*\n\nPowodzenia w dalszej nauce! \U0001F680"
+  - "**QSL – „Signed Log” (potwierdzam odbiór, przyślę kartę potwierdzającą łączność)**  \n\n### Propozycje\
+    \ mnemotechniczne  \n\n- **„Q‑SŁ‑Łączymy”** – Q = *Q‑code*, SŁ = *sygnatura*, Łączymy = *potwierdzamy\
+    \ łączność*.  \n- **„Q‑Szybka‑Liczba‑kart”** – wyobraź sobie, że po udanym QSO wysyłasz **szybką listę**\
+    \ kart (QSL‑cards).  \n- **„Q‑Strefa‑Łączności”** – w **strefie** łączności każde potwierdzenie to\
+    \ **QSL**.  \n- **„Q‑Słowo‑Łącznik”** – słowo „Łącznik” kojarzy się z **łączeniem** i **potwierdzaniem**.\
+    \  \n- **„Q‑Szczegół‑Linii”** – w logu wpisujesz **szczegóły** linii (QSL‑card).  \n\nUżywaj dowolnej\
+    \ z powyższych fraz, aby szybko przywołać, że **QSL** = *potwierdzenie / karta potwierdzająca*."
+  - "**Nowa mnemotechnika dla QSL**\n\n> **Q**‑**S**‑**L** → **„**_**Q**uick **S**ignal **L**og_**”**\
+    \  \n> „Szybki sygnał w dzienniku” – po odebraniu potwierdzam, że **loguję** łączność i wyślę kartę\
+    \ QSL.\n\n### Dlaczego działa?\n- **Q** – typowy prefiks kodów Q, więc łatwo rozpoznawalny.  \n- **S**\
+    \ (Signal) → „sygnał” kojarzy się z odbiorem.  \n- **L** (Log) → „zapisuję w dzienniku”, czyli **loguję**\
+    \ kontakt.  \n\n### Krótkie zdanie do zapamiętania\n> **„Po odebraniu szybki **Signal** zostaje **Log**‑owany\
+    \ – wyślę QSL.”**\n\nUżywaj tej frazy, gdy potrzebujesz przypomnieć sobie, że **QSL** to potwierdzenie\
+    \ odbioru i wysyłka karty potwierdzającej łączność."
+- type: open
+  text: Czytelność twojego sygnału jest…
+  answers:
+  - QRK
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź to **`QRK`** (wielkość liter nie ma znaczenia).\n\
+    \n### Mnemotechnika\n**Q** – **Q**‑code  \n**R** – **R**eadability (czytelność)  \n**K** – **K**od\
+    \ (skrót)  \n\n**QRK – Czytelność Twojego Sygnału**  \n\nZachowaj tę prostą formułę i łatwo ją przywołasz\
+    \ w kolejnych pytaniach. Powodzenia na egzaminie!"
+  - "**QRK – Czytelność Twojego Sygnału**\n\n**Mnemotechnika:**  \n\n**Q**uick **R**ead‑**K**larity –\
+    \ *Szybkie Odczytanie‑Klarowność*  \n\n> **„QRK – Jak **K**larne **R**ozumiesz mój **Q**uart?”** \
+    \ \n\n- **Q** – przypomina, że to kod Q.  \n- **R** – **R**ead (czytanie) → jak łatwo odbiorca odczytuje.\
+    \  \n- **K** – **K**larity (klarowność) → stopień przejrzystości sygnału.\n\n**Zastosowanie:**  \n\
+    Gdy operator ocenia jakość odbioru, podaje **QRK** w skali 1‑5 (1 = bardzo słaba, 5 = idealna).  \n\
+    \n---  \n\n*Krótka podpowiedź do zapamiętania:* **„Czytanie = Klarowność = QRK.”**"
+  - "**QRK – Czytelność twojego sygnału jest…**  \n\n**QRK** – *Readability (Quality) of signal* – „Jak\
+    \ dobrze słyszę twój sygnał?”.  \n\n### Propozycja mnemotechniki\n> **Q**uick **R**eading **K**nown\
+    \ – *Szybkie Odczytanie Znane*  \n\n- **Q** – „Quick” → szybko, od razu wiesz, co ocenić.  \n- **R**\
+    \ – „Reading” → odczyt, czyli jak dobrze rozumiesz przekaz.  \n- **K** – „Known” → znane, czyli masz\
+    \ już ustaloną skalę (1‑5, 1‑9 itp.).\n\n### Krótka formuła do zapamiętania  \n\n\\[\n\\text{QRK}\
+    \ = \\underbrace{\\text{Jak \\textit{czytelny}}}_{\\text{ocena 1‑9}} \\;\\Longrightarrow\\; \\text{czy\
+    \ odbiór jest łatwy?}\n\\]\n\n### Jak używać w praktyce\n1. **Odebrany sygnał** → sprawdź, czy słowa\
+    \ i znaki są wyraźne.  \n2. **Wystaw ocenę** w skali 1‑9 (lub 1‑5) i przekaż ją: „QRK 5”.  \n3. **Zapamiętaj**:\
+    \ im wyższy numer, tym lepsza czytelność.\n\n---\n\n#### Dodatkowe krótkie mnemotechniki dla pozostałych\
+    \ kodów (jeśli przydadzą się przy powtórce)\n\n- **QRG** – *Read * **G**auge → „Odczytam **G**zęstość”.\
+    \  \n- **QRL** – *Radio * **L**ocked → „Linia **Z**ajęta”.  \n- **QRM** – *Radio * **M**ess → „Zakłócenia\
+    \ **M**ałej mocy (ludzkie)”.  \n- **QRN** – *Radio * **N**atural → „Zakłócenia **N**aturalne (deszcz)”.\
+    \  \n- **QRO** – *Raise * **O**utput → „Zwiększam **M**oc”.  \n- **QRP** – *Reduce * **P**ower → „Zmniejszam\
+    \ **M**oc”.  \n- **QRT** – *Terminate* → „Kończę **T**ransmisję”.  \n- **QRV** – *Ready* **V**oice\
+    \ → „Gotowy do **G**łosowania”.  \n- **QRX** – *Queue* **X** → „Czekam **X** (stand‑by)”.  \n- **QSB**\
+    \ – *Signal * **B**reaking → „Sygnał **W**ahanie”.  \n- **QSL** – *Signed * **L**og → „Potwierdzam\
+    \ **K**artą”.  \n- **QSO** – *Successful * **O**peration → „Mamy **Ł**ączenie”.  \n- **QSY** – *Shift\
+    \ * **Y**ourself → „Zmieniam **C**zęstotliwość”.  \n- **QTC** – *Transmission * **C**ontent → „Mam\
+    \ **W**ażną wiadomość”.  \n- **QTH** – *Location* → „Mój **M**iejscowość”.  \n\nWystarczy powtarzać\
+    \ powyższe frazy przy każdej praktycznej sytuacji, a kody staną się naturalną częścią Twojej łączności.\
+    \ Powodzenia na egzaminie!"
+- type: open
+  text: Siła twojego sygnału jest…
+  answers:
+  - QSA
+  explanations:
+  - "**Gratulacje!** Poprawna odpowiedź to **QSA** – „Signal Strength (siła sygnału)”.  \n\n**Mnemotechnika:**\
+    \  \n- **Q** – kod Q‑signal,  \n- **S** – **S**trength (siła),  \n- **A** – **A**naliza (sprawdź poziom).\
+    \  \n\nZapamiętaj: **Q**‑**S**‑**A** → **„S**iła **A**nalizowana**.  \n\nPowodzenia w dalszej nauce!"
+  - "**Poprawna odpowiedź:** `QSA` (wielkość liter nie ma znaczenia)  \n\n---\n\n### Propozycja mnemotechniki\n\
+    \n**Q** – **Signal** → **S**ignal **A**mplitude  \n\n> **„Q‑S‑A – *Q*uality of *S*ignal *A*mplitude*”**\
+    \  \n\nWyobraź sobie, że przy każdej ocenie siły sygnału patrzysz na **wskaźnik jakości (Q)** i odczytujesz\
+    \ **amplitudę (A)** – razem dają **QSA**.  \n\nKrótka wersja do zapamiętania:  \n\n- **Q** – *Quality*\
+    \ (jakość)  \n- **S** – *Signal* (sygnał)  \n- **A** – *Amplitude* (amplituda)\n\n> **„Jakość sygnału\
+    \ – jego amplituda = QSA”**  \n\n---  \n\nUżywaj tej frazy, a przy każdym pytaniu o **„siła twojego\
+    \ sygnału”** od razu przyjdzie Ci na myśl **QSA**. Powodzenia na egzaminie!"
+  - "**Poprawna odpowiedź**  \n> **QSA** – *Signal Strength* (siła sygnału).  \n> Wielkość liter nie ma\
+    \ znaczenia.\n\n---\n\n## Propozycje mnemotechnik\n\n1. **Q – *Signal* **A**mplitude**  \n   *„Q‑S‑A\
+    \ – **S**ygnal **A**mplifikowany”* – wyobraź sobie, że podnosisz amplitudę, aby zwiększyć siłę.\n\n\
+    2. **Q – **S**ilny **A**kustyk**  \n   *„Q‑S‑A – **S**ilny **A**kustyk w eterze”* – kojarzy się z\
+    \ głośnym dźwiękiem, czyli mocnym sygnałem.\n\n3. **Q – **S**uper **A**naliza**  \n   *„Q‑S‑A – **S**uper\
+    \ **A**naliza siły”* – wyobraź sobie, że miernik pokazuje super dokładną analizę mocy.\n\n4. **Q –\
+    \ **S**tack **A**mp**  \n   *„Q‑S‑A – **S**tack **A**mp”* – wyobraź sobie stos (stack) wzmacniaczy\
+    \ podnoszących sygnał.\n\n5. **Q – **S**ignal **A**rt**  \n   *„Q‑S‑A – **S**ignal **A**rt”* – myślisz\
+    \ o „sztuce” (art) uzyskania silnego sygnału.\n\nWystarczy wybrać tę, która najlepiej „przykleja się”\
+    \ w pamięci, i powtarzać ją przy każdym spotkaniu z kodem **QSA**. Powodzenia na egzaminie!"
+- type: open
+  text: Która jest godzina? / Podaj czas
+  answers:
+  - QTR
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nTwoja odpowiedź **QTR** jest prawidłowa – właśnie tak podajemy aktualny\
+    \ czas w telegrafii.\n\n**Mnemotechnika:**  \n- **Q** – zapytanie (Query)  \n- **TR** – **T**ime **R**eport\
+    \ → „Zapytaj o **czas**”.\n\nKiedy słyszysz pytanie *„Która jest godzina?”* lub *„Podaj czas”*, odpowiadasz\
+    \ **QTR**.  \n\nPowodzenia w dalszej nauce!"
+  - "**QTR – czas (Time Report)**  \n\n**Mnemotechnika:**  \n\n> **Q**uick **T**ime **R**equest – *szybko\
+    \ pytam o **t**ermin, **r**eportuję godzinę*  \n\nMożesz wyobrazić sobie, że na radiostacji ktoś „**QTR**‑uje”\
+    \ – czyli **zapytuje o aktualny **t**ermin** i **r**aportuje **czas**.  \n\n> **QTR** → **Q**uick\
+    \ **T**ime **R**eport → *Jaka jest godzina?*  \n\nPamiętaj: wielkość liter nie ma znaczenia."
+  - "**QTR – “What time is it?”**  \n\n*Poprawna odpowiedź*: `QTR` (wielkość liter nie ma znaczenia)\n\
+    \n---\n\n### Proponowana mnemotechnika\n\n**Q**uick **T**ime **R**eport – *szybka informacja o czasie*\
+    \  \n\n> **Q**uick – „szybko”, **T**ime – „czas”, **R**eport – „raport, podanie”.  \n> Kiedy słyszysz\
+    \ **QTR**, wyobraź sobie, że nadawca prosi Cię o „szybką relację czasu”.\n\n---\n\n### Jak zapamiętać\
+    \ w zestawie Q‑kodów\n\n| Kod | Znaczenie | Mnemonika (klucz) |\n|-----|-----------|-------------------|\n\
+    | **QRG** | Częstotliwość | **Read Gauge** – „odczytaj wskaźnik” |\n| **QRL** | Linia zajęta | **Line\
+    \ Busy** – „linia zajęta” |\n| **QRM** | Zakłócenia (man‑made) | **Radio Mess** |\n| **QRN** | Zakłócenia\
+    \ (naturalne) | **Rain Noise** |\n| **QRO** | Zwiększ moc | **Raise Output** |\n| **QRP** | Zmniejsz\
+    \ moc | **Reduced Power** |\n| **QRT** | Zakończ nadawanie | **Radio Terminate** |\n| **QRV** | Gotowy\
+    \ do pracy | **Ready for Voice** |\n| **QRX** | Czekaj | **Queue for RX** |\n| **QSB** | Zmienne wzmocnienie\
+    \ | **Signal Breaking** |\n| **QSL** | Potwierdzenie | **Signed Log** |\n| **QSO** | Łączność | **Successful\
+    \ Operation** |\n| **QSY** | Zmień częstotliwość | **Shift Yourself** |\n| **QTC** | Treść wiadomości\
+    \ | **Transmission Content** |\n| **QTH** | Położenie | **Home** |\n| **QTR** | **Czas** | **Quick\
+    \ Time Report** |\n\n---\n\n### Krótka formuła do powtórki\n\n> **„QTR – Quick Time Report, podaj\
+    \ mi godzinę.”**\n\nWystarczy przywołać wyobrażenie, że ktoś pyta o **szybką relację czasu** i od\
+    \ razu przychodzi odpowiedź **QTR**. Powodzenia na egzaminie!"
+- type: open
+  text: Jakie mam miejsce w kolejce?
+  answers:
+  - QRY
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna odpowiedź: **`QRY`** (wielkość liter nie ma znaczenia).\n\n\
+    ### Mnemotechnika\n**QRY – Queue (czekanie) – *You're* waiting**  \n*„QRY – jesteś w kolejce, czekasz\
+    \ na swoją kolej.”*  \n\nDzięki temu łatwo odróżnić **QRY** od podobnych kodów (np. **QRX** – *Stand‑by*).\
+    \  \n\nPowodzenia w dalszej nauce!"
+  - "**QRY – „Jakie mam miejsce w kolejce?”**  \n\n*Wielkość liter nie ma znaczenia – akceptowane są **QRY**,\
+    \ **qry**, **QrY** itd.*\n\n---\n\n### Propozycja mnemotechniczna  \n\n**Q**ueue **R**equest **Y**ield\
+    \  \n\n- **Queue** – od razu przywołuje pojęcie kolejki.  \n- **Request** – „proszę o informację”,\
+    \ czyli pytanie „jakie mam miejsce?”.  \n- **Yield** – wynik, czyli przyznane miejsce w kolejce.\n\
+    \n**Skrót w zdaniu:**  \n> „**QRY** – **Q**ueue **R**equest **Y**ield – zapytaj o swój numer w kolejce\
+    \ i otrzymaj odpowiedź.”\n\n---\n\n### Alternatywne warianty (krótkie hasła)\n\n- **Q**uick **R**ank\
+    \ **Y**es – „Szybka pozycja, tak”.  \n- **Q**ueue **R**ank **Y**ourself – „Zajmij swoją pozycję w\
+    \ kolejce”.  \n\nWystarczy wybrać tę, która najlepiej „trafi” w pamięć podczas egzaminu. Powodzenia!"
+  - "**Q‑code:** `QRY`  \n\n**Pytanie egzaminacyjne:** *„Jakie mam miejsce w kolejce?”*  \n\n**Mnemotechnika:**\
+    \  \n\n> **Q** **R**equest **Y**our‑spot  \n\n- **Q** – “question / query” (zapytać)  \n- **R** –\
+    \ “Request” (prośba) – „proszę o informacje”  \n- **Y** – “Your‑spot” (twoje miejsce) – czyli pozycja\
+    \ w kolejce  \n\n**Jak zapamiętać:**  \n> „Kiedy chcę **zapytać** o **moje miejsce** w kolejce, **Request\
+    \ Your‑spot** → **QRY**.”  \n\nKrótko i na temat – wystarczy przywołać skojarzenie *Request Your‑spot*\
+    \ i masz gotowy kod QRY."
+- type: open
+  text: Nazwa twojej stacji jest…
+  answers:
+  - QRA
+  explanations:
+  - "**Gratulacje!** \U0001F389  \nPoprawna nazwa Twojej stacji to **QRA**.\n\n**Mnemotechnika:**  \n\
+    **QRA – Radio Address** – nazwa (adres) Twojej stacji w eterze.\n\n> *Pamiętaj: przy podawaniu nazwy\
+    \ stacji zawsze używaj „QRA”, a nie „QRA‑xxx”.*"
+  - "**Poprawna odpowiedź**  \nNazwa Twojej stacji to **QRA** (wielkość liter nie ma znaczenia).\n\n---\n\
+    \n### Propozycja mnemotechniki dla **QRA**\n\n> **Q R A – **_**Quirky Radio Alias**_ – Twój niepowtarzalny\
+    \ pseudonim w eterze.\n\nMożesz też użyć innych skojarzeń, np.:\n\n- **Q R A – **_**Quick Radio Identifier**_\
+    \  \n- **Q R A – **_**Q‑Radio Alias**_  \n\nWystarczy, że wybrany zwrot będzie łatwy do zapamiętania\
+    \ i będzie kojarzył się z nazwą stacji. Powodzenia na egzaminie!"
+  - "**QRA – Nazwa Twojej Stacji**\n\n**Mnemotechnika:**  \n\n```\nQ – *Question* (pytanie)  \nR – *Radio*\
+    \ (radio)  \nA – *Alias* (alias, nazwa)\n```\n\n**Jak zapamiętać:**  \n„Kiedy ktoś pyta **Q** **R**\
+    \ **A**, odpowiedź to **Radio Alias** – czyli **nazwa twojej stacji**.”  \n\nKrótka wersja po polsku:\
+    \ **„QRA – Radio Alias”**.  \n\n> *W egzaminie pamiętaj: Q‑R‑A = **Nazwa stacji** (nie mylić z QTH\
+    \ – miejsce).*"

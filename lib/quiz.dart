@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:gpt_markdown/custom_widgets/markdown_config.dart';
 import 'package:gpt_markdown/gpt_markdown.dart';
 import 'package:yaml/yaml.dart';
 
@@ -58,6 +59,7 @@ class _QuizScreenState extends State<QuizScreen>
   int? _autoAdvanceQuestionIndex;
   bool _usedIDontKnow = false;
   int? _lastMatchedOpenAnswerIndex;
+  final ScrollController _questionScrollController = ScrollController();
 
   @override
   void initState() {
@@ -103,9 +105,7 @@ class _QuizScreenState extends State<QuizScreen>
           _handleAutoAdvanceComplete();
         }
       });
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _ensureFocusForCurrentQuestion();
-    });
+    _scheduleQuestionPreparation();
   }
 
   @override
@@ -114,6 +114,7 @@ class _QuizScreenState extends State<QuizScreen>
     _autoAdvanceController.dispose();
     _openAnswerController.dispose();
     _openAnswerFocus.dispose();
+    _questionScrollController.dispose();
     super.dispose();
   }
 
@@ -260,9 +261,7 @@ class _QuizScreenState extends State<QuizScreen>
         _autoAdvancePaused = false;
         _advanceLearningQueue(wasCorrect);
       });
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        _ensureFocusForCurrentQuestion();
-      });
+      _scheduleQuestionPreparation();
       return;
     }
     if (_currentQuestionIndex >= _questions.length - 1) {
@@ -283,9 +282,7 @@ class _QuizScreenState extends State<QuizScreen>
         _lastMatchedOpenAnswerIndex = null;
       });
     }
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _ensureFocusForCurrentQuestion();
-    });
+    _scheduleQuestionPreparation();
   }
 
   void _ensureFocusForCurrentQuestion() {
@@ -298,6 +295,20 @@ class _QuizScreenState extends State<QuizScreen>
     } else {
       _openAnswerFocus.unfocus();
     }
+  }
+
+  void _scheduleQuestionPreparation() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _resetQuestionScrollPosition();
+      _ensureFocusForCurrentQuestion();
+    });
+  }
+
+  void _resetQuestionScrollPosition() {
+    if (!_questionScrollController.hasClients) {
+      return;
+    }
+    _questionScrollController.jumpTo(0);
   }
 
   bool get _currentQuestionWasAnsweredCorrectly {
@@ -435,6 +446,7 @@ class _QuizScreenState extends State<QuizScreen>
       builder: (context, constraints) {
         return SingleChildScrollView(
           primary: false,
+          controller: _questionScrollController,
           physics: const ClampingScrollPhysics(),
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.only(bottom: 120),
@@ -853,6 +865,13 @@ class _QuestionMarkdown extends StatelessWidget {
       textScaler: MediaQuery.textScalerOf(context),
       useDollarSignsForLatex: true,
       imageBuilder: (ctx, url) => _buildMarkdownImage(url),
+      tableBuilder: (ctx, rows, textStyle, config) {
+        return _ResponsiveMarkdownTable(
+          rows: rows,
+          textStyle: textStyle,
+          config: config,
+        );
+      },
     );
   }
 
@@ -917,6 +936,99 @@ class _QuestionMarkdown extends StatelessWidget {
       borderRadius: BorderRadius.circular(12),
       child: image,
     );
+  }
+}
+
+class _ResponsiveMarkdownTable extends StatelessWidget {
+  const _ResponsiveMarkdownTable({
+    required this.rows,
+    required this.textStyle,
+    required this.config,
+  });
+
+  final List<CustomTableRow> rows;
+  final TextStyle textStyle;
+  final GptMarkdownConfig config;
+
+  @override
+  Widget build(BuildContext context) {
+    if (rows.isEmpty) {
+      return const SizedBox.shrink();
+    }
+    final theme = Theme.of(context);
+    final headerStyle = textStyle.copyWith(fontWeight: FontWeight.w600);
+    final columnCount =
+        rows.fold<int>(0, (current, row) => max(current, row.fields.length));
+    if (columnCount == 0) {
+      return const SizedBox.shrink();
+    }
+    final columnWidths = <int, TableColumnWidth>{
+      for (var i = 0; i < columnCount; i++) i: const FlexColumnWidth(),
+    };
+
+    return SizedBox(
+      width: double.infinity,
+      child: Table(
+        columnWidths: columnWidths,
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        border: TableBorder.all(
+          color: theme.colorScheme.outlineVariant,
+          width: 1,
+        ),
+        children: rows.map((row) {
+          return TableRow(
+            decoration: row.isHeader
+                ? BoxDecoration(
+                    color: theme.colorScheme.surfaceContainerHighest,
+                  )
+                : null,
+            children: List.generate(columnCount, (index) {
+              if (index >= row.fields.length) {
+                return const SizedBox.shrink();
+              }
+              final field = row.fields[index];
+              final value = field.data.trim();
+              if (value.isEmpty) {
+                return const SizedBox.shrink();
+              }
+              final cellStyle = row.isHeader ? headerStyle : textStyle;
+              final cellConfig = config.copyWith(
+                style: cellStyle,
+                textAlign: field.alignment,
+              );
+              return Container(
+                alignment: _alignmentFor(field.alignment),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                child: MdWidget(
+                  context,
+                  value,
+                  false,
+                  config: cellConfig,
+                ),
+              );
+            }),
+          );
+        }).toList(),
+      ),
+    );
+  }
+
+  Alignment _alignmentFor(TextAlign align) {
+    switch (align) {
+      case TextAlign.center:
+        return Alignment.center;
+      case TextAlign.right:
+        return Alignment.centerRight;
+      case TextAlign.left:
+        return Alignment.centerLeft;
+      case TextAlign.justify:
+        return Alignment.centerLeft;
+      case TextAlign.start:
+        return Alignment.centerLeft;
+      case TextAlign.end:
+        return Alignment.centerRight;
+    }
   }
 }
 
