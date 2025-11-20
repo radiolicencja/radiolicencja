@@ -1152,63 +1152,50 @@ questions:
   - od 100 m do 10 m
   - od 80 m do 10 m
   - od 160 m do 10 m
-  correct_index: 1
+  correct_index: 0
   explanations:
-  - "**Dlaczego odpowiedź A jest nieprawidłowa**\n\n1. **Definicja „fal krótkich”**  \n   W radiotechnice\
-    \ zakres fal krótkich (ang. *short‑wave, SW*) określa się przede wszystkim **zakresem częstotliwości**:\
-    \  \n   \\[\n   3\\;\\text{MHz} \\le f \\le 30\\;\\text{MHz}.\n   \\]\n\n2. **Przeliczenie na długość\
-    \ fali**  \n   Długość fali \\(\\lambda\\) i częstotliwość \\(f\\) są ze sobą powiązane równaniem\
-    \  \n   \\[\n   \\lambda=\\frac{c}{f},\n   \\qquad c\\approx 3\\!\\times\\!10^{8}\\;\\text{m·s}^{-1}.\n\
-    \   \\]\n\n   \\[\n   \\begin{aligned}\n   f=30\\;\\text{MHz}&\\;\\Rightarrow\\; \\lambda=\\frac{3\\\
-    cdot10^{8}}{30\\cdot10^{6}}=10\\;\\text{m},\\\\[4pt]\n   f=3\\;\\text{MHz}&\\;\\Rightarrow\\; \\lambda=\\\
-    frac{3\\cdot10^{8}}{3\\cdot10^{6}}=100\\;\\text{m}.\n   \\end{aligned}\n   \\]\n\n   Zatem teoretyczny\
-    \ **zakres długości fal krótkich** to **10 m – 100 m**.\n\n3. **Gdzie leży granica z falami średnimi?**\
-    \  \n   W praktyce przyjęto nieco węższy przedział, aby nie zachodził na pasmo fal średnich (MF),\
-    \ które zaczyna się przy ≈ 300 kHz (≈ 1000 m) i kończy się przy ≈ 3 MHz (≈ 100 m). Dlatego w podręcznikach\
-    \ i egzaminach często podaje się górną granicę **80 m** (≈ 3,75 MHz) – już pewnie w paśmie krótkofalowym.\n\
-    \n4. **Dlaczego odpowiedź A („od 100 m do 10 m”) jest błędna?**  \n   - Zawiera **100 m**, czyli długość\
-    \ fali odpowiadającą **3 MHz** – granicy z falami średnimi.  \n   - W standardowej klasyfikacji edukacyjnej\
-    \ **100 m** nie jest uznawane za „falę krótką”.  \n   - Dlatego zakres **100 m – 10 m** wykracza poza\
-    \ przyjęty w materiałach egzaminacyjnych przedział.\n\n5. **Dlaczego poprawna jest odpowiedź B („od 80 m\
-    \ do 10 m”)?**  \n   - Górna granica **80 m** (≈ 3,75 MHz) mieści się wyraźnie w paśmie krótkofalowym\
-    \ i nie zachodzi na MF.  \n   - Dolna granica **10 m** (≈ 30 MHz) jest ustalona jako dolny limit fal\
-    \ krótkich.  \n   - Zakres **10 m – 80 m** jest więc zgodny z przyjętą w podręcznikach definicją fal\
-    \ krótkich.\n\n**Podsumowanie**  \nChoć fizycznie „falami krótkimi” można określić długości od 10 m\
-    \ do 100 m, w edukacyjnym kontekście egzaminu przyjmuje się węższy przedział **10 m – 80 m**. Dlatego\
-    \ odpowiedź A, zawierająca 100 m, jest niepoprawna, a odpowiedź B – prawidłowa."
-  - "**Gratulacje!** \U0001F389  \nZaznaczyłeś odpowiedź **B – od 80 m do 10 m**, co jest prawidłowe.\n\
-    \nKrótko‑falowy zakres w radiotechnice definiuje się jako długości fal pomiędzy **10 m** (górna granica\
-    \ VHF) a **około 80 m** (dolna granica krótkich fal). Dla fal krótszych niż 10 m używa się już wyższych\
-    \ pasm (VHF/UHF), a powyżej 80 m przechodzimy w zakres fal średnich. Dlatego przedział **80 m – 10 m**\
-    \ idealnie opisuje zakres fal krótkich."
-  - "**Dlaczego odpowiedź C jest niepoprawna?**  \n\nW radiotechnice „fale krótkie” (ang. *short‑wave*)\
-    \ to zakres długości fal radiowych, w którym sygnał może odbijać się od warstwy jonosfery i pokonywać\
-    \ duże odległości. Standardowo przyjmuje się, że:\n\n\\[\n\\lambda \\in [10\\ \\text{m},\\; 80\\ \\\
-    text{m}]\n\\]\n\n- **Dolna granica (10 m)** – odpowiada częstotliwości \\(f = c/\\lambda \\approx\
-    \ 30\\ \\text{MHz}\\). Powyżej tej częstotliwości fale zaczynają przechodzić przez jonosferę (zakres\
-    \ VHF/UHF), a więc nie są już klasyfikowane jako krótkie.  \n- **Górna granica (80 m)** – odpowiada\
-    \ częstotliwości \\(f \\approx 3.75\\ \\text{MHz}\\). Dłuższe fale (np. 100 m, 160 m) wchodzą w zakres\
-    \ fal **średnich** (ang. *medium‑wave*), które charakteryzują się innymi właściwościami propagacyjnymi\
-    \ (głównie propagacja po powierzchni ziemi).\n\n**Odpowiedź C** („od 160 m do 10 m”) rozciąga górną\
-    \ granicę do 160 m, co w praktyce obejmuje fale średnie (160 m ≈ 1.9 MHz). Dlatego taki zakres nie\
-    \ opisuje wyłącznie fal krótkich i jest niezgodny z przyjętą klasyfikacją.\n\n**Podsumowanie**\n\n\
-    - Zakres fal krótkich: **10 m – 80 m** (odpowiedź B).  \n- Długości powyżej 80 m (np. 100 m, 160 m)\
-    \ należą do **fal średnich**, a nie krótkich.  \n\nStąd zaznaczenie odpowiedzi C jest błędne."
-  - "**Dlaczego poprawna jest odpowiedź B (od 80 m do 10 m)**  \n\n1. **Definicja fal krótkich**  \n \
-    \  W radiotechnice przyjmuje się, że *falami krótkimi* (short‑wave) są te o częstotliwościach od **3 MHz\
-    \ do 30 MHz**.  \n\n2. **Zależność częstotliwość‑długość fali**  \n\n\\[\n\\lambda = \\frac{c}{f},\n\
-    \\qquad c \\approx 3\\cdot10^{8}\\;\\text{m/s}\n\\]\n\n   - przy \\(f = 30\\;\\text{MHz}\\) → \\(\\\
-    lambda = \\dfrac{3\\cdot10^{8}}{30\\cdot10^{6}} = 10\\;\\text{m}\\)  \n   - przy \\(f = 3\\;\\text{MHz}\\\
-    ) → \\(\\lambda = \\dfrac{3\\cdot10^{8}}{3\\cdot10^{6}} = 100\\;\\text{m}\\)\n\n   Teoretycznie zakres\
-    \ wynosi więc **10 m – 100 m**.\n\n3. **Praktyczny górny limit**  \n   W praktyce najniższa częstotliwość\
-    \ używana w łączeniach krótkofalarskich wynosi ok. **3,75 MHz** (długość fali ≈ 80 m). Niższe częstotliwości\
-    \ zaliczane są już do pasma średnich (mediów) i nie są typowo wykorzystywane w krótkofalarstwie.\n\
-    \n4. **Porównanie z podanymi opcjami**  \n\n| Opcja | Zakres | Czy mieści się w praktycznym przedziale\
-    \ krótkich? |\n|------|--------|---------------------------------------------------|\n| A | 100 m – 10 m\
-    \ | Zawiera 100 m, ale w krótkofalarstwie rzadko używa się tak niskich częstotliwości (≥ 3,75 MHz).\
-    \ |\n| **B** | **80 m – 10 m** | **Zgadza się z praktycznym zakresem 3,75 – 30 MHz.** |\n| C | 160 m – 10 m\
-    \ | 160 m (≈ 1,9 MHz) leży poza zakresem krótkich fal. |\n\nDlatego jedyną prawidłową odpowiedzią\
-    \ jest **B – od 80 m do 10 m**."
+  - "**Gratulacje!** \U0001F389  \n\nOdpowiedź **A – „od 100 m do 10 m”** jest prawidłowa, ponieważ zakres\
+    \ fal krótkich (zakres VHF) obejmuje długości fal od **10 m** do **100 m** ( \\(\\lambda = 10\\text{–}100\\\
+    \ \\text{m}\\) ).  \n\n- **B** zaczyna się od 80 m, co pomija dolny limit 100 m.  \n- **C** rozpoczyna\
+    \ się od 160 m, czyli wykracza poza przyjęty przedział fal krótkich.  \n\nDlatego jedynie odpowiedź\
+    \ A spełnia definicję zakresu fal krótkich."
+  - "**Dlaczego odpowiedź B jest nieprawidłowa?**  \n\nZakres fal krótkich (HF – **High Frequency**) w\
+    \ radiotechnice definiuje się jako długości fal od **100 m** do **10 m** (częstotliwości 3 MHz – 30 MHz).\
+    \  \n\n- **Dolna granica**: 100 m ↔ 3 MHz  \n- **Górna granica**: 10 m ↔ 30 MHz  \n\nOdpowiedź **B**\
+    \ podaje dolną granicę **80 m**, co odpowiada częstotliwości ≈ 3,75 MHz. Taka wartość już nie należy\
+    \ do przyjętego zakresu HF – leży w sąsiednim paśmie **VHF** (Very‑High Frequency) i nie jest klasyfikowana\
+    \ jako „fal krótkich”. Dlatego B jest niepoprawna.\n\n---\n\n### Krótkie podsumowanie\n\n| Zakres\
+    \ fal krótkich (HF) | Długość fali | Częstotliwość |\n|--------------------------|--------------|--------------|\n\
+    | **Górna granica**        | 10 m         | 30 MHz       |\n| **Dolna granica**        | 100 m   \
+    \     | 3 MHz        |\n\nOdpowiedź **A** („od 100 m do 10 m”) zgadza się z tymi granicami, natomiast\
+    \ **B** („od 80 m do 10 m”) je przekracza. Stąd błąd."
+  - "**Dlaczego odpowiedź C jest niepoprawna**\n\nKrótkie fale (ang. *short‑wave*) w radiotechnice definiuje\
+    \ się jako zakres długości fal od **10 m** do **100 m**.  \n\n- Długość fali i częstotliwość są ze\
+    \ sobą powiązane równaniem  \n\n\\[\n\\lambda = \\frac{c}{f},\n\\]\n\ngdzie \\(c \\approx 3 \\times\
+    \ 10^{8}\\,\\text{m·s}^{-1}\\) – prędkość światła w próżni.  \n\n- Dla \\(\\lambda = 100\\;\\text{m}\\\
+    ) otrzymujemy  \n\n\\[\nf = \\frac{c}{\\lambda} = \\frac{3 \\times 10^{8}}{100} \\approx 3\\;\\text{MHz}.\n\
+    \\]\n\n- Dla \\(\\lambda = 10\\;\\text{m}\\) otrzymujemy  \n\n\\[\nf = \\frac{c}{\\lambda} = \\frac{3\
+    \ \\times 10^{8}}{10} \\approx 30\\;\\text{MHz}.\n\\]\n\nZatem **zakres krótkich fal** to **3 – 30 MHz**\
+    \ (10 – 100 m).  \n\n---\n\n### Co oznacza długość 160 m?\n\n\\[\nf = \\frac{c}{160\\;\\text{m}} \\\
+    approx \\frac{3 \\times 10^{8}}{160} \\approx 1.9\\;\\text{MHz},\n\\]\n\nco znajduje się w paśmie\
+    \ **średnich fal** (Medium Wave, MW), a nie w krótkich. Dlatego odpowiedź C („od 160 m do 10 m”) obejmuje\
+    \ długość 160 m, która nie jest częścią krótkich fal.\n\n---\n\n### Podsumowanie\n- **Poprawny zakres\
+    \ krótkich fal:** 10 m – 100 m (3 – 30 MHz) → odpowiedź **A**.  \n- **160 m** leży poza tym zakresem\
+    \ i należy do średnich fal, więc odpowiedź **C** jest błędna."
+  - "**Dlaczego prawidłowa jest odpowiedź A (100 m – 10 m)**  \n\nW radiotechnice przyjmuje się następujące\
+    \ podziały długości fal (λ):\n\n| Pasmo | Zakres długości fal | Zakres częstotliwości |\n|------|---------------------|----------------------|\n\
+    | Długie (LF) | > 10 km | < 30 kHz |\n| Średnie (MF) | 1 km – 10 km | 300 kHz – 3 MHz |\n| **Krótkie\
+    \ (HF)** | **10 m – 100 m** | **3 MHz – 30 MHz** |\n| Bardzo krótkie (VHF/UHF) | < 10 m | > 30 MHz\
+    \ |\n\nZależność między częstotliwością \\(f\\) a długością fali \\(\\lambda\\) wyraża równanie:\n\
+    \n\\[\n\\lambda = \\frac{c}{f},\n\\]\n\ngdzie \\(c \\approx 3 \\times 10^{8}\\,\\text{m/s}\\) – prędkość\
+    \ światła w próżni.  \n\nDla \\(f = 30\\;\\text{MHz}\\):\n\n\\[\n\\lambda = \\frac{3 \\times 10^{8}}{30\
+    \ \\times 10^{6}} = 10\\;\\text{m},\n\\]\n\na dla \\(f = 3\\;\\text{MHz}\\):\n\n\\[\n\\lambda = \\\
+    frac{3 \\times 10^{8}}{3 \\times 10^{6}} = 100\\;\\text{m}.\n\\]\n\nStąd **falami krótkimi** (ang.\
+    \ *short‑wave*) nazywamy promieniowanie o długościach od **10 m do 100 m** (odpowiadające częstotliwościom\
+    \ 30 MHz‑3 MHz).  \n\nDlatego:\n\n- **A. 100 m – 10 m** – zgadza się z definicją.\n- **B. 80 m – 10 m**\
+    \ – pomija górną granicę 100 m, więc nie obejmuje całego pasma.\n- **C. 160 m – 10 m** – dolna granica\
+    \ 160 m wchodzi już w zakres fal średnich, więc zakres jest zbyt szeroki.\n\n**Podsumowanie:** zakres\
+    \ fal krótkich to **10 m – 100 m**, czyli odpowiedź **A**."
 - text: 219\. Co to jest strefa martwa na falach krótkich?
   answers:
   - strefa bez odbioru leżąca pomiędzy końcem fali przyziemnej a powrotem fali odbitej od jonosfery

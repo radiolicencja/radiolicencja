@@ -3673,65 +3673,50 @@ questions:
   - 25%
   - 50%
   - 75%
-  correct_index: 1
+  correct_index: 0
   explanations:
-  - "**Dlaczego wynik to 25 % (odpowiedź A), a nie 50 %**\n\n1. **Definicja tłumienia w dB**  \n\n   Tłumienie\
-    \ podane w dB odnosi się do **mocy**:\n\n   \\[\n   L_{\\text{dB}} = 10\\log_{10}\\!\\left(\\frac{P_{\\\
-    text{wej}}}{P_{\\text{wyj}}}\\right)\n   \\qquad\\Longleftrightarrow\\qquad\n   \\frac{P_{\\text{wyj}}}{P_{\\\
-    text{wej}}}=10^{-L_{\\text{dB}}/10}\n   \\]\n\n2. **Tłumienie całego kabla**  \n\n   Kabel 100 m →\
-    \ 12 dB  \n\n   \\[\n   \\frac{P_{\\text{100 m}}}{P_{\\text{wej}}}=10^{-12/10}=10^{-1.2}\\approx0.0631\n\
-    \   \\]\n\n   Czyli po 100 m zostaje **≈ 6 %** mocy (co odpowiada współczynnikowi 15,8 : 1).\n\n3.\
-    \ **Tłumienie na połowie długości**  \n\n   Przy założeniu, że tłumienie rośnie liniowo z długością\
-    \ (typowe dla przewodów o stałym współczynniku tłumienia),\n\n   \\[\n   L_{50\\text{ m}} = 12\\ \\\
-    text{dB}\\times\\frac{50}{100}=6\\ \\text{dB}\n   \\]\n\n   Przeliczamy 6 dB na stosunek mocy:\n\n\
-    \   \\[\n   \\frac{P_{\\text{50 m}}}{P_{\\text{wej}}}=10^{-6/10}=10^{-0.6}\\approx0.251\n   \\]\n\n\
-    \   Czyli do anteny dociera **≈ 25 %** początkowej mocy (100 W → ≈ 25 W).\n\n4. **Gdzie mogło pojawić\
-    \ się nieporozumienie?**  \n\n   - **3 dB** oznacza *połowę* mocy. 6 dB to *czwartą* mocy, nie połowę.\
-    \  \n   - Jeśli pomylimy dB mocy (10 log) z dB napięcia (20 log), otrzymamy inny wynik, ale w zadaniu\
-    \ mowa jest o mocy (tłumienie kabla podawane jest zwykle w dB → moc).  \n\n5. **Podsumowanie**  \n\
-    \n   \\[\n   \\boxed{\\displaystyle \\frac{P_{\\text{antenna}}}{P_{\\text{nadajnik}}}=10^{-6/10}\\\
-    approx0.25\\;(25\\%)}\n   \\]\n\n   Odpowiedź **B – 50 %** byłaby prawidłowa jedynie wtedy, gdyby\
-    \ 6 dB oznaczało *3 dB* (połowę mocy), co nie ma miejsca w standardowej definicji dB mocy. Dlatego\
-    \ Twoja pierwotna odpowiedź A (25 %) jest poprawna, a zaznaczenie B wynika z błędnego zrozumienia\
-    \ skali decybelowej."
-  - "Gratulacje – wybrałeś prawidłową odpowiedź **B (50 %)**!  \n\n**Dlaczego tak jest**\n\n- Cały kabel\
-    \ 100 m powoduje tłumienie **12 dB**.  \n- Tłumienie jest proporcjonalne do długości, więc dla połowy\
-    \ długości (50 m) otrzymujemy  \n\n\\[\n\\text{tłumienie}_{50\\text{ m}} = \\frac{50}{100}\\times\
-    \ 12\\;\\text{dB}=6\\;\\text{dB}.\n\\]\n\n- Wzór przeliczający dB na stosunek mocy to  \n\n\\[\n\\\
-    frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{\\frac{-\\Delta\\text{dB}}{10}}.\n\\]\n\nPodstawiając \\\
-    (\\Delta\\text{dB}=6\\) dB:\n\n\\[\n\\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{\\frac{-6}{10}}=10^{-0.6}\\\
-    approx 0.5.\n\\]\n\nOtrzymujemy więc **≈ 50 %** początkowej mocy, czyli z 100 W do anteny zostaje\
-    \ doprowadzonych **50 W**.\n\nJeszcze raz gratuluję prawidłowego wyboru!"
-  - "**Dlaczego odpowiedź C (75 %) jest niepoprawna?**  \n\n1. **Zrozumienie podanego tłumienia**  \n\
-    \   - „12 dB przy długości 100 m” oznacza **12 dB na 100 m** (jest to typowa specyfikacja kabla).\
-    \  \n   - Tłumienie jest wprost proporcjonalne do długości, więc dla 50 m:  \n\n\\[\n\\alpha_{50\\\
-    text{ m}} = 12\\;\\frac{\\text{dB}}{100\\;\\text{m}}\\times 50\\;\\text{m}=6\\;\\text{dB}\n\\]\n\n\
-    2. **Przeliczenie dB na stosunek mocy**  \n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\\
-    frac{\\alpha}{10}}=\n10^{-\\frac{6}{10}}\\approx 0.251\n\\]\n\n   Czyli po przejściu 50 m pozostaje\
-    \ **≈ 25 %** mocy nadawczej (25 W z 100 W).  \n\n3. **Skąd wzięła się odpowiedź B (50 %)?**  \n  \
-    \ - W niektórych materiałach edukacyjnych przyjmuje się uproszczoną zależność:  \n\n\\[\n3\\;\\text{dB}\\\
-    ;\\approx\\; \\frac{1}{2}\\text{ (połowa mocy)},\\qquad\n6\\;\\text{dB}\\;\\approx\\; \\frac{1}{4}\\\
-    text{ (jedna czwarta mocy)}\n\\]\n\n   - Czasem, by nie komplikować uczniom obliczeń, przyjmuje się\
-    \ **przybliżenie** „6 dB ≈ 50 % utraty” i uznaje się, że „przesyłane jest połowa mocy”. Dlatego klucz\
-    \ podaje odpowiedź **B = 50 %** – jest to jedynie przybliżenie, a nie dokładny wynik.\n\n4. **Dlaczego\
-    \ 75 % jest oczywiście błędne?**  \n   - 75 % oznaczałoby **stratę jedynie 1,25 dB** (bo \\(10^{-\\\
-    frac{1.25}{10}}\\approx0.75\\)).  \n   - Kabel o podanym współczynniku 12 dB/100 m nie może mieć tak\
-    \ małej straty przy połowie długości – wymagałoby to mniej niż 2 dB na 100 m, co jest sprzeczne z\
-    \ danymi.\n\n---\n\n### Podsumowanie (zwięzłe)\n\n| Krok | Co robimy | Wynik |\n|------|-----------|-------|\n\
-    | 1.   | Skalujemy tłumienie do rzeczywistej długości 50 m | \\(\\alpha=6\\text{ dB}\\) |\n| 2.  \
-    \ | Przeliczamy dB na stosunek mocy | \\(P_{\\text{out}}/P_{\\text{in}}=10^{-6/10}\\approx0.25\\)\
-    \ |\n| 3.   | Otrzymujemy moc przy antenie | \\(100\\text{ W}\\times0.25\\approx25\\text{ W}\\) |\n\
-    | 4.   | Procent mocy → **25 %** (dokładnie) – w kluczu przyjęto przybliżenie **≈ 50 %**. |\n\n**Wniosek:**\
-    \ odpowiedź C (75 %) jest zdecydowanie za wysoka; najbliższą poprawnej wartości (zgodnie z kluczem)\
-    \ jest odpowiedź B (50 %). Jeśli liczyć dokładnie, rzeczywista część mocy wynosi **≈ 25 %**."
-  - "**Rozwiązanie**\n\n1. Attenuacja podana w zadaniu – **12 dB na 100 m** – jest wartością logarytmiczną.\
-    \  \n   Strata na 1 m wynosi  \n\n\\[\n\\frac{12\\ \\text{dB}}{100\\ \\text{m}} = 0{,}12\\ \\text{dB/m}.\n\
-    \\]\n\n2. Kabel pomiędzy nadajnikiem a anteną ma długość **50 m**, więc jego strata to  \n\n\\[\n\
-    0{,}12\\ \\text{dB/m} \\times 50\\ \\text{m}=6\\ \\text{dB}.\n\\]\n\n3. Wartość **6 dB** w kontekście\
-    \ mocy oznacza **spadek o połowę** (bo 3 dB ≈ ½, a 6 dB ≈ ½ × ½ ≈ ¼; w przyjętym w egzaminie uproszczeniu\
-    \ przyjmuje się 6 dB ≈ ½).  \n\n\\[\nP_{\\text{do anteny}} = P_{\\text{nadawcy}\\,100\\text{W}} \\\
-    times 10^{-6/10}\n                       \\approx 100\\ \\text{W}\\times 0{,}5 = 50\\ \\text{W}.\n\
-    \\]\n\n4. Zatem do anteny zostaje **50 %** początkowej mocy.\n\n---\n\n**Odpowiedź:** **B – 50 %**."
+  - "**Gratulacje!**  \n\nOdpowiedź **A – 25 %** jest prawidłowa.\n\nDla kabla koncentrycznego podano\
+    \ tłumienie 12 dB na 100 m, czyli:\n\n\\[\n\\alpha = \\frac{12\\ \\text{dB}}{100\\ \\text{m}} = 0{,}12\\\
+    \ \\text{dB/m}\n\\]\n\nDługość faktycznego odcinka między nadajnikiem a anteną wynosi 50 m, więc całkowite\
+    \ tłumienie wynosi:\n\n\\[\nL = 0{,}12\\ \\text{dB/m} \\times 50\\ \\text{m} = 6\\ \\text{dB}\n\\\
+    ]\n\nTłumienie 6 dB oznacza spadek mocy o czynnik:\n\n\\[\n\\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{-L/10}=10^{-6/10}=10^{-0{,}6}\\\
+    approx 0{,}251\n\\]\n\nczyli około **25 %** mocy nadajnika (100 W) dociera do anteny.  \n\nDlatego\
+    \ wybrana odpowiedź jest prawidłowa."
+  - "**Dlaczego odpowiedź B (50 %) jest błędna?**  \n\nKabel koncentryczny podany jest z **tłumieniem\
+    \ 12 dB na 100 m** przy 144 MHz.  \nDecybele opisują logarytmiczny spadek mocy, a nie prosty podział\
+    \ na połowę.\n\n### Obliczenia\n\n1. **Tłumienie na 1 m**  \n\n\\[\n\\alpha = \\frac{12\\ \\text{dB}}{100\\\
+    \ \\text{m}} = 0{,}12\\ \\text{dB/m}\n\\]\n\n2. **Tłumienie na rzeczywistą długość 50 m**  \n\n\\\
+    [\nL = 0{,}12\\ \\text{dB/m} \\times 50\\ \\text{m} = 6\\ \\text{dB}\n\\]\n\n3. **Przeliczenie 6 dB\
+    \ na stosunek mocy**  \n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{\\frac{-L}{10}}\n   =10^{\\\
+    frac{-6}{10}}\n   =10^{-0.6}\\approx 0{,}251\n\\]\n\nCzyli do anteny dociera **≈ 25 %** początkowej\
+    \ mocy 100 W (≈ 25 W).\n\n### Gdzie najczęściej pojawia się pomyłka?\n\n- **Mylenie dB z procentami**\
+    \ – 6 dB nie oznacza „połowy” (to byłby spadek o 3 dB).  \n- **Użycie liniowego podziału** (zakładanie,\
+    \ że 50 m to połowa 100 m i więc moc zostaje podzielona na pół) – to nie ma pokrycia w logarytmicznym\
+    \ charakterze jednostki dB.\n\n---\n\n**Wniosek:** przy 6 dB tłumienia moc spada do \\(10^{-0.6}\\\
+    ) ≈ 0,25 × P₀, czyli **25 %**, a nie 50 %. Stąd prawidłowa odpowiedź to **A – 25 %**."
+  - "**Dlaczego odpowiedź C (75 %) jest błędna?**  \n\n1. **Dane**  \n   * Cały kabel 100 m → tłumienie\
+    \ 12 dB przy 144 MHz.  \n   * W rzeczywistości używamy tylko 50 m tego kabla.\n\n2. **Tłumienie na\
+    \ 50 m**  \n   Tłumienie jest proporcjonalne do długości (przy stawej częstotliwości), więc połowa\
+    \ długości oznacza połowę tłumienia:  \n\n   \\[\n   A_{50\\text{ m}} = \\frac{50\\text{ m}}{100\\\
+    text{ m}}\\times 12\\text{ dB}=6\\text{ dB}.\n   \\]\n\n3. **Przeliczenie dB na współczynnik mocy**\
+    \  \n   Definicja dB:  \n\n   \\[\n   A\\;[\\text{dB}] = 10\\log_{10}\\!\\left(\\frac{P_{\\text{wej}}}{P_{\\\
+    text{wyj}}}\\right)\n   \\quad\\Longrightarrow\\quad\n   \\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{-A/10}.\n\
+    \   \\]\n\n   Dla \\(A = 6\\text{ dB}\\):\n\n   \\[\n   \\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{-6/10}=10^{-0.6}\\\
+    approx 0.251.\n   \\]\n\n   Czyli **około 25 %** mocy trafia do anteny.\n\n4. **Gdzie najczęściej\
+    \ pojawia się pomyłka?**  \n   * **Mylenie dB z procentami** – 12 dB nie oznacza „12 % utraty”.  \n\
+    \   * **Błędne odejmowanie** – nie odejmuje się „12 %” od 100 %, lecz przelicza się logarytmicznie.\
+    \  \n   * **Niewłaściwe zastosowanie skali liniowej** – przy dB trzeba używać wzoru \\(10^{-A/10}\\\
+    ), a nie proporcji liniowej.\n\n5. **Podsumowanie**  \n\n   - 12 dB na 100 m → 6 dB na 50 m.  \n \
+    \  - 6 dB odpowiada redukcji mocy do \\(10^{-0.6}\\approx 0.25\\) (25 %).  \n   - Dlatego poprawna\
+    \ odpowiedź to **A – 25 %**, a odpowiedź C (75 %) wynika z nieprawidłowego traktowania dB jako procentu."
+  - "**Obliczenia**\n\nTłumienie podane w zadaniu wynosi **12 dB** dla całej długości **100 m** kabla.\
+    \  \nDługość kabla używana w układzie jest tylko **50 m**, czyli połowa pełnej długości, więc tłumienie\
+    \ będzie połową podanego:\n\n\\[\n\\alpha_{50\\text{ m}} = \\frac{12\\ \\text{dB}}{2}=6\\ \\text{dB}\n\
+    \\]\n\nTłumienie w decybelach odnosi się do stosunku mocy:\n\n\\[\n\\text{Tłumienie (dB)} = 10\\log_{10}\\\
+    !\\left(\\frac{P_{\\text{wej}}}{P_{\\text{wyj}}}\\right)\n\\]\n\nStąd stosunek mocy, jaka dociera\
+    \ do anteny, wynosi\n\n\\[\n\\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{-\\frac{6}{10}}\n       \
+    \ =10^{-0.6}\\approx 0.251\n\\]\n\nczyli **≈ 25 %** mocy wyjściowej (100 W) dociera do anteny.\n\n\
+    ---\n\n**Wynik:** część mocy doprowadzona do anteny = **25 %** (odpowiedź A)."
 - text: 221\. Akumulator ma pojemność 20Ah i pozwala na pracę pełną mocą radiostacji, która pobiera średnio
     około 5A. Czy taki akumulator wystarczy na trzygodzinną pracę tej radiostacji?
   answers:
@@ -4616,76 +4601,39 @@ questions:
     \ modelu prąd bramki nie zależy od typu tranzystora ani od napięcia.\n\n**Podsumowanie**  \nW idealnym\
     \ MOSFET‑ie bramka jest izolowana dielektrykiem, co powoduje, że w stanie ustalonym nie płynie przez\
     \ nią żaden prąd:\n\n\\[\n\\boxed{I_G = 0}\n\\]\n\nStąd prawidłowa odpowiedź to **C. zerowy**."
-- text: 265\. Jaka jest funkcja rezystorów R1 i R2 w układzie przedstawionym na rysunku?
+- text: '265\. Jaka jest funkcja rezystorów R1 i R2 w układzie przedstawionym na rysunku?
+
+    ![RADIOTECHNIKA question 265](assets/question_images/radiotechnika-q265.png)'
   answers:
   - Zabezpieczenie tranzystora przed uszkodzeniem
   - Zwiększenie impedancji wejściowej
   - Ustalenie punktu pracy tranzystora
   correct_index: 2
   explanations:
-  - "**Dlaczego odpowiedź A („Zabezpieczenie tranzystora przed uszkodzeniem”) jest niepoprawna**\n\nR1\
-    \ i R2 nie są podłączone w taki sposób, aby ograniczać prąd płynący przez złącza kolektora‑bazy (CB)\
-    \ lub emiter‑baza (EB) w stanie nasycenia.  \nZabezpieczenie tranzystora wymaga zwykle:\n\n* rezystora\
-    \ szeregowego z kolektorem lub emiterem (ograniczenie prądu kolektora) albo  \n* diody zabezpieczającej\
-    \ (clamping) przed przekroczeniem dopuszczalnego napięcia.\n\nW układzie z rysunku R1 i R2 tworzą\
-    \ **dzielnik napięciowy** podłączony do bazy, a nie elementy ochronne. Dlatego ich główną rolą nie\
-    \ jest ochrona przed uszkodzeniem.\n\n---\n\n## Co naprawdę robią R1 i R2?\n\n### 1. Ustalają napięcie\
-    \ bazy \\(V_B\\)\n\nDzielnik napięciowy składający się z R1 i R2 podłączony do napięcia zasilania\
-    \ \\(V_{CC}\\) daje:\n\n\\[\nV_B = V_{CC}\\,\\frac{R_2}{R_1+R_2}\n\\]\n\nTo napięcie jest przyłożone\
-    \ do bazy tranzystora i decyduje o **prądzie bazy**:\n\n\\[\nI_B = \\frac{V_B - V_{BE}}{R_{B,\\text{eff}}}\n\
-    \\]\n\ngdzie \\(V_{BE}\\) ≈ 0,7 V dla tranzystora krzemowego, a \\(R_{B,\\text{eff}}\\) to równoległe\
-    \ połączenie R1 i R2 (lub dodatkowy rezystor w bazie, jeśli jest).\n\n### 2. Ustalają punkt pracy\
-    \ (bias) tranzystora\n\nPrąd kolektora \\(I_C\\) w stanie aktywnym wynika z wzmocnienia prądowego\
-    \ \\(\\beta\\):\n\n\\[\nI_C \\approx \\beta \\, I_B\n\\]\n\nZnając \\(I_C\\), można wyznaczyć spadek\
-    \ napięcia na rezystorze kolektora \\(R_C\\) i w konsekwencji napięcie wyjściowe:\n\n\\[\nV_{CE} =\
-    \ V_{CC} - I_C R_C\n\\]\n\nWłaściwy dobór R1 i R2 zapewnia, że \\(V_{CE}\\) znajduje się w środku\
-    \ charakterystyki (np. \\(V_{CE}\\approx \\frac{V_{CC}}{2}\\)), co daje maksymalny zakres sygnału\
-    \ wyjściowego i stabilność temperaturową.\n\n---\n\n## Podsumowanie\n\n- **A** – błędna, bo rezystory\
-    \ nie pełnią funkcji ochronnej (nie ograniczają prądu w krytycznych punktach, nie chronią przed przepięciami).\
-    \  \n- **C** – prawidłowa, gdyż R1 i R2 tworzą dzielnik napięciowy, który **ustala napięcie bazy**,\
-    \ a w konsekwencji **punkt pracy (bias) tranzystora**. Dzięki temu tranzystor pracuje w pożądanym\
-    \ regionie charakterystyki i zapewnia stabilny wzmocnienie."
-  - "**Dlaczego odpowiedź B jest nieprawidłowa**\n\nRezystory R1 i R2 nie służą przede wszystkim do zwiększania\
-    \ impedancji wejściowej układu.  \nImpedancja wejściowa w układzie z tranzystorem bipolarnym jest\
-    \ określona przez:\n\n\\[\nZ_{in}= r_{\\pi} \\parallel (R_1 \\parallel R_2) + (\\beta+1)R_E\n\\]\n\
-    \ngdzie \\(r_{\\pi}\\) to wewnętrzna rezystancja bazy, a \\(R_E\\) (jeśli występuje) zwiększa impedancję\
-    \ poprzez sprzężenie zwrotne.  \n\nR1 i R2 wpływają na \\(Z_{in}\\) jedynie jako część dzielnika napięcia,\
-    \ ale ich **główną rolą** jest ustalenie napięcia bazy, a nie podnoszenie impedancji wejściowej. Dlatego\
-    \ odpowiedź B nie opisuje ich funkcji.\n\n---\n\n**Dlaczego prawidłowa jest odpowiedź C – „Ustalenie\
-    \ punktu pracy tranzystora”**\n\n1. **Dzielnik napięcia**  \n   R1 i R2 tworzą dzielnik napięcia,\
-    \ który dostarcza stabilne napięcie bazowe \\(V_B\\):\n\n   \\[\n   V_B = V_{CC}\\,\\frac{R_2}{R_1+R_2}\n\
-    \   \\]\n\n2. **Ustalanie prądu bazy i kolektora**  \n   Znane \\(V_B\\) oraz spadek napięcia na złączu\
-    \ baza‑emiter (\\(V_{BE}\\approx0{,}7\\;\\text{V}\\)) wyznaczają napięcie emisera \\(V_E = V_B - V_{BE}\\\
-    ).  \n   Dzięki temu prąd emitera (a więc i kolektora) jest określony:\n\n   \\[\n   I_E \\approx\
-    \ \\frac{V_E}{R_E}, \\qquad I_C \\approx \\beta I_B\n   \\]\n\n3. **Stabilizacja punktu pracy**  \n\
-    \   Zmiany temperatury lub tolerancji tranzystora wpływają na \\(V_{BE}\\), ale dzielnik R1‑R2 utrzymuje\
-    \ stałe \\(V_B\\), co stabilizuje punkt pracy (Q‑point).  \n\nDlatego funkcją rezystorów R1 i R2 jest\
-    \ **ustalenie i stabilizacja punktu pracy tranzystora**, a nie ochrona czy zwiększanie impedancji\
-    \ wejściowej."
-  - "**Gratulacje!** \U0001F389  \n\nZaznaczyłeś odpowiedź **C – „Ustalenie punktu pracy tranzystora”**,\
-    \ co jest prawidłowe.\n\nR1 i R2 tworzą dzielnik napięcia podłączony do bazy (lub bramki) tranzystora.\
-    \ Dzięki temu:\n\n- ustalają napięcie bazowe \\(V_B\\) (lub bramkowe \\(V_{GS}\\)),\n- kontrolują\
-    \ prąd bazy \\(I_B\\) (lub bramkowy \\(I_{GS}\\)),\n- a w konsekwencji wyznaczają prąd kolektora \\\
-    (I_C\\) (lub drenowy \\(I_D\\)) oraz napięcie kolektora \\(V_{CE}\\) (lub dren‑source \\(V_{DS}\\\
-    )).\n\nTakie ustawienie definiuje **punkt pracy (Q‑point)** tranzystora, zapewniając stabilne działanie\
-    \ układu w wybranym regionie charakterystyki (np. wzmocnienie liniowe).  \n\nInne odpowiedzi nie opisują\
-    \ tej roli: rezystory nie służą bezpośrednio do ochrony ani do podnoszenia impedancji wejściowej.\
-    \ Dlatego C jest jedyną poprawną opcją."
-  - "**Dlaczego rezystory R1 i R2 służą do ustalenia punktu pracy tranzystora?**\n\nW układzie, w którym\
-    \ baza tranzystora jest podłączona do dzielnika napięciowego złożonego z rezystorów **R1** i **R2**,\
-    \ ich podstawową rolą jest **ustalenie stałego napięcia bazowego** \\(V_B\\).  \n\n1. **Dzielnik napięciowy**\
-    \  \n   \\[\n   V_B = V_{CC}\\;\\frac{R_2}{R_1+R_2}\n   \\]\n   Dzięki temu napięcie bazowe jest ustalone\
-    \ niezależnie od zmian prądu kolektora, co pozwala wyznaczyć stały prąd bazy \\(I_B\\) i w konsekwencji\
-    \ stały prąd kolektora \\(I_C\\).\n\n2. **Stabilizacja punktu pracy (biasu)**  \n   - Wartość \\(V_B\\\
-    ) określa napięcie emiter‑baza \\(V_{BE}\\) (zwykle ok. 0,7 V dla tranzystora bipolarnego).  \n  \
-    \ - Przy znanym \\(V_{BE}\\) i oporze emitera (jeśli jest użyty) wyznaczany jest prąd emitera \\(I_E\\\
-    ), a więc i \\(I_C \\approx \\beta I_B\\).  \n   - Dzięki temu tranzystor pracuje w wybranym regionie\
-    \ charakterystyki (np. w aktywnym, liniowym obszarze), co jest niezbędne dla wzmacniaczy.\n\n3. **Odporność\
-    \ na zmiany temperatury i charakterystyki tranzystora**  \n   Dzielnik zapewnia pewną tolerancję na\
-    \ zmiany \\(\\beta\\) i temperatury, ponieważ napięcie bazowe jest ustalone głównie przez stosunek\
-    \ \\(R_1/R_2\\), a nie przez samą charakterystykę tranzystora.\n\nDlatego odpowiedź **C – ustalenie\
-    \ punktu pracy tranzystora** jest prawidłowa. Rezystory R1 i R2 nie chronią tranzystora ani nie podnoszą\
-    \ impedancji wejściowej – ich główną funkcją jest właśnie ustawienie stabilnego **biasu**."
+  - Odpowiedź A jest błędna, ponieważ rezystory $ R_1 $ i $ R_2 $ tworzą **dzielnicę napięcia** dla polaryzacji
+    tranzystora. Ich główne zadanie to **ustawienie punktu pracy (Q-point)** w celu poprawnej pracy wzmacniacza
+    (odpowiedź C). Zabezpieczenie przed uszkodzeniem (A) dotyczy np. diod lub kondensatorów filtrujących,
+    a nie rezystorów polaryzujących. Impedancja wejściowa (B) jest efektem bocznym, ale nie jest główną
+    funkcją tych elementów.
+  - "**Błąd w wyborze odpowiedzi B:**  \nRezystory $ R_1 $ i $ R_2 $ tworzą dzielnik napięcia, który **ustala\
+    \ napięcie bazy tranzystora** (płaskie punktu pracy), a nie zwiększa impedancji wejściowej. Impedancja\
+    \ wejściowa zależy od szeregowego połączenia dzielnika ($ R_1 \\parallel R_2 $) i impedancji tranzystora,\
+    \ ale to **niewłaściwa funkcja** tych rezystorów.  \n**Główna rola:** Ustalenie stałego prądu i napięcia\
+    \ w punkcie pracy (odpowiedź **C**).  \n**Dlaczego B jest niepoprawne?** Zwiększanie impedancji wejściowej\
+    \ jest *efektem ubocznym* (np. w układach z wejściem połączonym z $ R_1 $), ale **nie jest celem projektowania**\
+    \ tych rezystorów w tym układzie."
+  - Gratuluję! Odpowiedź **C** jest poprawna. Rezystory R1 i R2 tworzą **dzielnicę napięcia**, która ustala
+    napięcie na bazie tranzystora. To pozwala **zdefiniować punkt pracy (Q-point)** – stan spoczynkowy
+    tranzystora, niezbędny dla poprawnej pracy w trybie wzmacniacza (np. zapobiega przesunięciu sygnału
+    w obszarach nasycenia lub wyłączania). Inne opcje nie odnoszą się do podstawowej funkcji dzielnika
+    napięcia. 😊
+  - "W układzie tranzystorowym rezystory R1 i R2 tworzą **dzielnik napięcia**, który **ustala napięcie\
+    \ na bazie tranzystora** (punkty pracy). Dzięki temu zapewniony jest stabilny punkt pracy (Q-point),\
+    \ niezbędny do prawidłowego wzmacniania sygnału bez zniekształceń. \n\n- **A** – błędną, bo zabezpieczenie\
+    \ wymaga innych elementów (np. rezystorów w obwodzie emitera).  \n- **B** – niewłaściwa, dzielnik\
+    \ *obniża* impedancję wejściową (nie zwiększa).  \n- **C** – poprawna, ponieważ R1 i R2 określają\
+    \ **napięcie i prąd pracy tranzystora** w stanie spoczynku.  \n\n**Klucz**: Rezystory R1 i R2 ustalają\
+    \ punkt pracy tranzystora poprzez podanie stałego napięcia na bazę."
 - text: 266\. Która klasa pracy wzmacniacza wprowadza najmniejsze zniekształcenia?
   answers:
   - klasa AB

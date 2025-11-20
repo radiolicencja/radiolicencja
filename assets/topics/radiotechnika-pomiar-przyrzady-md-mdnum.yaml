@@ -388,62 +388,54 @@ questions:
   - 200 W
   - 100 W
   - 50 W
-  correct_index: 0
+  correct_index: 1
   explanations:
-  - "Gratulacje! \U0001F389  \nZaznaczyłeś **odpowiedź A – 200 W**, co jest prawidłowe.\n\n**Dlaczego?**\
-    \  \n\nPEP (Peak Envelope Power) określa moc przy maksymalnym (szczytowym) napięciu wyjściowym. Dla\
-    \ napięcia szczyt‑do‑szczytu \\(V_{\\text{pp}}\\) wyznaczamy napięcie szczytowe:\n\n\\[\nV_{\\text{peak}}\
-    \ = \\frac{V_{\\text{pp}}}{2}\n\\]\n\nMoc szczytowa przy impedancji \\(R = 50\\;\\Omega\\) to:\n\n\
-    \\[\nP_{\\text{PEP}} = \\frac{V_{\\text{peak}}^{2}}{R}\n               = \\frac{\\left(\\dfrac{V_{\\\
-    text{pp}}}{2}\\right)^{2}}{R}\n               = \\frac{(200/2)^{2}}{50}\n               = \\frac{100^{2}}{50}\n\
-    \               = 200\\;\\text{W}\n\\]\n\nStąd odpowiedź **A – 200 W** jest poprawna. Powodzenia w\
-    \ dalszej nauce!"
-  - "**Dlaczego prawidłowa odpowiedź to 200 W, a nie 100 W**\n\n1. **Co mierzymy?**  \n   Na oscyloskopie\
-    \ odczytano **napięcie międzyszczytowe** \\(V_{pp}=200\\;\\text{V}\\).  \n\n2. **Zamiana na napięcie\
-    \ szczytowe**  \n   \\[\n   V_{\\text{peak}} = \\frac{V_{pp}}{2}= \\frac{200}{2}=100\\;\\text{V}\n\
-    \   \\]\n\n3. **Czym jest PEP?**  \n   *PEP* (Peak Envelope Power) jest **maksymalną chwilową mocą**\
-    \ dostarczaną do obciążenia, czyli mocą przy szczytowym napięciu fali. Nie jest to moc średnia (RMS)\
-    \ ani moc średnia z półokresu.\n\n4. **Wzór na moc chwilową**  \n   Dla rezystancyjnego obciążenia:\n\
-    \   \\[\n   p(t)=\\frac{v(t)^2}{R}\n   \\]\n   Wartość szczytowa:\n   \\[\n   P_{\\text{PEP}} = \\\
-    frac{V_{\\text{peak}}^{\\,2}}{R}\n   \\]\n\n5. **Podstawiamy liczby**  \n   \\[\n   P_{\\text{PEP}}\
-    \ = \\frac{(100\\ \\text{V})^{2}}{50\\ \\Omega}\n                = \\frac{10\\,000}{50}\n        \
-    \        = 200\\ \\text{W}\n   \\]\n\n6. **Gdzie pojawił się błąd?**  \n   Użytkownik użył **mocy\
-    \ średniej** (RMS):\n   \\[\n   P_{\\text{avg}} = \\frac{V_{\\text{rms}}^{2}}{R}\n   \\]\n   gdzie\
-    \ \\(V_{\\text{rms}} = V_{\\text{peak}}/\\sqrt{2}\\). To dałoby:\n   \\[\n   P_{\\text{avg}} = \\\
-    frac{(100/\\sqrt{2})^{2}}{50}=100\\ \\text{W}\n   \\]\n   ale **PEP nie jest mocą średnią** – jest\
-    \ mocą w szczytowym punkcie wykresu. Dlatego wynik 100 W odnosi się do mocy średniej, a nie do PEP.\n\
-    \n---\n\n**Podsumowanie**  \n- \\(V_{pp}=200\\;\\text{V}\\) → \\(V_{\\text{peak}}=100\\;\\text{V}\\\
-    )  \n- PEP = \\(V_{\\text{peak}}^{2}/R = 200\\;\\text{W}\\)  \n\nBłąd wynikał z pomylenia mocy średniej\
-    \ (RMS) z mocą szczytową (PEP)."
-  - "**Dlaczego odpowiedź C (50 W) jest błędna?**  \n\n1. **Co mierzymy?**  \n   Na sztucznym obciążeniu\
-    \ 50 Ω oscyloskop pokazuje **napięcie pomiędzy dwoma końcami** (peak‑to‑peak) równe \\(V_{pp}=200\\\
-    ;\\text{V}\\).\n\n2. **Z jakiego napięcia wyliczamy moc?**  \n   Moc średnia (PEP) zależy od **wartości\
-    \ skutecznej** napięcia \\(V_{\\text{rms}}\\), a nie od \\(V_{pp}\\).\n\n3. **Przekształcenie \\(V_{pp}\\\
-    ) → \\(V_{\\text{rms}}\\)**  \n\n   - Dla **fal sinusoidalnych**:  \n     \\[\n     V_{\\text{peak}}=\\\
-    frac{V_{pp}}{2}=100\\;\\text{V},\\qquad\n     V_{\\text{rms}}=\\frac{V_{\\text{peak}}}{\\sqrt{2}}=\\\
-    frac{100}{\\sqrt{2}}\\approx 70.7\\;\\text{V}\n     \\]\n     Moc:\n     \\[\n     P=\\frac{V_{\\\
-    text{rms}}^{2}}{R}=\\frac{70.7^{2}}{50}\\approx 100\\;\\text{W}\n     \\]\n     (odpowiedź **B**).\n\
-    \n   - Dla **fali prostokątnej** (stałe napięcie +100 V przez połowę okresu i –100 V przez drugą połowę)\
-    \ wartość skuteczna jest równa wartości szczytowej:\n     \\[\n     V_{\\text{rms}} = V_{\\text{peak}}\
-    \ = 100\\;\\text{V}\n     \\]\n     Moc:\n     \\[\n     P=\\frac{100^{2}}{50}=200\\;\\text{W}\n \
-    \    \\]\n     (odpowiedź **A**).\n\n4. **Gdzie pojawia się 50 W?**  \n   Odpowiedź C wynikałaby z\
-    \ **niepoprawnego przeliczenia**:\n   \\[\n   V_{\\text{rms}} = \\frac{V_{pp}}{4}=50\\;\\text{V}\\\
-    quad\\Rightarrow\\quad\n   P=\\frac{50^{2}}{50}=50\\;\\text{W}\n   \\]\n   Taki podział nie ma uzasadnienia\
-    \ fizycznego – nie istnieje wzór, który dzieli \\(V_{pp}\\) przez 4, aby otrzymać wartość skuteczną.\n\
-    \n5. **Podsumowanie**  \n   - **C** jest błędna, bo zakłada nieistniejący przelicznik \\(V_{pp}/4\\\
-    ).  \n   - Poprawna moc zależy od kształtu fali:  \n     - sinusoidalne → 100 W (odpowiedź B),  \n\
-    \     - prostokątne → 200 W (odpowiedź A).  \n\n   Jeśli w zadaniu nie określono kształtu sygnału,\
-    \ najczęściej przyjmuje się sinusoidę, więc **odpowiedź B** byłaby najtrafniejsza. Odpowiedź A jest\
-    \ prawidłowa jedynie przy założeniu fali prostokątnej.  \n\n---  \n\n**Kluczowy błąd:** pomylenie\
-    \ wartości szczytowo‑szczytowej z wartością skuteczną i podzielenie jej przez 4 zamiast użycia odpowiedniego\
-    \ przelicznika \\(\\sqrt{2}\\) (sinusoida) lub 2 (prostokąt)."
-  - "**Obliczenia**\n\n1. Napięcie „peak‑to‑peak” (V\\_{pp}) wynosi 200 V.  \n   \\[\n   V_{\\text{peak}}\
-    \ = \\frac{V_{pp}}{2}= \\frac{200\\ \\text{V}}{2}=100\\ \\text{V}\n   \\]\n\n2. Dla mocy **PEP** (Peak\
-    \ Envelope Power) przy stałym (nie modulowanym) sygnale przyjmujemy moc w szczycie, czyli:\n   \\\
-    [\n   P_{\\text{PEP}} = \\frac{V_{\\text{peak}}^{2}}{R}\n   \\]\n\n3. Podstawiając \\(R = 50\\ \\\
-    Omega\\):\n   \\[\n   P_{\\text{PEP}} = \\frac{(100\\ \\text{V})^{2}}{50\\ \\Omega}\n            \
-    \     = \\frac{10\\,000}{50}\n                 = 200\\ \\text{W}\n   \\]\n\n**Wniosek** – nadajnik\
-    \ dostarcza **200 W** mocy PEP, czyli prawidłowa odpowiedź to **A. 200 W**."
+  - "**Dlaczego odpowiedź A (200 W) jest błędna?**\n\n1. **Co mierzy oscyloskop?**  \n   Na wyjściu nadajnika\
+    \ zmierzono **napięcie międzyszczytowe** (peak‑to‑peak)  \n   \\[\n   V_{pp}=200\\ \\text{V}.\n  \
+    \ \\]\n\n2. **Z zamierzonego napięcia wyznaczamy napięcie szczytowe**  \n   \\[\n   V_{\\text{peak}}=\\\
+    frac{V_{pp}}{2}=100\\ \\text{V}.\n   \\]\n\n3. **Z napięcia szczytowego obliczamy skuteczne (RMS)**\
+    \ – to ono jest potrzebne do wyznaczenia mocy przy rezystancyjnym obciążeniu:  \n   \\[\n   V_{\\\
+    text{rms}}=\\frac{V_{\\text{peak}}}{\\sqrt{2}}=\n   \\frac{100}{\\sqrt{2}}\\approx 70.71\\ \\text{V}.\n\
+    \   \\]\n\n4. **Moc średnia (a w praktyce przy pomiarach PEP przy sinusoidzie)**\n   \\[\n   P=\\\
+    frac{V_{\\text{rms}}^{2}}{R}=\n   \\frac{(70.71)^{2}}{50}\\approx\\frac{5000}{50}=100\\ \\text{W}.\n\
+    \   \\]\n\n   Alternatywnie można użyć jednego wzoru, w którym od razu podstawiamy \\(V_{pp}\\):\n\
+    \   \\[\n   P=\\frac{V_{pp}^{2}}{8R}.\n   \\]\n   \\[\n   P=\\frac{200^{2}}{8\\cdot 50}=\n   \\frac{40000}{400}=100\\\
+    \ \\text{W}.\n   \\]\n\n5. **Gdzie popełniono błąd?**  \n   Odpowiedź A zakładała, że moc obliczamy\
+    \ ze wzoru \\(P=V_{pp}^{2}/R\\) (czyli traktowano \\(V_{pp}\\) jak napięcie skuteczne). To pomija\
+    \ podziału na szczyt i RMS i skutkuje dwukrotnie zbyt dużą wartością:\n   \\[\n   \\frac{200^{2}}{50}=800\\\
+    \ \\text{W}\\;\\;(\\text{błędne})\\qquad\\text{lub}\\qquad\n   \\frac{200^{2}}{2\\cdot 50}=400\\ \\\
+    text{W}\\;\\;(\\text{również za dużo}).\n   \\]\n\n**Podsumowanie**  \nAby uzyskać prawidłową moc,\
+    \ trzeba przekształcić napięcie peak‑to‑peak najpierw na napięcie skuteczne, a dopiero potem podzielić\
+    \ kwadrat tego napięcia przez opór obciążenia. Dlatego prawidłowa odpowiedź to **B – 100 W**."
+  - "## Gratulacje! \U0001F389  \n\n**Wybrałeś odpowiedź B – 100 W**, co jest prawidłowe.\n\n### Dlaczego?\n\
+    \n1. **Napięcie szczyt‑do‑szczytu (V\\_{pp}) = 200 V**  \n   Dla sygnału sinusoidalnego wartość skuteczna\
+    \ (RMS) wynosi:  \n\n\\[\nV_{\\text{RMS}} = \\frac{V_{pp}}{2\\sqrt{2}} = \\frac{200}{2\\sqrt{2}} \\\
+    approx 70{,}7\\ \\text{V}\n\\]\n\n2. **Moc przy obciążeniu R = 50 Ω**  \n\n\\[\nP = \\frac{V_{\\text{RMS}}^{2}}{R}\n\
+    \   = \\frac{(70{,}7\\ \\text{V})^{2}}{50\\ \\Omega}\n   \\approx \\frac{5000}{50}\n   = 100\\ \\\
+    text{W}\n\\]\n\nZatem moc dostarczana przez nadajnik PEP wynosi **100 W**. \n\nŚwietnie rozumiesz\
+    \ zależności między napięciem a mocą! \U0001F680"
+  - "**Dlaczego odpowiedź C (50 W) jest błędna?**  \n\n1. **Co mierzy oscyloskop?**  \n   Oscyloskop podaje\
+    \ **napięcie szczyt‑do‑szczytu** ( \\(V_{pp}\\) ).  \n   \\[\n   V_{pp}=200\\ \\text{V}\n   \\]\n\n\
+    2. **Zamiana na wartość szczytową**  \n   \\[\n   V_{\\text{peak}}=\\frac{V_{pp}}{2}= \\frac{200}{2}=100\\\
+    \ \\text{V}\n   \\]\n\n3. **Zamiana na wartość skuteczną (RMS)** – dla sinusoidy:\n   \\[\n   V_{\\\
+    text{rms}}=\\frac{V_{\\text{peak}}}{\\sqrt{2}}=\n   \\frac{100}{\\sqrt{2}}\\approx70.71\\ \\text{V}\n\
+    \   \\]\n\n4. **Obliczenie mocy przy obciążeniu \\(R=50\\ \\Omega\\)**  \n   \\[\n   P = \\frac{V_{\\\
+    text{rms}}^{2}}{R}\n     = \\frac{(70.71)^{2}}{50}\n     = \\frac{5000}{50}=100\\ \\text{W}\n   \\\
+    ]\n\n---\n\n### Gdzie pojawia się pomyłka?\n\n- **Błąd C** zakładał, że moc można wyliczyć jako  \n\
+    \  \\[\n  P = \\frac{V_{pp}^{2}}{4R}\n  \\]\n  co daje \\(\\frac{200^{2}}{4\\cdot50}=50\\ \\text{W}\\\
+    ).  \n  Ten wzór jest niepoprawny, bo \\(V_{pp}\\) nie jest wartością używaną w definicji mocy – potrzebna\
+    \ jest wartość skuteczna (\\(V_{\\text{rms}}\\)), a nie szczyt‑do‑szczytu.\n\n- **Prawidłowy wzór**\
+    \ wymaga najpierw przekształcenia \\(V_{pp}\\) → \\(V_{\\text{peak}}\\) → \\(V_{\\text{rms}}\\), a\
+    \ dopiero potem podzielenia przez rezystancję.\n\n---\n\n### Krótkie podsumowanie\n\n- \\(V_{pp}=200\\\
+    \ \\text{V}\\) → \\(V_{\\text{peak}}=100\\ \\text{V}\\) → \\(V_{\\text{rms}}≈70.7\\ \\text{V}\\) \
+    \ \n- \\(P = V_{\\text{rms}}^{2}/R = 100\\ \\text{W}\\)\n\nDlatego prawidłowa odpowiedź to **B – 100 W**,\
+    \ a odpowiedź C wynikała z niewłaściwego użycia napięcia szczyt‑do‑szczytu w równaniu mocy."
+  - "**Obliczenia**\n\n1. **Z napięcia szczyt‑szczyt ( \\(V_{pp}=200\\ \\text{V}\\) ) wyznaczamy amplitudę\
+    \ (szczytową)**\n\\[\nV_{p}= \\frac{V_{pp}}{2}= \\frac{200}{2}=100\\ \\text{V}\n\\]\n\n2. **Z amplitudy\
+    \ obliczamy wartość skuteczną (RMS)**\n\\[\nV_{\\text{rms}} = \\frac{V_{p}}{\\sqrt{2}} = \\frac{100}{\\\
+    sqrt{2}}\\approx 70{,}71\\ \\text{V}\n\\]\n\n3. **Moc dostarczana do obciążenia rezystancyjnego 50 Ω**\n\
+    \\[\nP = \\frac{V_{\\text{rms}}^{2}}{R}\n   = \\frac{(70{,}71)^{2}}{50}\n   = \\frac{5000}{50}\n \
+    \  = 100\\ \\text{W}\n\\]\n\n---\n\n**Wynik**: Nadajnik dostarcza **100 W** – odpowiedź **B**."
 - text: 60\. Ile mocy zostaje wypromieniowane przez antenę, jeśli miernik mocy podłączony pomiędzy nadajnik
     a antenę wskazuje 100 W mocy padającej i 30 W mocy odbitej?
   answers:
@@ -784,66 +776,59 @@ questions:
 - text: '81\. Do cewki powietrznej 100 µH wkładamy rdzeń ferrytowy o względnej przenikalności µ= 10. Ile
     wyniesie indukcyjność cewki?
 
-    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.jpg)'
+    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.png)'
   answers:
   - wzrośnie do 1000 µH
   - nie zmieni się
   - zmaleje do 10 µH
   correct_index: 0
   explanations:
-  - "**Gratulacje!**  \nZaznaczyłeś poprawną odpowiedź **A – indukcyjność wzrośnie do 1000 µH**.\n\n**Dlaczego?**\n\
-    \nIndukcyjność cewki wyraża się wzorem  \n\n\\[\nL = \\mu_0 \\mu_r \\frac{N^2 A}{\\ell},\n\\]\n\n\
-    gdzie  \n\n- \\(\\mu_0\\) – przenikalność magnetyczna próżni,  \n- \\(\\mu_r\\) – względna przenikalność\
-    \ materiału wypełniającego rdzeń,  \n- \\(N\\) – liczba zwojów,  \n- \\(A\\) – pole przekroju poprzecznego,\
-    \  \n- \\(\\ell\\) – długość obwodu magnetycznego.\n\nCewka powietrzna ma \\(\\mu_r = 1\\), więc jej\
-    \ indukcyjność wynosi \\(L_0 = 100\\;\\mu\\text{H}\\). Po włożeniu rdzenia ferrytowego o \\(\\mu_r\
-    \ = 10\\) wszystkie pozostałe parametry pozostają niezmienione, a więc indukcyjność zwiększa się dziesięciokrotnie:\n\
-    \n\\[\nL = \\mu_r \\, L_0 = 10 \\times 100\\;\\mu\\text{H} = 1000\\;\\mu\\text{H}.\n\\]\n\nDlatego\
-    \ odpowiedź **A** jest prawidłowa. \U0001F680"
-  - "**Dlaczego indukcyjność się zmienia**\n\nIndukcyjność cewki wyraża się wzorem  \n\n\\[\nL=\\frac{N^{2}\\\
-    ,\\Phi}{I}=N^{2}\\,\\frac{\\mu\\,A}{l},\n\\]\n\ngdzie  \n\n* \\(N\\) – liczba zwojów,  \n* \\(A\\\
-    ) – pole przekroju rdzenia,  \n* \\(l\\) – długość drogi magnetycznej,  \n* \\(\\mu=\\mu_{0}\\mu_{r}\\\
-    ) – przenikalność magnetyczna ośrodka (powietrza lub rdzenia).\n\n---\n\n### 1. Cewka **z powietrzem**\n\
-    \nDla powietrza \\(\\mu_{r}=1\\), więc  \n\n\\[\nL_{\\text{powietrze}} = N^{2}\\frac{\\mu_{0}A}{l}=100\\\
-    \ \\mu\\text{H}.\n\\]\n\n---\n\n### 2. Cewka **z ferrytowym rdzeniem**\n\nFerryt ma względną przenikalność\
-    \ \\(\\mu_{r}=10\\). Wzór staje się\n\n\\[\nL_{\\text{ferryt}} = N^{2}\\frac{\\mu_{0}\\mu_{r}A}{l}\n\
-    \                  = \\mu_{r}\\,L_{\\text{powietrze}}\n                  = 10 \\times 100\\ \\mu\\\
-    text{H}\n                  = 1000\\ \\mu\\text{H}.\n\\]\n\n---\n\n## Gdzie popełniono błąd?\n\nUżytkownik\
-    \ wybrał odpowiedź **B** („nie zmieni się”).  \nTo oznaczałoby, że \\(\\mu_{r}=1\\), czyli że rdzeń\
-    \ nie wpływa na pole magnetyczne. W rzeczywistości ferryt zwiększa zdolność ośrodka do przenoszenia\
-    \ strumienia magnetycznego dziesięciokrotnie, a więc indukcyjność rośnie dokładnie dziesięciokrotnie.\n\
-    \n---\n\n### Krótkie podsumowanie\n\n- Indukcyjność jest proporcjonalna do względnej przenikalności\
-    \ \\(\\mu_{r}\\).  \n- Dodanie rdzenia ferrytowego (\\(\\mu_{r}=10\\)) powoduje:  \n\n\\[\nL_{\\text{nowe}}\
-    \ = \\mu_{r}\\,L_{\\text{stare}} = 10 \\times 100\\ \\mu\\text{H}=1000\\ \\mu\\text{H}.\n\\]\n\nDlatego\
-    \ poprawna odpowiedź to **A** – indukcyjność wzrośnie do 1000 µH."
-  - "### Dlaczego odpowiedź **C** („zmaleje do 10 µH”) jest błędna?\n\n1. **Wzór na indukcyjność cewki**\
-    \  \n\n   Dla cewki o długości \\(l\\), liczbie zwojów \\(N\\) i przekroju poprzecznym \\(A\\) indukcyjność\
-    \ wynosi  \n\n   \\[\n   L = \\mu_0 \\,\\mu_r \\,\\frac{N^{2}A}{l},\n   \\]\n\n   gdzie  \n\n   *\
-    \ \\(\\mu_0 = 4\\pi\\!\\times\\!10^{-7}\\,\\text{H·m}^{-1}\\) – przenikalność próżni,  \n   * \\(\\\
-    mu_r\\) – **względna** przenikalność materiału wypełniającego przestrzeń magnetyczną (dla powietrza\
-    \ \\(\\mu_r\\approx1\\)).\n\n2. **Co się zmienia po włożeniu rdzenia ferrytowego?**  \n\n   - W powietrzu:\
-    \ \\(\\mu_r^{\\text{air}} \\approx 1\\).  \n   - W ferrym: \\(\\mu_r^{\\text{ferryt}} = 10\\) (dane\
-    \ w zadaniu).\n\n   Wszystkie pozostałe wielkości (\\(N, A, l\\)) pozostają praktycznie takie same,\
-    \ więc indukcyjność zmieni się **proporcjonalnie do \\(\\mu_r\\)**:\n\n   \\[\n   L_{\\text{ferryt}}\
-    \ = \\mu_r^{\\text{ferryt}} \\, L_{\\text{air}} = 10 \\times 100\\;\\mu\\text{H}= 1000\\;\\mu\\text{H}.\n\
-    \   \\]\n\n3. **Dlaczego nie maleje?**  \n\n   - Ferryt ma **większą** przenikalność magnetyczną niż\
-    \ powietrze, więc „przyciąga” linie pola magnetycznego i zwiększa ich gęstość w rdzeniu.  \n   - To\
-    \ zwiększa strumień magnetyczny przy tej samej prądzie, a więc podnosi indukcyjność.  \n   - Zmniejszyć\
-    \ indukcyjność można jedynie przez wstawienie materiału o **mniejszej** \\(\\mu_r\\) niż powietrze\
-    \ (np. materiały diamagnetyczne), co w praktyce nie występuje w typowych rdzeniach.\n\n4. **Podsumowanie**\
-    \  \n\n   - Powietrze: \\(\\mu_r \\approx 1\\) → \\(L = 100\\;\\mu\\text{H}\\).  \n   - Ferryt (\\\
-    (\\mu_r = 10\\)): indukcyjność rośnie dziesięciokrotnie → \\(L = 1000\\;\\mu\\text{H}\\).  \n\n  \
-    \ Dlatego poprawna odpowiedź to **A** („wzrośnie do 1000 µH”), a odpowiedź **C** jest niezgodna z\
-    \ fizyką magnetyzmu."
-  - "**Dlaczego indukcyjność rośnie dziesięciokrotnie**\n\nIndukcyjność cewki wyraża się wzorem  \n\n\\\
-    [\nL = \\mu_0 \\,\\mu_r \\,\\frac{N^{2}A}{l},\n\\]\n\ngdzie  \n\n- \\(\\mu_0\\) – przenikalność magnetyczna\
-    \ próżni,  \n- \\(\\mu_r\\) – względna przenikalność materiału rdzenia,  \n- \\(N\\) – liczba zwojów,\
-    \  \n- \\(A\\) – pole przekroju poprzecznego rdzenia,  \n- \\(l\\) – długość toru magnetycznego.\n\
-    \nDla **powietrza** \\(\\mu_r = 1\\).  \nPo wstawieniu **rdzenia ferrytowego** o \\(\\mu_r = 10\\\
-    ) wszystkie pozostałe parametry pozostają niezmienione, więc indukcyjność zwiększa się dokładnie o\
-    \ czynnik \\(\\mu_r\\):\n\n\\[\nL_{\\text{nowe}} = \\mu_r \\, L_{\\text{powietrze}} = 10 \\times 100\\\
-    ;\\mu\\text{H} = 1000\\;\\mu\\text{H}.\n\\]\n\n**Wniosek** – prawidłowa odpowiedź to **A. wzrośnie\
-    \ do 1000 µH**."
+  - "**Gratulacje!**  \n\nWzór na indukcyjność cewki jest\n\n\\[\nL = \\mu_0 \\mu_r \\frac{N^2 A}{l},\n\
+    \\]\n\ngdzie \\(\\mu_r\\) – względna przenikalność ośrodka.  \n\nDla cewki powietrznej \\(\\mu_r =\
+    \ 1\\) i \\(L_0 = 100\\ \\mu\\text{H}\\).  \nPo włożeniu rdzenia ferrytowego o \\(\\mu_r = 10\\) indukcyjność\
+    \ zwiększa się proporcjonalnie do \\(\\mu_r\\):\n\n\\[\nL = \\mu_r \\, L_0 = 10 \\times 100\\ \\mu\\\
+    text{H}= 1000\\ \\mu\\text{H}.\n\\]\n\nStąd prawidłowa odpowiedź to **A – indukcyjność wzrośnie do\
+    \ 1000 µH**."
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\nIndukcyjność cewki wyraża się wzorem  \n\n\\[\nL=\\\
+    frac{\\mu N^{2}A}{l},\n\\]\n\ngdzie  \n\n* \\(N\\) – liczba zwojów,  \n* \\(A\\) – pole przekroju\
+    \ rdzenia,  \n* \\(l\\) – długość obwodu pola magnetycznego,  \n* \\(\\mu=\\mu_0\\mu_r\\) – przenikalność\
+    \ magnetyczna ośrodka ( \\(\\mu_0\\) – przenikalność próżni, \\(\\mu_r\\) – względna przenikalność).\n\
+    \nPrzy **braku rdzenia** (powietrze) \\(\\mu_r \\approx 1\\), więc\n\n\\[\nL_{\\text{powietrze}} =\
+    \ \\mu_0 \\frac{N^{2}A}{l}=100\\;\\mu\\text{H}.\n\\]\n\nPo włożeniu **rdzenia ferrytowego** o \\(\\\
+    mu_r = 10\\) wszystkie pozostałe parametry (\\(N, A, l\\)) pozostają niezmienione, a jedynie \\(\\\
+    mu\\) zostaje pomnożone przez \\(\\mu_r\\):\n\n\\[\nL_{\\text{ferryt}} = \\mu_0\\mu_r\\frac{N^{2}A}{l}\n\
+    \                = \\mu_r \\, L_{\\text{powietrze}}\n                = 10 \\times 100\\;\\mu\\text{H}\n\
+    \                = 1000\\;\\mu\\text{H}.\n\\]\n\nStąd indukcyjność **zwiększa się dziesięciokrotnie**,\
+    \ a prawidłowa odpowiedź to **A – wzrośnie do 1000 µH**.  \n\nOdpowiedź B („nie zmieni się”) byłaby\
+    \ prawdziwa jedynie wtedy, gdyby \\(\\mu_r = 1\\) (czyli rdzeń miał taką samą przenikalność jak powietrze),\
+    \ co w tym zadaniu nie ma miejsca."
+  - "**Dlaczego odpowiedź C jest błędna?**  \n\nIndukcyjność cewki wyraża się wzorem  \n\n\\[\nL=\\frac{\\\
+    mu_0 \\mu_r N^{2} A}{\\ell},\n\\]\n\ngdzie  \n\n* \\(\\mu_0\\) – przenikalność magnetyczna próżni,\
+    \  \n* \\(\\mu_r\\) – względna przenikalność materiału wypełniającego (w tym wypadku ferrytu),  \n\
+    * \\(N\\) – liczba zwojów,  \n* \\(A\\) – pole przekroju poprzecznego rdzenia,  \n* \\(\\ell\\) –\
+    \ długość toru magnetycznego.\n\nDla **cewki powietrznej** \\(\\mu_r = 1\\). Po włożeniu rdzenia ferrytowego\
+    \ o \\(\\mu_r = 10\\) wszystkie pozostałe parametry (\\(N, A, \\ell\\)) pozostają niezmienione, więc\
+    \ indukcyjność zmienia się jedynie przez czynnik \\(\\mu_r\\):\n\n\\[\nL_{\\text{z ferryt}} = \\mu_r\
+    \ \\, L_{\\text{powietrze}} = 10 \\times 100\\;\\mu\\text{H}=1000\\;\\mu\\text{H}.\n\\]\n\nZatem indukcyjność\
+    \ **zwiększa się dziesięciokrotnie**, a nie maleje.  \n\n---\n\n### Co mogło wprowadzić w błąd?\n\n\
+    | Błąd myślowy | Dlaczego jest nieprawidłowy |\n|--------------|----------------------------|\n| „Ferryt\
+    \ jest „cięższy” i dlatego zmniejsza pole magnetyczne” | Ferryt ma **większą przenikalność** niż powietrze,\
+    \ więc ułatwia tworzenie się linii pola w rdzeniu, a nie je osłabia. |\n| „Dodanie materiału zawsze\
+    \ zwiększa opór magnetyczny” | Opór magnetyczny (reluktancja) zależy od \\(\\frac{\\ell}{\\mu A}\\\
+    ). Zwiększenie \\(\\mu\\) **zmniejsza** reluktancję, co podnosi strumień magnetyczny i indukcyjność.\
+    \ |\n\n---\n\n### Krótkie podsumowanie\n\n- Indukcyjność jest proporcjonalna do względnej przenikalności\
+    \ \\(\\mu_r\\).  \n- Ferryt o \\(\\mu_r = 10\\) sprawia, że \\(L\\) jest **10‑krotnie większe** niż\
+    \ w powietrzu.  \n- Dlatego prawidłowa odpowiedź to **A – wzrośnie do 1000 µH**.  \n\nPamiętaj: im\
+    \ większa \\(\\mu_r\\) materiału wypełniającego cewkę, tym większa jej indukcyjność."
+  - "**Dlaczego indukcyjność wzrośnie do 1000 µH**\n\nIndukcyjność cewki wyraża się wzorem  \n\n\\[\n\
+    L = \\mu \\, \\frac{N^{2}A}{\\ell},\n\\]\n\ngdzie  \n\n- \\(N\\) – liczba zwojów,  \n- \\(A\\) – przekrój\
+    \ poprzeczny rdzenia,  \n- \\(\\ell\\) – długość drogi magnetycznej,  \n- \\(\\mu = \\mu_{0}\\mu_{r}\\\
+    ) – przenikalność magnetyczna ośrodka (w próżni \\(\\mu_{0}\\), w materiale \\(\\mu_{r}\\) – względna\
+    \ przenikalność).\n\nJeśli zamieniamy powietrzną przestrzeń w cewce (gdzie \\(\\mu_{r}=1\\)) na rdzeń\
+    \ ferrytowy o \\(\\mu_{r}=10\\), wszystkie wymiary i liczba zwojów pozostają niezmienione. Wzór pokazuje,\
+    \ że indukcyjność jest wprost proporcjonalna do \\(\\mu\\):\n\n\\[\nL_{\\text{z ferryt}} = \\mu_{r}\\\
+    ,L_{\\text{powietrze}} = 10 \\times 100\\;\\mu\\text{H}=1000\\;\\mu\\text{H}.\n\\]\n\nDlatego prawidłowa\
+    \ odpowiedź to **A. wzrośnie do 1000 µH**."
 - text: 125\. Jak zwalczyć zakłócenia rozprowadzane siecią energetyczną?
   answers:
   - przez stosowanie grubych przewodów
@@ -1118,60 +1103,50 @@ questions:
   - 25%
   - 50%
   - 75%
-  correct_index: 1
+  correct_index: 0
   explanations:
-  - "**Dlaczego odpowiedź A (25 %) jest prawidłowa i w czym polegała pomyłka?**  \n\n1. **Dane z zadania**\
-    \  \n   - Kabel 100 m → tłumienie = 12 dB (przy 144 MHz).  \n   - Długość używana w układzie = 50 m\
-    \ (czyli połowa).  \n\n2. **Tłumienie dla 50 m**  \n   Tłumienie w dB skaluje się w przybliżeniu liniowo\
-    \ z długością kabla, więc  \n\n\\[\n\\text{TL}_{50\\text{ m}} = \\frac{50\\text{ m}}{100\\text{ m}}\
-    \ \\times 12\\text{ dB}=6\\text{ dB}.\n\\]\n\n3. **Przeliczenie 6 dB na stosunek mocy**  \n\n\\[\n\
-    \\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{\\frac{-6}{10}}=10^{-0.6}\\approx 0.251.\n\\]\n\n   Czyli\
-    \ do anteny dociera **≈ 25 %** mocy nadawczej.\n\n4. **Gdzie najczęściej popełnia się błąd?**  \n\n\
-    \   - **Mylenie 3 dB i 6 dB** – 3 dB odpowiada właśnie połowie mocy (0,5), natomiast 6 dB to już **jedna\
-    \ czwarta** mocy (0,25).  \n   - **Zastosowanie wzoru dla napięcia** – jeśli używa się wzoru \\(20\\\
-    log_{10}(V_{\\text{out}}/V_{\\text{in}})\\), trzeba pamiętać, że moc jest proporcjonalna do kwadratu\
-    \ napięcia, więc po obliczeniu stosunku napięć należy go **kwadratować**.\n\n5. **Wniosek**  \n\n\
-    \   Poprawna wartość to **25 %**, czyli odpowiedź **A**. Odpowiedź podana w kluczu (B = 50 %) wynika\
-    \ z pomyłki polegającej na przyjęciu, że 6 dB to 50 % mocy, co jest nieprawidłowe – 6 dB to 25 % mocy.\
-    \  \n\n---  \n\n**Krótka reguła:**  \n\n- **3 dB** → ½ (50 %).  \n- **6 dB** → ¼ (25 %).  \n- **10 dB**\
-    \ → 0,1 (10 %).  \n\nUżywaj wzoru \\(P_{\\text{out}}/P_{\\text{in}} = 10^{\\frac{-\\text{TL(dB)}}{10}}\\\
-    )."
-  - "**Gratulacje!** Wybrałeś odpowiedź **B – 50 %** i jest ona prawidłowa.\n\nKabel o długości 100 m\
-    \ przy częstotliwości 144 MHz traci 12 dB.  \nOznacza to, że przy przejściu całej długości moc jest\
-    \ zmniejszana o czynnik\n\n\\[\nL_{100\\text{ m}} = 10^{\\frac{-12}{10}} \\approx 0.25 .\n\\]\n\n\
-    Jednakże tłumienie jest rozłożone równomiernie wzdłuż kabla, więc przy połowie długości (50 m) tracimy\
-    \ **połowę** tego czynnika, czyli\n\n\\[\nL_{50\\text{ m}} = \\sqrt{L_{100\\text{ m}}}= \\sqrt{0.25}=0.5\
-    \ .\n\\]\n\nStąd moc, która dociera do anteny, stanowi\n\n\\[\nP_{\\text{antena}} = 0.5 \\, P_{\\\
-    text{nadajnik}} = 0.5 \\times 100\\ \\text{W}=50\\ \\text{W},\n\\]\n\nczyli **50 %** początkowej mocy.\
-    \  \n\nJeszcze raz gratuluję trafnego wyboru!"
-  - "**Dlaczego odpowiedź „C – 75 %” jest niepoprawna**\n\n1. **Utrata w dB nie jest procentem**  \n \
-    \  \\[\n   L_{\\text{dB}} = 10\\log_{10}\\!\\left(\\frac{P_{\\text{out}}}{P_{\\text{in}}}\\right)\n\
-    \   \\qquad\\Longrightarrow\\qquad\n   \\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-L_{\\text{dB}}/10}\n\
-    \   \\]\n\n2. **Obliczamy stratę na 50 m**  \n   - Dane: 12 dB na 100 m → współczynnik strat  \n \
-    \    \\[\n     \\alpha = \\frac{12\\ \\text{dB}}{100\\ \\text{m}} = 0.12\\ \\text{dB/m}\n     \\]\n\
-    \   - Dla 50 m:  \n     \\[\n     L_{50} = 0.12\\ \\frac{\\text{dB}}{\\text{m}}\\times 50\\ \\text{m}=6\\\
-    \ \\text{dB}\n     \\]\n\n3. **Konwersja 6 dB na stosunek mocy**  \n   \\[\n   \\frac{P_{\\text{out}}}{P_{\\\
-    text{in}}}=10^{-6/10}=10^{-0.6}\\approx 0.251\n   \\]\n   Czyli z 100 W dociera do anteny około  \n\
-    \   \\[\n   P_{\\text{out}}\\approx 100\\ \\text{W}\\times0.251\\approx 25\\ \\text{W}\n   \\]\n \
-    \  czyli **25 %** mocy, a nie 75 %.\n\n4. **Gdzie wzięło się „50 %” (odpowiedź B)**  \n   - Jeśli\
-    \ przyjmiemy, że podana utrata 12 dB odnosi się do **całej drogi** (tam‑i‑z powrotem), to jedynie\
-    \ połowa tej straty działa w jedną stronę.  \n   - Wtedy na 50 m mamy 3 dB (połowa z 6 dB).  \n  \
-    \ - 3 dB → \\(10^{-3/10}=0.5\\) → **50 %** mocy.  \n\n   W takim rozumowaniu podany wynik B jest prawidłowy,\
-    \ ale wymaga dodatkowego założenia o „dwukierunkowej” utracie, które nie zostało w treści jasno określone.\n\
-    \n5. **Podsumowanie błędu**  \n   - **Błąd konwersji**: 6 dB nie oznacza 50 % (to 3 dB).  \n   - **Ewentualne\
-    \ niejasne założenie** w zadaniu: czy 12 dB to strata w jedną stronę, czy w dwie.  \n\n   Jeśli przyjmiemy\
-    \ standardowe podejście (12 dB na 100 m w jedną stronę), prawidłowa odpowiedź to **25 %**, a wskazana\
-    \ w kluczu „50 %” wymaga dodatkowego założenia o podwójnej (tam‑i‑z powrotem) utracie."
-  - "**Obliczenia**\n\n1. Utrata podana w dB odnosi się do stosunku mocy  \n\n\\[\nL_{\\text{dB}} = 10\\\
-    log_{10}\\!\\left(\\frac{P_{\\text{in}}}{P_{\\text{out}}}\\right)\n\\]\n\n2. Kabel 100 m → \\(L =\
-    \ 12\\;\\text{dB}\\).  \n   Dla połowy długości (50 m) przyjmujemy liniowy spadek:\n\n\\[\nL_{50\\\
-    text{ m}} = \\frac{12\\;\\text{dB}}{2}=6\\;\\text{dB}\n\\]\n\n3. Przeliczamy 6 dB na współczynnik\
-    \ liniowy:\n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-L/10}=10^{-6/10}=10^{-0.6}\\approx\
-    \ 0.251\n\\]\n\n4. Oznacza to, że do anteny dociera **≈ 25 %** mocy nadawczej (z 100 W → ≈ 25 W).\n\
-    \n---\n\n### Dlaczego odpowiedź **B (50 %)** jest niepoprawna?\n\n* 3 dB odpowiada właśnie połowie\
-    \ mocy (10^{-3/10}=0.5).  \n* W zadaniu strata wynosi 6 dB, a nie 3 dB, więc moc nie jest zmniejszona\
-    \ o połowę, lecz o **czwartą** (≈ 25 %).  \n\nZatem prawidłowa odpowiedź to **A – 25 %**. Jeśli klucz\
-    \ podaje B, jest to najprawdopodobniej błąd w materiałach egzaminacyjnych."
+  - "Gratulacje! \U0001F389  \n\n**Dlaczego odpowiedź A (25 %) jest prawidłowa?**\n\n- Kabel o długości\
+    \ 100 m powoduje tłumienie **12 dB**.  \n  \\[\n  \\text{tłumienie na 1 m} = \\frac{12\\ \\text{dB}}{100\\\
+    \ \\text{m}} = 0.12\\ \\text{dB/m}\n  \\]\n\n- Dla odcinka **50 m** między nadajnikiem a anteną:\n\
+    \  \\[\n  \\text{tłumienie} = 0.12\\ \\text{dB/m} \\times 50\\ \\text{m} = 6\\ \\text{dB}\n  \\]\n\
+    \n- Przeliczamy tłumienie na stosunek mocy:\n  \\[\n  \\frac{P_{\\text{antena}}}{P_{\\text{nadajnik}}}=10^{-\\\
+    frac{6}{10}} = 10^{-0.6} \\approx 0.251\n  \\]\n\n  czyli **≈ 25 %** mocy nadawczej dociera do anteny.\n\
+    \nStąd wybór **A – 25 %** jest poprawny. Powodzenia dalej w przygotowaniach!"
+  - "**Dlaczego odpowiedź B (50 %) jest błędna?**\n\n1. **Tłumienie podane w dB jest logarytmiczne** \
+    \ \n   \\[\n   L_{\\text{dB}} = 10\\log_{10}\\!\\left(\\frac{P_{\\text{wej}}}{P_{\\text{wyj}}}\\right)\n\
+    \   \\]\n\n2. **Dane z treści**  \n   * 100 m kabla → 12 dB tłumienia.  \n   * Potrzebny odcinek =\
+    \ 50 m (czyli połowa długości).\n\n3. **Obliczamy tłumienie dla 50 m**  \n   \\[\n   L_{50\\text{ m}}\
+    \ = \\frac{50\\ \\text{m}}{100\\ \\text{m}} \\times 12\\ \\text{dB}=6\\ \\text{dB}\n   \\]\n\n4. **Przeliczamy\
+    \ 6 dB na współczynnik mocy**  \n   \\[\n   \\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{-L/10}=10^{-6/10}=10^{-0.6}\\\
+    approx 0.251\n   \\]\n\n   Czyli do anteny dociera **≈ 25 %** mocy nadawczej (100 W → ~25 W).\n\n\
+    5. **Gdzie popełniono błąd?**  \n   - Wybrano odpowiedź „50 %”, zakładając, że „połowa długości =\
+    \ połowa mocy”.  \n   - To pomyłka, bo w skali dB **nie** obowiązuje zależność liniowa; 6 dB nie oznacza\
+    \ 50 % strat, lecz 75 % strat (pozostałe 25 % mocy).\n\n**Podsumowanie**  \nTłumienie 12 dB na 100 m\
+    \ → 6 dB na 50 m → 6 dB ≈ 25 % mocy dociera do anteny. Dlatego poprawna odpowiedź to A (25 %)."
+  - "**Dlaczego prawidłowa odpowiedź to 25 % (A), a nie 75 % (C)**  \n\n1. **Tłumienie podane w dB** \
+    \ \n   - Kabel 100 m → tłumienie 12 dB.  \n   - 12 dB oznacza, że moc jest zmniejszona o czynnik \
+    \ \n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{12}{10}}=10^{-1.2}\\approx 0{,}0631\
+    \ .\n\\]\n\n   (czyli po 100 m zostaje ~6 % mocy).\n\n2. **Tłumienie dla 50 m**  \n   - Tłumienie\
+    \ jest w przybliżeniu liniowe względem długości (dla krótkich odcinków), więc połowa długości → połowa\
+    \ tłumienia:  \n\n\\[\n\\alpha = \\frac{12\\ \\text{dB}}{100\\ \\text{m}} = 0{,}12\\ \\text{dB/m},\n\
+    \\]\n\\[\n\\text{dla 50 m: } \\; L = 0{,}12 \\times 50 = 6\\ \\text{dB}.\n\\]\n\n3. **Przeliczenie\
+    \ 6 dB na stosunek mocy**  \n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{6}{10}} =\
+    \ 10^{-0.6}\\approx 0{,}251.\n\\]\n\n   Czyli do anteny dociera **≈ 25 %** mocy nadawczej (100 W →\
+    \ ≈ 25 W).\n\n4. **Gdzie najczęściej popełnia się błąd?**  \n   - Niektórzy mylą **wartość w dB**\
+    \ z **procentowym spadkiem**.  \n   - 6 dB nie oznacza „spadku o 6 %”, lecz „spadek o czynnik 4” (bo\
+    \ 6 dB = 20·log₁₀(4)).  \n   - Dlatego 6 dB → 1/4 mocy → 25 %, a nie 75 %.\n\n---\n\n**Podsumowanie**\
+    \  \n\n- Tłumienie 12 dB/100 m → 6 dB na 50 m.  \n- 6 dB = 10^{-0.6} ≈ 0.25 → **25 %** mocy dociera\
+    \ do anteny.  \n\nStąd odpowiedź **A** jest jedyną poprawną."
+  - "**Obliczenia**\n\nAttenuacja podana w dB odnosi się do stosunku mocy:\n\n\\[\nL_{\\text{dB}} = 10\\\
+    log_{10}\\!\\left(\\frac{P_{\\text{wej}}}{P_{\\text{wyj}}}\\right)\n\\]\n\nDla całego kabla 100 m\
+    \ przy 144 MHz podano \\(L = 12\\;\\text{dB}\\).  \nZakładamy, że tłumienie jest liniowo proporcjonalne\
+    \ do długości, więc dla połowy długości (50 m) otrzymujemy\n\n\\[\nL_{50\\text{ m}} = \\frac{12\\\
+    ;\\text{dB}}{2}=6\\;\\text{dB}.\n\\]\n\nTeraz wyznaczamy stosunek mocy:\n\n\\[\n\\frac{P_{\\text{wej}}}{P_{\\\
+    text{wyj}}}=10^{L/10}=10^{6/10}=10^{0.6}\\approx 3.98.\n\\]\n\nStąd moc na wyjściu (przy antenie)\
+    \ jest\n\n\\[\nP_{\\text{wyj}} = \\frac{P_{\\text{wej}}}{10^{0.6}}\n               \\approx \\frac{100\\\
+    ;\\text{W}}{3.98}\n               \\approx 25\\;\\text{W}.\n\\]\n\n\\[\n\\frac{P_{\\text{wyj}}}{P_{\\\
+    text{wej}}}\\approx 0.25 = 25\\%.\n\\]\n\n**Wynik** – do anteny zostanie doprowadzone **ok. 25 %**\
+    \ mocy nadawczej, czyli odpowiedź **A**."
 - text: 239\. Zasilacz dostarcza do stopnia końcowego nadajnika napięcie 500 V i prąd 200 mA. Jaka jest
     sprawność energetyczna stopnia końcowego, jeżeli na wyjściu zmierzyliśmy moc PEP = 40 W?
   answers:
@@ -1409,93 +1384,72 @@ questions:
   - przełączyć się na dipol
   - pozostać przy antenie kierunkowej
   - to bez znaczenia dla nadawania
-  correct_index: 2
+  correct_index: 0
   explanations:
-  - "**Dlaczego odpowiedź A („przełączyć się na dipol”) jest niepoprawna?**  \n\n1. **Co opisuje współczynnik\
-    \ F/B?**  \n   \\[\n   \\text{F/B (dB)} = G_{\\text{front}}-G_{\\text{back}}\n   \\]\n   czyli różnicę\
-    \ w zyskach między przodem a tyłem anteny kierunkowej.  \n   Nie mówi on nic o tym, jak duży jest\
-    \ **absolutny** zysk tylnego listka.\n\n2. **Zysk anteny kierunkowej**  \n   \\[\n   G_{\\text{front}}\
-    \ = 10{,}5\\;\\text{dBd}\n   \\]\n   (względem dipola).  \n   Zatem w jednostkach liniowych  \n  \
-    \ \\[\n   G_{\\text{front}} = 10^{10{,}5/10}\\approx 11{,}2 .\n   \\]\n\n3. **Zysk tylnego listka**\
-    \  \n   \\[\n   G_{\\text{back}} = G_{\\text{front}}-19\\;\\text{dB}\n                = 10{,}5-19\
-    \ = -8{,}5\\;\\text{dBd}.\n   \\]\n   Wartość liniowa:  \n   \\[\n   G_{\\text{back}} = 10^{-8{,}5/10}\\\
-    approx 0{,}14 .\n   \\]\n\n4. **Zysk dipola półfalowego**  \n   \\[\n   G_{\\text{dipol}} = 0\\;\\\
-    text{dBd}\\;(=1\\text{ w jednostkach liniowych}).\n   \\]\n\n   Czyli **dipol ma większy zysk** niż\
-    \ tylny listek (‑8,5 dBd vs 0 dBd).\n\n5. **Co jednak ma znaczenie przy nadawaniu?**  \n   W praktyce\
-    \ ogranicza nas **efektywna moc promieniowana (ERP)**, a nie moc wyjściowa nadajnika.  \n   ERP wyraża\
-    \ się jako  \n\n   \\[\n   \\text{ERP}=P_{\\text{TX}}\\times G,\n   \\]\n\n   gdzie \\(P_{\\text{TX}}\\\
-    ) to moc nadajnika, a \\(G\\) – zysk anteny (w jednostkach liniowych).\n\n   - Jeśli użyjemy tylnego\
-    \ listka, jego zysk jest mniejszy, więc aby uzyskać tę samą ERP trzeba podnieść moc nadajnika o około\
-    \ **8,5 dB**.\n   - Jeśli przełączymy się na dipol, zysk jest wyższy, więc przy tej samej mocy nadajnika\
-    \ ERP będzie **większe** (o 8,5 dB).  \n\n   **Jednak w obu przypadkach możemy dowolnie skorygować\
-    \ moc nadajnika, aby otrzymać pożądaną ERP** (np. wymaganą przez przepisy lub pożądaną pokrycie).\
-    \  \n\n   Dlatego z punktu widzenia „co lepiej nadaje”, nie ma różnicy – jedyne, co się zmienia, to\
-    \ konieczność regulacji mocy nadajnika.\n\n6. **Podsumowanie**  \n   - Tylni listek ma **niższy**\
-    \ zysk niż dipol, więc przy tej samej mocy nadajnika uzyskałbyś słabszy sygnał.  \n   - Można to jednak\
-    \ skompensować zwiększeniem mocy nadajnika, o ile pozwalają na to ograniczenia techniczne i prawne.\
-    \  \n   - Zatem **nie ma technicznej przewagi** przełączania się na dipol; wybór anteny nie wpływa\
-    \ na ostateczną ERP, pod warunkiem odpowiedniego ustawienia mocy.\n\n**Dlatego prawidłowa odpowiedź\
-    \ to C – „to bez znaczenia dla nadawania”**, a odpowiedź A jest błędna, ponieważ pomija możliwość\
-    \ korekcji mocy i mylnie zakłada, że niższy zysk tylnego listka nie może zostać zrekompensowany."
-  - "**Dlaczego odpowiedź B („pozostać przy antenie kierunkowej”) jest niepoprawna**  \n\n1. **Co oznacza\
-    \ współczynnik F/B?**  \n   \\[\n   F/B = G_{\\text{front}}-G_{\\text{back}}\\;[\\mathrm{dB}]\n  \
-    \ \\]\n   czyli różnicę w dBi (lub dBd) pomiędzy maksymalnym zyskiem w kierunku „przodu” a maksymalnym\
-    \ zyskiem w kierunku „tyłu”.\n\n2. **Zysk anteny kierunkowej**  \n   Podany jest **10,5 dBd**.  \n\
-    \   Przeliczając na dBi (bo F/B podajemy w dBi):\n   \\[\n   G_{\\text{front}} = 10{,}5\\;\\text{dBd}+2{,}15\\\
-    ;\\text{dB}=12{,}65\\;\\text{dBi}\n   \\]\n\n3. **Zysk listka tylnego**  \n   \\[\n   G_{\\text{back}}\
-    \ = G_{\\text{front}}-F/B = 12{,}65\\;\\text{dBi}-19\\;\\text{dB}= -6{,}35\\;\\text{dBi}\n   \\]\n\
-    \n4. **Zysk dipola półfalowego**  \n   Standardowy dipol ma **2,15 dBi** (czyli 0 dBd).\n\n5. **Porównanie**\
-    \  \n\n   \\[\n   G_{\\text{dipol}} - G_{\\text{back}} = 2{,}15\\;\\text{dBi} - (-6{,}35\\;\\text{dBi})\
-    \ \\approx 8{,}5\\;\\text{dB}\n   \\]\n\n   Dipol daje **ok. 8 dB więcej** pola promieniowanego niż\
-    \ tylna lista anteny kierunkowej.  \n   Dlatego w sytuacji, gdy nie możesz obrócić rotora, **lepszym\
-    \ wyborem jest przełączenie na dipol**.\n\n---\n\n### Dlaczego w kluczu odpowiedzi podano C („to bez\
-    \ znaczenia dla nadawania”)?\n\n*W praktyce egzaminacyjnej przyjęto, że przy awarii rotora najważniejsze\
-    \ jest utrzymanie **tej samej polaryzacji** i **użycie dostępnego sprzętu**.  \nRóżnica 8 dB jest\
-    \ istotna przy bardzo słabym sygnale, ale w typowych warunkach amatorskich (np. QSO w pasmach 2 m‑70 cm)\
-    \ oba rozwiązania – tylna lista i dipol – zapewniają już **wartość EIRP poniżej progów progowych dla\
-    \ łączności**. Stąd egzamin uznał, że wpływ na możliwość nadawania jest praktycznie **nieistotny**,\
-    \ czyli odpowiedź C.*\n\nW skrócie:\n\n| Opcja | Zysk (dBi) | Różnica względem dipola |\n|------|------------|--------------------------|\n\
-    | Tylna lista | –6,35 | –8,5 dB |\n| Dipol | +2,15 | 0 dB |\n\nZ technicznego punktu widzenia dipol\
-    \ jest lepszy, ale w kontekście egzaminu uznano, że różnica nie zmienia zdolności nadawania, więc\
-    \ odpowiedź **C** jest uznana za prawidłową, a **B** – błędną."
-  - "**Gratulacje!** \U0001F389  \n\nZaznaczyłeś odpowiedź **C – „to bez znaczenia dla nadawania”**, co\
-    \ jest prawidłowe.  \n\n### Dlaczego tak jest?\n\n1. **Współczynnik tył/przód (F/B)**  \n   \\[\n\
-    \   \\text{F/B}=19\\ \\text{dB}\n   \\]\n   Oznacza to, że moc promieniowana z tyłu anteny jest o 19 dB\
-    \ słabsza niż z przodu.\n\n2. **Zysk anteny kierunkowej**  \n   \\[\n   G_{\\text{anteny}} = 10{,}5\\\
-    \ \\text{dBd}\n   \\]\n   Dlatego zysk w kierunku tylnym wynosi:\n   \\[\n   G_{\\text{tył}} = 10{,}5\\\
-    \ \\text{dBd} - 19\\ \\text{dB} = -8{,}5\\ \\text{dBd}\n   \\]\n\n3. **Zysk dipola półfalowego** \
-    \ \n   \\[\n   G_{\\text{dipol}} = 0\\ \\text{dBd}\n   \\]\n\n4. **Różnica w zysku**  \n   \\[\n \
-    \  \\Delta G = 0\\ \\text{dBd} - (-8{,}5\\ \\text{dBd}) = 8{,}5\\ \\text{dB}\n   \\]\n\n   Teoretycznie\
-    \ dipol ma wyższy zysk o ≈ 8,5 dB. Jednak w praktyce:\n\n   * **Instalacja** – przy awarii rotora\
-    \ nie zmieniamy układu zasilania, łączenia i dopasowania impedancji, które zostały zoptymalizowane\
-    \ pod kątem anteny kierunkowej.  \n   * **Polaryzacja i pasmo** – dipol musiałby być zamontowany w\
-    \ tej samej polaryzacji i na tym samym paśmie, co wymagałoby dodatkowych prac i wprowadza straty dopasowawcze.\
-    \  \n   * **Efektywna moc wyjściowa (ERP)** – straty przy zmianie anteny kompensują teoretyczną przewagę\
-    \ dipola, więc łączny ERP jest praktycznie taki sam.\n\n5. **Wniosek**  \n   W sytuacji awarii rotora\
-    \ nie uzyskuje się znaczącej korzyści ani z użyciem tylnego listka anteny kierunkowej, ani z przełączenia\
-    \ na dipol. Dlatego z punktu widzenia nadawania **nie ma różnicy** – najważniejsze jest utrzymanie\
-    \ łączności, a nie marginalna zmiana zysku.\n\n---\n\n**Podsumowanie:** Twoja odpowiedź C jest prawidłowa,\
-    \ ponieważ w realnych warunkach eksploatacyjnych różnica w zysku pomiędzy tylnym listkiem anteny kierunkowej\
-    \ a dipolem półfalowym nie wpływa istotnie na jakość nadawania. \U0001F680"
-  - "**Dlaczego w praktyce nie ma znaczenia, z której anteny nadawać przy awarii rotora**\n\n1. **Zysk\
-    \ anteny kierunkowej**  \n   \\[\n   G_{\\text{dir}} = 10.5\\;\\text{dBd}=10.5+2.15=12.65\\;\\text{dBi}\n\
-    \   \\]\n\n2. **Stosunek front/back (F/B)** – 19 dB oznacza, że lobe tylne jest o 19 dB słabsze od\
-    \ przodu.  \n\n   \\[\n   G_{\\text{back}} = G_{\\text{dir}}-19\\;\\text{dB}=12.65-19=-6.35\\;\\text{dBi}\n\
-    \   \\]\n\n3. **Zysk dipola półfalowego** (w tej samej polaryzacji)  \n\n   \\[\n   G_{\\text{dip}}\
-    \ = 0\\;\\text{dBd}=2.15\\;\\text{dBi}\n   \\]\n\n4. **Porównanie**  \n\n   \\[\n   \\Delta G = G_{\\\
-    text{dip}}-G_{\\text{back}} = 2.15-(-6.35)=8.5\\;\\text{dB}\n   \\]\n\n   Dipol ma więc **około 8 dB**\
-    \ większy zysk niż tylne „listko” anteny kierunkowej.\n\n5. **Dlaczego różnica nie ma praktycznego\
-    \ znaczenia**\n\n   * 8 dB to nie jest brak zysku – to jedynie kilkukrotny wzrost mocy potrzebnej\
-    \ do uzyskania tej samej efektywnej mocy wyjściowej (≈ 6‑7‑krotność).  \n   * W sytuacji awaryjnej\
-    \ najważniejsze jest po prostu uzyskanie **jakiejkolwiek** łączności.  \n   * Można podnieść moc wyjściową,\
-    \ użyć krótszej drogi propagacji, skorzystać z pasma o niższym tłumieniu lub po prostu czekać na lepsze\
-    \ warunki propagacyjne – czynniki te częściej decydują o sukcesie niż 8 dB różnicy w zysku anteny.\
-    \  \n   * Dodatkowo, przy awarii rotora nie ma możliwości skierowania przodu anteny w stronę stacji\
-    \ rozmówcy; użycie tylnego listka nie zmienia kierunku promieniowania (on‑axis = tył), więc praktycznie\
-    \ uzyskuje się **taką samą** efektywną moc w stronę odbiorcy, co przy przełączeniu na dipol.\n\n**Wniosek**\n\
-    \nChoć dipol jest nieco lepszy pod względem zysku, w warunkach awaryjnych różnica 8 dB nie wpływa\
-    \ istotnie na zdolność nawiązania łączności. Dlatego odpowiedź brzmi:\n\n> **C. to bez znaczenia dla\
-    \ nadawania**."
+  - "**Gratulacje!** \U0001F389  \nWybrałeś odpowiedź **A – przełączyć się na dipol**, co jest prawidłowe.\n\
+    \n### Dlaczego?\n\n- Współczynnik **tył/przód (F/B)** = 19 dB oznacza, że moc w „liście” tylnego promieniowania\
+    \ jest o 19 dB słabsza niż w kierunku głównym.\n- Zysk anteny kierunkowej = **10,5 dBd**.  \n\n  \\\
+    [\n  G_{\\text{tył}} = 10{,}5\\ \\text{dBd} - 19\\ \\text{dB} = -8{,}5\\ \\text{dBd}\n  \\]\n\n- Półfalowy\
+    \ dipol ma zysk **≈ 0,15 dBd** (2,15 dBi).  \n\n  \\[\n  G_{\\text{dipol}} \\approx 0{,}15\\ \\text{dBd}\
+    \ > -8{,}5\\ \\text{dBd}\n  \\]\n\n- Przy tej samej polaryzacji nie ma dodatkowych strat.\n\nZatem\
+    \ korzystanie z dipola daje **znacznie wyższy zysk** niż nadawanie „tyłem” uszkodzonej anteny kierunkowej,\
+    \ dlatego odpowiedź A jest prawidłowa."
+  - "**Dlaczego w tej sytuacji lepiej przełączyć się na dipol (odpowiedź A)?**\n\n---\n\n### 1. Co oznacza\
+    \ współczynnik F/B?\n\n\\[\n\\text{F/B (dB)} = 10\\log_{10}\\!\\left(\\frac{P_{\\text{front}}}{P_{\\\
+    text{back}}}\\right)\n\\]\n\nPrzy **F/B = 19 dB** stosunek mocy w kierunku „przodu” do mocy w kierunku\
+    \ „tyłu” wynosi  \n\n\\[\n\\frac{P_{\\text{front}}}{P_{\\text{back}}}=10^{19/10}\\approx 79.4 .\n\\\
+    ]\n\nOznacza to, że przy nadawaniu „tyłem” tracimy prawie **20 dB** w stosunku do optymalnego kierunku.\n\
+    \n---\n\n### 2. Zysk anteny kierunkowej\n\nZysk podany jest w **dBd** (względem dipola półfalowego).\
+    \  \n\n\\[\nG_{\\text{kierunkowa}} = 10.5\\ \\text{dBd} \\approx 12.5\\ \\text{dBi}\n\\]\n\nDla dipola\
+    \ półfalowego przyjmuje się \\(G_{\\text{dipol}} = 2.15\\ \\text{dBi}\\).\n\n---\n\n### 3. Skuteczny\
+    \ zysk przy „tylnym” liście\n\nZysk w kierunku tylnym jest mniejszy o wartość F/B:\n\n\\[\nG_{\\text{back}}\
+    \ = G_{\\text{kierunkowa}} - \\text{F/B}\n               = 12.5\\ \\text{dBi} - 19\\ \\text{dB}\n\
+    \               \\approx -6.5\\ \\text{dBi}.\n\\]\n\nJest to **znacznie gorsze** niż zysk dipola (+2.15 dBi).\
+    \  \n\nRóżnica:\n\n\\[\n\\Delta G = 2.15\\ \\text{dBi} - (-6.5\\ \\text{dBi}) \\approx 8.6\\ \\text{dB}.\n\
+    \\]\n\nCzyli dipol zapewnia **~9 dB** większą moc w pożądanym kierunku niż tylny liść anteny kierunkowej.\n\
+    \n---\n\n### 4. Wpływ na moc wyjściową (EIRP)\n\n\\[\n\\text{EIRP}_{\\text{back}} = P_{\\text{tx}}\
+    \ + G_{\\text{back}}\n\\qquad\n\\text{EIRP}_{\\text{dipol}} = P_{\\text{tx}} + G_{\\text{dipol}}\n\
+    \\]\n\nPonieważ \\(G_{\\text{dipol}} > G_{\\text{back}}\\), przy tej samej mocy nadajnika **EIRP**\
+    \ będzie wyższe przy dipolu. Dlatego sygnał dotrze dalej i będzie stabilniejszy.\n\n---\n\n### 5.\
+    \ Czy wybór ma znaczenie?  \n\nNie. Różnica 8‑9 dB to **kilkadziesiąt razy** większa moc w kierunku\
+    \ odbiorcy. W praktyce przy awarii rotora lepsze jest przełączenie na dipol, a nie nadawanie „tyłem”\
+    \ anteny.\n\n---\n\n## Podsumowanie\n\n* **F/B = 19 dB** → moc „tyłem” jest ~‑19 dB w stosunku do\
+    \ przodu.  \n* Zysk w tylnym kierunku = **zysk anteny – F/B** ≈ **‑6.5 dBi**.  \n* Zysk dipola = **+2.15 dBi**.\
+    \  \n* Dipol zapewnia **≈ 9 dB** wyższy EIRP niż tylna część anteny kierunkowej.  \n\nStąd **odpowiedź\
+    \ A** (przełączyć się na dipol) jest jedyną prawidłową.  \n\n**Błąd przy odpowiedzi B** polegał na\
+    \ pominięciu straty wynikającej z dużego współczynnika F/B – „tylny liść” anteny praktycznie nie nadaje\
+    \ efektywnie."
+  - "**Dlaczego odpowiedź C („to bez znaczenia dla nadawania”) jest błędna**\n\n1. **Współczynnik tył/przód\
+    \ (F/B) ma wpływ na efektywny zysk anteny**  \n   \\[\n   G_{\\text{back}} = G_{\\text{front}} - \\\
+    text{F/B}\n   \\]\n   Gdy antena ma zysk \\(G_{\\text{front}} = 10{,}5\\ \\text{dBd}=10{,}5+2{,}15=12{,}65\\\
+    \ \\text{dBi}\\)  \n   i F/B = 19 dB, to zysk w kierunku „tyłem” wynosi  \n\n   \\[\n   G_{\\text{back}}\
+    \ = 12{,}65\\ \\text{dBi} - 19\\ \\text{dB}= -6{,}35\\ \\text{dBi}\n   \\]\n\n   – czyli antena „widzi”\
+    \ w tym kierunku **głośniej niż isotropowa** (ujemny zysk).  \n   W praktyce oznacza to znaczny spadek\
+    \ mocy efektywnej (ERP) i prawie zerową użyteczność w tym kierunku.\n\n2. **Porównanie z dipolem półfalowym**\
+    \  \n   Dipol półfalowy ma stały zysk  \n\n   \\[\n   G_{\\text{dipol}} = 2{,}15\\ \\text{dBi}\n \
+    \  \\]\n\n   Jest to **ponad 8 dB** lepszy niż „tylny listek” anteny kierunkowej (‑6,35 dBi vs 2,15 dBi).\
+    \  \n   W konsekwencji moc promieniowana w pożądanym kierunku będzie znacznie wyższa przy użyciu dipola.\n\
+    \n3. **Polaryzacja**  \n   W zadaniu przyjęto tę samą polaryzację dla obu rozwiązań, więc nie ma dodatkowej\
+    \ straty polaryzacyjnej. Różnica wynika wyłącznie z zysków antenowych.\n\n4. **Praktyczne konsekwencje**\
+    \  \n   * **Moc wyjściowa (ERP)**: przy użyciu tylnego listka spadnie o ~ 8 dB względem dipola → zasięg\
+    \ maleje kilkukrotnie.  \n   * **Zgodność z regulacjami**: antena o ujemnym zysku nie spełnia wymagań\
+    \ emisji, a jej charakterystyka promieniowania jest nieprzewidywalna.  \n   * **Stabilność i charakterystyka\
+    \ promieniowania**: dipol ma symetryczną charakterystykę, natomiast tylna część anteny kierunkowej\
+    \ może mieć niekontrolowane boczne i pod‑kątowe promieniowanie.\n\n**Wniosek** – w sytuacji awarii\
+    \ rotora nie jest „bez znaczenia”, z jaką anteną nadajemy. Użycie tylnego listka anteny kierunkowej\
+    \ drastycznie obniża zysk i moc efektywną, więc lepszym wyborem jest przełączenie się na **dipol półfalowy**.\
+    \ Dlatego prawidłowa odpowiedź to **A. przełączyć się na dipol**."
+  - "**Dlaczego lepiej przełączyć się na dipol półfalowy?**\n\n1. **Zysk anteny kierunkowej**  \n   \\\
+    [\n   G_{\\text{antenna}} = 10{,}5\\ \\text{dBd}=10{,}5+2{,}15=12{,}65\\ \\text{dBi}\n   \\]\n\n2.\
+    \ **Współczynnik tył/przód (F/B)**  \n   \\[\n   \\text{F/B}=19\\ \\text{dB}\n   \\]\n   Oznacza to,\
+    \ że zysk „tyłem anteny” jest o 19 dB mniejszy niż zysk w kierunku frontu.\n\n3. **Zysk „tyłem” tej\
+    \ anteny**  \n   \\[\n   G_{\\text{back}} = G_{\\text{front}}-19\\ \\text{dB}=12{,}65-19 = -6{,}35\\\
+    \ \\text{dBi}\n   \\]\n\n4. **Zysk dipola półfalowego** (w tej samej polaryzacji)  \n   \\[\n   G_{\\\
+    text{dipol}} \\approx 2{,}15\\ \\text{dBi}\n   \\]\n\n5. **Porównanie**  \n\n   \\[\n   G_{\\text{dipol}}\
+    \ - G_{\\text{back}} \\approx 2{,}15 - (-6{,}35) \\approx 8{,}5\\ \\text{dB}\n   \\]\n\n   Dipol zapewnia\
+    \ więc **około 8 dB większy zysk** niż użycie tylnego listka anteny kierunkowej.\n\n**Wniosek**  \n\
+    W sytuacji awarii rotora, gdy jedyną opcją jest nadawanie „tyłem anteny”, znacznie lepszy jest dipol\
+    \ półfalowy.  \n\n**Odpowiedź:** **A. przełączyć się na dipol**."
 - text: 296\. Pomiar SWR przy nadajniku wskazał wartość 1:1,5, ale mamy podejrzenie, że dopasowanie anteny
     jest niewłaściwe. Co może być przyczyną?
   answers:

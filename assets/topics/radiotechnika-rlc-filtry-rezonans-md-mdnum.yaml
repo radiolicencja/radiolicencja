@@ -1253,62 +1253,71 @@ questions:
 - text: '81\. Do cewki powietrznej 100 µH wkładamy rdzeń ferrytowy o względnej przenikalności µ= 10. Ile
     wyniesie indukcyjność cewki?
 
-    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.jpg)'
+    ![RADIOTECHNIKA question 81](assets/question_images/radiotechnika-q081.png)'
   answers:
   - wzrośnie do 1000 µH
   - nie zmieni się
   - zmaleje do 10 µH
   correct_index: 0
   explanations:
-  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź **A. „wzrośnie do 1000 µH”** jest prawidłowa.\n\n\
-    Indukcyjność cewki wyraża się wzorem  \n\n\\[\nL = \\mu_0 \\mu_r \\frac{N^2 A}{l},\n\\]\n\ngdzie \\\
-    (\\mu_r\\) – względna przenikalność materiału wypełniającego rdzeń.  \nDla cewki powietrznej \\(\\\
-    mu_r = 1\\), a po włożeniu rdzenia ferrytowego \\(\\mu_r = 10\\).  \n\nZatem nowa indukcyjność:\n\n\
-    \\[\nL_{\\text{nowe}} = \\mu_r \\, L_{\\text{powietrze}} = 10 \\times 100\\;\\text{µH}=1000\\;\\text{µH}.\n\
-    \\]\n\nWzrost jest więc dziesięciokrotny, co dokładnie odpowiada wybranej odpowiedzi."
-  - "**Dlaczego odpowiedź B jest błędna?**  \n\nIndukcyjność cewki wyraża się wzorem  \n\n\\[\nL=\\frac{N^{2}\\\
-    ,\\mu_{0}\\,\\mu_{r}\\,A}{\\ell},\n\\]\n\ngdzie  \n\n* \\(N\\) – liczba zwojów,  \n* \\(\\mu_{0}=4\\\
-    pi\\!\\times\\!10^{-7}\\,\\text{H/m}\\) – przenikalność próżni,  \n* \\(\\mu_{r}\\) – względna przenikalność\
-    \ materiału wypełniającego rdzeń,  \n* \\(A\\) – pole przekroju poprzecznego rdzenia,  \n* \\(\\ell\\\
-    ) – długość toru magnetycznego (długość rdzenia).\n\nZauważmy, że **wszystkie czynniki oprócz \\(\\\
-    mu_{r}\\) pozostają niezmienione**, gdy do cewki z powietrznym rdzeniem wkładamy ferrytowy rdzeń.\
-    \ Wzór pokazuje więc, że:\n\n\\[\nL \\propto \\mu_{r}.\n\\]\n\n---\n\n### Co się dzieje w zadaniu?\n\
-    \n* Początkowa indukcyjność (powietrzny rdzeń) = \\(L_{0}=100\\;\\mu\\text{H}\\).  \n* Ferrytowy rdzeń\
-    \ ma względną przenikalność \\(\\mu_{r}=10\\).\n\nZatem nowa indukcyjność:\n\n\\[\nL = L_{0}\\,\\\
-    mu_{r}=100\\;\\mu\\text{H}\\times 10 = 1000\\;\\mu\\text{H}.\n\\]\n\n---\n\n### Najczęstsze nieporozumienie\n\
-    \n* **„Nie zmieni się”** jest prawdziwe jedynie wtedy, gdy wprowadzany materiał ma taką samą przenikalność\
-    \ jak powietrze (\\(\\mu_{r}=1\\)).  \n* Ferryt ma \\(\\mu_{r}=10\\), czyli przewodzi pole magnetyczne\
-    \ dziesięciokrotnie lepiej niż powietrze – indukcyjność musi wzrosnąć dziesięciokrotnie.\n\n---\n\n\
-    **Podsumowanie**  \nWstawienie ferrytowego rdzenia zwiększa względną przenikalność z 1 do 10, a więc\
-    \ indukcyjność rośnie wprost proporcjonalnie – z 100 µH do 1000 µH. Dlatego prawidłowa odpowiedź to\
-    \ **A**, a odpowiedź **B** jest niepoprawna."
-  - "**Dlaczego odpowiedź C jest błędna?**  \n\n1. **Wzór na indukcyjność cewki**  \n\n\\[\nL = \\mu \\\
-    , \\frac{N^{2}A}{l},\n\\]\n\ngdzie  \n\n- \\(\\mu = \\mu_{0}\\mu_{r}\\) – przenikalność ośrodka, \
-    \ \n- \\(\\mu_{0}=4\\pi\\times10^{-7}\\ \\text{H/m}\\) – przenikalność próżni,  \n- \\(\\mu_{r}\\\
-    ) – względna przenikalność (liczba wymiarowa),  \n- \\(N\\) – liczba zwojów,  \n- \\(A\\) – pole przekroju\
-    \ poprzecznego,  \n- \\(l\\) – długość toru magnetycznego.\n\n2. **Co się zmienia, gdy wkładamy rdzeń\
-    \ ferrytowy?**  \n\n- Dla **powietrza** \\(\\mu_{r}=1\\).  \n- Dla **ferrytu** podanego w zadaniu\
-    \ \\(\\mu_{r}=10\\).\n\nWszystkie pozostałe czynniki (\\(N, A, l\\)) pozostają niezmienione, więc\
-    \ indukcyjność zmienia się proporcjonalnie do \\(\\mu_{r}\\):\n\n\\[\n\\frac{L_{\\text{z ferryt}}}{L_{\\\
-    text{z powietrze}}}= \\frac{\\mu_{r,\\text{ferryt}}}{\\mu_{r,\\text{powietrze}}}= \\frac{10}{1}=10.\n\
-    \\]\n\n3. **Obliczenie**  \n\n\\[\nL_{\\text{z ferryt}} = 10 \\times L_{\\text{z powietrze}} = 10\
-    \ \\times 100\\ \\mu\\text{H}=1000\\ \\mu\\text{H}.\n\\]\n\n4. **Dlaczego nie „zmniejszy się do 10 µH”?**\
-    \  \n\n- Ferryt ma **większą** przenikalność niż powietrze, a nie mniejszą.  \n- Zwiększona \\(\\\
-    mu_{r}\\) oznacza łatwiejsze tworzenie się pola magnetycznego w materiale, co **zwiększa**, a nie\
-    \ zmniejsza indukcyjność.  \n- Odpowiedź C odwraca stosunek: sugerowałaby \\(\\mu_{r}=0.1\\), co nie\
-    \ wynika z treści zadania.\n\n**Podsumowanie** – wstawienie rdzenia ferrytowego o \\(\\mu_{r}=10\\\
-    ) zwiększa indukcyjność dziesięciokrotnie, z 100 µH do **1000 µH**. Dlatego prawidłowa odpowiedź to\
-    \ **A**, a odpowiedź **C** jest wynikiem niewłaściwego rozumienia wpływu przenikalności na indukcyjność."
-  - "**Dlaczego indukcyjność wzrośnie do 1000 µH?**\n\nIndukcyjność cewki wyraża się wzorem  \n\n\\[\n\
-    L=\\mu\\,\\frac{N^{2}A}{l},\n\\]\n\ngdzie  \n\n- \\(\\mu=\\mu_{0}\\mu_{r}\\) – przenikalność magnetyczna\
-    \ ośrodka (współczynnik względny \\(\\mu_{r}\\)),  \n- \\(N\\) – liczba zwojów,  \n- \\(A\\) – pole\
-    \ przekroju poprzecznego rdzenia,  \n- \\(l\\) – długość toru magnetycznego.\n\nDla **powietrza**\
-    \ \\(\\mu_{r}=1\\), więc początkowa indukcyjność wynosi  \n\n\\[\nL_{0}= \\mu_{0}\\frac{N^{2}A}{l}=100\\\
-    ;\\mu\\text{H}.\n\\]\n\nPo włożeniu **rdzenia ferrytowego** o względnej przenikalności \\(\\mu_{r}=10\\\
-    ) zmienia się tylko czynnik \\(\\mu\\):\n\n\\[\nL = \\mu_{0}\\mu_{r}\\frac{N^{2}A}{l}= \\mu_{r}\\\
-    ,L_{0}=10 \\times 100\\;\\mu\\text{H}=1000\\;\\mu\\text{H}.\n\\]\n\nZatem indukcyjność rośnie dziesięciokrotnie,\
-    \ czyli do **1000 µH** – odpowiedź **A**.  \n\n*(W praktyce ferryt może wprowadzać straty i nieliniowość,\
-    \ ale w zadaniu przyjmujemy idealny materiał.)*"
+  - "**Gratulacje!** \U0001F389  \nZaznaczyłeś odpowiedź **A – „wzrośnie do 1000 µH”**, co jest prawidłowe.\n\
+    \n---\n\n### Dlaczego tak jest?\n\nIndukcyjność powietrznej cewki wyraża wzór  \n\n\\[\nL = \\mu_0\
+    \ \\,\\mu_r \\,\\frac{N^{2}A}{l},\n\\]\n\ngdzie  \n\n- \\(\\mu_0\\) – przenikalność magnetyczna próżni,\
+    \  \n- \\(\\mu_r\\) – względna przenikalność materiału wypełniającego (rdzenia),  \n- \\(N\\) – liczba\
+    \ zwojów,  \n- \\(A\\) – przekrój poprzeczny cewki,  \n- \\(l\\) – długość toru magnetycznego.\n\n\
+    Dla cewki wypełnionej powietrzem \\(\\mu_r = 1\\), a jej indukcyjność wynosi \\(L_0 = 100\\;\\mu\\\
+    text{H}\\).\n\nPo włożeniu rdzenia ferrytowego o \\(\\mu_r = 10\\) wszystkie pozostałe parametry pozostają\
+    \ niezmienione, więc indukcyjność zwiększa się dziesięciokrotnie:\n\n\\[\nL = \\mu_r \\, L_0 = 10\
+    \ \\times 100\\;\\mu\\text{H} = 1000\\;\\mu\\text{H}.\n\\]\n\nDlatego właściwą odpowiedzią jest **A**."
+  - "### Dlaczego odpowiedź **B** jest błędna\n\nIndukcyjność cewki zależy od tego, jak bardzo pole magnetyczne\
+    \ jest „przewodzone” przez materiał, w którym znajduje się rdzeń. Matematycznie opisuje to wzór\n\n\
+    \\[\nL = \\frac{\\mu_0 \\,\\mu_r \\, N^{2} A}{\\ell},\n\\]\n\ngdzie  \n\n* \\(L\\) – indukcyjność,\
+    \  \n* \\(\\mu_0\\) – przenikalność próżni (stała fizyczna),  \n* \\(\\mu_r\\) – **względna** przenikalność\
+    \ magnetyczna materiału (tzw. względny współczynnik magnetyczny),  \n* \\(N\\) – liczba zwojów,  \n\
+    * \\(A\\) – pole przekroju poprzecznego cewki,  \n* \\(\\ell\\) – długość toru magnetycznego (grubość\
+    \ rdzenia).\n\n#### Co się dzieje, gdy wkładamy rdzeń ferrytowy?\n\n* Przed wkładem mamy rdzeń **powietrzny**,\
+    \ czyli \\(\\mu_r = 1\\).  \n* Po wkładzie rdzenia ferrytowego podano \\(\\mu_r = 10\\).\n\nWzór pokazuje,\
+    \ że \\(L\\) jest **proporcjonalne** do \\(\\mu_r\\). Jeśli \\(\\mu_r\\) wzrośnie dziesięciokrotnie,\
+    \ indukcyjność również wzrośnie dziesięciokrotnie, przy założeniu, że pozostałe parametry (\\(N, A,\
+    \ \\ell\\)) pozostają niezmienione.\n\n\\[\nL_{\\text{nowe}} = \\mu_r \\, L_{\\text{powietrze}} =\
+    \ 10 \\times 100\\ \\mu\\text{H} = 1000\\ \\mu\\text{H}.\n\\]\n\n#### Dlaczego odpowiedź **C** (spadek\
+    \ do 10 µH) jest nieprawidłowa?\n\nSpadek indukcyjności miałby miejsce tylko wtedy, gdyby materiał\
+    \ miał \\(\\mu_r < 1\\) (np. diamagnetyk). Ferryt o \\(\\mu_r = 10\\) jest **paramagnetyczny/ferromagnetyczny**,\
+    \ więc zwiększa, a nie zmniejsza pole magnetyczne w cewce.\n\n#### Podsumowanie\n\n- Indukcyjność\
+    \ jest proporcjonalna do względnej przenikalności \\(\\mu_r\\).  \n- Wkładanie ferrytu (\\(\\mu_r\
+    \ = 10\\)) zwiększa indukcyjność dziesięciokrotnie: **100 µH → 1000 µH**.  \n- Stąd prawidłowa odpowiedź\
+    \ to **A**, a odpowiedź **B** („nie zmieni się”) jest niepoprawna, bo ignoruje wpływu \\(\\mu_r\\\
+    ) na pole magnetyczne w rdzeniu."
+  - "**Dlaczego odpowiedź C („zmaleje do 10 µH”) jest błędna?**  \n\nIndukcyjność cewki wyraża się wzorem\
+    \  \n\n\\[\nL = \\frac{\\mu N^{2}A}{\\ell},\n\\]\n\ngdzie  \n\n* \\(N\\) – liczba zwojów,  \n* \\\
+    (A\\) – pole przekroju poprzecznego rdzenia,  \n* \\(\\ell\\) – długość toru magnetycznego,  \n* \\\
+    (\\mu = \\mu_0\\mu_r\\) – przenikalność magnetyczna ośrodka wypełniającego tor (powietrze, ferryt\
+    \ …).\n\n---\n\n### 1. Co się zmienia po włożeniu ferrytu?\n\n* Powietrze ma względną przenikalność\
+    \ \\(\\mu_r^{\\text{pow}} = 1\\).  \n* Ferryt ma \\(\\mu_r^{\\text{ferr}} = 10\\).\n\nWszystkie pozostałe\
+    \ wielkości w równaniu (\\(N, A, \\ell\\)) pozostają niezmienione – jedyną różnicą jest wartość \\\
+    (\\mu\\).\n\n---\n\n### 2. Jak to wpływa na indukcyjność?\n\n\\[\n\\frac{L_{\\text{ferr}}}{L_{\\text{pow}}}\n\
+    = \\frac{\\mu_0\\mu_r^{\\text{ferr}}}{\\mu_0\\mu_r^{\\text{pow}}}\n= \\frac{\\mu_r^{\\text{ferr}}}{\\\
+    mu_r^{\\text{pow}}}\n= \\frac{10}{1}=10 .\n\\]\n\nCzyli indukcyjność zwiększa się **dziesięciokrotnie**.\n\
+    \n\\[\nL_{\\text{ferr}} = 10 \\times 100\\;\\mu\\text{H}= 1000\\;\\mu\\text{H}.\n\\]\n\n---\n\n###\
+    \ 3. Skąd mogło wziąć się nieporozumienie?\n\n* **Mylenie z rezonansem** – w obwodach rezonansowych\
+    \ większa przenikalność może skutkować niższą częstotliwością rezonansu, ale nie zmniejsza samej indukcyjności.\n\
+    * **Utrata pola w powietrzu** – przy niepełnym wypełnieniu toru magnetycznego (np. mały rdzeń, duży\
+    \ odstęp powietrzny) indukcyjność nie rośnie tak mocno, ale **nigdy nie maleje** w wyniku wstawienia\
+    \ materiału o dodatniej przenikalności.\n* **Zamiana „relatywnej” i „bezwzględnej”** – \\(\\mu_r=10\\\
+    ) oznacza, że \\(\\mu\\) jest **dziesięć razy większe**, a nie mniejsze.\n\n---\n\n### 4. Podsumowanie\
+    \ (zwięźle)\n\n* Indukcyjność zależy liniowo od przenikalności \\(\\mu\\).  \n* Ferryt o \\(\\mu_r=10\\\
+    ) zwiększa \\(\\mu\\) dziesięciokrotnie w stosunku do powietrza.  \n* Dlatego \\(L\\) rośnie z 100 µH\
+    \ do 1000 µH, a nie maleje.  \n\nOdpowiedź **C** jest więc niepoprawna; prawidłowa jest **A**."
+  - "**Dlaczego indukcyjność rośnie dziesięciokrotnie**\n\nIndukcyjność cewki wyrażana jest wzorem  \n\
+    \n\\[\nL=\\frac{\\mu_0\\mu_r N^{2}A}{\\ell},\n\\]\n\ngdzie  \n\n- \\(\\mu_0\\) – przenikalność magnetyczna\
+    \ próżni,  \n- \\(\\mu_r\\) – względna przenikalność materiału wypełniającego rdzeń,  \n- \\(N\\)\
+    \ – liczba zwojów,  \n- \\(A\\) – pole przekroju poprzecznego rdzenia,  \n- \\(\\ell\\) – długość\
+    \ toru magnetycznego.\n\nPrzy **braku rdzenia** (powietrze) \\(\\mu_r \\approx 1\\), więc\n\n\\[\n\
+    L_{\\text{powietrze}} = L_0 = 100\\;\\mu\\text{H}.\n\\]\n\nWkładając **rdzeń ferrytowy** o względnej\
+    \ przenikalności \\(\\mu_r = 10\\), wszystkie pozostałe czynniki w równaniu pozostają niezmienione,\
+    \ a jedyną zmianą jest mnożnik \\(\\mu_r\\). Stąd\n\n\\[\nL_{\\text{z rdzeniem}} = \\mu_r \\, L_0\
+    \ = 10 \\times 100\\;\\mu\\text{H}=1000\\;\\mu\\text{H}.\n\\]\n\nDlatego poprawną odpowiedzią jest:\n\
+    \n**A. wzrośnie do 1000 µH**."
 - text: 82\. Są dwie cewki powietrzne. Przy tej samej średnicy i liczbie zwojów, L1 jest nawinięta drutem
     dwa razy grubszym niż L2. Która z nich ma większą dobroć Q?
   answers:
@@ -4923,87 +4932,84 @@ questions:
     \ wsteczne może przekraczać 460 V.\n\nDiody o napięciu wstecznym **400 V** nie zapewniają takiego\
     \ zapasu – przy normalnym obciążeniu napięcie wsteczne przekroczy ich wytrzymałość, co prowadzi do\
     \ przebicia i uszkodzenia diody.\n\nDlatego w tym układzie nie można użyć diody 400 V. ✔️"
-- text: 257\. Jaka jest funkcja kondensatora C1 w układzie przedstawionym na rysunku?
+- text: '257\. Jaka jest funkcja kondensatora C1 w układzie przedstawionym na rysunku?
+
+    ![RADIOTECHNIKA question 257](assets/question_images/radiotechnika-q257 .png)'
   answers:
   - zwiększenie wzmocnienia dla prądów zmiennych
   - filtrowanie prądu spoczynkowego
   - nie ma żadnej funkcji
   correct_index: 0
   explanations:
-  - "**Gratulacje!**  \n\nOdpowiedź **A – zwiększenie wzmocnienia dla prądów zmiennych** jest prawidłowa.\n\
-    \nKondensator \\(C_1\\) w układzie sprzężenia zwrotnego działa jako element o wysokiej impedancji\
-    \ przy stałym prądzie (DC), więc nie wpływa na punkt pracy układu. Natomiast przy sygnałach zmiennych\
-    \ (AC) jego impedancja wynosi  \n\n\\[\nZ_{C_1}= \\frac{1}{j\\omega C_1},\n\\]\n\nco przy wyższych\
-    \ częstotliwościach staje się bardzo małe. Dzięki temu sygnał zmienny jest „przepuszczany” przez układ\
-    \ sprzężenia, a wzmocnienie przy prądach zmiennych rośnie.  \n\nW konsekwencji \\(C_1\\) podnosi wzmocnienie\
-    \ tylko dla sygnałów AC, a nie dla prądu stałego. Dzięki temu układ może np. wzmacniać sygnały audio,\
-    \ jednocześnie blokując składową stałą."
-  - "**Dlaczego odpowiedź B jest niepoprawna?**  \n\nKondensator C1 nie „filtruje prądu spoczynkowego”.\
-    \  \n* **Filtracja** oznaczałaby usuwanie (tłumienie) pewnych składowych częstotliwości.  \n* Kondensator C1\
-    \ w układzie wzmacniacza jest **kondensatorem sprzęgającym** – jego impedancja maleje wraz ze wzrostem\
-    \ częstotliwości:  \n\n\\[\nZ_C = \\frac{1}{j\\omega C_1}\n\\]\n\nDla \\(\\omega = 0\\) (prąd stały)\
-    \ \\(Z_C \\to \\infty\\), czyli kondensator **przerywa** ścieżkę prądu stałego. Nie „filtruje” go,\
-    \ po prostu go **blokuje**. Dlatego stwierdzenie „filtrowanie prądu spoczynkowego” jest mylące i nie\
-    \ opisuje rzeczywistej funkcji C1.\n\n---\n\n### Co robi kondensator C1? – odpowiedź A\n\n1. **Blokuje\
-    \ składową stałą (DC)** – zabezpiecza punkt pracy tranzystora przed zmianą napięcia polaryzującego.\
-    \  \n2. **Przepuszcza sygnały zmienne (AC)** – przy częstotliwościach powyżej granicznej \\(\\omega_c\
-    \ = \\frac{1}{R_{\\text{wej}} C_1}\\) impedancja kondensatora jest mała, więc sygnał AC jest przekazywany\
-    \ do dalszych stopni wzmacniacza.  \n3. **Zwiększa wzmocnienie dla sygnałów zmiennych** – ponieważ\
-    \ w stanie stałym tranzystor pracuje w ustalonym punkcie polaryzacji, a jedynie zmienne składowe napięcia/\
-    \ prądu są wzmacniane. Bez C1 sygnał AC byłby „przytłumiony” przez stałe napięcie polaryzacji i wzmocnienie\
-    \ byłoby znacznie mniejsze.\n\nW praktyce, po włączeniu C1 układ zachowuje się jak **układ wysokoprzepustowy**\
-    \ (high‑pass), którego wzmocnienie rośnie wraz ze wzrostem częstotliwości powyżej \\(\\omega_c\\).\n\
-    \n---\n\n### Podsumowanie\n- **B (filtracja prądu spoczynkowego)** – nie oddaje roli C1; kondensator\
-    \ nie filtruje, a **blokuje** prąd stały.  \n- **A (zwiększenie wzmocnienia dla prądów zmiennych)**\
-    \ – prawidłowo opisuje funkcję kondensatora jako elementu sprzęgającego, który pozwala sygnałom AC\
-    \ przejść i być wzmocnionymi, jednocześnie izolując stałą składową."
-  - "**Dlaczego odpowiedź C („nie ma żadnej funkcji”) jest błędna**\n\n- W każdym układzie, w którym widzimy\
-    \ kondensator C1, on **zawsze** spełnia jakąś rolę elektryczną – albo **przepuszcza** sygnały o określonych\
-    \ częstotliwościach, albo **blokuje** inne.  \n- Stwierdzenie, że „nie ma żadnej funkcji”, oznaczałoby,\
-    \ że kondensator jest po prostu „przytwierdzony” i nie wpływa na napięcia ani prądy. W praktyce tak\
-    \ nie ma – po podłączeniu kondensatora zmienia się impedancja węzła, a więc i charakterystyka całego\
-    \ obwodu.\n\n---\n\n## Co robi kondensator C1 w podanym układzie?\n\n### 1. **Obniża impedancję przy\
-    \ częstotliwościach sygnału zmiennego**\n\nDla prądu zmiennego o kątowej częstotliwości \\(\\omega\\\
-    ) impedancja kondensatora wynosi  \n\n\\[\nZ_{C1}= \\frac{1}{j\\omega C_1}.\n\\]\n\nPrzy typowych\
-    \ częstotliwościach sygnału audio (kilkaset Hz – kilka kHz) \\(|Z_{C1}|\\) jest bardzo małe w porównaniu\
-    \ do rezystancji elementów rezystancyjnych w gałęzi, w której jest podłączony.\n\n### 2. **Omija (bypasu)\
-    \ elementy rezystancyjne w torze sygnałowym**\n\nNajczęściej C1 jest **kondensatorem sprzęgającym**\
-    \ (ang. *bypass capacitor*) pomiędzy emitorem (lub innym punktem) a masą. Dzięki temu:\n\n- **Dla\
-    \ sygnałów stałych (DC)** kondensator zachowuje się jak otwarty obwód, więc nie wpływa na punkt pracy\
-    \ układu – rezystor pozostaje w obwodzie i ustala odpowiednie polaryzowanie.\n- **Dla sygnałów zmiennych\
-    \ (AC)** kondensator „krótkie” impedancją, skutecznie **odłącza** rezystor od toru sygnałowego. Rezystor\
-    \ nie „ściąga” prądu sygnału, a wzmocnienie napięciowe rośnie.\n\nW klasycznym układzie **wspólny\
-    \ emiter** wzmocnienia tranzystora, wzmocnienie napięciowe bez bypassu wynosi  \n\n\\[\nA_v = -\\\
-    frac{g_m R_C}{1 + g_m R_E},\n\\]\n\ngdzie \\(R_E\\) to rezystor w emiterze. Po podłączeniu C1 (idealnie\
-    \ duży \\(\\omega\\)) \\(R_E\\) jest pomijany przy AC i wzmocnienie przyjmuje wartość  \n\n\\[\nA_v\
-    \ \\approx -g_m R_C,\n\\]\n\nco jest znacznie większe (wartość \\(|A_v|\\) rośnie).\n\n### 3. **Dlatego\
-    \ poprawna odpowiedź to A**\n\n> **A. zwiększenie wzmocnienia dla prądów zmiennych**  \n\nKondensator\
-    \ C1 powoduje, że przy sygnałach zmiennych impedancja w jego miejscu jest mała, więc rezystor, który\
-    \ normalnie ograniczałby prąd sygnałowy, zostaje ominięty. W konsekwencji prąd zmienny (a więc sygnał\
-    \ AC) jest wzmocniony – właśnie to jest funkcją C1.\n\n---\n\n## Co z odpowiedzią B?\n\n> **B. filtrowanie\
-    \ prądu spoczynkowego**  \n\nC1 rzeczywiście **blokuje** prąd stały (DC) – to jest niezbędne do utrzymania\
-    \ punktu pracy, ale nie jest to jego *główna* rola w tym układzie. Funkcją nadrzędną jest zwiększenie\
-    \ wzmocnienia sygnału AC; filtracja DC jest jedynie skutkiem ubocznym.\n\n---\n\n### Podsumowanie\
-    \ (zwięźle)\n\n- C1 **ma** funkcję – nie jest „bezużyteczny”.  \n- Działa jako **kondensator sprzęgający\
-    \ / bypass**, którego mała impedancja przy częstotliwościach sygnału pozwala ominąć rezystor ograniczający\
-    \ prąd.  \n- Efekt: **zwiększenie wzmocnienia** sygnałów zmiennych (odpowiedź A).  \n- Odpowiedź C\
-    \ jest więc niepoprawna, a B opisuje jedynie poboczny efekt, nie będąc najważniejszą funkcją w tym\
-    \ kontekście."
-  - "**Dlaczego C1 zwiększa wzmocnienie dla prądów zmiennych?**\n\nW układzie wzmacniacza operacyjnego\
-    \ (lub tranzystorowego) kondensator C1 jest najczęściej podłączony **pomiędzy źródłem sygnału a wejściem\
-    \ wzmacniacza** albo **pomiędzy wyjściem a masą**. Pełni on dwie podstawowe funkcje:\n\n1. **Blokowanie\
-    \ składowej stałej (DC).**  \n   Kondensator ma impedancję zależną od częstotliwości  \n\n   \\[\n\
-    \   Z_C = \\frac{1}{j\\omega C_1},\n   \\]\n\n   więc dla \\(\\omega = 0\\) (prąd stały) \\(Z_C \\\
-    to \\infty\\) – kondensator „odcina” sygnał DC.\n\n2. **Przepuszczanie sygnałów zmiennych (AC).**\
-    \  \n   Dla wyższych częstotliwości \\(\\omega\\) impedancja maleje, a C1 zachowuje się jak prawie\
-    \ idealny przewodnik. W ten sposób **omija** rezystancję w torze stałym (np. rezystor sprzężenia zwrotnego)\
-    \ i pozwala sygnałowi AC przepłynąć do wejścia wzmacniacza z mniejszym spadkiem napięcia.\n\nSkutkiem\
-    \ tego jest **zwiększenie wzmocnienia sygnału zmiennego**, ponieważ wzmocnienie układu zależy od stosunku\
-    \ rezystancji w torze AC do rezystancji w torze DC. Gdy C1 „króci” rezystancję DC, wzmocnienie przyjmuje\
-    \ wartość wyższą, typowo:\n\n\\[\nA_{v,AC} \\approx -\\frac{R_{\\text{f}}}{R_{\\text{in}}}\n\\]\n\n\
-    gdzie \\(R_{\\text{f}}\\) i \\(R_{\\text{in}}\\) są rezystorami sprzężenia zwrotnego i wejściowego,\
-    \ a C1 eliminuje ich wpływ przy stałym prądzie.\n\nDlatego poprawną odpowiedzią jest:\n\n**A. zwiększenie\
-    \ wzmocnienia dla prądów zmiennych**."
+  - "**Gratulacje!** \U0001F389  \nOdpowiedź **A – „zwiększenie wzmocnienia dla prądów zmiennych”** jest\
+    \ prawidłowa.\n\n**Dlaczego?**  \n\n- Kondensator **C₁** jest podłączony równolegle do rezystora (np.\
+    \ emisji w stopce tranzystora).  \n- Dla sygnałów **zmiennych** (AC) impedancja kondensatora wynosi\
+    \  \n\n\\[\nZ_{C_1}= \\frac{1}{j\\omega C_1},\n\\]\n\nco przy typowych częstotliwościach jest bardzo\
+    \ małe.  \n- W rezultacie C₁ „omija” rezystor, zmniejszając wirtualny opór w obwodzie i **zwiększając\
+    \ wzmocnienie** prądu zmiennego (np. w stopce emitera \\(A_v \\approx -\\frac{R_C}{r_e}\\) zamiast\
+    \ \\(-\\frac{R_C}{r_e+R_E}\\)).  \n\nDla prądu stałego (DC) kondensator zachowuje się jak otwarty\
+    \ obwód, więc nie wpływa na punkt pracy układu. Dlatego jego jedyną funkcją jest podniesienie wzmocnienia\
+    \ sygnałów AC.  \n\n---  \n\nJeszcze raz gratuluję trafnego wyboru! \U0001F680"
+  - "**Dlaczego odpowiedź B jest niepoprawna**\n\nKondensator C1 nie „filtruje prądu spoczynkowego” w\
+    \ sensie usuwania go z obwodu.  \nJego impedancja przy częstotliwości 0 Hz (DC) jest nieskończona:\n\
+    \n\\[\nX_C = \\frac{1}{2\\pi f C}\\;\\xrightarrow{f\\to 0}\\;\\infty\n\\]\n\nDlatego przy prądzie\
+    \ stałym C1 zachowuje się jak otwarty obwód i nie przewodzi w ogóle. Nie ma więc możliwości „filtrowania”\
+    \ (czyli przepuszczania) prądu spoczynkowego – po prostu go nie przewodzi.\n\n**Co naprawdę robi kondensator\
+    \ C1**\n\nC1 jest **kondensatorem sprzęgającym (ang. coupling/bypass capacitor)** umieszczonym pomiędzy\
+    \ źródłem sygnału a wejściem stopni wzmocnienia (np. w układzie tranzystorowym). Jego rola:\n\n1.\
+    \ **Blokuje składową stałą (DC)** – dzięki dużej impedancji przy \\(f=0\\) nie pozwala na przeniesienie\
+    \ napięcia stałego z jednej sekcji na drugą, co chroni punkt pracy kolejnego stopnia.\n2. **Przepuszcza\
+    \ składowe zmienne (AC)** – przy wyższych częstotliwościach impedancja maleje (\\(X_C \\propto 1/f\\\
+    )), więc sygnał zmienny jest praktycznie niezakłócony.\n3. **Zwiększa wzmocnienie dla sygnałów zmiennych**\
+    \ – w klasycznym układzie ze wspólnym emiterem (lub źródłem) rezystor emitera (lub źródła) wprowadza\
+    \ ujemne sprzężenie zwrotne, które obniża wzmocnienie. C1 ominięcie tego rezystora przy częstotliwościach\
+    \ powyżej granicznej (\\(f_c = 1/(2\\pi R C)\\)) redukuje ujemne sprzężenie tylko dla sygnałów AC,\
+    \ więc wzmocnienie rośnie do wartości maksymalnej:\n\n\\[\nA_v \\approx -\\frac{g_m R_C}{1 + j\\frac{f_c}{f}}\n\
+    \\]\n\ngdzie przy \\(f \\gg f_c\\) człon w mianowniku dąży do 1, a wzmocnienie przyjmuje swoją „pełną”\
+    \ wartość.\n\n**Podsumowanie**\n\n- **B** – nieprawidłowa, bo kondensator nie filtruje (nie przewodzi)\
+    \ prądu stałego.  \n- **A** – prawidłowa, bo C1 umożliwia zwiększenie wzmocnienia jedynie dla składowych\
+    \ zmiennych, odcinając jednocześnie składową stałą.  \n\nKrótko: C1 **przepuszcza** sygnały AC i **blokuje**\
+    \ DC, co skutkuje wyższym wzmocnieniem sygnałów zmiennych."
+  - "**Dlaczego odpowiedź C („nie ma żadnej funkcji”) jest błędna**\n\nKondensator C1 jest elementem **sprzęgającym\
+    \ (bypass)** w układzie wzmacniacza. Jego zadania są następujące:\n\n1. **Obniżenie impedancji przyśrodkowej\
+    \ dla sygnałów zmiennych**  \n   - Dla częstotliwości sygnału \\(f\\) kondensator ma impedancję  \n\
+    \     \\[\n     X_C = \\frac{1}{2\\pi f C_1}\n     \\]\n   - Przy typowych częstotliwościach audio\
+    \ (kilkaset Hz‑kHz) \\(X_C\\) jest bardzo małe, więc kondensator „króci” rezystor (np. emisji) do\
+    \ masy.\n\n2. **Zwiększenie wzmocnienia dla prądów zmiennych**  \n   - Wzmacniacz z rezystorem emisji\
+    \ \\(R_E\\) ma wzmocnienie napięciowe  \n     \\[\n     A_v \\approx -\\frac{R_C}{r_e + R_E}\n   \
+    \  \\]\n   - Gdy C1 jest na \\(R_E\\), dla sygnałów AC \\(R_E\\) zostaje pominięty (bo jest krótkowany),\
+    \ a wzmocnienie przyjmuje wartość  \n     \\[\n     A_v \\approx -\\frac{R_C}{r_e}\n     \\]\n   -\
+    \ W praktyce oznacza to **większy wzmocnienie** niż w trybie DC, gdzie \\(R_E\\) pozostaje w obwodzie\
+    \ i stabilizuje punkt pracy.\n\n3. **Oddzielenie części stałej (DC) od sygnału AC**  \n   - Kondensator\
+    \ przepuszcza jedynie zmiany napięcia (sygnał AC) i blokuje składową stałą, co pozwala na zachowanie\
+    \ stałego polaryzowania tranzystora przy jednoczesnym wzmocnieniu sygnału zmiennego.\n\n---\n\n###\
+    \ Dlaczego odpowiedź B („filtrowanie prądu spoczynkowego”) jest niepoprawna?\n* Filtrowanie prądu\
+    \ spoczynkowego (DC) zazwyczaj realizuje **kondensator filtrujący przy zasilaniu**, a nie kondensator\
+    \ sprzęgający przy wejściu lub emisji. C1 nie usuwa prądu spoczynkowego, a jedynie odłącza stałą część\
+    \ sygnału od dalszych stopni układu.\n\n---\n\n### Podsumowanie\n- **C1 ma istotną funkcję** – zwiększa\
+    \ wzmocnienie dla sygnałów zmiennych, tworząc niską impedancję przyśrodkową i „pomijając” rezystor\
+    \ emisji dla AC.  \n- Stwierdzenie, że „nie ma żadnej funkcji”, jest więc błędne.  \n\n**Poprawna\
+    \ odpowiedź:** **A. zwiększenie wzmocnienia dla prądów zmiennych**."
+  - "**Dlaczego C1 zwiększa wzmocnienie dla prądów zmiennych?**\n\nW układzie typowo spotykanym w wzmacniaczach\
+    \ operacyjnych lub tranzystorowych kondensator C1 pełni jedną z dwóch ról:\n\n1. **Kondensator sprzęgający\
+    \ (ang. *coupling capacitor*)** – znajduje się pomiędzy wyjściem jednego stopnia a wejściem kolejnego.\
+    \ Działa jak **filtr wysokoprzepustowy**: przepuszcza sygnały o wysokich częstotliwościach (prądy\
+    \ zmienne), a blokuje składową stałą (DC). Dzięki temu napięcie DC nie „przenika” z jednego stopnia\
+    \ do drugiego, a jedynie sygnał AC jest przekazywany. Ponieważ wzmocnienie układu jest określane przez\
+    \ elementy AC (rezystory w obwodzie sygnałowym), brak utraty sygnału DC powoduje, że wzmocnienie **nie\
+    \ jest obniżane** przez napięciowy spadek na połączeniu.\n\n2. **Kondensator odsprzęgający (ang. *bypass\
+    \ capacitor*)** – podłączony równolegle do rezystora emisji (lub innego elementu rezystancyjnego)\
+    \ w torze emisji tranzystora. Dla sygnałów AC kondensator ma bardzo małą impedancję  \n\\[\nZ_C =\
+    \ \\frac{1}{j\\omega C_1},\n\\]  \nco skutecznie „ominięcie” rezystora emisji. W konsekwencji **oporność\
+    \ wejściowa** stopnia zostaje znacznie zmniejszona, a **współczynnik wzmocnienia napięciowego** (np.\
+    \ w układzie wspólnego emitera) rośnie:\n\\[\nA_v \\approx -\\frac{R_C}{r_e}\n\\quad\\text{zamiast}\\\
+    quad\nA_v \\approx -\\frac{R_C}{r_e + R_E},\n\\]\ngdzie \\(R_E\\) jest rezystorem emisji, a \\(r_e\\\
+    ) – wewnętrzną opornością dynamiczną tranzystora.\n\nW obu przypadkach kondensator **działa tylko\
+    \ dla prądów zmiennych** (wysokich częstotliwości), a dla prądu stałego zachowuje się jak otwór. Dlatego\
+    \ jego obecność **zwiększa wzmocnienie sygnału zmiennego**, a nie wpływa na prąd spoczynkowy.\n\n\
+    **Podsumowanie**  \n- C1 ma bardzo małą impedancję przy częstotliwościach sygnału → prądy zmienne\
+    \ swobodnie płyną.  \n- Blokuje prąd stały → nie zmniejsza napięcia polaryzującego.  \n- Efekt: **zwiększenie\
+    \ wzmocnienia dla prądów zmiennych** (odpowiedź A)."
 - text: 258\. Mamy dwa kondensatory o pojemności 4,7 nF oraz 300 pF. Jak należy je połączyć, by uzyskać
     pojemność 5000 pF?
   answers:
@@ -5459,68 +5465,45 @@ questions:
     \ to właśnie stromość, nie pozycja rezonansu.\n\n**Podsumowanie**  \nZwiększenie rzędu filtru dodaje\
     \ kolejne bieguny, a każdy z nich przyczynia się do 20 dB/decadę dodatkowego spadku w charakterystyce\
     \ amplitudowej. Dlatego odpowiedź **A – zwiększenie stromości zbocza** jest prawidłowa."
-- text: 265\. Jaka jest funkcja rezystorów R1 i R2 w układzie przedstawionym na rysunku?
+- text: '265\. Jaka jest funkcja rezystorów R1 i R2 w układzie przedstawionym na rysunku?
+
+    ![RADIOTECHNIKA question 265](assets/question_images/radiotechnika-q265.png)'
   answers:
   - Zabezpieczenie tranzystora przed uszkodzeniem
   - Zwiększenie impedancji wejściowej
   - Ustalenie punktu pracy tranzystora
   correct_index: 2
   explanations:
-  - "**Dlaczego odpowiedź A jest niepoprawna?**  \n\nR1 i R2 nie służą do ochrony tranzystora przed przepięciami\
-    \ ani przepięciowemu zwarciom.  \nW typowym układzie jednopólnym (np. w konfiguracji wspólnego emitera)\
-    \ rezystory te tworzą **dzielnik napięciowy**, który ustawia napięcie bazowe i w konsekwencji prąd\
-    \ spoczynkowy kolektora.  \n\n---\n\n## Rola R1 i R2 w ustalaniu punktu pracy\n\n1. **Ustalanie napięcia\
-    \ bazowego**  \n   \\[\n   V_B = V_{CC}\\,\\frac{R_2}{R_1+R_2}\n   \\]\n   Dzielnik ten podaje stałe\
-    \ napięcie do bazy, niezależnie od zmian sygnału wejściowego.\n\n2. **Ustalanie prądu spoczynkowego\
-    \ kolektora**  \n   Po ustaleniu \\(V_B\\) prąd bazy wynika z  \n   \\[\n   I_B = \\frac{V_B - V_{BE}}{R_{E}+\
-    \ \\frac{1}{\\beta}R_{C}}\n   \\]\n   (przy założeniu rezystora emiter‑E w obwodzie). Prąd kolektora\
-    \ to  \n   \\[\n   I_C \\approx \\beta I_B .\n   \\]\n\n3. **Stabilizacja punktu pracy**  \n   Dzięki\
-    \ temu, że napięcie bazowe jest ustalone przez rezystory, zmiany temperatury lub charakterystyki tranzystora\
-    \ mają mały wpływ na pozycję Q‑punktu.  \n\n---\n\n### Podsumowanie\n- **A. Zabezpieczenie tranzystora**\
-    \ – nie jest funkcją R1 i R2; zabezpieczenia realizuje się zwykle przez diody Zenera, rezystory ograniczające\
-    \ prąd lub układy ochronne.\n- **B. Zwiększenie impedancji wejściowej** – rezystory dzielnika faktycznie\
-    \ wprowadzają pewną impedancję, ale nie jest to ich główne przeznaczenie.\n- **C. Ustalenie punktu\
-    \ pracy tranzystora** – to prawidłowa odpowiedź, ponieważ R1 i R2 tworzą dzielnik napięciowy, który\
-    \ definiuje napięcie bazy i ustawia Q‑punkt.\n\nDlatego odpowiedź **C** jest jedyną poprawną."
-  - "**Dlaczego odpowiedź B („Zwiększenie impedancji wejściowej”) jest nieprawidłowa?**\n\n1. **Rola rezystorów\
-    \ w układzie z tranzystorem**  \n   W typowym układzie polaryzacji (np. układ wspólnego emitera) rezystory\
-    \ **R1** i **R2** tworzą dzielnik napięciowy podłączony do bazy tranzystora. Ich głównym zadaniem\
-    \ jest ustalenie **napięcia bazowego** \\(V_B\\), a nie bezpośrednie zwiększanie impedancji wejściowej\
-    \ układu.\n\n2. **Impedancja wejściowa**  \n   Impedancję wejściową układu określa przede wszystkim\
-    \ rezystancja widziana z bazy + rezystancja dynamiczna bazy (\\(r_{\\pi}\\)). Choć dzielnik R1‑R2\
-    \ wpływa na tę wartość, jego **głównym celem** nie jest podnoszenie impedancji, lecz zapewnienie odpowiedniego\
-    \ napięcia polaryzacji. Dlatego stwierdzenie „zwiększenie impedancji wejściowej” opisuje jedynie efekt\
-    \ uboczny, a nie funkcję rezystorów.\n\n---\n\n### Dlaczego odpowiedź C („Ustalenie punktu pracy tranzystora”)\
-    \ jest prawidłowa?\n\n- **Polaryzacja statyczna**  \n  Rezystory R1 i R2 tworzą dzielnik napięciowy,\
-    \ którego napięcie wyjściowe jest podawane na bazę tranzystora:\n\n  \\[\n  V_B = V_{CC}\\,\\frac{R_2}{R_1+R_2}\n\
-    \  \\]\n\n  To napięcie, przy odpowiedniej wartości prądu bazy \\(I_B\\), wyznacza **prąd kolektora**\
-    \ \\(I_C\\) i **napięcie kolektora** \\(V_C\\). W konsekwencji ustala się **punkt pracy (Q‑point)**\
-    \ tranzystora w charakterystyce wyjściowej.\n\n- **Stabilność temperaturowa**  \n  Dzięki stałemu\
-    \ stosunkowi R1/R2 zmiana temperatury (która zmienia \\(\\beta\\) tranzystora) nie przesuwa znacząco\
-    \ punktu pracy, ponieważ baza jest zasilana stałym napięciem, a nie stałym prądem.\n\n- **Projektowanie**\
-    \  \n  Wzór na dobór rezystorów dla pożądanego Q‑pointu:\n\n  \\[\n  I_B = \\frac{V_B - V_{BE}}{R_{B}}\
-    \ \\quad\\text{gdzie}\\quad R_{B}=R_1\\parallel R_2\n  \\]\n\n  Po wybraniu \\(I_B\\) wyznacza się\
-    \ \\(I_C = \\beta I_B\\) i w ten sposób ustawia się pożądane napięcie i prąd w kolektorze.\n\n---\n\
-    \n**Podsumowanie**\n\n- R1 i R2 **nie służą głównie do zwiększania impedancji wejściowej**; ich podstawową\
-    \ rolą jest ustalenie stałego napięcia bazowego, co determinuje **punkt pracy** tranzystora.  \n-\
-    \ Dlatego odpowiedź **C** jest jedyną prawidłową."
-  - "**Gratulacje!** \U0001F389  \n\nWybrałeś odpowiedź **C – Ustalenie punktu pracy tranzystora**, co\
-    \ jest prawidłowe.\n\nRezystory **R1** i **R2** tworzą dzielnik napięcia podłączony do bazy tranzystora.\
-    \ Dzięki temu:\n\n\\[\nV_{B}=V_{CC}\\;\\frac{R_2}{R_1+R_2}\n\\]\n\nUstalają stałe napięcie bazowe\
-    \ \\(V_B\\), a co za tym idzie stały prąd bazy \\(I_B\\). To z kolei determinuje prąd kolektora \\\
-    (I_C\\) i napięcie kolektora \\(V_C\\), czyli **punkt pracy (bias)** tranzystora.  \n\nInne odpowiedzi\
-    \ (A i B) nie opisują tej roli rezystorów w danym układzie. Raz jeszcze – dobra robota!"
-  - "**Dlaczego R1 i R2 służą do ustalenia punktu pracy tranzystora?**\n\nW układzie z tranzystorem bipolarnym\
-    \ (np. NPN) rezystory R1 i R2 najczęściej tworzą **dzielnik napięcia** podłączony do bazy.  \n\n1.\
-    \ **Ustalają napięcie bazy**  \n   \\[\n   V_B = V_{CC}\\,\\frac{R_2}{R_1+R_2}\n   \\]\n   To napięcie\
-    \ określa prąd bazy \\(I_B\\) (po uwzględnieniu spadku na złączu baza‑emiter \\(V_{BE}\\approx0{,}7\\\
-    ;{\\rm V}\\)).\n\n2. **Determinują prąd kolektora**  \n   \\[\n   I_C \\approx \\beta\\,I_B\n   \\\
-    ]\n   Gdzie \\(\\beta\\) to wzmocnienie prądowe tranzystora. Znając \\(I_B\\), ustalamy więc \\(I_C\\\
-    ) oraz spadek napięcia na kolektorze‑emiterze \\(V_{CE}=V_{CC}-I_C R_C\\).\n\n3. **Stabilizują punkt\
-    \ pracy**  \n   Dzięki dzielnikowi napięcia zmiany \\(\\beta\\) i temperatury mają mniejszy wpływ\
-    \ na \\(V_B\\) i w konsekwencji na \\(I_C\\). Rezystory te zapewniają więc **stały punkt pracy (Q‑point)**,\
-    \ w którym tranzystor pracuje w pożądanym regionie (aktywnym, nasyceniu lub odcięciu).\n\nZ tego powodu\
-    \ prawidłową odpowiedzią jest:\n\n**C. Ustalenie punktu pracy tranzystora**."
+  - "Użycie R1 i R2 w układzie tworzy **dzielnicę napięcia**, która ustala napięcie na bazie tranzystora.\
+    \ To pozwala na **ustalenie punktu pracy** (prąd i napięcie w stanie stałym), gwarantując pracę tranzystora\
+    \ w **strefie aktywnej** (poprawne wzmacnianie sygnału).  \n\n**Błąd w wyborze A**: Rezystory R1 i\
+    \ R2 nie są zabezpieczeniem (np. nie ograniczają prądu w celu ochrony). Zabezpieczenie wymaga innych\
+    \ elementów (np. rezystora w obwodzie kolektora lub diody).  \n\n**Dlaczego C jest poprawne?**  \n\
+    Punkt pracy wyznacza się poprzez:  \n$$\nV_B = V_{CC} \\cdot \\frac{R2}{R1 + R2}, \\quad I_B = \\\
+    frac{V_B - V_{BE}}{R_E}\n$$  \n(założenia: $R_E$ – rezystor emiterowy, $V_{BE}$ – napięcie baza-emiter).\
+    \  \nBez ustalenia tego punktu tranzystor pracowałby w nasyceniu lub przewodzeniu odciętym, co zniwelowaloby\
+    \ wzmacnianie.  \n\n**Krótko**: R1 i R2 to **układ biasujący**, a nie zabezpieczenie."
+  - "R1 i R2 tworzą dzielnik napięcia, który **ustala napięcie na bazie tranzystora** (p. C), gwarantując\
+    \ stabilny punkt pracy (Q-point). Funkcja ta jest kluczowa dla poprawnej pracy wzmacniacza w zakresie\
+    \ liniowym.  \nBłąd w odpowiedzi B: Impedancja wejściowa jest **obniżana** przez R1 i R2 (wzór: $Z_{in}\
+    \ = R_1 \\parallel R_2 \\parallel h_{ie}$), a nie zwiększana. Ich główne zadanie to **stabilizacja\
+    \ pracy tranzystora**, nie wpływ na impedancję.  \n**Poprawna odpowiedź:** C. Ustalenie punktu pracy\
+    \ tranzystora."
+  - "Prawidłowa odpowiedź to **C. Ustalenie punktu pracy tranzystora**.  \nRezystory R1 i R2 tworzą **dzielacz\
+    \ napięcia**, który ustala stałe napięcie na bazie tranzystora. To gwarantuje, że tranzystor pracuje\
+    \ w **aktywnej strefie** (punkcie pracy), co jest kluczowe dla poprawnej amplifikacji sygnału AC.\
+    \ Pozostałe opcje nie odzwierciedlają podstawowej funkcji tego układu:  \n- A: Zabezpieczenie (niespójne\
+    \ z rolą dzielnika napięcia).  \n- B: Zwiększenie impedancji wejściowej (R1 i R2 *redukuje* impedancję\
+    \ wejściową, a nie zwiększa).  \n\nPunkt pracy jest kluczowy dla stabilności pracy tranzystora w układzie\
+    \ wzmacniającym. \U0001F3AF"
+  - "W układzie tranzystorowym rezystory **R1 i R2** tworzą dzielnik napięcia, który ustala napięcie na\
+    \ bazie tranzystora. To pozwala **zdefiniować punkt pracy (Q-point)** – stan w którym tranzystor pracuje\
+    \ w rejonie aktywnym, co jest kluczowe dla poprawnej pracy wzmacniacza.  \n- **Odpowiedź C** jest\
+    \ poprawna, gdyż R1 i R2 zapewniają stabilne napięcie bazy, a tym samym stały prąd kolektora (dla\
+    \ danego ustawienia).  \n- Odpowiedzi A i B nie odnoszą się do głównego zadania tych rezystorów: R1/R2\
+    \ nie są zabezpieczeniem (A), a ich wpływ na impedancję wejściową (B) jest skutkiem ubocznym, nie\
+    \ główną funkcją.  \n\n**Klucz:** Ustalanie punktu pracy jest kluczowe dla uniknięcia przesunięcia\
+    \ pracy tranzystora poza rejon aktywny."
 - text: 268\. Jaki jest cel włączenia szeregowo rezystora i kondensatora pomiędzy wejście i wyjście wzmacniacza
     mocy z tranzystorem w układzie wspólnego źródła?
   answers:

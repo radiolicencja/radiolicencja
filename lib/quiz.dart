@@ -39,9 +39,11 @@ class _QuizScreenState extends State<QuizScreen>
   late final List<QuizQuestion> _questions;
   late final int _totalQuestions;
   final Set<int> _masteredQuestionIds = <int>{};
+  final Set<int> _sessionCompletedQuestionIds = <int>{};
   late final Map<int, QuestionStats> _questionStats;
   LearningQuestionPicker<QuizQuestion>? _learningPicker;
   int _currentQuestionIndex = 0;
+  bool _isRestartedLearningRun = false;
   int _score = 0;
   QuizAnswer? _selectedAnswer;
   final QuizAnswer _iDontKnowAnswer = QuizAnswer(
@@ -72,6 +74,7 @@ class _QuizScreenState extends State<QuizScreen>
     final storedMastered =
         widget.progressService?.getMastered(widget.topicSlug) ?? <int>{};
     _masteredQuestionIds.addAll(storedMastered);
+    var restartedAfterCompletion = false;
     if (widget.mode == QuizMode.learning) {
       _learningPicker = LearningQuestionPicker<QuizQuestion>(
         stats: _questionStats,
@@ -81,6 +84,7 @@ class _QuizScreenState extends State<QuizScreen>
       initialQuestions
           .removeWhere((question) => storedMastered.contains(question.id));
       if (initialQuestions.isEmpty && widget.questions.isNotEmpty) {
+        restartedAfterCompletion = true;
         initialQuestions.addAll(widget.questions);
       }
       _totalQuestions = widget.questions.length;
@@ -90,6 +94,8 @@ class _QuizScreenState extends State<QuizScreen>
       _totalQuestions = initialQuestions.length;
     }
     _questions = initialQuestions;
+    _sessionCompletedQuestionIds.clear();
+    _isRestartedLearningRun = restartedAfterCompletion;
     _autoAdvanceController = AnimationController(
       vsync: this,
       duration: _learningAutoAdvanceDuration,
@@ -362,11 +368,16 @@ class _QuizScreenState extends State<QuizScreen>
 
   void _recordMastered(QuizQuestion question) {
     if (widget.mode != QuizMode.learning) return;
-    if (_masteredQuestionIds.contains(question.id)) return;
-    _masteredQuestionIds.add(question.id);
-    final service = widget.progressService;
-    if (service != null) {
-      unawaited(service.markMastered(widget.topicSlug, question.id));
+    final alreadyMastered = _masteredQuestionIds.contains(question.id);
+    if (!alreadyMastered) {
+      _masteredQuestionIds.add(question.id);
+      final service = widget.progressService;
+      if (service != null) {
+        unawaited(service.markMastered(widget.topicSlug, question.id));
+      }
+    }
+    if (_isRestartedLearningRun) {
+      _sessionCompletedQuestionIds.add(question.id);
     }
   }
 
@@ -418,8 +429,12 @@ class _QuizScreenState extends State<QuizScreen>
     );
   }
 
-  int get _masteredCount =>
-      _masteredQuestionIds.length.clamp(0, _totalQuestions);
+  int get _masteredCount {
+    final learnedSoFar = _isRestartedLearningRun
+        ? _sessionCompletedQuestionIds.length
+        : _masteredQuestionIds.length;
+    return learnedSoFar.clamp(0, _totalQuestions);
+  }
 
   Widget _buildQuestionView(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;

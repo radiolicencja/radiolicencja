@@ -220,62 +220,63 @@ questions:
   - około 1 kHz
   - około 60 Hz
   - około 31,25 Hz
-  correct_index: 1
+  correct_index: 2
   explanations:
-  - "**Dlaczego odpowiedź A („około 1 kHz”) jest niepoprawna?**  \n\nPSK31 jest trybem **niskoprzepustowym**\
-    \ przeznaczonym do komunikacji tekstowej w paśmie amatorskim. Jego sygnał jest modulowany w **phase‑shift\
-    \ keying** przy bardzo małej prędkości symboli – **31,25 baud** (31,25 bit /s).  \n\nSzerokość pasma\
-    \ nie rośnie proporcjonalnie do częstotliwości nośnej (np. 14 MHz), lecz zależy od **szybkości zmiany\
-    \ fazy**, czyli od liczby symboli na sekundę. Dlatego pasmo PSK31 jest o rzędy wielkości węższe niż\
-    \ 1 kHz.\n\n---\n\n## Jak wyznaczyć prawidłowe pasmo PSK31?\n\n1. **Szybkość transmisji (baud)** \
-    \ \n   \\[\n   R_b = 31.25\\ \\text{baud}\n   \\]\n\n2. **Szerokość pasma przy modulacji PSK** – przy\
-    \ modulacji fazowej typu BPSK (dwufazowej) najważniejszy jest pierwszy harmonicny, a praktycznie przyjmuje\
-    \ się, że widmo rozciąga się do około **2 × R_b**.  \n   \\[\n   B \\approx 2 \\cdot R_b = 2 \\cdot\
-    \ 31.25\\ \\text{Hz} \\approx 62.5\\ \\text{Hz}\n   \\]\n\n3. **W praktyce** przyjmuje się wartość\
-    \ **≈ 60 Hz** jako przybliżoną szerokość kanału, co jest zgodne z przyjętym w środowisku amatorskim\
-    \ standardem.\n\n---\n\n## Podsumowanie\n\n- **31,25 baud** → bardzo wolna zmiana fazy → wąskie widmo.\
-    \  \n- **B≈2·R_b≈60 Hz** – to rzeczywista szerokość pasma PSK31.  \n- **1 kHz** byłoby charakterystyczne\
-    \ dla znacznie szybszych trybów (np. PSK63, RTTY), a nie dla PSK31.\n\nDlatego poprawna odpowiedź\
-    \ to **B – około 60 Hz**, a zaznaczenie **A** wynika z pomyłki co do zależności między prędkością\
-    \ transmisji a szerokością pasma."
-  - "**Gratulacje!** Wybrałeś odpowiedź **B – około 60 Hz**, co jest prawidłowe.\n\nW modulacji PSK31\
-    \ (Phase Shift Keying przy 31,25 baud) każdy znak jest przesyłany w czasie **\\(T = 1 / 31{,}25 \\\
-    approx 0{,}032\\) s**. Pasmo sygnału wynika z szerokości widma jednego symbolu, które w przybliżeniu\
-    \ wynosi **\\( \\Delta f \\approx 2 / T\\)**.  \n\n\\[\n\\Delta f \\approx \\frac{2}{0{,}032\\;\\\
-    text{s}} \\approx 62{,}5\\;\\text{Hz}\n\\]\n\nZatem szerokość kanału PSK31 mieści się w okolicach\
-    \ **60 Hz**.  \n\nJeszcze raz – dobrze zrobione! \U0001F389"
-  - "**Dlaczego odpowiedź C (≈ 31,25 Hz) jest błędna?**\n\n1. **Co oznacza „szerokość kanału” w PSK31?**\
-    \  \n   Dla modulacji fazowej (PSK) szerokość kanału definiuje się jako zakres częstotliwości, w którym\
-    \ znajduje się praktycznie cała moc sygnału (np. 99 % mocy). Nie jest to jedynie prędkość transmisji\
-    \ (liczba symboli na sekundę).\n\n2. **Prędkość transmisji PSK31**  \n   PSK31 pracuje z **prędkością\
-    \ 31,25 baud** (31,25 symboli /s). To właśnie liczba podana w odpowiedzi C odnosi się do *szybkości*\
-    \ transmisji, a nie do pasma.\n\n3. **Dlaczego pasmo jest większe?**  \n   W modulacji PSK każdy symbol\
-    \ generuje dwa symetryczne **boczne pasma** (side‑bands) po obu stronach częstotliwości nośnej. Ich\
-    \ szerokość wynika z faktu, że sygnał nie jest idealnie prostokątny, lecz posiada pewną rozciągłość\
-    \ w domenie częstotliwości. Dla PSK31 przy typowym filtrze prostokątnym (np. filtrze prostokątnym\
-    \ o nachyleniu –3 dB):\n\n   \\[\n   \\text{BW}_{\\text{kanału}} \\approx 2 \\times \\text{baud} \\\
-    approx 2 \\times 31{,}25\\ \\text{Hz} \\approx 62{,}5\\ \\text{Hz}.\n   \\]\n\n   W praktyce przyjmuje\
-    \ się **≈ 60 Hz** jako szerokość kanału, co obejmuje wszystkie istotne składowe sygnału i zapewnia,\
-    \ że odbiornik nie straci istotnej części energii.\n\n4. **Podsumowanie**  \n\n   |  | Co mierzy?\
-    \ | Wartość |\n   |---|---|---|\n   | **31,25 Hz** | Prędkość symboli (baud) | Liczba symboli /s |\n\
-    \   | **≈ 60 Hz** | Szerokość kanału (pasmo) | Zakres częstotliwości potrzebny do transmisji PSK31\
-    \ |\n\n   Dlatego prawidłowa odpowiedź to **B – około 60 Hz**. Odpowiedź C odnosi się do innej wielkości\
-    \ (baud), a nie do pasma sygnału."
-  - "**Dlaczego szerokość kanału PSK31 wynosi około 60 Hz?**\n\nPSK31 (Phase Shift Keying, 31,25 baud)\
-    \ jest trybem modulacji fazy używanym w amatorskiej radiokomunikacji tekstowej. Jego charakterystyczną\
-    \ cechą jest bardzo wąski widmo, co umożliwia jednoczesną pracę wielu stacji w wąskim paśmie HF.\n\
-    \n1. **Tempo transmisji (baud rate)**  \n   PSK31 przesyła **31,25 symboli / s**. Każdy symbol to\
-    \ zmiana fazy (np. BPSK – 0°/180°).  \n\n2. **Szerokość pasma teoretyczna**  \n   Dla modulacji fazowej\
-    \ o stałym amplitudzie przy braku dodatkowego kodowania, przybliżona szerokość pasma (dla prostego\
-    \ filtru prostokątnego) wynosi dwukrotność częstotliwości symboli:\n\n   \\[\n   BW_{\\text{teoria}}\
-    \ \\approx 2 \\times R_s = 2 \\times 31{,}25\\;\\text{Hz} \\approx 62{,}5\\;\\text{Hz}\n   \\]\n\n\
-    3. **Filtracja**  \n   W praktyce sygnał PSK31 jest poddany filtrowaniu (np. filtr górnoprzepustowy + dolnoprzepustowy)\
-    \ w celu ograniczenia rozprzestrzeniania się widma. Efektywne pasmo po filtracji wynosi **≈ 60 Hz**.\n\
-    \n4. **Porównanie z innymi modulacjami**  \n   - **SSB** (np. radiotelefonia) – szerokość ~ 2,4 kHz.\
-    \  \n   - **RTTY** – szerokość ~ 170 Hz (45,45 baud).  \n   - **PSK31** – najwęższe z popularnych\
-    \ trybów tekstowych, dlatego wykorzystywany do „crowded” pasm HF.\n\nPodsumowując, ze względu na **31,25 baud**\
-    \ i zastosowane filtry, sygnał PSK31 zajmuje w praktyce **około 60 Hz** pasma, co czyni go bardzo\
-    \ efektywnym pod względem spektralnym."
+  - "**Dlaczego odpowiedź A („około 1 kHz”) jest błędna?**  \n\nPSK31 jest wąskopasmowym trybem modulacji\
+    \ fazy (BPSK) stosowanym w radiostacji amatorskiej. Jego nazwa wskazuje, że **symbol rate** (liczba\
+    \ znaków na sekundę) wynosi **31,25 baud**. \n\nDla modulacji PSK (BPSK) szerokość pasma można oszacować\
+    \ przy pomocy reguły **Carsona**:\n\n\\[\nB \\approx 2\\,(f_{\\text{dev}}+R_s)\n\\]\n\ngdzie  \n\n\
+    - \\(R_s\\) – prędkość symboli (31,25 sym/s),  \n- \\(f_{\\text{dev}}\\) – maksymalna odchyłka częstotliwości.\
+    \  \n\nW PSK31 nie ma znaczącej odchyłki częstotliwości (modulacja odbywa się jedynie w fazie), więc\
+    \ przyjmuje się \\(f_{\\text{dev}}\\approx 0\\). Wtedy:\n\n\\[\nB \\approx 2R_s = 2 \\times 31{,}25\\\
+    \ \\text{Hz} \\approx 62{,}5\\ \\text{Hz}.\n\\]\n\nW praktyce sygnał jest filtrowany tak, aby mieścił\
+    \ się w **jednym kanale o szerokości około 31,25 Hz** (połówka wartości powyższej). To właśnie jest\
+    \ przyjęty „standardowy” pasmowy przydział dla PSK31, co pozwala zmieścić wiele sąsiadujących kanałów\
+    \ w typowym paśmie 2‑m.\n\nDlatego:\n\n- **31,25 Hz** (odpowiedź C) jest zgodna z rzeczywistą szerokością\
+    \ kanału PSK31.  \n- **1 kHz** (odpowiedź A) jest o rząd wielkości za duże – przy takiej szerokości\
+    \ sygnał nie byłby już „wąskopasmowy” i nie spełniałby założeń PSK31 (potrzebałby znacznie większej\
+    \ moci i zajmowałby dużo więcej widma, co jest niepraktyczne w amatorskiej emisji).\n\n**Podsumowanie**:\
+    \ PSK31 wykorzystuje bardzo niską prędkość symboli (31,25 baud), a brak częstotliwościowej odchyłki\
+    \ sprawia, że potrzebne pasmo mieści się w ok. 31 Hz, a nie w 1 kHz. Dlatego odpowiedź C jest prawidłowa,\
+    \ a A niepoprawna."
+  - "**Dlaczego odpowiedź B („około 60 Hz”) jest niepoprawna?**\n\nPSK31 to modulacja o bardzo wąskim\
+    \ paśmie, opracowana z myślą o efektywnym wykorzystaniu pasma w amatorskim radiu.  \nPodstawowe parametry,\
+    \ które determinują szerokość kanału, to:\n\n1. **Szybkość symboli (baud rate)** – w PSK31 wynosi\
+    \  \n   \\[\n   R_s = 31.25\\ \\text{symboli/s}\n   \\]\n\n2. **Rodzaj modulacji** – BPSK (Binary\
+    \ Phase‑Shift Keying). Przy czystym BPSK teoretyczna szerokość pasma wynosi maksymalnie dwukrotność\
+    \ szybkości symboli (duality Nyquista), czyli \\(2R_s\\).  \n\n3. **Filtr kształtujący (Gaussian filter)**\
+    \ – w PSK31 używa się bardzo wąskiego filtru (α≈0.2). Dzięki temu praktyczna szerokość pasma jest\
+    \ bliska samej szybkości symboli, a nie jej podwojeniu.\n\nZatem przybliżona szerokość kanału wynosi\n\
+    \n\\[\nB \\approx R_s \\times (1+\\alpha) \\approx 31.25\\ \\text{Hz} \\times 1.2 \\approx 37\\ \\\
+    text{Hz},\n\\]\n\nco w praktyce jest podawane jako **około 31 Hz** (z uwagi, że filtr jest jeszcze\
+    \ węższy niż w powyższym szacunku).  \n\n---\n\n**Dlaczego pojawia się liczba ~60 Hz?**  \nLiczba\
+    \ 60 Hz jest bliska dwukrotności 31,25 Hz i może wynikać z pomyłki, że pasmo PSK31 wynosi po prostu\
+    \ **2 × symbol rate** (co byłoby prawdą dla niesformatowanego BPSK). W rzeczywistości filtracja Gaussa\
+    \ znacząco zmniejsza spektrum, więc rzeczywiste pasmo jest **mniejsze niż 2 × R_s**.\n\n---\n\n###\
+    \ Podsumowanie\n- **Poprawna odpowiedź**: C – **około 31,25 Hz**.  \n- **Błąd w odpowiedzi B**: 60 Hz\
+    \ to przybliżenie dwukrotności symbol rate, które nie uwzględnia wąskiego filtru Gaussa stosowanego\
+    \ w PSK31, a więc znacznie zawyża rzeczywistą szerokość kanału."
+  - "**Gratulacje!**  \n\nOdpowiedź **C – „około 31,25 Hz”** jest prawidłowa.\n\nPSK31 jest trybem modulacji\
+    \ fazy, w którym szybkość transmisji (baud) wynosi **31,25 baud**. Jeden symbol trwa  \n\n\\[\nT =\
+    \ \\frac{1}{\\text{baud}} = \\frac{1}{31{,}25}\\;\\text{s} \\approx 32\\;\\text{ms}.\n\\]\n\nZgodnie\
+    \ z regułą Nyquista, minimalna szerokość pasma potrzebna do przeniesienia takiego sygnału jest w przybliżeniu\
+    \ równa częstotliwości symboli, czyli **≈ 31,25 Hz**. Dlatego kanał PSK31 zajmuje bardzo wąski fragment\
+    \ widma – około 31 Hz."
+  - "**Dlaczego szerokość pasma PSK31 wynosi ≈ 31,25 Hz**\n\nPSK31 (Phase Shift Keying, 31 baud) jest\
+    \ wąskopasmowym trybem modulacji cyfrowej wykorzystywanym w amatorskim radiu.  \n\n1. **Prędkość transmisji**\
+    \  \n   PSK31 przesyła **31,25 symboli na sekundę** (31,25 baud). Każdy symbol zawiera jedną bit‑informację\
+    \ (BPSK), więc prędkość bitowa wynosi również 31,25 bit s⁻¹.\n\n2. **Zależność pasma‑prędkość**  \n\
+    \   Dla modulacji PSK przy użyciu filtru prostokątnego (idealnego „brick‑wall”) teoretyczne pasmo\
+    \ wynosi dwa razy częstotliwość symboli:\n\n   \\[\n   B \\approx 2 \\cdot R_s = 2 \\cdot 31.25\\\
+    ;\\text{Hz} \\approx 62.5\\;\\text{Hz}.\n   \\]\n\n   W praktyce stosuje się **filtr kształtujący**\
+    \ (najczęściej filtr Nyquist‑a z charakterystyką podnoszącą, np. filtr typu raised‑cosine z roll‑off\
+    \ ≈ 0.5). Dzięki temu część widma poza centralnym „górnym” pasmem jest znacznie osłabiona i można\
+    \ uznać efektywne (użyteczne) pasmo **równe częstotliwości symboli**, czyli:\n\n   \\[\n   B_{\\text{ef}}\
+    \ \\approx R_s \\approx 31.25\\;\\text{Hz}.\n   \\]\n\n3. **W praktyce**  \n   - Szerokość kanału\
+    \ określa się jako zakres, w którym moc sygnału spada o 3 dB względem szczytu. Dla PSK31 ten zakres\
+    \ wynosi około **31 Hz** po obu stronach środka (≈ 62 Hz całkowite), ale przyjęto jako „szerokość\
+    \ kanału” samą wartość **31,25 Hz** – czyli pasmo niezbędne do przeniesienia jednego symbolu.\n\n\
+    Dlatego w pytaniu egzaminacyjnym poprawną odpowiedzią jest:\n\n**C. około 31,25 Hz**."
 - text: '32\. W jaki sposób w emisjach cyfrowych można zapewnić korekcję błędów spowodowanych zakłóceniami
     i zanikami w łączności radiowej:'
   answers:
@@ -593,71 +594,67 @@ questions:
   - 200 W
   - 100 W
   - 50 W
-  correct_index: 0
+  correct_index: 1
   explanations:
-  - "Gratulacje! \U0001F389  \n\nOdpowiedź **A – 200 W** jest prawidłowa.\n\nDla napięcia mierzonego w\
-    \ trybie **peak‑to‑peak** (\\(V_{pp}\\)) i dopasowanego obciążenia \\(R = 50\\;\\Omega\\) moc PEP\
-    \ wyliczamy ze wzoru  \n\n\\[\nP_{\\text{PEP}} = \\frac{V_{pp}^{2}}{4R}.\n\\]\n\nPodstawiając dane:\n\
-    \n\\[\nP_{\\text{PEP}} = \\frac{(200\\ \\text{V})^{2}}{4 \\times 50\\ \\Omega}\n               = \\\
-    frac{40\\,000\\ \\text{V}^{2}}{200\\ \\Omega}\n               = 200\\ \\text{W}.\n\\]\n\nStąd moc\
-    \ dostarczana przez nadajnik wynosi **200 W**, co odpowiada odpowiedzi A."
-  - "**Dlaczego wybrana odpowiedź B (100 W) jest prawidłowa – a nie A (200 W)**  \n\n1. **Co oznacza „napięcie\
-    \ międzyszczytowe (peak‑to‑peak)”?**  \n   Jest to różnica między maksymalnym a minimalnym (ujemnym)\
-    \ położeniem wykresu sinusoidy:  \n\n\\[\nV_{\\text{pp}} = V_{\\max }-V_{\\min } = 2V_{\\text{p}}\n\
-    \\]\n\ngdzie \\(V_{\\text{p}}\\) – amplituda (wartość szczytowa, **peak**).\n\n2. **Zamiana \\(V_{\\\
-    text{pp}}\\) na wartość skuteczną (RMS)**  \n\n\\[\nV_{\\text{p}} = \\frac{V_{\\text{pp}}}{2}\n\\\
-    qquad\\Longrightarrow\\qquad\nV_{\\text{rms}} = \\frac{V_{\\text{p}}}{\\sqrt{2}} = \\frac{V_{\\text{pp}}}{2\\\
-    sqrt{2}}\n\\]\n\nDla podanego \\(V_{\\text{pp}} = 200\\;\\text{V}\\):\n\n\\[\nV_{\\text{rms}} = \\\
-    frac{200}{2\\sqrt{2}} \\approx \\frac{200}{2.828} \\approx 70{,}7\\;\\text{V}\n\\]\n\n3. **Moc dostarczana\
-    \ do obciążenia 50 Ω**\n\n\\[\nP = \\frac{V_{\\text{rms}}^{2}}{R}\n     = \\frac{(70{,}7\\ \\text{V})^{2}}{50\\\
-    \ \\Omega}\n     \\approx \\frac{5000}{50}\n     = 100\\ \\text{W}\n\\]\n\nMożna to zapisać krócej,\
-    \ używając bezpośredniego wzoru dla sinusoidy:\n\n\\[\nP = \\frac{V_{\\text{pp}}^{2}}{8R}\n   = \\\
-    frac{200^{2}}{8\\cdot 50}\n   = \\frac{40000}{400}\n   = 100\\ \\text{W}\n\\]\n\n4. **Gdzie wzięło\
-    \ się 200 W?**  \n\nOdpowiedź **A** (200 W) byłaby prawidłowa jedynie wtedy, gdyby podane napięcie\
-    \ 200 V było **wartością szczytową (peak)**, a nie **peak‑to‑peak**. Wtedy:\n\n\\[\nV_{\\text{rms}}\
-    \ = \\frac{200}{\\sqrt{2}} \\approx 141{,}4\\ \\text{V}\n\\]\n\\[\nP = \\frac{141{,}4^{2}}{50} \\\
-    approx 200\\ \\text{W}\n\\]\n\nJednak w treści pytania wyraźnie zaznaczono „napięcie międzyszczytowe\
-    \ (peak to peak)”, więc należy stosować powyższą konwersję.\n\n---\n\n### Podsumowanie\n- **\\(V_{\\\
-    text{pp}} = 200\\;\\text{V}\\)** → \\(V_{\\text{rms}} \\approx 70{,}7\\;\\text{V}\\) → **\\(P = 100\\\
-    ;\\text{W}\\)** (odpowiedź B).  \n- Odpowiedź A wynikałaby z nieporozumienia i przyjęcia, że podane\
-    \ 200 V to wartość szczytowa, a nie peak‑to‑peak.\n\nDlatego Twój wybór B jest poprawny; prawdopodobnie\
-    \ w kluczu odpowiedzi popełniono błąd lub nieprecyzyjnie sformułowano pytanie."
-  - "**Dlaczego poprawna odpowiedź to 200 W, a nie 50 W?**  \n\n1. **Co oznacza PEP?**  \n   PEP (Peak\
-    \ Envelope Power) to moc, którą nadajnik dostarcza do obciążenia w **szczytowym** momencie przebiegu\
-    \ (przy maksymalnej amplitudzie). Dlatego w obliczeniach używamy **napięcia szczytowego** \\(V_{\\\
-    text{peak}}\\), a nie wartości skutecznej (RMS).\n\n2. **Zmierzone napięcie**  \n   - Na oscyloskopie\
-    \ odczytano napięcie **peak‑to‑peak**: \\(V_{\\text{pp}} = 200\\;\\text{V}\\).  \n   - Napięcie szczytowe\
-    \ to połowa napięcia peak‑to‑peak:  \n     \\[\n     V_{\\text{peak}} = \\frac{V_{\\text{pp}}}{2}\
-    \ = \\frac{200\\;\\text{V}}{2}=100\\;\\text{V}.\n     \\]\n\n3. **Wzór na moc przy napięciu szczytowym**\
-    \  \n   \\[\n   P_{\\text{PEP}} = \\frac{V_{\\text{peak}}^{2}}{R},\n   \\]\n   gdzie \\(R = 50\\;\\\
-    Omega\\) – sztuczne obciążenie.\n\n4. **Podstawienie**  \n   \\[\n   P_{\\text{PEP}} = \\frac{(100\\\
-    ;\\text{V})^{2}}{50\\;\\Omega}\n                 = \\frac{10\\,000\\;\\text{V}^{2}}{50\\;\\Omega}\n\
-    \                 = 200\\;\\text{W}.\n   \\]\n\n5. **Gdzie pojawia się błąd prowadzący do 50 W?**\
-    \  \n   - **Użycie wartości RMS** zamiast szczytowej:  \n     \\[\n     V_{\\text{rms}} = \\frac{V_{\\\
-    text{pp}}}{2\\sqrt{2}} \\approx 70.7\\;\\text{V}.\n     \\]  \n     Jeśli potem podzielimy jeszcze\
-    \ raz przez 2 (np. pomyłkowo wstawiając dodatkowy czynnik 2 w mianowniku), otrzymujemy:  \n     \\\
-    [\n     P = \\frac{V_{\\text{rms}}^{2}}{2R}\n       = \\frac{(70.7)^{2}}{2\\cdot 50}\n       \\approx\
-    \ 50\\;\\text{W}.\n     \\]  \n     To właśnie dało odpowiedź **C**.  \n\n   - **Inny typowy błąd**\
-    \ – użycie wzoru dla mocy średniej przy sinusoidzie:  \n     \\[\n     P_{\\text{avg}} = \\frac{V_{\\\
-    text{pp}}^{2}}{8R}=100\\;\\text{W},\n     \\]  \n     co prowadziłoby do odpowiedzi **B**.  \n\n \
-    \  - W obu przypadkach popełniono **przemnożenie lub podzielenie przez dodatkowy czynnik \\(\\sqrt{2}\\\
-    ) lub 2**, czyli zastosowano nieodpowiednią wartość napięcia.\n\n6. **Podsumowanie**  \n   - Dla PEP\
-    \ potrzebne jest **napięcie szczytowe** \\(V_{\\text{peak}}\\).  \n   - Z pomiaru \\(V_{\\text{pp}}=200\\\
-    ;\\text{V}\\) otrzymujemy \\(V_{\\text{peak}}=100\\;\\text{V}\\).  \n   - Moc wynosi więc \\(200\\\
-    ;\\text{W}\\) – odpowiedź **A**.  \n\n> **Kluczowy wniosek:** nie mieszaj wartości peak‑to‑peak, peak\
-    \ i RMS przy obliczaniu PEP. Używaj tylko \\(V_{\\text{peak}}\\)."
-  - "**Obliczenia**\n\n1. **Napięcie podane w zadaniu** – jest to wartość szczyt‑do‑szczytu (peak‑to‑peak)\
-    \ zmierzona na sztucznym obciążeniu 50 Ω i wynosi  \n\n\\[\nV_{pp}=200\\ \\text{V}.\n\\]\n\n2. **Wartość\
-    \ szczytowa (peak)** jest połową napięcia szczyt‑do‑szczytu  \n\n\\[\nV_{\\text{peak}}=\\frac{V_{pp}}{2}=\
-    \ \\frac{200\\ \\text{V}}{2}=100\\ \\text{V}.\n\\]\n\n3. **W pomiarach PEP (Peak Envelope Power)**\
-    \ przyjmuje się, że sygnał ma charakter prostokątny (kwadratowy). Dla takiego sygnału wartość skuteczna\
-    \ (RMS) jest równa wartości szczytowej:\n\n\\[\nV_{\\text{rms}} = V_{\\text{peak}} = 100\\ \\text{V}.\n\
-    \\]\n\n4. **Moc przy obciążeniu rezystancyjnym** \\(R = 50\\ \\Omega\\) wyliczamy ze wzoru\n\n\\[\n\
-    P = \\frac{V_{\\text{rms}}^{2}}{R}\n    = \\frac{(100\\ \\text{V})^{2}}{50\\ \\Omega}\n    = \\frac{10\\\
-    ,000\\ \\text{V}^2}{50\\ \\Omega}\n    = 200\\ \\text{W}.\n\\]\n\n**Wniosek**  \nNadajnik dostarcza\
-    \ moc PEP równą **200 W**, czyli odpowiedź **A** jest prawidłowa.  \n\n*(Uwaga: jeżeli przyjąć sinusoidalny\
-    \ kształt fali, otrzymalibyśmy 100 W. W kontekście PEP przyjmuje się jednak falę prostokątną, co prowadzi\
-    \ do wyniku 200 W.)*"
+  - "**Dlaczego odpowiedź A (200 W) jest błędna?**\n\nMoc przy obciążeniu rezystancyjnym wylicza się z\
+    \ wartości **rms** napięcia, a nie z amplitudy „peak‑to‑peak”.  \n\n---\n\n### 1. Z napięcia \\(V_{\\\
+    text{pp}}\\) do napięcia rms  \n\n\\[\nV_{\\text{pp}} = 200\\ \\text{V}\n\\]\n\n* amplituda (wartość\
+    \ szczytowa)  \n\n\\[\nV_{\\text{p}} = \\frac{V_{\\text{pp}}}{2}=100\\ \\text{V}\n\\]\n\n* wartość\
+    \ skuteczna (rms) dla sinusoidy  \n\n\\[\nV_{\\text{rms}} = \\frac{V_{\\text{p}}}{\\sqrt{2}}=\n\\\
+    frac{100}{\\sqrt{2}}\\approx 70{,}7\\ \\text{V}\n\\]\n\n---\n\n### 2. Moc dostarczona do rezystora\
+    \ 50 Ω  \n\n\\[\nP = \\frac{V_{\\text{rms}}^{2}}{R}\n     = \\frac{(70{,}7\\ \\text{V})^{2}}{50\\\
+    \ \\Omega}\n     \\approx \\frac{5000}{50}=100\\ \\text{W}\n\\]\n\nMożna to zapisać jednocześnie w\
+    \ postaci jednego wzoru:\n\n\\[\n\\boxed{P = \\frac{V_{\\text{pp}}^{2}}{8R}}\n\\qquad\n\\left(\\frac{200^{2}}{8\\\
+    cdot 50}=100\\ \\text{W}\\right)\n\\]\n\n---\n\n### 3. Gdzie popełniono błąd?\n\nUżytkownik prawdopodobnie\
+    \ użył wzoru\n\n\\[\nP = \\frac{V_{\\text{pp}}^{2}}{R}\n\\]\n\nco daje \\(200^{2}/50 = 800\\ \\text{W}\\\
+    ) – zupełnie inny wynik – lub pomylił **wartość szczytową** z **wartością skuteczną**, przyjmując\
+    \ \\(P = V_{\\text{p}}^{2}/R = 100^{2}/50 = 200\\ \\text{W}\\).  \n\nW obu przypadkach pominięto dzielnik\
+    \ \\(\\sqrt{2}\\) (lub 2 × 2 = 4) niezbędny do przejścia z amplitudy na wartość rms.\n\n---\n\n**Podsumowanie**\
+    \  \nPoprawna moc PEP przy podanym napięciu \\(V_{\\text{pp}} = 200\\ \\text{V}\\) i obciążeniu 50 Ω\
+    \ wynosi **100 W** (odpowiedź B). Odpowiedź A jest zbyt duża, bo nie uwzględnia konwersji do wartości\
+    \ skutecznej."
+  - "**Gratulacje!** Wybrałeś odpowiedź **B – 100 W**, co jest prawidłowe.\n\n---\n\n### Dlaczego tak\
+    \ jest?\n\nDane:  \n\n- napięcie szczyt‑do‑szczytu (peak‑to‑peak) \\(V_{pp}=200\\;\\text{V}\\)  \n\
+    - impedancja obciążenia \\(R=50\\;\\Omega\\)\n\n1. **Napięcie szczytowe**  \n   \\[\n   V_{\\text{peak}}\
+    \ = \\frac{V_{pp}}{2}= \\frac{200}{2}=100\\;\\text{V}\n   \\]\n\n2. **Napięcie skuteczne (RMS)** dla\
+    \ sinusoidy  \n   \\[\n   V_{\\text{rms}} = \\frac{V_{\\text{peak}}}{\\sqrt{2}} = \\frac{100}{\\sqrt{2}}\\\
+    approx 70{,}7\\;\\text{V}\n   \\]\n\n3. **Moc dostarczana do obciążenia**  \n   \\[\n   P = \\frac{V_{\\\
+    text{rms}}^{2}}{R}= \\frac{(70{,}7)^{2}}{50}= \\frac{5000}{50}=100\\;\\text{W}\n   \\]\n\nMożna też\
+    \ użyć bezpośredniego wzoru dla napięcia szczyt‑do‑szczytu:\n\n\\[\nP = \\frac{V_{pp}^{2}}{8R}= \\\
+    frac{200^{2}}{8\\cdot 50}= \\frac{40000}{400}=100\\;\\text{W}.\n\\]\n\nW obu przypadkach otrzymujemy\
+    \ **100 W**, więc odpowiedź B jest prawidłowa. \U0001F389"
+  - "**Dlaczego odpowiedź C (50 W) jest błędna?**  \n\nNa sztucznym obciążeniu \\(R = 50\\;\\Omega\\)\
+    \ zmierzono napięcie **peak‑to‑peak** \\(V_{\\text{pp}} = 200\\;\\text{V}\\).  \nAby obliczyć moc\
+    \ czynna, potrzebny jest **rms** napięcie, nie samą wartość szczytową.\n\n---\n\n### 1. Przejście\
+    \ od \\(V_{\\text{pp}}\\) do \\(V_{\\text{rms}}\\)\n\n\\[\n\\begin{aligned}\nV_{\\text{peak}} &= \\\
+    frac{V_{\\text{pp}}}{2}= \\frac{200\\;\\text{V}}{2}=100\\;\\text{V} \\\\[4pt]\nV_{\\text{rms}} &=\
+    \ \\frac{V_{\\text{peak}}}{\\sqrt{2}} = \\frac{100\\;\\text{V}}{\\sqrt{2}}\n               \\approx\
+    \ 70{,}71\\;\\text{V}\n\\end{aligned}\n\\]\n\nMożna to zapisać krócej:\n\n\\[\nV_{\\text{rms}} = \\\
+    frac{V_{\\text{pp}}}{2\\sqrt{2}} .\n\\]\n\n---\n\n### 2. Moc na rezystancji\n\nMoc czynna na rezystorze\
+    \ obliczamy ze wzoru\n\n\\[\nP = \\frac{V_{\\text{rms}}^{2}}{R}.\n\\]\n\nPodstawiając otrzymane \\\
+    (V_{\\text{rms}}\\):\n\n\\[\n\\begin{aligned}\nP &= \\frac{\\bigl(70{,}71\\;\\text{V}\\bigr)^{2}}{50\\\
+    ;\\Omega}\n   = \\frac{5000}{50}\n   = 100\\;\\text{W}.\n\\end{aligned}\n\\]\n\n---\n\n### 3. Skąd\
+    \ wzięła się pomyłka „50 W”?\n\nTypowy błąd polega na:\n\n1. **Użyciu \\(V_{\\text{peak}}\\) zamiast\
+    \ \\(V_{\\text{rms}}\\)**  \n\n   \\[\n   P = \\frac{V_{\\text{peak}}^{2}}{2R}\n     = \\frac{100^{2}}{2\\\
+    cdot 50}\n     = 50\\;\\text{W}.\n   \\]\n\n   Ten wzór wynika z faktu, że moc średnia sinusoidy to\
+    \ \\(\\frac{V_{\\text{peak}}^{2}}{2R}\\).  \n   Gdy pomylimy się i przyjmiemy \\(V_{\\text{peak}}\\\
+    ) jako wartość efektywną, otrzymujemy dokładnie 50 W – to właśnie odpowiedź C.\n\n2. **Albo potraktowanie\
+    \ połowy napięcia szczyt‑to‑peak (\\(V_{\\text{pp}}/2\\)) jako rms**, co prowadzi do tego samego wyniku.\n\
+    \nObie pomyłki pomijają czynnik \\(\\sqrt{2}\\), czyli różnicę między wartością szczytową a wartością\
+    \ skuteczną.\n\n---\n\n### 4. Wzór bezpośredni od \\(V_{\\text{pp}}\\)\n\nMożna też obliczyć moc od\
+    \ razu z napięcia peak‑to‑peak:\n\n\\[\n\\boxed{P = \\frac{V_{\\text{pp}}^{2}}{8R}}\n\\]\n\n\\[\n\
+    P = \\frac{200^{2}}{8 \\times 50}\n  = \\frac{40000}{400}\n  = 100\\;\\text{W}.\n\\]\n\n---\n\n**Podsumowanie**\
+    \ – prawidłowa moc wynosi **100 W** (odpowiedź B).  \nOdpowiedź C wynika z nieprawidłowego przyjęcia\
+    \ wartości szczytowej za rms i pominięcia czynnika \\(\\sqrt{2}\\)."
+  - "**Obliczenie mocy PEP**\n\n1. **Znalezienie wartości szczytowej (peak)**  \n\n   Dla fali sinusoidalnej:\
+    \  \n\n   \\[\n   V_{\\text{pp}} = 2\\,V_{\\text{peak}}\n   \\]\n\n   \\[\n   V_{\\text{peak}} = \\\
+    frac{V_{\\text{pp}}}{2}= \\frac{200\\ \\text{V}}{2}=100\\ \\text{V}\n   \\]\n\n2. **Przejście na wartość\
+    \ skuteczną (RMS)**  \n\n   \\[\n   V_{\\text{rms}} = \\frac{V_{\\text{peak}}}{\\sqrt{2}} = \\frac{100}{\\\
+    sqrt{2}}\\ \\text{V}\n   \\approx 70{,}71\\ \\text{V}\n   \\]\n\n3. **Obliczenie mocy na obciążeniu\
+    \ 50 Ω**  \n\n   \\[\n   P_{\\text{PEP}} = \\frac{V_{\\text{rms}}^{2}}{R}\n                 = \\frac{(70{,}71\\\
+    \ \\text{V})^{2}}{50\\ \\Omega}\n                 = \\frac{5000}{50}\\ \\text{W}\n               \
+    \  = 100\\ \\text{W}\n   \\]\n\n---\n\n**Wynik:** moc PEP wynosi **100 W**, czyli prawidłowa odpowiedź\
+    \ to **B**."
 - text: 42\. Jaka powinna być częstotliwość próbkowania sygnału o maksymalnej częstotliwości składowej
     50 kHz, aby poprawnie można było ten sygnał odtworzyć?
   answers:
@@ -1245,50 +1242,52 @@ questions:
   - 200 W
   - 100 W
   - 50 W
-  correct_index: 0
+  correct_index: 1
   explanations:
-  - "**Gratulacje!**  \n\nWybrałeś odpowiedź **A – 200 W**, co jest prawidłowe.\n\nDla obciążenia rezystancyjnego\
-    \ moc wyjściowa PEP wyraża się wzorem  \n\n\\[\nP = \\frac{U_{\\text{max}}^{2}}{R_{\\text{obc}}}\n\
-    \\]\n\nPodstawiając dane z zadania:\n\n\\[\nP = \\frac{(100\\ \\text{V})^{2}}{50\\ \\Omega} = \\frac{10\\\
-    ,000}{50}=200\\ \\text{W}\n\\]\n\nZatem moc przy maksymalnym napięciu 100 V i impedancji 50 Ω wynosi\
-    \ **200 W**. Świetna robota!"
-  - "**Dlaczego prawidłowa odpowiedź to 200 W, a nie 100 W**\n\n1. **Co oznacza podane napięcie?**  \n\
-    \   W treści jest napisane *„napięcie maksymalne Uₘₐₓ = 100 V”*.  \n   To jest **napięcie szczytowe\
-    \ (peak)**, czyli największa wartość chwilowa sinusoidy.  \n\n2. **Jak obliczyć moc przy napięciu\
-    \ szczytowym?**  \n   Dla obciążenia rezystancyjnego moc PEP (Peak Envelope Power) definiuje się jako\n\
-    \n   \\[\n   P_{\\text{PEP}} = \\frac{U_{\\text{peak}}^{2}}{R_{\\text{L}}}\n   \\]\n\n   gdzie \\\
-    (U_{\\text{peak}}\\) to napięcie szczytowe, a \\(R_{\\text{L}}\\) – impedancja obciążenia.\n\n3. **Podstawiamy\
-    \ dane**\n\n   \\[\n   U_{\\text{peak}} = 100\\;\\text{V},\\qquad R_{\\text{L}} = 50\\;\\Omega\n \
-    \  \\]\n\n   \\[\n   P_{\\text{PEP}} = \\frac{100^{2}}{50}\n                 = \\frac{10\\,000}{50}\n\
-    \                 = 200\\;\\text{W}\n   \\]\n\n4. **Gdzie wzięło się 100 W?**  \n   Gdyby użyć **wartości\
-    \ skutecznej (RMS)** napięcia, otrzymalibyśmy\n\n   \\[\n   U_{\\text{rms}} = \\frac{U_{\\text{peak}}}{\\\
-    sqrt{2}} = \\frac{100}{\\sqrt{2}} \\approx 70.7\\;\\text{V}\n   \\]\n\n   \\[\n   P_{\\text{avg}}\
-    \ = \\frac{U_{\\text{rms}}^{2}}{R_{\\text{L}}}\n                  = \\frac{70.7^{2}}{50}\n       \
-    \           = 100\\;\\text{W}\n   \\]\n\n   To jest **średnia moc ciągła**, a nie moc szczytowa. W\
-    \ pytaniu jednak wyraźnie mowa o **PEP**, czyli właśnie mocy przy napięciu szczytowym.\n\n5. **Podsumowanie**\
-    \  \n   - \\(U_{\\max}=100\\;\\text{V}\\) → używamy go w formule \\(P=U_{\\max}^{2}/R\\).  \n   -\
-    \ Dla obciążenia 50 Ω wynik to **200 W**.  \n   - 100 W to moc średnia (RMS), nie to, o co pyta pytanie.\n\
-    \nDlatego zaznaczenie odpowiedzi **B (100 W)** jest niepoprawne, a prawidłowa jest **A (200 W)**."
-  - "**Dlaczego odpowiedź C (50 W) jest niepoprawna?**  \n\nPEP – *peak envelope power* – określa moc\
-    \ przy **szczytowym** napięciu wyjściowym.  \nDlatego używamy wzoru z napięciem szczytowym, a nie\
-    \ z wartością skuteczną (RMS).\n\n\\[\nP_{\\text{PEP}}=\\frac{U_{\\max }^{2}}{R_{\\text{obc}}}\n\\\
-    ]\n\nPodstawiając dane:\n\n\\[\nU_{\\max}=100\\ \\text{V},\\qquad R_{\\text{obc}}=50\\ \\Omega\n\\\
-    ]\n\n\\[\nP_{\\text{PEP}}=\\frac{(100\\ \\text{V})^{2}}{50\\ \\Omega}\n               =\\frac{10\\\
-    ,000\\ \\text{V}^{2}}{50\\ \\Omega}\n               =200\\ \\text{W}\n\\]\n\n---\n\n### Co by dało\
-    \ 50 W?\n\n\\[\nP=50\\ \\text{W}\\;\\Longrightarrow\\;\nU_{\\max}= \\sqrt{P\\cdot R}= \\sqrt{50\\\
-    \ \\text{W}\\times 50\\ \\Omega}=50\\ \\text{V}\n\\]\n\nCzyli moc 50 W odpowiadałaby **50 V**, a nie\
-    \ 100 V podanym w treści.\n\n---\n\n### Najczęstszy błąd\n\nCzasem myli się PEP z mocą średnią (wartość\
-    \ RMS). Dla sinusoidy:\n\n\\[\nP_{\\text{Średnia}}=\\frac{U_{\\max }^{2}}{2R}= \\frac{100^{2}}{2\\\
-    cdot 50}=100\\ \\text{W}\n\\]\n\nJednak pytanie dotyczy właśnie **PEP**, czyli mocy przy maksymalnym\
-    \ (szczytowym) napięciu, więc prawidłowa wartość to **200 W** (odpowiedź A)."
-  - "**Dlaczego moc PEP wynosi 200 W**\n\nMoc przy maksymalnym napięciu (PEP – *Peak Envelope Power*)\
-    \ obliczamy ze wzoru\n\n\\[\nP_{\\text{PEP}}=\\frac{U_{\\max }^{2}}{R_{\\text{obc}}}\n\\]\n\ngdzie\
-    \  \n\n* \\(U_{\\max}=100\\ \\text{V}\\) – maksymalne (szczytowe) napięcie zmierzone na wyjściu, \
-    \ \n* \\(R_{\\text{obc}}=50\\ \\Omega\\) – impedancja obciążenia.\n\nPodstawiając liczby:\n\n\\[\n\
-    P_{\\text{PEP}}=\\frac{(100\\ \\text{V})^{2}}{50\\ \\Omega}\n            =\\frac{10\\,000\\ \\text{V}^{2}}{50\\\
-    \ \\Omega}\n            =200\\ \\text{W}\n\\]\n\nDlatego prawidłową odpowiedzią jest **A. 200 W**.\
-    \  \n\n*Uwaga*: PEP odnosi się do mocy przy szczytowym napięciu, a nie do mocy średniej (która w przypadku\
-    \ sygnału sinusoidalnego byłaby o połowę mniejsza)."
+  - "**Dlaczego wybrana odpowiedź A (200 W) jest nieprawidłowa?**\n\nMoc przyłożona do rezystancyjnego\
+    \ obciążenia wyliczamy ze wzoru  \n\n\\[\nP=\\frac{U_{\\text{rms}}^{2}}{R}\n\\]\n\ngdzie \\(U_{\\\
+    text{rms}}\\) jest wartością skuteczną (RMS) napięcia.  \n\nW treści zadania podano **napięcie maksymalne**\
+    \ \\(U_{\\max}=100\\;\\text{V}\\).  \nDla sinusoidy  \n\n\\[\nU_{\\text{rms}}=\\frac{U_{\\max}}{\\\
+    sqrt{2}}\n\\]\n\nStąd:\n\n\\[\nP_{\\text{PEP}}=\\frac{U_{\\max}^{2}}{2R}\n          =\\frac{100^{2}}{2\\\
+    cdot 50}\n          =\\frac{10\\,000}{100}\n          =100\\;\\text{W}\n\\]\n\n---\n\n### Co było\
+    \ przyczyną pomyłki?\n- Użyto wartości szczytowej \\(U_{\\max}\\) zamiast skutecznej.\n- Wzór \\(P\
+    \ = U_{\\max}^{2}/R\\) daje moc szczytową (200 W), ale **PEP (Peak Envelope Power)** definiuje się\
+    \ właśnie jako moc wyznaczoną ze skutecznej wartości napięcia, czyli \\(U_{\\max}^{2}/(2R)\\).\n\n\
+    Dlatego prawidłowa odpowiedź to **B – 100 W**."
+  - "**Gratulacje!** \U0001F389  \n\nTwoja odpowiedź **B – 100 W** jest prawidłowa.  \n\nMoc dostarczana\
+    \ do rezystancyjnego obciążenia wyliczamy ze wzoru  \n\n\\[\nP = \\frac{U_{\\text{rms}}^{2}}{R},\n\
+    \\]\n\ngdzie \\(U_{\\text{rms}}\\) jest wartością skuteczną napięcia.  \nPodany w zadaniu napięcie\
+    \ \\(U_{\\max}=100\\ \\text{V}\\) jest wartością szczytową (peak). Przekształcamy je na wartość skuteczną:\n\
+    \n\\[\nU_{\\text{rms}} = \\frac{U_{\\max}}{\\sqrt{2}} = \\frac{100\\ \\text{V}}{\\sqrt{2}} \\approx\
+    \ 70{,}7\\ \\text{V}.\n\\]\n\nPodstawiając do wzoru:\n\n\\[\nP = \\frac{(70{,}7\\ \\text{V})^{2}}{50\\\
+    \ \\Omega}\n   = \\frac{10000\\ \\text{V}^2}{2 \\times 50\\ \\Omega}\n   = \\frac{10000}{100}\n  \
+    \ = 100\\ \\text{W}.\n\\]\n\nDlatego moc PEP przy podanym napięciu maksymalnym wynosi **100 W**, czyli\
+    \ odpowiedź B."
+  - "**Dlaczego odpowiedź C (50 W) jest nieprawidłowa?**\n\n1. **Co mierzy oscyloskop?**  \n   Na wejściu\
+    \ przyjmuje się, że wskazany „napięcie maksymalne” \\(U_{\\max}=100\\ \\text{V}\\) jest **wartością\
+    \ szczytową (peak)** sinusoidy, a nie wartością skuteczną (RMS).\n\n2. **PEP (Peak Envelope Power)**\
+    \ – moc średnia wyjściowa przy maksymalnym obciążeniu.  \n   Dla sygnału sinusoidalnego moc wyliczamy\
+    \ ze **wartości skutecznej** napięcia:\n\n\\[\nP = \\frac{U_{\\text{rms}}^{2}}{R}\n\\]\n\n3. **Przeliczenie\
+    \ z wartości szczytowej na RMS**\n\n\\[\nU_{\\text{rms}} = \\frac{U_{\\max}}{\\sqrt{2}}\n\\]\n\n4.\
+    \ **Obliczenia**\n\n\\[\n\\begin{aligned}\nU_{\\text{rms}} &= \\frac{100\\ \\text{V}}{\\sqrt{2}} \\\
+    approx 70.71\\ \\text{V} \\\\\nP_{\\text{PEP}} &= \\frac{(70.71\\ \\text{V})^{2}}{50\\ \\Omega}\n\
+    \               = \\frac{10000/2}{50}\n               = \\frac{5000}{50}\n               = 100\\ \\\
+    text{W}\n\\end{aligned}\n\\]\n\n5. **Gdzie wzięła się wartość 50 W?**  \n   Otrzymalibyśmy 50 W, gdybyśmy\
+    \ podzielili \\(U_{\\max}\\) jeszcze raz przez \\(\\sqrt{2}\\) (czyli użyli \\(U_{\\max}/2\\) zamiast\
+    \ \\(U_{\\max}/\\sqrt{2}\\)). To podwójny błąd konwersji z wartości szczytowej na skuteczną.\n\n---\n\
+    \n**Podsumowanie**  \nAby uzyskać prawidłową moc PEP, trzeba:\n\n1. Przekształcić zmierzone \\(U_{\\\
+    max}\\) do wartości RMS (\\(U_{\\max}/\\sqrt{2}\\)).  \n2. Zastosować wzór \\(P = U_{\\text{rms}}^{2}/R\\\
+    ).\n\nW ten sposób otrzymujemy \\(P = 100\\ \\text{W}\\) – odpowiedź **B**. Odpowiedź **C** wynika\
+    \ z niewłaściwego przeliczenia napięcia."
+  - "**Obliczenie mocy wyjściowej PEP**\n\nNa wyjściu nadajnika mierzymy **napięcie maksymalne** (szczytowe)\
+    \  \n\n\\[\nU_{\\text{max}} = 100\\ \\text{V}\n\\]\n\nDla sinusoidy moc szczytowa (PEP) wyraża się\
+    \ przez moc średnią (RMS) oraz impedancję obciążenia:\n\n\\[\nP_{\\text{PEP}} = \\frac{U_{\\text{rms}}^{2}}{R_{\\\
+    text{L}}}\n\\]\n\n1. **Przejście z napięcia szczytowego na RMS**\n\n\\[\nU_{\\text{rms}} = \\frac{U_{\\\
+    text{max}}}{\\sqrt{2}} = \\frac{100\\ \\text{V}}{1.414} \\approx 70.71\\ \\text{V}\n\\]\n\n2. **Obliczenie\
+    \ mocy przy obciążeniu \\(R_{\\text{L}} = 50\\ \\Omega\\)**  \n\n\\[\nP_{\\text{PEP}} = \\frac{(70.71\\\
+    \ \\text{V})^{2}}{50\\ \\Omega}\n                = \\frac{5000\\ \\text{V}^2}{50\\ \\Omega}\n    \
+    \            = 100\\ \\text{W}\n\\]\n\n---\n\n**Wynik:** moc szczytowa (PEP) wynosi **100 W**, więc\
+    \ poprawna odpowiedź to **B**."
 - text: '93\. Wzmacniacz jest przesterowany kiedy:'
   answers:
   - ma za duże napięcie zasilania
@@ -4467,115 +4466,45 @@ questions:
   - 25%
   - 50%
   - 75%
-  correct_index: 1
+  correct_index: 0
   explanations:
-  - "**Dlaczego wybrana odpowiedź A (25 %) jest prawidłowa**\n\nKabel ma podane tłumienie **12 dB na 100 m**\
-    \ przy częstotliwości 144 MHz.  \nTłumienie w dB jest definiowane jako  \n\n\\[\nL_{\\text{dB}} =\
-    \ 10\\log_{10}\\!\\left(\\frac{P_{\\text{in}}}{P_{\\text{out}}}\\right)\n\\]\n\ngdzie \\(P_{\\text{in}}\\\
-    ) i \\(P_{\\text{out}}\\) to moc na początku i na końcu odcinka kabla.\n\n---\n\n### 1. Przeliczenie\
-    \ 12 dB na współczynnik mocy\n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{12}{10}}=10^{-1.2}\\\
-    approx 0{,}0631\n\\]\n\nPo przejściu **całych 100 m** moc spada do ok. 6,3 % początkowej wartości.\n\
-    \n---\n\n### 2. Utrata na 50 m (połowa długości)\n\nTłumienie w dB jest **logarytmiczne**, więc przy\
-    \ podziale odcinka na połowę dzielimy liczbę dB **przez dwa**:\n\n\\[\nL_{50\\text{ m}} = \\frac{12\\\
-    ;\\text{dB}}{2}=6\\;\\text{dB}\n\\]\n\nTeraz ponownie zamieniamy 6 dB na stosunek mocy:\n\n\\[\n\\\
-    frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{6}{10}}=10^{-0.6}\\approx 0{,}251\n\\]\n\nOtrzymujemy\
-    \ więc **≈ 25 %** mocy wejściowej.\n\n---\n\n### 3. Liczbowy wynik dla podanych parametrów\n\n\\[\n\
-    P_{\\text{in}} = 100\\ \\text{W}\n\\qquad\nP_{\\text{out}} = 100\\ \\text{W}\\times0{,}251 \\approx\
-    \ 25\\ \\text{W}\n\\]\n\nStąd **część mocy dostarczona do anteny wynosi 25 %** (≈ 25 W z 100 W).\n\
-    \n---\n\n## Gdzie leży błąd w kluczu odpowiedzi?\n\nKlucz podaje odpowiedź **B – 50 %**, co odpowiadałoby\
-    \ stracie **3 dB** (połowie mocy).  \nAby uzyskać 3 dB przy podanej charakterystyce kabla, jego tłumienie\
-    \ musiałoby wynosić **6 dB na 100 m**, a nie 12 dB.  \n\nDlatego najprawdopodobniej w kluczu nastąpiła\
-    \ pomyłka (przyjęto, że 12 dB to „całkowita” utrata mocy, a nie wartość w skali logarytmicznej) albo\
-    \ pomylono jednostki (np. zamieniono dB na dB/100 m).  \n\n**Podsumowanie:** Twoja odpowiedź A (25 %)\
-    \ jest prawidłowa; poprawna odpowiedź w kluczu powinna brzmieć 25 %, a nie 50 %."
-  - "**Gratulacje!** Odpowiedź **B – 50 %** jest prawidłowa.\n\nKabel o długości 100 m powoduje tłumienie\
-    \ 12 dB przy 144 MHz.  \nTłumienie w dB jest proporcjonalne do długości, więc dla połowy długości\
-    \ (50 m) otrzymujemy:\n\n\\[\n\\text{Tłumienie}_{50\\text{ m}} = \\frac{50}{100}\\times12\\;\\text{dB}=6\\\
-    ;\\text{dB}.\n\\]\n\nWartość 6 dB oznacza, że moc spada o połowę (każde 3 dB to zmiana o czynnik 2).\
-    \ Dlatego po przejściu przez 50 m kabla pozostaje **50 %** początkowej mocy 100 W, czyli do anteny\
-    \ dociera **50 W**.\n\nJeszcze raz – świetna robota! \U0001F389"
-  - "**Dlaczego odpowiedź C (75 %) jest błędna?**  \n\n1. **Co oznacza podane tłumienie**  \n   - „12 dB\
-    \ przy długości 100 m” to **strata mocy** w dB, a nie woltów.  \n   - Zależność między stratą w dB\
-    \ a stosunkiem mocy jest  \n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{L_{\\text{dB}}}{10}}\
-    \ .\n\\]\n\n2. **Obliczamy stratę dla rzeczywistej długości 50 m**  \n\n\\[\nL_{50\\text{ m}} = \\\
-    frac{50\\text{ m}}{100\\text{ m}}\\times 12\\text{ dB}=6\\text{ dB}.\n\\]\n\n3. **Konwersja 6 dB na\
-    \ współczynnik mocy**\n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{6}{10}}\n=10^{-0.6}\\\
-    approx 0.251.\n\\]\n\n   Czyli **do anteny dociera ok. 25 % mocy** (≈ 25 W z 100 W).\n\n4. **Gdzie\
-    \ wzięła się odpowiedź 50 %?**  \n   Niektórzy popełniają dwa typowe błędy:\n\n   * mylą **dB mocy**\
-    \ z **dB napięcia** (gdzie 6 dB ≈ 0,5 V, a nie 0,5 W),  \n   * przyjmują, że „6 dB ≈ 50 %” – to uproszczona\
-    \ reguła, ale dotyczy **napięcia**, nie mocy.\n\n   Dlatego odpowiedź **B (50 %)** jest wynikiem takiego\
-    \ uproszczenia, a **C (75 %)** wynikałoby z jeszcze większego błędu (np. uznania, że –6 dB to utrata\
-    \ 25 %).  \n\n5. **Podsumowanie**  \n\n| Krok | Wartość |\n|------|---------|\n| Tłumienie na 100 m\
-    \ | 12 dB |\n| Tłumienie na 50 m | 6 dB |\n| Współczynnik mocy | \\(10^{-6/10}\\approx0{,}25\\) |\n\
-    | Moc przy antenie | \\(0{,}25\\times100\\text{ W}=25\\text{ W}\\) |\n| Procent mocy | **25 %** |\n\
-    \nZatem **odpowiedź C (75 %) jest niepoprawna**, a prawidłowy wynik, przy użyciu właściwej definicji\
-    \ dB, to **25 %** (w standardowym kluczu odpowiedzi – 50 % – wynika z uproszczenia, które myli dB\
-    \ mocy z dB napięcia)."
-  - '**Obliczenia**
-
-
-    1. Tłumienie podane w zadaniu jest wyrażone w decybelach (dB) i odnosi się do **całego** kabla o długości
-    100 m:
-
-
-    \[
-
-    \alpha_{100\text{ m}} = 12\ \text{dB}
-
-    \]
-
-
-    2. Kabel używany w układzie ma długość jedynie 50 m, czyli połowę długości podanej w charakterystyce.
-    Tłumienie skaluje się w przybliżeniu liniowo z długością, więc:
-
-
-    \[
-
-    \alpha_{50\text{ m}} = \frac{50}{100}\times 12\ \text{dB}=6\ \text{dB}
-
-    \]
-
-
-    3. Związek między tłumieniem (dB) a stosunkiem mocy jest:
-
-
-    \[
-
-    \alpha\;[\text{dB}] = 10\log_{10}\!\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right)
-
-    \]
-
-
-    Stąd dla \(\alpha = -6\ \text{dB}\):
-
-
-    \[
-
-    \frac{P_{\text{out}}}{P_{\text{in}}}=10^{-6/10}=10^{-0.6}\approx 0,5
-
-    \]
-
-
-    Oznacza to, że moc na wyjściu kabla jest **ok. 50 %** mocy na wejściu.
-
-
-    4. Nadawana moc wynosi 100 W, więc moc, która rzeczywiście dotrze do anteny, to:
-
-
-    \[
-
-    P_{\text{antenna}} = 0{,}5 \times 100\ \text{W}=50\ \text{W}
-
-    \]
-
-
-    **Wniosek**
-
-
-    Z 100 W nadawanych, **około 50 %** (czyli 50 W) zostanie doprowadzone do anteny.
-
-
-    **Poprawna odpowiedź:** **B. 50 %**.'
+  - "**Gratulacje!**  \n\nOdpowiedź **A – 25 %** jest prawidłowa.\n\nKabel ma tłumienie **12 dB** na **100 m**.\
+    \ Dla połowy tej długości (50 m) tłumienie wynosi połowę:\n\n\\[\n\\text{Tłumienie}_{50\\text{ m}}\
+    \ = \\frac{12\\ \\text{dB}}{2}=6\\ \\text{dB}.\n\\]\n\nPrzeliczając straty w dB na stosunek mocy:\n\
+    \n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-\\frac{6}{10}} \\approx 0.251 \\approx 25\\%.\n\
+    \\]\n\nZatem z początkowych **100 W** do anteny dotrze około **25 W**, czyli **25 %** mocy."
+  - "**Dlaczego odpowiedź B (50 %) jest błędna?**\n\nKabel koncentryczny ma podane tłumienie **12 dB na\
+    \ 100 m** przy 144 MHz.  \nTłumienie jest liniowe w długości, więc na połowie odcinka (50 m) będzie:\n\
+    \n\\[\n\\text{TL}_{50\\text{ m}} = \\frac{12\\;\\text{dB}}{100\\;\\text{m}} \\times 50\\;\\text{m}=6\\\
+    ;\\text{dB}\n\\]\n\n---\n\n### Przeliczenie tłumienia dB na stosunek mocy\n\nDla mocy obowiązuje zależność\
+    \  \n\n\\[\n\\frac{P_{\\text{wyj}}}{P_{\\text{wej}}}=10^{-\\frac{\\text{TL}}{10}}\n\\]\n\nPodstawiając\
+    \ TL = 6 dB:\n\n\\[\n\\frac{P_{\\text{na antenie}}}{P_{\\text{nadawcy}}}=10^{-\\frac{6}{10}}\n=10^{-0.6}\\\
+    approx 0.251\n\\]\n\nCzyli **≈ 25 %** początkowej mocy 100 W dociera do anteny (≈ 25 W).\n\n---\n\n\
+    ### Gdzie wpadło się w pułapkę?\n\nWybór **50 %** zakładałby, że 6 dB odpowiada połowie mocy, ale\
+    \ w rzeczywistości:\n\n- **3 dB** ≈ **½** (0,5) mocy,\n- **6 dB** ≈ **¼** (0,25) mocy,\n- **10 dB**\
+    \ ≈ **1/10** (0,1) mocy.\n\nDlatego przy 6 dB tłumienia moc spada o czynnik **4**, a nie **2**.\n\n\
+    **Podsumowanie**  \nTłumienie 6 dB na 50 m oznacza, że do anteny trafia **≈ 25 %** mocy nadawcy, więc\
+    \ poprawna odpowiedź to **A – 25 %**."
+  - "**Dlaczego odpowiedź C (75 %) jest niepoprawna**\n\nKabel ma podane **tłumienie 12 dB na całe 100 m**\
+    \ przy 144 MHz.  \nOznacza to, że moc po przejściu całego 100‑mowego odcinka zostaje zredukowana o\
+    \ czynnik\n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\text{in}}}=10^{-12/10}=10^{-1.2}\\approx0.063.\n\\\
+    ]\n\nJednak w zadaniu odcinek pomiędzy nadajnikiem a anteną ma długość **50 m** – dokładnie połowę\
+    \ całej długości kabla.  \nZakładamy, że tłumienie jest liniowo proporcjonalne do długości, więc:\n\
+    \n\\[\nL_{50\\text{ m}} = \\frac{50\\text{ m}}{100\\text{ m}}\\times12\\text{ dB}=6\\text{ dB}.\n\\\
+    ]\n\nTeraz przeliczamy 6 dB na stosunek mocy:\n\n\\[\n\\frac{P_{\\text{antenna}}}{P_{\\text{nadawca}}}=10^{-6/10}=10^{-0.6}\\\
+    approx0.251\\;(=25\\%).\n\\]\n\nZatem jedynie **≈ 25 %** mocy 100 W (≈ 25 W) dotrze do anteny.\n\n\
+    ---\n\n### Gdzie najczęściej popełnia się błąd?\n\n- **Mylenie dB z procentami** – 12 dB nie znaczy\
+    \ „12 %”.  \n- **Użycie całego tłumienia (12 dB) dla połowy długości** – przy 50 m należy najpierw\
+    \ przeliczyć dB proporcjonalnie (6 dB), a dopiero potem zamienić na procenty.\n\nStąd odpowiedź **C\
+    \ – 75 %** wynika z niewłaściwego przeliczenia i jest nieprawidłowa. Poprawna jest **A – 25 %**."
+  - "**Obliczenia**\n\nAttenuation of the coaxial cable is given as  \n\n\\[\n12\\ \\text{dB}\\;\\text{for}\\\
+    ;100\\ \\text{m}.\n\\]\n\nThe used length is only \\(50\\ \\text{m}\\), i.e. half of the reference\
+    \ length, therefore the attenuation scales linearly (for the same frequency and cable type):\n\n\\\
+    [\n\\alpha_{50\\text{m}} = \\frac{50\\ \\text{m}}{100\\ \\text{m}}\\times 12\\ \\text{dB}=6\\ \\text{dB}.\n\
+    \\]\n\nA loss of \\(L\\) decibels corresponds to a power ratio\n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\\
+    text{in}}}=10^{-L/10}.\n\\]\n\nStosując \\(L = 6\\ \\text{dB}\\):\n\n\\[\n\\frac{P_{\\text{out}}}{P_{\\\
+    text{in}}}=10^{-6/10}=10^{-0.6}\\approx 0.251.\n\\]\n\nCzyli do anteny zostanie doprowadzona **około\
+    \ 25 %** mocy nadawczej.\n\n---\n\n**Wynik:** A – 25 % mocy."
 - text: 223\. Dlaczego modulacja amplitudy AM (A3E) jest obecnie rzadziej używana od SSB (J3E)?
   answers:
   - gdyż ma znacznie mniejszą sprawność energetyczną i szerokość emitowanego sygnału jest dwukrotnie większa
