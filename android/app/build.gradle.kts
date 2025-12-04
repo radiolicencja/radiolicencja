@@ -11,7 +11,7 @@ val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("key.properties")
 val hasReleaseKeystore = keystorePropertiesFile.exists()
 if (hasReleaseKeystore) {
-    keystoreProperties.load(keystorePropertiesFile.inputStream())
+    keystorePropertiesFile.inputStream().use { keystoreProperties.load(it) }
 }
 
 android {
@@ -41,9 +41,8 @@ android {
     signingConfigs {
         create("release") {
             if (hasReleaseKeystore) {
-                storeFile = file(
-                    keystoreProperties["storeFile"] ?: error("Missing storeFile in key.properties")
-                )
+                storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+                    ?: error("Missing storeFile in key.properties")
                 storePassword = keystoreProperties["storePassword"]?.toString()
                     ?: error("Missing storePassword in key.properties")
                 keyAlias = keystoreProperties["keyAlias"]?.toString()
@@ -56,13 +55,21 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName(
-                if (hasReleaseKeystore) "release" else "debug"
-            )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }
 
 flutter {
     source = "../.."
+}
+
+val isReleaseTaskRequested = gradle.startParameter.taskRequests.any { request ->
+    request.args.any { it.contains("Release", ignoreCase = true) }
+}
+
+if (!hasReleaseKeystore && isReleaseTaskRequested) {
+    throw GradleException(
+        "Missing key.properties for release signing. Provide the Play upload keystore credentials."
+    )
 }
