@@ -203,6 +203,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aboutWebsiteValue => 'https://radiolicencja.pl';
 
   @override
+  String get aboutPrivacyLabel => 'Privacy policy';
+
+  @override
+  String get aboutPrivacyValue => 'https://radiolicencja.pl/promo/privacy-policy-en.html';
+
+  @override
   String get aboutLinkOpenError => 'Couldn\'t open link. Copy and paste instead.';
 
   @override

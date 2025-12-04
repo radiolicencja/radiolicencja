@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Radiolicencja – Polityka prywatności" />
+  <title>Radiolicencja – Polityka prywatności</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Manrope', 'ui-sans-serif', 'system-ui'] },
+          colors: { brand: '#0EA5E9', brandDark: '#0b80b7' },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <div class="relative min-h-screen overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand/20 via-slate-900 to-slate-950"></div>
+    <div class="relative mx-auto flex max-w-4xl flex-col gap-10 px-6 py-10">
+      <header class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand text-xl font-bold text-slate-900 shadow-lg shadow-brand/30">R</div>
+          <div>
+            <p class="text-xl font-semibold">Radiolicencja</p>
+            <p class="text-sm text-slate-300">Polityka prywatności</p>
+          </div>
+        </div>
+        <div class="flex gap-3 text-sm font-semibold">
+          <a class="rounded-full border border-white/15 px-4 py-2 text-slate-200 hover:border-white/40 hover:text-white" href="privacy-policy-en.html">English</a>
+          <a class="rounded-full bg-white px-4 py-2 text-slate-900 shadow-lg hover:-translate-y-0.5 hover:shadow-xl" href="index.html">Powrót do strony</a>
+        </div>
+      </header>
+
+      <main class="space-y-10 rounded-3xl border border-white/10 bg-slate-900/60 p-6 shadow-2xl shadow-brand/10 backdrop-blur">
+        <section class="space-y-2">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brand">Obowiązuje od: styczeń 2025</p>
+          <h1 class="text-3xl font-bold sm:text-4xl">Jak chronimy Twoje dane</h1>
+          <p class="text-lg text-slate-200">Radiolicencja to aplikacja do nauki pytań egzaminacyjnych. Działa lokalnie na Twoim urządzeniu i nie gromadzi danych osobowych.</p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-semibold">Jakie dane zapisujemy</h2>
+          <ul class="list-disc space-y-2 pl-5 text-slate-200">
+            <li>Nie wymagamy konta ani logowania. Nie zbieramy imienia, adresu e-mail ani innych identyfikatorów.</li>
+            <li>Postępy nauki (trafione/nie trafione odpowiedzi, ostatnie odtworzenie pytania, poziom opanowania) zapisujemy lokalnie na Twoim urządzeniu w pamięci aplikacji.</li>
+            <li>Nie używamy analityki ani sieci reklamowych.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-semibold">Łączność i uprawnienia</h2>
+          <ul class="list-disc space-y-2 pl-5 text-slate-200">
+            <li>Aplikacja działa offline; dostęp do sieci służy jedynie do standardowej dystrybucji w sklepie oraz do otwierania linków zewnętrznych wybranych przez Ciebie (np. App Store lub Google Play).</li>
+            <li>Nie prosimy o dostęp do kontaktów, lokalizacji, mikrofonu, aparatu ani zdjęć.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-semibold">Retencja i kontrola</h2>
+          <ul class="list-disc space-y-2 pl-5 text-slate-200">
+            <li>Wszystkie dane o postępach pozostają na urządzeniu. Możesz je wyczyścić w aplikacji (reset postępów) lub odinstalowując aplikację.</li>
+            <li>Po reinstalacji lub zmianie urządzenia dane nie synchronizują się automatycznie.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-semibold">Dzieci</h2>
+          <p class="text-slate-200">Aplikacja jest przeznaczona dla osób przygotowujących się do egzaminów i nie jest tworzona dla dzieci poniżej 13 roku życia. Nie gromadzimy danych dzieci.</p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-semibold">Kontakt</h2>
+          <p class="text-slate-200">Pytania dotyczące prywatności? Skontaktuj się poprzez adres wsparcia podany w sklepie z aplikacją lub napisz na <a class="text-brand hover:text-brandDark" href="mailto:marek.smigielski@gmail.com">marek.smigielski@gmail.com</a>.</p>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

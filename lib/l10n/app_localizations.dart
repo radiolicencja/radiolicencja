@@ -404,8 +404,20 @@ abstract class AppLocalizations {
   /// No description provided for @aboutWebsiteValue.
   ///
   /// In en, this message translates to:
-  /// **'radiolicencja.pl'**
+  /// **'https://radiolicencja.pl'**
   String get aboutWebsiteValue;
+
+  /// No description provided for @aboutPrivacyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy policy'**
+  String get aboutPrivacyLabel;
+
+  /// No description provided for @aboutPrivacyValue.
+  ///
+  /// In en, this message translates to:
+  /// **'https://radiolicencja.pl/promo/privacy-policy-en.html'**
+  String get aboutPrivacyValue;
 
   /// No description provided for @aboutLinkOpenError.
   ///

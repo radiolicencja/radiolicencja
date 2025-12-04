@@ -27,6 +27,7 @@ class AboutScreen extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final websiteUri = Uri.parse(l10n.aboutWebsiteValue);
+    final privacyUri = Uri.parse(l10n.aboutPrivacyValue);
     return Scaffold(
       appBar: AppBar(
         title: Text(l10n.aboutTitle),
@@ -89,6 +90,21 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ),
                   onTap: () => _launchUri(context, websiteUri),
+                ),
+              ),
+              const SizedBox(height: 12),
+              Card(
+                child: ListTile(
+                  leading: const Icon(Icons.privacy_tip_outlined),
+                  title: Text(l10n.aboutPrivacyLabel),
+                  subtitle: SelectableText(
+                    l10n.aboutPrivacyValue,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: theme.colorScheme.primary,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                  onTap: () => _launchUri(context, privacyUri),
                 ),
               ),
             ],

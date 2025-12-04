@@ -103,6 +103,8 @@
   "aboutAuthorCredit": "Twórca i opiekun: SP7SMI",
   "aboutWebsiteLabel": "Strona",
   "aboutWebsiteValue": "https://radiolicencja.pl",
+  "aboutPrivacyLabel": "Polityka prywatności",
+  "aboutPrivacyValue": "https://radiolicencja.pl/promo/privacy-policy-pl.html",
   "aboutLinkOpenError": "Nie udało się otworzyć linku. Skopiuj i wklej ręcznie.",
   "aboutDisclaimer": "Wyjaśnienia odpowiedzi generuje AI i mogą zawierać błędy. Zweryfikuj je samodzielnie."
 }

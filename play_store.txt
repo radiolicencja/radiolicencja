@@ -1,0 +1,15 @@
+Short description:
+Radiolicencja: ucz się pytań na egzamin operatora radiowego offline.
+
+Full description:
+Radiolicencja to darmowa aplikacja do nauki pytań na egzamin operatora radiowego. Ucz się w swoim tempie, śledź postępy i utrwalaj wiedzę z przejrzystych ekranów.
+
+Co dostajesz:
+- Aktualna baza pytań używanych na egzaminach.
+- Dwa tryby: szybki test oraz tryb nauki z powtórkami (spaced repetition).
+- Wyjaśnienia do każdej odpowiedzi w czytelnym Markdown/LaTeX.
+- Statystyki postępów dla każdego tematu.
+- Działa offline, bez konta, bez reklam i bez analityki.
+- Postępy zapisane lokalnie, z opcją resetu w aplikacji.
+
+Radiolicencja pomaga przygotować się do egzaminu z dowolnego miejsca – wystarczy kilka minut dziennie, by podnosić wynik.

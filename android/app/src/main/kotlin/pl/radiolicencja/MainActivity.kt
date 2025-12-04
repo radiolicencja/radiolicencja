@@ -1,4 +1,4 @@
-package com.example.radiolicencja
+package pl.radiolicencja
 
 import io.flutter.embedding.android.FlutterActivity
 
