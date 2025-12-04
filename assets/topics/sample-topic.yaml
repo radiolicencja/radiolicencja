@@ -1,0 +1,107 @@
+title: Przykładowy temat
+slug: sample-topic
+description: Prosty temat testowy.
+image: assets/images/sample-topic.png
+questions:
+- text: 1. Ile wynosi suma 2 + 2?
+  answers:
+  - '3'
+  - '4'
+  - '5'
+  correct_index: 1
+  explanations:
+  - '**Dlaczego odpowiedź A jest błędna**
+
+
+    Dodawanie liczb całkowitych działa według następującej reguły:
+
+
+    \[
+
+    a + b = \text{wartość sumy liczb } a \text{ i } b
+
+    \]
+
+
+    W Twoim przypadku:
+
+
+    \[
+
+    2 + 2 = 4
+
+    \]
+
+
+    - 2 plus 2 daje **4**.
+
+    - Liczba 3 nie jest wynikiem dodawania dwóch dwójek, więc odpowiedź **A. 3** jest niepoprawna.
+
+
+    **Poprawna odpowiedź:** **B. 4**.'
+  - "Gratulacje!  \n\nPrawidłowa odpowiedź **B. 4** jest poprawna, ponieważ  \n\n\\[\n2 + 2 = 4\n\\]\n\
+    \nco wynika z podstawowej definicji dodawania liczb naturalnych. ✅"
+  - "**Wyjaśnienie błędu**\n\n- **Prawidłowa wartość**:  \n  \\[\n  2+2=4\n  \\]\n\n- **Co się stało?**\
+    \  \n  Wybór **C. 5** pomylił się z faktem, że 2 + 2 nie daje pięciu, lecz cztery.  \n  Jeśli dodasz\
+    \ dwie dwójki, otrzymujesz dwie pary po dwóch elementach, co razem daje cztery.\n\n- **Podsumowanie**\
+    \  \n  Poprawna odpowiedź to **B. 4**. Wybór C jest niepoprawny, ponieważ nie odpowiada rzeczywistej\
+    \ sumie."
+  - "**Rozwiązanie**\n\n\\[\n2 + 2 = 4\n\\]\n\nZapisany w prosty sposób: dodając dwie liczby 2, otrzymujemy\
+    \ sumę 4.  \n\n**Poprawna odpowiedź:** **B. 4**"
+- text: 2. W jakiej jednostce mierzymy napięcie?
+  answers:
+  - w woltach
+  - w amperach
+  - w hercach
+  correct_index: 0
+  explanations:
+  - "\U0001F389 **Gratulacje!**  \nTwoja odpowiedź **A. w woltach** jest poprawna.\n\n---\n\n### Dlaczego?\n\
+    \nNapięcie, czyli różnica potencjałów, jest mierzona w **woltach (V)**.  \n\nWzór z prawa Ohma:\n\n\
+    \\[\nV = I \\cdot R\n\\]\n\ngdzie  \n- \\(V\\) – napięcie (V),  \n- \\(I\\) – natężenie prądu (A),\
+    \  \n- \\(R\\) – opór elektryczny (Ω).\n\nJednostka woltów pochodzi od jednostki energii w dżulach\
+    \ podzielonej przez jednostkę ładunku w kulombach:\n\n\\[\n1\\,\\text{V} = 1\\,\\frac{\\text{J}}{\\\
+    text{C}}\n\\]\n\nDlatego odpowiedzi **B (ampery)** i **C (herce)** są nieprawidłowe – amper mierzy\
+    \ natężenie prądu, a herc częstotliwość."
+  - "**Dlaczego B jest błędne**\n\n| Zjawisko | Jednostka | Dlaczego? |\n|---------|-----------|-----------|\n\
+    | **Prąd elektryczny** | **A (amper)** | Amper jest jednostką natężenia prądu: \\(\\displaystyle I\
+    \ = \\frac{Q}{t}\\). |\n| **Napięcie (różnica potencjałów)** | **V (wolt)** | Napięcie to różnica\
+    \ potencjałów: \\(\\displaystyle V = \\frac{W}{Q} = \\frac{J}{C}\\). 1 wolt = 1 J/C = 1 V = 1 W/A.\
+    \ |\n\n---\n\n**W skrócie**\n\n- **Amper** = natężenie prądu, mierzone jako „ilość ładunku na sekundę”.\n\
+    - **Wolt** = różnica potencjałów, mierzone jako „energia na jednostkę ładunku”.\n\nDlatego poprawna\
+    \ odpowiedź to **A. w woltach**.  \n\n(Jeśli masz pytania, śmiało pytaj!)"
+  - '**Dlaczego odpowiedź C („w hercach”) jest błędna**
+
+
+    | Pojęcie | Jednostka | Krótkie wyjaśnienie |
+
+    |---------|-----------|---------------------|
+
+    | **Napięcie** | **wolt** (V) | Miara różnicy potencjałów elektrycznych. Powiązane z mocą w układach
+    prądu stałego: \(V = I \cdot R\). |
+
+    | **Częstotliwość** | **hertz** (Hz) | Miara liczby cykli na sekundę, np. częstotliwość sygnału AC.
+    |
+
+
+    Hertz pojawia się w kontekście **częstotliwości** (np. 50 Hz, 60 Hz), nie w pomiarze napięcia. Dlatego
+    poprawną jednostką dla pytania „W jakiej jednostce mierzymy napięcie?” jest **wolt**.'
+  - '## Odpowiedź
+
+
+    **A. w woltach**
+
+
+    - Napięcie elektryczne, oznaczane symbolem \(U\) lub \(V\), mierzy się w **woltach (V)**.
+
+    - Jednostka „wolt” jest definiowana jako różnica potencjałów, przy której prąd jednostkowy (1 A) płynie
+    przez opór jednego ohma.
+
+
+    > \(U = \frac{W}{I}\) \((\text{V} = \frac{\text{J}}{\text{C}})\)
+
+
+    Pozostałe jednostki:
+
+    - **Amper** (A) – jednostka natężenia prądu.
+
+    - **Herc** (Hz) – jednostka częstotliwości.'

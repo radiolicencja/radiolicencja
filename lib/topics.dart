@@ -7,6 +7,7 @@ import 'package:gpt_markdown/gpt_markdown.dart';
 import 'package:intl/intl.dart';
 import 'package:yaml/yaml.dart';
 
+import 'about.dart';
 import 'l10n/app_localizations.dart';
 import 'quiz.dart';
 import 'services/learning_progress.dart';
@@ -183,6 +184,19 @@ class _TopicListScreenState extends State<TopicListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(l10n.topicListTitle),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.info_outline),
+            tooltip: l10n.aboutButtonLabel,
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const AboutScreen(),
+                ),
+              );
+            },
+          ),
+        ],
       ),
       body: FutureBuilder<List<Topic>>(
         future: _topicsFuture,

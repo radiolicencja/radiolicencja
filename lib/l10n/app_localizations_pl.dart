@@ -178,4 +178,40 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get quizBackToTopicsButton => 'Wróć do tematów';
+
+  @override
+  String get aboutButtonLabel => 'O aplikacji';
+
+  @override
+  String get aboutTitle => 'O Radio Licencja';
+
+  @override
+  String get aboutLead => 'Radio Licencja to lekki towarzysz nauki do polskiego egzaminu krótkofalarskiego. Wczytuje quizy z plików YAML i oferuje tryb testu oraz naukę opartą na powtórkach w czasie.';
+
+  @override
+  String get aboutSecondary => 'Wykorzystaj go do powtórek całej puli pytań, szybkiego utrwalania słabszych miejsc z wyjaśnieniami i obserwowania, jak rośnie Twoja pewność.';
+
+  @override
+  String get aboutAuthorLabel => 'Autor';
+
+  @override
+  String get aboutAuthorCredit => 'Twórca i opiekun: mareksmi.';
+
+  @override
+  String get aboutWebsiteLabel => 'Strona';
+
+  @override
+  String get aboutWebsiteValue => 'https://radiolicencja.pl';
+
+  @override
+  String get aboutEmailLabel => 'E-mail';
+
+  @override
+  String get aboutEmailValue => 'marek.smigielski@gmail.com';
+
+  @override
+  String get aboutLinkOpenError => 'Nie udało się otworzyć linku. Skopiuj i wklej ręcznie.';
+
+  @override
+  String get aboutDisclaimer => 'Wyjaśnienia odpowiedzi generuje AI i mogą zawierać błędy. Zweryfikuj je samodzielnie.';
 }

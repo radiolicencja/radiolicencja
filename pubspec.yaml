@@ -15,6 +15,7 @@ dependencies:
   intl: ^0.20.2
   shared_preferences: ^2.2.2
   gpt_markdown: ^1.1.4
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:

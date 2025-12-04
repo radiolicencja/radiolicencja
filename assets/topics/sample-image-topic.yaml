@@ -1,0 +1,78 @@
+title: Przykładowy temat z obrazem
+slug: sample-image-topic
+description: Minimalny zestaw pytań umożliwiający szybkie sprawdzenie obsługi obrazów.
+questions:
+- text: '1. Na rysunku przedstawiono prostownik. Jakiego jest on typu?
+
+    ![Przykładowe pytanie](assets/question_images/radiotechnika-q090.jpg)'
+  answers:
+  - prostownik jednopołówkowy
+  - prostownik dwupołówkowy
+  - prostownik mostkowy
+  correct_index: 1
+  explanations:
+  - "**Dlaczego odpowiedź A („prostownik jednopołówkowy”) jest błędna?**\n\n1. **Budowa**  \n   - W prostowniku\
+    \ jednopołówkowym używa się **jednego** elementu przewodzącego (np. jednego diody lub jednego tyrystora).\
+    \  \n   - Na schemacie podanym w zadaniu widać **dwie** diody połączone w taki sposób, że obie przewodzą\
+    \ w przeciwnych półokresach sinusoidy. To już wyklucza klasyczny jednopołówkowy układ.\n\n2. **Zachowanie\
+    \ napięcia wyjściowego**  \n   - Dla jednopołówkowego prostownika napięcie wyjściowe wynosi  \n\n\\\
+    [\nv_{out}(t)=\\begin{cases}\nV_m\\sin \\omega t - V_D, & \\sin \\omega t>0\\\\[4pt]\n0, & \\sin \\\
+    omega t\\le 0\n\\end{cases}\n\\]\n\n   - Na rysunku widać, że **w obu półokresach** (zarówno dodatnim,\
+    \ jak i ujemnym) pojawia się dodatnie napięcie wyjściowe – co jest charakterystyczne dla pełnego (dwupołówkowego)\
+    \ prostowania.\n\n3. **Częstotliwość tętnień**  \n   - W jednopołówkowym prostowniku częstotliwość\
+    \ tętnień jest równa częstotliwości sieci (np. 50 Hz).  \n   - W podanym układzie tętnienia występują\
+    \ dwa razy w każdym okresie sinusoidy (100 Hz), co wskazuje na **dwupołówkowy** charakter.\n\n---\n\
+    \n### Co to jest prostownik dwupołówkowy?\n\n- **Definicja**: Układ, w którym **obie połówki** sinusoidy\
+    \ są prostowane do napięcia dodatniego.  \n- **Typowy schemat**: Dwie diody (lub dwa tyrystory) podłączone\
+    \ do transformatora z uzwojeniem środkowo odsprzężonym (lub w konfiguracji „center‑tap”).  \n- **Równanie\
+    \ wyjściowe**  \n\n\\[\nv_{out}(t)=\\begin{cases}\nV_m\\sin \\omega t - V_D, & \\sin \\omega t>0\\\
+    \\[4pt]\n-\\,V_m\\sin \\omega t - V_D, & \\sin \\omega t<0\n\\end{cases}\n\\]\n\n  co po usunięciu\
+    \ znaku „‑” daje zawsze dodatnią wartość.\n\n- **Zalety w porównaniu z jednopołówkowym**  \n  - Dwukrotnie\
+    \ większa średnia wartość napięcia wyjściowego.  \n  - Mniejsze tętnienia (wyższa częstotliwość harmonicznych).\
+    \  \n\n---\n\n### Dlaczego nie jest to prostownik mostkowy (odpowiedź C)?\n\n- Prostownik mostkowy\
+    \ wymaga **czterech** diod połączonych w układzie mostka.  \n- Na rysunku widać tylko dwa elementy\
+    \ przewodzące, więc układ nie spełnia warunków mostka.\n\n---\n\n## Podsumowanie\n\n- **Jedna para\
+    \ diod** → dwupołówkowy (pełny) prostownik.  \n- **Cztery diody w mostku** → prostownik mostkowy.\
+    \  \n- **Jedna dioda** → jednopołówkowy prostownik.\n\nDlatego poprawną odpowiedzią jest **B. prostownik\
+    \ dwupołówkowy**, a wybór odpowiedzi A wynikałby z nieprawidłowego rozpoznania liczby i rozmieszczenia\
+    \ elementów prostujących."
+  - "**Gratulacje!** \U0001F389  \n\nZaznaczyłeś odpowiedź **B – prostownik dwupołówkowy** i jest ona\
+    \ prawidłowa.\n\n**Dlaczego?**  \nNa rysunku widać, że sygnał wejściowy jest odwracany w obu połówkach\
+    \ cyklu, czyli zarówno dodatniej, jak i ujemnej części napięcia sinusoidalnego zostaje przekształcona\
+    \ w dodatnią. Taki przebieg charakterystyczny jest typowy dla **prostownika dwupołówkowego** (pełnookresowego),\
+    \ który wykorzystuje dwa diody (lub układ mostka) tak, aby każda połówka fali była prostowana.  \n\
+    \nW przeciwieństwie do prostownika jednopołówkowego, który prostuje tylko jedną połówkę, tutaj obie\
+    \ połówki są wykorzystane, co potwierdza wybrany wybór. \n\nŚwietna robota – dalej tak trenuj! \U0001F680"
+  - "**Dlaczego odpowiedź C („prostownik mostkowy”) jest niepoprawna?**  \n\nNa rysunku widać:\n\n* transformator\
+    \ z uzwojeniem **środkowo‑zasilanym** (center‑tap),\n* **dwa** diody podłączone do przeciwległych\
+    \ końcówek uzwojenia i do wyjścia.\n\nTaki układ prowadzi **oba półokresy** napięcia sinusoidalnego\
+    \ do obciążenia, ale robi to **przez wykorzystanie środka uzwojenia**, a nie przez cztery diody ułożone\
+    \ w mostek. Dlatego nie spełnia definicji prostownika mostkowego.\n\n---\n\n### Jak rozróżnić rodzaje\
+    \ prostowników\n\n| Typ prostownika | Liczba diod | Konfiguracja | Charakterystyka wyjścia |\n|---|---|---|---|\n\
+    | **Jednopołówkowy** | 1 (lub 2 w układzie z diodą i rezystorem) | Jedna dioda prowadzi prąd tylko\
+    \ w jedną stronę | Przewodzi tylko **jeden** półokres (ujemny jest blokowany) |\n| **Dwupołówkowy\
+    \ (z uzwojeniem środkowo‑zasilanym)** | 2 | Dwie diody podłączone do końców uzwojenia i do środka\
+    \ (center‑tap) | **Oba** półokresy są przewodzone, ale napięcie wyjściowe to **V\\_max/2** (połowa\
+    \ napięcia uzwojenia) |\n| **Mostkowy** | 4 | Cztery diody w układzie rombu (mostka) | Przewodzi oba\
+    \ półokresy **bez środkowego uzwojenia**, wyjściowe napięcie ≈ **V\\_max** (minus spadki na dwie diody)\
+    \ |\n\n---\n\n### Dlaczego prawidłowa odpowiedź to **B – prostownik dwupołówkowy**\n\n1. **Dwie diody**\
+    \ – widoczne w schemacie.\n2. **Środkowo‑zasilane uzwojenie** – charakterystyczne dla pełnookresowego\
+    \ prostownika z dwoma diodami.\n3. **Oba półokresy** napięcia są przekazywane do obciążenia, ale napięcie\
+    \ wyjściowe jest ograniczone do połowy napięcia transformatora (wynik = \\(V_{max}/2\\)).\n\nZatem\
+    \ rysunek opisuje **prostownik dwupołówkowy**, a nie mostkowy. \n\n--- \n\n**Podsumowanie**:  \n*Brak\
+    \ czterech diod i brak mostka* → nie mostkowy.  \n*Obecność środka uzwojenia i dwóch diod* → pełnookresowy\
+    \ (dwupołówkowy).  \n\nDlatego odpowiedź C jest błędna, a poprawna to **B**."
+  - "**Dlaczego jest to prostownik dwupołówkowy?**\n\n1. **Budowa**  \n   Na rysunku widać dwa diody połączone\
+    \ z obciążeniem w taki sposób, że każda z nich przewodzi w połowie jednego okresu napięcia wejściowego.\
+    \  \n   - W pierwszej połówce sygnału dodatniego przewodzi dioda D₁, a dioda D₂ jest odcięta.  \n\
+    \   - W drugiej połówce (gdy napięcie wejściowe jest ujemne) przewodzi dioda D₂, a D₁ jest odcięta.\n\
+    \n2. **Zasada działania**  \n   Dzięki temu oba półokresy (zarówno dodatni, jak i ujemny) zostają\
+    \ zamienione na dodatnie napięcie na obciążeniu. Wyjściowy przebieg jest więc **dwukrotnie powtarzany\
+    \ w ciągu jednego pełnego okresu** sygnału wejściowego.\n\n3. **Porównanie z innymi typami**  \n \
+    \  - **Prostownik jednopołówkowy** (A) używa jednej diody i przewodzi tylko jedną połówkę sygnału,\
+    \ więc wyjście ma jedną “falę” na okres.  \n   - **Prostownik mostkowy** (C) składa się z czterech\
+    \ diod ułożonych w mostek i także daje dwupołówkowy wynik, ale na rysunku widać tylko dwie diody –\
+    \ charakterystyczne dla klasycznego pełno‑połowkowego układu z dwoma diodami.\n\n4. **Wniosek**  \n\
+    \   Z powyższego wynika, że układ na rysunku spełnia warunki **prostownika dwupołówkowego** (full‑wave\
+    \ rectifier) – przetwarza oba półokresy napięcia wejściowego na dodatnie.\n\n**Poprawna odpowiedź:**\
+    \ **B. prostownik dwupołówkowy**."
