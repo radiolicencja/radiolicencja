@@ -194,19 +194,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aboutAuthorLabel => 'Author';
 
   @override
-  String get aboutAuthorCredit => 'Created and maintained by mareksmi.';
+  String get aboutAuthorCredit => 'Created and maintained by SP7SMI (Marek Śmigielski).';
 
   @override
   String get aboutWebsiteLabel => 'Website';
 
   @override
   String get aboutWebsiteValue => 'https://radiolicencja.pl';
-
-  @override
-  String get aboutEmailLabel => 'Email';
-
-  @override
-  String get aboutEmailValue => 'marek.smigielski@gmail.com';
 
   @override
   String get aboutLinkOpenError => 'Couldn\'t open link. Copy and paste instead.';

@@ -100,11 +100,9 @@
   "aboutLead": "Radio Licencja to lekki towarzysz nauki do polskiego egzaminu krótkofalarskiego. Wczytuje quizy z lokalnych plików i oferuje tryb testu oraz naukę opartą na powtórkach w czasie.",
   "aboutSecondary": "Wykorzystaj go do powtórek całej puli pytań, szybkiego utrwalania słabszych miejsc z wyjaśnieniami i obserwowania, jak rośnie Twoja pewność.",
   "aboutAuthorLabel": "Autor",
-  "aboutAuthorCredit": "Twórca i opiekun: SP7SMI.",
+  "aboutAuthorCredit": "Twórca i opiekun: SP7SMI",
   "aboutWebsiteLabel": "Strona",
   "aboutWebsiteValue": "https://radiolicencja.pl",
-  "aboutEmailLabel": "E-mail",
-  "aboutEmailValue": "marek.smigielski@gmail.com",
   "aboutLinkOpenError": "Nie udało się otworzyć linku. Skopiuj i wklej ręcznie.",
   "aboutDisclaimer": "Wyjaśnienia odpowiedzi generuje AI i mogą zawierać błędy. Zweryfikuj je samodzielnie."
 }

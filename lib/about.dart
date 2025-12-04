@@ -6,6 +6,8 @@ import 'l10n/app_localizations.dart';
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
 
+  static final Uri _authorUri = Uri.parse('https://www.qrz.com/db/SP7SMI');
+
   Future<void> _launchUri(BuildContext context, Uri uri) async {
     final launched = await launchUrl(
       uri,
@@ -25,10 +27,6 @@ class AboutScreen extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final websiteUri = Uri.parse(l10n.aboutWebsiteValue);
-    final emailUri = Uri(
-      scheme: 'mailto',
-      path: l10n.aboutEmailValue,
-    );
     return Scaffold(
       appBar: AppBar(
         title: Text(l10n.aboutTitle),
@@ -68,22 +66,14 @@ class AboutScreen extends StatelessWidget {
                 child: ListTile(
                   leading: const Icon(Icons.person_outline),
                   title: Text(l10n.aboutAuthorLabel),
-                  subtitle: Text(l10n.aboutAuthorCredit),
-                ),
-              ),
-              const SizedBox(height: 12),
-              Card(
-                child: ListTile(
-                  leading: const Icon(Icons.email_outlined),
-                  title: Text(l10n.aboutEmailLabel),
                   subtitle: SelectableText(
-                    l10n.aboutEmailValue,
+                    l10n.aboutAuthorCredit,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: theme.colorScheme.primary,
                       decoration: TextDecoration.underline,
                     ),
                   ),
-                  onTap: () => _launchUri(context, emailUri),
+                  onTap: () => _launchUri(context, _authorUri),
                 ),
               ),
               const SizedBox(height: 12),

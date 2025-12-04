@@ -195,19 +195,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get aboutAuthorLabel => 'Autor';
 
   @override
-  String get aboutAuthorCredit => 'Twórca i opiekun: mareksmi.';
+  String get aboutAuthorCredit => 'Twórca i opiekun: SP7SMI.';
 
   @override
   String get aboutWebsiteLabel => 'Strona';
 
   @override
   String get aboutWebsiteValue => 'https://radiolicencja.pl';
-
-  @override
-  String get aboutEmailLabel => 'E-mail';
-
-  @override
-  String get aboutEmailValue => 'marek.smigielski@gmail.com';
 
   @override
   String get aboutLinkOpenError => 'Nie udało się otworzyć linku. Skopiuj i wklej ręcznie.';

@@ -392,7 +392,7 @@ abstract class AppLocalizations {
   /// No description provided for @aboutAuthorCredit.
   ///
   /// In en, this message translates to:
-  /// **'Created and maintained by mareksmi.'**
+  /// **'Created and maintained by SP7SMI (Marek Śmigielski).'**
   String get aboutAuthorCredit;
 
   /// No description provided for @aboutWebsiteLabel.
@@ -406,18 +406,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'radiolicencja.pl'**
   String get aboutWebsiteValue;
-
-  /// No description provided for @aboutEmailLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Email'**
-  String get aboutEmailLabel;
-
-  /// No description provided for @aboutEmailValue.
-  ///
-  /// In en, this message translates to:
-  /// **'marek.smigielski@gmail.com'**
-  String get aboutEmailValue;
 
   /// No description provided for @aboutLinkOpenError.
   ///
